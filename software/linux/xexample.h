@@ -82,6 +82,8 @@ int XExample_Initialize(XExample *InstancePtr, const char* InstanceName);
 int XExample_Release(XExample *InstancePtr);
 #endif
 
+
+XExample setup_hhbquery();
 void XExample_Start(XExample *InstancePtr);
 u32 XExample_IsDone(XExample *InstancePtr);
 u32 XExample_IsIdle(XExample *InstancePtr);

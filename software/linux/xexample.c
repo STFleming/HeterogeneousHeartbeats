@@ -24,7 +24,7 @@ int XExample_CfgInitialize(XExample *InstancePtr, XExample_Config *ConfigPtr) {
 }
 #endif
 
-volatile unsigned long * setup_hhbquery() //returns a pointer in userspace to the device
+XExample setup_hhbquery() //returns a pointer in userspace to the device
 {
     void *mapped_base_hhbquery;
     int memfd_hhbquery;
@@ -53,7 +53,12 @@ volatile unsigned long * setup_hhbquery() //returns a pointer in userspace to th
     // that was mapped as memory is mapped at the start of a page 
 
     mapped_dev_base = mapped_base_hhbquery + (dev_base & MAP_MASK);
-    return mapped_dev_base;
+    XExample device;
+    device.Bus_a_BaseAddress = mapped_dev_base;
+    device.IsReady = 1;
+
+    return device;
+    //return mapped_dev_base;
 }
 
 
