@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rm -fR /dev/cacheflush
+
+insmod cache_flusher.ko
+mknod /dev/cacheflush c 247 0
