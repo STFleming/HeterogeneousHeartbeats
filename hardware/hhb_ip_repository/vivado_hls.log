@@ -1,0 +1,29 @@
+@I [LIC-101] Checked out feature [HLS]
+@W [HLS-40] Vivado in the PATH variable is not from the same build as Vivado HLS. The mismatch may result in unexpected behaviors.
+@I [HLS-10] Running '/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/bin/unwrapped/lnx64.o/vivado_hls'
+            for user 'sf306' on host 'ee-boxer0.ee.ic.ac.uk' (Linux_x86_64 version 2.6.32-41-server) on Wed Apr 16 11:18:10 BST 2014
+            in directory '/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository'
+@I [HLS-10] Opening project '/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hhb_query'.
+@I [HLS-10] Opening solution '/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hhb_query/hhb_query'.
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-10] Setting target device to 'xc7z020clg484-1'
+@I [IMPL-8] Exporting RTL as an IP in IP-XACT.
+
+****** Vivado v2012.2 (64-bit)
+  **** Build 194362 by xbuild on Fri Jul 20 18:49:25 MDT 2012
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Common 17-81] Feature available: Synthesis
+INFO: [Device 21-36] Loading parts and site information from /mnt/cas_nfs/applications/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+
+source run_ippack.tcl -notrace
+Unknown property 'core_revision' on componentINFO: [Common 17-206] Exiting Vivado...
+@E [IMPL-28] Failed to generate IP.
+
+    while executing
+"export_design -evaluate vhdl -format ip_catalog -description "An IP which is used for hardware tasks to query the heartbeat record of applications" -v..."
+    (file "/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hhb_query/hhb_query/export.tcl" line 8)
+@I [LIC-101] Checked in feature [HLS]
