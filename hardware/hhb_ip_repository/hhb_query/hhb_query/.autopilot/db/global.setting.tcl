@@ -34,7 +34,7 @@ set SCTraceFileName "mytrace"
 set SCTraceFileFormat "vcd"
 set SCTraceOption "all"
 set TargetInfo "xc7z020:clg484:-1"
-set SourceFiles {sc {} c ../../src/hhb_query_top.cpp}
+set SourceFiles {sc {} c ../src/hhb_query_top.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile {/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hhb_query/hhb_query/hhb_query.directive}
 set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'hhb_query'
 ================================================================
-* Date:           Wed Apr 16 11:06:58 2014
+* Date:           Wed Apr 16 12:48:58 2014
 
 * Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
 * Project:        hhb_query
@@ -377,10 +377,10 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 1
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ a]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=4; mode=0x3f8e0c0; pingpong=0; private_global=0; IO mode=ap_bus:ce=0
-Port [ heartbeat_record_phys_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x29ca010; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ current_heartbeat]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x26c9a90; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ status]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x3efdbd0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ a]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=4; mode=0x3644ed0; pingpong=0; private_global=0; IO mode=ap_bus:ce=0
+Port [ heartbeat_record_phys_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x36aa6e0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ current_heartbeat]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x34948d0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ status]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x23f9d30; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------

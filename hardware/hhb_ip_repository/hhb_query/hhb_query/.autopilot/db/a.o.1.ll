@@ -106,7 +106,7 @@ declare i32 @_ssdm_op_SpecRegionEnd.restore(...)
 !3 = metadata !{metadata !4}
 !4 = metadata !{metadata !5}
 !5 = metadata !{i32 786478, i32 0, metadata !6, metadata !"hhb_query", metadata !"hhb_query", metadata !"_Z9hhb_queryPVijPjS1_", metadata !6, i32 56, metadata !7, i1 false, i1 true, i32 0, i32 0, null, i32 256, i1 false, void (i32*, i32, i32*, i32*)* @hhb_query, null, null, metadata !14, i32 56} ; [ DW_TAG_subprogram ]
-!6 = metadata !{i32 786473, metadata !"src/hhb_query_top.cpp", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository", null} ; [ DW_TAG_file_type ]
+!6 = metadata !{i32 786473, metadata !"hhb_query/src/hhb_query_top.cpp", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository", null} ; [ DW_TAG_file_type ]
 !7 = metadata !{i32 786453, i32 0, metadata !"", i32 0, i32 0, i64 0, i64 0, i64 0, i32 0, null, metadata !8, i32 0, i32 0} ; [ DW_TAG_subroutine_type ]
 !8 = metadata !{null, metadata !9, metadata !12, metadata !13, metadata !13}
 !9 = metadata !{i32 786447, null, metadata !"", null, i32 0, i64 64, i64 64, i64 0, i32 0, metadata !10} ; [ DW_TAG_pointer_type ]

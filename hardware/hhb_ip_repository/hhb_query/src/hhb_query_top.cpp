@@ -78,7 +78,7 @@ void hhb_query(volatile int *a, unsigned int heartbeat_record_phys_addr, unsigne
   *status=0; //IP running
 
   //read from DDR
-  memcpy(buff,(const int*)(a+heartbeat_record_phys_addr/4), sizeof(int));
+  memcpy(buff,(const int*)(a+heartbeat_record_phys_addr/4), N*sizeof(int));
   
   *current_heartbeat = buff[0];
 

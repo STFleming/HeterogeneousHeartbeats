@@ -201,7 +201,7 @@ declare i32 @llvm.part.select.i32(i32, i32, i32) nounwind readnone
 !19 = metadata !{metadata !"status", metadata !4, metadata !"unsigned int"}
 !20 = metadata !{i32 786689, metadata !21, metadata !"heartbeat_record_phys_addr", metadata !22, i32 33554488, metadata !28, i32 0, i32 0} ; [ DW_TAG_arg_variable ]
 !21 = metadata !{i32 786478, i32 0, metadata !22, metadata !"hhb_query", metadata !"hhb_query", metadata !"_Z9hhb_queryPVijPjS1_", metadata !22, i32 56, metadata !23, i1 false, i1 true, i32 0, i32 0, null, i32 256, i1 false, void (i32*, i32, i32*, i32*)* @hhb_query, null, null, metadata !30, i32 56} ; [ DW_TAG_subprogram ]
-!22 = metadata !{i32 786473, metadata !"src/hhb_query_top.cpp", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository", null} ; [ DW_TAG_file_type ]
+!22 = metadata !{i32 786473, metadata !"hhb_query/src/hhb_query_top.cpp", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository", null} ; [ DW_TAG_file_type ]
 !23 = metadata !{i32 786453, i32 0, metadata !"", i32 0, i32 0, i64 0, i64 0, i64 0, i32 0, null, metadata !24, i32 0, i32 0} ; [ DW_TAG_subroutine_type ]
 !24 = metadata !{null, metadata !25, metadata !28, metadata !29, metadata !29}
 !25 = metadata !{i32 786447, null, metadata !"", null, i32 0, i64 64, i64 64, i64 0, i32 0, metadata !26} ; [ DW_TAG_pointer_type ]

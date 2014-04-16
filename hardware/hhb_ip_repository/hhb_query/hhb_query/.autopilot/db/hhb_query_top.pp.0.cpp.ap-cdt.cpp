@@ -1,5 +1,5 @@
-#pragma line 1 "src/hhb_query_top.cpp"
-#pragma line 1 "src/hhb_query_top.cpp" 1
+#pragma line 1 "hhb_query/src/hhb_query_top.cpp"
+#pragma line 1 "hhb_query/src/hhb_query_top.cpp" 1
 #pragma line 1 "<built-in>" 1
 #pragma line 1 "<built-in>" 3
 #pragma line 155 "<built-in>" 3
@@ -159,7 +159,7 @@ extern "C" {
 #define _ssdm_op_Delayed(X) X */
 #pragma line 8 "<command line>" 2
 #pragma line 1 "<built-in>" 2
-#pragma line 1 "src/hhb_query_top.cpp" 2
+#pragma line 1 "hhb_query/src/hhb_query_top.cpp" 2
 /*******************************************************************************
 Vendor: Xilinx 
 Associated Filename: example.cpp
@@ -2120,7 +2120,7 @@ extern void funlockfile (FILE *__stream) throw ();
    several optimizing inline functions and macros.  */
 #pragma line 916 "/usr/include/stdio.h" 3 4
 }
-#pragma line 51 "src/hhb_query_top.cpp" 2
+#pragma line 51 "hhb_query/src/hhb_query_top.cpp" 2
 #pragma line 1 "/usr/include/string.h" 1 3 4
 /* Copyright (C) 1991-1993,1995-2004,2007,2009 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
@@ -2620,7 +2620,7 @@ extern void *memfrob (void *__s, size_t __n) throw () __attribute__ ((__nonnull_
 extern char *basename (__const char *__filename) throw () __attribute__ ((__nonnull__ (1)));
 #pragma line 644 "/usr/include/string.h" 3 4
 }
-#pragma line 52 "src/hhb_query_top.cpp" 2
+#pragma line 52 "hhb_query/src/hhb_query_top.cpp" 2
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
@@ -2649,15 +2649,15 @@ void hhb_query(volatile int *a, unsigned int heartbeat_record_phys_addr, unsigne
 #pragma empty_line
   *status=0;
 #pragma HLS RESOURCE core=AXI4LiteS variable=status metadata="-bus_bundle BUS_A"
-#pragma line 78 "src/hhb_query_top.cpp"
+#pragma line 78 "hhb_query/src/hhb_query_top.cpp"
  //IP running
 #pragma empty_line
   //read from DDR
-  memcpy(buff,(const int*)(a+heartbeat_record_phys_addr/4), sizeof(int));
+  memcpy(buff,(const int*)(a+heartbeat_record_phys_addr/4), 1*sizeof(int));
 #pragma empty_line
   *current_heartbeat = buff[0];
 #pragma HLS RESOURCE core=AXI4LiteS variable=current_heartbeat metadata="-bus_bundle BUS_A"
-#pragma line 83 "src/hhb_query_top.cpp"
+#pragma line 83 "hhb_query/src/hhb_query_top.cpp"
 
 #pragma empty_line
   *status=1; //IP stop

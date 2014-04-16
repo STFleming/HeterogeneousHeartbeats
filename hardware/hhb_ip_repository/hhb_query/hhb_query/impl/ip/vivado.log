@@ -1,16 +1,16 @@
 #-----------------------------------------------------------
-# Vivado v2012.2 (64-bit)
-# Build 194362 by xbuild on Fri Jul 20 18:49:25 MDT 2012
-# Start of session at: Wed Apr 16 11:18:12 2014
-# Process ID: 10541
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Wed Apr 16 12:48:59 2014
+# Process ID: 13881
 # Log file: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hhb_query/hhb_query/impl/ip/vivado.log
 # Journal file: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hhb_query/hhb_query/impl/ip/vivado.jou
 #-----------------------------------------------------------
-INFO: [Common 17-81] Feature available: Implementation
-INFO: [Common 17-81] Feature available: Synthesis
-INFO: [Device 21-36] Loading parts and site information from /mnt/cas_nfs/applications/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/arch.xml
-Parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
-Finished parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
-
+Attempting to get a license: Implementation
+Feature available: Implementation
+Loading parts and site information from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 source run_ippack.tcl -notrace
-Unknown property 'core_revision' on componentINFO: [Common 17-206] Exiting Vivado...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 16 12:49:06 2014...

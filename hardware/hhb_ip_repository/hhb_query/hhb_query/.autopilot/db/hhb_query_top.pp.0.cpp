@@ -1,5 +1,5 @@
-# 1 "src/hhb_query_top.cpp"
-# 1 "src/hhb_query_top.cpp" 1
+# 1 "hhb_query/src/hhb_query_top.cpp"
+# 1 "hhb_query/src/hhb_query_top.cpp" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 155 "<built-in>" 3
@@ -159,7 +159,7 @@ extern "C" {
 #define _ssdm_op_Delayed(X) X */
 # 8 "<command line>" 2
 # 1 "<built-in>" 2
-# 1 "src/hhb_query_top.cpp" 2
+# 1 "hhb_query/src/hhb_query_top.cpp" 2
 /*******************************************************************************
 Vendor: Xilinx 
 Associated Filename: example.cpp
@@ -2120,7 +2120,7 @@ extern void funlockfile (FILE *__stream) throw ();
    several optimizing inline functions and macros.  */
 # 916 "/usr/include/stdio.h" 3 4
 }
-# 51 "src/hhb_query_top.cpp" 2
+# 51 "hhb_query/src/hhb_query_top.cpp" 2
 # 1 "/usr/include/string.h" 1 3 4
 /* Copyright (C) 1991-1993,1995-2004,2007,2009 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
@@ -2616,7 +2616,7 @@ extern void *memfrob (void *__s, size_t __n) throw () __attribute__ ((__nonnull_
 extern char *basename (__const char *__filename) throw () __attribute__ ((__nonnull__ (1)));
 # 644 "/usr/include/string.h" 3 4
 }
-# 52 "src/hhb_query_top.cpp" 2
+# 52 "hhb_query/src/hhb_query_top.cpp" 2
 
 
 
@@ -2646,7 +2646,7 @@ void hhb_query(volatile int *a, unsigned int heartbeat_record_phys_addr, unsigne
   *status=0; //IP running
 
   //read from DDR
-  memcpy(buff,(const int*)(a+heartbeat_record_phys_addr/4), sizeof(int));
+  memcpy(buff,(const int*)(a+heartbeat_record_phys_addr/4), 1*sizeof(int));
 
   *current_heartbeat = buff[0];
 
