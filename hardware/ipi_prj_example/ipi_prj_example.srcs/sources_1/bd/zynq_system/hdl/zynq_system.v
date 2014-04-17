@@ -235,7 +235,7 @@ module s00_couplers_imp_156Q4UY
   assign s00_couplers_to_auto_pc_WLAST = S_AXI_wlast;
   assign s00_couplers_to_auto_pc_WSTRB = S_AXI_wstrb[3:0];
   assign s00_couplers_to_auto_pc_WVALID = S_AXI_wvalid;
-zynq_system_auto_pc_2 auto_pc
+zynq_system_auto_pc_4 auto_pc
        (.aclk(S_ACLK_1),
         .aresetn(S_ARESETN_1),
         .m_axi_araddr(auto_pc_to_s00_couplers_ARADDR),
@@ -613,7 +613,7 @@ module s00_couplers_imp_5VZGPS
   assign s00_couplers_to_auto_pc_WVALID = S_AXI_wvalid;
 GND GND
        (.G(GND_1));
-zynq_system_auto_pc_3 auto_pc
+zynq_system_auto_pc_5 auto_pc
        (.aclk(S_ACLK_1),
         .aresetn(S_ARESETN_1),
         .m_axi_araddr(auto_pc_to_s00_couplers_ARADDR),
@@ -695,7 +695,7 @@ zynq_system_auto_pc_3 auto_pc
         .s_axi_wvalid(s00_couplers_to_auto_pc_WVALID));
 endmodule
 
-(* CORE_GENERATION_INFO = "zynq_system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLanguage=VERILOG,numBlks=9,numReposBlks=5,numNonXlnxBlks=1,numHierBlks=4,maxHierDepth=0,da_axi4_cnt=2,da_ps7_cnt=1}" *) 
+(* CORE_GENERATION_INFO = "zynq_system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLanguage=VERILOG,numBlks=9,numReposBlks=5,numNonXlnxBlks=1,numHierBlks=4,maxHierDepth=0}" *) 
 module zynq_system
    (DDR_addr,
     DDR_ba,

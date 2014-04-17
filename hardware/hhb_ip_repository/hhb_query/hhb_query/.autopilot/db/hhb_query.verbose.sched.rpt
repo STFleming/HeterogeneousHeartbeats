@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'hhb_query'
 ================================================================
-* Date:           Wed Apr 16 12:52:22 2014
+* Date:           Thu Apr 17 14:46:14 2014
 
 * Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
 * Project:        hhb_query
@@ -29,7 +29,7 @@
     |  Latency  |  Interval | Pipeline|
     | min | max | min | max |   Type  |
     +-----+-----+-----+-----+---------+
-    |   10|   10|   11|   11|   none  |
+    |   11|   11|   12|   12|   none  |
     +-----+-----+-----+-----+---------+
 
     + Detail: 
@@ -41,7 +41,7 @@
         |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
         | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
         +----------+-----+-----+----------+-----------+-----------+------+----------+
-        |- Loop 1  |    6|    6|         7|          1|          1|     1|    yes   |
+        |- Loop 1  |    7|    7|         8|          1|          1|     1|    yes   |
         +----------+-----+-----+----------+-----------+-----------+------+----------+
 
 
@@ -121,15 +121,15 @@ HasImplIP: 0
 IsGatedGlobalClock: 0
 
 + Individual pipeline summary: 
-  * Pipeline-0: initiation interval (II) = 1, depth = 7
+  * Pipeline-0: initiation interval (II) = 1, depth = 8
 
 
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states: 11
+* Number of FSM states: 12
 * Pipeline: 1
-  Pipeline-0: II = 1, D = 7, States = { 3 4 5 6 7 8 9 }
+  Pipeline-0: II = 1, D = 8, States = { 3 4 5 6 7 8 9 10 }
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
@@ -138,7 +138,7 @@ IsGatedGlobalClock: 0
 2 --> 
 	3  / true
 3 --> 
-	10  / (indvar)
+	11  / (indvar)
 	4  / (!indvar)
 4 --> 
 	5  / true
@@ -151,64 +151,66 @@ IsGatedGlobalClock: 0
 8 --> 
 	9  / true
 9 --> 
-	3  / true
+	10  / true
 10 --> 
-	11  / true
+	3  / true
 11 --> 
+	12  / true
+12 --> 
 * FSM state operations: 
 
  <State 1>: 0.00ns
 ST_1: heartbeat_record_phys_addr_read [2/2] 0.00ns
 :5  %heartbeat_record_phys_addr_read = call i32 @_ssdm_op_Read.ap_none.i32(i32 %heartbeat_record_phys_addr) nounwind
 
-ST_1: stg_13 [2/2] 0.00ns
+ST_1: stg_14 [2/2] 0.00ns
 :13  call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 0) nounwind
 
 
  <State 2>: 1.30ns
-ST_2: stg_14 [1/1] 0.00ns
+ST_2: stg_15 [1/1] 0.00ns
 :0  call void (...)* @_ssdm_op_SpecBitsMap(i32* %a) nounwind, !map !0
 
-ST_2: stg_15 [1/1] 0.00ns
+ST_2: stg_16 [1/1] 0.00ns
 :1  call void (...)* @_ssdm_op_SpecBitsMap(i32 %heartbeat_record_phys_addr) nounwind, !map !6
 
-ST_2: stg_16 [1/1] 0.00ns
+ST_2: stg_17 [1/1] 0.00ns
 :2  call void (...)* @_ssdm_op_SpecBitsMap(i32* %current_heartbeat) nounwind, !map !12
 
-ST_2: stg_17 [1/1] 0.00ns
+ST_2: stg_18 [1/1] 0.00ns
 :3  call void (...)* @_ssdm_op_SpecBitsMap(i32* %status) nounwind, !map !16
 
-ST_2: stg_18 [1/1] 0.00ns
+ST_2: stg_19 [1/1] 0.00ns
 :4  call void (...)* @_ssdm_op_SpecTopModule([10 x i8]* @str) nounwind
 
 ST_2: heartbeat_record_phys_addr_read [1/2] 0.00ns
 :5  %heartbeat_record_phys_addr_read = call i32 @_ssdm_op_Read.ap_none.i32(i32 %heartbeat_record_phys_addr) nounwind
 
-ST_2: stg_20 [1/1] 0.00ns
+ST_2: stg_21 [1/1] 0.00ns
 :6  call void (...)* @_ssdm_op_SpecBus(i32* %a, [7 x i8]* @p_str, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
 
-ST_2: stg_21 [1/1] 0.00ns
+ST_2: stg_22 [1/1] 0.00ns
 :7  call void (...)* @_ssdm_op_SpecIFCore(i32* %a, [1 x i8]* @p_str1, [6 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
-ST_2: stg_22 [1/1] 0.00ns
+ST_2: stg_23 [1/1] 0.00ns
 :8  call void (...)* @_ssdm_op_SpecIFCore(i32 0, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
 
-ST_2: stg_23 [1/1] 0.00ns
+ST_2: stg_24 [1/1] 0.00ns
 :9  call void (...)* @_ssdm_op_SpecWire(i32 %heartbeat_record_phys_addr, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
 
-ST_2: stg_24 [1/1] 0.00ns
+ST_2: stg_25 [1/1] 0.00ns
 :10  call void (...)* @_ssdm_op_SpecIFCore(i32 %heartbeat_record_phys_addr, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
 
-ST_2: stg_25 [1/1] 0.00ns
+ST_2: stg_26 [1/1] 0.00ns
 :11  call void (...)* @_ssdm_op_SpecWire(i32* %current_heartbeat, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
 
-ST_2: stg_26 [1/1] 0.00ns
+ST_2: stg_27 [1/1] 0.00ns
 :12  call void (...)* @_ssdm_op_SpecWire(i32* %status, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
 
-ST_2: stg_27 [1/2] 0.00ns
+ST_2: stg_28 [1/2] 0.00ns
 :13  call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 0) nounwind
 
-ST_2: stg_28 [1/1] 0.00ns
+ST_2: stg_29 [1/1] 0.00ns
 :14  call void (...)* @_ssdm_op_SpecIFCore(i32* %status, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
 
 ST_2: tmp_1 [1/1] 0.00ns
@@ -220,22 +222,22 @@ ST_2: tmp_2 [1/1] 0.00ns
 ST_2: a_addr [1/1] 0.00ns
 :17  %a_addr = getelementptr inbounds i32* %a, i64 %tmp_2
 
-ST_2: stg_32 [1/1] 1.30ns
+ST_2: stg_33 [1/1] 1.30ns
 :18  br label %burst.rd.header
 
 
  <State 3>: 0.00ns
 ST_3: buff_0_s [1/1] 0.00ns
-burst.rd.header:0  %buff_0_s = phi i32 [ undef, %0 ], [ %buff_0, %burst.rd.body1 ]
+burst.rd.header:0  %buff_0_s = phi i32 [ undef, %0 ], [ %phitmp, %burst.rd.body1 ]
 
 ST_3: indvar [1/1] 0.00ns
 burst.rd.header:1  %indvar = phi i1 [ false, %0 ], [ true, %burst.rd.body1 ]
 
-ST_3: stg_35 [1/1] 0.00ns
+ST_3: stg_36 [1/1] 0.00ns
 burst.rd.header:2  br i1 %indvar, label %burst.rd.end, label %burst.rd.body1
 
-ST_3: stg_36 [1/1] 0.00ns
-burst.rd.body1:6  br label %burst.rd.header
+ST_3: stg_37 [1/1] 0.00ns
+burst.rd.body1:7  br label %burst.rd.header
 
 
  <State 4>: 8.75ns
@@ -264,41 +266,46 @@ burst.rd.body1:3  %a_addr_req = call i1 @_ssdm_op_ReadReq.ap_bus.i32P(i32* %a_ad
 
 
  <State 9>: 8.75ns
-ST_9: empty [1/1] 0.00ns
-burst.rd.body1:0  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1) nounwind
-
-ST_9: burstread_rbegin [1/1] 0.00ns
-burst.rd.body1:1  %burstread_rbegin = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str8) nounwind
-
-ST_9: empty_4 [1/1] 0.00ns
-burst.rd.body1:2  %empty_4 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str7) nounwind
-
 ST_9: buff_0 [1/1] 8.75ns
 burst.rd.body1:4  %buff_0 = call i32 @_ssdm_op_Read.ap_bus.i32P(i32* %a_addr) nounwind
 
-ST_9: burstread_rend [1/1] 0.00ns
+
+ <State 10>: 2.44ns
+ST_10: empty [1/1] 0.00ns
+burst.rd.body1:0  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1) nounwind
+
+ST_10: burstread_rbegin [1/1] 0.00ns
+burst.rd.body1:1  %burstread_rbegin = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str8) nounwind
+
+ST_10: empty_4 [1/1] 0.00ns
+burst.rd.body1:2  %empty_4 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str7) nounwind
+
+ST_10: burstread_rend [1/1] 0.00ns
 burst.rd.body1:5  %burstread_rend = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str8, i32 %burstread_rbegin) nounwind
 
-
- <State 10>: 0.00ns
-ST_10: stg_47 [2/2] 0.00ns
-burst.rd.end:0  call void @_ssdm_op_Write.ap_none.i32P(i32* %current_heartbeat, i32 %buff_0_s) nounwind
-
-ST_10: stg_48 [2/2] 0.00ns
-burst.rd.end:2  call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 1) nounwind
+ST_10: phitmp [1/1] 2.44ns
+burst.rd.body1:6  %phitmp = add i32 %buff_0, 10
 
 
  <State 11>: 0.00ns
-ST_11: stg_49 [1/2] 0.00ns
+ST_11: stg_49 [2/2] 0.00ns
 burst.rd.end:0  call void @_ssdm_op_Write.ap_none.i32P(i32* %current_heartbeat, i32 %buff_0_s) nounwind
 
-ST_11: stg_50 [1/1] 0.00ns
-burst.rd.end:1  call void (...)* @_ssdm_op_SpecIFCore(i32* %current_heartbeat, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
-
-ST_11: stg_51 [1/2] 0.00ns
+ST_11: stg_50 [2/2] 0.00ns
 burst.rd.end:2  call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 1) nounwind
 
-ST_11: stg_52 [1/1] 0.00ns
+
+ <State 12>: 0.00ns
+ST_12: stg_51 [1/2] 0.00ns
+burst.rd.end:0  call void @_ssdm_op_Write.ap_none.i32P(i32* %current_heartbeat, i32 %buff_0_s) nounwind
+
+ST_12: stg_52 [1/1] 0.00ns
+burst.rd.end:1  call void (...)* @_ssdm_op_SpecIFCore(i32* %current_heartbeat, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
+
+ST_12: stg_53 [1/2] 0.00ns
+burst.rd.end:2  call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 1) nounwind
+
+ST_12: stg_54 [1/1] 0.00ns
 burst.rd.end:3  ret void
 
 
@@ -321,6 +328,7 @@ N/A
 	State 9
 	State 10
 	State 11
+	State 12
 
 
 ============================================================

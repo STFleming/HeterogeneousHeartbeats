@@ -51,7 +51,7 @@ Starting synthesis...
 xc7z0202default:defaultZ17-349
 ú
 %s*synth2å
-xStarting RTL Elaboration : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 805.328 ; gain = 182.070
+xStarting RTL Elaboration : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 808.328 ; gain = 185.070
 2default:default
 ò
 synthesizing module '%s'638*oasys2'
@@ -103,8 +103,8 @@ L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2
 2982default:default8@Z8-638
 ∏
 synthesizing module '%s'638*oasys2)
-zynq_system_auto_pc_32default:default2Ω
-¶/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_3/synth/zynq_system_auto_pc_3.v2default:default2
+zynq_system_auto_pc_52default:default2Ω
+¶/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_5/synth/zynq_system_auto_pc_5.v2default:default2
 572default:default8@Z8-638
 î
 synthesizing module '%s'638*oasys2F
@@ -6196,10 +6196,10 @@ M
 622default:default8@Z8-256
 Ù
 %done synthesizing module '%s' (%s#%s)256*oasys2)
-zynq_system_auto_pc_32default:default2
+zynq_system_auto_pc_52default:default2
 282default:default2
 12default:default2Ω
-¶/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_3/synth/zynq_system_auto_pc_3.v2default:default2
+¶/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_5/synth/zynq_system_auto_pc_5.v2default:default2
 572default:default8@Z8-256
 “
 %done synthesizing module '%s' (%s#%s)256*oasys2+
@@ -6316,11 +6316,11 @@ U
 2default:default
 Q
 %s*synth2B
-.	Parameter ap_ST_st10_fsm_3 bound to: 3'b011 
+.	Parameter ap_ST_st11_fsm_3 bound to: 3'b011 
 2default:default
 Q
 %s*synth2B
-.	Parameter ap_ST_st11_fsm_4 bound to: 3'b100 
+.	Parameter ap_ST_st12_fsm_4 bound to: 3'b100 
 2default:default
 [
 %s*synth2L
@@ -6346,6 +6346,10 @@ M
 %s*synth2N
 :	Parameter ap_const_lv32_1F bound to: 31 - type: integer 
 2default:default
+\
+%s*synth2M
+9	Parameter ap_const_lv32_A bound to: 10 - type: integer 
+2default:default
 F
 %s*synth27
 #	Parameter ap_true bound to: 1'b1 
@@ -6355,13 +6359,13 @@ F
 current_heartbeat1vld_reg_reg2default:default2:
 &heartbeat_record_phys_addr0vld_reg_reg2default:default2ª
 §/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query.v2default:default2
-4872default:default8@Z8-4471
+5142default:default8@Z8-4471
 ˘
 merging register '%s' into '%s'3619*oasys2&
 status1vld_reg_reg2default:default2:
 &heartbeat_record_phys_addr0vld_reg_reg2default:default2ª
 §/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query.v2default:default2
-4882default:default8@Z8-4471
+5152default:default8@Z8-4471
 Ê
 %done synthesizing module '%s' (%s#%s)256*oasys2
 	hhb_query2default:default2
@@ -7722,8 +7726,8 @@ Ginstance '%s' of module '%s' requires %s connections, but only %s given350*
 32default:default8@Z8-638
 ∏
 synthesizing module '%s'638*oasys2)
-zynq_system_auto_pc_22default:default2Ω
-¶/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/synth/zynq_system_auto_pc_2.v2default:default2
+zynq_system_auto_pc_42default:default2Ω
+¶/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_4/synth/zynq_system_auto_pc_4.v2default:default2
 572default:default8@Z8-638
 §
 synthesizing module '%s'638*oasys2V
@@ -10763,15 +10767,15 @@ Baxi_protocol_converter_v2_1_axi_protocol_converter__parameterized02default:de
 622default:default8@Z8-256
 Ù
 %done synthesizing module '%s' (%s#%s)256*oasys2)
-zynq_system_auto_pc_22default:default2
+zynq_system_auto_pc_42default:default2
 632default:default2
 12default:default2Ω
-¶/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/synth/zynq_system_auto_pc_2.v2default:default2
+¶/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_4/synth/zynq_system_auto_pc_4.v2default:default2
 572default:default8@Z8-256
 ê
 Ginstance '%s' of module '%s' requires %s connections, but only %s given350*oasys2
 auto_pc2default:default2)
-zynq_system_auto_pc_22default:default2
+zynq_system_auto_pc_42default:default2
 592default:default2
 572default:default2ò
 Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
@@ -11000,7 +11004,7 @@ Ginstance '%s' of module '%s' requires %s connections, but only %s given350*
 32default:default8@Z8-256
 ú
 %s*synth2å
-xFinished RTL Elaboration : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 897.148 ; gain = 273.891
+xFinished RTL Elaboration : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 900.148 ; gain = 276.891
 2default:default
 ;
 %s*synth2,
@@ -11126,11 +11130,11 @@ J  A total of 1 instances were transformed.
 2default:defaultZ1-111
 ∂
 %s*synth2¶
-ëFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 1142.504 ; gain = 519.246
+ëFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 1145.520 ; gain = 522.262
 2default:default
 û
 %s*synth2é
-zFinished RTL Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 1142.504 ; gain = 519.246
+zFinished RTL Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 1145.520 ; gain = 522.262
 2default:default
 å
 3inferred FSM for state register '%s' in module '%s'802*oasys2!
@@ -11313,7 +11317,7 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 2default:default
 ≤
 %s*synth2¢
-çFinished Loading Part and Timing Information : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1182.516 ; gain = 559.258
+çFinished Loading Part and Timing Information : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1185.531 ; gain = 562.273
 2default:default
 B
 %s*synth23
@@ -11329,7 +11333,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit       Adders := 2     
+.	   2 Input     32 Bit       Adders := 3     
 2default:default
 Q
 %s*synth2B
@@ -11397,7 +11401,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               32 Bit    Registers := 21    
+.	               32 Bit    Registers := 22    
 2default:default
 Q
 %s*synth2B
@@ -11445,7 +11449,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                1 Bit    Registers := 153   
+.	                1 Bit    Registers := 155   
 2default:default
 0
 %s*synth2!
@@ -11493,11 +11497,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      6 Bit        Muxes := 9     
+.	   5 Input      6 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   5 Input      6 Bit        Muxes := 2     
+.	   2 Input      6 Bit        Muxes := 9     
 2default:default
 Q
 %s*synth2B
@@ -11509,7 +11513,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   5 Input      4 Bit        Muxes := 1     
+.	   6 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -11517,15 +11521,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   6 Input      3 Bit        Muxes := 1     
+.	   5 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	   8 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   6 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -11537,15 +11541,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      1 Bit        Muxes := 6     
-2default:default
-Q
-%s*synth2B
 .	   3 Input      1 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
 .	   2 Input      1 Bit        Muxes := 101   
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 6     
 2default:default
 F
 %s*synth27
@@ -12197,7 +12201,7 @@ B
 2default:default
 A
 %s*synth22
-Module zynq_system_auto_pc_3 
+Module zynq_system_auto_pc_5 
 2default:default
 B
 %s*synth23
@@ -12227,13 +12231,21 @@ B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit       Adders := 1     
+2default:default
 4
 %s*synth2%
 +---Registers : 
 2default:default
 Q
 %s*synth2B
-.	               32 Bit    Registers := 4     
+.	               32 Bit    Registers := 5     
 2default:default
 Q
 %s*synth2B
@@ -12245,7 +12257,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                1 Bit    Registers := 14    
+.	                1 Bit    Registers := 16    
 2default:default
 0
 %s*synth2!
@@ -13357,7 +13369,7 @@ B
 2default:default
 A
 %s*synth22
-Module zynq_system_auto_pc_2 
+Module zynq_system_auto_pc_4 
 2default:default
 B
 %s*synth23
@@ -13486,139 +13498,139 @@ B
 ÿ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2Ã
 ∑\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 €
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2œ
 ∫\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 ﬁ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2“
 Ω\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 ›
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2—
 º\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 „
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2◊
 ¬\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 ›
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2—
 º\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 ‡
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2‘
 ø\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 „
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2◊
 ¬\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 ‚
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2÷
 ¡\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 Ë
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2‹
 «\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[7] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[6] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[5] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[4] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 Â
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2Ÿ
 ƒ\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 Ë
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2‹
 «\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 Î
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2ﬂ
  \inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 Í
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2ﬁ
 …\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2‰
 œ\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 ˙
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[7] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 ˙
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[6] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 ˙
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[5] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 ˙
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[4] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 ÿ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2Ã
 ∑\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 ›
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2—
 º\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[7] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[6] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[5] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[4] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 Â
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2Ÿ
 ƒ\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 ˙
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[7] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 ˙
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[6] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 ˙
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[5] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 ˙
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[4] 2default:default2)
-zynq_system_auto_pc_32default:defaultZ8-3332
+zynq_system_auto_pc_52default:defaultZ8-3332
 ‡
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2Q
 =\inst/hhb_query_U/heartbeat_record_phys_addr0data_reg_reg[1] 2default:default2-
@@ -13629,11 +13641,11 @@ ESequential element (%s) is unused and will be removed from module %s.3332*
 zynq_system_hhb_query_0_02default:defaultZ8-3332
 Ã
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2=
-)\inst/hhb_query_U/a_addr_reg_151_reg[31] 2default:default2-
+)\inst/hhb_query_U/a_addr_reg_158_reg[31] 2default:default2-
 zynq_system_hhb_query_0_02default:defaultZ8-3332
 Ã
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2=
-)\inst/hhb_query_U/a_addr_reg_151_reg[30] 2default:default2-
+)\inst/hhb_query_U/a_addr_reg_158_reg[30] 2default:default2-
 zynq_system_hhb_query_0_02default:defaultZ8-3332
 Â
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2V
@@ -13830,59 +13842,59 @@ ESequential element (%s) is unused and will be removed from module %s.3332*
 Ì
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[65] 2default:default2)
-zynq_system_auto_pc_22default:defaultZ8-3332
+zynq_system_auto_pc_42default:defaultZ8-3332
 Ì
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[64] 2default:default2)
-zynq_system_auto_pc_22default:defaultZ8-3332
+zynq_system_auto_pc_42default:defaultZ8-3332
 Ì
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[63] 2default:default2)
-zynq_system_auto_pc_22default:defaultZ8-3332
+zynq_system_auto_pc_42default:defaultZ8-3332
 Ì
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[62] 2default:default2)
-zynq_system_auto_pc_22default:defaultZ8-3332
+zynq_system_auto_pc_42default:defaultZ8-3332
 Ì
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[49] 2default:default2)
-zynq_system_auto_pc_22default:defaultZ8-3332
+zynq_system_auto_pc_42default:defaultZ8-3332
 Ì
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[48] 2default:default2)
-zynq_system_auto_pc_22default:defaultZ8-3332
+zynq_system_auto_pc_42default:defaultZ8-3332
 Ì
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[43] 2default:default2)
-zynq_system_auto_pc_22default:defaultZ8-3332
+zynq_system_auto_pc_42default:defaultZ8-3332
 Ì
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[42] 2default:default2)
-zynq_system_auto_pc_22default:defaultZ8-3332
+zynq_system_auto_pc_42default:defaultZ8-3332
 Ì
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[41] 2default:default2)
-zynq_system_auto_pc_22default:defaultZ8-3332
+zynq_system_auto_pc_42default:defaultZ8-3332
 Ì
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[40] 2default:default2)
-zynq_system_auto_pc_22default:defaultZ8-3332
+zynq_system_auto_pc_42default:defaultZ8-3332
 Ì
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[37] 2default:default2)
-zynq_system_auto_pc_22default:defaultZ8-3332
+zynq_system_auto_pc_42default:defaultZ8-3332
 Ì
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[65] 2default:default2)
-zynq_system_auto_pc_22default:defaultZ8-3332
+zynq_system_auto_pc_42default:defaultZ8-3332
 Ì
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[64] 2default:default2)
-zynq_system_auto_pc_22default:defaultZ8-3332
+zynq_system_auto_pc_42default:defaultZ8-3332
 Ì
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[63] 2default:default2)
-zynq_system_auto_pc_22default:defaultZ8-3332
+zynq_system_auto_pc_42default:defaultZ8-3332
 ‘
 ÅMessage '%s' appears more than %s times and has been disabled. User can change this message limit to see more message instances.
 14*common2 
@@ -13904,7 +13916,7 @@ Hinst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg2defau
 1212default:default8@Z8-3936
 ™
 %s*synth2ö
-ÖFinished Cross Boundary Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 1192.531 ; gain = 569.273
+ÖFinished Cross Boundary Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:01:34 . Memory (MB): peak = 1195.547 ; gain = 572.289
 2default:default
 ¢
 %s*synth2í
@@ -13934,15 +13946,15 @@ Distributed RAM:
 2default:default
 ï
 %s*synth2Ö
-|zynq_system_auto_pc_3 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg              | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_3/ram__6  | 
+|zynq_system_auto_pc_5 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg              | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_5/ram__6  | 
 2default:default
 ï
 %s*synth2Ö
-|zynq_system_auto_pc_3 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg         | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_3/ram__8  | 
+|zynq_system_auto_pc_5 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg         | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_5/ram__8  | 
 2default:default
 ï
 %s*synth2Ö
-|zynq_system_auto_pc_3 | inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg | User Attribute     | 32 X 1               | RAM32X1D x 1   | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_3/ram__10 | 
+|zynq_system_auto_pc_5 | inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg | User Attribute     | 32 X 1               | RAM32X1D x 1   | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_5/ram__10 | 
 2default:default
 ï
 %s*synth2Ö
@@ -13964,7 +13976,7 @@ R-------------------------------------------------------------------------------
 2default:default
 ü
 %s*synth2è
-{Finished Area Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:28 . Memory (MB): peak = 1233.102 ; gain = 609.844
+{Finished Area Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:01:37 . Memory (MB): peak = 1234.461 ; gain = 611.203
 2default:default
 {
 %s*synth2l
@@ -13972,19 +13984,19 @@ XINFO: Moved 1 constraints on hierarchical pins to their respective driving/load
 2default:default
 Æ
 %s*synth2û
-âFinished Applying XDC Timing Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:01:30 . Memory (MB): peak = 1382.102 ; gain = 758.844
+âFinished Applying XDC Timing Constraints : Time (s): cpu = 00:01:36 ; elapsed = 00:01:39 . Memory (MB): peak = 1383.461 ; gain = 760.203
 2default:default
 °
 %s*synth2ë
-}Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 1399.109 ; gain = 775.852
+}Finished Timing Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:01:39 . Memory (MB): peak = 1400.469 ; gain = 777.211
 2default:default
 †
 %s*synth2ê
-|Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:01:34 . Memory (MB): peak = 1407.117 ; gain = 783.859
+|Finished Technology Mapping : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1409.477 ; gain = 786.219
 2default:default
 p
 %s*synth2a
-Mdesign zynq_system_auto_pc_2 has 4 max_fanout violations cannot be satisfied
+Mdesign zynq_system_auto_pc_4 has 4 max_fanout violations cannot be satisfied
 2default:default
 D
 %s*synth25
@@ -13992,7 +14004,7 @@ D
 2default:default
 ö
 %s*synth2ä
-vFinished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1407.117 ; gain = 783.859
+vFinished IO Insertion : Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 1409.477 ; gain = 786.219
 2default:default
 ;
 %s*synth2,
@@ -14021,11 +14033,11 @@ I+------+------------------+-------+---------+-------+------------------+
 2default:default
 ´
 %s*synth2õ
-ÜFinished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1407.117 ; gain = 783.859
+ÜFinished Renaming Generated Instances : Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 1409.477 ; gain = 786.219
 2default:default
 ®
 %s*synth2ò
-ÉFinished Rebuilding User Hierarchy : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1407.117 ; gain = 783.859
+ÉFinished Rebuilding User Hierarchy : Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 1409.477 ; gain = 786.219
 2default:default
 ¢
 %s*synth2í
@@ -14055,7 +14067,7 @@ Static Shift Register:
 2default:default
 ›
 %s*synth2Õ
-∏|zynq_system_hhb_query_0_0 | inst/hhb_query_U/ap_reg_ppstg_indvar_reg_117_pp0_it5_reg[0] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+∏|zynq_system_hhb_query_0_0 | inst/hhb_query_U/ap_reg_ppstg_indvar_reg_119_pp0_it5_reg[0] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
 2default:default
 ›
 %s*synth2Õ
@@ -14165,7 +14177,7 @@ Report Cell Usage:
 2default:default
 =
 %s*synth2.
-|3     |CARRY4   |    86|
+|3     |CARRY4   |    94|
 2default:default
 =
 %s*synth2.
@@ -14173,7 +14185,7 @@ Report Cell Usage:
 2default:default
 =
 %s*synth2.
-|5     |LUT1     |   242|
+|5     |LUT1     |   273|
 2default:default
 =
 %s*synth2.
@@ -14189,11 +14201,11 @@ Report Cell Usage:
 2default:default
 =
 %s*synth2.
-|9     |LUT5     |   407|
+|9     |LUT5     |   409|
 2default:default
 =
 %s*synth2.
-|10    |LUT6     |   343|
+|10    |LUT6     |   342|
 2default:default
 =
 %s*synth2.
@@ -14237,7 +14249,7 @@ Report Cell Usage:
 2default:default
 =
 %s*synth2.
-|21    |FDRE     |  1627|
+|21    |FDRE     |  1661|
 2default:default
 =
 %s*synth2.
@@ -14266,11 +14278,11 @@ d+------+------------------------------------+----------------------------------
 2default:default
 á
 %s*synth2x
-d|1     |top                                 |                                              |  4088|
+d|1     |top                                 |                                              |  4162|
 2default:default
 á
 %s*synth2x
-d|2     |  zynq_system_i                     |zynq_system                                   |  4088|
+d|2     |  zynq_system_i                     |zynq_system                                   |  4162|
 2default:default
 á
 %s*synth2x
@@ -14278,11 +14290,11 @@ d|3     |    axi_mem_intercon                |zynq_system_axi_mem_intercon_1    
 2default:default
 á
 %s*synth2x
-d|4     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_3                         |   947|
+d|4     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_5                         |   947|
 2default:default
 á
 %s*synth2x
-d|5     |    hhb_query_0                     |zynq_system_hhb_query_0_0                     |  1576|
+d|5     |    hhb_query_0                     |zynq_system_hhb_query_0_0                     |  1650|
 2default:default
 á
 %s*synth2x
@@ -14298,7 +14310,7 @@ d|8     |    processing_system7_0_axi_periph |zynq_system_processing_system7_0_a
 2default:default
 á
 %s*synth2x
-d|9     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_2                         |  1276|
+d|9     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_4                         |  1276|
 2default:default
 á
 %s*synth2x
@@ -14314,7 +14326,7 @@ d+------+------------------------------------+----------------------------------
 2default:default
 ß
 %s*synth2ó
-ÇFinished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1407.117 ; gain = 783.859
+ÇFinished Writing Synthesis Report : Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 1409.477 ; gain = 786.219
 2default:default
 j
 %s*synth2[
@@ -14322,7 +14334,7 @@ GSynthesis finished with 0 errors, 0 critical warnings and 21 warnings.
 2default:default
 •
 %s*synth2ï
-ÄSynthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1407.117 ; gain = 783.859
+ÄSynthesis Optimization Complete : Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 1409.477 ; gain = 786.219
 2default:default
 \
 -Analyzing %s Unisim elements for replacement
@@ -14372,18 +14384,18 @@ U
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
-00:01:412default:default2
-00:01:442default:default2
-1764.6022default:default2
-1016.2732default:defaultZ17-268
+00:01:492default:default2
+00:01:522default:default2
+1766.9612default:default2
+1018.6332default:defaultZ17-268
 <
 %Done setting XDC timing constraints.
 35*timingZ38-35
 Ç
-vreport_utilization: Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.73 . Memory (MB): peak = 1764.605 ; gain = 0.000
+vreport_utilization: Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.79 . Memory (MB): peak = 1766.965 ; gain = 0.000
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Thu Apr 17 14:06:38 20142default:defaultZ17-206
+Thu Apr 17 14:49:50 20142default:defaultZ17-206

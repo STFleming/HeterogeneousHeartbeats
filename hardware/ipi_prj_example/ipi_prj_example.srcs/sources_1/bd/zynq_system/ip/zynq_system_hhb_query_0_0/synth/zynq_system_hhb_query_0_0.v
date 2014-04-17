@@ -48,7 +48,7 @@
 
 
 // IP VLNV: sfleming:HHB:hhb_query:1.0
-// IP Revision: 1404161252
+// IP Revision: 1404171446
 
 (* X_CORE_INFO = "hhb_query_top,Vivado 2013.4" *)
 (* CHECK_LICENSE_TYPE = "zynq_system_hhb_query_0_0,hhb_query_top,{}" *)

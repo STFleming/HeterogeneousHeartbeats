@@ -2,8 +2,8 @@
 # Vivado v2013.4 (64-bit)
 # SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
 # IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
-# Start of session at: Thu Apr 17 14:04:28 2014
-# Process ID: 19379
+# Start of session at: Thu Apr 17 14:47:18 2014
+# Process ID: 21423
 # Log file: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/vivado.log
 # Journal file: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/vivado.jou
 #-----------------------------------------------------------
@@ -24,6 +24,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hhb_query'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/ip'.
+WARNING: [BD 41-1303] One or more IPs have been locked in the design 'zynq_system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
 # puts stdout $bd_location
 /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd
 # open_bd_design $bd_location
@@ -33,10 +34,12 @@ Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_proces
 Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
 Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
 Successfully read diagram <zynq_system> from BD file </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd>
-open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 833.891 ; gain = 79.160
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 833.891 ; gain = 79.160
 # current_bd_design zynq_system
 # upgrade_bd_cells [get_bd_cells [list /hhb_query_0 ] ]
-INFO: [BD 41-1162] The cell '/hhb_query_0' is already at its latest version.
+INFO: [IP_Flow 19-3422] Upgraded zynq_system_hhb_query_0_0 (Hhb_query 1.0) from revision 1404161252 to revision 1404171446
+INFO: [IP_Flow 19-3471] Wrote upgrade log to '/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/zynq_system_hhb_query_0_0.upgrade_log'.
+Wrote  : </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd> 
 WARNING: [Vivado 12-818] No files matched '/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj/ipi_prj.srcs/sources_1/bd/zynq_system/zynq_system.bd'
 # reset_target all [get_files  $current_dir/ipi_prj/ipi_prj.srcs/sources_1/bd/zynq_system/zynq_system.bd]
 WARNING: [Vivado 12-818] No files matched '/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj/ipi_prj.srcs/sources_1/bd/zynq_system/zynq_system.bd'
@@ -44,10 +47,46 @@ WARNING: [Vivado 12-818] No files matched '/home/ee/s/sf306/HeterogeneousHeartbe
 # reset_run synth_1
 # reset_run impl_1
 # launch_runs synth_1
-[Thu Apr 17 14:04:44 2014] Launched synth_1...
+INFO: [BD 41-237] Bus Interface property NUM_READ_OUTSTANDING does not match between /hhb_query_0/S_AXI_BUS_A(1) and /processing_system7_0_axi_periph/s00_couplers/auto_pc/M_AXI(8)
+INFO: [BD 41-237] Bus Interface property NUM_WRITE_OUTSTANDING does not match between /hhb_query_0/S_AXI_BUS_A(1) and /processing_system7_0_axi_periph/s00_couplers/auto_pc/M_AXI(8)
+INFO: [BD 41-237] Bus Interface property NUM_WRITE_OUTSTANDING does not match between /processing_system7_0/S_AXI_GP0(8) and /axi_mem_intercon/s00_couplers/auto_pc/M_AXI(1)
+INFO: [BD 41-237] Bus Interface property NUM_READ_OUTSTANDING does not match between /processing_system7_0/S_AXI_GP0(8) and /axi_mem_intercon/s00_couplers/auto_pc/M_AXI(1)
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/S00_AXI_awlock'(1) to net 'hhb_query_0_M_AXI_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/S00_AXI_arlock'(1) to net 'hhb_query_0_M_AXI_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_GP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_GP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/M00_AXI_bid'(1) to net 'axi_mem_intercon_M00_AXI_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_GP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/M00_AXI_rid'(1) to net 'axi_mem_intercon_M00_AXI_RID'(6) - Only lower order bits will be connected.
+Verilog Output written to : zynq_system.v
+Verilog Output written to : zynq_system_wrapper.v
+Wrote  : </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd> 
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'zynq_system_processing_system7_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block /processing_system7_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'zynq_system_hhb_query_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block /hhb_query_0 .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'zynq_system_rst_processing_system7_0_50M_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'zynq_system_rst_processing_system7_0_50M_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block /rst_processing_system7_0_50M .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'zynq_system_auto_pc_4'...
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:fifo_generator:11.0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:blk_mem_gen:8.1' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block /processing_system7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'zynq_system_auto_pc_5'...
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:fifo_generator:11.0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-616] The current project language is set to Verilog. However the IP definition 'xilinx.com:ip:blk_mem_gen:8.1' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block /axi_mem_intercon/s00_couplers/auto_pc .
+INFO: [BD 41-539] Not generating up to date 'Implementation' target for block design zynq_system
+INFO: [BD 41-1029] Generation completed for the IP Integrator block /processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block /hhb_query_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block /rst_processing_system7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block /processing_system7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block /axi_mem_intercon/s00_couplers/auto_pc .
+[Thu Apr 17 14:47:47 2014] Launched synth_1...
 Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 917.617 ; gain = 69.570
 # wait_on_run synth_1
-[Thu Apr 17 14:04:44 2014] Waiting for synth_1 to finish...
+[Thu Apr 17 14:47:47 2014] Waiting for synth_1 to finish...
 
 *** Running vivado
     with args -log zynq_system_wrapper.rds -m64 -mode batch -messageDb vivado.pb -source zynq_system_wrapper.tcl
@@ -80,8 +119,8 @@ INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/cas_nfs/applications/X
 # set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/zynq_system_rst_processing_system7_0_50M_0.xdc]
 # set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/zynq_system_rst_processing_system7_0_50M_0_ooc.xdc]
 # set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/zynq_system_rst_processing_system7_0_50M_0_board.xdc]
-# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/zynq_system_auto_pc_2_ooc.xdc]
-# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_3/zynq_system_auto_pc_3_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_4/zynq_system_auto_pc_4_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_5/zynq_system_auto_pc_5_ooc.xdc]
 # set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system_ooc.xdc]
 # set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
 # set_property is_locked true [get_files /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd]
@@ -99,7 +138,7 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 805.328 ; gain = 182.070
+Starting RTL Elaboration : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 808.328 ; gain = 185.070
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'zynq_system_wrapper' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system_wrapper.v:3]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system_wrapper.v:69]
@@ -110,7 +149,7 @@ INFO: [Synth 8-638] synthesizing module 'VCC' [/mnt/cas_nfs/applications/Xilinx/
 INFO: [Synth 8-256] done synthesizing module 'VCC' (2#1) [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v:35748]
 INFO: [Synth 8-638] synthesizing module 'zynq_system_axi_mem_intercon_1' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v:1222]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_5VZGPS' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v:298]
-INFO: [Synth 8-638] synthesizing module 'zynq_system_auto_pc_3' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_3/synth/zynq_system_auto_pc_3.v:57]
+INFO: [Synth 8-638] synthesizing module 'zynq_system_auto_pc_5' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_5/synth/zynq_system_auto_pc_5.v:57]
 INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_M_AXI_PROTOCOL bound to: 1 - type: integer 
@@ -1591,7 +1630,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_r_axi3_conv
 INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_r_axi3_conv' (25#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v:61]
 INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_axi3_conv' (26#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v:69]
 INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter' (27#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
-INFO: [Synth 8-256] done synthesizing module 'zynq_system_auto_pc_3' (28#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_3/synth/zynq_system_auto_pc_3.v:57]
+INFO: [Synth 8-256] done synthesizing module 'zynq_system_auto_pc_5' (28#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_5/synth/zynq_system_auto_pc_5.v:57]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_5VZGPS' (29#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v:298]
 INFO: [Synth 8-256] done synthesizing module 'zynq_system_axi_mem_intercon_1' (30#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v:1222]
 INFO: [Synth 8-638] synthesizing module 'zynq_system_hhb_query_0_0' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/synth/zynq_system_hhb_query_0_0.v:56]
@@ -1618,17 +1657,18 @@ INFO: [Synth 8-638] synthesizing module 'hhb_query' [/home/ee/s/sf306/Heterogene
 	Parameter ap_ST_st1_fsm_0 bound to: 3'b000 
 	Parameter ap_ST_st2_fsm_1 bound to: 3'b001 
 	Parameter ap_ST_pp0_stg0_fsm_2 bound to: 3'b010 
-	Parameter ap_ST_st10_fsm_3 bound to: 3'b011 
-	Parameter ap_ST_st11_fsm_4 bound to: 3'b100 
+	Parameter ap_ST_st11_fsm_3 bound to: 3'b011 
+	Parameter ap_ST_st12_fsm_4 bound to: 3'b100 
 	Parameter ap_const_lv32_0 bound to: 0 - type: integer 
 	Parameter ap_const_lv1_0 bound to: 1'b0 
 	Parameter ap_const_lv1_1 bound to: 1'b1 
 	Parameter ap_const_lv32_1 bound to: 1 - type: integer 
 	Parameter ap_const_lv32_2 bound to: 2 - type: integer 
 	Parameter ap_const_lv32_1F bound to: 31 - type: integer 
+	Parameter ap_const_lv32_A bound to: 10 - type: integer 
 	Parameter ap_true bound to: 1'b1 
-INFO: [Synth 8-4471] merging register 'current_heartbeat1vld_reg_reg' into 'heartbeat_record_phys_addr0vld_reg_reg' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query.v:487]
-INFO: [Synth 8-4471] merging register 'status1vld_reg_reg' into 'heartbeat_record_phys_addr0vld_reg_reg' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query.v:488]
+INFO: [Synth 8-4471] merging register 'current_heartbeat1vld_reg_reg' into 'heartbeat_record_phys_addr0vld_reg_reg' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query.v:514]
+INFO: [Synth 8-4471] merging register 'status1vld_reg_reg' into 'heartbeat_record_phys_addr0vld_reg_reg' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query.v:515]
 INFO: [Synth 8-256] done synthesizing module 'hhb_query' (31#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query.v:12]
 INFO: [Synth 8-638] synthesizing module 'hhb_query_a_if' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query_a_if.v:10]
 	Parameter C_ID_WIDTH bound to: 1 - type: integer 
@@ -1935,7 +1975,7 @@ WARNING: [Synth 8-689] width (1) of port connection 'S_AXI_GP0_WID' does not mat
 WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'zynq_system_processing_system7_0_0' requires 110 connections, but only 105 given [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v:1044]
 INFO: [Synth 8-638] synthesizing module 'zynq_system_processing_system7_0_axi_periph_0' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v:1627]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_156Q4UY' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v:3]
-INFO: [Synth 8-638] synthesizing module 'zynq_system_auto_pc_2' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/synth/zynq_system_auto_pc_2.v:57]
+INFO: [Synth 8-638] synthesizing module 'zynq_system_auto_pc_4' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_4/synth/zynq_system_auto_pc_4.v:57]
 INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_M_AXI_PROTOCOL bound to: 2 - type: integer 
@@ -2666,8 +2706,8 @@ INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_vector2axi
 INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axi_register_slice__parameterized0' (61#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
 INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s' (62#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v:39]
 INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter__parameterized0' (62#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
-INFO: [Synth 8-256] done synthesizing module 'zynq_system_auto_pc_2' (63#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/synth/zynq_system_auto_pc_2.v:57]
-WARNING: [Synth 8-350] instance 'auto_pc' of module 'zynq_system_auto_pc_2' requires 59 connections, but only 57 given [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v:238]
+INFO: [Synth 8-256] done synthesizing module 'zynq_system_auto_pc_4' (63#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_4/synth/zynq_system_auto_pc_4.v:57]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'zynq_system_auto_pc_4' requires 59 connections, but only 57 given [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v:238]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_156Q4UY' (64#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v:3]
 INFO: [Synth 8-256] done synthesizing module 'zynq_system_processing_system7_0_axi_periph_0' (65#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v:1627]
 INFO: [Synth 8-638] synthesizing module 'zynq_system_rst_processing_system7_0_50M_0' [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/synth/zynq_system_rst_processing_system7_0_50M_0.vhd:71]
@@ -2712,7 +2752,7 @@ WARNING: [Synth 8-350] instance 'rst_processing_system7_0_50M' of module 'zynq_s
 INFO: [Synth 8-256] done synthesizing module 'zynq_system' (72#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v:699]
 INFO: [Synth 8-256] done synthesizing module 'zynq_system_wrapper' (73#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system_wrapper.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 897.148 ; gain = 273.891
+Finished RTL Elaboration : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 900.148 ; gain = 276.891
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -2773,11 +2813,11 @@ Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/Heter
 Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/dont_touch.xdc, line 29).
 Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/dont_touch.xdc, line 34).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 1142.504 ; gain = 519.246
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 1145.520 ; gain = 522.262
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 1142.504 ; gain = 519.246
+Finished RTL Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 1145.520 ; gain = 522.262
 ---------------------------------------------------------------------------------
 
 INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_fsm_reg' in module 'hhb_query'
@@ -2822,7 +2862,7 @@ Part Resources:
 DSPs: 220 (col length:60)
 BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1182.516 ; gain = 559.258
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1185.531 ; gain = 562.273
 ---------------------------------------------------------------------------------
 
 
@@ -2832,7 +2872,7 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     34 Bit       Adders := 2     
-	   2 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 3     
 	   3 Input     32 Bit       Adders := 4     
 	   2 Input     16 Bit       Adders := 2     
 	   2 Input     12 Bit       Adders := 6     
@@ -2849,7 +2889,7 @@ Detailed RTL Component Info :
 	               66 Bit    Registers := 4     
 	               47 Bit    Registers := 2     
 	               34 Bit    Registers := 2     
-	               32 Bit    Registers := 21    
+	               32 Bit    Registers := 22    
 	               30 Bit    Registers := 1     
 	               16 Bit    Registers := 4     
 	               14 Bit    Registers := 2     
@@ -2861,7 +2901,7 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 16    
 	                3 Bit    Registers := 10    
 	                2 Bit    Registers := 28    
-	                1 Bit    Registers := 153   
+	                1 Bit    Registers := 155   
 +---Muxes : 
 	   2 Input     47 Bit        Muxes := 1     
 	   2 Input     34 Bit        Muxes := 6     
@@ -2873,20 +2913,20 @@ Detailed RTL Component Info :
 	   2 Input     12 Bit        Muxes := 4     
 	   2 Input      9 Bit        Muxes := 9     
 	   2 Input      8 Bit        Muxes := 2     
-	   2 Input      6 Bit        Muxes := 9     
 	   5 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 9     
 	   4 Input      5 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 7     
-	   5 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 11    
 	   6 Input      4 Bit        Muxes := 1     
-	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 11    
+	   5 Input      4 Bit        Muxes := 1     
 	   8 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 42    
 	   4 Input      2 Bit        Muxes := 8     
-	   4 Input      1 Bit        Muxes := 6     
 	   3 Input      1 Bit        Muxes := 4     
 	   2 Input      1 Bit        Muxes := 101   
+	   4 Input      1 Bit        Muxes := 6     
 
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -3057,7 +3097,7 @@ Module axi_protocol_converter_v2_1_axi3_conv
 Detailed RTL Component Info : 
 Module axi_protocol_converter_v2_1_axi_protocol_converter 
 Detailed RTL Component Info : 
-Module zynq_system_auto_pc_3 
+Module zynq_system_auto_pc_5 
 Detailed RTL Component Info : 
 Module s00_couplers_imp_5VZGPS 
 Detailed RTL Component Info : 
@@ -3065,11 +3105,13 @@ Module zynq_system_axi_mem_intercon_1
 Detailed RTL Component Info : 
 Module hhb_query 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 4     
+	               32 Bit    Registers := 5     
 	               30 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 14    
+	                1 Bit    Registers := 16    
 +---Muxes : 
 	   2 Input      6 Bit        Muxes := 4     
 	   5 Input      6 Bit        Muxes := 1     
@@ -3347,7 +3389,7 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 Module axi_protocol_converter_v2_1_axi_protocol_converter__parameterized0 
 Detailed RTL Component Info : 
-Module zynq_system_auto_pc_2 
+Module zynq_system_auto_pc_4 
 Detailed RTL Component Info : 
 Module s00_couplers_imp_156Q4UY 
 Detailed RTL Component Info : 
@@ -3387,44 +3429,44 @@ Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[7] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[6] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[5] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[4] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[7] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[6] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[5] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[4] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[7] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[6] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[5] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[4] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[7] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[6] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[5] ) is unused and will be removed from module zynq_system_auto_pc_3.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[4] ) is unused and will be removed from module zynq_system_auto_pc_3.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[7] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[6] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[5] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[4] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[7] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[6] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[5] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[4] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[7] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[6] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[5] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[4] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[7] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[6] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[5] ) is unused and will be removed from module zynq_system_auto_pc_5.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[4] ) is unused and will be removed from module zynq_system_auto_pc_5.
 INFO: [Synth 8-3332] Sequential element (\inst/hhb_query_U/heartbeat_record_phys_addr0data_reg_reg[1] ) is unused and will be removed from module zynq_system_hhb_query_0_0.
 INFO: [Synth 8-3332] Sequential element (\inst/hhb_query_U/heartbeat_record_phys_addr0data_reg_reg[0] ) is unused and will be removed from module zynq_system_hhb_query_0_0.
-INFO: [Synth 8-3332] Sequential element (\inst/hhb_query_U/a_addr_reg_151_reg[31] ) is unused and will be removed from module zynq_system_hhb_query_0_0.
-INFO: [Synth 8-3332] Sequential element (\inst/hhb_query_U/a_addr_reg_151_reg[30] ) is unused and will be removed from module zynq_system_hhb_query_0_0.
+INFO: [Synth 8-3332] Sequential element (\inst/hhb_query_U/a_addr_reg_158_reg[31] ) is unused and will be removed from module zynq_system_hhb_query_0_0.
+INFO: [Synth 8-3332] Sequential element (\inst/hhb_query_U/a_addr_reg_158_reg[30] ) is unused and will be removed from module zynq_system_hhb_query_0_0.
 INFO: [Synth 8-3332] Sequential element (\inst/hhb_query_a_if_U/bus_write/wide_to_narrow.data_valid_reg[3] ) is unused and will be removed from module zynq_system_hhb_query_0_0.
 INFO: [Synth 8-3332] Sequential element (\inst/hhb_query_a_if_U/bus_write/wide_to_narrow.data_valid_reg[2] ) is unused and will be removed from module zynq_system_hhb_query_0_0.
 INFO: [Synth 8-3332] Sequential element (\inst/hhb_query_a_if_U/bus_write/wide_to_narrow.data_valid_reg[1] ) is unused and will be removed from module zynq_system_hhb_query_0_0.
@@ -3473,25 +3515,25 @@ INFO: [Synth 8-3332] Sequential element (\inst/hhb_query_a_if_U/bus_read/addr_bu
 INFO: [Synth 8-3332] Sequential element (\inst/hhb_query_a_if_U/bus_read/addr_buf_reg[32] ) is unused and will be removed from module zynq_system_hhb_query_0_0.
 INFO: [Synth 8-3332] Sequential element (\inst/hhb_query_U/heartbeat_record_phys_addr0data_reg_reg[1] ) is unused and will be removed from module zynq_system_hhb_query_0_0.
 INFO: [Synth 8-3332] Sequential element (\inst/hhb_query_U/heartbeat_record_phys_addr0data_reg_reg[0] ) is unused and will be removed from module zynq_system_hhb_query_0_0.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[65] ) is unused and will be removed from module zynq_system_auto_pc_2.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[64] ) is unused and will be removed from module zynq_system_auto_pc_2.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[63] ) is unused and will be removed from module zynq_system_auto_pc_2.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[62] ) is unused and will be removed from module zynq_system_auto_pc_2.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[49] ) is unused and will be removed from module zynq_system_auto_pc_2.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[48] ) is unused and will be removed from module zynq_system_auto_pc_2.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[43] ) is unused and will be removed from module zynq_system_auto_pc_2.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[42] ) is unused and will be removed from module zynq_system_auto_pc_2.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[41] ) is unused and will be removed from module zynq_system_auto_pc_2.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[40] ) is unused and will be removed from module zynq_system_auto_pc_2.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[37] ) is unused and will be removed from module zynq_system_auto_pc_2.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[65] ) is unused and will be removed from module zynq_system_auto_pc_2.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[64] ) is unused and will be removed from module zynq_system_auto_pc_2.
-INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[63] ) is unused and will be removed from module zynq_system_auto_pc_2.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[65] ) is unused and will be removed from module zynq_system_auto_pc_4.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[64] ) is unused and will be removed from module zynq_system_auto_pc_4.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[63] ) is unused and will be removed from module zynq_system_auto_pc_4.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[62] ) is unused and will be removed from module zynq_system_auto_pc_4.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[49] ) is unused and will be removed from module zynq_system_auto_pc_4.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[48] ) is unused and will be removed from module zynq_system_auto_pc_4.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[43] ) is unused and will be removed from module zynq_system_auto_pc_4.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[42] ) is unused and will be removed from module zynq_system_auto_pc_4.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[41] ) is unused and will be removed from module zynq_system_auto_pc_4.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[40] ) is unused and will be removed from module zynq_system_auto_pc_4.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[37] ) is unused and will be removed from module zynq_system_auto_pc_4.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[65] ) is unused and will be removed from module zynq_system_auto_pc_4.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[64] ) is unused and will be removed from module zynq_system_auto_pc_4.
+INFO: [Synth 8-3332] Sequential element (\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[63] ) is unused and will be removed from module zynq_system_auto_pc_4.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
 WARNING: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 1192.531 ; gain = 569.273
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:01:34 . Memory (MB): peak = 1195.547 ; gain = 572.289
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -3502,9 +3544,9 @@ Distributed RAM:
 +----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+----------------------------------------------------------------------------------------------+
 |Module Name           | RTL Object                                                                                                                                                                              | Inference Criteria | Size (depth X width) | Primitives     | Hierarchical Name                                                                            | 
 +----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+----------------------------------------------------------------------------------------------+
-|zynq_system_auto_pc_3 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg              | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_3/ram__6  | 
-|zynq_system_auto_pc_3 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg         | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_3/ram__8  | 
-|zynq_system_auto_pc_3 | inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg | User Attribute     | 32 X 1               | RAM32X1D x 1   | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_3/ram__10 | 
+|zynq_system_auto_pc_5 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg              | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_5/ram__6  | 
+|zynq_system_auto_pc_5 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg         | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_5/ram__8  | 
+|zynq_system_auto_pc_5 | inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg | User Attribute     | 32 X 1               | RAM32X1D x 1   | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_5/ram__10 | 
 +----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+----------------------------------------------------------------------------------------------+
 
 Note: Mutiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the hierarchical modules names of the RAM and only part of it is displayed.
@@ -3516,7 +3558,7 @@ Finished RAM, DSP and Shift Register Reporting
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:28 . Memory (MB): peak = 1233.102 ; gain = 609.844
+Finished Area Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:01:37 . Memory (MB): peak = 1234.461 ; gain = 611.203
 ---------------------------------------------------------------------------------
 
 
@@ -3529,11 +3571,11 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:01:30 . Memory (MB): peak = 1382.102 ; gain = 758.844
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:36 ; elapsed = 00:01:39 . Memory (MB): peak = 1383.461 ; gain = 760.203
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 1399.109 ; gain = 775.852
+Finished Timing Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:01:39 . Memory (MB): peak = 1400.469 ; gain = 777.211
 ---------------------------------------------------------------------------------
 
 
@@ -3541,7 +3583,7 @@ Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . M
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:01:34 . Memory (MB): peak = 1407.117 ; gain = 783.859
+Finished Technology Mapping : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1409.477 ; gain = 786.219
 ---------------------------------------------------------------------------------
 
 
@@ -3560,14 +3602,14 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-design zynq_system_auto_pc_2 has 4 max_fanout violations cannot be satisfied
+design zynq_system_auto_pc_4 has 4 max_fanout violations cannot be satisfied
 
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Gated Clock Conversion mode: off
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1407.117 ; gain = 783.859
+Finished IO Insertion : Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 1409.477 ; gain = 786.219
 ---------------------------------------------------------------------------------
 
 
@@ -3582,7 +3624,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1407.117 ; gain = 783.859
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 1409.477 ; gain = 786.219
 ---------------------------------------------------------------------------------
 
 
@@ -3590,7 +3632,7 @@ Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1407.117 ; gain = 783.859
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 1409.477 ; gain = 786.219
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -3601,7 +3643,7 @@ Static Shift Register:
 +--------------------------+-------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 |Module Name               | RTL Name                                                    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
 +--------------------------+-------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|zynq_system_hhb_query_0_0 | inst/hhb_query_U/ap_reg_ppstg_indvar_reg_117_pp0_it5_reg[0] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|zynq_system_hhb_query_0_0 | inst/hhb_query_U/ap_reg_ppstg_indvar_reg_119_pp0_it5_reg[0] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
 +--------------------------+-------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 
@@ -3637,14 +3679,14 @@ Report Cell Usage:
 +------+---------+------+
 |1     |BIBUF    |   130|
 |2     |BUFG     |     1|
-|3     |CARRY4   |    86|
+|3     |CARRY4   |    94|
 |4     |GND      |     2|
-|5     |LUT1     |   242|
+|5     |LUT1     |   273|
 |6     |LUT2     |   142|
 |7     |LUT3     |   452|
 |8     |LUT4     |   284|
-|9     |LUT5     |   407|
-|10    |LUT6     |   343|
+|9     |LUT5     |   409|
+|10    |LUT6     |   342|
 |11    |MUXF7    |     1|
 |12    |PS7      |     1|
 |13    |RAM32M   |     2|
@@ -3655,7 +3697,7 @@ Report Cell Usage:
 |18    |VCC      |     1|
 |19    |FDCE     |    66|
 |20    |FDPE     |    33|
-|21    |FDRE     |  1627|
+|21    |FDRE     |  1661|
 |22    |FDSE     |    69|
 +------+---------+------+
 
@@ -3663,24 +3705,24 @@ Report Instance Areas:
 +------+------------------------------------+----------------------------------------------+------+
 |      |Instance                            |Module                                        |Cells |
 +------+------------------------------------+----------------------------------------------+------+
-|1     |top                                 |                                              |  4088|
-|2     |  zynq_system_i                     |zynq_system                                   |  4088|
+|1     |top                                 |                                              |  4162|
+|2     |  zynq_system_i                     |zynq_system                                   |  4162|
 |3     |    axi_mem_intercon                |zynq_system_axi_mem_intercon_1                |   948|
-|4     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_3                         |   947|
-|5     |    hhb_query_0                     |zynq_system_hhb_query_0_0                     |  1576|
+|4     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_5                         |   947|
+|5     |    hhb_query_0                     |zynq_system_hhb_query_0_0                     |  1650|
 |6     |    processing_system7_0            |zynq_system_processing_system7_0_0            |   221|
 |7     |      inst                          |processing_system7_v5_3_processing_system7    |   221|
 |8     |    processing_system7_0_axi_periph |zynq_system_processing_system7_0_axi_periph_0 |  1276|
-|9     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_2                         |  1276|
+|9     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_4                         |  1276|
 |10    |    rst_processing_system7_0_50M    |zynq_system_rst_processing_system7_0_50M_0    |    65|
 |11    |      U0                            |proc_sys_reset__parameterized0                |    65|
 +------+------------------------------------+----------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1407.117 ; gain = 783.859
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 1409.477 ; gain = 786.219
 ---------------------------------------------------------------------------------
 
 Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1407.117 ; gain = 783.859
+Synthesis Optimization Complete : Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 1409.477 ; gain = 786.219
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
@@ -3696,19 +3738,19 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 338 Infos, 150 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 1764.602 ; gain = 1016.273
+synth_design: Time (s): cpu = 00:01:49 ; elapsed = 00:01:52 . Memory (MB): peak = 1766.961 ; gain = 1018.633
 # write_checkpoint zynq_system_wrapper.dcp
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 # report_utilization -file zynq_system_wrapper_utilization_synth.rpt -pb zynq_system_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.73 . Memory (MB): peak = 1764.605 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 17 14:06:38 2014...
-[Thu Apr 17 14:06:42 2014] synth_1 finished
-wait_on_run: Time (s): cpu = 00:00:00.53 ; elapsed = 00:01:58 . Memory (MB): peak = 845.895 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.79 . Memory (MB): peak = 1766.965 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 17 14:49:50 2014...
+[Thu Apr 17 14:49:50 2014] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:00.56 ; elapsed = 00:02:03 . Memory (MB): peak = 920.617 ; gain = 3.000
 # launch_runs impl_1
-[Thu Apr 17 14:06:42 2014] Launched impl_1...
+[Thu Apr 17 14:49:50 2014] Launched impl_1...
 Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/runme.log
 # wait_on_run impl_1
-[Thu Apr 17 14:06:42 2014] Waiting for impl_1 to finish...
+[Thu Apr 17 14:49:50 2014] Waiting for impl_1 to finish...
 
 *** Running vivado
     with args -log zynq_system_wrapper.rdi -applog -m64 -messageDb vivado.pb -mode batch -source zynq_system_wrapper.tcl -notrace
@@ -3744,8 +3786,8 @@ Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_exam
 Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/zynq_system_rst_processing_system7_0_50M_0.xdc] for cell 'zynq_system_i/rst_processing_system7_0_50M/U0'
 Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/zynq_system_rst_processing_system7_0_50M_0_board.xdc] for cell 'zynq_system_i/rst_processing_system7_0_50M/U0'
 Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/zynq_system_rst_processing_system7_0_50M_0_board.xdc] for cell 'zynq_system_i/rst_processing_system7_0_50M/U0'
-Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/.Xil/Vivado-19825-ee-boxer0/dcp/zynq_system_wrapper.xdc]
-Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/.Xil/Vivado-19825-ee-boxer0/dcp/zynq_system_wrapper.xdc]
+Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/.Xil/Vivado-21553-ee-boxer0/dcp/zynq_system_wrapper.xdc]
+Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/.Xil/Vivado-21553-ee-boxer0/dcp/zynq_system_wrapper.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s).
 INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: 
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -3764,7 +3806,7 @@ INFO: [Drc 23-27] Running DRC with 8 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1389.461 ; gain = 12.023
+Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1389.461 ; gain = 12.023
 
 Starting Logic Optimization Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
@@ -3773,33 +3815,33 @@ Phase 1 Retarget
 
 INFO: [Opt 31-138] Pushed 0 inverter(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 29a992a5f
+Phase 1 Retarget | Checksum: 2dffa8f51
 
-Time (s): cpu = 00:00:00.80 ; elapsed = 00:00:00.62 . Memory (MB): peak = 1409.898 ; gain = 20.438
+Time (s): cpu = 00:00:00.60 ; elapsed = 00:00:00.46 . Memory (MB): peak = 1409.930 ; gain = 20.469
 
 Phase 2 Constant Propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s).
-INFO: [Opt 31-10] Eliminated 214 cells.
-Phase 2 Constant Propagation | Checksum: 267328abb
+INFO: [Opt 31-10] Eliminated 244 cells.
+Phase 2 Constant Propagation | Checksum: 30e6705ab
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1409.898 ; gain = 20.438
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.92 . Memory (MB): peak = 1409.930 ; gain = 20.469
 
 Phase 3 Sweep
-INFO: [Opt 31-12] Eliminated 668 unconnected nets.
+INFO: [Opt 31-12] Eliminated 722 unconnected nets.
 INFO: [Opt 31-11] Eliminated 418 unconnected cells.
-Phase 3 Sweep | Checksum: 263e8d943
+Phase 3 Sweep | Checksum: 2b71e13cc
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1409.898 ; gain = 20.438
-Ending Logic Optimization Task | Checksum: 263e8d943
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1409.930 ; gain = 20.469
+Ending Logic Optimization Task | Checksum: 2b71e13cc
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1409.898 ; gain = 20.438
-Implement Debug Cores | Checksum: 1feafb6ba
-Logic Optimization | Checksum: 1feafb6ba
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1409.930 ; gain = 20.469
+Implement Debug Cores | Checksum: 1d12c65db
+Logic Optimization | Checksum: 1d12c65db
 
 Starting Power Optimization Task
-Ending Power Optimization Task | Checksum: 263e8d943
+Ending Power Optimization Task | Checksum: 2b71e13cc
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1409.898 ; gain = 0.000
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1409.930 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 20 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
@@ -3807,7 +3849,7 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.28 . Memory (MB): peak = 1412.109 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.28 . Memory (MB): peak = 1413.156 ; gain = 1.000
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -3822,31 +3864,31 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Core
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1418.113 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1418.160 ; gain = 0.000
 
 Phase 1.1.1 Mandatory Logic Optimization
 INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1418.113 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1418.160 ; gain = 0.000
 Phase 1.1.1 Mandatory Logic Optimization | Checksum: 1959dae68
 
-Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1418.113 ; gain = 0.004
+Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1418.160 ; gain = 0.004
 
 Phase 1.1.2 Build Super Logic Region (SLR) Database
 Phase 1.1.2 Build Super Logic Region (SLR) Database | Checksum: 1959dae68
 
-Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1418.113 ; gain = 0.004
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1418.160 ; gain = 0.004
 
 Phase 1.1.3 Add Constraints
 Phase 1.1.3 Add Constraints | Checksum: 1959dae68
 
-Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1418.113 ; gain = 0.004
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1418.160 ; gain = 0.004
 
 Phase 1.1.4 Build Macros
-Phase 1.1.4 Build Macros | Checksum: 1bcd90b1a
+Phase 1.1.4 Build Macros | Checksum: 1a1f21933
 
-Time (s): cpu = 00:00:00.61 ; elapsed = 00:00:00.61 . Memory (MB): peak = 1418.113 ; gain = 0.004
+Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.59 . Memory (MB): peak = 1418.160 ; gain = 0.004
 
 Phase 1.1.5 Implementation Feasibility check
 WARNING: [Place 30-12] An IO Bus FIXED_IO_mio with more than one IO standard is found. Components associated with this bus are: 
@@ -3904,172 +3946,172 @@ WARNING: [Place 30-12] An IO Bus FIXED_IO_mio with more than one IO standard is 
 	FIXED_IO_mio[51] of IOStandard LVCMOS18
 	FIXED_IO_mio[52] of IOStandard LVCMOS18
 	FIXED_IO_mio[53] of IOStandard LVCMOS18
-Phase 1.1.5 Implementation Feasibility check | Checksum: 1bcd90b1a
+Phase 1.1.5 Implementation Feasibility check | Checksum: 1a1f21933
 
-Time (s): cpu = 00:00:00.85 ; elapsed = 00:00:00.85 . Memory (MB): peak = 1418.113 ; gain = 0.004
+Time (s): cpu = 00:00:00.84 ; elapsed = 00:00:00.84 . Memory (MB): peak = 1418.160 ; gain = 0.004
 
 Phase 1.1.6 Pre-Place Cells
-Phase 1.1.6 Pre-Place Cells | Checksum: 1bcd90b1a
+Phase 1.1.6 Pre-Place Cells | Checksum: 1a1f21933
 
-Time (s): cpu = 00:00:00.86 ; elapsed = 00:00:00.87 . Memory (MB): peak = 1418.113 ; gain = 0.004
+Time (s): cpu = 00:00:00.85 ; elapsed = 00:00:00.85 . Memory (MB): peak = 1418.160 ; gain = 0.004
 
 Phase 1.1.7 IO Placement/ Clock Placement/ Build Placer Device
-Phase 1.1.7 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 125832954
+Phase 1.1.7 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 10a9c376d
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1424.121 ; gain = 6.012
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1424.168 ; gain = 6.012
 
 Phase 1.1.8 Build Placer Netlist Model
 
 Phase 1.1.8.1 Place Init Design
 
 Phase 1.1.8.1.1 Build Clock Data
-Phase 1.1.8.1.1 Build Clock Data | Checksum: 1f06b6a7a
+Phase 1.1.8.1.1 Build Clock Data | Checksum: 193aebfab
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1428.121 ; gain = 10.012
-Phase 1.1.8.1 Place Init Design | Checksum: 148e0a1a4
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1428.168 ; gain = 10.012
+Phase 1.1.8.1 Place Init Design | Checksum: 10dc1379b
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.121 ; gain = 10.012
-Phase 1.1.8 Build Placer Netlist Model | Checksum: 148e0a1a4
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.168 ; gain = 10.012
+Phase 1.1.8 Build Placer Netlist Model | Checksum: 10dc1379b
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.121 ; gain = 10.012
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.168 ; gain = 10.012
 
 Phase 1.1.9 Constrain Clocks/Macros
 
 Phase 1.1.9.1 Constrain Global/Regional Clocks
-Phase 1.1.9.1 Constrain Global/Regional Clocks | Checksum: 148e0a1a4
+Phase 1.1.9.1 Constrain Global/Regional Clocks | Checksum: 10dc1379b
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.121 ; gain = 10.012
-Phase 1.1.9 Constrain Clocks/Macros | Checksum: 148e0a1a4
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.168 ; gain = 10.012
+Phase 1.1.9 Constrain Clocks/Macros | Checksum: 10dc1379b
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.121 ; gain = 10.012
-Phase 1.1 Placer Initialization Core | Checksum: 148e0a1a4
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.168 ; gain = 10.012
+Phase 1.1 Placer Initialization Core | Checksum: 10dc1379b
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.121 ; gain = 10.012
-Phase 1 Placer Initialization | Checksum: 148e0a1a4
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.168 ; gain = 10.012
+Phase 1 Placer Initialization | Checksum: 10dc1379b
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.121 ; gain = 10.012
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.168 ; gain = 10.012
 
 Phase 2 Global Placement
 
 Phase 2.1 Run Budgeter
-Phase 2.1 Run Budgeter | Checksum: 2221cfb00
+Phase 2.1 Run Budgeter | Checksum: 10b610c3d
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1444.121 ; gain = 26.012
-Phase 2 Global Placement | Checksum: 1a051e0ec
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1444.168 ; gain = 26.012
+Phase 2 Global Placement | Checksum: 1b8e1e40d
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 1444.121 ; gain = 26.012
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:08 . Memory (MB): peak = 1444.168 ; gain = 26.012
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1a051e0ec
+Phase 3.1 Commit Multi Column Macros | Checksum: 1b8e1e40d
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 1444.121 ; gain = 26.012
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:08 . Memory (MB): peak = 1444.168 ; gain = 26.012
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1e5b99d77
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1bc9d6f23
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:09 . Memory (MB): peak = 1454.129 ; gain = 36.020
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 1454.184 ; gain = 36.027
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 221b1ac82
+Phase 3.3 Area Swap Optimization | Checksum: 1fb395b38
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 1454.129 ; gain = 36.020
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 1454.184 ; gain = 36.027
 
 Phase 3.4 Timing Path Optimizer
-Phase 3.4 Timing Path Optimizer | Checksum: 1dd7cab8f
+Phase 3.4 Timing Path Optimizer | Checksum: 1b35ae9b2
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 1454.129 ; gain = 36.020
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 1454.184 ; gain = 36.027
 
 Phase 3.5 Commit Small Macros & Core Logic
-Phase 3.5 Commit Small Macros & Core Logic | Checksum: 1e8043978
+Phase 3.5 Commit Small Macros & Core Logic | Checksum: c3fba12b
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:11 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 3.6 Re-assign LUT pins
-Phase 3.6 Re-assign LUT pins | Checksum: 1e8043978
+Phase 3.6 Re-assign LUT pins | Checksum: c3fba12b
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:11 . Memory (MB): peak = 1467.258 ; gain = 49.148
-Phase 3 Detail Placement | Checksum: 1e8043978
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 1468.312 ; gain = 50.156
+Phase 3 Detail Placement | Checksum: c3fba12b
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:11 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4 Post Placement Optimization and Clean-Up
 
 Phase 4.1 PCOPT Shape updates
-Phase 4.1 PCOPT Shape updates | Checksum: 25292c629
+Phase 4.1 PCOPT Shape updates | Checksum: 14ccd27cf
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:11 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4.2 Post Placement Optimization
 
 Phase 4.2.1 Post Placement Timing Optimization
-Phase 4.2.1 Post Placement Timing Optimization | Checksum: 256cdba80
+Phase 4.2.1 Post Placement Timing Optimization | Checksum: 1f5ebbd08
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 1467.258 ; gain = 49.148
-Phase 4.2 Post Placement Optimization | Checksum: 256cdba80
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.312 ; gain = 50.156
+Phase 4.2 Post Placement Optimization | Checksum: 1f5ebbd08
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4.3 Post Placement Cleanup
-Phase 4.3 Post Placement Cleanup | Checksum: 256cdba80
+Phase 4.3 Post Placement Cleanup | Checksum: 1f5ebbd08
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4.4 Placer Reporting
 
 Phase 4.4.1 Congestion Reporting
-Phase 4.4.1 Congestion Reporting | Checksum: 256cdba80
+Phase 4.4.1 Congestion Reporting | Checksum: 1f5ebbd08
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4.4.2 updateTiming final
-Phase 4.4.2 updateTiming final | Checksum: 19bdd4011
+Phase 4.4.2 updateTiming final | Checksum: 16522191d
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:12 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4.4.3 Dump Critical Paths 
-Phase 4.4.3 Dump Critical Paths  | Checksum: 19bdd4011
+Phase 4.4.3 Dump Critical Paths  | Checksum: 16522191d
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:12 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4.4.4 Restore STA
-Phase 4.4.4 Restore STA | Checksum: 19bdd4011
+Phase 4.4.4 Restore STA | Checksum: 16522191d
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:12 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4.4.5 Print Final WNS
-INFO: [Place 30-100] Post Placement Timing Summary | WNS=12.738 | TNS=0.000  |
+INFO: [Place 30-100] Post Placement Timing Summary | WNS=12.650 | TNS=0.000  |
 
-Phase 4.4.5 Print Final WNS | Checksum: 19bdd4011
+Phase 4.4.5 Print Final WNS | Checksum: 16522191d
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 1467.258 ; gain = 49.148
-Phase 4.4 Placer Reporting | Checksum: 19bdd4011
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 1468.312 ; gain = 50.156
+Phase 4.4 Placer Reporting | Checksum: 16522191d
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4.5 Final Placement Cleanup
-Phase 4.5 Final Placement Cleanup | Checksum: 209bb4b56
+Phase 4.5 Final Placement Cleanup | Checksum: 1b1f95386
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 1467.258 ; gain = 49.148
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 209bb4b56
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 1468.312 ; gain = 50.156
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1b1f95386
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 1467.258 ; gain = 49.148
-Ending Placer Task | Checksum: 1f3d41a3c
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 1468.312 ; gain = 50.156
+Ending Placer Task | Checksum: 14878b86a
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 1468.312 ; gain = 50.156
 INFO: [Common 17-83] Releasing license: Implementation
 31 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 1467.258 ; gain = 55.145
-INFO: [Timing 38-163] DEBUG : Generate clock report | CPU: 0.93 secs 
+place_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 1468.312 ; gain = 55.152
+INFO: [Timing 38-163] DEBUG : Generate clock report | CPU: 0.9 secs 
 
-report_utilization: Time (s): cpu = 00:00:00.69 ; elapsed = 00:00:00.81 . Memory (MB): peak = 1471.258 ; gain = 0.000
-INFO: [Designutils 20-134] DEBUG : Generate Control Sets report | CPU: 0.75 secs 
+report_utilization: Time (s): cpu = 00:00:00.67 ; elapsed = 00:00:00.79 . Memory (MB): peak = 1470.312 ; gain = 0.000
+INFO: [Designutils 20-134] DEBUG : Generate Control Sets report | CPU: 0.77 secs 
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.36 . Memory (MB): peak = 1471.262 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.36 . Memory (MB): peak = 1470.316 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -4087,175 +4129,151 @@ Starting Route Task
 Phase 1 Build RT Design
 
 Phase 1.1 Build Netlist & NodeGraph
-Phase 1.1 Build Netlist & NodeGraph | Checksum: 1f3d41a3c
+Phase 1.1 Build Netlist & NodeGraph | Checksum: 14878b86a
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1604.797 ; gain = 120.539
-Phase 1 Build RT Design | Checksum: 182d69d75
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1604.852 ; gain = 118.539
+Phase 1 Build RT Design | Checksum: 2e61df82
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1604.797 ; gain = 120.539
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1604.852 ; gain = 118.539
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 182d69d75
+Phase 2.1 Create Timer | Checksum: 2e61df82
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1604.801 ; gain = 120.543
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1604.855 ; gain = 118.543
 
 Phase 2.2 Restore Routing
-Phase 2.2 Restore Routing | Checksum: 182d69d75
+Phase 2.2 Restore Routing | Checksum: 2e61df82
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1619.852 ; gain = 135.594
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1617.906 ; gain = 131.594
 
 Phase 2.3 Special Net Routing
  Number of Nodes with overlaps = 0
-Phase 2.3 Special Net Routing | Checksum: 13e5f4043
+Phase 2.3 Special Net Routing | Checksum: 138d18434
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 2.4 Local Clock Net Routing
-Phase 2.4 Local Clock Net Routing | Checksum: 13e5f4043
+Phase 2.4 Local Clock Net Routing | Checksum: 138d18434
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 2.5 Update Timing
 
 Phase 2.5.1 Update timing with NCN CRPR
 
 Phase 2.5.1.1 Hold Budgeting
-Phase 2.5.1.1 Hold Budgeting | Checksum: 13e5f4043
+Phase 2.5.1.1 Hold Budgeting | Checksum: 138d18434
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 1638.852 ; gain = 154.594
-Phase 2.5.1 Update timing with NCN CRPR | Checksum: 13e5f4043
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 1636.906 ; gain = 150.594
+Phase 2.5.1 Update timing with NCN CRPR | Checksum: 138d18434
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 1638.852 ; gain = 154.594
-Phase 2.5 Update Timing | Checksum: 13e5f4043
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 1636.906 ; gain = 150.594
+Phase 2.5 Update Timing | Checksum: 138d18434
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 1638.852 ; gain = 154.594
-INFO: [Route 35-57] Estimated Timing Summary | WNS=12.7   | TNS=0      | WHS=-0.189 | THS=-42.8  |
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 1636.906 ; gain = 150.594
+INFO: [Route 35-57] Estimated Timing Summary | WNS=12.6   | TNS=0      | WHS=-0.24  | THS=-46    |
 
 
 Phase 2.6 Budgeting
-Phase 2.6 Budgeting | Checksum: 13e5f4043
+Phase 2.6 Budgeting | Checksum: 138d18434
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-Phase 2 Router Initialization | Checksum: 13e5f4043
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
+Phase 2 Router Initialization | Checksum: 138d18434
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: c5a6068a
+Phase 3 Initial Routing | Checksum: f1cdfe50
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
 
 Phase 4.1.1 Remove Overlaps
- Number of Nodes with overlaps = 153
+ Number of Nodes with overlaps = 148
  Number of Nodes with overlaps = 0
-Phase 4.1.1 Remove Overlaps | Checksum: daaa3593
+Phase 4.1.1 Remove Overlaps | Checksum: 11f0d98e5
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 4.1.2 Update Timing
-Phase 4.1.2 Update Timing | Checksum: daaa3593
+Phase 4.1.2 Update Timing | Checksum: 11f0d98e5
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-INFO: [Route 35-57] Estimated Timing Summary | WNS=11.7   | TNS=0      | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
+INFO: [Route 35-57] Estimated Timing Summary | WNS=11.4   | TNS=0      | WHS=N/A    | THS=N/A    |
 
 
 Phase 4.1.3 collectNewHoldAndFix
-Phase 4.1.3 collectNewHoldAndFix | Checksum: 3de92c79
+Phase 4.1.3 collectNewHoldAndFix | Checksum: 130b08566
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-Phase 4.1 Global Iteration 0 | Checksum: 3de92c79
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
+Phase 4.1 Global Iteration 0 | Checksum: 130b08566
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 4.2 Global Iteration 1
 
 Phase 4.2.1 Remove Overlaps
- Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 10
  Number of Nodes with overlaps = 0
-Phase 4.2.1 Remove Overlaps | Checksum: 10a56a638
+Phase 4.2.1 Remove Overlaps | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 4.2.2 Update Timing
-Phase 4.2.2 Update Timing | Checksum: 10a56a638
+Phase 4.2.2 Update Timing | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-INFO: [Route 35-57] Estimated Timing Summary | WNS=11.7   | TNS=0      | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
+INFO: [Route 35-57] Estimated Timing Summary | WNS=11.4   | TNS=0      | WHS=N/A    | THS=N/A    |
 
 
 Phase 4.2.3 collectNewHoldAndFix
-Phase 4.2.3 collectNewHoldAndFix | Checksum: 1e0208ce1
+Phase 4.2.3 collectNewHoldAndFix | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-Phase 4.2 Global Iteration 1 | Checksum: 1e0208ce1
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
+Phase 4.2 Global Iteration 1 | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
+Phase 4 Rip-up And Reroute | Checksum: 1bb0b1eb6
 
-Phase 4.3 Global Iteration 2
-
-Phase 4.3.1 Remove Overlaps
- Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 0
-Phase 4.3.1 Remove Overlaps | Checksum: 42d5c5e0
-
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-
-Phase 4.3.2 Update Timing
-Phase 4.3.2 Update Timing | Checksum: 42d5c5e0
-
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-INFO: [Route 35-57] Estimated Timing Summary | WNS=11.7   | TNS=0      | WHS=N/A    | THS=N/A    |
-
-
-Phase 4.3.3 collectNewHoldAndFix
-Phase 4.3.3 collectNewHoldAndFix | Checksum: 42d5c5e0
-
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-Phase 4.3 Global Iteration 2 | Checksum: 42d5c5e0
-
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-Phase 4 Rip-up And Reroute | Checksum: 42d5c5e0
-
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 5 Delay CleanUp
 
 Phase 5.1 Update Timing
-Phase 5.1 Update Timing | Checksum: 42d5c5e0
+Phase 5.1 Update Timing | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:22 . Memory (MB): peak = 1638.852 ; gain = 154.594
-INFO: [Route 35-57] Estimated Timing Summary | WNS=11.7   | TNS=0      | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:22 . Memory (MB): peak = 1636.906 ; gain = 150.594
+INFO: [Route 35-57] Estimated Timing Summary | WNS=11.6   | TNS=0      | WHS=N/A    | THS=N/A    |
 
-Phase 5 Delay CleanUp | Checksum: 42d5c5e0
+Phase 5 Delay CleanUp | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:22 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:22 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Full Hold Analysis
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 42d5c5e0
+Phase 6.1.1 Update Timing | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1638.852 ; gain = 154.594
-INFO: [Route 35-57] Estimated Timing Summary | WNS=11.7   | TNS=0      | WHS=0.055  | THS=0      |
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1636.906 ; gain = 150.594
+INFO: [Route 35-57] Estimated Timing Summary | WNS=11.6   | TNS=0      | WHS=0.036  | THS=0      |
 
-Phase 6.1 Full Hold Analysis | Checksum: 42d5c5e0
+Phase 6.1 Full Hold Analysis | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1638.852 ; gain = 154.594
-Phase 6 Post Hold Fix | Checksum: 42d5c5e0
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1636.906 ; gain = 150.594
+Phase 6 Post Hold Fix | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.433779 %
-  Global Horizontal Routing Utilization  = 0.498563 %
+  Global Vertical Routing Utilization    = 0.463705 %
+  Global Horizontal Routing Utilization  = 0.531525 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -4268,34 +4286,34 @@ Router Utilization Summary
 Phase 7 Verifying routed nets
 
  Verification completed successfully
-Phase 7 Verifying routed nets | Checksum: 42d5c5e0
+Phase 7 Verifying routed nets | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 8 Depositing Routes
-Phase 8 Depositing Routes | Checksum: a620807d
+Phase 8 Depositing Routes | Checksum: 10a98bc5e
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 9 Post Router Timing
-INFO: [Route 35-20] Post Routing Timing Summary | WNS=11.680 | TNS=0.000  | WHS=0.055  | THS=0.000  |
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=11.597 | TNS=0.000  | WHS=0.037  | THS=0.000  |
 
 INFO: [Route 35-61] The design met the timing requirement.
-Phase 9 Post Router Timing | Checksum: a620807d
+Phase 9 Post Router Timing | Checksum: 10a98bc5e
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:23 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:23 . Memory (MB): peak = 1636.906 ; gain = 150.594
 INFO: [Route 35-16] Router Completed Successfully
-Ending Route Task | Checksum: a620807d
+Ending Route Task | Checksum: 10a98bc5e
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:23 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:23 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Routing Is Done.
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:23 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:23 . Memory (MB): peak = 1636.906 ; gain = 150.594
 INFO: [Common 17-83] Releasing license: Implementation
-48 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+47 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:24 . Memory (MB): peak = 1638.852 ; gain = 167.590
+route_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:24 . Memory (MB): peak = 1636.906 ; gain = 166.590
 INFO: [Drc 23-27] Running DRC with 8 threads
 INFO: [Coretcl 2-168] The results of DRC are in file /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/zynq_system_wrapper_drc_routed.rpt.
 Running Vector-less Activity Propagation...
@@ -4306,15 +4324,15 @@ INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum o
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.46 . Memory (MB): peak = 1638.855 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 17 14:08:02 2014...
-[Thu Apr 17 14:08:04 2014] impl_1 finished
-wait_on_run: Time (s): cpu = 00:00:00.57 ; elapsed = 00:01:23 . Memory (MB): peak = 845.895 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.46 . Memory (MB): peak = 1636.910 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 17 14:51:09 2014...
+[Thu Apr 17 14:51:13 2014] impl_1 finished
+wait_on_run: Time (s): cpu = 00:00:00.61 ; elapsed = 00:01:23 . Memory (MB): peak = 920.621 ; gain = 0.000
 # launch_runs impl_1 -to_step write_bitstream
-[Thu Apr 17 14:08:04 2014] Launched impl_1...
+[Thu Apr 17 14:51:13 2014] Launched impl_1...
 Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/runme.log
 # wait_on_run impl_1
-[Thu Apr 17 14:08:04 2014] Waiting for impl_1 to finish...
+[Thu Apr 17 14:51:13 2014] Waiting for impl_1 to finish...
 
 *** Running vivado
     with args -log zynq_system_wrapper.rdi -applog -m64 -messageDb vivado.pb -mode batch -source zynq_system_wrapper.tcl -notrace
@@ -4350,8 +4368,8 @@ Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_exam
 Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/zynq_system_rst_processing_system7_0_50M_0.xdc] for cell 'zynq_system_i/rst_processing_system7_0_50M/U0'
 Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/zynq_system_rst_processing_system7_0_50M_0_board.xdc] for cell 'zynq_system_i/rst_processing_system7_0_50M/U0'
 Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/zynq_system_rst_processing_system7_0_50M_0_board.xdc] for cell 'zynq_system_i/rst_processing_system7_0_50M/U0'
-Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/.Xil/Vivado-19825-ee-boxer0/dcp/zynq_system_wrapper.xdc]
-Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/.Xil/Vivado-19825-ee-boxer0/dcp/zynq_system_wrapper.xdc]
+Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/.Xil/Vivado-21553-ee-boxer0/dcp/zynq_system_wrapper.xdc]
+Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/.Xil/Vivado-21553-ee-boxer0/dcp/zynq_system_wrapper.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s).
 INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: 
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -4370,7 +4388,7 @@ INFO: [Drc 23-27] Running DRC with 8 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1389.461 ; gain = 12.023
+Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1389.461 ; gain = 12.023
 
 Starting Logic Optimization Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
@@ -4379,33 +4397,33 @@ Phase 1 Retarget
 
 INFO: [Opt 31-138] Pushed 0 inverter(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 29a992a5f
+Phase 1 Retarget | Checksum: 2dffa8f51
 
-Time (s): cpu = 00:00:00.80 ; elapsed = 00:00:00.62 . Memory (MB): peak = 1409.898 ; gain = 20.438
+Time (s): cpu = 00:00:00.60 ; elapsed = 00:00:00.46 . Memory (MB): peak = 1409.930 ; gain = 20.469
 
 Phase 2 Constant Propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s).
-INFO: [Opt 31-10] Eliminated 214 cells.
-Phase 2 Constant Propagation | Checksum: 267328abb
+INFO: [Opt 31-10] Eliminated 244 cells.
+Phase 2 Constant Propagation | Checksum: 30e6705ab
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1409.898 ; gain = 20.438
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.92 . Memory (MB): peak = 1409.930 ; gain = 20.469
 
 Phase 3 Sweep
-INFO: [Opt 31-12] Eliminated 668 unconnected nets.
+INFO: [Opt 31-12] Eliminated 722 unconnected nets.
 INFO: [Opt 31-11] Eliminated 418 unconnected cells.
-Phase 3 Sweep | Checksum: 263e8d943
+Phase 3 Sweep | Checksum: 2b71e13cc
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1409.898 ; gain = 20.438
-Ending Logic Optimization Task | Checksum: 263e8d943
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1409.930 ; gain = 20.469
+Ending Logic Optimization Task | Checksum: 2b71e13cc
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1409.898 ; gain = 20.438
-Implement Debug Cores | Checksum: 1feafb6ba
-Logic Optimization | Checksum: 1feafb6ba
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1409.930 ; gain = 20.469
+Implement Debug Cores | Checksum: 1d12c65db
+Logic Optimization | Checksum: 1d12c65db
 
 Starting Power Optimization Task
-Ending Power Optimization Task | Checksum: 263e8d943
+Ending Power Optimization Task | Checksum: 2b71e13cc
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1409.898 ; gain = 0.000
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1409.930 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 20 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
@@ -4413,7 +4431,7 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.28 . Memory (MB): peak = 1412.109 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.28 . Memory (MB): peak = 1413.156 ; gain = 1.000
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -4428,31 +4446,31 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Core
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1418.113 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1418.160 ; gain = 0.000
 
 Phase 1.1.1 Mandatory Logic Optimization
 INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1418.113 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1418.160 ; gain = 0.000
 Phase 1.1.1 Mandatory Logic Optimization | Checksum: 1959dae68
 
-Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1418.113 ; gain = 0.004
+Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1418.160 ; gain = 0.004
 
 Phase 1.1.2 Build Super Logic Region (SLR) Database
 Phase 1.1.2 Build Super Logic Region (SLR) Database | Checksum: 1959dae68
 
-Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1418.113 ; gain = 0.004
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1418.160 ; gain = 0.004
 
 Phase 1.1.3 Add Constraints
 Phase 1.1.3 Add Constraints | Checksum: 1959dae68
 
-Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1418.113 ; gain = 0.004
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1418.160 ; gain = 0.004
 
 Phase 1.1.4 Build Macros
-Phase 1.1.4 Build Macros | Checksum: 1bcd90b1a
+Phase 1.1.4 Build Macros | Checksum: 1a1f21933
 
-Time (s): cpu = 00:00:00.61 ; elapsed = 00:00:00.61 . Memory (MB): peak = 1418.113 ; gain = 0.004
+Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.59 . Memory (MB): peak = 1418.160 ; gain = 0.004
 
 Phase 1.1.5 Implementation Feasibility check
 WARNING: [Place 30-12] An IO Bus FIXED_IO_mio with more than one IO standard is found. Components associated with this bus are: 
@@ -4510,172 +4528,172 @@ WARNING: [Place 30-12] An IO Bus FIXED_IO_mio with more than one IO standard is 
 	FIXED_IO_mio[51] of IOStandard LVCMOS18
 	FIXED_IO_mio[52] of IOStandard LVCMOS18
 	FIXED_IO_mio[53] of IOStandard LVCMOS18
-Phase 1.1.5 Implementation Feasibility check | Checksum: 1bcd90b1a
+Phase 1.1.5 Implementation Feasibility check | Checksum: 1a1f21933
 
-Time (s): cpu = 00:00:00.85 ; elapsed = 00:00:00.85 . Memory (MB): peak = 1418.113 ; gain = 0.004
+Time (s): cpu = 00:00:00.84 ; elapsed = 00:00:00.84 . Memory (MB): peak = 1418.160 ; gain = 0.004
 
 Phase 1.1.6 Pre-Place Cells
-Phase 1.1.6 Pre-Place Cells | Checksum: 1bcd90b1a
+Phase 1.1.6 Pre-Place Cells | Checksum: 1a1f21933
 
-Time (s): cpu = 00:00:00.86 ; elapsed = 00:00:00.87 . Memory (MB): peak = 1418.113 ; gain = 0.004
+Time (s): cpu = 00:00:00.85 ; elapsed = 00:00:00.85 . Memory (MB): peak = 1418.160 ; gain = 0.004
 
 Phase 1.1.7 IO Placement/ Clock Placement/ Build Placer Device
-Phase 1.1.7 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 125832954
+Phase 1.1.7 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 10a9c376d
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1424.121 ; gain = 6.012
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1424.168 ; gain = 6.012
 
 Phase 1.1.8 Build Placer Netlist Model
 
 Phase 1.1.8.1 Place Init Design
 
 Phase 1.1.8.1.1 Build Clock Data
-Phase 1.1.8.1.1 Build Clock Data | Checksum: 1f06b6a7a
+Phase 1.1.8.1.1 Build Clock Data | Checksum: 193aebfab
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1428.121 ; gain = 10.012
-Phase 1.1.8.1 Place Init Design | Checksum: 148e0a1a4
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1428.168 ; gain = 10.012
+Phase 1.1.8.1 Place Init Design | Checksum: 10dc1379b
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.121 ; gain = 10.012
-Phase 1.1.8 Build Placer Netlist Model | Checksum: 148e0a1a4
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.168 ; gain = 10.012
+Phase 1.1.8 Build Placer Netlist Model | Checksum: 10dc1379b
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.121 ; gain = 10.012
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.168 ; gain = 10.012
 
 Phase 1.1.9 Constrain Clocks/Macros
 
 Phase 1.1.9.1 Constrain Global/Regional Clocks
-Phase 1.1.9.1 Constrain Global/Regional Clocks | Checksum: 148e0a1a4
+Phase 1.1.9.1 Constrain Global/Regional Clocks | Checksum: 10dc1379b
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.121 ; gain = 10.012
-Phase 1.1.9 Constrain Clocks/Macros | Checksum: 148e0a1a4
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.168 ; gain = 10.012
+Phase 1.1.9 Constrain Clocks/Macros | Checksum: 10dc1379b
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.121 ; gain = 10.012
-Phase 1.1 Placer Initialization Core | Checksum: 148e0a1a4
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.168 ; gain = 10.012
+Phase 1.1 Placer Initialization Core | Checksum: 10dc1379b
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.121 ; gain = 10.012
-Phase 1 Placer Initialization | Checksum: 148e0a1a4
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.168 ; gain = 10.012
+Phase 1 Placer Initialization | Checksum: 10dc1379b
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.121 ; gain = 10.012
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1428.168 ; gain = 10.012
 
 Phase 2 Global Placement
 
 Phase 2.1 Run Budgeter
-Phase 2.1 Run Budgeter | Checksum: 2221cfb00
+Phase 2.1 Run Budgeter | Checksum: 10b610c3d
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1444.121 ; gain = 26.012
-Phase 2 Global Placement | Checksum: 1a051e0ec
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1444.168 ; gain = 26.012
+Phase 2 Global Placement | Checksum: 1b8e1e40d
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 1444.121 ; gain = 26.012
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:08 . Memory (MB): peak = 1444.168 ; gain = 26.012
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1a051e0ec
+Phase 3.1 Commit Multi Column Macros | Checksum: 1b8e1e40d
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 1444.121 ; gain = 26.012
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:08 . Memory (MB): peak = 1444.168 ; gain = 26.012
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1e5b99d77
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1bc9d6f23
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:09 . Memory (MB): peak = 1454.129 ; gain = 36.020
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 1454.184 ; gain = 36.027
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 221b1ac82
+Phase 3.3 Area Swap Optimization | Checksum: 1fb395b38
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 1454.129 ; gain = 36.020
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 1454.184 ; gain = 36.027
 
 Phase 3.4 Timing Path Optimizer
-Phase 3.4 Timing Path Optimizer | Checksum: 1dd7cab8f
+Phase 3.4 Timing Path Optimizer | Checksum: 1b35ae9b2
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 1454.129 ; gain = 36.020
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 1454.184 ; gain = 36.027
 
 Phase 3.5 Commit Small Macros & Core Logic
-Phase 3.5 Commit Small Macros & Core Logic | Checksum: 1e8043978
+Phase 3.5 Commit Small Macros & Core Logic | Checksum: c3fba12b
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:11 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 3.6 Re-assign LUT pins
-Phase 3.6 Re-assign LUT pins | Checksum: 1e8043978
+Phase 3.6 Re-assign LUT pins | Checksum: c3fba12b
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:11 . Memory (MB): peak = 1467.258 ; gain = 49.148
-Phase 3 Detail Placement | Checksum: 1e8043978
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 1468.312 ; gain = 50.156
+Phase 3 Detail Placement | Checksum: c3fba12b
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:11 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4 Post Placement Optimization and Clean-Up
 
 Phase 4.1 PCOPT Shape updates
-Phase 4.1 PCOPT Shape updates | Checksum: 25292c629
+Phase 4.1 PCOPT Shape updates | Checksum: 14ccd27cf
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:11 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4.2 Post Placement Optimization
 
 Phase 4.2.1 Post Placement Timing Optimization
-Phase 4.2.1 Post Placement Timing Optimization | Checksum: 256cdba80
+Phase 4.2.1 Post Placement Timing Optimization | Checksum: 1f5ebbd08
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 1467.258 ; gain = 49.148
-Phase 4.2 Post Placement Optimization | Checksum: 256cdba80
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.312 ; gain = 50.156
+Phase 4.2 Post Placement Optimization | Checksum: 1f5ebbd08
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4.3 Post Placement Cleanup
-Phase 4.3 Post Placement Cleanup | Checksum: 256cdba80
+Phase 4.3 Post Placement Cleanup | Checksum: 1f5ebbd08
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4.4 Placer Reporting
 
 Phase 4.4.1 Congestion Reporting
-Phase 4.4.1 Congestion Reporting | Checksum: 256cdba80
+Phase 4.4.1 Congestion Reporting | Checksum: 1f5ebbd08
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4.4.2 updateTiming final
-Phase 4.4.2 updateTiming final | Checksum: 19bdd4011
+Phase 4.4.2 updateTiming final | Checksum: 16522191d
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:12 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4.4.3 Dump Critical Paths 
-Phase 4.4.3 Dump Critical Paths  | Checksum: 19bdd4011
+Phase 4.4.3 Dump Critical Paths  | Checksum: 16522191d
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:12 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4.4.4 Restore STA
-Phase 4.4.4 Restore STA | Checksum: 19bdd4011
+Phase 4.4.4 Restore STA | Checksum: 16522191d
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:12 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4.4.5 Print Final WNS
-INFO: [Place 30-100] Post Placement Timing Summary | WNS=12.738 | TNS=0.000  |
+INFO: [Place 30-100] Post Placement Timing Summary | WNS=12.650 | TNS=0.000  |
 
-Phase 4.4.5 Print Final WNS | Checksum: 19bdd4011
+Phase 4.4.5 Print Final WNS | Checksum: 16522191d
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 1467.258 ; gain = 49.148
-Phase 4.4 Placer Reporting | Checksum: 19bdd4011
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 1468.312 ; gain = 50.156
+Phase 4.4 Placer Reporting | Checksum: 16522191d
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 1468.312 ; gain = 50.156
 
 Phase 4.5 Final Placement Cleanup
-Phase 4.5 Final Placement Cleanup | Checksum: 209bb4b56
+Phase 4.5 Final Placement Cleanup | Checksum: 1b1f95386
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 1467.258 ; gain = 49.148
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 209bb4b56
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 1468.312 ; gain = 50.156
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1b1f95386
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 1467.258 ; gain = 49.148
-Ending Placer Task | Checksum: 1f3d41a3c
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 1468.312 ; gain = 50.156
+Ending Placer Task | Checksum: 14878b86a
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 1467.258 ; gain = 49.148
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 1468.312 ; gain = 50.156
 INFO: [Common 17-83] Releasing license: Implementation
 31 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 1467.258 ; gain = 55.145
-INFO: [Timing 38-163] DEBUG : Generate clock report | CPU: 0.93 secs 
+place_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 1468.312 ; gain = 55.152
+INFO: [Timing 38-163] DEBUG : Generate clock report | CPU: 0.9 secs 
 
-report_utilization: Time (s): cpu = 00:00:00.69 ; elapsed = 00:00:00.81 . Memory (MB): peak = 1471.258 ; gain = 0.000
-INFO: [Designutils 20-134] DEBUG : Generate Control Sets report | CPU: 0.75 secs 
+report_utilization: Time (s): cpu = 00:00:00.67 ; elapsed = 00:00:00.79 . Memory (MB): peak = 1470.312 ; gain = 0.000
+INFO: [Designutils 20-134] DEBUG : Generate Control Sets report | CPU: 0.77 secs 
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.36 . Memory (MB): peak = 1471.262 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.36 . Memory (MB): peak = 1470.316 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -4693,175 +4711,151 @@ Starting Route Task
 Phase 1 Build RT Design
 
 Phase 1.1 Build Netlist & NodeGraph
-Phase 1.1 Build Netlist & NodeGraph | Checksum: 1f3d41a3c
+Phase 1.1 Build Netlist & NodeGraph | Checksum: 14878b86a
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1604.797 ; gain = 120.539
-Phase 1 Build RT Design | Checksum: 182d69d75
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1604.852 ; gain = 118.539
+Phase 1 Build RT Design | Checksum: 2e61df82
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1604.797 ; gain = 120.539
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1604.852 ; gain = 118.539
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 182d69d75
+Phase 2.1 Create Timer | Checksum: 2e61df82
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1604.801 ; gain = 120.543
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1604.855 ; gain = 118.543
 
 Phase 2.2 Restore Routing
-Phase 2.2 Restore Routing | Checksum: 182d69d75
+Phase 2.2 Restore Routing | Checksum: 2e61df82
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1619.852 ; gain = 135.594
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1617.906 ; gain = 131.594
 
 Phase 2.3 Special Net Routing
  Number of Nodes with overlaps = 0
-Phase 2.3 Special Net Routing | Checksum: 13e5f4043
+Phase 2.3 Special Net Routing | Checksum: 138d18434
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 2.4 Local Clock Net Routing
-Phase 2.4 Local Clock Net Routing | Checksum: 13e5f4043
+Phase 2.4 Local Clock Net Routing | Checksum: 138d18434
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 2.5 Update Timing
 
 Phase 2.5.1 Update timing with NCN CRPR
 
 Phase 2.5.1.1 Hold Budgeting
-Phase 2.5.1.1 Hold Budgeting | Checksum: 13e5f4043
+Phase 2.5.1.1 Hold Budgeting | Checksum: 138d18434
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 1638.852 ; gain = 154.594
-Phase 2.5.1 Update timing with NCN CRPR | Checksum: 13e5f4043
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 1636.906 ; gain = 150.594
+Phase 2.5.1 Update timing with NCN CRPR | Checksum: 138d18434
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 1638.852 ; gain = 154.594
-Phase 2.5 Update Timing | Checksum: 13e5f4043
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 1636.906 ; gain = 150.594
+Phase 2.5 Update Timing | Checksum: 138d18434
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 1638.852 ; gain = 154.594
-INFO: [Route 35-57] Estimated Timing Summary | WNS=12.7   | TNS=0      | WHS=-0.189 | THS=-42.8  |
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 1636.906 ; gain = 150.594
+INFO: [Route 35-57] Estimated Timing Summary | WNS=12.6   | TNS=0      | WHS=-0.24  | THS=-46    |
 
 
 Phase 2.6 Budgeting
-Phase 2.6 Budgeting | Checksum: 13e5f4043
+Phase 2.6 Budgeting | Checksum: 138d18434
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-Phase 2 Router Initialization | Checksum: 13e5f4043
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
+Phase 2 Router Initialization | Checksum: 138d18434
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: c5a6068a
+Phase 3 Initial Routing | Checksum: f1cdfe50
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
 
 Phase 4.1.1 Remove Overlaps
- Number of Nodes with overlaps = 153
+ Number of Nodes with overlaps = 148
  Number of Nodes with overlaps = 0
-Phase 4.1.1 Remove Overlaps | Checksum: daaa3593
+Phase 4.1.1 Remove Overlaps | Checksum: 11f0d98e5
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 4.1.2 Update Timing
-Phase 4.1.2 Update Timing | Checksum: daaa3593
+Phase 4.1.2 Update Timing | Checksum: 11f0d98e5
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-INFO: [Route 35-57] Estimated Timing Summary | WNS=11.7   | TNS=0      | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
+INFO: [Route 35-57] Estimated Timing Summary | WNS=11.4   | TNS=0      | WHS=N/A    | THS=N/A    |
 
 
 Phase 4.1.3 collectNewHoldAndFix
-Phase 4.1.3 collectNewHoldAndFix | Checksum: 3de92c79
+Phase 4.1.3 collectNewHoldAndFix | Checksum: 130b08566
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-Phase 4.1 Global Iteration 0 | Checksum: 3de92c79
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
+Phase 4.1 Global Iteration 0 | Checksum: 130b08566
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 4.2 Global Iteration 1
 
 Phase 4.2.1 Remove Overlaps
- Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 10
  Number of Nodes with overlaps = 0
-Phase 4.2.1 Remove Overlaps | Checksum: 10a56a638
+Phase 4.2.1 Remove Overlaps | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 4.2.2 Update Timing
-Phase 4.2.2 Update Timing | Checksum: 10a56a638
+Phase 4.2.2 Update Timing | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-INFO: [Route 35-57] Estimated Timing Summary | WNS=11.7   | TNS=0      | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
+INFO: [Route 35-57] Estimated Timing Summary | WNS=11.4   | TNS=0      | WHS=N/A    | THS=N/A    |
 
 
 Phase 4.2.3 collectNewHoldAndFix
-Phase 4.2.3 collectNewHoldAndFix | Checksum: 1e0208ce1
+Phase 4.2.3 collectNewHoldAndFix | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-Phase 4.2 Global Iteration 1 | Checksum: 1e0208ce1
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
+Phase 4.2 Global Iteration 1 | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
+Phase 4 Rip-up And Reroute | Checksum: 1bb0b1eb6
 
-Phase 4.3 Global Iteration 2
-
-Phase 4.3.1 Remove Overlaps
- Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 0
-Phase 4.3.1 Remove Overlaps | Checksum: 42d5c5e0
-
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-
-Phase 4.3.2 Update Timing
-Phase 4.3.2 Update Timing | Checksum: 42d5c5e0
-
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-INFO: [Route 35-57] Estimated Timing Summary | WNS=11.7   | TNS=0      | WHS=N/A    | THS=N/A    |
-
-
-Phase 4.3.3 collectNewHoldAndFix
-Phase 4.3.3 collectNewHoldAndFix | Checksum: 42d5c5e0
-
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-Phase 4.3 Global Iteration 2 | Checksum: 42d5c5e0
-
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
-Phase 4 Rip-up And Reroute | Checksum: 42d5c5e0
-
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 5 Delay CleanUp
 
 Phase 5.1 Update Timing
-Phase 5.1 Update Timing | Checksum: 42d5c5e0
+Phase 5.1 Update Timing | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:22 . Memory (MB): peak = 1638.852 ; gain = 154.594
-INFO: [Route 35-57] Estimated Timing Summary | WNS=11.7   | TNS=0      | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:22 . Memory (MB): peak = 1636.906 ; gain = 150.594
+INFO: [Route 35-57] Estimated Timing Summary | WNS=11.6   | TNS=0      | WHS=N/A    | THS=N/A    |
 
-Phase 5 Delay CleanUp | Checksum: 42d5c5e0
+Phase 5 Delay CleanUp | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:22 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:22 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Full Hold Analysis
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 42d5c5e0
+Phase 6.1.1 Update Timing | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1638.852 ; gain = 154.594
-INFO: [Route 35-57] Estimated Timing Summary | WNS=11.7   | TNS=0      | WHS=0.055  | THS=0      |
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1636.906 ; gain = 150.594
+INFO: [Route 35-57] Estimated Timing Summary | WNS=11.6   | TNS=0      | WHS=0.036  | THS=0      |
 
-Phase 6.1 Full Hold Analysis | Checksum: 42d5c5e0
+Phase 6.1 Full Hold Analysis | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1638.852 ; gain = 154.594
-Phase 6 Post Hold Fix | Checksum: 42d5c5e0
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1636.906 ; gain = 150.594
+Phase 6 Post Hold Fix | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.433779 %
-  Global Horizontal Routing Utilization  = 0.498563 %
+  Global Vertical Routing Utilization    = 0.463705 %
+  Global Horizontal Routing Utilization  = 0.531525 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -4874,34 +4868,34 @@ Router Utilization Summary
 Phase 7 Verifying routed nets
 
  Verification completed successfully
-Phase 7 Verifying routed nets | Checksum: 42d5c5e0
+Phase 7 Verifying routed nets | Checksum: 1bb0b1eb6
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 8 Depositing Routes
-Phase 8 Depositing Routes | Checksum: a620807d
+Phase 8 Depositing Routes | Checksum: 10a98bc5e
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Phase 9 Post Router Timing
-INFO: [Route 35-20] Post Routing Timing Summary | WNS=11.680 | TNS=0.000  | WHS=0.055  | THS=0.000  |
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=11.597 | TNS=0.000  | WHS=0.037  | THS=0.000  |
 
 INFO: [Route 35-61] The design met the timing requirement.
-Phase 9 Post Router Timing | Checksum: a620807d
+Phase 9 Post Router Timing | Checksum: 10a98bc5e
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:23 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:23 . Memory (MB): peak = 1636.906 ; gain = 150.594
 INFO: [Route 35-16] Router Completed Successfully
-Ending Route Task | Checksum: a620807d
+Ending Route Task | Checksum: 10a98bc5e
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:23 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:23 . Memory (MB): peak = 1636.906 ; gain = 150.594
 
 Routing Is Done.
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:23 . Memory (MB): peak = 1638.852 ; gain = 154.594
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:23 . Memory (MB): peak = 1636.906 ; gain = 150.594
 INFO: [Common 17-83] Releasing license: Implementation
-48 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+47 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:24 . Memory (MB): peak = 1638.852 ; gain = 167.590
+route_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:24 . Memory (MB): peak = 1636.906 ; gain = 166.590
 INFO: [Drc 23-27] Running DRC with 8 threads
 INFO: [Coretcl 2-168] The results of DRC are in file /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/zynq_system_wrapper_drc_routed.rpt.
 Running Vector-less Activity Propagation...
@@ -4912,8 +4906,8 @@ INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum o
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.46 . Memory (MB): peak = 1638.855 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 17 14:08:02 2014...
+Write XDEF Complete: Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.46 . Memory (MB): peak = 1636.910 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 17 14:51:09 2014...
 
 *** Running vivado
     with args -log zynq_system_wrapper.rdi -applog -m64 -messageDb vivado.pb -mode batch -source zynq_system_wrapper.tcl -notrace
@@ -4940,13 +4934,13 @@ Loading clock placement rules from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.
 Loading package pin functions from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/PinFunctions.xml...
 Loading package from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
 Loading io standards from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/./parts/xilinx/zynq/IOStandards.xml
-Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/.Xil/Vivado-19952-ee-boxer0/dcp/zynq_system_wrapper.xdc]
-Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/.Xil/Vivado-19952-ee-boxer0/dcp/zynq_system_wrapper.xdc]
+Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/.Xil/Vivado-21661-ee-boxer0/dcp/zynq_system_wrapper.xdc]
+Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/.Xil/Vivado-21661-ee-boxer0/dcp/zynq_system_wrapper.xdc]
 Reading XDEF placement.
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1377.434 ; gain = 1.000
+Read XDEF File: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1377.430 ; gain = 1.000
 Restoring placement.
-Restored 742 out of 742 XDEF sites from archive | CPU: 0.490000 secs | Memory: 5.196892 MB |
+Restored 721 out of 721 XDEF sites from archive | CPU: 0.490000 secs | Memory: 5.211502 MB |
 INFO: [Opt 31-138] Pushed 0 inverter(s).
 INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: 
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -4954,7 +4948,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 2 instances
 
 INFO: [Project 1-484] Checkpoint was created with build 353583
-open_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1379.434 ; gain = 661.781
+open_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1379.430 ; gain = 661.781
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
 Running DRC as a precondition to command write_bitstream
@@ -4970,10 +4964,10 @@ Creating bitstream...
 Writing bitstream ./zynq_system_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
-INFO: [Common 17-186] '/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Apr 17 14:08:54 2014. For additional details about this file, please refer to the WebTalk help file at /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/doc/webtalk_introduction.html.
+INFO: [Common 17-186] '/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Apr 17 14:52:01 2014. For additional details about this file, please refer to the WebTalk help file at /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-write_bitstream: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1747.820 ; gain = 368.387
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 17 14:08:54 2014...
-[Thu Apr 17 14:08:57 2014] impl_1 finished
-wait_on_run: Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:53 . Memory (MB): peak = 845.895 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 17 14:08:57 2014...
+write_bitstream: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1748.816 ; gain = 369.387
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 17 14:52:01 2014...
+[Thu Apr 17 14:52:06 2014] impl_1 finished
+wait_on_run: Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:53 . Memory (MB): peak = 920.621 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 17 14:52:06 2014...

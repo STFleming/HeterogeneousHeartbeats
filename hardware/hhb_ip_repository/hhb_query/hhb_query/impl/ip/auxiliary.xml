@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xd" xd:functionName="hhb_query" xd:componentRef="hhb_query" xd:initiationInterval="11" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64">
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xd" xd:functionName="hhb_query" xd:componentRef="hhb_query" xd:initiationInterval="12" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64">
   <xd:controlReg xd:name="control" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
   <xd:arg xd:name="*(a)" xd:originalName="a" xd:direction="in" xd:interfaceRef="M_AXI_A" xd:busTypeRef="aximm" xd:dataWidth="32"/>
   <xd:arg xd:name="heartbeat_record_phys_addr" xd:originalName="heartbeat_record_phys_addr" xd:direction="in" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:offset="0x14" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
   <xd:arg xd:name="*(current_heartbeat)" xd:originalName="current_heartbeat" xd:direction="out" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:offset="0x1C" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
   <xd:arg xd:name="*(status)" xd:originalName="status" xd:direction="out" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:offset="0x24" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
-  <xd:latencyEstimates xd:best-case="10" xd:worst-case="10" xd:average-case="10"/>
-  <xd:resourceEstimates xd:LUT="35" xd:FF="169" xd:BRAM="0" xd:DSP="0"/>
+  <xd:latencyEstimates xd:best-case="11" xd:worst-case="11" xd:average-case="11"/>
+  <xd:resourceEstimates xd:LUT="67" xd:FF="202" xd:BRAM="0" xd:DSP="0"/>
 </xd:acceleratorMap>

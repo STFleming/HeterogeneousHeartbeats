@@ -13,8 +13,8 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @W [HLS-40] Directive 'RESOURCE' for core 'AXI4LiteS' cannot be applied: There are multiple assignments to variable 'status' in 'hhb_query'. The resource directive is just applied to the first assignment currently. If this is not intended, please use a unique variable name or introduce a new scope so the assignment can be uniquely located.
 @I [HLS-10] Starting code transformations ...
 @I [HLS-10] Checking synthesizability ...
-@I [XFORM-102] Partitioning array 'buff' (hhb_query/src/hhb_query_top.cpp:76) automatically.
-@I [HLS-111] Elapsed time: 1.37 seconds; current memory usage: 48.5 MB.
+@I [XFORM-102] Partitioning array 'buff' (hhb_query/src/hhb_query_top.cpp:35) automatically.
+@I [HLS-111] Elapsed time: 1.45 seconds; current memory usage: 47.5 MB.
 @I [HLS-10] Starting hardware synthesis ...
 @I [HLS-10] Synthesizing 'hhb_query' ...
 @I [HLS-10] ----------------------------------------------------------------
@@ -22,9 +22,9 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [HLS-10] ----------------------------------------------------------------
 @I [SCHED-11] Starting scheduling ...
 @I [SCHED-61] Pipelining loop 'Loop 1'.
-@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 7.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 8.
 @I [SCHED-11] Finished scheduling.
-@I [HLS-111] Elapsed time: 0.02 seconds; current memory usage: 48.7 MB.
+@I [HLS-111] Elapsed time: 0.03 seconds; current memory usage: 47.8 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Exploring micro-architecture for module 'hhb_query' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -33,7 +33,7 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [BIND-101] Exploring resource sharing.
 @I [BIND-101] Binding ...
 @I [BIND-100] Finished micro-architecture generation.
-@I [HLS-111] Elapsed time: 0 seconds; current memory usage: 48.9 MB.
+@I [HLS-111] Elapsed time: 0.01 seconds; current memory usage: 48 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Generating RTL for module 'hhb_query' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -46,11 +46,11 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [RTGEN-500] Setting interface mode on function 'hhb_query' to 'ap_ctrl_hs'.
 @W [RTGEN-101] Setting dangling out port 'hhb_query/a_dataout' to 0.
 @I [RTGEN-100] Finished creating RTL model for 'hhb_query'.
-@I [HLS-111] Elapsed time: 0.02 seconds; current memory usage: 49.2 MB.
+@I [HLS-111] Elapsed time: 0.01 seconds; current memory usage: 48.2 MB.
 @I [HLS-10] Finished generating all RTL models.
 @I [WSYSC-301] Generating RTL SystemC for 'hhb_query'.
 @I [WVHDL-304] Generating RTL VHDL for 'hhb_query'.
 @I [WVLOG-307] Generating RTL Verilog for 'hhb_query'.
 @I [IMPL-8] Exporting RTL as an IP in IP-XACT.
-@I [HLS-112] Total elapsed time: 24.869 seconds; peak memory usage: 49.2 MB.
+@I [HLS-112] Total elapsed time: 24.693 seconds; peak memory usage: 48.2 MB.
 @I [LIC-101] Checked in feature [HLS]

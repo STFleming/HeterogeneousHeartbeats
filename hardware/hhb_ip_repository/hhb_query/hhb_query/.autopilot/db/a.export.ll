@@ -40,10 +40,11 @@ burst.rd.body1:                                   ; preds = %burst.rd.header
   %a_addr_req = call i1 @_ssdm_op_ReadReq.ap_bus.i32P(i32* %a_addr, i32 1) nounwind
   %buff_0 = call i32 @_ssdm_op_Read.ap_bus.i32P(i32* %a_addr) nounwind
   %burstread_rend = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str8, i32 %burstread_rbegin) nounwind
+  %phitmp = add i32 %buff_0, 10
   br label %burst.rd.header
 
 burst.rd.header:                                  ; preds = %burst.rd.body1, %0
-  %buff_0_s = phi i32 [ undef, %0 ], [ %buff_0, %burst.rd.body1 ]
+  %buff_0_s = phi i32 [ undef, %0 ], [ %phitmp, %burst.rd.body1 ]
   %indvar = phi i1 [ false, %0 ], [ true, %burst.rd.body1 ]
   br i1 %indvar, label %burst.rd.end, label %burst.rd.body1
 
