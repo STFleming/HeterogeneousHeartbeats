@@ -23,6 +23,8 @@ int main()
 		printf("HB: %d \t\t\t Hardware HB: %d\n", i, XExample_GetCurrent_heartbeat(&hardware_hhbquery));
 	}
 	printf("\nfin.\n\n");
+	
+	heartbeat_finish(&test_heartbeat);
 
 	return 0;
 }
