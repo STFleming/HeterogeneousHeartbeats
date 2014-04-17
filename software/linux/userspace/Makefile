@@ -13,9 +13,12 @@ DEPS = $(INC_DIR)/heartbeat.h $(INC_DIR)/xexample.h
 $(BIN_DIR)/%.o: $(INC_DIR)/%.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-all: hls_test
+all: hls_test heartbeat_startup
 
 hls_test: $(OBJS)
+	$(CC) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@ $^ $(CFLAGS)
+
+heartbeat_startup: $(OBJS)
 	$(CC) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@ $^ $(CFLAGS)
 
 clean:
