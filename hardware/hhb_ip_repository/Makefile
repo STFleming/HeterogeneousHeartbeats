@@ -10,3 +10,6 @@ hhb_query: $(HLS_PRJ)/impl/ip/sfleming_HHB_hhb_query_1_0.zip
 $(HLS_PRJ)/impl/ip/sfleming_HHB_hhb_query_1_0.zip:
 	$(VIVADO_HLS_CMD) $(HLS_PRJ)/script.tcl
 	rm *.log
+
+clean:
+	rm $(HLS_PRJ)/impl/ip/sfleming_HHB_hhb_query_1_0.zip
