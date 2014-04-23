@@ -27,7 +27,7 @@
 
 //Include header files for interacting with the base hardware implementation
 #include "hhb_query.h"
-
+#include "hhb_applist.h"
 
 unsigned int phys_addr_state;
 
