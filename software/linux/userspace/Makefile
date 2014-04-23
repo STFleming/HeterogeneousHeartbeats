@@ -7,8 +7,8 @@ INC_DIR=./includes
 BIN_DIR=./bin
 SRC_DIR=./src
 
-OBJS=$(BIN_DIR)/heartbeat.o $(BIN_DIR)/hhb_query.o
-DEPS = $(INC_DIR)/heartbeat.h $(INC_DIR)/hhb_query.h
+OBJS=$(BIN_DIR)/heartbeat.o $(BIN_DIR)/hhb_query.o $(BIN_DIR)/hhb_applist.o
+DEPS = $(INC_DIR)/heartbeat.h $(INC_DIR)/hhb_query.h $(INC_DIR)/hhb_applist.h
 
 $(BIN_DIR)/%.o: $(INC_DIR)/%.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
