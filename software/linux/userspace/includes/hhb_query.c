@@ -9,11 +9,11 @@
 #define MAP_MASK (MAP_SIZE - 1)
 
 /***************************** Include Files *********************************/
-#include "xexample.h"
+#include "hhb_query.h"
 
 /************************** Function Implementation *************************/
 #ifndef __linux__
-int XExample_CfgInitialize(XExample *InstancePtr, XExample_Config *ConfigPtr) {
+int HHB_query_CfgInitialize(HHB_query *InstancePtr, XExample_Config *ConfigPtr) {
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(ConfigPtr != NULL);
 
@@ -24,7 +24,7 @@ int XExample_CfgInitialize(XExample *InstancePtr, XExample_Config *ConfigPtr) {
 }
 #endif
 
-XExample setup_hhbquery() //returns a pointer in userspace to the device
+HHB_query setup_hhbquery() //returns a pointer in userspace to the device
 {
     void *mapped_base_hhbquery;
     int memfd_hhbquery;
@@ -53,7 +53,7 @@ XExample setup_hhbquery() //returns a pointer in userspace to the device
     // that was mapped as memory is mapped at the start of a page 
 
     mapped_dev_base = mapped_base_hhbquery + (dev_base & MAP_MASK);
-    XExample device;
+    HHB_query device;
     device.Bus_a_BaseAddress = mapped_dev_base;
     device.IsReady = 1;
 
@@ -62,150 +62,150 @@ XExample setup_hhbquery() //returns a pointer in userspace to the device
 }
 
 
-void XExample_Start(XExample *InstancePtr) {
+void HHB_query_Start(HHB_query *InstancePtr) {
     u32 Data;
 
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XExample_ReadReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_AP_CTRL) & 0x80;
-    XExample_WriteReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_AP_CTRL, Data | 0x01);
+    Data = HHB_query_ReadReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_AP_CTRL) & 0x80;
+    HHB_query_WriteReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_AP_CTRL, Data | 0x01);
 }
 
-u32 XExample_IsDone(XExample *InstancePtr) {
+u32 HHB_query_IsDone(HHB_query *InstancePtr) {
     u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XExample_ReadReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_AP_CTRL);
+    Data = HHB_query_ReadReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_AP_CTRL);
     return (Data >> 1) & 0x1;
 }
 
-u32 XExample_IsIdle(XExample *InstancePtr) {
+u32 HHB_query_IsIdle(HHB_query *InstancePtr) {
     u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XExample_ReadReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_AP_CTRL);
+    Data = HHB_query_ReadReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_AP_CTRL);
     return (Data >> 2) & 0x1;
 }
 
-u32 XExample_IsReady(XExample *InstancePtr) {
+u32 HHB_query_IsReady(HHB_query *InstancePtr) {
     u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XExample_ReadReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_AP_CTRL);
+    Data = HHB_query_ReadReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_AP_CTRL);
     // check ap_start to see if the pcore is ready for next input
     return !(Data & 0x1);
 }
 
-void XExample_EnableAutoRestart(XExample *InstancePtr) {
+void HHB_query_EnableAutoRestart(HHB_query *InstancePtr) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XExample_WriteReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_AP_CTRL, 0x80);
+    HHB_query_WriteReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_AP_CTRL, 0x80);
 }
 
-void XExample_DisableAutoRestart(XExample *InstancePtr) {
+void HHB_query_DisableAutoRestart(HHB_query *InstancePtr) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XExample_WriteReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_AP_CTRL, 0);
+    HHB_query_WriteReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_AP_CTRL, 0);
 }
 
-void XExample_SetHeartbeat_record_phys_addr(XExample *InstancePtr, u32 Data) {
+void HHB_query_SetHeartbeat_record_phys_addr(HHB_query *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XExample_WriteReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_HEARTBEAT_RECORD_PHYS_ADDR_DATA, Data);
+    HHB_query_WriteReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_HEARTBEAT_RECORD_PHYS_ADDR_DATA, Data);
 }
 
-u32 XExample_GetHeartbeat_record_phys_addr(XExample *InstancePtr) {
+u32 HHB_query_GetHeartbeat_record_phys_addr(HHB_query *InstancePtr) {
     u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XExample_ReadReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_HEARTBEAT_RECORD_PHYS_ADDR_DATA);
+    Data = HHB_query_ReadReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_HEARTBEAT_RECORD_PHYS_ADDR_DATA);
     return Data;
 }
 
-u32 XExample_GetCurrent_heartbeat(XExample *InstancePtr) {
+u32 HHB_query_GetCurrent_heartbeat(HHB_query *InstancePtr) {
     u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XExample_ReadReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_CURRENT_HEARTBEAT_DATA);
+    Data = HHB_query_ReadReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_CURRENT_HEARTBEAT_DATA);
     return Data;
 }
 
-u32 XExample_GetStatus(XExample *InstancePtr) {
+u32 HHB_query_GetStatus(HHB_query *InstancePtr) {
     u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XExample_ReadReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_STATUS_DATA);
+    Data = HHB_query_ReadReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_STATUS_DATA);
     return Data;
 }
 
-void XExample_InterruptGlobalEnable(XExample *InstancePtr) {
+void HHB_query_InterruptGlobalEnable(HHB_query *InstancePtr) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XExample_WriteReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_GIE, 1);
+    HHB_query_WriteReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_GIE, 1);
 }
 
-void XExample_InterruptGlobalDisable(XExample *InstancePtr) {
+void HHB_query_InterruptGlobalDisable(HHB_query *InstancePtr) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XExample_WriteReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_GIE, 0);
+    HHB_query_WriteReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_GIE, 0);
 }
 
-void XExample_InterruptEnable(XExample *InstancePtr, u32 Mask) {
+void HHB_query_InterruptEnable(HHB_query *InstancePtr, u32 Mask) {
     u32 Register;
 
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Register =  XExample_ReadReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_IER);
-    XExample_WriteReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_IER, Register | Mask);
+    Register =  HHB_query_ReadReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_IER);
+    HHB_query_WriteReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_IER, Register | Mask);
 }
 
-void XExample_InterruptDisable(XExample *InstancePtr, u32 Mask) {
+void HHB_query_InterruptDisable(HHB_query *InstancePtr, u32 Mask) {
     u32 Register;
 
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Register =  XExample_ReadReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_IER);
-    XExample_WriteReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_IER, Register & (~Mask));
+    Register =  HHB_query_ReadReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_IER);
+    HHB_query_WriteReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_IER, Register & (~Mask));
 }
 
-void XExample_InterruptClear(XExample *InstancePtr, u32 Mask) {
+void HHB_query_InterruptClear(HHB_query *InstancePtr, u32 Mask) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XExample_WriteReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_ISR, Mask);
+    HHB_query_WriteReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_ISR, Mask);
 }
 
-u32 XExample_InterruptGetEnabled(XExample *InstancePtr) {
+u32 HHB_query_InterruptGetEnabled(HHB_query *InstancePtr) {
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    return XExample_ReadReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_IER);
+    return HHB_query_ReadReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_IER);
 }
 
-u32 XExample_InterruptGetStatus(XExample *InstancePtr) {
+u32 HHB_query_InterruptGetStatus(HHB_query *InstancePtr) {
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    return XExample_ReadReg(InstancePtr->Bus_a_BaseAddress, XEXAMPLE_BUS_A_ADDR_ISR);
+    return HHB_query_ReadReg(InstancePtr->Bus_a_BaseAddress, HHB_QUERY_BUS_A_ADDR_ISR);
 }
 

@@ -5,8 +5,8 @@
 // 
 // ==============================================================
 
-#ifndef XEXAMPLE_H
-#define XEXAMPLE_H
+#ifndef HHB_QUERY_H
+#define HHB_QUERY_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -32,7 +32,7 @@ extern "C" {
 #include <unistd.h>
 #include <stddef.h>
 #endif
-#include "xexample_hw.h"
+#include "hhb_query_hw.h"
 
 /**************************** Type Definitions ******************************/
 #ifdef __linux__
@@ -43,24 +43,24 @@ typedef uint32_t u32;
 typedef struct {
     u16 DeviceId;
     u32 Bus_a_BaseAddress;
-} XExample_Config;
+} HHB_query_Config;
 #endif
 
 typedef struct {
     u32 Bus_a_BaseAddress;
     u32 IsReady;
-} XExample;
+} HHB_query;
 
 /***************** Macros (Inline Functions) Definitions *********************/
 #ifndef __linux__
-#define XExample_WriteReg(BaseAddress, RegOffset, Data) \
+#define HHB_query_WriteReg(BaseAddress, RegOffset, Data) \
     Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
-#define XExample_ReadReg(BaseAddress, RegOffset) \
+#define HHB_query_ReadReg(BaseAddress, RegOffset) \
     Xil_In32((BaseAddress) + (RegOffset))
 #else
-#define XExample_WriteReg(BaseAddress, RegOffset, Data) \
+#define HHB_query_WriteReg(BaseAddress, RegOffset, Data) \
     *(volatile u32*)((BaseAddress) + (RegOffset)) = (u32)(Data)
-#define XExample_ReadReg(BaseAddress, RegOffset) \
+#define HHB_query_ReadReg(BaseAddress, RegOffset) \
     *(volatile u32*)((BaseAddress) + (RegOffset))
 
 #define Xil_AssertVoid(expr)    assert(expr)
@@ -74,35 +74,35 @@ typedef struct {
 
 /************************** Function Prototypes *****************************/
 #ifndef __linux__
-int XExample_Initialize(XExample *InstancePtr, u16 DeviceId);
-XExample_Config* XExample_LookupConfig(u16 DeviceId);
-int XExample_CfgInitialize(XExample *InstancePtr, XExample_Config *ConfigPtr);
+int HHB_query_Initialize(HHB_query *InstancePtr, u16 DeviceId);
+HHB_query_Config* HHB_query_LookupConfig(u16 DeviceId);
+int HHB_query_CfgInitialize(HHB_query *InstancePtr, XExample_Config *ConfigPtr);
 #else
-int XExample_Initialize(XExample *InstancePtr, const char* InstanceName);
-int XExample_Release(XExample *InstancePtr);
+int HHB_query_Initialize(HHB_query *InstancePtr, const char* InstanceName);
+int HHB_query_Release(HHB_query *InstancePtr);
 #endif
 
 
-XExample setup_hhbquery();
-void XExample_Start(XExample *InstancePtr);
-u32 XExample_IsDone(XExample *InstancePtr);
-u32 XExample_IsIdle(XExample *InstancePtr);
-u32 XExample_IsReady(XExample *InstancePtr);
-void XExample_EnableAutoRestart(XExample *InstancePtr);
-void XExample_DisableAutoRestart(XExample *InstancePtr);
+HHB_query setup_hhbquery();
+void HHB_query_Start(HHB_query *InstancePtr);
+u32 HHB_query_IsDone(HHB_query *InstancePtr);
+u32 HHB_query_IsIdle(HHB_query *InstancePtr);
+u32 HHB_query_IsReady(HHB_query *InstancePtr);
+void HHB_query_EnableAutoRestart(HHB_query *InstancePtr);
+void HHB_query_DisableAutoRestart(HHB_query *InstancePtr);
 
-void XExample_SetHeartbeat_record_phys_addr(XExample *InstancePtr, u32 Data);
-u32 XExample_GetHeartbeat_record_phys_addr(XExample *InstancePtr);
-u32 XExample_GetCurrent_heartbeat(XExample *InstancePtr);
-u32 XExample_GetStatus(XExample *InstancePtr);
+void HHB_query_SetHeartbeat_record_phys_addr(HHB_query *InstancePtr, u32 Data);
+u32 HHB_query_GetHeartbeat_record_phys_addr(HHB_query *InstancePtr);
+u32 HHB_query_GetCurrent_heartbeat(HHB_query *InstancePtr);
+u32 HHB_query_GetStatus(HHB_query *InstancePtr);
 
-void XExample_InterruptGlobalEnable(XExample *InstancePtr);
-void XExample_InterruptGlobalDisable(XExample *InstancePtr);
-void XExample_InterruptEnable(XExample *InstancePtr, u32 Mask);
-void XExample_InterruptDisable(XExample *InstancePtr, u32 Mask);
-void XExample_InterruptClear(XExample *InstancePtr, u32 Mask);
-u32 XExample_InterruptGetEnabled(XExample *InstancePtr);
-u32 XExample_InterruptGetStatus(XExample *InstancePtr);
+void HHB_query_InterruptGlobalEnable(HHB_query *InstancePtr);
+void HHB_query_InterruptGlobalDisable(HHB_query *InstancePtr);
+void HHB_query_InterruptEnable(HHB_query *InstancePtr, u32 Mask);
+void HHB_query_InterruptDisable(HHB_query *InstancePtr, u32 Mask);
+void HHB_query_InterruptClear(HHB_query *InstancePtr, u32 Mask);
+u32 HHB_query_InterruptGetEnabled(HHB_query *InstancePtr);
+u32 HHB_query_InterruptGetStatus(HHB_query *InstancePtr);
 
 #ifdef __cplusplus
 }

@@ -35,14 +35,14 @@
 //        bit 31~0 - status[31:0] (Read)
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
-#define XEXAMPLE_BUS_A_ADDR_AP_CTRL                         0x00
-#define XEXAMPLE_BUS_A_ADDR_GIE                             0x04
-#define XEXAMPLE_BUS_A_ADDR_IER                             0x08
-#define XEXAMPLE_BUS_A_ADDR_ISR                             0x0c
-#define XEXAMPLE_BUS_A_ADDR_HEARTBEAT_RECORD_PHYS_ADDR_DATA 0x14
-#define XEXAMPLE_BUS_A_BITS_HEARTBEAT_RECORD_PHYS_ADDR_DATA 32
-#define XEXAMPLE_BUS_A_ADDR_CURRENT_HEARTBEAT_DATA          0x1c
-#define XEXAMPLE_BUS_A_BITS_CURRENT_HEARTBEAT_DATA          32
-#define XEXAMPLE_BUS_A_ADDR_STATUS_DATA                     0x24
-#define XEXAMPLE_BUS_A_BITS_STATUS_DATA                     32
+#define HHB_QUERY_BUS_A_ADDR_AP_CTRL                         0x00
+#define HHB_QUERY_BUS_A_ADDR_GIE                             0x04
+#define HHB_QUERY_BUS_A_ADDR_IER                             0x08
+#define HHB_QUERY_BUS_A_ADDR_ISR                             0x0c
+#define HHB_QUERY_BUS_A_ADDR_HEARTBEAT_RECORD_PHYS_ADDR_DATA 0x14
+#define HHB_QUERY_BUS_A_BITS_HEARTBEAT_RECORD_PHYS_ADDR_DATA 32
+#define HHB_QUERY_BUS_A_ADDR_CURRENT_HEARTBEAT_DATA          0x1c
+#define HHB_QUERY_BUS_A_BITS_CURRENT_HEARTBEAT_DATA          32
+#define HHB_QUERY_BUS_A_ADDR_STATUS_DATA                     0x24
+#define HHB_QUERY_BUS_A_BITS_STATUS_DATA                     32
 

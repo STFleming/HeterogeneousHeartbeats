@@ -26,7 +26,7 @@
 #include <string.h>
 
 //Include header files for interacting with the base hardware implementation
-#include "xexample.h"
+#include "hhb_query.h"
 
 
 unsigned int phys_addr_state;
