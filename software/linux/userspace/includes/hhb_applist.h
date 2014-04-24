@@ -25,17 +25,25 @@ typedef struct {
 	int state_shmid; //The ID for the shared memory.
 	int list_shmid;
 	applist_entry_t * list_head; //A pointer to the head of the application list	
-	int lock_aquired; //This is to ensure mutual exclusive access
+	int lock; //This is to ensure mutual exclusive access
 } applist_state_t;
 
 applist_state_t* applist_fetch_list_state(void); //Helper function used to allocate the shared memory space
 
 applist_entry_t* applist_fetch_list(void); //Helper function used to get the list of applications
 
-applist_entry_t* applist_create_sw_entry(int64_t app_state_phys_addr, int64_t app_state_log_addr); 
+applist_entry_t applist_create_sw_entry(int64_t app_state_phys_addr, int64_t app_state_log_addr); 
 
 void applist_register_app(applist_entry_t * new_app); //Used to search through the application list for a free spot and add the calling application to it.
 
 void applist_remove_app(int input_AppID); //Used to remove an app from the application list.
 
+void applist_acquire_lock(applist_state_t* app_state); //helper function used to acquire the applist shared memory segment lock.
+
+void applist_release_lock(applist_state_t* app_state); //helper function used to release the applist lock.
+
+void applist_initialise_list(void);
+
 #endif
+
+

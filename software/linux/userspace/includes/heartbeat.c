@@ -290,9 +290,9 @@ flush_rate_counter = 0;
 
 
   //Add the application to the applist
-  applist_entry_t* app_info;
+  applist_entry_t app_info;
   app_info = applist_create_sw_entry(state_phys_addr, log_phys_addr);
-  applist_register_app(app_info); 	
+  applist_register_app(&app_info); 	
 
   return rc;
 }
