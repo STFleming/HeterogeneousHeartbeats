@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'hhb_query'" level="0">
-<item name = "Date">Thu Apr 17 14:46:14 2014
+<item name = "Date">Fri Apr 25 12:49:54 2014
 </item>
 <item name = "Version">2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)</item>
 <item name = "Project">hhb_query</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">11, 11, 12, 12, none</column>
+<column name="">10, 10, 11, 11, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">7, 7, 8, 1, 1, 1, yes</column>
+<column name="- Loop 1">6, 6, 7, 1, 1, 1, yes</column>
 </table>
 </item>
 </section>

@@ -2580,7 +2580,7 @@ extern char *basename (__const char *__filename) throw () __attribute__ ((__nonn
 
 
 
-void hhb_query(volatile int *a, unsigned int heartbeat_record_phys_addr, unsigned int *current_heartbeat, unsigned int *status){
+void hhb_query(volatile int *a, unsigned int applist_phys_addr, unsigned int *current_heartbeat, unsigned int *status){
 
   //ap_bus is the only valid nativeVivado HLSinterface for memory mapped master ports
 #pragma HLS INTERFACE ap_bus port=a depth=N
@@ -2590,8 +2590,8 @@ void hhb_query(volatile int *a, unsigned int heartbeat_record_phys_addr, unsigne
 
 #pragma HLS RESOURCE variable=return core=AXI4LiteS metadata="-bus_bundle BUS_A"
 
-#pragma HLS INTERFACE ap_none register port=heartbeat_record_phys_addr
-#pragma HLS RESOURCE core=AXI4LiteS variable=heartbeat_record_phys_addr metadata="-bus_bundle BUS_A"
+#pragma HLS INTERFACE ap_none register port=applist_phys_addr
+#pragma HLS RESOURCE core=AXI4LiteS variable=applist_phys_addr metadata="-bus_bundle BUS_A"
 
 #pragma HLS INTERFACE ap_none register port=current_heartbeat
 #pragma HLS RESOURCE core=AXI4LiteS variable=current_heartbeat metadata="-bus_bundle BUS_A"
@@ -2605,9 +2605,12 @@ void hhb_query(volatile int *a, unsigned int heartbeat_record_phys_addr, unsigne
   *status=0; //IP running
 
   //read from DDR
-  memcpy(buff,(const int*)(a+heartbeat_record_phys_addr/4), 1*sizeof(int));
+  memcpy(buff,(const int*)(a+(applist_phys_addr+(4*3))/4), 1*sizeof(int));
 
-  *current_heartbeat = buff[0] + 10;
+ //Initial test, just read the lock data element.
+
+
+  *current_heartbeat = buff[0];
 
   *status=1; //IP stop
 

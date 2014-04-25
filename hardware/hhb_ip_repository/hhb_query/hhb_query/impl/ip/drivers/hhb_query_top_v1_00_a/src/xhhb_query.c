@@ -76,20 +76,20 @@ void XHhb_query_DisableAutoRestart(XHhb_query *InstancePtr) {
     XHhb_query_WriteReg(InstancePtr->Bus_a_BaseAddress, XHHB_QUERY_BUS_A_ADDR_AP_CTRL, 0);
 }
 
-void XHhb_query_SetHeartbeat_record_phys_addr(XHhb_query *InstancePtr, u32 Data) {
+void XHhb_query_SetApplist_phys_addr(XHhb_query *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XHhb_query_WriteReg(InstancePtr->Bus_a_BaseAddress, XHHB_QUERY_BUS_A_ADDR_HEARTBEAT_RECORD_PHYS_ADDR_DATA, Data);
+    XHhb_query_WriteReg(InstancePtr->Bus_a_BaseAddress, XHHB_QUERY_BUS_A_ADDR_APPLIST_PHYS_ADDR_DATA, Data);
 }
 
-u32 XHhb_query_GetHeartbeat_record_phys_addr(XHhb_query *InstancePtr) {
+u32 XHhb_query_GetApplist_phys_addr(XHhb_query *InstancePtr) {
     u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XHhb_query_ReadReg(InstancePtr->Bus_a_BaseAddress, XHHB_QUERY_BUS_A_ADDR_HEARTBEAT_RECORD_PHYS_ADDR_DATA);
+    Data = XHhb_query_ReadReg(InstancePtr->Bus_a_BaseAddress, XHHB_QUERY_BUS_A_ADDR_APPLIST_PHYS_ADDR_DATA);
     return Data;
 }
 

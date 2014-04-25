@@ -12,25 +12,26 @@ target triple = "x86_64-unknown-linux-gnu"
 @str7 = internal constant [1 x i8] zeroinitializer
 @p_str8 = internal constant [17 x i8] c"burstread.region\00"
 
-define void @hhb_query(i32* %a, i32 %heartbeat_record_phys_addr, i32* %current_heartbeat, i32* %status) nounwind uwtable {
+define void @hhb_query(i32* %a, i32 %applist_phys_addr, i32* %current_heartbeat, i32* %status) nounwind uwtable {
   call void (...)* @_ssdm_op_SpecBitsMap(i32* %a) nounwind, !map !0
-  call void (...)* @_ssdm_op_SpecBitsMap(i32 %heartbeat_record_phys_addr) nounwind, !map !6
+  call void (...)* @_ssdm_op_SpecBitsMap(i32 %applist_phys_addr) nounwind, !map !6
   call void (...)* @_ssdm_op_SpecBitsMap(i32* %current_heartbeat) nounwind, !map !12
   call void (...)* @_ssdm_op_SpecBitsMap(i32* %status) nounwind, !map !16
   call void (...)* @_ssdm_op_SpecTopModule([10 x i8]* @str) nounwind
-  %heartbeat_record_phys_addr_read = call i32 @_ssdm_op_Read.ap_none.i32(i32 %heartbeat_record_phys_addr) nounwind
+  %applist_phys_addr_read = call i32 @_ssdm_op_Read.ap_none.i32(i32 %applist_phys_addr) nounwind
   call void (...)* @_ssdm_op_SpecBus(i32* %a, [7 x i8]* @p_str, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
   call void (...)* @_ssdm_op_SpecIFCore(i32* %a, [1 x i8]* @p_str1, [6 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
   call void (...)* @_ssdm_op_SpecIFCore(i32 0, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
-  call void (...)* @_ssdm_op_SpecWire(i32 %heartbeat_record_phys_addr, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
-  call void (...)* @_ssdm_op_SpecIFCore(i32 %heartbeat_record_phys_addr, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
+  call void (...)* @_ssdm_op_SpecWire(i32 %applist_phys_addr, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+  call void (...)* @_ssdm_op_SpecIFCore(i32 %applist_phys_addr, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
   call void (...)* @_ssdm_op_SpecWire(i32* %current_heartbeat, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
   call void (...)* @_ssdm_op_SpecWire(i32* %status, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
   call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 0) nounwind
   call void (...)* @_ssdm_op_SpecIFCore(i32* %status, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
-  %tmp_1 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %heartbeat_record_phys_addr_read, i32 2, i32 31)
-  %tmp_2 = zext i30 %tmp_1 to i64
-  %a_addr = getelementptr inbounds i32* %a, i64 %tmp_2
+  %tmp_1 = add i32 %applist_phys_addr_read, 12
+  %tmp_2 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %tmp_1, i32 2, i32 31)
+  %tmp_3 = zext i30 %tmp_2 to i64
+  %a_addr = getelementptr inbounds i32* %a, i64 %tmp_3
   br label %burst.rd.header
 
 burst.rd.body1:                                   ; preds = %burst.rd.header
@@ -40,11 +41,10 @@ burst.rd.body1:                                   ; preds = %burst.rd.header
   %a_addr_req = call i1 @_ssdm_op_ReadReq.ap_bus.i32P(i32* %a_addr, i32 1) nounwind
   %buff_0 = call i32 @_ssdm_op_Read.ap_bus.i32P(i32* %a_addr) nounwind
   %burstread_rend = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str8, i32 %burstread_rbegin) nounwind
-  %phitmp = add i32 %buff_0, 10
   br label %burst.rd.header
 
 burst.rd.header:                                  ; preds = %burst.rd.body1, %0
-  %buff_0_s = phi i32 [ undef, %0 ], [ %phitmp, %burst.rd.body1 ]
+  %buff_0_s = phi i32 [ undef, %0 ], [ %buff_0, %burst.rd.body1 ]
   %indvar = phi i1 [ false, %0 ], [ true, %burst.rd.body1 ]
   br i1 %indvar, label %burst.rd.end, label %burst.rd.body1
 
@@ -144,7 +144,7 @@ declare i32 @llvm.part.select.i32(i32, i32, i32) nounwind readnone
 !6 = metadata !{metadata !7}
 !7 = metadata !{i32 0, i32 31, metadata !8}
 !8 = metadata !{metadata !9}
-!9 = metadata !{metadata !"heartbeat_record_phys_addr", metadata !10, metadata !"unsigned int"}
+!9 = metadata !{metadata !"applist_phys_addr", metadata !10, metadata !"unsigned int"}
 !10 = metadata !{metadata !11}
 !11 = metadata !{i32 0, i32 0, i32 0}
 !12 = metadata !{metadata !13}

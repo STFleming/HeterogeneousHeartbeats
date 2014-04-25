@@ -87,8 +87,8 @@ u32 XHhb_query_IsReady(XHhb_query *InstancePtr);
 void XHhb_query_EnableAutoRestart(XHhb_query *InstancePtr);
 void XHhb_query_DisableAutoRestart(XHhb_query *InstancePtr);
 
-void XHhb_query_SetHeartbeat_record_phys_addr(XHhb_query *InstancePtr, u32 Data);
-u32 XHhb_query_GetHeartbeat_record_phys_addr(XHhb_query *InstancePtr);
+void XHhb_query_SetApplist_phys_addr(XHhb_query *InstancePtr, u32 Data);
+u32 XHhb_query_GetApplist_phys_addr(XHhb_query *InstancePtr);
 u32 XHhb_query_GetCurrent_heartbeat(XHhb_query *InstancePtr);
 u32 XHhb_query_GetStatus(XHhb_query *InstancePtr);
 

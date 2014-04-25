@@ -2754,7 +2754,7 @@ extern char *basename (__const char *__filename) throw () __attribute__ ((__nonn
 
 
 
-void hhb_query(volatile int *a, unsigned int heartbeat_record_phys_addr, unsigned int *current_heartbeat, unsigned int *status){
+void hhb_query(volatile int *a, unsigned int applist_phys_addr, unsigned int *current_heartbeat, unsigned int *status){
 
   //ap_bus is the only valid nativeVivado HLSinterface for memory mapped master ports
 _ssdm_op_SpecBus(a, "ap_bus", 0, 0, 0, "");
@@ -2764,8 +2764,8 @@ _ssdm_op_SpecResource(a, "", "AXI4M", "", "", "", "");
 
 _ssdm_op_SpecResource(0, "", "AXI4LiteS", "", "", "", "-bus_bundle BUS_A");
 
-_ssdm_op_SpecWire(&heartbeat_record_phys_addr, "ap_none", 1, 1, 0, "");
-_ssdm_op_SpecResource(&heartbeat_record_phys_addr, "", "AXI4LiteS", "", "", "", "-bus_bundle BUS_A");
+_ssdm_op_SpecWire(&applist_phys_addr, "ap_none", 1, 1, 0, "");
+_ssdm_op_SpecResource(&applist_phys_addr, "", "AXI4LiteS", "", "", "", "-bus_bundle BUS_A");
 
 _ssdm_op_SpecWire(current_heartbeat, "ap_none", 1, 1, 0, "");
 //#pragma HLS RESOURCE core=AXI4LiteS variable=current_heartbeat metadata="-bus_bundle BUS_A"
@@ -2782,11 +2782,14 @@ _ssdm_op_SpecResource(status, "", "AXI4LiteS", "", "", "", "-bus_bundle BUS_A");
  //IP running
 
   //read from DDR
-  memcpy(buff,(const int*)(a+heartbeat_record_phys_addr/4), 1*sizeof(int));
+  memcpy(buff,(const int*)(a+(applist_phys_addr+(4*3))/4), 1*sizeof(int));
 
-  *current_heartbeat = buff[0] + 10;
+ //Initial test, just read the lock data element.
+
+
+  *current_heartbeat = buff[0];
 _ssdm_op_SpecResource(current_heartbeat, "", "AXI4LiteS", "", "", "", "-bus_bundle BUS_A");
-# 42 "hhb_query/src/hhb_query_top.cpp"
+# 45 "hhb_query/src/hhb_query_top.cpp"
 
 
   *status=1; //IP stop

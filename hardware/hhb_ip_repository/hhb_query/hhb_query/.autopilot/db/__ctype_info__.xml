@@ -10,7 +10,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>heartbeat_record_phys_addr</name>
+<name>applist_phys_addr</name>
 <CType>
 <TypeName>unsigned int</TypeName>
 <TypeWidth>32</TypeWidth>

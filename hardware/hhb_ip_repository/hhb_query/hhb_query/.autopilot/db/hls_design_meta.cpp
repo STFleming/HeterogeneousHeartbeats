@@ -15,7 +15,7 @@ const Port_Property HLS_Design_Meta::port_props[]={
 	Port_Property("a_datain", 32, hls_in, 0, "ap_bus", "unknown", 1),
 	Port_Property("a_dataout", 32, hls_out, 0, "ap_bus", "unknown", 1),
 	Port_Property("a_size", 32, hls_out, 0, "ap_bus", "unknown", 1),
-	Port_Property("heartbeat_record_phys_addr", 32, hls_in, 1, "ap_none", "in_data", 1),
+	Port_Property("applist_phys_addr", 32, hls_in, 1, "ap_none", "in_data", 1),
 	Port_Property("current_heartbeat", 32, hls_out, 2, "ap_none", "out_data", 1),
 	Port_Property("status", 32, hls_out, 3, "ap_none", "out_data", 1),
 };

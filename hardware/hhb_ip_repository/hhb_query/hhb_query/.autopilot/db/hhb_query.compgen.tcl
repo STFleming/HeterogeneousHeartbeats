@@ -35,7 +35,7 @@ set corename BUS_A
 set opts {
     {
         id 2
-        name heartbeat_record_phys_addr
+        name applist_phys_addr
         reset_level 1
         sync_rst true
         type scalar

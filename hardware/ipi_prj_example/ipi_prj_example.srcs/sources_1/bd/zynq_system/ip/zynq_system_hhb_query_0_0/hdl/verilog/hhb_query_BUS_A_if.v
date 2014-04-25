@@ -33,7 +33,7 @@ module hhb_query_BUS_A_if
     input  wire                      RREADY,
     output wire                      interrupt,
     // user signals
-    output wire [31:0]               I_heartbeat_record_phys_addr,
+    output wire [31:0]               I_applist_phys_addr,
     input  wire [31:0]               O_current_heartbeat,
     input  wire [31:0]               O_status,
     output wire                      I_ap_start,
@@ -61,8 +61,8 @@ module hhb_query_BUS_A_if
 //        bit 1  - Channel 1 (ap_ready)
 //        others - reserved
 // 0x10 : reserved
-// 0x14 : Data signal of heartbeat_record_phys_addr
-//        bit 31~0 - heartbeat_record_phys_addr[31:0] (Read/Write)
+// 0x14 : Data signal of applist_phys_addr
+//        bit 31~0 - applist_phys_addr[31:0] (Read/Write)
 // 0x18 : reserved
 // 0x1c : Data signal of current_heartbeat
 //        bit 31~0 - current_heartbeat[31:0] (Read)
@@ -78,16 +78,16 @@ localparam
 
 // address
 localparam
-    ADDR_AP_CTRL                           = 6'h00,
-    ADDR_GIE                               = 6'h04,
-    ADDR_IER                               = 6'h08,
-    ADDR_ISR                               = 6'h0c,
-    ADDR_HEARTBEAT_RECORD_PHYS_ADDR_CTRL   = 6'h10,
-    ADDR_HEARTBEAT_RECORD_PHYS_ADDR_DATA_0 = 6'h14,
-    ADDR_CURRENT_HEARTBEAT_CTRL            = 6'h18,
-    ADDR_CURRENT_HEARTBEAT_DATA_0          = 6'h1c,
-    ADDR_STATUS_CTRL                       = 6'h20,
-    ADDR_STATUS_DATA_0                     = 6'h24;
+    ADDR_AP_CTRL                  = 6'h00,
+    ADDR_GIE                      = 6'h04,
+    ADDR_IER                      = 6'h08,
+    ADDR_ISR                      = 6'h0c,
+    ADDR_APPLIST_PHYS_ADDR_CTRL   = 6'h10,
+    ADDR_APPLIST_PHYS_ADDR_DATA_0 = 6'h14,
+    ADDR_CURRENT_HEARTBEAT_CTRL   = 6'h18,
+    ADDR_CURRENT_HEARTBEAT_DATA_0 = 6'h1c,
+    ADDR_STATUS_CTRL              = 6'h20,
+    ADDR_STATUS_DATA_0            = 6'h24;
 
 // axi write fsm
 localparam
@@ -123,7 +123,7 @@ reg                  auto_restart;
 reg                  gie;
 reg  [1:0]           ier;
 reg  [1:0]           isr;
-reg  [31:0]          _heartbeat_record_phys_addr;
+reg  [31:0]          _applist_phys_addr;
 wire [31:0]          _current_heartbeat;
 wire [31:0]          _status;
 
@@ -230,8 +230,8 @@ always @(posedge ACLK) begin
             ADDR_ISR: begin
                 rdata <= isr;
             end
-            ADDR_HEARTBEAT_RECORD_PHYS_ADDR_DATA_0: begin
-                rdata <= _heartbeat_record_phys_addr[31:0];
+            ADDR_APPLIST_PHYS_ADDR_DATA_0: begin
+                rdata <= _applist_phys_addr[31:0];
             end
             ADDR_CURRENT_HEARTBEAT_DATA_0: begin
                 rdata <= _current_heartbeat[31:0];
@@ -245,13 +245,13 @@ end
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 //++++++++++++++++++++++++internal registers+++++++++++++
-assign interrupt                    = gie & (|isr);
-assign I_ap_start                   = ap_start;
-assign ap_idle                      = O_ap_idle;
-assign ap_ready                     = O_ap_ready;
-assign I_heartbeat_record_phys_addr = _heartbeat_record_phys_addr;
-assign _current_heartbeat           = O_current_heartbeat;
-assign _status                      = O_status;
+assign interrupt           = gie & (|isr);
+assign I_ap_start          = ap_start;
+assign ap_idle             = O_ap_idle;
+assign ap_ready            = O_ap_ready;
+assign I_applist_phys_addr = _applist_phys_addr;
+assign _current_heartbeat  = O_current_heartbeat;
+assign _status             = O_status;
 
 // ap_start
 always @(posedge ACLK) begin
@@ -317,10 +317,10 @@ always @(posedge ACLK) begin
         isr[1] <= isr[1] ^ WDATA[1]; // toggle on write
 end
 
-// _heartbeat_record_phys_addr[31:0]
+// _applist_phys_addr[31:0]
 always @(posedge ACLK) begin
-    if (w_hs && waddr == ADDR_HEARTBEAT_RECORD_PHYS_ADDR_DATA_0)
-        _heartbeat_record_phys_addr[31:0] <= (WDATA[31:0] & wmask) | (_heartbeat_record_phys_addr[31:0] & ~wmask);
+    if (w_hs && waddr == ADDR_APPLIST_PHYS_ADDR_DATA_0)
+        _applist_phys_addr[31:0] <= (WDATA[31:0] & wmask) | (_applist_phys_addr[31:0] & ~wmask);
 end
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++

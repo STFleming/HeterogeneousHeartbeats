@@ -3,7 +3,7 @@ set globalAPint ""
 set globalVariable ""
 set staticVariable ""
 set moduleName "hhb_query"
-set rawDecl [list "void" "hhb_query\(volatile int *a, unsigned int heartbeat_record_phys_addr, unsigned int *current_heartbeat, unsigned int *status\)"]
+set rawDecl [list "void" "hhb_query\(volatile int *a, unsigned int applist_phys_addr, unsigned int *current_heartbeat, unsigned int *status\)"]
 set argAPint ""
 set returnAPint ""
 set portList ""
@@ -17,7 +17,7 @@ set portVolatile0 "1"
 set portArrayOpt0 ""
 set port0 [list $portName0 $portInterface0 $portData0 $portPointer0 $portArrayDim0 $portConst0 $portVolatile0 $portArrayOpt0]
 lappend portList $port0
-set portName1 "heartbeat_record_phys_addr"
+set portName1 "applist_phys_addr"
 set portInterface1 "wire"
 set portData1 "unsigned int"
 set portPointer1 "0"

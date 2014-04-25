@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'hhb_query'
 ================================================================
-* Date:           Thu Apr 17 14:46:14 2014
+* Date:           Fri Apr 25 12:49:54 2014
 
 * Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
 * Project:        hhb_query
@@ -29,7 +29,7 @@
     |  Latency  |  Interval | Pipeline|
     | min | max | min | max |   Type  |
     +-----+-----+-----+-----+---------+
-    |   11|   11|   12|   12|   none  |
+    |   10|   10|   11|   11|   none  |
     +-----+-----+-----+-----+---------+
 
     + Detail: 
@@ -41,7 +41,7 @@
         |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
         | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
         +----------+-----+-----+----------+-----------+-----------+------+----------+
-        |- Loop 1  |    7|    7|         8|          1|          1|     1|    yes   |
+        |- Loop 1  |    6|    6|         7|          1|          1|     1|    yes   |
         +----------+-----+-----+----------+-----------+-----------+------+----------+
 
 
@@ -121,15 +121,15 @@ HasImplIP: 0
 IsGatedGlobalClock: 0
 
 + Individual pipeline summary: 
-  * Pipeline-0: initiation interval (II) = 1, depth = 8
+  * Pipeline-0: initiation interval (II) = 1, depth = 7
 
 
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states: 12
+* Number of FSM states: 11
 * Pipeline: 1
-  Pipeline-0: II = 1, D = 8, States = { 3 4 5 6 7 8 9 10 }
+  Pipeline-0: II = 1, D = 7, States = { 3 4 5 6 7 8 9 }
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
@@ -138,7 +138,7 @@ IsGatedGlobalClock: 0
 2 --> 
 	3  / true
 3 --> 
-	11  / (indvar)
+	10  / (indvar)
 	4  / (!indvar)
 4 --> 
 	5  / true
@@ -151,84 +151,85 @@ IsGatedGlobalClock: 0
 8 --> 
 	9  / true
 9 --> 
-	10  / true
-10 --> 
 	3  / true
+10 --> 
+	11  / true
 11 --> 
-	12  / true
-12 --> 
 * FSM state operations: 
 
  <State 1>: 0.00ns
-ST_1: heartbeat_record_phys_addr_read [2/2] 0.00ns
-:5  %heartbeat_record_phys_addr_read = call i32 @_ssdm_op_Read.ap_none.i32(i32 %heartbeat_record_phys_addr) nounwind
+ST_1: applist_phys_addr_read [2/2] 0.00ns
+:5  %applist_phys_addr_read = call i32 @_ssdm_op_Read.ap_none.i32(i32 %applist_phys_addr) nounwind
 
-ST_1: stg_14 [2/2] 0.00ns
+ST_1: stg_13 [2/2] 0.00ns
 :13  call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 0) nounwind
 
 
- <State 2>: 1.30ns
-ST_2: stg_15 [1/1] 0.00ns
+ <State 2>: 2.44ns
+ST_2: stg_14 [1/1] 0.00ns
 :0  call void (...)* @_ssdm_op_SpecBitsMap(i32* %a) nounwind, !map !0
 
-ST_2: stg_16 [1/1] 0.00ns
-:1  call void (...)* @_ssdm_op_SpecBitsMap(i32 %heartbeat_record_phys_addr) nounwind, !map !6
+ST_2: stg_15 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i32 %applist_phys_addr) nounwind, !map !6
 
-ST_2: stg_17 [1/1] 0.00ns
+ST_2: stg_16 [1/1] 0.00ns
 :2  call void (...)* @_ssdm_op_SpecBitsMap(i32* %current_heartbeat) nounwind, !map !12
 
-ST_2: stg_18 [1/1] 0.00ns
+ST_2: stg_17 [1/1] 0.00ns
 :3  call void (...)* @_ssdm_op_SpecBitsMap(i32* %status) nounwind, !map !16
 
-ST_2: stg_19 [1/1] 0.00ns
+ST_2: stg_18 [1/1] 0.00ns
 :4  call void (...)* @_ssdm_op_SpecTopModule([10 x i8]* @str) nounwind
 
-ST_2: heartbeat_record_phys_addr_read [1/2] 0.00ns
-:5  %heartbeat_record_phys_addr_read = call i32 @_ssdm_op_Read.ap_none.i32(i32 %heartbeat_record_phys_addr) nounwind
+ST_2: applist_phys_addr_read [1/2] 0.00ns
+:5  %applist_phys_addr_read = call i32 @_ssdm_op_Read.ap_none.i32(i32 %applist_phys_addr) nounwind
 
-ST_2: stg_21 [1/1] 0.00ns
+ST_2: stg_20 [1/1] 0.00ns
 :6  call void (...)* @_ssdm_op_SpecBus(i32* %a, [7 x i8]* @p_str, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
 
-ST_2: stg_22 [1/1] 0.00ns
+ST_2: stg_21 [1/1] 0.00ns
 :7  call void (...)* @_ssdm_op_SpecIFCore(i32* %a, [1 x i8]* @p_str1, [6 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
-ST_2: stg_23 [1/1] 0.00ns
+ST_2: stg_22 [1/1] 0.00ns
 :8  call void (...)* @_ssdm_op_SpecIFCore(i32 0, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
 
+ST_2: stg_23 [1/1] 0.00ns
+:9  call void (...)* @_ssdm_op_SpecWire(i32 %applist_phys_addr, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+
 ST_2: stg_24 [1/1] 0.00ns
-:9  call void (...)* @_ssdm_op_SpecWire(i32 %heartbeat_record_phys_addr, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+:10  call void (...)* @_ssdm_op_SpecIFCore(i32 %applist_phys_addr, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
 
 ST_2: stg_25 [1/1] 0.00ns
-:10  call void (...)* @_ssdm_op_SpecIFCore(i32 %heartbeat_record_phys_addr, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
-
-ST_2: stg_26 [1/1] 0.00ns
 :11  call void (...)* @_ssdm_op_SpecWire(i32* %current_heartbeat, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
 
-ST_2: stg_27 [1/1] 0.00ns
+ST_2: stg_26 [1/1] 0.00ns
 :12  call void (...)* @_ssdm_op_SpecWire(i32* %status, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
 
-ST_2: stg_28 [1/2] 0.00ns
+ST_2: stg_27 [1/2] 0.00ns
 :13  call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 0) nounwind
 
-ST_2: stg_29 [1/1] 0.00ns
+ST_2: stg_28 [1/1] 0.00ns
 :14  call void (...)* @_ssdm_op_SpecIFCore(i32* %status, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
 
-ST_2: tmp_1 [1/1] 0.00ns
-:15  %tmp_1 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %heartbeat_record_phys_addr_read, i32 2, i32 31)
+ST_2: tmp_1 [1/1] 2.44ns
+:15  %tmp_1 = add i32 %applist_phys_addr_read, 12
 
 ST_2: tmp_2 [1/1] 0.00ns
-:16  %tmp_2 = zext i30 %tmp_1 to i64
+:16  %tmp_2 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %tmp_1, i32 2, i32 31)
+
+ST_2: tmp_3 [1/1] 0.00ns
+:17  %tmp_3 = zext i30 %tmp_2 to i64
 
 ST_2: a_addr [1/1] 0.00ns
-:17  %a_addr = getelementptr inbounds i32* %a, i64 %tmp_2
+:18  %a_addr = getelementptr inbounds i32* %a, i64 %tmp_3
 
 ST_2: stg_33 [1/1] 1.30ns
-:18  br label %burst.rd.header
+:19  br label %burst.rd.header
 
 
  <State 3>: 0.00ns
 ST_3: buff_0_s [1/1] 0.00ns
-burst.rd.header:0  %buff_0_s = phi i32 [ undef, %0 ], [ %phitmp, %burst.rd.body1 ]
+burst.rd.header:0  %buff_0_s = phi i32 [ undef, %0 ], [ %buff_0, %burst.rd.body1 ]
 
 ST_3: indvar [1/1] 0.00ns
 burst.rd.header:1  %indvar = phi i1 [ false, %0 ], [ true, %burst.rd.body1 ]
@@ -237,7 +238,7 @@ ST_3: stg_36 [1/1] 0.00ns
 burst.rd.header:2  br i1 %indvar, label %burst.rd.end, label %burst.rd.body1
 
 ST_3: stg_37 [1/1] 0.00ns
-burst.rd.body1:7  br label %burst.rd.header
+burst.rd.body1:6  br label %burst.rd.header
 
 
  <State 4>: 8.75ns
@@ -266,46 +267,41 @@ burst.rd.body1:3  %a_addr_req = call i1 @_ssdm_op_ReadReq.ap_bus.i32P(i32* %a_ad
 
 
  <State 9>: 8.75ns
+ST_9: empty [1/1] 0.00ns
+burst.rd.body1:0  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1) nounwind
+
+ST_9: burstread_rbegin [1/1] 0.00ns
+burst.rd.body1:1  %burstread_rbegin = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str8) nounwind
+
+ST_9: empty_4 [1/1] 0.00ns
+burst.rd.body1:2  %empty_4 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str7) nounwind
+
 ST_9: buff_0 [1/1] 8.75ns
 burst.rd.body1:4  %buff_0 = call i32 @_ssdm_op_Read.ap_bus.i32P(i32* %a_addr) nounwind
 
-
- <State 10>: 2.44ns
-ST_10: empty [1/1] 0.00ns
-burst.rd.body1:0  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1) nounwind
-
-ST_10: burstread_rbegin [1/1] 0.00ns
-burst.rd.body1:1  %burstread_rbegin = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str8) nounwind
-
-ST_10: empty_4 [1/1] 0.00ns
-burst.rd.body1:2  %empty_4 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str7) nounwind
-
-ST_10: burstread_rend [1/1] 0.00ns
+ST_9: burstread_rend [1/1] 0.00ns
 burst.rd.body1:5  %burstread_rend = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str8, i32 %burstread_rbegin) nounwind
 
-ST_10: phitmp [1/1] 2.44ns
-burst.rd.body1:6  %phitmp = add i32 %buff_0, 10
+
+ <State 10>: 0.00ns
+ST_10: stg_48 [2/2] 0.00ns
+burst.rd.end:0  call void @_ssdm_op_Write.ap_none.i32P(i32* %current_heartbeat, i32 %buff_0_s) nounwind
+
+ST_10: stg_49 [2/2] 0.00ns
+burst.rd.end:2  call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 1) nounwind
 
 
  <State 11>: 0.00ns
-ST_11: stg_49 [2/2] 0.00ns
+ST_11: stg_50 [1/2] 0.00ns
 burst.rd.end:0  call void @_ssdm_op_Write.ap_none.i32P(i32* %current_heartbeat, i32 %buff_0_s) nounwind
 
-ST_11: stg_50 [2/2] 0.00ns
-burst.rd.end:2  call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 1) nounwind
-
-
- <State 12>: 0.00ns
-ST_12: stg_51 [1/2] 0.00ns
-burst.rd.end:0  call void @_ssdm_op_Write.ap_none.i32P(i32* %current_heartbeat, i32 %buff_0_s) nounwind
-
-ST_12: stg_52 [1/1] 0.00ns
+ST_11: stg_51 [1/1] 0.00ns
 burst.rd.end:1  call void (...)* @_ssdm_op_SpecIFCore(i32* %current_heartbeat, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
 
-ST_12: stg_53 [1/2] 0.00ns
+ST_11: stg_52 [1/2] 0.00ns
 burst.rd.end:2  call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 1) nounwind
 
-ST_12: stg_54 [1/1] 0.00ns
+ST_11: stg_53 [1/1] 0.00ns
 burst.rd.end:3  ret void
 
 
@@ -322,50 +318,50 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 1
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ a]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=4; mode=0x4254d60; pingpong=0; private_global=0; IO mode=ap_bus:ce=0
-Port [ heartbeat_record_phys_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x2c84850; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ current_heartbeat]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x41746f0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ status]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x42c3140; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ a]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=4; mode=0x302f2d0; pingpong=0; private_global=0; IO mode=ap_bus:ce=0
+Port [ applist_phys_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x3036340; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ current_heartbeat]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x309fd50; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ status]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x30cb040; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
 
 <LifeTime>
 <method=bitvector/>
-stg_15                          (specbitsmap      ) [ 0000000000000]
-stg_16                          (specbitsmap      ) [ 0000000000000]
-stg_17                          (specbitsmap      ) [ 0000000000000]
-stg_18                          (specbitsmap      ) [ 0000000000000]
-stg_19                          (spectopmodule    ) [ 0000000000000]
-heartbeat_record_phys_addr_read (read             ) [ 0000000000000]
-stg_21                          (specbus          ) [ 0000000000000]
-stg_22                          (specifcore       ) [ 0000000000000]
-stg_23                          (specifcore       ) [ 0000000000000]
-stg_24                          (specwire         ) [ 0000000000000]
-stg_25                          (specifcore       ) [ 0000000000000]
-stg_26                          (specwire         ) [ 0000000000000]
-stg_27                          (specwire         ) [ 0000000000000]
-stg_28                          (write            ) [ 0000000000000]
-stg_29                          (specifcore       ) [ 0000000000000]
-tmp_1                           (partselect       ) [ 0000000000000]
-tmp_2                           (zext             ) [ 0000000000000]
-a_addr                          (getelementptr    ) [ 0001111111100]
-stg_33                          (br               ) [ 0011111111100]
-buff_0_s                        (phi              ) [ 0001000000011]
-indvar                          (phi              ) [ 0001111111100]
-stg_36                          (br               ) [ 0000000000000]
-stg_37                          (br               ) [ 0011111111100]
-a_addr_req                      (readreq          ) [ 0000000000000]
-buff_0                          (read             ) [ 0001000000100]
-empty                           (speclooptripcount) [ 0000000000000]
-burstread_rbegin                (specregionbegin  ) [ 0000000000000]
-empty_4                         (specpipeline     ) [ 0000000000000]
-burstread_rend                  (specregionend    ) [ 0000000000000]
-phitmp                          (add              ) [ 0011000000000]
-stg_51                          (write            ) [ 0000000000000]
-stg_52                          (specifcore       ) [ 0000000000000]
-stg_53                          (write            ) [ 0000000000000]
-stg_54                          (ret              ) [ 0000000000000]
+stg_14                 (specbitsmap      ) [ 000000000000]
+stg_15                 (specbitsmap      ) [ 000000000000]
+stg_16                 (specbitsmap      ) [ 000000000000]
+stg_17                 (specbitsmap      ) [ 000000000000]
+stg_18                 (spectopmodule    ) [ 000000000000]
+applist_phys_addr_read (read             ) [ 000000000000]
+stg_20                 (specbus          ) [ 000000000000]
+stg_21                 (specifcore       ) [ 000000000000]
+stg_22                 (specifcore       ) [ 000000000000]
+stg_23                 (specwire         ) [ 000000000000]
+stg_24                 (specifcore       ) [ 000000000000]
+stg_25                 (specwire         ) [ 000000000000]
+stg_26                 (specwire         ) [ 000000000000]
+stg_27                 (write            ) [ 000000000000]
+stg_28                 (specifcore       ) [ 000000000000]
+tmp_1                  (add              ) [ 000000000000]
+tmp_2                  (partselect       ) [ 000000000000]
+tmp_3                  (zext             ) [ 000000000000]
+a_addr                 (getelementptr    ) [ 000111111100]
+stg_33                 (br               ) [ 001111111100]
+buff_0_s               (phi              ) [ 000100000011]
+indvar                 (phi              ) [ 000111111100]
+stg_36                 (br               ) [ 000000000000]
+stg_37                 (br               ) [ 001111111100]
+a_addr_req             (readreq          ) [ 000000000000]
+empty                  (speclooptripcount) [ 000000000000]
+burstread_rbegin       (specregionbegin  ) [ 000000000000]
+empty_4                (specpipeline     ) [ 000000000000]
+buff_0                 (read             ) [ 001100000000]
+burstread_rend         (specregionend    ) [ 000000000000]
+stg_50                 (write            ) [ 000000000000]
+stg_51                 (specifcore       ) [ 000000000000]
+stg_52                 (write            ) [ 000000000000]
+stg_53                 (ret              ) [ 000000000000]
 </LifeTime>
 
 <model>
@@ -380,12 +376,12 @@ stg_54                          (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="2" class="1000" name="heartbeat_record_phys_addr">
+<comp id="2" class="1000" name="applist_phys_addr">
 <pin_list>
 <pin id="3" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="heartbeat_record_phys_addr"/></StgValue>
+<StgValue><ssdm name="applist_phys_addr"/></StgValue>
 </bind>
 </comp>
 
@@ -556,7 +552,7 @@ stg_54                          (ret              ) [ 0000000000000]
 <pin id="41" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_PartSelect.i30.i32.i32.i32"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -565,7 +561,7 @@ stg_54                          (ret              ) [ 0000000000000]
 <pin id="43" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="_ssdm_op_PartSelect.i30.i32.i32.i32"/></StgValue>
 </bind>
 </comp>
 
@@ -580,7 +576,7 @@ stg_54                          (ret              ) [ 0000000000000]
 
 <comp id="46" class="1001" name="const_46">
 <pin_list>
-<pin id="47" dir="1" index="0" bw="1" slack="1"/>
+<pin id="47" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name=""/></StgValue>
@@ -598,7 +594,7 @@ stg_54                          (ret              ) [ 0000000000000]
 
 <comp id="50" class="1001" name="const_50">
 <pin_list>
-<pin id="51" dir="1" index="0" bw="1" slack="0"/>
+<pin id="51" dir="1" index="0" bw="1" slack="1"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name=""/></StgValue>
@@ -610,7 +606,7 @@ stg_54                          (ret              ) [ 0000000000000]
 <pin id="53" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_ReadReq.ap_bus.i32P"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -619,7 +615,7 @@ stg_54                          (ret              ) [ 0000000000000]
 <pin id="55" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Read.ap_bus.i32P"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_ReadReq.ap_bus.i32P"/></StgValue>
 </bind>
 </comp>
 
@@ -679,19 +675,19 @@ stg_54                          (ret              ) [ 0000000000000]
 
 <comp id="68" class="1001" name="const_68">
 <pin_list>
-<pin id="69" dir="1" index="0" bw="1" slack="2147483647"/>
+<pin id="69" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecRegionEnd"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Read.ap_bus.i32P"/></StgValue>
 </bind>
 </comp>
 
 <comp id="70" class="1001" name="const_70">
 <pin_list>
-<pin id="71" dir="1" index="0" bw="1" slack="0"/>
+<pin id="71" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecRegionEnd"/></StgValue>
 </bind>
 </comp>
 
@@ -703,7 +699,7 @@ stg_54                          (ret              ) [ 0000000000000]
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
-<opset="heartbeat_record_phys_addr_read/1 "/>
+<opset="applist_phys_addr_read/1 "/>
 </bind>
 </comp>
 
@@ -716,7 +712,7 @@ stg_54                          (ret              ) [ 0000000000000]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="stg_14/1 stg_50/11 "/>
+<opset="stg_13/1 stg_49/10 "/>
 </bind>
 </comp>
 
@@ -754,7 +750,7 @@ stg_54                          (ret              ) [ 0000000000000]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="stg_49/11 "/>
+<opset="stg_48/10 "/>
 </bind>
 </comp>
 
@@ -808,34 +804,46 @@ stg_54                          (ret              ) [ 0000000000000]
 
 <comp id="133" class="1004" name="tmp_1_fu_133">
 <pin_list>
-<pin id="134" dir="0" index="0" bw="30" slack="0"/>
-<pin id="135" dir="0" index="1" bw="32" slack="0"/>
-<pin id="136" dir="0" index="2" bw="3" slack="0"/>
-<pin id="137" dir="0" index="3" bw="6" slack="0"/>
-<pin id="138" dir="1" index="4" bw="30" slack="0"/>
+<pin id="134" dir="0" index="0" bw="32" slack="0"/>
+<pin id="135" dir="0" index="1" bw="5" slack="0"/>
+<pin id="136" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
-<opcode="partselect(1002) " fcode="partselect"/>
+<opcode="add(8) " fcode="add"/>
 <opset="tmp_1/2 "/>
 </bind>
 </comp>
 
-<comp id="143" class="1004" name="tmp_2_fu_143">
+<comp id="139" class="1004" name="tmp_2_fu_139">
 <pin_list>
-<pin id="144" dir="0" index="0" bw="30" slack="0"/>
-<pin id="145" dir="1" index="1" bw="64" slack="0"/>
+<pin id="140" dir="0" index="0" bw="30" slack="0"/>
+<pin id="141" dir="0" index="1" bw="32" slack="0"/>
+<pin id="142" dir="0" index="2" bw="3" slack="0"/>
+<pin id="143" dir="0" index="3" bw="6" slack="0"/>
+<pin id="144" dir="1" index="4" bw="30" slack="0"/>
 </pin_list>
 <bind>
-<opcode="zext(34) " fcode="zext"/>
+<opcode="partselect(1002) " fcode="partselect"/>
 <opset="tmp_2/2 "/>
 </bind>
 </comp>
 
-<comp id="147" class="1004" name="a_addr_fu_147">
+<comp id="149" class="1004" name="tmp_3_fu_149">
 <pin_list>
-<pin id="148" dir="0" index="0" bw="32" slack="0"/>
-<pin id="149" dir="0" index="1" bw="30" slack="0"/>
-<pin id="150" dir="1" index="2" bw="32" slack="2"/>
+<pin id="150" dir="0" index="0" bw="30" slack="0"/>
+<pin id="151" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="tmp_3/2 "/>
+</bind>
+</comp>
+
+<comp id="153" class="1004" name="a_addr_fu_153">
+<pin_list>
+<pin id="154" dir="0" index="0" bw="32" slack="0"/>
+<pin id="155" dir="0" index="1" bw="30" slack="0"/>
+<pin id="156" dir="1" index="2" bw="32" slack="2"/>
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
@@ -843,45 +851,23 @@ stg_54                          (ret              ) [ 0000000000000]
 </bind>
 </comp>
 
-<comp id="153" class="1004" name="phitmp_fu_153">
+<comp id="159" class="1005" name="a_addr_reg_159">
 <pin_list>
-<pin id="154" dir="0" index="0" bw="32" slack="1"/>
-<pin id="155" dir="0" index="1" bw="5" slack="0"/>
-<pin id="156" dir="1" index="2" bw="32" slack="1"/>
-</pin_list>
-<bind>
-<opcode="add(8) " fcode="add"/>
-<opset="phitmp/10 "/>
-</bind>
-</comp>
-
-<comp id="158" class="1005" name="a_addr_reg_158">
-<pin_list>
-<pin id="159" dir="0" index="0" bw="32" slack="2"/>
-<pin id="160" dir="1" index="1" bw="32" slack="2"/>
+<pin id="160" dir="0" index="0" bw="32" slack="2"/>
+<pin id="161" dir="1" index="1" bw="32" slack="2"/>
 </pin_list>
 <bind>
 <opset="a_addr "/>
 </bind>
 </comp>
 
-<comp id="164" class="1005" name="buff_0_reg_164">
+<comp id="165" class="1005" name="buff_0_reg_165">
 <pin_list>
-<pin id="165" dir="0" index="0" bw="32" slack="1"/>
-<pin id="166" dir="1" index="1" bw="32" slack="1"/>
+<pin id="166" dir="0" index="0" bw="32" slack="1"/>
+<pin id="167" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="buff_0 "/>
-</bind>
-</comp>
-
-<comp id="169" class="1005" name="phitmp_reg_169">
-<pin_list>
-<pin id="170" dir="0" index="0" bw="32" slack="1"/>
-<pin id="171" dir="1" index="1" bw="32" slack="1"/>
-</pin_list>
-<bind>
-<opset="phitmp "/>
 </bind>
 </comp>
 
@@ -898,11 +884,11 @@ stg_54                          (ret              ) [ 0000000000000]
 
 <net id="85"><net_src comp="12" pin="0"/><net_sink comp="78" pin=2"/></net>
 
-<net id="91"><net_src comp="52" pin="0"/><net_sink comp="86" pin=0"/></net>
+<net id="91"><net_src comp="54" pin="0"/><net_sink comp="86" pin=0"/></net>
 
 <net id="92"><net_src comp="38" pin="0"/><net_sink comp="86" pin=2"/></net>
 
-<net id="97"><net_src comp="54" pin="0"/><net_sink comp="93" pin=0"/></net>
+<net id="97"><net_src comp="68" pin="0"/><net_sink comp="93" pin=0"/></net>
 
 <net id="103"><net_src comp="10" pin="0"/><net_sink comp="98" pin=0"/></net>
 
@@ -910,7 +896,7 @@ stg_54                          (ret              ) [ 0000000000000]
 
 <net id="105"><net_src comp="38" pin="0"/><net_sink comp="78" pin=2"/></net>
 
-<net id="109"><net_src comp="46" pin="0"/><net_sink comp="106" pin=0"/></net>
+<net id="109"><net_src comp="48" pin="0"/><net_sink comp="106" pin=0"/></net>
 
 <net id="110"><net_src comp="106" pin="1"/><net_sink comp="98" pin=2"/></net>
 
@@ -918,43 +904,41 @@ stg_54                          (ret              ) [ 0000000000000]
 
 <net id="118"><net_src comp="111" pin="4"/><net_sink comp="106" pin=0"/></net>
 
-<net id="122"><net_src comp="48" pin="0"/><net_sink comp="119" pin=0"/></net>
+<net id="122"><net_src comp="50" pin="0"/><net_sink comp="119" pin=0"/></net>
 
 <net id="129"><net_src comp="119" pin="1"/><net_sink comp="123" pin=0"/></net>
 
-<net id="130"><net_src comp="50" pin="0"/><net_sink comp="123" pin=2"/></net>
+<net id="130"><net_src comp="52" pin="0"/><net_sink comp="123" pin=2"/></net>
 
 <net id="131"><net_src comp="123" pin="4"/><net_sink comp="119" pin=0"/></net>
 
-<net id="139"><net_src comp="40" pin="0"/><net_sink comp="133" pin=0"/></net>
+<net id="137"><net_src comp="72" pin="2"/><net_sink comp="133" pin=0"/></net>
 
-<net id="140"><net_src comp="72" pin="2"/><net_sink comp="133" pin=1"/></net>
+<net id="138"><net_src comp="40" pin="0"/><net_sink comp="133" pin=1"/></net>
 
-<net id="141"><net_src comp="42" pin="0"/><net_sink comp="133" pin=2"/></net>
+<net id="145"><net_src comp="42" pin="0"/><net_sink comp="139" pin=0"/></net>
 
-<net id="142"><net_src comp="44" pin="0"/><net_sink comp="133" pin=3"/></net>
+<net id="146"><net_src comp="133" pin="2"/><net_sink comp="139" pin=1"/></net>
 
-<net id="146"><net_src comp="133" pin="4"/><net_sink comp="143" pin=0"/></net>
+<net id="147"><net_src comp="44" pin="0"/><net_sink comp="139" pin=2"/></net>
 
-<net id="151"><net_src comp="0" pin="0"/><net_sink comp="147" pin=0"/></net>
+<net id="148"><net_src comp="46" pin="0"/><net_sink comp="139" pin=3"/></net>
 
-<net id="152"><net_src comp="143" pin="1"/><net_sink comp="147" pin=1"/></net>
+<net id="152"><net_src comp="139" pin="4"/><net_sink comp="149" pin=0"/></net>
 
-<net id="157"><net_src comp="70" pin="0"/><net_sink comp="153" pin=1"/></net>
+<net id="157"><net_src comp="0" pin="0"/><net_sink comp="153" pin=0"/></net>
 
-<net id="161"><net_src comp="147" pin="2"/><net_sink comp="158" pin=0"/></net>
+<net id="158"><net_src comp="149" pin="1"/><net_sink comp="153" pin=1"/></net>
 
-<net id="162"><net_src comp="158" pin="1"/><net_sink comp="86" pin=1"/></net>
+<net id="162"><net_src comp="153" pin="2"/><net_sink comp="159" pin=0"/></net>
 
-<net id="163"><net_src comp="158" pin="1"/><net_sink comp="93" pin=1"/></net>
+<net id="163"><net_src comp="159" pin="1"/><net_sink comp="86" pin=1"/></net>
 
-<net id="167"><net_src comp="93" pin="2"/><net_sink comp="164" pin=0"/></net>
+<net id="164"><net_src comp="159" pin="1"/><net_sink comp="93" pin=1"/></net>
 
-<net id="168"><net_src comp="164" pin="1"/><net_sink comp="153" pin=0"/></net>
+<net id="168"><net_src comp="93" pin="2"/><net_sink comp="165" pin=0"/></net>
 
-<net id="172"><net_src comp="153" pin="2"/><net_sink comp="169" pin=0"/></net>
-
-<net id="173"><net_src comp="169" pin="1"/><net_sink comp="111" pin=2"/></net>
+<net id="169"><net_src comp="165" pin="1"/><net_sink comp="111" pin=2"/></net>
 
 </net_list>
 
@@ -963,13 +947,14 @@ stg_54                          (ret              ) [ 0000000000000]
 
 * FSMD analyzer results:
   - Output states:
-	Port: current_heartbeat | {11 12 }
-	Port: status | {1 2 11 12 }
+	Port: current_heartbeat | {10 11 }
+	Port: status | {1 2 10 11 }
   - Chain level:
 	State 1
 	State 2
 		tmp_2 : 1
-		a_addr : 2
+		tmp_3 : 2
+		a_addr : 3
 	State 3
 		stg_36 : 1
 	State 4
@@ -978,10 +963,9 @@ stg_54                          (ret              ) [ 0000000000000]
 	State 7
 	State 8
 	State 9
-	State 10
 		burstread_rend : 1
+	State 10
 	State 11
-	State 12
 
 
 ============================================================
@@ -992,7 +976,7 @@ stg_54                          (ret              ) [ 0000000000000]
 |----------|-------------------|---------|---------|
 | Operation|  Functional Unit  |    FF   |   LUT   |
 |----------|-------------------|---------|---------|
-|    add   |   phitmp_fu_153   |    0    |    32   |
+|    add   |    tmp_1_fu_133   |    0    |    32   |
 |----------|-------------------|---------|---------|
 |   read   |   grp_read_fu_72  |    0    |    0    |
 |          | buff_0_read_fu_93 |    0    |    0    |
@@ -1002,9 +986,9 @@ stg_54                          (ret              ) [ 0000000000000]
 |----------|-------------------|---------|---------|
 |  readreq | grp_readreq_fu_86 |    0    |    0    |
 |----------|-------------------|---------|---------|
-|partselect|    tmp_1_fu_133   |    0    |    0    |
+|partselect|    tmp_2_fu_139   |    0    |    0    |
 |----------|-------------------|---------|---------|
-|   zext   |    tmp_2_fu_143   |    0    |    0    |
+|   zext   |    tmp_3_fu_149   |    0    |    0    |
 |----------|-------------------|---------|---------|
 |   Total  |                   |    0    |    32   |
 |----------|-------------------|---------|---------|
@@ -1016,13 +1000,12 @@ N/A
 +----------------+--------+
 |                |   FF   |
 +----------------+--------+
-| a_addr_reg_158 |   32   |
-| buff_0_reg_164 |   32   |
+| a_addr_reg_159 |   32   |
+| buff_0_reg_165 |   32   |
 |buff_0_s_reg_106|   32   |
 | indvar_reg_119 |    1   |
-| phitmp_reg_169 |   32   |
 +----------------+--------+
-|      Total     |   129  |
+|      Total     |   97   |
 +----------------+--------+
 
 * Multiplexer (MUX) list: 
@@ -1045,7 +1028,7 @@ N/A
 |  Function |    -   |    0   |   32   |
 |   Memory  |    -   |    -   |    -   |
 |Multiplexer|    4   |    -   |   33   |
-|  Register |    -   |   129  |    -   |
+|  Register |    -   |   97   |    -   |
 +-----------+--------+--------+--------+
-|   Total   |    4   |   129  |   65   |
+|   Total   |    4   |   97   |   65   |
 +-----------+--------+--------+--------+

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'hhb_query'
 ================================================================
-* Date:           Thu Apr 17 14:46:14 2014
+* Date:           Fri Apr 25 12:49:54 2014
 
 * Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
 * Project:        hhb_query
@@ -29,7 +29,7 @@
     |  Latency  |  Interval | Pipeline|
     | min | max | min | max |   Type  |
     +-----+-----+-----+-----+---------+
-    |   11|   11|   12|   12|   none  |
+    |   10|   10|   11|   11|   none  |
     +-----+-----+-----+-----+---------+
 
     + Detail: 
@@ -41,7 +41,7 @@
         |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
         | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
         +----------+-----+-----+----------+-----------+-----------+------+----------+
-        |- Loop 1  |    7|    7|         8|          1|          1|     1|    yes   |
+        |- Loop 1  |    6|    6|         7|          1|          1|     1|    yes   |
         +----------+-----+-----+----------+-----------+-----------+------+----------+
 
 
@@ -58,10 +58,10 @@
 |Instance         |        -|      -|       -|      -|
 |Memory           |        -|      -|       -|      -|
 |Multiplexer      |        -|      -|       -|     32|
-|Register         |        -|      -|     202|      -|
+|Register         |        -|      -|     169|      -|
 |ShiftMemory      |        -|      -|       0|      1|
 +-----------------+---------+-------+--------+-------+
-|Total            |        0|      0|     202|     67|
+|Total            |        0|      0|     169|     67|
 +-----------------+---------+-------+--------+-------+
 |Available        |      280|    220|  106400|  53200|
 +-----------------+---------+-------+--------+-------+
@@ -88,15 +88,15 @@
     +----------------+---+----+-----+-----------+
 
     * Expression: 
-    +------------------+----------+-------+---+----+------------+------------+
-    |   Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
-    +------------------+----------+-------+---+----+------------+------------+
-    |phitmp_fu_153_p2  |     +    |      0|  0|  32|          32|           4|
-    |ap_sig_bdd_135    |    and   |      0|  0|   1|           1|           1|
-    |ap_sig_bdd_199    |    or    |      0|  0|   1|           1|           1|
-    +------------------+----------+-------+---+----+------------+------------+
-    |Total             |          |      0|  0|  34|          34|           6|
-    +------------------+----------+-------+---+----+------------+------------+
+    +-----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |tmp_1_fu_133_p2  |     +    |      0|  0|  32|          32|           4|
+    |ap_sig_bdd_135   |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_191   |    or    |      0|  0|   1|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |Total            |          |      0|  0|  34|          34|           6|
+    +-----------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
     +----------------+----+-----------+-----+-----------+
@@ -108,31 +108,29 @@
     +----------------+----+-----------+-----+-----------+
 
     * Register: 
-    +-------------------------------------+----+-----+-----------+
-    |                 Name                | FF | Bits| Const Bits|
-    +-------------------------------------+----+-----+-----------+
-    |a_addr_reg_158                       |  30|   32|          2|
-    |ap_CS_fsm                            |   3|    3|          0|
-    |ap_reg_ppiten_pp0_it0                |   1|    1|          0|
-    |ap_reg_ppiten_pp0_it1                |   1|    1|          0|
-    |ap_reg_ppiten_pp0_it2                |   1|    1|          0|
-    |ap_reg_ppiten_pp0_it3                |   1|    1|          0|
-    |ap_reg_ppiten_pp0_it4                |   1|    1|          0|
-    |ap_reg_ppiten_pp0_it5                |   1|    1|          0|
-    |ap_reg_ppiten_pp0_it6                |   1|    1|          0|
-    |ap_reg_ppiten_pp0_it7                |   1|    1|          0|
-    |buff_0_reg_164                       |  32|   32|          0|
-    |buff_0_s_reg_106                     |  32|   32|          0|
-    |current_heartbeat1data_reg           |  32|   32|          0|
-    |current_heartbeat1vld_reg            |   0|    1|          1|
-    |heartbeat_record_phys_addr0data_reg  |  32|   32|          0|
-    |heartbeat_record_phys_addr0vld_reg   |   0|    1|          1|
-    |indvar_reg_119                       |   1|    1|          0|
-    |status1data_reg                      |  32|   32|          0|
-    |status1vld_reg                       |   0|    1|          1|
-    +-------------------------------------+----+-----+-----------+
-    |Total                                | 202|  207|          5|
-    +-------------------------------------+----+-----+-----------+
+    +----------------------------+----+-----+-----------+
+    |            Name            | FF | Bits| Const Bits|
+    +----------------------------+----+-----+-----------+
+    |a_addr_reg_159              |  30|   32|          2|
+    |ap_CS_fsm                   |   3|    3|          0|
+    |ap_reg_ppiten_pp0_it0       |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it1       |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it2       |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it3       |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it4       |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it5       |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it6       |   1|    1|          0|
+    |applist_phys_addr0data_reg  |  32|   32|          0|
+    |applist_phys_addr0vld_reg   |   0|    1|          1|
+    |buff_0_s_reg_106            |  32|   32|          0|
+    |current_heartbeat1data_reg  |  32|   32|          0|
+    |current_heartbeat1vld_reg   |   0|    1|          1|
+    |indvar_reg_119              |   1|    1|          0|
+    |status1data_reg             |  32|   32|          0|
+    |status1vld_reg              |   0|    1|          1|
+    +----------------------------+----+-----+-----------+
+    |Total                       | 169|  174|          5|
+    +----------------------------+----+-----+-----------+
 
 
 
@@ -140,26 +138,26 @@
 == Interface
 ================================================================
 * Summary: 
-+----------------------------+-----+-----+------------+----------------------------+--------------+
-|          RTL Ports         | Dir | Bits|  Protocol  |        Source Object       |    C Type    |
-+----------------------------+-----+-----+------------+----------------------------+--------------+
-|ap_clk                      |  in |    1| ap_ctrl_hs |          hhb_query         | return value |
-|ap_rst                      |  in |    1| ap_ctrl_hs |          hhb_query         | return value |
-|ap_start                    |  in |    1| ap_ctrl_hs |          hhb_query         | return value |
-|ap_done                     | out |    1| ap_ctrl_hs |          hhb_query         | return value |
-|ap_idle                     | out |    1| ap_ctrl_hs |          hhb_query         | return value |
-|ap_ready                    | out |    1| ap_ctrl_hs |          hhb_query         | return value |
-|a_req_din                   | out |    1|   ap_bus   |              a             |    pointer   |
-|a_req_full_n                |  in |    1|   ap_bus   |              a             |    pointer   |
-|a_req_write                 | out |    1|   ap_bus   |              a             |    pointer   |
-|a_rsp_empty_n               |  in |    1|   ap_bus   |              a             |    pointer   |
-|a_rsp_read                  | out |    1|   ap_bus   |              a             |    pointer   |
-|a_address                   | out |   32|   ap_bus   |              a             |    pointer   |
-|a_datain                    |  in |   32|   ap_bus   |              a             |    pointer   |
-|a_dataout                   | out |   32|   ap_bus   |              a             |    pointer   |
-|a_size                      | out |   32|   ap_bus   |              a             |    pointer   |
-|heartbeat_record_phys_addr  |  in |   32|   ap_none  | heartbeat_record_phys_addr |    scalar    |
-|current_heartbeat           | out |   32|   ap_none  |      current_heartbeat     |    pointer   |
-|status                      | out |   32|   ap_none  |           status           |    pointer   |
-+----------------------------+-----+-----+------------+----------------------------+--------------+
++-------------------+-----+-----+------------+-------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++-------------------+-----+-----+------------+-------------------+--------------+
+|ap_clk             |  in |    1| ap_ctrl_hs |     hhb_query     | return value |
+|ap_rst             |  in |    1| ap_ctrl_hs |     hhb_query     | return value |
+|ap_start           |  in |    1| ap_ctrl_hs |     hhb_query     | return value |
+|ap_done            | out |    1| ap_ctrl_hs |     hhb_query     | return value |
+|ap_idle            | out |    1| ap_ctrl_hs |     hhb_query     | return value |
+|ap_ready           | out |    1| ap_ctrl_hs |     hhb_query     | return value |
+|a_req_din          | out |    1|   ap_bus   |         a         |    pointer   |
+|a_req_full_n       |  in |    1|   ap_bus   |         a         |    pointer   |
+|a_req_write        | out |    1|   ap_bus   |         a         |    pointer   |
+|a_rsp_empty_n      |  in |    1|   ap_bus   |         a         |    pointer   |
+|a_rsp_read         | out |    1|   ap_bus   |         a         |    pointer   |
+|a_address          | out |   32|   ap_bus   |         a         |    pointer   |
+|a_datain           |  in |   32|   ap_bus   |         a         |    pointer   |
+|a_dataout          | out |   32|   ap_bus   |         a         |    pointer   |
+|a_size             | out |   32|   ap_bus   |         a         |    pointer   |
+|applist_phys_addr  |  in |   32|   ap_none  | applist_phys_addr |    scalar    |
+|current_heartbeat  | out |   32|   ap_none  | current_heartbeat |    pointer   |
+|status             | out |   32|   ap_none  |       status      |    pointer   |
++-------------------+-----+-----+------------+-------------------+--------------+
 

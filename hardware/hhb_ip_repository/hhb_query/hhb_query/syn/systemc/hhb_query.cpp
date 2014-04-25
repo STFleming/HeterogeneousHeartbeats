@@ -17,15 +17,15 @@ const sc_logic hhb_query::ap_const_logic_0 = sc_dt::Log_0;
 const sc_lv<3> hhb_query::ap_ST_st1_fsm_0 = "000";
 const sc_lv<3> hhb_query::ap_ST_st2_fsm_1 = "1";
 const sc_lv<3> hhb_query::ap_ST_pp0_stg0_fsm_2 = "10";
-const sc_lv<3> hhb_query::ap_ST_st11_fsm_3 = "11";
-const sc_lv<3> hhb_query::ap_ST_st12_fsm_4 = "100";
+const sc_lv<3> hhb_query::ap_ST_st10_fsm_3 = "11";
+const sc_lv<3> hhb_query::ap_ST_st11_fsm_4 = "100";
 const sc_lv<32> hhb_query::ap_const_lv32_0 = "00000000000000000000000000000000";
 const sc_lv<1> hhb_query::ap_const_lv1_0 = "0";
 const sc_lv<1> hhb_query::ap_const_lv1_1 = "1";
 const sc_lv<32> hhb_query::ap_const_lv32_1 = "1";
+const sc_lv<32> hhb_query::ap_const_lv32_C = "1100";
 const sc_lv<32> hhb_query::ap_const_lv32_2 = "10";
 const sc_lv<32> hhb_query::ap_const_lv32_1F = "11111";
-const sc_lv<32> hhb_query::ap_const_lv32_A = "1010";
 
 hhb_query::hhb_query(sc_module_name name) : sc_module(name), mVcdFile(0) {
 
@@ -39,7 +39,7 @@ hhb_query::hhb_query(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( ap_reg_ppiten_pp0_it1 );
     sensitive << ( ap_sig_bdd_135 );
     sensitive << ( ap_reg_ppiten_pp0_it6 );
-    sensitive << ( a_addr_reg_158 );
+    sensitive << ( a_addr_reg_159 );
 
     SC_METHOD(thread_a_dataout);
 
@@ -72,7 +72,7 @@ hhb_query::hhb_query(sc_module_name name) : sc_module(name), mVcdFile(0) {
 
     SC_METHOD(thread_ap_done);
     sensitive << ( ap_CS_fsm );
-    sensitive << ( ap_sig_bdd_199 );
+    sensitive << ( ap_sig_bdd_191 );
 
     SC_METHOD(thread_ap_idle);
     sensitive << ( ap_start );
@@ -80,15 +80,19 @@ hhb_query::hhb_query(sc_module_name name) : sc_module(name), mVcdFile(0) {
 
     SC_METHOD(thread_ap_ready);
     sensitive << ( ap_CS_fsm );
-    sensitive << ( ap_sig_bdd_199 );
+    sensitive << ( ap_sig_bdd_191 );
 
     SC_METHOD(thread_ap_sig_bdd_135);
     sensitive << ( a_rsp_empty_n );
     sensitive << ( ap_reg_ppstg_indvar_reg_119_pp0_it5 );
 
-    SC_METHOD(thread_ap_sig_bdd_199);
+    SC_METHOD(thread_ap_sig_bdd_191);
     sensitive << ( current_heartbeat1ack_in );
     sensitive << ( status1ack_in );
+
+    SC_METHOD(thread_applist_phys_addr0ack_out);
+    sensitive << ( ap_CS_fsm );
+    sensitive << ( ap_sig_bdd_191 );
 
     SC_METHOD(thread_current_heartbeat);
     sensitive << ( current_heartbeat1data_reg );
@@ -99,17 +103,10 @@ hhb_query::hhb_query(sc_module_name name) : sc_module(name), mVcdFile(0) {
     SC_METHOD(thread_current_heartbeat1vld_in);
     sensitive << ( ap_CS_fsm );
 
-    SC_METHOD(thread_heartbeat_record_phys_addr0ack_out);
-    sensitive << ( ap_CS_fsm );
-    sensitive << ( ap_sig_bdd_199 );
-
     SC_METHOD(thread_indvar_phi_fu_123_p4);
     sensitive << ( ap_CS_fsm );
     sensitive << ( indvar_reg_119 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
-
-    SC_METHOD(thread_phitmp_fu_153_p2);
-    sensitive << ( buff_0_reg_164 );
 
     SC_METHOD(thread_status);
     sensitive << ( status1data_reg );
@@ -125,29 +122,32 @@ hhb_query::hhb_query(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( ap_start );
     sensitive << ( ap_CS_fsm );
 
-    SC_METHOD(thread_tmp_1_fu_133_p4);
-    sensitive << ( heartbeat_record_phys_addr0data_reg );
+    SC_METHOD(thread_tmp_1_fu_133_p2);
+    sensitive << ( applist_phys_addr0data_reg );
 
-    SC_METHOD(thread_tmp_2_fu_143_p1);
-    sensitive << ( tmp_1_fu_133_p4 );
+    SC_METHOD(thread_tmp_2_fu_139_p4);
+    sensitive << ( tmp_1_fu_133_p2 );
+
+    SC_METHOD(thread_tmp_3_fu_149_p1);
+    sensitive << ( tmp_2_fu_139_p4 );
 
     SC_METHOD(thread_ap_NS_fsm);
     sensitive << ( ap_start );
     sensitive << ( ap_CS_fsm );
     sensitive << ( ap_reg_ppiten_pp0_it0 );
     sensitive << ( ap_reg_ppiten_pp0_it1 );
+    sensitive << ( ap_reg_ppiten_pp0_it5 );
     sensitive << ( ap_sig_bdd_135 );
     sensitive << ( ap_reg_ppiten_pp0_it6 );
-    sensitive << ( ap_reg_ppiten_pp0_it7 );
     sensitive << ( indvar_phi_fu_123_p4 );
-    sensitive << ( ap_sig_bdd_199 );
+    sensitive << ( ap_sig_bdd_191 );
 
     SC_THREAD(thread_hdltv_gen);
     sensitive << ( ap_clk.pos() );
 
     ap_CS_fsm = "000";
-    heartbeat_record_phys_addr0data_reg = "00000000000000000000000000000000";
-    heartbeat_record_phys_addr0vld_reg = SC_LOGIC_0;
+    applist_phys_addr0data_reg = "00000000000000000000000000000000";
+    applist_phys_addr0vld_reg = SC_LOGIC_0;
     current_heartbeat1data_reg = "00000000000000000000000000000000";
     current_heartbeat1vld_reg = SC_LOGIC_0;
     status1data_reg = "00000000000000000000000000000000";
@@ -159,7 +159,6 @@ hhb_query::hhb_query(sc_module_name name) : sc_module(name), mVcdFile(0) {
     ap_reg_ppiten_pp0_it4 = SC_LOGIC_0;
     ap_reg_ppiten_pp0_it5 = SC_LOGIC_0;
     ap_reg_ppiten_pp0_it6 = SC_LOGIC_0;
-    ap_reg_ppiten_pp0_it7 = SC_LOGIC_0;
     static int apTFileNum = 0;
     stringstream apTFilenSS;
     apTFilenSS << "hhb_query_sc_trace_" << apTFileNum ++;
@@ -183,15 +182,15 @@ hhb_query::hhb_query(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, a_datain, "(port)a_datain");
     sc_trace(mVcdFile, a_dataout, "(port)a_dataout");
     sc_trace(mVcdFile, a_size, "(port)a_size");
-    sc_trace(mVcdFile, heartbeat_record_phys_addr, "(port)heartbeat_record_phys_addr");
+    sc_trace(mVcdFile, applist_phys_addr, "(port)applist_phys_addr");
     sc_trace(mVcdFile, current_heartbeat, "(port)current_heartbeat");
     sc_trace(mVcdFile, status, "(port)status");
 #endif
 #ifdef __HLS_TRACE_LEVEL_INT__
     sc_trace(mVcdFile, ap_CS_fsm, "ap_CS_fsm");
-    sc_trace(mVcdFile, heartbeat_record_phys_addr0data_reg, "heartbeat_record_phys_addr0data_reg");
-    sc_trace(mVcdFile, heartbeat_record_phys_addr0vld_reg, "heartbeat_record_phys_addr0vld_reg");
-    sc_trace(mVcdFile, heartbeat_record_phys_addr0ack_out, "heartbeat_record_phys_addr0ack_out");
+    sc_trace(mVcdFile, applist_phys_addr0data_reg, "applist_phys_addr0data_reg");
+    sc_trace(mVcdFile, applist_phys_addr0vld_reg, "applist_phys_addr0vld_reg");
+    sc_trace(mVcdFile, applist_phys_addr0ack_out, "applist_phys_addr0ack_out");
     sc_trace(mVcdFile, current_heartbeat1data_reg, "current_heartbeat1data_reg");
     sc_trace(mVcdFile, current_heartbeat1vld_reg, "current_heartbeat1vld_reg");
     sc_trace(mVcdFile, current_heartbeat1vld_in, "current_heartbeat1vld_in");
@@ -213,18 +212,15 @@ hhb_query::hhb_query(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, ap_reg_ppstg_indvar_reg_119_pp0_it5, "ap_reg_ppstg_indvar_reg_119_pp0_it5");
     sc_trace(mVcdFile, ap_sig_bdd_135, "ap_sig_bdd_135");
     sc_trace(mVcdFile, ap_reg_ppiten_pp0_it6, "ap_reg_ppiten_pp0_it6");
-    sc_trace(mVcdFile, ap_reg_ppiten_pp0_it7, "ap_reg_ppiten_pp0_it7");
     sc_trace(mVcdFile, ap_reg_ppstg_indvar_reg_119_pp0_it2, "ap_reg_ppstg_indvar_reg_119_pp0_it2");
     sc_trace(mVcdFile, ap_reg_ppstg_indvar_reg_119_pp0_it3, "ap_reg_ppstg_indvar_reg_119_pp0_it3");
     sc_trace(mVcdFile, ap_reg_ppstg_indvar_reg_119_pp0_it4, "ap_reg_ppstg_indvar_reg_119_pp0_it4");
-    sc_trace(mVcdFile, ap_reg_ppstg_indvar_reg_119_pp0_it6, "ap_reg_ppstg_indvar_reg_119_pp0_it6");
-    sc_trace(mVcdFile, a_addr_reg_158, "a_addr_reg_158");
-    sc_trace(mVcdFile, buff_0_reg_164, "buff_0_reg_164");
-    sc_trace(mVcdFile, phitmp_fu_153_p2, "phitmp_fu_153_p2");
+    sc_trace(mVcdFile, a_addr_reg_159, "a_addr_reg_159");
     sc_trace(mVcdFile, indvar_phi_fu_123_p4, "indvar_phi_fu_123_p4");
-    sc_trace(mVcdFile, tmp_2_fu_143_p1, "tmp_2_fu_143_p1");
-    sc_trace(mVcdFile, tmp_1_fu_133_p4, "tmp_1_fu_133_p4");
-    sc_trace(mVcdFile, ap_sig_bdd_199, "ap_sig_bdd_199");
+    sc_trace(mVcdFile, tmp_3_fu_149_p1, "tmp_3_fu_149_p1");
+    sc_trace(mVcdFile, tmp_1_fu_133_p2, "tmp_1_fu_133_p2");
+    sc_trace(mVcdFile, tmp_2_fu_139_p4, "tmp_2_fu_139_p4");
+    sc_trace(mVcdFile, ap_sig_bdd_191, "ap_sig_bdd_191");
     sc_trace(mVcdFile, ap_NS_fsm, "ap_NS_fsm");
 #endif
 
@@ -312,17 +308,26 @@ void hhb_query::thread_ap_clk_no_reset_() {
         if ((esl_seteq<1,3,3>(ap_ST_pp0_stg0_fsm_2, ap_CS_fsm.read()) && 
              !(ap_sig_bdd_135.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it6.read())))) {
             ap_reg_ppiten_pp0_it6 = ap_reg_ppiten_pp0_it5.read();
+        } else if (esl_seteq<1,3,3>(ap_ST_st2_fsm_1, ap_CS_fsm.read())) {
+            ap_reg_ppiten_pp0_it6 = ap_const_logic_0;
         }
     }
     if ( ap_rst.read() == ap_const_logic_1) {
-        ap_reg_ppiten_pp0_it7 = ap_const_logic_0;
+        applist_phys_addr0data_reg = ap_const_lv32_0;
     } else {
-        if ((esl_seteq<1,3,3>(ap_ST_pp0_stg0_fsm_2, ap_CS_fsm.read()) && 
-             !(ap_sig_bdd_135.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it6.read())))) {
-            ap_reg_ppiten_pp0_it7 = ap_reg_ppiten_pp0_it6.read();
-        } else if (esl_seteq<1,3,3>(ap_ST_st2_fsm_1, ap_CS_fsm.read())) {
-            ap_reg_ppiten_pp0_it7 = ap_const_logic_0;
+        if (((!(!esl_seteq<1,1,1>(ap_const_logic_1, ap_start.read()) && esl_seteq<1,3,3>(ap_ST_st1_fsm_0, ap_CS_fsm.read())) && 
+              esl_seteq<1,1,1>(ap_const_logic_1, ap_const_logic_1) && 
+              esl_seteq<1,1,1>(ap_const_logic_0, applist_phys_addr0vld_reg.read())) || 
+             (!(!esl_seteq<1,1,1>(ap_const_logic_1, ap_start.read()) && esl_seteq<1,3,3>(ap_ST_st1_fsm_0, ap_CS_fsm.read())) && 
+              esl_seteq<1,1,1>(ap_const_logic_1, ap_const_logic_1) && 
+              esl_seteq<1,1,1>(ap_const_logic_1, applist_phys_addr0vld_reg.read()) && 
+              esl_seteq<1,1,1>(ap_const_logic_1, applist_phys_addr0ack_out.read())))) {
+            applist_phys_addr0data_reg = applist_phys_addr.read();
         }
+    }
+    if ( ap_rst.read() == ap_const_logic_1) {
+        applist_phys_addr0vld_reg = ap_const_logic_0;
+    } else {
     }
     if ( ap_rst.read() == ap_const_logic_1) {
         current_heartbeat1data_reg = ap_const_lv32_0;
@@ -339,23 +344,6 @@ void hhb_query::thread_ap_clk_no_reset_() {
     }
     if ( ap_rst.read() == ap_const_logic_1) {
         current_heartbeat1vld_reg = ap_const_logic_0;
-    } else {
-    }
-    if ( ap_rst.read() == ap_const_logic_1) {
-        heartbeat_record_phys_addr0data_reg = ap_const_lv32_0;
-    } else {
-        if (((!(!esl_seteq<1,1,1>(ap_const_logic_1, ap_start.read()) && esl_seteq<1,3,3>(ap_ST_st1_fsm_0, ap_CS_fsm.read())) && 
-              esl_seteq<1,1,1>(ap_const_logic_1, ap_const_logic_1) && 
-              esl_seteq<1,1,1>(ap_const_logic_0, heartbeat_record_phys_addr0vld_reg.read())) || 
-             (!(!esl_seteq<1,1,1>(ap_const_logic_1, ap_start.read()) && esl_seteq<1,3,3>(ap_ST_st1_fsm_0, ap_CS_fsm.read())) && 
-              esl_seteq<1,1,1>(ap_const_logic_1, ap_const_logic_1) && 
-              esl_seteq<1,1,1>(ap_const_logic_1, heartbeat_record_phys_addr0vld_reg.read()) && 
-              esl_seteq<1,1,1>(ap_const_logic_1, heartbeat_record_phys_addr0ack_out.read())))) {
-            heartbeat_record_phys_addr0data_reg = heartbeat_record_phys_addr.read();
-        }
-    }
-    if ( ap_rst.read() == ap_const_logic_1) {
-        heartbeat_record_phys_addr0vld_reg = ap_const_logic_0;
     } else {
     }
     if ((esl_seteq<1,3,3>(ap_ST_pp0_stg0_fsm_2, ap_CS_fsm.read()) && 
@@ -384,7 +372,7 @@ void hhb_query::thread_ap_clk_no_reset_() {
     } else {
     }
     if (esl_seteq<1,3,3>(ap_ST_st2_fsm_1, ap_CS_fsm.read())) {
-        a_addr_reg_158 =  (sc_lv<32>) (tmp_2_fu_143_p1.read());
+        a_addr_reg_159 =  (sc_lv<32>) (tmp_3_fu_149_p1.read());
     }
     if ((esl_seteq<1,3,3>(ap_ST_pp0_stg0_fsm_2, ap_CS_fsm.read()) && !(ap_sig_bdd_135.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it6.read())))) {
         ap_reg_ppstg_indvar_reg_119_pp0_it1 = indvar_reg_119.read();
@@ -392,18 +380,14 @@ void hhb_query::thread_ap_clk_no_reset_() {
         ap_reg_ppstg_indvar_reg_119_pp0_it3 = ap_reg_ppstg_indvar_reg_119_pp0_it2.read();
         ap_reg_ppstg_indvar_reg_119_pp0_it4 = ap_reg_ppstg_indvar_reg_119_pp0_it3.read();
         ap_reg_ppstg_indvar_reg_119_pp0_it5 = ap_reg_ppstg_indvar_reg_119_pp0_it4.read();
-        ap_reg_ppstg_indvar_reg_119_pp0_it6 = ap_reg_ppstg_indvar_reg_119_pp0_it5.read();
     }
     if ((esl_seteq<1,3,3>(ap_ST_pp0_stg0_fsm_2, ap_CS_fsm.read()) && esl_seteq<1,1,1>(ap_reg_ppstg_indvar_reg_119_pp0_it5.read(), ap_const_lv1_0) && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it6.read()) && !(ap_sig_bdd_135.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it6.read())))) {
-        buff_0_reg_164 = a_datain.read();
-    }
-    if ((esl_seteq<1,3,3>(ap_ST_pp0_stg0_fsm_2, ap_CS_fsm.read()) && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it7.read()) && !(ap_sig_bdd_135.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it6.read())) && esl_seteq<1,1,1>(ap_const_lv1_0, ap_reg_ppstg_indvar_reg_119_pp0_it6.read()))) {
-        buff_0_s_reg_106 = phitmp_fu_153_p2.read();
+        buff_0_s_reg_106 = a_datain.read();
     }
 }
 
 void hhb_query::thread_a_address() {
-    a_address = a_addr_reg_158.read();
+    a_address = a_addr_reg_159.read();
 }
 
 void hhb_query::thread_a_dataout() {
@@ -441,8 +425,8 @@ void hhb_query::thread_a_size() {
 }
 
 void hhb_query::thread_ap_done() {
-    if ((esl_seteq<1,3,3>(ap_ST_st12_fsm_4, ap_CS_fsm.read()) && 
-         !ap_sig_bdd_199.read())) {
+    if ((esl_seteq<1,3,3>(ap_ST_st11_fsm_4, ap_CS_fsm.read()) && 
+         !ap_sig_bdd_191.read())) {
         ap_done = ap_const_logic_1;
     } else {
         ap_done = ap_const_logic_0;
@@ -459,8 +443,8 @@ void hhb_query::thread_ap_idle() {
 }
 
 void hhb_query::thread_ap_ready() {
-    if ((esl_seteq<1,3,3>(ap_ST_st12_fsm_4, ap_CS_fsm.read()) && 
-         !ap_sig_bdd_199.read())) {
+    if ((esl_seteq<1,3,3>(ap_ST_st11_fsm_4, ap_CS_fsm.read()) && 
+         !ap_sig_bdd_191.read())) {
         ap_ready = ap_const_logic_1;
     } else {
         ap_ready = ap_const_logic_0;
@@ -471,8 +455,17 @@ void hhb_query::thread_ap_sig_bdd_135() {
     ap_sig_bdd_135 = (esl_seteq<1,1,1>(a_rsp_empty_n.read(), ap_const_logic_0) && esl_seteq<1,1,1>(ap_reg_ppstg_indvar_reg_119_pp0_it5.read(), ap_const_lv1_0));
 }
 
-void hhb_query::thread_ap_sig_bdd_199() {
-    ap_sig_bdd_199 = (esl_seteq<1,1,1>(current_heartbeat1ack_in.read(), ap_const_logic_0) || esl_seteq<1,1,1>(status1ack_in.read(), ap_const_logic_0));
+void hhb_query::thread_ap_sig_bdd_191() {
+    ap_sig_bdd_191 = (esl_seteq<1,1,1>(current_heartbeat1ack_in.read(), ap_const_logic_0) || esl_seteq<1,1,1>(status1ack_in.read(), ap_const_logic_0));
+}
+
+void hhb_query::thread_applist_phys_addr0ack_out() {
+    if ((esl_seteq<1,3,3>(ap_ST_st11_fsm_4, ap_CS_fsm.read()) && 
+         !ap_sig_bdd_191.read())) {
+        applist_phys_addr0ack_out = ap_const_logic_1;
+    } else {
+        applist_phys_addr0ack_out = ap_const_logic_0;
+    }
 }
 
 void hhb_query::thread_current_heartbeat() {
@@ -490,19 +483,10 @@ void hhb_query::thread_current_heartbeat1ack_in() {
 }
 
 void hhb_query::thread_current_heartbeat1vld_in() {
-    if (esl_seteq<1,3,3>(ap_ST_st11_fsm_3, ap_CS_fsm.read())) {
+    if (esl_seteq<1,3,3>(ap_ST_st10_fsm_3, ap_CS_fsm.read())) {
         current_heartbeat1vld_in = ap_const_logic_1;
     } else {
         current_heartbeat1vld_in = ap_const_logic_0;
-    }
-}
-
-void hhb_query::thread_heartbeat_record_phys_addr0ack_out() {
-    if ((esl_seteq<1,3,3>(ap_ST_st12_fsm_4, ap_CS_fsm.read()) && 
-         !ap_sig_bdd_199.read())) {
-        heartbeat_record_phys_addr0ack_out = ap_const_logic_1;
-    } else {
-        heartbeat_record_phys_addr0ack_out = ap_const_logic_0;
     }
 }
 
@@ -514,10 +498,6 @@ void hhb_query::thread_indvar_phi_fu_123_p4() {
     } else {
         indvar_phi_fu_123_p4 = indvar_reg_119.read();
     }
-}
-
-void hhb_query::thread_phitmp_fu_153_p2() {
-    phitmp_fu_153_p2 = (!buff_0_reg_164.read().is_01() || !ap_const_lv32_A.is_01())? sc_lv<32>(): (sc_bigint<32>(buff_0_reg_164.read()) + sc_biguint<32>(ap_const_lv32_A));
 }
 
 void hhb_query::thread_status() {
@@ -535,7 +515,7 @@ void hhb_query::thread_status1ack_in() {
 }
 
 void hhb_query::thread_status1data_in() {
-    if (esl_seteq<1,3,3>(ap_ST_st11_fsm_3, ap_CS_fsm.read())) {
+    if (esl_seteq<1,3,3>(ap_ST_st10_fsm_3, ap_CS_fsm.read())) {
         status1data_in = ap_const_lv32_1;
     } else if ((esl_seteq<1,3,3>(ap_ST_st1_fsm_0, ap_CS_fsm.read()) && 
                 !esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_0))) {
@@ -548,19 +528,23 @@ void hhb_query::thread_status1data_in() {
 void hhb_query::thread_status1vld_in() {
     if (((esl_seteq<1,3,3>(ap_ST_st1_fsm_0, ap_CS_fsm.read()) && 
           !esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_0)) || 
-         esl_seteq<1,3,3>(ap_ST_st11_fsm_3, ap_CS_fsm.read()))) {
+         esl_seteq<1,3,3>(ap_ST_st10_fsm_3, ap_CS_fsm.read()))) {
         status1vld_in = ap_const_logic_1;
     } else {
         status1vld_in = ap_const_logic_0;
     }
 }
 
-void hhb_query::thread_tmp_1_fu_133_p4() {
-    tmp_1_fu_133_p4 = heartbeat_record_phys_addr0data_reg.read().range(31, 2);
+void hhb_query::thread_tmp_1_fu_133_p2() {
+    tmp_1_fu_133_p2 = (!applist_phys_addr0data_reg.read().is_01() || !ap_const_lv32_C.is_01())? sc_lv<32>(): (sc_bigint<32>(applist_phys_addr0data_reg.read()) + sc_biguint<32>(ap_const_lv32_C));
 }
 
-void hhb_query::thread_tmp_2_fu_143_p1() {
-    tmp_2_fu_143_p1 = esl_zext<64,30>(tmp_1_fu_133_p4.read());
+void hhb_query::thread_tmp_2_fu_139_p4() {
+    tmp_2_fu_139_p4 = tmp_1_fu_133_p2.read().range(31, 2);
+}
+
+void hhb_query::thread_tmp_3_fu_149_p1() {
+    tmp_3_fu_149_p1 = esl_zext<64,30>(tmp_2_fu_139_p4.read());
 }
 
 void hhb_query::thread_ap_NS_fsm() {
@@ -576,28 +560,28 @@ void hhb_query::thread_ap_NS_fsm() {
             ap_NS_fsm = ap_ST_pp0_stg0_fsm_2;
             break;
         case 2 : 
-            if ((!(esl_seteq<1,3,3>(ap_ST_pp0_stg0_fsm_2, ap_CS_fsm.read()) && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it7.read()) && !(ap_sig_bdd_135.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it6.read())) && !esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it6.read())) && !(esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it0.read()) && !(ap_sig_bdd_135.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it6.read())) && !esl_seteq<1,1,1>(ap_const_lv1_0, indvar_phi_fu_123_p4.read()) && !esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
+            if ((!(esl_seteq<1,3,3>(ap_ST_pp0_stg0_fsm_2, ap_CS_fsm.read()) && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it6.read()) && !(ap_sig_bdd_135.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it6.read())) && !esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it5.read())) && !(esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it0.read()) && !(ap_sig_bdd_135.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it6.read())) && !esl_seteq<1,1,1>(ap_const_lv1_0, indvar_phi_fu_123_p4.read()) && !esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
                 ap_NS_fsm = ap_ST_pp0_stg0_fsm_2;
             } else if (((esl_seteq<1,3,3>(ap_ST_pp0_stg0_fsm_2, ap_CS_fsm.read()) && 
-  esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it7.read()) && 
+  esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it6.read()) && 
   !(ap_sig_bdd_135.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it6.read())) && 
-  !esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it6.read())) || (esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it0.read()) && 
+  !esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it5.read())) || (esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it0.read()) && 
   !(ap_sig_bdd_135.read() && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it6.read())) && 
   !esl_seteq<1,1,1>(ap_const_lv1_0, indvar_phi_fu_123_p4.read()) && 
   !esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it1.read())))) {
-                ap_NS_fsm = ap_ST_st11_fsm_3;
+                ap_NS_fsm = ap_ST_st10_fsm_3;
             } else {
                 ap_NS_fsm = ap_ST_pp0_stg0_fsm_2;
             }
             break;
         case 3 : 
-            ap_NS_fsm = ap_ST_st12_fsm_4;
+            ap_NS_fsm = ap_ST_st11_fsm_4;
             break;
         case 4 : 
-            if (!ap_sig_bdd_199.read()) {
+            if (!ap_sig_bdd_191.read()) {
                 ap_NS_fsm = ap_ST_st1_fsm_0;
             } else {
-                ap_NS_fsm = ap_ST_st12_fsm_4;
+                ap_NS_fsm = ap_ST_st11_fsm_4;
             }
             break;
         default : 
@@ -631,7 +615,7 @@ void hhb_query::thread_hdltv_gen() {
         mHdltvinHandle << " , " <<  " \"a_datain\" :  \"" << a_datain.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"a_dataout\" :  \"" << a_dataout.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"a_size\" :  \"" << a_size.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"heartbeat_record_phys_addr\" :  \"" << heartbeat_record_phys_addr.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"applist_phys_addr\" :  \"" << applist_phys_addr.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"current_heartbeat\" :  \"" << current_heartbeat.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"status\" :  \"" << status.read() << "\" ";
         mHdltvinHandle << "}" << std::endl;

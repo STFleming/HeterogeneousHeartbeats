@@ -2584,7 +2584,7 @@ extern char *basename (__const char *__filename) throw () __attribute__ ((__nonn
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
-void hhb_query(volatile int *a, unsigned int heartbeat_record_phys_addr, unsigned int *current_heartbeat, unsigned int *status){
+void hhb_query(volatile int *a, unsigned int applist_phys_addr, unsigned int *current_heartbeat, unsigned int *status){
 #pragma empty_line
   //ap_bus is the only valid nativeVivado HLSinterface for memory mapped master ports
 #pragma HLS INTERFACE ap_bus port=a depth=N
@@ -2594,8 +2594,8 @@ void hhb_query(volatile int *a, unsigned int heartbeat_record_phys_addr, unsigne
 #pragma empty_line
 #pragma HLS RESOURCE variable=return core=AXI4LiteS metadata="-bus_bundle BUS_A"
 #pragma empty_line
-#pragma HLS INTERFACE ap_none register port=&heartbeat_record_phys_addr
-#pragma HLS RESOURCE variable=&heartbeat_record_phys_addr core=AXI4LiteS metadata="-bus_bundle BUS_A"
+#pragma HLS INTERFACE ap_none register port=&applist_phys_addr
+#pragma HLS RESOURCE variable=&applist_phys_addr core=AXI4LiteS metadata="-bus_bundle BUS_A"
 #pragma empty_line
 #pragma HLS INTERFACE ap_none register port=current_heartbeat
 //#pragma HLS RESOURCE core=AXI4LiteS variable=current_heartbeat metadata="-bus_bundle BUS_A"
@@ -2612,11 +2612,14 @@ void hhb_query(volatile int *a, unsigned int heartbeat_record_phys_addr, unsigne
  //IP running
 #pragma empty_line
   //read from DDR
-  memcpy(buff,(const int*)(a+heartbeat_record_phys_addr/4), 1*sizeof(int));
+  memcpy(buff,(const int*)(a+(applist_phys_addr+(4*3))/4), 1*sizeof(int));
 #pragma empty_line
-  *current_heartbeat = buff[0] + 10;
+ //Initial test, just read the lock data element.
+#pragma empty_line
+#pragma empty_line
+  *current_heartbeat = buff[0];
 #pragma HLS RESOURCE core=AXI4LiteS variable=current_heartbeat metadata="-bus_bundle BUS_A"
-#pragma line 42 "hhb_query/src/hhb_query_top.cpp"
+#pragma line 45 "hhb_query/src/hhb_query_top.cpp"
 
 #pragma empty_line
   *status=1; //IP stop

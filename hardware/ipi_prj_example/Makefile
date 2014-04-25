@@ -10,5 +10,5 @@ system:
 	cp ipi_prj_example.runs/impl_1/zynq_system_wrapper.bit ../sdcard_files/system.bit
 	../sdcard_files/bootgen.sh
 	cp ipi_prj_example.runs/impl_1/zynq_system_wrapper.bit ../configuration_bitstreams/hhb_example_system.bit
-	../configuration_bitstreams/promgen_script hhb_example_system
+	#../configuration_bitstreams/promgen_script hhb_example_system
 	rm *.log *.jou

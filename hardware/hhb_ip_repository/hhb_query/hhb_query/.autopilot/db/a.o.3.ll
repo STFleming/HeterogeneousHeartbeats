@@ -13,52 +13,53 @@ target triple = "x86_64-unknown-linux-gnu"
 @p_str8 = internal constant [17 x i8] c"burstread.region\00" ; [#uses=2 type=[17 x i8]*]
 
 ; [#uses=0]
-define void @hhb_query(i32* %a, i32 %heartbeat_record_phys_addr, i32* %current_heartbeat, i32* %status) nounwind uwtable {
+define void @hhb_query(i32* %a, i32 %applist_phys_addr, i32* %current_heartbeat, i32* %status) nounwind uwtable {
   call void (...)* @_ssdm_op_SpecBitsMap(i32* %a) nounwind, !map !0
-  call void (...)* @_ssdm_op_SpecBitsMap(i32 %heartbeat_record_phys_addr) nounwind, !map !6
+  call void (...)* @_ssdm_op_SpecBitsMap(i32 %applist_phys_addr) nounwind, !map !6
   call void (...)* @_ssdm_op_SpecBitsMap(i32* %current_heartbeat) nounwind, !map !12
   call void (...)* @_ssdm_op_SpecBitsMap(i32* %status) nounwind, !map !16
   call void (...)* @_ssdm_op_SpecTopModule([10 x i8]* @str) nounwind
-  %heartbeat_record_phys_addr_read = call i32 @_ssdm_op_Read.ap_none.i32(i32 %heartbeat_record_phys_addr) nounwind ; [#uses=1 type=i32]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
+  %applist_phys_addr_read = call i32 @_ssdm_op_Read.ap_none.i32(i32 %applist_phys_addr) nounwind ; [#uses=1 type=i32]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr_read}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
   call void @llvm.dbg.value(metadata !{i32* %a}, i64 0, metadata !33), !dbg !34 ; [debug line = 15:30] [debug variable = a]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32 %heartbeat_record_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = heartbeat_record_phys_addr]
-  call void @llvm.dbg.value(metadata !{i32* %current_heartbeat}, i64 0, metadata !35), !dbg !36 ; [debug line = 15:88] [debug variable = current_heartbeat]
-  call void @llvm.dbg.value(metadata !{i32* %status}, i64 0, metadata !37), !dbg !38 ; [debug line = 15:121] [debug variable = status]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32 %applist_phys_addr}, i64 0, metadata !20), !dbg !32 ; [debug line = 15:46] [debug variable = applist_phys_addr]
+  call void @llvm.dbg.value(metadata !{i32* %current_heartbeat}, i64 0, metadata !35), !dbg !36 ; [debug line = 15:79] [debug variable = current_heartbeat]
+  call void @llvm.dbg.value(metadata !{i32* %status}, i64 0, metadata !37), !dbg !38 ; [debug line = 15:112] [debug variable = status]
   call void (...)* @_ssdm_op_SpecBus(i32* %a, [7 x i8]* @p_str, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind, !dbg !39 ; [debug line = 18:1]
   call void (...)* @_ssdm_op_SpecIFCore(i32* %a, [1 x i8]* @p_str1, [6 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind, !dbg !41 ; [debug line = 21:1]
   call void (...)* @_ssdm_op_SpecIFCore(i32 0, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind, !dbg !42 ; [debug line = 23:1]
-  call void (...)* @_ssdm_op_SpecWire(i32 %heartbeat_record_phys_addr, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind, !dbg !43 ; [debug line = 25:1]
-  call void (...)* @_ssdm_op_SpecIFCore(i32 %heartbeat_record_phys_addr, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind, !dbg !44 ; [debug line = 26:1]
+  call void (...)* @_ssdm_op_SpecWire(i32 %applist_phys_addr, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind, !dbg !43 ; [debug line = 25:1]
+  call void (...)* @_ssdm_op_SpecIFCore(i32 %applist_phys_addr, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind, !dbg !44 ; [debug line = 26:1]
   call void (...)* @_ssdm_op_SpecWire(i32* %current_heartbeat, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind, !dbg !45 ; [debug line = 28:1]
   call void (...)* @_ssdm_op_SpecWire(i32* %status, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind, !dbg !46 ; [debug line = 31:1]
   call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 0) nounwind, !dbg !47 ; [debug line = 37:3]
   call void (...)* @_ssdm_op_SpecIFCore(i32* %status, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind, !dbg !48 ; [debug line = 38:1]
-  %tmp_1 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %heartbeat_record_phys_addr_read, i32 2, i32 31), !dbg !49 ; [#uses=1 type=i30] [debug line = 40:3]
-  %tmp_2 = zext i30 %tmp_1 to i64, !dbg !49       ; [#uses=1 type=i64] [debug line = 40:3]
-  %a_addr = getelementptr inbounds i32* %a, i64 %tmp_2, !dbg !49 ; [#uses=2 type=i32*] [debug line = 40:3]
+  %tmp_1 = add i32 %applist_phys_addr_read, 12, !dbg !49 ; [#uses=1 type=i32] [debug line = 40:3]
+  %tmp_2 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %tmp_1, i32 2, i32 31), !dbg !49 ; [#uses=1 type=i30] [debug line = 40:3]
+  %tmp_3 = zext i30 %tmp_2 to i64, !dbg !49       ; [#uses=1 type=i64] [debug line = 40:3]
+  %a_addr = getelementptr inbounds i32* %a, i64 %tmp_3, !dbg !49 ; [#uses=2 type=i32*] [debug line = 40:3]
   br label %burst.rd.header
 
 burst.rd.body1:                                   ; preds = %burst.rd.header
@@ -69,19 +70,18 @@ burst.rd.body1:                                   ; preds = %burst.rd.header
   %buff_0 = call i32 @_ssdm_op_Read.ap_bus.i32P(i32* %a_addr) nounwind ; [#uses=1 type=i32]
   call void @llvm.dbg.value(metadata !{i32 %buff_0}, i64 0, metadata !50), !dbg !51 ; [debug line = 35:7] [debug variable = buff[0]]
   %burstread_rend = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str8, i32 %burstread_rbegin) nounwind ; [#uses=0 type=i32]
-  %phitmp = add i32 %buff_0, 10                   ; [#uses=1 type=i32]
   br label %burst.rd.header
 
 burst.rd.header:                                  ; preds = %burst.rd.body1, %0
-  %buff_0_s = phi i32 [ undef, %0 ], [ %phitmp, %burst.rd.body1 ], !dbg !52 ; [#uses=1 type=i32] [debug line = 42:3]
+  %buff_0_s = phi i32 [ undef, %0 ], [ %buff_0, %burst.rd.body1 ] ; [#uses=1 type=i32]
   %indvar = phi i1 [ false, %0 ], [ true, %burst.rd.body1 ] ; [#uses=1 type=i1]
   br i1 %indvar, label %burst.rd.end, label %burst.rd.body1
 
 burst.rd.end:                                     ; preds = %burst.rd.header
-  call void @_ssdm_op_Write.ap_none.i32P(i32* %current_heartbeat, i32 %buff_0_s) nounwind, !dbg !52 ; [debug line = 42:3]
-  call void (...)* @_ssdm_op_SpecIFCore(i32* %current_heartbeat, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind, !dbg !53 ; [debug line = 43:1]
-  call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 1) nounwind, !dbg !54 ; [debug line = 44:3]
-  ret void, !dbg !55                              ; [debug line = 47:1]
+  call void @_ssdm_op_Write.ap_none.i32P(i32* %current_heartbeat, i32 %buff_0_s) nounwind, !dbg !52 ; [debug line = 45:3]
+  call void (...)* @_ssdm_op_SpecIFCore(i32* %current_heartbeat, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind, !dbg !53 ; [debug line = 46:1]
+  call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 1) nounwind, !dbg !54 ; [debug line = 47:3]
+  ret void, !dbg !55                              ; [debug line = 50:1]
 }
 
 ; [#uses=1]
@@ -189,7 +189,7 @@ declare i32 @llvm.part.select.i32(i32, i32, i32) nounwind readnone
 !6 = metadata !{metadata !7}
 !7 = metadata !{i32 0, i32 31, metadata !8}
 !8 = metadata !{metadata !9}
-!9 = metadata !{metadata !"heartbeat_record_phys_addr", metadata !10, metadata !"unsigned int"}
+!9 = metadata !{metadata !"applist_phys_addr", metadata !10, metadata !"unsigned int"}
 !10 = metadata !{metadata !11}
 !11 = metadata !{i32 0, i32 0, i32 0}
 !12 = metadata !{metadata !13}
@@ -200,7 +200,7 @@ declare i32 @llvm.part.select.i32(i32, i32, i32) nounwind readnone
 !17 = metadata !{i32 0, i32 31, metadata !18}
 !18 = metadata !{metadata !19}
 !19 = metadata !{metadata !"status", metadata !4, metadata !"unsigned int"}
-!20 = metadata !{i32 786689, metadata !21, metadata !"heartbeat_record_phys_addr", metadata !22, i32 33554447, metadata !28, i32 0, i32 0} ; [ DW_TAG_arg_variable ]
+!20 = metadata !{i32 786689, metadata !21, metadata !"applist_phys_addr", metadata !22, i32 33554447, metadata !28, i32 0, i32 0} ; [ DW_TAG_arg_variable ]
 !21 = metadata !{i32 786478, i32 0, metadata !22, metadata !"hhb_query", metadata !"hhb_query", metadata !"_Z9hhb_queryPVijPjS1_", metadata !22, i32 15, metadata !23, i1 false, i1 true, i32 0, i32 0, null, i32 256, i1 false, void (i32*, i32, i32*, i32*)* @hhb_query, null, null, metadata !30, i32 15} ; [ DW_TAG_subprogram ]
 !22 = metadata !{i32 786473, metadata !"hhb_query/src/hhb_query_top.cpp", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository", null} ; [ DW_TAG_file_type ]
 !23 = metadata !{i32 786453, i32 0, metadata !"", i32 0, i32 0, i64 0, i64 0, i64 0, i32 0, null, metadata !24, i32 0, i32 0} ; [ DW_TAG_subroutine_type ]
@@ -216,11 +216,11 @@ declare i32 @llvm.part.select.i32(i32, i32, i32) nounwind readnone
 !33 = metadata !{i32 786689, metadata !21, metadata !"a", metadata !22, i32 16777231, metadata !25, i32 0, i32 0} ; [ DW_TAG_arg_variable ]
 !34 = metadata !{i32 15, i32 30, metadata !21, null}
 !35 = metadata !{i32 786689, metadata !21, metadata !"current_heartbeat", metadata !22, i32 50331663, metadata !29, i32 0, i32 0} ; [ DW_TAG_arg_variable ]
-!36 = metadata !{i32 15, i32 88, metadata !21, null}
+!36 = metadata !{i32 15, i32 79, metadata !21, null}
 !37 = metadata !{i32 786689, metadata !21, metadata !"status", metadata !22, i32 67108879, metadata !29, i32 0, i32 0} ; [ DW_TAG_arg_variable ]
-!38 = metadata !{i32 15, i32 121, metadata !21, null}
+!38 = metadata !{i32 15, i32 112, metadata !21, null}
 !39 = metadata !{i32 18, i32 1, metadata !40, null}
-!40 = metadata !{i32 786443, metadata !21, i32 15, i32 128, metadata !22, i32 0} ; [ DW_TAG_lexical_block ]
+!40 = metadata !{i32 786443, metadata !21, i32 15, i32 119, metadata !22, i32 0} ; [ DW_TAG_lexical_block ]
 !41 = metadata !{i32 21, i32 1, metadata !40, null}
 !42 = metadata !{i32 23, i32 1, metadata !40, null}
 !43 = metadata !{i32 25, i32 1, metadata !40, null}
@@ -232,7 +232,7 @@ declare i32 @llvm.part.select.i32(i32, i32, i32) nounwind readnone
 !49 = metadata !{i32 40, i32 3, metadata !40, null}
 !50 = metadata !{i32 786688, metadata !40, metadata !"buff[0]", null, i32 35, metadata !27, i32 0, i32 0} ; [ DW_TAG_auto_variable ]
 !51 = metadata !{i32 35, i32 7, metadata !40, null}
-!52 = metadata !{i32 42, i32 3, metadata !40, null}
-!53 = metadata !{i32 43, i32 1, metadata !40, null}
-!54 = metadata !{i32 44, i32 3, metadata !40, null}
-!55 = metadata !{i32 47, i32 1, metadata !40, null}
+!52 = metadata !{i32 45, i32 3, metadata !40, null}
+!53 = metadata !{i32 46, i32 1, metadata !40, null}
+!54 = metadata !{i32 47, i32 3, metadata !40, null}
+!55 = metadata !{i32 50, i32 1, metadata !40, null}

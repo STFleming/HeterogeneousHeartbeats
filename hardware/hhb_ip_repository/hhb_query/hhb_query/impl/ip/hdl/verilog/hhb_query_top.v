@@ -232,7 +232,7 @@ wire sig_hhb_query_a_req_write;
 wire sig_hhb_query_a_rsp_empty_n;
 wire sig_hhb_query_a_rsp_read;
 
-wire [32 - 1:0] sig_hhb_query_heartbeat_record_phys_addr;
+wire [32 - 1:0] sig_hhb_query_applist_phys_addr;
 wire [32 - 1:0] sig_hhb_query_current_heartbeat;
 wire [32 - 1:0] sig_hhb_query_status;
 wire sig_hhb_query_ap_start;
@@ -254,7 +254,7 @@ hhb_query hhb_query_U(
     .a_req_write(sig_hhb_query_a_req_write),
     .a_rsp_empty_n(sig_hhb_query_a_rsp_empty_n),
     .a_rsp_read(sig_hhb_query_a_rsp_read),
-    .heartbeat_record_phys_addr(sig_hhb_query_heartbeat_record_phys_addr),
+    .applist_phys_addr(sig_hhb_query_applist_phys_addr),
     .current_heartbeat(sig_hhb_query_current_heartbeat),
     .status(sig_hhb_query_status),
     .ap_start(sig_hhb_query_ap_start),
@@ -340,7 +340,7 @@ hhb_query_BUS_A_if #(
 hhb_query_BUS_A_if_U(
     .ACLK(aclk),
     .ARESETN(aresetn),
-    .I_heartbeat_record_phys_addr(sig_hhb_query_heartbeat_record_phys_addr),
+    .I_applist_phys_addr(sig_hhb_query_applist_phys_addr),
     .O_current_heartbeat(sig_hhb_query_current_heartbeat),
     .O_status(sig_hhb_query_status),
     .I_ap_start(sig_hhb_query_ap_start),

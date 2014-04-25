@@ -661,7 +661,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>3984626708</spirit:value>
+            <spirit:value>2261032244</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -669,7 +669,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Apr 17 13:47:46 UTC 2014</spirit:value>
+            <spirit:value>Fri Apr 25 12:03:32 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -1894,8 +1894,8 @@
         <xilinx:taxonomy>/HHB</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>Hhb_query</xilinx:displayName>
-      <xilinx:coreRevision>1404171446</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2014-04-17T13:46:22Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1404251249</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2014-04-25T11:50:02Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2013.4</xilinx:xilinxVersion>
