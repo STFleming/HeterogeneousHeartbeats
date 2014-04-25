@@ -48,7 +48,7 @@ define void @hhb_query(i32* %a, i32 %applist_phys_addr, i32* %current_heartbeat,
   call void @llvm.dbg.value(metadata !{i32* %applist_phys_addr.assign}, i64 0, metadata !18), !dbg !39 ; [debug line = 40:3] [debug variable = applist_phys_addr]
   call void @llvm.dbg.value(metadata !{i32* %applist_phys_addr.assign}, i64 0, metadata !18), !dbg !39 ; [debug line = 40:3] [debug variable = applist_phys_addr]
   call void @llvm.dbg.value(metadata !{i32* %applist_phys_addr.assign}, i64 0, metadata !18), !dbg !39 ; [debug line = 40:3] [debug variable = applist_phys_addr]
-  %tmp.1 = add i32 %applist_phys_addr, 12, !dbg !39 ; [#uses=1 type=i32] [debug line = 40:3]
+  %tmp.1 = add i32 %applist_phys_addr, 8, !dbg !39 ; [#uses=1 type=i32] [debug line = 40:3]
   %tmp.2 = lshr i32 %tmp.1, 2, !dbg !39           ; [#uses=1 type=i32] [debug line = 40:3]
   %tmp.3 = zext i32 %tmp.2 to i64, !dbg !39       ; [#uses=1 type=i64] [debug line = 40:3]
   %a.addr = getelementptr inbounds i32* %a, i64 %tmp.3, !dbg !39 ; [#uses=1 type=i32*] [debug line = 40:3]

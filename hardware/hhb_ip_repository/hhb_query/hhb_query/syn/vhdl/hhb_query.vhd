@@ -47,7 +47,7 @@ architecture behav of hhb_query is
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
-    constant ap_const_lv32_C : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001100";
+    constant ap_const_lv32_8 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001000";
     constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
     constant ap_const_lv32_1F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011111";
 
@@ -563,7 +563,7 @@ begin
         end if; 
     end process;
 
-    tmp_1_fu_133_p2 <= std_logic_vector(unsigned(applist_phys_addr0data_reg) + unsigned(ap_const_lv32_C));
+    tmp_1_fu_133_p2 <= std_logic_vector(unsigned(applist_phys_addr0data_reg) + unsigned(ap_const_lv32_8));
     tmp_2_fu_139_p4 <= tmp_1_fu_133_p2(31 downto 2);
     tmp_3_fu_149_p1 <= std_logic_vector(resize(unsigned(tmp_2_fu_139_p4),64));
 end behav;

@@ -56,7 +56,7 @@ define void @hhb_query(i32* %a, i32 %applist_phys_addr, i32* %current_heartbeat,
   call void (...)* @_ssdm_op_SpecWire(i32* %status, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind, !dbg !46 ; [debug line = 31:1]
   call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 0) nounwind, !dbg !47 ; [debug line = 37:3]
   call void (...)* @_ssdm_op_SpecIFCore(i32* %status, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind, !dbg !48 ; [debug line = 38:1]
-  %tmp_1 = add i32 %applist_phys_addr_read, 12, !dbg !49 ; [#uses=1 type=i32] [debug line = 40:3]
+  %tmp_1 = add i32 %applist_phys_addr_read, 8, !dbg !49 ; [#uses=1 type=i32] [debug line = 40:3]
   %tmp_2 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %tmp_1, i32 2, i32 31), !dbg !49 ; [#uses=1 type=i30] [debug line = 40:3]
   %tmp_3 = zext i30 %tmp_2 to i64, !dbg !49       ; [#uses=1 type=i64] [debug line = 40:3]
   %a_addr = getelementptr inbounds i32* %a, i64 %tmp_3, !dbg !49 ; [#uses=2 type=i32*] [debug line = 40:3]

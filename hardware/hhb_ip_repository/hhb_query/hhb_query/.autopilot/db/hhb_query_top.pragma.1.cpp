@@ -2612,7 +2612,7 @@ _ssdm_op_SpecResource(status, "", "AXI4LiteS", "", "", "", "-bus_bundle BUS_A");
  //IP running
 
   //read from DDR
-  memcpy(buff,(const int*)(a+(applist_phys_addr+(4*3))/4), 1*sizeof(int));
+  memcpy(buff,(const int*)(a+(applist_phys_addr+(4*2))/4), 1*sizeof(int));
 
  //Initial test, just read the lock data element.
 

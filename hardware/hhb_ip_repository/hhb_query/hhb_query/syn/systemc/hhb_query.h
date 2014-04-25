@@ -92,7 +92,7 @@ struct hhb_query : public sc_module {
     static const sc_lv<1> ap_const_lv1_0;
     static const sc_lv<1> ap_const_lv1_1;
     static const sc_lv<32> ap_const_lv32_1;
-    static const sc_lv<32> ap_const_lv32_C;
+    static const sc_lv<32> ap_const_lv32_8;
     static const sc_lv<32> ap_const_lv32_2;
     static const sc_lv<32> ap_const_lv32_1F;
     // Thread declarations

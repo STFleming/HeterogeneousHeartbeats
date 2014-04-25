@@ -43,7 +43,7 @@ define void @hhb_query(i32* %a, i32 %applist_phys_addr, i32* %current_heartbeat,
   call void (...)* @_ssdm_op_SpecWire(i32* %status, [8 x i8]* @.str5, i32 1, i32 1, i32 0, [1 x i8]* @.str1) nounwind, !dbg !51 ; [debug line = 31:1]
   store i32 0, i32* %status, align 4, !dbg !52    ; [debug line = 37:3]
   call void (...)* @_ssdm_op_SpecIFCore(i32* %status, [1 x i8]* @.str1, [10 x i8]* @.str3, [1 x i8]* @.str1, [1 x i8]* @.str1, [1 x i8]* @.str1, [18 x i8]* @.str4) nounwind, !dbg !53 ; [debug line = 38:1]
-  %tmp.1 = add i32 %applist_phys_addr, 12, !dbg !54 ; [#uses=1 type=i32] [debug line = 40:3]
+  %tmp.1 = add i32 %applist_phys_addr, 8, !dbg !54 ; [#uses=1 type=i32] [debug line = 40:3]
   %tmp.2 = lshr i32 %tmp.1, 2, !dbg !54           ; [#uses=1 type=i32] [debug line = 40:3]
   %tmp.3 = zext i32 %tmp.2 to i64, !dbg !54       ; [#uses=1 type=i64] [debug line = 40:3]
   %a.addr = getelementptr inbounds i32* %a, i64 %tmp.3, !dbg !54 ; [#uses=2 type=i32*] [debug line = 40:3]

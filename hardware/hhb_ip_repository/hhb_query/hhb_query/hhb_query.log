@@ -14,7 +14,7 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [HLS-10] Starting code transformations ...
 @I [HLS-10] Checking synthesizability ...
 @I [XFORM-102] Partitioning array 'buff' (hhb_query/src/hhb_query_top.cpp:35) automatically.
-@I [HLS-111] Elapsed time: 1.41 seconds; current memory usage: 47.5 MB.
+@I [HLS-111] Elapsed time: 1.44 seconds; current memory usage: 47.5 MB.
 @I [HLS-10] Starting hardware synthesis ...
 @I [HLS-10] Synthesizing 'hhb_query' ...
 @I [HLS-10] ----------------------------------------------------------------
@@ -52,5 +52,5 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [WVHDL-304] Generating RTL VHDL for 'hhb_query'.
 @I [WVLOG-307] Generating RTL Verilog for 'hhb_query'.
 @I [IMPL-8] Exporting RTL as an IP in IP-XACT.
-@I [HLS-112] Total elapsed time: 24.948 seconds; peak memory usage: 48.2 MB.
+@I [HLS-112] Total elapsed time: 24.966 seconds; peak memory usage: 48.2 MB.
 @I [LIC-101] Checked in feature [HLS]

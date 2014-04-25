@@ -770,7 +770,7 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>12</content>
+				<content>8</content>
 			</item>
 			<item class_id_reference="16" object_id="_23">
 				<Value>

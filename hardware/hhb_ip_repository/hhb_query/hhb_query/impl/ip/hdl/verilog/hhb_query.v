@@ -100,7 +100,7 @@ parameter    ap_const_lv32_0 = 32'b00000000000000000000000000000000;
 parameter    ap_const_lv1_0 = 1'b0;
 parameter    ap_const_lv1_1 = 1'b1;
 parameter    ap_const_lv32_1 = 32'b1;
-parameter    ap_const_lv32_C = 32'b1100;
+parameter    ap_const_lv32_8 = 32'b1000;
 parameter    ap_const_lv32_2 = 32'b10;
 parameter    ap_const_lv32_1F = 32'b11111;
 parameter    ap_true = 1'b1;
@@ -481,7 +481,7 @@ begin
 end
 assign current_heartbeat = current_heartbeat1data_reg;
 assign status = status1data_reg;
-assign tmp_1_fu_133_p2 = (applist_phys_addr0data_reg + ap_const_lv32_C);
+assign tmp_1_fu_133_p2 = (applist_phys_addr0data_reg + ap_const_lv32_8);
 assign tmp_2_fu_139_p4 = {{tmp_1_fu_133_p2[ap_const_lv32_1F : ap_const_lv32_2]}};
 assign tmp_3_fu_149_p1 = $unsigned(tmp_2_fu_139_p4);
 always @ (posedge ap_clk)

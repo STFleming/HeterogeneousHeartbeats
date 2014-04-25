@@ -235,7 +235,7 @@ module s00_couplers_imp_156Q4UY
   assign s00_couplers_to_auto_pc_WLAST = S_AXI_wlast;
   assign s00_couplers_to_auto_pc_WSTRB = S_AXI_wstrb[3:0];
   assign s00_couplers_to_auto_pc_WVALID = S_AXI_wvalid;
-zynq_system_auto_pc_10 auto_pc
+zynq_system_auto_pc_12 auto_pc
        (.aclk(S_ACLK_1),
         .aresetn(S_ARESETN_1),
         .m_axi_araddr(auto_pc_to_s00_couplers_ARADDR),
@@ -613,7 +613,7 @@ module s00_couplers_imp_5VZGPS
   assign s00_couplers_to_auto_pc_WVALID = S_AXI_wvalid;
 GND GND
        (.G(GND_1));
-zynq_system_auto_pc_11 auto_pc
+zynq_system_auto_pc_13 auto_pc
        (.aclk(S_ACLK_1),
         .aresetn(S_ARESETN_1),
         .m_axi_araddr(auto_pc_to_s00_couplers_ARADDR),

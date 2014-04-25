@@ -2257,8 +2257,8 @@
 				<xilinx:taxonomy>/HHB</xilinx:taxonomy>
 			</xilinx:taxonomies>
 			<xilinx:displayName>Hhb_query</xilinx:displayName>
-			<xilinx:coreRevision>1404251249</xilinx:coreRevision>
-			<xilinx:coreCreationDateTime>2014-04-25T11:50:02Z</xilinx:coreCreationDateTime>
+			<xilinx:coreRevision>1404251323</xilinx:coreRevision>
+			<xilinx:coreCreationDateTime>2014-04-25T12:23:35Z</xilinx:coreCreationDateTime>
 		</xilinx:coreExtensions>
 		<xilinx:packagingInfo>
 			<xilinx:xilinxVersion>2013.4</xilinx:xilinxVersion>

@@ -23,7 +23,7 @@ const sc_lv<32> hhb_query::ap_const_lv32_0 = "00000000000000000000000000000000";
 const sc_lv<1> hhb_query::ap_const_lv1_0 = "0";
 const sc_lv<1> hhb_query::ap_const_lv1_1 = "1";
 const sc_lv<32> hhb_query::ap_const_lv32_1 = "1";
-const sc_lv<32> hhb_query::ap_const_lv32_C = "1100";
+const sc_lv<32> hhb_query::ap_const_lv32_8 = "1000";
 const sc_lv<32> hhb_query::ap_const_lv32_2 = "10";
 const sc_lv<32> hhb_query::ap_const_lv32_1F = "11111";
 
@@ -536,7 +536,7 @@ void hhb_query::thread_status1vld_in() {
 }
 
 void hhb_query::thread_tmp_1_fu_133_p2() {
-    tmp_1_fu_133_p2 = (!applist_phys_addr0data_reg.read().is_01() || !ap_const_lv32_C.is_01())? sc_lv<32>(): (sc_bigint<32>(applist_phys_addr0data_reg.read()) + sc_biguint<32>(ap_const_lv32_C));
+    tmp_1_fu_133_p2 = (!applist_phys_addr0data_reg.read().is_01() || !ap_const_lv32_8.is_01())? sc_lv<32>(): (sc_bigint<32>(applist_phys_addr0data_reg.read()) + sc_biguint<32>(ap_const_lv32_8));
 }
 
 void hhb_query::thread_tmp_2_fu_139_p4() {

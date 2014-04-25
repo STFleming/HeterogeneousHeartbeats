@@ -2605,7 +2605,7 @@ void hhb_query(volatile int *a, unsigned int applist_phys_addr, unsigned int *cu
   *status=0; //IP running
 
   //read from DDR
-  memcpy(buff,(const int*)(a+(applist_phys_addr+(4*3))/4), 1*sizeof(int));
+  memcpy(buff,(const int*)(a+(applist_phys_addr+(4*2))/4), 1*sizeof(int));
 
  //Initial test, just read the lock data element.
 

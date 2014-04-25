@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'hhb_query'
 ================================================================
-* Date:           Fri Apr 25 12:49:54 2014
+* Date:           Fri Apr 25 13:23:27 2014
 
 * Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
 * Project:        hhb_query
@@ -212,7 +212,7 @@ ST_2: stg_28 [1/1] 0.00ns
 :14  call void (...)* @_ssdm_op_SpecIFCore(i32* %status, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
 
 ST_2: tmp_1 [1/1] 2.44ns
-:15  %tmp_1 = add i32 %applist_phys_addr_read, 12
+:15  %tmp_1 = add i32 %applist_phys_addr_read, 8
 
 ST_2: tmp_2 [1/1] 0.00ns
 :16  %tmp_2 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %tmp_1, i32 2, i32 31)
@@ -318,10 +318,10 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 1
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ a]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=4; mode=0x302f2d0; pingpong=0; private_global=0; IO mode=ap_bus:ce=0
-Port [ applist_phys_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x3036340; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ current_heartbeat]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x309fd50; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ status]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x30cb040; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ a]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=4; mode=0x3430420; pingpong=0; private_global=0; IO mode=ap_bus:ce=0
+Port [ applist_phys_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x337f990; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ current_heartbeat]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x346b450; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ status]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x1be3c00; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
