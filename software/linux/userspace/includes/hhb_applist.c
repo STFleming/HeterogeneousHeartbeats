@@ -101,6 +101,14 @@ void applist_register_app(applist_entry_t * new_app)
 {
 	applist_state_t* app_state = applist_fetch_list_state(); //Get the current application state
 
+	//fetch the physical address for the app_state virtual address.
+	int64_t applist_phys_addr = get_physical_addr(getpid(), (int64_t *)app_state->list_head);
+
+	//Write that physical address to the hhb_query modules appropriate register.
+	HHB_query hhb_query_dev;
+	hhb_query_dev = setup_hhbquery();
+	HHB_query_SetHeartbeat_record_phys_addr(&hhb_query_dev, applist_phys_addr);
+
 	applist_acquire_lock(app_state);	
 		
 	int i = 0; //This is a counter that is used to iterate through the list
