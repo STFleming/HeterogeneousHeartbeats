@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'hhb_query'" level="0">
-<item name = "Date">Fri Apr 25 13:23:27 2014
+<item name = "Date">Mon Apr 28 12:39:31 2014
 </item>
 <item name = "Version">2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)</item>
 <item name = "Project">hhb_query</item>
@@ -47,7 +47,7 @@
 <section name = "Utilization Estimates" level="0">
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="Expression">-, -, 0, 34</column>
+<column name="Expression">-, -, 0, 2</column>
 <column name="FIFO">-, -, -, -</column>
 <column name="Instance">-, -, -, -</column>
 <column name="Memory">-, -, -, -</column>
@@ -74,14 +74,13 @@
 </item>
 <item name = "Shift register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="indvar_reg_119">0, 1, 1, 0</column>
+<column name="indvar_reg_117">0, 1, 1, 0</column>
 </table>
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="tmp_1_fu_133_p2">+, 0, 0, 32, 32, 4</column>
 <column name="ap_sig_bdd_135">and, 0, 0, 1, 1, 1</column>
-<column name="ap_sig_bdd_191">or, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_186">or, 0, 0, 1, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -91,7 +90,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="4">Name, FF, Bits, Const Bits</keys>
-<column name="a_addr_reg_159">30, 32, 2</column>
+<column name="a_addr_reg_151">30, 32, 2</column>
 <column name="ap_CS_fsm">3, 3, 0</column>
 <column name="ap_reg_ppiten_pp0_it0">1, 1, 0</column>
 <column name="ap_reg_ppiten_pp0_it1">1, 1, 0</column>
@@ -100,12 +99,12 @@
 <column name="ap_reg_ppiten_pp0_it4">1, 1, 0</column>
 <column name="ap_reg_ppiten_pp0_it5">1, 1, 0</column>
 <column name="ap_reg_ppiten_pp0_it6">1, 1, 0</column>
+<column name="applist_log_reg_104">32, 32, 0</column>
 <column name="applist_phys_addr0data_reg">32, 32, 0</column>
 <column name="applist_phys_addr0vld_reg">0, 1, 1</column>
-<column name="buff_0_s_reg_106">32, 32, 0</column>
 <column name="current_heartbeat1data_reg">32, 32, 0</column>
 <column name="current_heartbeat1vld_reg">0, 1, 1</column>
-<column name="indvar_reg_119">1, 1, 0</column>
+<column name="indvar_reg_117">1, 1, 0</column>
 <column name="status1data_reg">32, 32, 0</column>
 <column name="status1vld_reg">0, 1, 1</column>
 </table>

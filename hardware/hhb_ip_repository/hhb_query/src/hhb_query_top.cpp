@@ -32,13 +32,13 @@ void hhb_query(volatile int *a, unsigned int applist_phys_addr, unsigned int *cu
 #pragma HLS RESOURCE core=AXI4LiteS    variable=status metadata="-bus_bundle BUS_A"
   
   int i;
-  int64_t buff[N];
+  int buff[N];
   
   *status=0; //IP running
 
   //read from DDR
-  memcpy(buff,(const int*)(a+(applist_phys_addr)/4), N*sizeof(int64_t));
-  int64_t applist_log = buff[0];
+  memcpy(buff,(const int*)(a+applist_phys_addr/4), N*sizeof(int));
+  int applist_log = buff[0];
  
  //Initial test, just read the lock data element.
 

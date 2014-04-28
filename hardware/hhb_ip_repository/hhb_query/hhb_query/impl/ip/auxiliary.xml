@@ -6,5 +6,5 @@
   <xd:arg xd:name="*(current_heartbeat)" xd:originalName="current_heartbeat" xd:direction="out" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:offset="0x1C" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
   <xd:arg xd:name="*(status)" xd:originalName="status" xd:direction="out" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:offset="0x24" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
   <xd:latencyEstimates xd:best-case="10" xd:worst-case="10" xd:average-case="10"/>
-  <xd:resourceEstimates xd:LUT="67" xd:FF="169" xd:BRAM="0" xd:DSP="0"/>
+  <xd:resourceEstimates xd:LUT="35" xd:FF="169" xd:BRAM="0" xd:DSP="0"/>
 </xd:acceleratorMap>

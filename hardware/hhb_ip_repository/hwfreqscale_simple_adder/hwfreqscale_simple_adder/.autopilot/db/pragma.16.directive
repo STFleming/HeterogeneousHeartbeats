@@ -1,0 +1,60 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="hwfreqscale_simple_adder" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="return"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle BUS_A&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="hwfreqscale_simple_adder" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="input1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="hwfreqscale_simple_adder" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="input1"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle BUS_A&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="hwfreqscale_simple_adder" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="input2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="hwfreqscale_simple_adder" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="input2"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle BUS_A&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="hwfreqscale_simple_adder" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="output"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="hwfreqscale_simple_adder" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="output"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle BUS_A&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="hwfreqscale_simple_adder" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="frequency_value"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

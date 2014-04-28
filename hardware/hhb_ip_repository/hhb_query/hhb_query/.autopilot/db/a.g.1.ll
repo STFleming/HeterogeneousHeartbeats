@@ -48,19 +48,20 @@ define void @hhb_query(i32* %a, i32 %applist_phys_addr, i32* %current_heartbeat,
   call void @llvm.dbg.value(metadata !{i32* %applist_phys_addr.assign}, i64 0, metadata !18), !dbg !39 ; [debug line = 40:3] [debug variable = applist_phys_addr]
   call void @llvm.dbg.value(metadata !{i32* %applist_phys_addr.assign}, i64 0, metadata !18), !dbg !39 ; [debug line = 40:3] [debug variable = applist_phys_addr]
   call void @llvm.dbg.value(metadata !{i32* %applist_phys_addr.assign}, i64 0, metadata !18), !dbg !39 ; [debug line = 40:3] [debug variable = applist_phys_addr]
-  %tmp.1 = add i32 %applist_phys_addr, 8, !dbg !39 ; [#uses=1 type=i32] [debug line = 40:3]
-  %tmp.2 = lshr i32 %tmp.1, 2, !dbg !39           ; [#uses=1 type=i32] [debug line = 40:3]
-  %tmp.3 = zext i32 %tmp.2 to i64, !dbg !39       ; [#uses=1 type=i64] [debug line = 40:3]
-  %a.addr = getelementptr inbounds i32* %a, i64 %tmp.3, !dbg !39 ; [#uses=1 type=i32*] [debug line = 40:3]
-  %tmp.4 = bitcast i32* %a.addr to i8*, !dbg !39  ; [#uses=1 type=i8*] [debug line = 40:3]
-  call void @llvm.memcpy.p0i8.p0i8.i64(i8* %tmp, i8* %tmp.4, i64 4, i32 4, i1 false), !dbg !39 ; [debug line = 40:3]
-  %buff.addr = getelementptr inbounds [1 x i32]* %buff, i64 0, i64 0, !dbg !40 ; [#uses=1 type=i32*] [debug line = 45:3]
-  %buff.load = load i32* %buff.addr, align 4, !dbg !40 ; [#uses=2 type=i32] [debug line = 45:3]
-  call void (...)* @_ssdm_SpecKeepArrayLoad(i32 %buff.load) nounwind
-  store i32 %buff.load, i32* %current_heartbeat, align 4, !dbg !40 ; [debug line = 45:3]
-  call void (...)* @_ssdm_op_SpecResource(i32* %current_heartbeat, i8* getelementptr inbounds ([1 x i8]* @.str1, i64 0, i64 0), i8* getelementptr inbounds ([10 x i8]* @.str3, i64 0, i64 0), i8* getelementptr inbounds ([1 x i8]* @.str1, i64 0, i64 0), i8* getelementptr inbounds ([1 x i8]* @.str1, i64 0, i64 0), i8* getelementptr inbounds ([1 x i8]* @.str1, i64 0, i64 0), i8* getelementptr inbounds ([18 x i8]* @.str4, i64 0, i64 0)) nounwind, !dbg !41 ; [debug line = 46:1]
-  store i32 1, i32* %status, align 4, !dbg !42    ; [debug line = 47:3]
-  ret void, !dbg !43                              ; [debug line = 50:1]
+  %tmp.1 = lshr i32 %applist_phys_addr, 2, !dbg !39 ; [#uses=1 type=i32] [debug line = 40:3]
+  %tmp.2 = zext i32 %tmp.1 to i64, !dbg !39       ; [#uses=1 type=i64] [debug line = 40:3]
+  %a.addr = getelementptr inbounds i32* %a, i64 %tmp.2, !dbg !39 ; [#uses=1 type=i32*] [debug line = 40:3]
+  %tmp.3 = bitcast i32* %a.addr to i8*, !dbg !39  ; [#uses=1 type=i8*] [debug line = 40:3]
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* %tmp, i8* %tmp.3, i64 4, i32 4, i1 false), !dbg !39 ; [debug line = 40:3]
+  %buff.addr = getelementptr inbounds [1 x i32]* %buff, i64 0, i64 0, !dbg !40 ; [#uses=1 type=i32*] [debug line = 41:28]
+  %applist_log = load i32* %buff.addr, align 4, !dbg !40 ; [#uses=3 type=i32] [debug line = 41:28]
+  call void (...)* @_ssdm_SpecKeepArrayLoad(i32 %applist_log) nounwind
+  call void @llvm.dbg.value(metadata !{i32 %applist_log}, i64 0, metadata !41), !dbg !40 ; [debug line = 41:28] [debug variable = applist_log]
+  call void (...)* @_ssdm_SpecKeepArrayLoad(i32 %applist_log) nounwind
+  store i32 %applist_log, i32* %current_heartbeat, align 4, !dbg !42 ; [debug line = 46:3]
+  call void (...)* @_ssdm_op_SpecResource(i32* %current_heartbeat, i8* getelementptr inbounds ([1 x i8]* @.str1, i64 0, i64 0), i8* getelementptr inbounds ([10 x i8]* @.str3, i64 0, i64 0), i8* getelementptr inbounds ([1 x i8]* @.str1, i64 0, i64 0), i8* getelementptr inbounds ([1 x i8]* @.str1, i64 0, i64 0), i8* getelementptr inbounds ([1 x i8]* @.str1, i64 0, i64 0), i8* getelementptr inbounds ([18 x i8]* @.str4, i64 0, i64 0)) nounwind, !dbg !43 ; [debug line = 47:1]
+  store i32 1, i32* %status, align 4, !dbg !44    ; [debug line = 48:3]
+  ret void, !dbg !45                              ; [debug line = 51:1]
 }
 
 ; [#uses=2]
@@ -78,10 +79,10 @@ declare void @_ssdm_op_SpecWire(...) nounwind
 ; [#uses=1]
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture, i64, i32, i1) nounwind
 
-; [#uses=20]
+; [#uses=21]
 declare void @llvm.dbg.value(metadata, i64, metadata) nounwind readnone
 
-; [#uses=1]
+; [#uses=2]
 declare void @_ssdm_SpecKeepArrayLoad(...)
 
 ; [#uses=1]
@@ -141,7 +142,9 @@ declare i32 @_ssdm_op_SpecRegionEnd.restore(...)
 !37 = metadata !{i32 37, i32 3, metadata !25, null}
 !38 = metadata !{i32 38, i32 1, metadata !25, null}
 !39 = metadata !{i32 40, i32 3, metadata !25, null}
-!40 = metadata !{i32 45, i32 3, metadata !25, null}
-!41 = metadata !{i32 46, i32 1, metadata !25, null}
-!42 = metadata !{i32 47, i32 3, metadata !25, null}
-!43 = metadata !{i32 50, i32 1, metadata !25, null}
+!40 = metadata !{i32 41, i32 28, metadata !25, null}
+!41 = metadata !{i32 786688, metadata !25, metadata !"applist_log", metadata !6, i32 41, metadata !11, i32 0, i32 0} ; [ DW_TAG_auto_variable ]
+!42 = metadata !{i32 46, i32 3, metadata !25, null}
+!43 = metadata !{i32 47, i32 1, metadata !25, null}
+!44 = metadata !{i32 48, i32 3, metadata !25, null}
+!45 = metadata !{i32 51, i32 1, metadata !25, null}

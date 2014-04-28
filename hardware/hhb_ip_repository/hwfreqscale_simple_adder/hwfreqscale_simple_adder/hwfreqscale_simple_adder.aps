@@ -1,0 +1,25 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <config>
+        <schedule model="hwfreqscale_simple_adder"/>
+    </config>
+    <ExportDesign askAgain="true" evaluate="false" rtl="verilog" formatName="ip_catalog">
+        <Format formatName="ip_catalog" description="An IP which adds two numbers" vendor="sfleming" library="HHB" version="1.0" display_name="" taxonomy="/HHB"/>
+    </ExportDesign>
+    <name>
+        <value string="hwfreqscale_simple_adder"/>
+    </name>
+    <project>
+        <value string="hwfreqscale_simple_adder"/>
+    </project>
+    <targetInfo>
+        <TargetInfo value="xc7z020:clg484:-1"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
+        <library value="xilinx/zynq/zynq_fpv6" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock name="default" default="false" period="10"/>
+    </clockList>
+</AutoPilot:solution>
+

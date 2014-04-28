@@ -43,10 +43,9 @@ define void @hhb_query(i32* %a, i32 %applist_phys_addr, i32* %current_heartbeat,
   call void (...)* @_ssdm_op_SpecWire(i32* %status, [8 x i8]* @.str5, i32 1, i32 1, i32 0, [1 x i8]* @.str1) nounwind, !dbg !51 ; [debug line = 31:1]
   store i32 0, i32* %status, align 4, !dbg !52    ; [debug line = 37:3]
   call void (...)* @_ssdm_op_SpecIFCore(i32* %status, [1 x i8]* @.str1, [10 x i8]* @.str3, [1 x i8]* @.str1, [1 x i8]* @.str1, [1 x i8]* @.str1, [18 x i8]* @.str4) nounwind, !dbg !53 ; [debug line = 38:1]
-  %tmp.1 = add i32 %applist_phys_addr, 8, !dbg !54 ; [#uses=1 type=i32] [debug line = 40:3]
-  %tmp.2 = lshr i32 %tmp.1, 2, !dbg !54           ; [#uses=1 type=i32] [debug line = 40:3]
-  %tmp.3 = zext i32 %tmp.2 to i64, !dbg !54       ; [#uses=1 type=i64] [debug line = 40:3]
-  %a.addr = getelementptr inbounds i32* %a, i64 %tmp.3, !dbg !54 ; [#uses=2 type=i32*] [debug line = 40:3]
+  %tmp.1 = lshr i32 %applist_phys_addr, 2, !dbg !54 ; [#uses=1 type=i32] [debug line = 40:3]
+  %tmp.2 = zext i32 %tmp.1 to i64, !dbg !54       ; [#uses=1 type=i64] [debug line = 40:3]
+  %a.addr = getelementptr inbounds i32* %a, i64 %tmp.2, !dbg !54 ; [#uses=2 type=i32*] [debug line = 40:3]
   br label %burst.rd.header
 
 burst.rd.body1:                                   ; preds = %burst.rd.header
@@ -59,18 +58,19 @@ burst.rd.body1:                                   ; preds = %burst.rd.header
   br label %burst.rd.header
 
 burst.rd.header:                                  ; preds = %burst.rd.body1, %0
-  %buff.0. = phi i32 [ undef, %0 ], [ %"buff[0]", %burst.rd.body1 ] ; [#uses=1 type=i32]
+  %applist_log = phi i32 [ undef, %0 ], [ %"buff[0]", %burst.rd.body1 ] ; [#uses=1 type=i32]
   %indvar = phi i1 [ false, %0 ], [ %not.indvar, %burst.rd.body1 ] ; [#uses=2 type=i1]
   %not.indvar = xor i1 %indvar, true              ; [#uses=1 type=i1]
   %2 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1) nounwind ; [#uses=0 type=i32]
   br i1 %indvar, label %burst.rd.end, label %burst.rd.body1
 
 burst.rd.end:                                     ; preds = %burst.rd.header
-  %buff.0..lcssa = phi i32 [ %buff.0., %burst.rd.header ] ; [#uses=1 type=i32]
-  store i32 %buff.0..lcssa, i32* %current_heartbeat, align 4, !dbg !57 ; [debug line = 45:3]
-  call void (...)* @_ssdm_op_SpecIFCore(i32* %current_heartbeat, [1 x i8]* @.str1, [10 x i8]* @.str3, [1 x i8]* @.str1, [1 x i8]* @.str1, [1 x i8]* @.str1, [18 x i8]* @.str4) nounwind, !dbg !58 ; [debug line = 46:1]
-  store i32 1, i32* %status, align 4, !dbg !59    ; [debug line = 47:3]
-  ret void, !dbg !60                              ; [debug line = 50:1]
+  %applist_log.lcssa = phi i32 [ %applist_log, %burst.rd.header ] ; [#uses=1 type=i32]
+  call void @llvm.dbg.value(metadata !{i32 %applist_log}, i64 0, metadata !57), !dbg !58 ; [debug line = 41:28] [debug variable = applist_log]
+  store i32 %applist_log.lcssa, i32* %current_heartbeat, align 4, !dbg !59 ; [debug line = 46:3]
+  call void (...)* @_ssdm_op_SpecIFCore(i32* %current_heartbeat, [1 x i8]* @.str1, [10 x i8]* @.str3, [1 x i8]* @.str1, [1 x i8]* @.str1, [1 x i8]* @.str1, [18 x i8]* @.str4) nounwind, !dbg !60 ; [debug line = 47:1]
+  store i32 1, i32* %status, align 4, !dbg !61    ; [debug line = 48:3]
+  ret void, !dbg !62                              ; [debug line = 51:1]
 }
 
 ; [#uses=1]
@@ -79,7 +79,7 @@ declare void @_ssdm_op_SpecBus(...) nounwind
 ; [#uses=3]
 declare void @_ssdm_op_SpecWire(...) nounwind
 
-; [#uses=16]
+; [#uses=17]
 declare void @llvm.dbg.value(metadata, i64, metadata) nounwind readnone
 
 ; [#uses=1]
@@ -169,7 +169,9 @@ declare i32 @_ssdm_op_SpecLoopTripCount(...)
 !54 = metadata !{i32 40, i32 3, metadata !45, null}
 !55 = metadata !{i32 786688, metadata !45, metadata !"buff[0]", null, i32 35, metadata !11, i32 0, i32 0} ; [ DW_TAG_auto_variable ]
 !56 = metadata !{i32 35, i32 7, metadata !45, null}
-!57 = metadata !{i32 45, i32 3, metadata !45, null}
-!58 = metadata !{i32 46, i32 1, metadata !45, null}
-!59 = metadata !{i32 47, i32 3, metadata !45, null}
-!60 = metadata !{i32 50, i32 1, metadata !45, null}
+!57 = metadata !{i32 786688, metadata !45, metadata !"applist_log", metadata !6, i32 41, metadata !11, i32 0, i32 0} ; [ DW_TAG_auto_variable ]
+!58 = metadata !{i32 41, i32 28, metadata !45, null}
+!59 = metadata !{i32 46, i32 3, metadata !45, null}
+!60 = metadata !{i32 47, i32 1, metadata !45, null}
+!61 = metadata !{i32 48, i32 3, metadata !45, null}
+!62 = metadata !{i32 51, i32 1, metadata !45, null}

@@ -56,10 +56,9 @@ define void @hhb_query(i32* %a, i32 %applist_phys_addr, i32* %current_heartbeat,
   call void (...)* @_ssdm_op_SpecWire(i32* %status, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind, !dbg !46 ; [debug line = 31:1]
   call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 0) nounwind, !dbg !47 ; [debug line = 37:3]
   call void (...)* @_ssdm_op_SpecIFCore(i32* %status, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind, !dbg !48 ; [debug line = 38:1]
-  %tmp_1 = add i32 %applist_phys_addr_read, 8, !dbg !49 ; [#uses=1 type=i32] [debug line = 40:3]
-  %tmp_2 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %tmp_1, i32 2, i32 31), !dbg !49 ; [#uses=1 type=i30] [debug line = 40:3]
-  %tmp_3 = zext i30 %tmp_2 to i64, !dbg !49       ; [#uses=1 type=i64] [debug line = 40:3]
-  %a_addr = getelementptr inbounds i32* %a, i64 %tmp_3, !dbg !49 ; [#uses=2 type=i32*] [debug line = 40:3]
+  %tmp_1 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %applist_phys_addr_read, i32 2, i32 31), !dbg !49 ; [#uses=1 type=i30] [debug line = 40:3]
+  %tmp_2 = zext i30 %tmp_1 to i64, !dbg !49       ; [#uses=1 type=i64] [debug line = 40:3]
+  %a_addr = getelementptr inbounds i32* %a, i64 %tmp_2, !dbg !49 ; [#uses=2 type=i32*] [debug line = 40:3]
   br label %burst.rd.header
 
 burst.rd.body1:                                   ; preds = %burst.rd.header
@@ -73,15 +72,16 @@ burst.rd.body1:                                   ; preds = %burst.rd.header
   br label %burst.rd.header
 
 burst.rd.header:                                  ; preds = %burst.rd.body1, %0
-  %buff_0_s = phi i32 [ undef, %0 ], [ %buff_0, %burst.rd.body1 ] ; [#uses=1 type=i32]
+  %applist_log = phi i32 [ undef, %0 ], [ %buff_0, %burst.rd.body1 ] ; [#uses=1 type=i32]
   %indvar = phi i1 [ false, %0 ], [ true, %burst.rd.body1 ] ; [#uses=1 type=i1]
   br i1 %indvar, label %burst.rd.end, label %burst.rd.body1
 
 burst.rd.end:                                     ; preds = %burst.rd.header
-  call void @_ssdm_op_Write.ap_none.i32P(i32* %current_heartbeat, i32 %buff_0_s) nounwind, !dbg !52 ; [debug line = 45:3]
-  call void (...)* @_ssdm_op_SpecIFCore(i32* %current_heartbeat, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind, !dbg !53 ; [debug line = 46:1]
-  call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 1) nounwind, !dbg !54 ; [debug line = 47:3]
-  ret void, !dbg !55                              ; [debug line = 50:1]
+  call void @llvm.dbg.value(metadata !{i32 %applist_log}, i64 0, metadata !52), !dbg !53 ; [debug line = 41:28] [debug variable = applist_log]
+  call void @_ssdm_op_Write.ap_none.i32P(i32* %current_heartbeat, i32 %applist_log) nounwind, !dbg !54 ; [debug line = 46:3]
+  call void (...)* @_ssdm_op_SpecIFCore(i32* %current_heartbeat, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind, !dbg !55 ; [debug line = 47:1]
+  call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 1) nounwind, !dbg !56 ; [debug line = 48:3]
+  ret void, !dbg !57                              ; [debug line = 51:1]
 }
 
 ; [#uses=1]
@@ -96,7 +96,7 @@ entry:
   ret void
 }
 
-; [#uses=28]
+; [#uses=29]
 declare void @llvm.dbg.value(metadata, i64, metadata) nounwind readnone
 
 ; [#uses=1]
@@ -232,7 +232,9 @@ declare i32 @llvm.part.select.i32(i32, i32, i32) nounwind readnone
 !49 = metadata !{i32 40, i32 3, metadata !40, null}
 !50 = metadata !{i32 786688, metadata !40, metadata !"buff[0]", null, i32 35, metadata !27, i32 0, i32 0} ; [ DW_TAG_auto_variable ]
 !51 = metadata !{i32 35, i32 7, metadata !40, null}
-!52 = metadata !{i32 45, i32 3, metadata !40, null}
-!53 = metadata !{i32 46, i32 1, metadata !40, null}
-!54 = metadata !{i32 47, i32 3, metadata !40, null}
-!55 = metadata !{i32 50, i32 1, metadata !40, null}
+!52 = metadata !{i32 786688, metadata !40, metadata !"applist_log", metadata !22, i32 41, metadata !27, i32 0, i32 0} ; [ DW_TAG_auto_variable ]
+!53 = metadata !{i32 41, i32 28, metadata !40, null}
+!54 = metadata !{i32 46, i32 3, metadata !40, null}
+!55 = metadata !{i32 47, i32 1, metadata !40, null}
+!56 = metadata !{i32 48, i32 3, metadata !40, null}
+!57 = metadata !{i32 51, i32 1, metadata !40, null}

@@ -2782,14 +2782,15 @@ _ssdm_op_SpecResource(status, "", "AXI4LiteS", "", "", "", "-bus_bundle BUS_A");
  //IP running
 
   //read from DDR
-  memcpy(buff,(const int*)(a+(applist_phys_addr+(4*2))/4), 1*sizeof(int));
+  memcpy(buff,(const int*)(a+applist_phys_addr/4), 1*sizeof(int));
+  int applist_log = buff[0];
 
  //Initial test, just read the lock data element.
 
 
   *current_heartbeat = buff[0];
 _ssdm_op_SpecResource(current_heartbeat, "", "AXI4LiteS", "", "", "", "-bus_bundle BUS_A");
-# 45 "hhb_query/src/hhb_query_top.cpp"
+# 46 "hhb_query/src/hhb_query_top.cpp"
 
 
   *status=1; //IP stop

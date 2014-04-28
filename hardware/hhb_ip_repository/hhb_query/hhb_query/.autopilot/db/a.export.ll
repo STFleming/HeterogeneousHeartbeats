@@ -28,10 +28,9 @@ define void @hhb_query(i32* %a, i32 %applist_phys_addr, i32* %current_heartbeat,
   call void (...)* @_ssdm_op_SpecWire(i32* %status, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
   call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 0) nounwind
   call void (...)* @_ssdm_op_SpecIFCore(i32* %status, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
-  %tmp_1 = add i32 %applist_phys_addr_read, 8
-  %tmp_2 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %tmp_1, i32 2, i32 31)
-  %tmp_3 = zext i30 %tmp_2 to i64
-  %a_addr = getelementptr inbounds i32* %a, i64 %tmp_3
+  %tmp_1 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %applist_phys_addr_read, i32 2, i32 31)
+  %tmp_2 = zext i30 %tmp_1 to i64
+  %a_addr = getelementptr inbounds i32* %a, i64 %tmp_2
   br label %burst.rd.header
 
 burst.rd.body1:                                   ; preds = %burst.rd.header
@@ -44,12 +43,12 @@ burst.rd.body1:                                   ; preds = %burst.rd.header
   br label %burst.rd.header
 
 burst.rd.header:                                  ; preds = %burst.rd.body1, %0
-  %buff_0_s = phi i32 [ undef, %0 ], [ %buff_0, %burst.rd.body1 ]
+  %applist_log = phi i32 [ undef, %0 ], [ %buff_0, %burst.rd.body1 ]
   %indvar = phi i1 [ false, %0 ], [ true, %burst.rd.body1 ]
   br i1 %indvar, label %burst.rd.end, label %burst.rd.body1
 
 burst.rd.end:                                     ; preds = %burst.rd.header
-  call void @_ssdm_op_Write.ap_none.i32P(i32* %current_heartbeat, i32 %buff_0_s) nounwind
+  call void @_ssdm_op_Write.ap_none.i32P(i32* %current_heartbeat, i32 %applist_log) nounwind
   call void (...)* @_ssdm_op_SpecIFCore(i32* %current_heartbeat, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
   call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 1) nounwind
   ret void

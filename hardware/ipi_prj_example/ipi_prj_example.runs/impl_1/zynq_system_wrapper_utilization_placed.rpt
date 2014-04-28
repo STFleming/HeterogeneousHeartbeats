@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
-| Date         : Fri Apr 25 13:27:08 2014
+| Date         : Fri Apr 25 16:11:22 2014
 | Host         : ee-boxer0 running 64-bit Ubuntu 10.04.4 LTS
 | Command      : report_utilization -file zynq_system_wrapper_utilization_placed.rpt -pb zynq_system_wrapper_utilization_placed.pb
 | Design       : zynq_system_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Loced | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs                 | 1459 |     0 |     53200 |  2.74 |
-|   LUT as Logic             | 1261 |     0 |     53200 |  2.37 |
+| Slice LUTs                 | 1455 |     0 |     53200 |  2.73 |
+|   LUT as Logic             | 1257 |     0 |     53200 |  2.36 |
 |   LUT as Memory            |  198 |     0 |     17400 |  1.13 |
 |     LUT as Distributed RAM |    8 |     0 |           |       |
 |     LUT as Shift Register  |  190 |     0 |           |       |
@@ -49,11 +49,11 @@ Table of Contents
 +-------------------------------------------------------------+-----------+-------+-----------+-------+
 |                          Site Type                          |    Used   | Loced | Available | Util% |
 +-------------------------------------------------------------+-----------+-------+-----------+-------+
-| Slice                                                       |       614 |     0 |     13300 |  4.61 |
-| LUT as Logic                                                |      1261 |     0 |     53200 |  2.37 |
+| Slice                                                       |       596 |     0 |     13300 |  4.48 |
+| LUT as Logic                                                |      1257 |     0 |     53200 |  2.36 |
 |   using O5 output only                                      |         0 |       |           |       |
-|   using O6 output only                                      |       990 |       |           |       |
-|   using O5 and O6                                           |       271 |       |           |       |
+|   using O6 output only                                      |       983 |       |           |       |
+|   using O5 and O6                                           |       274 |       |           |       |
 | LUT as Memory                                               |       198 |     0 |     17400 |  1.13 |
 |   LUT as Distributed RAM                                    |         8 |     0 |           |       |
 |     using O5 output only                                    |         0 |       |           |       |
@@ -63,10 +63,10 @@ Table of Contents
 |     using O5 output only                                    |         0 |       |           |       |
 |     using O6 output only                                    |       182 |       |           |       |
 |     using O5 and O6                                         |         8 |       |           |       |
-| LUT Flip Flop Pairs                                         |      1876 |     0 |     53200 |  3.52 |
-|   fully used LUT-FF pairs                                   |       896 |       |           |       |
-|   LUT-FF pairs with unused LUT                              |       417 |       |           |       |
-|   LUT-FF pairs with unused Flip Flop                        |       563 |       |           |       |
+| LUT Flip Flop Pairs                                         |      1842 |     0 |     53200 |  3.46 |
+|   fully used LUT-FF pairs                                   |       901 |       |           |       |
+|   LUT-FF pairs with unused LUT                              |       387 |       |           |       |
+|   LUT-FF pairs with unused Flip Flop                        |       554 |       |           |       |
 | Unique Control Sets                                         |        90 |       |           |       |
 | Minimum number of registers lost to control set restriction | 228(Lost) |       |           |       |
 +-------------------------------------------------------------+-----------+-------+-----------+-------+
@@ -167,8 +167,8 @@ Table of Contents
 | SRLC32E  |  174 |
 | LUT2     |  137 |
 | BIBUF    |  130 |
-| CARRY4   |   88 |
-| LUT1     |   74 |
+| CARRY4   |   80 |
+| LUT1     |   73 |
 | FDSE     |   69 |
 | FDCE     |   66 |
 | FDPE     |   32 |

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xd" xd:functionName="hwfreqscale_simple_adder" xd:componentRef="hwfreqscale_simple_adder" xd:initiationInterval="3" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64">
+  <xd:controlReg xd:name="control" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="input1" xd:originalName="input1" xd:direction="in" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:offset="0x14" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="input2" xd:originalName="input2" xd:direction="in" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:offset="0x1C" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(output)" xd:originalName="output" xd:direction="out" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:offset="0x24" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(frequency_value)" xd:originalName="frequency_value" xd:direction="out" xd:interfaceRef="frequency_value" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="2" xd:worst-case="2" xd:average-case="2"/>
+  <xd:resourceEstimates xd:LUT="33" xd:FF="101" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

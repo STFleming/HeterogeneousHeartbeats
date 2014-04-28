@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'hhb_query'
 ================================================================
-* Date:           Fri Apr 25 13:23:27 2014
+* Date:           Mon Apr 28 12:39:31 2014
 
 * Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
 * Project:        hhb_query
@@ -165,7 +165,7 @@ ST_1: stg_13 [2/2] 0.00ns
 :13  call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 0) nounwind
 
 
- <State 2>: 2.44ns
+ <State 2>: 1.30ns
 ST_2: stg_14 [1/1] 0.00ns
 :0  call void (...)* @_ssdm_op_SpecBitsMap(i32* %a) nounwind, !map !0
 
@@ -211,33 +211,30 @@ ST_2: stg_27 [1/2] 0.00ns
 ST_2: stg_28 [1/1] 0.00ns
 :14  call void (...)* @_ssdm_op_SpecIFCore(i32* %status, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
 
-ST_2: tmp_1 [1/1] 2.44ns
-:15  %tmp_1 = add i32 %applist_phys_addr_read, 8
+ST_2: tmp_1 [1/1] 0.00ns
+:15  %tmp_1 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %applist_phys_addr_read, i32 2, i32 31)
 
 ST_2: tmp_2 [1/1] 0.00ns
-:16  %tmp_2 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %tmp_1, i32 2, i32 31)
-
-ST_2: tmp_3 [1/1] 0.00ns
-:17  %tmp_3 = zext i30 %tmp_2 to i64
+:16  %tmp_2 = zext i30 %tmp_1 to i64
 
 ST_2: a_addr [1/1] 0.00ns
-:18  %a_addr = getelementptr inbounds i32* %a, i64 %tmp_3
+:17  %a_addr = getelementptr inbounds i32* %a, i64 %tmp_2
 
-ST_2: stg_33 [1/1] 1.30ns
-:19  br label %burst.rd.header
+ST_2: stg_32 [1/1] 1.30ns
+:18  br label %burst.rd.header
 
 
  <State 3>: 0.00ns
-ST_3: buff_0_s [1/1] 0.00ns
-burst.rd.header:0  %buff_0_s = phi i32 [ undef, %0 ], [ %buff_0, %burst.rd.body1 ]
+ST_3: applist_log [1/1] 0.00ns
+burst.rd.header:0  %applist_log = phi i32 [ undef, %0 ], [ %buff_0, %burst.rd.body1 ]
 
 ST_3: indvar [1/1] 0.00ns
 burst.rd.header:1  %indvar = phi i1 [ false, %0 ], [ true, %burst.rd.body1 ]
 
-ST_3: stg_36 [1/1] 0.00ns
+ST_3: stg_35 [1/1] 0.00ns
 burst.rd.header:2  br i1 %indvar, label %burst.rd.end, label %burst.rd.body1
 
-ST_3: stg_37 [1/1] 0.00ns
+ST_3: stg_36 [1/1] 0.00ns
 burst.rd.body1:6  br label %burst.rd.header
 
 
@@ -284,24 +281,24 @@ burst.rd.body1:5  %burstread_rend = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 
 
 
  <State 10>: 0.00ns
-ST_10: stg_48 [2/2] 0.00ns
-burst.rd.end:0  call void @_ssdm_op_Write.ap_none.i32P(i32* %current_heartbeat, i32 %buff_0_s) nounwind
+ST_10: stg_47 [2/2] 0.00ns
+burst.rd.end:0  call void @_ssdm_op_Write.ap_none.i32P(i32* %current_heartbeat, i32 %applist_log) nounwind
 
-ST_10: stg_49 [2/2] 0.00ns
+ST_10: stg_48 [2/2] 0.00ns
 burst.rd.end:2  call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 1) nounwind
 
 
  <State 11>: 0.00ns
-ST_11: stg_50 [1/2] 0.00ns
-burst.rd.end:0  call void @_ssdm_op_Write.ap_none.i32P(i32* %current_heartbeat, i32 %buff_0_s) nounwind
+ST_11: stg_49 [1/2] 0.00ns
+burst.rd.end:0  call void @_ssdm_op_Write.ap_none.i32P(i32* %current_heartbeat, i32 %applist_log) nounwind
 
-ST_11: stg_51 [1/1] 0.00ns
+ST_11: stg_50 [1/1] 0.00ns
 burst.rd.end:1  call void (...)* @_ssdm_op_SpecIFCore(i32* %current_heartbeat, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
 
-ST_11: stg_52 [1/2] 0.00ns
+ST_11: stg_51 [1/2] 0.00ns
 burst.rd.end:2  call void @_ssdm_op_Write.ap_none.i32P(i32* %status, i32 1) nounwind
 
-ST_11: stg_53 [1/1] 0.00ns
+ST_11: stg_52 [1/1] 0.00ns
 burst.rd.end:3  ret void
 
 

@@ -51,7 +51,7 @@ Starting synthesis...
 xc7z0202default:defaultZ17-349
 ú
 %s*synth2å
-xStarting RTL Elaboration : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 807.332 ; gain = 184.070
+xStarting RTL Elaboration : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 807.328 ; gain = 184.070
 2default:default
 ò
 synthesizing module '%s'638*oasys2'
@@ -103,13 +103,13 @@ L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2
 2982default:default8@Z8-638
 ª
 synthesizing module '%s'638*oasys2*
-zynq_system_auto_pc_132default:default2ø
-®/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_13/synth/zynq_system_auto_pc_13.v2default:default2
+zynq_system_auto_pc_152default:default2ø
+®/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/synth/zynq_system_auto_pc_15.v2default:default2
 572default:default8@Z8-638
 ï
 synthesizing module '%s'638*oasys2F
 2axi_protocol_converter_v2_1_axi_protocol_converter2default:default2˝
-Ê/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
+Ê/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
 622default:default8@Z8-638
 V
 %s*synth2G
@@ -214,7 +214,7 @@ X
 ˚
 synthesizing module '%s'638*oasys29
 %axi_protocol_converter_v2_1_axi3_conv2default:default2
-Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v2default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v2default:default2
 692default:default8@Z8-638
 V
 %s*synth2G
@@ -279,7 +279,7 @@ _
 ˇ
 synthesizing module '%s'638*oasys2;
 'axi_protocol_converter_v2_1_a_axi3_conv2default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
 622default:default8@Z8-638
 V
 %s*synth2G
@@ -344,7 +344,7 @@ O	Parameter C_SIZE_MASK bound to: 40'b1111111111111111111111111111111100000000
 ‡
 synthesizing module '%s'638*oasys20
 axi_data_fifo_v2_1_axic_fifo2default:default2ﬁ
-«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
 642default:default8@Z8-638
 V
 %s*synth2G
@@ -365,7 +365,7 @@ X
 ﬁ
 synthesizing module '%s'638*oasys2/
 axi_data_fifo_v2_1_fifo_gen2default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
 602default:default8@Z8-638
 V
 %s*synth2G
@@ -3377,33 +3377,33 @@ Ginstance '%s' of module '%s' requires %s connections, but only %s given350*
 fifo_generator_v11_02default:default2
 2302default:default2
 2282default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
 2922default:default8@Z8-350
 ö
 %done synthesizing module '%s' (%s#%s)256*oasys2/
 axi_data_fifo_v2_1_fifo_gen2default:default2
 202default:default2
 12default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
 602default:default8@Z8-256
 ú
 %done synthesizing module '%s' (%s#%s)256*oasys20
 axi_data_fifo_v2_1_axic_fifo2default:default2
 212default:default2
 12default:default2ﬁ
-«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
 642default:default8@Z8-256
 ª
 %done synthesizing module '%s' (%s#%s)256*oasys2;
 'axi_protocol_converter_v2_1_a_axi3_conv2default:default2
 222default:default2
 12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
 622default:default8@Z8-256
 ˇ
 synthesizing module '%s'638*oasys2;
 'axi_protocol_converter_v2_1_w_axi3_conv2default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v2default:default2
 612default:default8@Z8-638
 V
 %s*synth2G
@@ -3442,12 +3442,12 @@ _
 'axi_protocol_converter_v2_1_w_axi3_conv2default:default2
 232default:default2
 12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v2default:default2
 612default:default8@Z8-256
 ˇ
 synthesizing module '%s'638*oasys2;
 'axi_protocol_converter_v2_1_b_downsizer2default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v2default:default2
 652default:default8@Z8-638
 V
 %s*synth2G
@@ -3486,12 +3486,12 @@ M
 'axi_protocol_converter_v2_1_b_downsizer2default:default2
 242default:default2
 12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v2default:default2
 652default:default8@Z8-256
 è
 synthesizing module '%s'638*oasys2K
 7axi_protocol_converter_v2_1_a_axi3_conv__parameterized02default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
 622default:default8@Z8-638
 V
 %s*synth2G
@@ -3556,7 +3556,7 @@ O	Parameter C_SIZE_MASK bound to: 40'b1111111111111111111111111111111100000000
 
 synthesizing module '%s'638*oasys2@
 ,axi_data_fifo_v2_1_axic_fifo__parameterized02default:default2ﬁ
-«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
 642default:default8@Z8-638
 V
 %s*synth2G
@@ -3577,7 +3577,7 @@ X
 Ó
 synthesizing module '%s'638*oasys2?
 +axi_data_fifo_v2_1_fifo_gen__parameterized02default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
 602default:default8@Z8-638
 V
 %s*synth2G
@@ -6097,33 +6097,33 @@ Ginstance '%s' of module '%s' requires %s connections, but only %s given350*
 fifo_generator_v11_02default:default2
 2302default:default2
 2282default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
 2922default:default8@Z8-350
 ™
 %done synthesizing module '%s' (%s#%s)256*oasys2?
 +axi_data_fifo_v2_1_fifo_gen__parameterized02default:default2
 242default:default2
 12default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
 602default:default8@Z8-256
 ¨
 %done synthesizing module '%s' (%s#%s)256*oasys2@
 ,axi_data_fifo_v2_1_axic_fifo__parameterized02default:default2
 242default:default2
 12default:default2ﬁ
-«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
 642default:default8@Z8-256
 À
 %done synthesizing module '%s' (%s#%s)256*oasys2K
 7axi_protocol_converter_v2_1_a_axi3_conv__parameterized02default:default2
 242default:default2
 12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
 622default:default8@Z8-256
 ˇ
 synthesizing module '%s'638*oasys2;
 'axi_protocol_converter_v2_1_r_axi3_conv2default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v2default:default2
 612default:default8@Z8-638
 V
 %s*synth2G
@@ -6178,28 +6178,28 @@ M
 'axi_protocol_converter_v2_1_r_axi3_conv2default:default2
 252default:default2
 12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v2default:default2
 612default:default8@Z8-256
 ∑
 %done synthesizing module '%s' (%s#%s)256*oasys29
 %axi_protocol_converter_v2_1_axi3_conv2default:default2
 262default:default2
 12default:default2
-Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v2default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v2default:default2
 692default:default8@Z8-256
 —
 %done synthesizing module '%s' (%s#%s)256*oasys2F
 2axi_protocol_converter_v2_1_axi_protocol_converter2default:default2
 272default:default2
 12default:default2˝
-Ê/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
+Ê/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
 622default:default8@Z8-256
 ˜
 %done synthesizing module '%s' (%s#%s)256*oasys2*
-zynq_system_auto_pc_132default:default2
+zynq_system_auto_pc_152default:default2
 282default:default2
 12default:default2ø
-®/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_13/synth/zynq_system_auto_pc_13.v2default:default2
+®/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/synth/zynq_system_auto_pc_15.v2default:default2
 572default:default8@Z8-256
 “
 %done synthesizing module '%s' (%s#%s)256*oasys2+
@@ -6340,10 +6340,6 @@ M
 2default:default
 [
 %s*synth2L
-8	Parameter ap_const_lv32_8 bound to: 8 - type: integer 
-2default:default
-[
-%s*synth2L
 8	Parameter ap_const_lv32_2 bound to: 2 - type: integer 
 2default:default
 ]
@@ -6359,13 +6355,13 @@ F
 current_heartbeat1vld_reg_reg2default:default21
 applist_phys_addr0vld_reg_reg2default:default2ª
 §/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query.v2default:default2
-4902default:default8@Z8-4471
+4872default:default8@Z8-4471
 
 merging register '%s' into '%s'3619*oasys2&
 status1vld_reg_reg2default:default21
 applist_phys_addr0vld_reg_reg2default:default2ª
 §/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query.v2default:default2
-4912default:default8@Z8-4471
+4882default:default8@Z8-4471
 Ê
 %done synthesizing module '%s' (%s#%s)256*oasys2
 	hhb_query2default:default2
@@ -7726,13 +7722,13 @@ Ginstance '%s' of module '%s' requires %s connections, but only %s given350*
 32default:default8@Z8-638
 ª
 synthesizing module '%s'638*oasys2*
-zynq_system_auto_pc_122default:default2ø
-®/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/synth/zynq_system_auto_pc_12.v2default:default2
+zynq_system_auto_pc_142default:default2ø
+®/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/synth/zynq_system_auto_pc_14.v2default:default2
 572default:default8@Z8-638
 •
 synthesizing module '%s'638*oasys2V
 Baxi_protocol_converter_v2_1_axi_protocol_converter__parameterized02default:default2˝
-Ê/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
+Ê/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
 622default:default8@Z8-638
 V
 %s*synth2G
@@ -7837,7 +7833,7 @@ X
 Ô
 synthesizing module '%s'638*oasys23
 axi_protocol_converter_v2_1_b2s2default:default2Í
-”/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v2default:default2
+”/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v2default:default2
 392default:default8@Z8-638
 \
 %s*synth2M
@@ -7866,7 +7862,7 @@ _
 Å
 synthesizing module '%s'638*oasys2>
 *axi_register_slice_v2_1_axi_register_slice2default:default2Ò
-⁄/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
+⁄/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
 642default:default8@Z8-638
 Y
 %s*synth2J
@@ -8239,7 +8235,7 @@ a
 Ò
 synthesizing module '%s'638*oasys26
 "axi_infrastructure_v1_1_axi2vector2default:default2È
-“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
 602default:default8@Z8-638
 Z
 %s*synth2K
@@ -8610,12 +8606,12 @@ a
 "axi_infrastructure_v1_1_axi2vector2default:default2
 482default:default2
 12default:default2È
-“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
 602default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys2?
 +axi_register_slice_v2_1_axic_register_slice2default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
 %s*synth2J
@@ -8634,12 +8630,12 @@ X
 +axi_register_slice_v2_1_axic_register_slice2default:default2
 492default:default2
 12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
 ì
 synthesizing module '%s'638*oasys2O
 ;axi_register_slice_v2_1_axic_register_slice__parameterized02default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
 %s*synth2J
@@ -8658,12 +8654,12 @@ X
 ;axi_register_slice_v2_1_axic_register_slice__parameterized02default:default2
 492default:default2
 12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
 ì
 synthesizing module '%s'638*oasys2O
 ;axi_register_slice_v2_1_axic_register_slice__parameterized12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
 %s*synth2J
@@ -8682,12 +8678,12 @@ X
 ;axi_register_slice_v2_1_axic_register_slice__parameterized12default:default2
 492default:default2
 12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
 ì
 synthesizing module '%s'638*oasys2O
 ;axi_register_slice_v2_1_axic_register_slice__parameterized22default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
 %s*synth2J
@@ -8706,12 +8702,12 @@ X
 ;axi_register_slice_v2_1_axic_register_slice__parameterized22default:default2
 492default:default2
 12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
 Ò
 synthesizing module '%s'638*oasys26
 "axi_infrastructure_v1_1_vector2axi2default:default2È
-“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
 602default:default8@Z8-638
 Z
 %s*synth2K
@@ -9082,19 +9078,19 @@ a
 "axi_infrastructure_v1_1_vector2axi2default:default2
 502default:default2
 12default:default2È
-“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
 602default:default8@Z8-256
 Ω
 %done synthesizing module '%s' (%s#%s)256*oasys2>
 *axi_register_slice_v2_1_axi_register_slice2default:default2
 512default:default2
 12default:default2Ò
-⁄/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
+⁄/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
 642default:default8@Z8-256
 Ñ
 synthesizing module '%s'638*oasys2>
 *axi_protocol_converter_v2_1_b2s_aw_channel2default:default2ı
-ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v2default:default2
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v2default:default2
 52default:default8@Z8-638
 W
 %s*synth2H
@@ -9107,7 +9103,7 @@ W
 ç
 synthesizing module '%s'638*oasys2B
 .axi_protocol_converter_v2_1_b2s_cmd_translator2default:default2˘
-‚/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v2default:default2
+‚/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v2default:default2
 172default:default8@Z8-638
 ]
 %s*synth2N
@@ -9128,7 +9124,7 @@ N
 Å
 synthesizing module '%s'638*oasys2<
 (axi_protocol_converter_v2_1_b2s_incr_cmd2default:default2Û
-‹/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v2default:default2
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v2default:default2
 112default:default8@Z8-638
 ]
 %s*synth2N
@@ -9143,12 +9139,12 @@ _
 (axi_protocol_converter_v2_1_b2s_incr_cmd2default:default2
 522default:default2
 12default:default2Û
-‹/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v2default:default2
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v2default:default2
 112default:default8@Z8-256
 Å
 synthesizing module '%s'638*oasys2<
 (axi_protocol_converter_v2_1_b2s_wrap_cmd2default:default2Û
-‹/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v2default:default2
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v2default:default2
 112default:default8@Z8-638
 ]
 %s*synth2N
@@ -9163,19 +9159,19 @@ _
 (axi_protocol_converter_v2_1_b2s_wrap_cmd2default:default2
 532default:default2
 12default:default2Û
-‹/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v2default:default2
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v2default:default2
 112default:default8@Z8-256
 …
 %done synthesizing module '%s' (%s#%s)256*oasys2B
 .axi_protocol_converter_v2_1_b2s_cmd_translator2default:default2
 542default:default2
 12default:default2˘
-‚/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v2default:default2
+‚/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v2default:default2
 172default:default8@Z8-256
 Ö
 synthesizing module '%s'638*oasys2>
 *axi_protocol_converter_v2_1_b2s_wr_cmd_fsm2default:default2ı
-ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v2default:default2
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v2default:default2
 102default:default8@Z8-638
 G
 %s*synth28
@@ -9195,26 +9191,26 @@ L
 2default:default
 »
 default block is never used226*oasys2ı
-ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v2default:default2
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v2default:default2
 642default:default8@Z8-226
 ¡
 %done synthesizing module '%s' (%s#%s)256*oasys2>
 *axi_protocol_converter_v2_1_b2s_wr_cmd_fsm2default:default2
 552default:default2
 12default:default2ı
-ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v2default:default2
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v2default:default2
 102default:default8@Z8-256
 ¿
 %done synthesizing module '%s' (%s#%s)256*oasys2>
 *axi_protocol_converter_v2_1_b2s_aw_channel2default:default2
 562default:default2
 12default:default2ı
-ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v2default:default2
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v2default:default2
 52default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys2=
 )axi_protocol_converter_v2_1_b2s_b_channel2default:default2Ù
-›/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v2default:default2
+›/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v2default:default2
 102default:default8@Z8-638
 W
 %s*synth2H
@@ -9263,7 +9259,7 @@ U
 Ü
 synthesizing module '%s'638*oasys2?
 +axi_protocol_converter_v2_1_b2s_simple_fifo2default:default2ˆ
-ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
+ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-638
 T
 %s*synth2E
@@ -9298,12 +9294,12 @@ J
 +axi_protocol_converter_v2_1_b2s_simple_fifo2default:default2
 572default:default2
 12default:default2ˆ
-ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
+ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-256
 ñ
 synthesizing module '%s'638*oasys2O
 ;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized02default:default2ˆ
-ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
+ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-638
 S
 %s*synth2D
@@ -9338,19 +9334,19 @@ J
 ;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized02default:default2
 572default:default2
 12default:default2ˆ
-ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
+ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-256
 ø
 %done synthesizing module '%s' (%s#%s)256*oasys2=
 )axi_protocol_converter_v2_1_b2s_b_channel2default:default2
 582default:default2
 12default:default2Ù
-›/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v2default:default2
+›/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v2default:default2
 102default:default8@Z8-256
 Ñ
 synthesizing module '%s'638*oasys2>
 *axi_protocol_converter_v2_1_b2s_ar_channel2default:default2ı
-ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v2default:default2
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v2default:default2
 52default:default8@Z8-638
 W
 %s*synth2H
@@ -9363,7 +9359,7 @@ W
 Ö
 synthesizing module '%s'638*oasys2>
 *axi_protocol_converter_v2_1_b2s_rd_cmd_fsm2default:default2ı
-ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v2default:default2
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v2default:default2
 102default:default8@Z8-638
 G
 %s*synth28
@@ -9383,26 +9379,26 @@ $	Parameter SM_DONE bound to: 2'b11
 2default:default
 »
 default block is never used226*oasys2ı
-ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v2default:default2
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v2default:default2
 722default:default8@Z8-226
 ¡
 %done synthesizing module '%s' (%s#%s)256*oasys2>
 *axi_protocol_converter_v2_1_b2s_rd_cmd_fsm2default:default2
 592default:default2
 12default:default2ı
-ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v2default:default2
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v2default:default2
 102default:default8@Z8-256
 ¿
 %done synthesizing module '%s' (%s#%s)256*oasys2>
 *axi_protocol_converter_v2_1_b2s_ar_channel2default:default2
 602default:default2
 12default:default2ı
-ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v2default:default2
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v2default:default2
 52default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys2=
 )axi_protocol_converter_v2_1_b2s_r_channel2default:default2Ù
-›/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v2default:default2
+›/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v2default:default2
 212default:default8@Z8-638
 W
 %s*synth2H
@@ -9439,7 +9435,7 @@ V
 ñ
 synthesizing module '%s'638*oasys2O
 ;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized12default:default2ˆ
-ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
+ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-638
 T
 %s*synth2E
@@ -9474,12 +9470,12 @@ M
 ;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized12default:default2
 602default:default2
 12default:default2ˆ
-ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
+ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-256
 ñ
 synthesizing module '%s'638*oasys2O
 ;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized22default:default2ˆ
-ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
+ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-638
 T
 %s*synth2E
@@ -9514,19 +9510,19 @@ M
 ;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized22default:default2
 602default:default2
 12default:default2ˆ
-ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
+ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-256
 ø
 %done synthesizing module '%s' (%s#%s)256*oasys2=
 )axi_protocol_converter_v2_1_b2s_r_channel2default:default2
 612default:default2
 12default:default2Ù
-›/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v2default:default2
+›/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v2default:default2
 212default:default8@Z8-256
 ë
 synthesizing module '%s'638*oasys2N
 :axi_register_slice_v2_1_axi_register_slice__parameterized02default:default2Ò
-⁄/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
+⁄/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
 642default:default8@Z8-638
 Y
 %s*synth2J
@@ -9899,7 +9895,7 @@ a
 Å
 synthesizing module '%s'638*oasys2F
 2axi_infrastructure_v1_1_axi2vector__parameterized02default:default2È
-“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
 602default:default8@Z8-638
 Z
 %s*synth2K
@@ -10270,12 +10266,12 @@ a
 2axi_infrastructure_v1_1_axi2vector__parameterized02default:default2
 612default:default2
 12default:default2È
-“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
 602default:default8@Z8-256
 ì
 synthesizing module '%s'638*oasys2O
 ;axi_register_slice_v2_1_axic_register_slice__parameterized32default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
 %s*synth2J
@@ -10294,12 +10290,12 @@ X
 ;axi_register_slice_v2_1_axic_register_slice__parameterized32default:default2
 612default:default2
 12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
 ì
 synthesizing module '%s'638*oasys2O
 ;axi_register_slice_v2_1_axic_register_slice__parameterized42default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
 %s*synth2J
@@ -10318,12 +10314,12 @@ X
 ;axi_register_slice_v2_1_axic_register_slice__parameterized42default:default2
 612default:default2
 12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
 ì
 synthesizing module '%s'638*oasys2O
 ;axi_register_slice_v2_1_axic_register_slice__parameterized52default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
 %s*synth2J
@@ -10342,12 +10338,12 @@ X
 ;axi_register_slice_v2_1_axic_register_slice__parameterized52default:default2
 612default:default2
 12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
 ì
 synthesizing module '%s'638*oasys2O
 ;axi_register_slice_v2_1_axic_register_slice__parameterized62default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
 %s*synth2J
@@ -10366,12 +10362,12 @@ X
 ;axi_register_slice_v2_1_axic_register_slice__parameterized62default:default2
 612default:default2
 12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
 Å
 synthesizing module '%s'638*oasys2F
 2axi_infrastructure_v1_1_vector2axi__parameterized02default:default2È
-“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
 602default:default8@Z8-638
 Z
 %s*synth2K
@@ -10742,40 +10738,40 @@ a
 2axi_infrastructure_v1_1_vector2axi__parameterized02default:default2
 612default:default2
 12default:default2È
-“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
 602default:default8@Z8-256
 Õ
 %done synthesizing module '%s' (%s#%s)256*oasys2N
 :axi_register_slice_v2_1_axi_register_slice__parameterized02default:default2
 612default:default2
 12default:default2Ò
-⁄/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
+⁄/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
 642default:default8@Z8-256
 ´
 %done synthesizing module '%s' (%s#%s)256*oasys23
 axi_protocol_converter_v2_1_b2s2default:default2
 622default:default2
 12default:default2Í
-”/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v2default:default2
+”/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v2default:default2
 392default:default8@Z8-256
 ·
 %done synthesizing module '%s' (%s#%s)256*oasys2V
 Baxi_protocol_converter_v2_1_axi_protocol_converter__parameterized02default:default2
 622default:default2
 12default:default2˝
-Ê/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
+Ê/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
 622default:default8@Z8-256
 ˜
 %done synthesizing module '%s' (%s#%s)256*oasys2*
-zynq_system_auto_pc_122default:default2
+zynq_system_auto_pc_142default:default2
 632default:default2
 12default:default2ø
-®/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/synth/zynq_system_auto_pc_12.v2default:default2
+®/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/synth/zynq_system_auto_pc_14.v2default:default2
 572default:default8@Z8-256
 ë
 Ginstance '%s' of module '%s' requires %s connections, but only %s given350*oasys2
 auto_pc2default:default2*
-zynq_system_auto_pc_122default:default2
+zynq_system_auto_pc_142default:default2
 592default:default2
 572default:default2ò
 Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
@@ -11004,7 +11000,7 @@ Ginstance '%s' of module '%s' requires %s connections, but only %s given350*
 32default:default8@Z8-256
 ú
 %s*synth2å
-xFinished RTL Elaboration : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 899.152 ; gain = 275.891
+xFinished RTL Elaboration : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 899.148 ; gain = 275.891
 2default:default
 ;
 %s*synth2,
@@ -11106,10 +11102,10 @@ $Parsing XDC File [%s] for cell '%s'
 Parsing XDC File [%s]
 179*designutils2Å
 m/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/dont_touch.xdc2default:defaultZ20-179
-Œ
+–
 No cells matched '%s'.
-180*	planAhead2u
-aget_cells -hier -filter {REF_NAME==zynq_system_auto_pc_8 || ORIG_REF_NAME==zynq_system_auto_pc_8}2default:default2É
+180*	planAhead2w
+cget_cells -hier -filter {REF_NAME==zynq_system_auto_pc_10 || ORIG_REF_NAME==zynq_system_auto_pc_10}2default:default2É
 m/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/dont_touch.xdc2default:default2
 232default:default8@Z12-180
 ˇ
@@ -11142,11 +11138,11 @@ J  A total of 1 instances were transformed.
 2default:defaultZ1-111
 ∂
 %s*synth2¶
-ëFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1145.516 ; gain = 522.254
+ëFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1145.504 ; gain = 522.246
 2default:default
 û
 %s*synth2é
-zFinished RTL Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1145.516 ; gain = 522.254
+zFinished RTL Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1145.504 ; gain = 522.246
 2default:default
 å
 3inferred FSM for state register '%s' in module '%s'802*oasys2!
@@ -11329,7 +11325,7 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 2default:default
 ≤
 %s*synth2¢
-çFinished Loading Part and Timing Information : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1185.527 ; gain = 562.266
+çFinished Loading Part and Timing Information : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1185.516 ; gain = 562.258
 2default:default
 B
 %s*synth23
@@ -11345,7 +11341,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit       Adders := 3     
+.	   2 Input     32 Bit       Adders := 2     
 2default:default
 Q
 %s*synth2B
@@ -11477,15 +11473,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input     32 Bit        Muxes := 13    
+2default:default
+Q
+%s*synth2B
 .	   8 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	   3 Input     32 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     32 Bit        Muxes := 13    
 2default:default
 Q
 %s*synth2B
@@ -11509,19 +11505,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      6 Bit        Muxes := 9     
-2default:default
-Q
-%s*synth2B
 .	   5 Input      6 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   4 Input      5 Bit        Muxes := 1     
+.	   2 Input      6 Bit        Muxes := 9     
 2default:default
 Q
 %s*synth2B
 .	   2 Input      5 Bit        Muxes := 7     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -11553,11 +11549,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      1 Bit        Muxes := 6     
+.	   3 Input      1 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 4     
+.	   4 Input      1 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
@@ -12213,7 +12209,7 @@ B
 2default:default
 B
 %s*synth23
-Module zynq_system_auto_pc_13 
+Module zynq_system_auto_pc_15 
 2default:default
 B
 %s*synth23
@@ -12242,14 +12238,6 @@ B
 B
 %s*synth23
 Detailed RTL Component Info : 
-2default:default
-1
-%s*synth2"
-+---Adders : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input     32 Bit       Adders := 1     
 2default:default
 4
 %s*synth2%
@@ -13381,7 +13369,7 @@ B
 2default:default
 B
 %s*synth23
-Module zynq_system_auto_pc_12 
+Module zynq_system_auto_pc_14 
 2default:default
 B
 %s*synth23
@@ -13510,146 +13498,154 @@ B
 Ÿ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2Ã
 ∑\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 ‹
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2œ
 ∫\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 ﬂ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2“
 Ω\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 ﬁ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2—
 º\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 ‰
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2◊
 ¬\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 ﬁ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2—
 º\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 ·
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2‘
 ø\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 ‰
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2◊
 ¬\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 „
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2÷
 ¡\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 È
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2‹
 «\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[7] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[6] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[5] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[4] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 Ê
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2Ÿ
 ƒ\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 È
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2‹
 «\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 Ï
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2ﬂ
  \inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 Î
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2ﬁ
 …\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2‰
 œ\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 ˚
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[7] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 ˚
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[6] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 ˚
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[5] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 ˚
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[4] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 Ÿ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2Ã
 ∑\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 ﬁ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2—
 º\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[7] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[6] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[5] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[4] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 Ê
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2Ÿ
 ƒ\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 ˚
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[7] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 ˚
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[6] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 ˚
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[5] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
+zynq_system_auto_pc_152default:defaultZ8-3332
 ˚
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[4] 2default:default2*
-zynq_system_auto_pc_132default:defaultZ8-3332
-Ã
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2=
-)\inst/hhb_query_U/a_addr_reg_159_reg[31] 2default:default2-
+zynq_system_auto_pc_152default:defaultZ8-3332
+◊
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2H
+4\inst/hhb_query_U/applist_phys_addr0data_reg_reg[1] 2default:default2-
+zynq_system_hhb_query_0_02default:defaultZ8-3332
+◊
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2H
+4\inst/hhb_query_U/applist_phys_addr0data_reg_reg[0] 2default:default2-
 zynq_system_hhb_query_0_02default:defaultZ8-3332
 Ã
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2=
-)\inst/hhb_query_U/a_addr_reg_159_reg[30] 2default:default2-
+)\inst/hhb_query_U/a_addr_reg_151_reg[31] 2default:default2-
+zynq_system_hhb_query_0_02default:defaultZ8-3332
+Ã
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2=
+)\inst/hhb_query_U/a_addr_reg_151_reg[30] 2default:default2-
 zynq_system_hhb_query_0_02default:defaultZ8-3332
 Â
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2V
@@ -13835,78 +13831,70 @@ ESequential element (%s) is unused and will be removed from module %s.3332*
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2E
 1\inst/hhb_query_a_if_U/bus_read/addr_buf_reg[32] 2default:default2-
 zynq_system_hhb_query_0_02default:defaultZ8-3332
+◊
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2H
+4\inst/hhb_query_U/applist_phys_addr0data_reg_reg[1] 2default:default2-
+zynq_system_hhb_query_0_02default:defaultZ8-3332
+◊
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2H
+4\inst/hhb_query_U/applist_phys_addr0data_reg_reg[0] 2default:default2-
+zynq_system_hhb_query_0_02default:defaultZ8-3332
 Ó
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[65] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
+zynq_system_auto_pc_142default:defaultZ8-3332
 Ó
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[64] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
+zynq_system_auto_pc_142default:defaultZ8-3332
 Ó
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[63] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
+zynq_system_auto_pc_142default:defaultZ8-3332
 Ó
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[62] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
+zynq_system_auto_pc_142default:defaultZ8-3332
 Ó
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[49] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
+zynq_system_auto_pc_142default:defaultZ8-3332
 Ó
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[48] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
+zynq_system_auto_pc_142default:defaultZ8-3332
 Ó
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[43] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
+zynq_system_auto_pc_142default:defaultZ8-3332
 Ó
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[42] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
+zynq_system_auto_pc_142default:defaultZ8-3332
 Ó
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[41] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
+zynq_system_auto_pc_142default:defaultZ8-3332
 Ó
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[40] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
+zynq_system_auto_pc_142default:defaultZ8-3332
 Ó
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[37] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
+zynq_system_auto_pc_142default:defaultZ8-3332
 Ó
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[65] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
+zynq_system_auto_pc_142default:defaultZ8-3332
 Ó
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[64] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
+zynq_system_auto_pc_142default:defaultZ8-3332
 Ó
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
 N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[63] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[62] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[49] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[48] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[43] 2default:default2*
-zynq_system_auto_pc_122default:defaultZ8-3332
+zynq_system_auto_pc_142default:defaultZ8-3332
 ‘
 ÅMessage '%s' appears more than %s times and has been disabled. User can change this message limit to see more message instances.
 14*common2 
@@ -13917,18 +13905,18 @@ RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bi
 Hinst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg2default:default2
 662default:default2
 622default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 1212default:default8@Z8-3936
 ç
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2\
 Hinst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg2default:default2
 662default:default2
 622default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 1212default:default8@Z8-3936
 ™
 %s*synth2ö
-ÖFinished Cross Boundary Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1195.543 ; gain = 572.281
+ÖFinished Cross Boundary Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1195.531 ; gain = 572.273
 2default:default
 ¢
 %s*synth2í
@@ -13958,15 +13946,15 @@ Distributed RAM:
 2default:default
 ó
 %s*synth2á
-Ú|zynq_system_auto_pc_13 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg              | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_13/ram__6  | 
+Ú|zynq_system_auto_pc_15 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg              | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_15/ram__6  | 
 2default:default
 ó
 %s*synth2á
-Ú|zynq_system_auto_pc_13 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg         | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_13/ram__8  | 
+Ú|zynq_system_auto_pc_15 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg         | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_15/ram__8  | 
 2default:default
 ó
 %s*synth2á
-Ú|zynq_system_auto_pc_13 | inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg | User Attribute     | 32 X 1               | RAM32X1D x 1   | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_13/ram__10 | 
+Ú|zynq_system_auto_pc_15 | inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg | User Attribute     | 32 X 1               | RAM32X1D x 1   | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_15/ram__10 | 
 2default:default
 ó
 %s*synth2á
@@ -13988,7 +13976,7 @@ R-------------------------------------------------------------------------------
 2default:default
 ü
 %s*synth2è
-{Finished Area Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1234.457 ; gain = 611.195
+{Finished Area Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1235.445 ; gain = 612.188
 2default:default
 {
 %s*synth2l
@@ -13996,19 +13984,19 @@ XINFO: Moved 1 constraints on hierarchical pins to their respective driving/load
 2default:default
 Æ
 %s*synth2û
-âFinished Applying XDC Timing Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:01:30 . Memory (MB): peak = 1383.457 ; gain = 760.195
+âFinished Applying XDC Timing Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:01:30 . Memory (MB): peak = 1384.445 ; gain = 761.188
 2default:default
 °
 %s*synth2ë
-}Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:30 . Memory (MB): peak = 1400.465 ; gain = 777.203
+}Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 1401.453 ; gain = 778.195
 2default:default
 †
 %s*synth2ê
-|Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:01:33 . Memory (MB): peak = 1408.473 ; gain = 785.211
+|Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:01:33 . Memory (MB): peak = 1409.461 ; gain = 786.203
 2default:default
 q
 %s*synth2b
-Ndesign zynq_system_auto_pc_12 has 4 max_fanout violations cannot be satisfied
+Ndesign zynq_system_auto_pc_14 has 4 max_fanout violations cannot be satisfied
 2default:default
 D
 %s*synth25
@@ -14016,7 +14004,7 @@ D
 2default:default
 ö
 %s*synth2ä
-vFinished IO Insertion : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 1408.473 ; gain = 785.211
+vFinished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1409.461 ; gain = 786.203
 2default:default
 ;
 %s*synth2,
@@ -14045,11 +14033,11 @@ I+------+------------------+-------+---------+-------+------------------+
 2default:default
 ´
 %s*synth2õ
-ÜFinished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1408.473 ; gain = 785.211
+ÜFinished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1409.461 ; gain = 786.203
 2default:default
 ®
 %s*synth2ò
-ÉFinished Rebuilding User Hierarchy : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1408.473 ; gain = 785.211
+ÉFinished Rebuilding User Hierarchy : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1409.461 ; gain = 786.203
 2default:default
 ¢
 %s*synth2í
@@ -14079,7 +14067,7 @@ Static Shift Register:
 2default:default
 ›
 %s*synth2Õ
-∏|zynq_system_hhb_query_0_0 | inst/hhb_query_U/ap_reg_ppstg_indvar_reg_119_pp0_it5_reg[0] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+∏|zynq_system_hhb_query_0_0 | inst/hhb_query_U/ap_reg_ppstg_indvar_reg_117_pp0_it5_reg[0] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
 2default:default
 ›
 %s*synth2Õ
@@ -14189,7 +14177,7 @@ Report Cell Usage:
 2default:default
 =
 %s*synth2.
-|3     |CARRY4   |    94|
+|3     |CARRY4   |    86|
 2default:default
 =
 %s*synth2.
@@ -14197,7 +14185,7 @@ Report Cell Usage:
 2default:default
 =
 %s*synth2.
-|5     |LUT1     |   272|
+|5     |LUT1     |   242|
 2default:default
 =
 %s*synth2.
@@ -14290,11 +14278,11 @@ d+------+------------------------------------+----------------------------------
 2default:default
 á
 %s*synth2x
-d|1     |top                                 |                                              |  4126|
+d|1     |top                                 |                                              |  4088|
 2default:default
 á
 %s*synth2x
-d|2     |  zynq_system_i                     |zynq_system                                   |  4126|
+d|2     |  zynq_system_i                     |zynq_system                                   |  4088|
 2default:default
 á
 %s*synth2x
@@ -14302,11 +14290,11 @@ d|3     |    axi_mem_intercon                |zynq_system_axi_mem_intercon_1    
 2default:default
 á
 %s*synth2x
-d|4     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_13                        |   947|
+d|4     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_15                        |   947|
 2default:default
 á
 %s*synth2x
-d|5     |    hhb_query_0                     |zynq_system_hhb_query_0_0                     |  1614|
+d|5     |    hhb_query_0                     |zynq_system_hhb_query_0_0                     |  1576|
 2default:default
 á
 %s*synth2x
@@ -14322,7 +14310,7 @@ d|8     |    processing_system7_0_axi_periph |zynq_system_processing_system7_0_a
 2default:default
 á
 %s*synth2x
-d|9     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_12                        |  1276|
+d|9     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_14                        |  1276|
 2default:default
 á
 %s*synth2x
@@ -14338,7 +14326,7 @@ d+------+------------------------------------+----------------------------------
 2default:default
 ß
 %s*synth2ó
-ÇFinished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1408.473 ; gain = 785.211
+ÇFinished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1409.461 ; gain = 786.203
 2default:default
 j
 %s*synth2[
@@ -14346,7 +14334,7 @@ GSynthesis finished with 0 errors, 0 critical warnings and 21 warnings.
 2default:default
 •
 %s*synth2ï
-ÄSynthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1408.473 ; gain = 785.211
+ÄSynthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1409.461 ; gain = 786.203
 2default:default
 \
 -Analyzing %s Unisim elements for replacement
@@ -14398,16 +14386,16 @@ I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 synth_design: 2default:default2
 00:01:412default:default2
 00:01:432default:default2
-1765.9572default:default2
-1017.6252default:defaultZ17-268
+1766.9452default:default2
+1018.6172default:defaultZ17-268
 <
 %Done setting XDC timing constraints.
 35*timingZ38-35
 Ç
-vreport_utilization: Time (s): cpu = 00:00:00.67 ; elapsed = 00:00:00.78 . Memory (MB): peak = 1765.961 ; gain = 0.000
+vreport_utilization: Time (s): cpu = 00:00:00.69 ; elapsed = 00:00:00.78 . Memory (MB): peak = 1766.949 ; gain = 0.000
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Fri Apr 25 13:26:19 20142default:defaultZ17-206
+Fri Apr 25 16:10:34 20142default:defaultZ17-206
