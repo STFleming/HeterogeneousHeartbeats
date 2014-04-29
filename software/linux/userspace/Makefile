@@ -7,13 +7,13 @@ INC_DIR=./includes
 BIN_DIR=./bin
 SRC_DIR=./src
 
-OBJS=$(BIN_DIR)/heartbeat.o $(BIN_DIR)/hhb_query.o $(BIN_DIR)/hhb_applist.o
-DEPS = $(INC_DIR)/heartbeat.h $(INC_DIR)/hhb_query.h $(INC_DIR)/hhb_applist.h
+OBJS=$(BIN_DIR)/heartbeat.o $(BIN_DIR)/hhb_query.o $(BIN_DIR)/hhb_applist.o $(BIN_DIR)/xhwfreqscale_simple_adder.o $(BIN_DIR)/dcm_driver.o
+DEPS = $(INC_DIR)/heartbeat.h $(INC_DIR)/hhb_query.h $(INC_DIR)/hhb_applist.h $(INC_DIR)/xhwfreqscale_simple_adder.h $(INC_DIR)/dcm_driver.h
 
 $(BIN_DIR)/%.o: $(INC_DIR)/%.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-all: hls_test heartbeat_startup hb_generator app_list_printer
+all: hls_test heartbeat_startup hb_generator app_list_printer hwfreqscale_tester
 
 hls_test: $(OBJS)
 	$(CC) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@ $^ $(CFLAGS)
@@ -25,6 +25,9 @@ hb_generator: $(OBJS)
 	$(CC) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@ $^ $(CFLAGS)
 
 app_list_printer: $(OBJS)
+	$(CC) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@ $^ $(CFLAGS)
+
+hwfreqscale_tester: $(OBJS)
 	$(CC) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@ $^ $(CFLAGS)
 
 clean:

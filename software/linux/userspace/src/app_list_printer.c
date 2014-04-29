@@ -7,7 +7,7 @@
 int main()
 {
 
-	//applist_initialise_list();
+	applist_initialise_list();
 	
 	applist_state_t* app_state;
 	app_state = applist_fetch_list_state(); //Get the app_list structure

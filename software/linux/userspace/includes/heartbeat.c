@@ -53,7 +53,7 @@ int64_t get_physical_addr(int pid, int64_t *input_va)
                //printf("Virtual address found, retrieving physical address\n");
                 if(n != 2) { printf("invalid line read from %s\n", maps_location); } //check that we actually got a range
                 num_pages = (vae - vas) / page_size; //page size is a macro defined elsewhere...right?  
-                //printf("number of pages: %d\n", num_pages);
+               //printf("number of pages: %d\n", num_pages);
 
                 if (num_pages > 0) {
 

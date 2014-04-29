@@ -10,7 +10,7 @@ applist_state_t* applist_fetch_list_state(void)
 	int shmid;
 	struct shmid_ds buf;
 
-	if ((shmid = shmget(APPLIST_SHM_STATE_KEY, sizeof(applist_state_t), IPC_CREAT | 0666)) < 0) {
+	if ((shmid = shmget(APPLIST_SHM_STATE_KEY, 10*sizeof(applist_state_t), IPC_CREAT | 0666)) < 0) {
 		perror("cannot allocate shared memory for the applications list");
 		p = NULL;
 	}
@@ -85,6 +85,16 @@ void applist_initialise_list(void)
 	blank_entry.app_log_phys_addr = 0;
 	blank_entry.alive = 0;
 	
+	//fetch the physical address for the app_state virtual address.
+	int pid = getpid();
+	printf("PID of application: %d\n", pid);
+	printf("Virt address %p\n", state_structure->list_head);
+	int64_t applist_phys_addr = get_physical_addr(pid, state_structure->list_head);
+	printf("Phys_address %lu\n", applist_phys_addr);
+	//Write that physical address to the hhb_query modules appropriate register.
+	HHB_query hhb_query_dev;
+	hhb_query_dev = setup_hhbquery();
+	HHB_query_SetHeartbeat_record_phys_addr(&hhb_query_dev, applist_phys_addr);
 
 	int i;
 	for(i=0; i<LIST_SIZE;i++)
@@ -100,14 +110,6 @@ void applist_initialise_list(void)
 void applist_register_app(applist_entry_t * new_app)
 {
 	applist_state_t* app_state = applist_fetch_list_state(); //Get the current application state
-
-	//fetch the physical address for the app_state virtual address.
-	int64_t applist_phys_addr = get_physical_addr(getpid(), (int64_t *)app_state->list_head);
-
-	//Write that physical address to the hhb_query modules appropriate register.
-	HHB_query hhb_query_dev;
-	hhb_query_dev = setup_hhbquery();
-	HHB_query_SetHeartbeat_record_phys_addr(&hhb_query_dev, applist_phys_addr);
 
 	applist_acquire_lock(app_state);	
 		
