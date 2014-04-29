@@ -44,7 +44,7 @@ void dcm_set_config_reg(void * dcm_device, unsigned int freq_percentage)
 	unsigned int clk_percentage = (freq_percentage << 8); //Shift into the appropriate position
 	
 	unsigned int div_mult_reg = clk_percentage | div_value; //Or them together so that the relevant bits of the register are set
-	*((volatile unsigned long *) dcm_device + CONFIG_REG_0) = div_mult_reg;
+	*((volatile unsigned long *) (dcm_device + CONFIG_REG_0)) = div_mult_reg;
 
 	return;
 }
@@ -52,10 +52,10 @@ void dcm_set_config_reg(void * dcm_device, unsigned int freq_percentage)
 //reconfigures the DCM to the new frequency... 
 void dcm_reconfig_reg(void * dcm_device)
 {
-	*((volatile unsigned long *) dcm_device + CONFIG_REG_23) = 3;
-	*((volatile unsigned long *) dcm_device + CONFIG_REG_23) = 2;
-	*((volatile unsigned long *) dcm_device + CONFIG_REG_23) = 6;
-	*((volatile unsigned long *) dcm_device + CONFIG_REG_23) = 2;
+	*((volatile unsigned long *) (dcm_device + CONFIG_REG_23)) = 3;
+	*((volatile unsigned long *) (dcm_device + CONFIG_REG_23)) = 2;
+	*((volatile unsigned long *) (dcm_device + CONFIG_REG_23)) = 6;
+	*((volatile unsigned long *) (dcm_device + CONFIG_REG_23)) = 2;
 
 	return;
 }
