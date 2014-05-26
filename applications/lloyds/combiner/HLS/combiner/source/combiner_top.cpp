@@ -111,7 +111,7 @@ void combiner_top( volatile bus_type *data_points_in,
 		total_distortion = total_distortion + centre_buffer[i].sum_sq;
 	}
 
-	memcpy((bus_type *)(centres_out), c_buffer, k*D*sizeof(int));
+	memcpy((bus_type *)(centres_out), c_buffer, (k+1)*D*sizeof(int));
 
 	*distortion_out = total_distortion;
 

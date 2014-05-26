@@ -15,6 +15,7 @@
 
 void load_points_buffer(uint address, volatile bus_type *bus, data_type *buffer)
 {
+
 	bus_type int_buffer[B*D];
 
 	memcpy(int_buffer, (bus_type *)(bus+address), B*D*sizeof(int));
@@ -33,7 +34,7 @@ void load_centres_buffer(uint address, volatile bus_type *bus, centre_index_type
 {
 	bus_type int_buffer[K*D];
 
-	memcpy(int_buffer, (bus_type *)(bus+address), k*D*sizeof(int));
+	memcpy(int_buffer, (bus_type *)(bus+address), (k+1)*D*sizeof(int));
 
 
 	for (centre_index_type i=0; i<=k; i++) {
@@ -87,6 +88,7 @@ void lloyds_kernel_top(  uint block_address,
 	#pragma HLS INTERFACE ap_bus port=output depth=0x200000
 	#pragma HLS resource core=AXI4M variable=output
 
+
 	data_type data_points_buffer[B];
 	data_type centres_buffer[K];
 	output_type output_buffer[B];
@@ -99,20 +101,17 @@ void lloyds_kernel_top(  uint block_address,
 
     	data_type u = data_points_buffer[i];
 
-        centre_index_type final_centre_index;
-        coord_type sum_sq_out;
-        coord_type min_dist;
+        centre_index_type final_centre_index = 0;
+        coord_type sum_sq_out = MAX_FIXED_POINT_VAL_EXT;
+        coord_type min_dist = MAX_FIXED_POINT_VAL_EXT;
 
         // iterate over all centres
         minsearch_loop: for (centre_index_type ii=0; ii<=k; ii++) {
-            #pragma HLS pipeline II=1
-
-			if (ii==0) {
-				min_dist=MAX_FIXED_POINT_VAL_EXT;
-			}
+           #pragma HLS pipeline II=1
 
 			coord_type tmp_dist;
-			compute_distance(centres_buffer[ii], u, &tmp_dist);
+			data_type cntr = centres_buffer[ii];
+			compute_distance(cntr, u, &tmp_dist);
 
 			// select the centre with the smallest distance to the data point
 			if (tmp_dist<min_dist) {
@@ -132,6 +131,7 @@ void lloyds_kernel_top(  uint block_address,
 	}
 
     store_output_buffer(output_buffer, block_address, output);
+
 
 }
 

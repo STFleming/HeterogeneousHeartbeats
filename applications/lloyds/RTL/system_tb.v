@@ -86,11 +86,11 @@ module system_tb
     wire [31:0] block_address;
 
     wire centres_in_empty_n;
-    reg [31:0] centres_in_dout;
+    wire [31:0] centres_in_dout;
     wire centres_in_read;
 
     wire data_points_empty_n;
-    reg [31:0] data_points_in_dout;
+    wire [31:0] data_points_in_dout;
     wire data_points_in_read;
 
     wire [31:0] distortion_out;
@@ -302,11 +302,11 @@ module system_tb
         cycle_counter = 0;        
     end
 
+    assign data_points_in_dout = (data_counter_1 < N*D ) ? input_data_array_1[data_counter_1] : 0;
+    assign centres_in_dout = (data_counter_2 < K*D ) ? input_data_array_2[data_counter_2] : 0;
+
     // counter process
     always @(posedge clk_in1) begin
-
-        data_points_in_dout <= (data_counter_1 < N*D ) ? input_data_array_1[data_counter_1] : 0;
-        centres_in_dout <= (data_counter_2 < K*D ) ? input_data_array_2[data_counter_2] : 0;
 
 
         if ( data_points_in_read == 1'b1 ) begin            

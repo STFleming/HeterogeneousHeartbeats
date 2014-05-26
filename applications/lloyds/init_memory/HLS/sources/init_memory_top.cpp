@@ -39,6 +39,7 @@ void init_memory_top( volatile bus_type *data_points_in,
 	for (uint i=0; i<=lim; i+=B*D) {
 		bus_type p_buffer[B*D];
 		for (uint ii=0; ii<B*D; ii++) {
+			#pragma HLS pipeline II=1
 			p_buffer[ii] = data_points_in[c];
 			c++;
 		}
@@ -52,6 +53,7 @@ void init_memory_top( volatile bus_type *data_points_in,
 	for (uint i=0; i<=lim; i+=B*D) {
 		bus_type c_buffer[B*D];
 		for (uint ii=0; ii<B*D; ii++) {
+			#pragma HLS pipeline II=1
 			c_buffer[ii] = centres_in[c];
 			c++;
 		}

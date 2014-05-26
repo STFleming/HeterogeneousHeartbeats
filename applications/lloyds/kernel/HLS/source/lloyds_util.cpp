@@ -241,9 +241,10 @@ void compute_distance(data_type p1, data_type p2, coord_type *dist)
     data_type tmp_p1 = p1;
     data_type tmp_p2 = p2;
     coord_type tmp_mul_res[D];
+    coord_type sum = 0;
 
     for (uint d=0; d<D; d++) {
-        #pragma HLS unroll
+		#pragma HLS unroll
         coord_type tmp_sub1 = tmp_p1.value[d];
         coord_type tmp_sub2 = tmp_p2.value[d];
         coord_type tmp = tmp_sub1 - tmp_sub2;
@@ -252,6 +253,14 @@ void compute_distance(data_type p1, data_type p2, coord_type *dist)
         tmp_mul_res[d] = tmp_mul;
     }
 
+    /*
+    for (uint d=0; d<D; d++) {
+		#pragma HLS unroll
+    	sum += tmp_mul_res[d];
+    }
+    */
+
+    //*dist = sum;
     *dist = tree_adder(tmp_mul_res,D);
 }
 
