@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:hls:combiner_top:1.0
--- IP Revision: 1405261745
+-- IP Revision: 1405262153
 
 -- The following code must appear in the VHDL architecture header.
 

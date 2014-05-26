@@ -7,209 +7,223 @@
     <Generation Name="SIMULATION" State="GENERATED"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/design_1_lloyds_kernel_top_0_0/design_1_lloyds_kernel_top_0_0.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1401122978" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1401137694" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1401122979" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1401133270" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1401122986" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1401133270" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/design_1_axi_interconnect_0_0/design_1_axi_interconnect_0_0.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1401122161" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1401133270" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/design_1_xbar_0/design_1_xbar_0.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1401122988" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1401133323" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1401122991" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1401133323" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1401122994" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1401137697" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/design_1_init_memory_top_0_0/design_1_init_memory_top_0_0.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1401122996" IsTrackable="true"/>
-        <Library Name="work"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/design_1_s01_data_fifo_35/design_1_s01_data_fifo_35.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1401045320" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1401133271" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/design_1_combiner_top_0_0/design_1_combiner_top_0_0.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1401122914" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1401137695" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s01_data_fifo_56/design_1_s01_data_fifo_56.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1401122752" IsTrackable="true"/>
+      <File Name="ip/design_1_s00_data_fifo_103/design_1_s00_data_fifo_103.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1401133389" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s03_data_fifo_58/design_1_s03_data_fifo_58.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1401122751" IsTrackable="true"/>
+      <File Name="ip/design_1_s00_data_fifo_111/design_1_s00_data_fifo_111.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1401134741" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s05_data_fifo_60/design_1_s05_data_fifo_60.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1401122751" IsTrackable="true"/>
+      <File Name="ip/design_1_s04_data_fifo_115/design_1_s04_data_fifo_115.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1401134741" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s07_data_fifo_62/design_1_s07_data_fifo_62.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1401122751" IsTrackable="true"/>
+      <File Name="ip/design_1_s00_data_fifo_119/design_1_s00_data_fifo_119.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1401135591" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s00_data_fifo_71/design_1_s00_data_fifo_71.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1401122977" IsTrackable="true"/>
+      <File Name="ip/design_1_s02_data_fifo_121/design_1_s02_data_fifo_121.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1401135591" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s01_data_fifo_72/design_1_s01_data_fifo_72.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1401122977" IsTrackable="true"/>
+      <File Name="ip/design_1_s04_data_fifo_123/design_1_s04_data_fifo_123.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1401135591" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s02_data_fifo_73/design_1_s02_data_fifo_73.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1401122977" IsTrackable="true"/>
+      <File Name="ip/design_1_s06_data_fifo_125/design_1_s06_data_fifo_125.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1401135591" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s03_data_fifo_74/design_1_s03_data_fifo_74.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1401122977" IsTrackable="true"/>
+      <File Name="ip/design_1_s00_data_fifo_127/design_1_s00_data_fifo_127.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1401136086" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s04_data_fifo_75/design_1_s04_data_fifo_75.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1401122977" IsTrackable="true"/>
+      <File Name="ip/design_1_s01_data_fifo_128/design_1_s01_data_fifo_128.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1401136085" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s05_data_fifo_76/design_1_s05_data_fifo_76.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1401122977" IsTrackable="true"/>
+      <File Name="ip/design_1_s02_data_fifo_129/design_1_s02_data_fifo_129.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1401136085" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s06_data_fifo_77/design_1_s06_data_fifo_77.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1401122977" IsTrackable="true"/>
+      <File Name="ip/design_1_s03_data_fifo_130/design_1_s03_data_fifo_130.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1401136085" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s07_data_fifo_78/design_1_s07_data_fifo_78.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="1401122977" IsTrackable="true"/>
+      <File Name="ip/design_1_s04_data_fifo_131/design_1_s04_data_fifo_131.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1401136085" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s00_data_fifo_79/design_1_s00_data_fifo_79.xci" Type="IP">
+      <File Name="ip/design_1_s05_data_fifo_132/design_1_s05_data_fifo_132.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1401136085" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/design_1_s06_data_fifo_133/design_1_s06_data_fifo_133.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1401136085" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/design_1_s07_data_fifo_134/design_1_s07_data_fifo_134.xci" Type="IP">
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1401136085" IsTrackable="true"/>
+        <Library Name="work"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/design_1_s00_data_fifo_135/design_1_s00_data_fifo_135.xci" Type="IP">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s01_data_fifo_80/design_1_s01_data_fifo_80.xci" Type="IP">
+      <File Name="ip/design_1_s01_data_fifo_136/design_1_s01_data_fifo_136.xci" Type="IP">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s02_data_fifo_81/design_1_s02_data_fifo_81.xci" Type="IP">
+      <File Name="ip/design_1_s02_data_fifo_137/design_1_s02_data_fifo_137.xci" Type="IP">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s03_data_fifo_82/design_1_s03_data_fifo_82.xci" Type="IP">
+      <File Name="ip/design_1_s03_data_fifo_138/design_1_s03_data_fifo_138.xci" Type="IP">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s04_data_fifo_83/design_1_s04_data_fifo_83.xci" Type="IP">
+      <File Name="ip/design_1_s04_data_fifo_139/design_1_s04_data_fifo_139.xci" Type="IP">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s05_data_fifo_84/design_1_s05_data_fifo_84.xci" Type="IP">
+      <File Name="ip/design_1_s05_data_fifo_140/design_1_s05_data_fifo_140.xci" Type="IP">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s06_data_fifo_85/design_1_s06_data_fifo_85.xci" Type="IP">
+      <File Name="ip/design_1_s06_data_fifo_141/design_1_s06_data_fifo_141.xci" Type="IP">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_s07_data_fifo_86/design_1_s07_data_fifo_86.xci" Type="IP">
+      <File Name="ip/design_1_s07_data_fifo_142/design_1_s07_data_fifo_142.xci" Type="IP">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
         <Library Name="work"/>
         <UsedIn Val="SYNTHESIS"/>

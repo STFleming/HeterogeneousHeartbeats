@@ -57,7 +57,7 @@ COMPONENT design_1_axi_bram_ctrl_0_0
     s_axi_aclk : IN STD_LOGIC;
     s_axi_aresetn : IN STD_LOGIC;
     s_axi_awid : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
-    s_axi_awaddr : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
+    s_axi_awaddr : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
     s_axi_awlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     s_axi_awsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     s_axi_awburst : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
@@ -76,7 +76,7 @@ COMPONENT design_1_axi_bram_ctrl_0_0
     s_axi_bvalid : OUT STD_LOGIC;
     s_axi_bready : IN STD_LOGIC;
     s_axi_arid : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
-    s_axi_araddr : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
+    s_axi_araddr : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
     s_axi_arlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     s_axi_arsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     s_axi_arburst : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
@@ -95,7 +95,7 @@ COMPONENT design_1_axi_bram_ctrl_0_0
     bram_clk_a : OUT STD_LOGIC;
     bram_en_a : OUT STD_LOGIC;
     bram_we_a : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-    bram_addr_a : OUT STD_LOGIC_VECTOR(14 DOWNTO 0);
+    bram_addr_a : OUT STD_LOGIC_VECTOR(17 DOWNTO 0);
     bram_wrdata_a : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     bram_rddata_a : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
@@ -103,7 +103,7 @@ END COMPONENT;
 ATTRIBUTE SYN_BLACK_BOX : BOOLEAN;
 ATTRIBUTE SYN_BLACK_BOX OF design_1_axi_bram_ctrl_0_0 : COMPONENT IS TRUE;
 ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
-ATTRIBUTE BLACK_BOX_PAD_PIN OF design_1_axi_bram_ctrl_0_0 : COMPONENT IS "s_axi_aclk,s_axi_aresetn,s_axi_awid[8:0],s_axi_awaddr[14:0],s_axi_awlen[7:0],s_axi_awsize[2:0],s_axi_awburst[1:0],s_axi_awlock,s_axi_awcache[3:0],s_axi_awprot[2:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wlast,s_axi_wvalid,s_axi_wready,s_axi_bid[8:0],s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_arid[8:0],s_axi_araddr[14:0],s_axi_arlen[7:0],s_axi_arsize[2:0],s_axi_arburst[1:0],s_axi_arlock,s_axi_arcache[3:0],s_axi_arprot[2:0],s_axi_arvalid,s_axi_arready,s_axi_rid[8:0],s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rlast,s_axi_rvalid,s_axi_rready,bram_rst_a,bram_clk_a,bram_en_a,bram_we_a[3:0],bram_addr_a[14:0],bram_wrdata_a[31:0],bram_rddata_a[31:0]";
+ATTRIBUTE BLACK_BOX_PAD_PIN OF design_1_axi_bram_ctrl_0_0 : COMPONENT IS "s_axi_aclk,s_axi_aresetn,s_axi_awid[8:0],s_axi_awaddr[17:0],s_axi_awlen[7:0],s_axi_awsize[2:0],s_axi_awburst[1:0],s_axi_awlock,s_axi_awcache[3:0],s_axi_awprot[2:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wlast,s_axi_wvalid,s_axi_wready,s_axi_bid[8:0],s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_arid[8:0],s_axi_araddr[17:0],s_axi_arlen[7:0],s_axi_arsize[2:0],s_axi_arburst[1:0],s_axi_arlock,s_axi_arcache[3:0],s_axi_arprot[2:0],s_axi_arvalid,s_axi_arready,s_axi_rid[8:0],s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rlast,s_axi_rvalid,s_axi_rready,bram_rst_a,bram_clk_a,bram_en_a,bram_we_a[3:0],bram_addr_a[17:0],bram_wrdata_a[31:0],bram_rddata_a[31:0]";
 
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------
 

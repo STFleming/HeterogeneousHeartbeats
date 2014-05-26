@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:hls:init_memory_top:1.0
--- IP Revision: 1405252004
+-- IP Revision: 1405262012
 
 -- The following code must appear in the VHDL architecture header.
 

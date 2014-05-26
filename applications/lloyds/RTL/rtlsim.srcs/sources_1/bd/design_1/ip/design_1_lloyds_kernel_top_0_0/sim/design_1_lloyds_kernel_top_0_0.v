@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:lloyds_kernel_top:1.0
-// IP Revision: 1405251229
+// IP Revision: 1405262152
 
 `timescale 1ns/1ps
 
