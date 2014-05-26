@@ -27,14 +27,17 @@ module system_tb
 
                                             
 
-    localparam  IDLE  = 3'b001,
-                PROCESSING_START_1 = 3'b010,
-                PROCESSING_START_2 = 3'b011,
-                PROCESSING_1 = 3'b100,
-                PROCESSING_2 = 3'b101,
-                PROCESSING_DONE_1 = 3'b110,
-                PROCESSING_DONE_2 = 3'b111,
-                INITIAL_WAIT = 3'b000;
+    localparam  IDLE  = 4'b0001,
+                PROCESSING_START_1 = 4'b0010,
+                PROCESSING_START_2 = 4'b0011,
+                PROCESSING_START_3 = 4'b1011,
+                PROCESSING_1 = 4'b0100,
+                PROCESSING_2 = 4'b0101,
+                PROCESSING_3 = 4'b1101,
+                PROCESSING_DONE_1 = 4'b0110,
+                PROCESSING_DONE_2 = 4'b0111,
+                PROCESSING_DONE_3 = 4'b1111,
+                INITIAL_WAIT = 4'b0000;
 
     //real sys_clk_pin_PERIOD = 8000.000000;
     //real sys_rst_pin_LENGTH = 160000;
@@ -64,12 +67,19 @@ module system_tb
 
     wire ap_done_1;
     wire ap_done_2;
+    wire ap_done_3;
+    
     wire ap_idle_1;
     wire ap_idle_2;
+    wire ap_idle_3;
+    
     wire ap_ready_1;
     wire ap_ready_2;
+    wire ap_ready_3;
+    
     wire ap_start_1;
     wire ap_start_2;
+    wire ap_start_3;
 
     wire [31:0] n_V;
     wire [7:0] k_V;
@@ -83,11 +93,11 @@ module system_tb
     reg [31:0] data_points_in_dout;
     wire data_points_in_read;
 
-
-
+    wire [31:0] distortion_out;
+    wire distortion_out_ap_vld;
 
     // Filt algo TB operation
-    reg [2:0]                           state;
+    reg [3:0]                           state;
 
     // File IO
     integer               input_file_1    ; // file handler
@@ -117,12 +127,16 @@ module system_tb
         design_1_wrapper (
         .ap_done_1 (ap_done_1),
         .ap_done_2 (ap_done_2),
+        .ap_done_3 (ap_done_3),
         .ap_idle_1 (ap_idle_1),
         .ap_idle_2 (ap_idle_2),
+        .ap_idle_3 (ap_idle_3),
         .ap_ready_1 (ap_ready_1),
         .ap_ready_2 (ap_ready_2),
+        .ap_ready_3 (ap_ready_3),
         .ap_start_1 (ap_start_1),
         .ap_start_2 (ap_start_2),
+        .ap_start_3 (ap_start_3),
         .block_address (block_address),
         .centres_in_dout (centres_in_dout),
         .centres_in_empty_n (centres_in_empty_n ),
@@ -133,7 +147,9 @@ module system_tb
         .data_points_in_read (data_points_in_read),
         .k_V (k_V),
         .n (n_V),
-        .reset (sys_rst_pin)
+        .reset (sys_rst_pin),
+        .distortion_out (distortion_out),
+        .distortion_out_ap_vld (distortion_out_ap_vld)
         /*
         .init_calib_complete (init_done_pin),
         .DDR3_ck_p ( ddr3_ck_p_fpga ),
@@ -216,14 +232,29 @@ module system_tb
                     state <=    PROCESSING_START_2;
                     block_counter <= block_counter + B*D;
                 end else begin
-                    state <=    PROCESSING_DONE_2;
+                    state <=    PROCESSING_START_3;
                 end
+                PROCESSING_START_3 :
+                begin
+                    state <=    PROCESSING_3;                    
+                end
+                PROCESSING_3 :
+                if (ap_done_3 == 1'b1) begin
+                    state <=    PROCESSING_DONE_3;
+                end else begin
+                    state <=    PROCESSING_3;
+                end
+                PROCESSING_DONE_3 :
+                begin
+                    state <=    PROCESSING_DONE_3;
+                end                               
                 default : state <=    IDLE;
             endcase
         end
 
     assign ap_start_1 = (state == PROCESSING_START_1) ? 1'b1 : 1'b0;
     assign ap_start_2 = (state == PROCESSING_START_2) ? 1'b1 : 1'b0;
+    assign ap_start_3 = (state == PROCESSING_START_3) ? 1'b1 : 1'b0;
 
     //**************************************************************************//
     // Read file

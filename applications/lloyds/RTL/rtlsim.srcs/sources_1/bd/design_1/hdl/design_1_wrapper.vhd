@@ -4,12 +4,16 @@ entity design_1_wrapper is
   port (
     ap_done_1 : out STD_LOGIC;
     ap_done_2 : out STD_LOGIC;
+    ap_done_3 : out STD_LOGIC;
     ap_idle_1 : out STD_LOGIC;
     ap_idle_2 : out STD_LOGIC;
+    ap_idle_3 : out STD_LOGIC;
     ap_ready_1 : out STD_LOGIC;
     ap_ready_2 : out STD_LOGIC;
+    ap_ready_3 : out STD_LOGIC;
     ap_start_1 : in STD_LOGIC;
     ap_start_2 : in STD_LOGIC;
+    ap_start_3 : in STD_LOGIC;
     block_address : in STD_LOGIC_VECTOR ( 31 downto 0 );
     centres_in_dout : in STD_LOGIC_VECTOR ( 31 downto 0 );
     centres_in_empty_n : in STD_LOGIC;
@@ -18,6 +22,8 @@ entity design_1_wrapper is
     data_points_in_dout : in STD_LOGIC_VECTOR ( 31 downto 0 );
     data_points_in_empty_n : in STD_LOGIC;
     data_points_in_read : out STD_LOGIC;
+    distortion_out : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    distortion_out_ap_vld : out STD_LOGIC;
     k_V : in STD_LOGIC_VECTOR ( 7 downto 0 );
     n : in STD_LOGIC_VECTOR ( 31 downto 0 );
     reset : in STD_LOGIC
@@ -45,7 +51,13 @@ architecture STRUCTURE of design_1_wrapper is
     centres_in_read : out STD_LOGIC;
     ap_ready_1 : out STD_LOGIC;
     ap_done_1 : out STD_LOGIC;
-    ap_idle_1 : out STD_LOGIC
+    ap_idle_1 : out STD_LOGIC;
+    ap_start_3 : in STD_LOGIC;
+    ap_ready_3 : out STD_LOGIC;
+    ap_done_3 : out STD_LOGIC;
+    ap_idle_3 : out STD_LOGIC;
+    distortion_out_ap_vld : out STD_LOGIC;
+    distortion_out : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component design_1;
 begin
@@ -53,12 +65,16 @@ design_1_i: component design_1
     port map (
       ap_done_1 => ap_done_1,
       ap_done_2 => ap_done_2,
+      ap_done_3 => ap_done_3,
       ap_idle_1 => ap_idle_1,
       ap_idle_2 => ap_idle_2,
+      ap_idle_3 => ap_idle_3,
       ap_ready_1 => ap_ready_1,
       ap_ready_2 => ap_ready_2,
+      ap_ready_3 => ap_ready_3,
       ap_start_1 => ap_start_1,
       ap_start_2 => ap_start_2,
+      ap_start_3 => ap_start_3,
       block_address(31 downto 0) => block_address(31 downto 0),
       centres_in_dout(31 downto 0) => centres_in_dout(31 downto 0),
       centres_in_empty_n => centres_in_empty_n,
@@ -67,6 +83,8 @@ design_1_i: component design_1
       data_points_in_dout(31 downto 0) => data_points_in_dout(31 downto 0),
       data_points_in_empty_n => data_points_in_empty_n,
       data_points_in_read => data_points_in_read,
+      distortion_out(31 downto 0) => distortion_out(31 downto 0),
+      distortion_out_ap_vld => distortion_out_ap_vld,
       k_V(7 downto 0) => k_V(7 downto 0),
       n(31 downto 0) => n(31 downto 0),
       reset => reset

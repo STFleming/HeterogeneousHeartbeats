@@ -7,8 +7,10 @@ add wave -noupdate -radix unsigned /system_tb/initial_wait_counter
 add wave -noupdate -radix unsigned /system_tb/cycle_counter
 add wave -noupdate /system_tb/ap_start_1
 add wave -noupdate /system_tb/ap_start_2
+add wave -noupdate /system_tb/ap_start_3
 add wave -noupdate /system_tb/ap_done_1
 add wave -noupdate /system_tb/ap_done_2
+add wave -noupdate /system_tb/ap_done_3
 add wave -noupdate -divider {Algo IO}
 add wave -noupdate -radix unsigned /system_tb/n_V
 add wave -noupdate -radix unsigned /system_tb/k_V
@@ -21,6 +23,8 @@ add wave -noupdate -radix unsigned /system_tb/data_counter_1
 add wave -noupdate /system_tb/centres_in_read
 add wave -noupdate -radix decimal /system_tb/centres_in_dout
 add wave -noupdate -radix unsigned /system_tb/data_counter_2
+add wave -noupdate /system_tb/distortion_out_ap_vld
+add wave -noupdate -radix decimal /system_tb/distortion_out
 add wave -noupdate -divider {axi mem access}
 add wave -noupdate /system_tb/design_1_wrapper/design_1_i/axi_bram_ctrl_0/bram_en_a
 add wave -noupdate -radix binary /system_tb/design_1_wrapper/design_1_i/axi_bram_ctrl_0/bram_we_a
@@ -44,4 +48,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {15330073 ps} {15377065 ps}
+WaveRestoreZoom {34958108 ps} {35005100 ps}
