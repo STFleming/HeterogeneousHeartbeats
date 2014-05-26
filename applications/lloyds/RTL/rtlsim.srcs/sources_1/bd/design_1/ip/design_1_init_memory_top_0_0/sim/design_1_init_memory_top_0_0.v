@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:init_memory_top:1.0
-// IP Revision: 1405251555
+// IP Revision: 1405252004
 
 `timescale 1ns/1ps
 

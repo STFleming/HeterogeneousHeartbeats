@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="hhb_query_top.cpp" path="/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository/src/hhb_query_top.cpp"/>
+    <originFiles name="hhb_query_top.cpp" path="/home/ee/f/fw1811/github/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hhb_query/src/hhb_query_top.cpp"/>
+    <originFiles name="hhb_query_top.cpp" path="/home/ee/f/fw1811/github/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hhb_query_top.cpp"/>
   </source>
   <testbench/>
 </autopilotfilemapping:AutoPilotFileMapping>

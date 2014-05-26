@@ -19,7 +19,7 @@
 #define N 32768
 #define D 3         // data dimensionality
 #define K 256       // max. number of centres
-#define B 16		// burst length (in data points)
+#define B 4		// burst length (in data points)
 
 #define CNTR_INDEX_BITWIDTH 8       // log2(K)
 

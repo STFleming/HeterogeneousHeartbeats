@@ -273,7 +273,7 @@ entity s00_couplers_imp_1FHMR11 is
 end s00_couplers_imp_1FHMR11;
 
 architecture STRUCTURE of s00_couplers_imp_1FHMR11 is
-  component design_1_s00_data_fifo_29 is
+  component design_1_s00_data_fifo_34 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -356,7 +356,7 @@ architecture STRUCTURE of s00_couplers_imp_1FHMR11 is
     m_axi_rvalid : in STD_LOGIC;
     m_axi_rready : out STD_LOGIC
   );
-  end component design_1_s00_data_fifo_29;
+  end component design_1_s00_data_fifo_34;
   signal GND_1 : STD_LOGIC;
   signal M_ACLK_1 : STD_LOGIC;
   signal M_ARESETN_1 : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -517,7 +517,7 @@ GND: unisim.vcomponents.GND
     port map (
       G => GND_1
     );
-s00_data_fifo: component design_1_s00_data_fifo_29
+s00_data_fifo: component design_1_s00_data_fifo_34
     port map (
       aclk => M_ACLK_1,
       aresetn => M_ARESETN_1(0),
@@ -693,7 +693,7 @@ entity s01_couplers_imp_NY6PGR is
 end s01_couplers_imp_NY6PGR;
 
 architecture STRUCTURE of s01_couplers_imp_NY6PGR is
-  component design_1_s01_data_fifo_30 is
+  component design_1_s01_data_fifo_35 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -776,7 +776,7 @@ architecture STRUCTURE of s01_couplers_imp_NY6PGR is
     m_axi_rvalid : in STD_LOGIC;
     m_axi_rready : out STD_LOGIC
   );
-  end component design_1_s01_data_fifo_30;
+  end component design_1_s01_data_fifo_35;
   signal GND_1 : STD_LOGIC;
   signal M_ACLK_1 : STD_LOGIC;
   signal M_ARESETN_1 : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -937,7 +937,7 @@ GND: unisim.vcomponents.GND
     port map (
       G => GND_1
     );
-s01_data_fifo: component design_1_s01_data_fifo_30
+s01_data_fifo: component design_1_s01_data_fifo_35
     port map (
       aclk => M_ACLK_1,
       aresetn => M_ARESETN_1(0),
@@ -1113,7 +1113,7 @@ entity s02_couplers_imp_1GJWGO8 is
 end s02_couplers_imp_1GJWGO8;
 
 architecture STRUCTURE of s02_couplers_imp_1GJWGO8 is
-  component design_1_s02_data_fifo_31 is
+  component design_1_s02_data_fifo_36 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -1196,7 +1196,7 @@ architecture STRUCTURE of s02_couplers_imp_1GJWGO8 is
     m_axi_rvalid : in STD_LOGIC;
     m_axi_rready : out STD_LOGIC
   );
-  end component design_1_s02_data_fifo_31;
+  end component design_1_s02_data_fifo_36;
   signal GND_1 : STD_LOGIC;
   signal M_ACLK_1 : STD_LOGIC;
   signal M_ARESETN_1 : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -1357,7 +1357,7 @@ GND: unisim.vcomponents.GND
     port map (
       G => GND_1
     );
-s02_data_fifo: component design_1_s02_data_fifo_31
+s02_data_fifo: component design_1_s02_data_fifo_36
     port map (
       aclk => M_ACLK_1,
       aresetn => M_ARESETN_1(0),
@@ -1533,7 +1533,7 @@ entity s03_couplers_imp_MXIRFA is
 end s03_couplers_imp_MXIRFA;
 
 architecture STRUCTURE of s03_couplers_imp_MXIRFA is
-  component design_1_s03_data_fifo_32 is
+  component design_1_s03_data_fifo_37 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -1616,7 +1616,7 @@ architecture STRUCTURE of s03_couplers_imp_MXIRFA is
     m_axi_rvalid : in STD_LOGIC;
     m_axi_rready : out STD_LOGIC
   );
-  end component design_1_s03_data_fifo_32;
+  end component design_1_s03_data_fifo_37;
   signal GND_1 : STD_LOGIC;
   signal M_ACLK_1 : STD_LOGIC;
   signal M_ARESETN_1 : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -1777,7 +1777,7 @@ GND: unisim.vcomponents.GND
     port map (
       G => GND_1
     );
-s03_data_fifo: component design_1_s03_data_fifo_32
+s03_data_fifo: component design_1_s03_data_fifo_37
     port map (
       aclk => M_ACLK_1,
       aresetn => M_ARESETN_1(0),
@@ -1953,7 +1953,7 @@ entity s04_couplers_imp_1CYQRE7 is
 end s04_couplers_imp_1CYQRE7;
 
 architecture STRUCTURE of s04_couplers_imp_1CYQRE7 is
-  component design_1_s04_data_fifo_33 is
+  component design_1_s04_data_fifo_38 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -2036,7 +2036,7 @@ architecture STRUCTURE of s04_couplers_imp_1CYQRE7 is
     m_axi_rvalid : in STD_LOGIC;
     m_axi_rready : out STD_LOGIC
   );
-  end component design_1_s04_data_fifo_33;
+  end component design_1_s04_data_fifo_38;
   signal GND_1 : STD_LOGIC;
   signal M_ACLK_1 : STD_LOGIC;
   signal M_ARESETN_1 : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -2197,7 +2197,7 @@ GND: unisim.vcomponents.GND
     port map (
       G => GND_1
     );
-s04_data_fifo: component design_1_s04_data_fifo_33
+s04_data_fifo: component design_1_s04_data_fifo_38
     port map (
       aclk => M_ACLK_1,
       aresetn => M_ARESETN_1(0),

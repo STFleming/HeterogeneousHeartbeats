@@ -6,10 +6,11 @@
 open_project hhb_query
 set_top hhb_query
 add_files hhb_query/src/hhb_query_top.cpp
+add_files hhb_query_top.cpp
 open_solution "hhb_query"
 set_part {xc7z020clg484-1}
 create_clock -period 10 -name default
-source "hhb_query/hhb_query/directives.tcl"
+source "./hhb_query/hhb_query/directives.tcl"
 #csim_design
 csynth_design
 #cosim_design -trace_level none

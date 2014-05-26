@@ -19,6 +19,7 @@ module system_tb
     localparam N                          = 128;
     localparam K                          = 4;
     localparam D                          = 3;
+    localparam B                          = 16;
 
     localparam INPUT_FILE_NAME_1             = "../../../../kernel/HLS/simulation/data_points_N128_K4_D3_s0.75.mat";
     localparam INPUT_FILE_NAME_2             = "../../../../kernel/HLS/simulation/initial_centres_N128_K4_D3_s0.75_1.mat";
@@ -99,6 +100,8 @@ module system_tb
     reg [31:0] initial_wait_counter ;
     reg [31:0] cycle_counter;
 
+    reg [31:0] block_counter;
+
 
     reg [31:0] input_data_1;  
     reg [31:0] input_data_2;  
@@ -162,7 +165,7 @@ module system_tb
 
     assign n_V = N-1;
     assign k_V = K-1;
-    assign block_address = 0;
+    assign block_address = block_counter;
 
     initial
         state <= IDLE;
@@ -186,6 +189,7 @@ module system_tb
                 PROCESSING_START_1 :
                 begin
                     state <=    PROCESSING_1;
+                    block_counter <= 0;
                 end
                 PROCESSING_1 :
                 if (ap_done_1 == 1'b1) begin
@@ -202,13 +206,16 @@ module system_tb
                     state <=    PROCESSING_2;
                 end
                 PROCESSING_2:
-                if (ap_done_2 == 1'b1) begin
-                    state <=    PROCESSING_DONE_2;
+                if (ap_done_2 == 1'b1)  begin
+                    state <=    PROCESSING_DONE_2;                    
                 end else begin
                     state <=    PROCESSING_2;
                 end
                 PROCESSING_DONE_2 :
-                begin
+                if ( block_counter < (N-B)*D ) begin
+                    state <=    PROCESSING_START_2;
+                    block_counter <= block_counter + B*D;
+                end else begin
                     state <=    PROCESSING_DONE_2;
                 end
                 default : state <=    IDLE;
@@ -261,7 +268,7 @@ module system_tb
         data_counter_1 = 0;
         data_counter_2 = 0;
         initial_wait_counter = 0;
-        cycle_counter = 0;
+        cycle_counter = 0;        
     end
 
     // counter process

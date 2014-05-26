@@ -33,7 +33,6 @@ void init_memory_top( volatile bus_type *data_points_in,
 	#pragma HLS resource core=AXI4M variable=centres_out
 
 	uint c=0;
-
 	uint lim = n*D;
 
 	// fetching n/B blocks
@@ -47,7 +46,19 @@ void init_memory_top( volatile bus_type *data_points_in,
 	}
 
 	c=0;
+	lim = k*D;
 
+	// fetching n/B blocks
+	for (uint i=0; i<=lim; i+=B*D) {
+		bus_type c_buffer[B*D];
+		for (uint ii=0; ii<B*D; ii++) {
+			c_buffer[ii] = centres_in[c];
+			c++;
+		}
+		memcpy((bus_type *)(centres_out+i), c_buffer, B*D*sizeof(int));
+	}
+
+	/*
 	// fetching k centres
 	bus_type c_buffer[K*D];
 	for (centre_index_type i=0; i<=k; i++) {
@@ -63,7 +74,7 @@ void init_memory_top( volatile bus_type *data_points_in,
 	}
 
 	memcpy((bus_type *)(centres_out), c_buffer, K*D*sizeof(int));
-
+	*/
 
 }
 
