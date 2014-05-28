@@ -1,0 +1,7 @@
+                                                                            Start address
+input frame (data points, 1024 x 1024 x 3 x 4 bytes = 12582912 bytes):      0x40000000
+cluster centres ( 256 x 3 x 4 bytes = 3072 bytes):                          0x40C00000
+kernel intermediate results (1024 x 1024 x 2 x 4 bytes = 8388608 bytes):    0x40C00C00
+output frame (data points, 1024 x 1024 x 3 x 4 bytes = 12582912 bytes):     0x41400C00
+end:                                                                        0x42000C00									
+
