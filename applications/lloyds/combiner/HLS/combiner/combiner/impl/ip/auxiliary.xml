@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xd" xd:functionName="combiner_top" xd:componentRef="combiner_top" xd:initiationInterval="x" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64">
+  <xd:controlReg xd:name="control" xd:interfaceRef="S_AXI_CONFIG_BUS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(master_portA)" xd:originalName="master_portA" xd:direction="inout" xd:interfaceRef="M_AXI_MASTER_PORTA" xd:busTypeRef="aximm" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(master_portB)" xd:originalName="master_portB" xd:direction="in" xd:interfaceRef="M_AXI_MASTER_PORTB" xd:busTypeRef="aximm" xd:dataWidth="32"/>
+  <xd:arg xd:name="data_points_in_addr" xd:originalName="data_points_in_addr" xd:direction="in" xd:interfaceRef="S_AXI_CONFIG_BUS" xd:busTypeRef="axilite" xd:offset="0x14" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="kernel_info_in_addr" xd:originalName="kernel_info_in_addr" xd:direction="in" xd:interfaceRef="S_AXI_CONFIG_BUS" xd:busTypeRef="axilite" xd:offset="0x1C" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="centres_out_addr" xd:originalName="centres_out_addr" xd:direction="in" xd:interfaceRef="S_AXI_CONFIG_BUS" xd:busTypeRef="axilite" xd:offset="0x24" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(distortion_out)" xd:originalName="distortion_out" xd:direction="out" xd:interfaceRef="S_AXI_CONFIG_BUS" xd:busTypeRef="axilite" xd:offset="0x2C" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="n" xd:originalName="n" xd:direction="in" xd:interfaceRef="S_AXI_CONFIG_BUS" xd:busTypeRef="axilite" xd:offset="0x34" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="k" xd:originalName="k" xd:direction="in" xd:interfaceRef="S_AXI_CONFIG_BUS" xd:busTypeRef="axilite" xd:offset="0x3C" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="302" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="7492" xd:FF="7774" xd:BRAM="9" xd:DSP="0"/>
+</xd:acceleratorMap>
