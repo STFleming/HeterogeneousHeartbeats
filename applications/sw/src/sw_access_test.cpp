@@ -16,31 +16,41 @@
 //#include "opencv2/highgui.hpp"
 #include "opencv2/highgui/highgui_c.h"
 
-#define RESERVED_MEM_START_ADDRESS 0x38400000
+
+//Drivers for our core
+
+
+#define INPUT_FRAME_ADDR 0x38400000
+#define CLUSTER_CENTER_ADDR 0x39000000
+#define KERNEL_INTERMEDIATE_ADDR 0x39000C00
+#define OUTPUT_FRAME_ADDR 0x39800C00
+
 
 #define MAP_SIZE 40960000UL
 #define MAP_MASK (MAP_SIZE - 1)
 
-void *setup_reserved_mem();
+void *setup_reserved_mem(uint input_address);
 
 int main()
 {
 	printf("----------------------------\nTesting the reserved memory\n----------------------------\n\n");
 	
- 	void * vmapped_reserved_mem = setup_reserved_mem();	
-
-	cv::Mat testFrame;
-	testFrame.data = vmapped_reserved_mem;	
+	cv::Mat hw_inputFrame;
+	hw_inputFrame.data =(uchar *) setup_reserved_mem(INPUT_FRAME_ADDR);	
 	cv::Mat inFrame;
 	inFrame = cv::imread("test_image.jpg");
 
-	cv::Mat grayFrame;
-	cv::cvtColor(inFrame, grayFrame, CV_BGR2GRAY);
 
-	testFrame = grayFrame;
+	//Attempting some resizing
+	cv::Size size(1024,1024);
+	cv::resize(inFrame, hw_inputFrame, size); //Changing the image to size 1024 x 1024 so that it occupies the entire input memory
 
-	inFrame = testFrame;
-	imshow("Test_image", inFrame);
+	//hw_inputFrame = inFrame; //Copy the frame into the HW address space
+
+
+	cv::Mat outFrame;
+	outFrame = hw_inputFrame;
+	imshow("Test_image", outFrame);
 while(1)
 {
 	
@@ -57,12 +67,12 @@ while(1)
 	return 0;
 }
 
-void * setup_reserved_mem() //returns a pointer in userspace to the device
+void * setup_reserved_mem(uint input_address) //returns a pointer in userspace to the device
 {
     void *mapped_base_reserved_mem;
     int memfd_reserved_mem;
     void *mapped_dev_base;
-    off_t dev_base = RESERVED_MEM_START_ADDRESS;
+    off_t dev_base = input_address;
 
     memfd_reserved_mem = open("/dev/mem", O_RDWR | O_SYNC); //to open this the program needs to be run as root
         if (memfd_reserved_mem == -1) {
