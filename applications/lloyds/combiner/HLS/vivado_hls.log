@@ -1,12 +1,103 @@
-@I [LIC-101] Checked out feature [VIVADO_HLS]
-@I [HLS-10] Running '/opt/Xilinx/2013.4/Vivado_HLS/2013.4/bin/unwrapped/lnx64.o/vivado_hls'
-            for user 'sf306' on host 'ganymede' (Linux_x86_64 version 3.2.0-51-generic) on Sun Jun 01 16:09:55 BST 2014
-            in directory '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS'
-@I [HLS-10] Opening project '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner'.
-@W [HLS-40] No /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/solution1/solution1.aps file found.
-@I [HLS-10] Opening solution '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner'.
+================================================================
+  Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC
+  Version: 2013.4
+  Build date: Mon Dec 09 17:07:59 PM 2013
+  Copyright (C) 2013 Xilinx Inc. All rights reserved.
+================================================================
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running '/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/bin/unwrapped/lnx64.o/vivado_hls'
+            for user 'sf306' on host 'ee-boxer0.ee.ic.ac.uk' (Linux_x86_64 version 2.6.32-41-server) on Mon Jun 02 23:31:51 BST 2014
+            in directory '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS'
+@I [HLS-10] Opening project '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner'.
+@W [HLS-40] No /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/solution1/solution1.aps file found.
+@I [HLS-10] Adding design file 'combiner/source/combiner_top.h' to the project.
+@I [HLS-10] Adding design file 'combiner/source/combiner_top.cpp' to the project.
+@I [HLS-10] Adding test bench file 'combiner/simulation/tb_io.h' to the project.
+@I [HLS-10] Adding test bench file 'combiner/simulation/tb_io.cpp' to the project.
+@I [HLS-10] Adding test bench file 'combiner/simulation/data_points_N16384_K128_D3_s0.20.mat' to the project.
+@I [HLS-10] Adding test bench file 'combiner/simulation/data_points_N128_K4_D3_s0.75.mat' to the project.
+@I [HLS-10] Adding test bench file 'combiner/simulation/combiner_tb.cpp' to the project.
+@I [HLS-10] Opening solution '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner'.
 @I [SYN-201] Setting up clock 'default' with a period of 10ns.
 @I [HLS-10] Setting target device to 'xc7z020clg484-1'
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-10] Importing test bench file 'combiner/simulation/combiner_tb.cpp' ... 
+@I [HLS-10] Importing test bench file 'combiner/simulation/data_points_N128_K4_D3_s0.75.mat' ... 
+@I [HLS-10] Importing test bench file 'combiner/simulation/data_points_N16384_K128_D3_s0.20.mat' ... 
+@I [HLS-10] Importing test bench file 'combiner/simulation/tb_io.cpp' ... 
+@I [HLS-10] Importing test bench file 'combiner/simulation/tb_io.h' ... 
+@I [HLS-10] Analyzing design file 'combiner/source/combiner_top.cpp' ... 
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Starting code transformations ...
+@I [HLS-10] Checking synthesizability ...
+@I [XFORM-502] Unrolling all sub-loops inside loop 'init_loop' (combiner/source/combiner_top.cpp:56) in function 'combiner_top' for pipelining.
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Loop-2.3' (combiner/source/combiner_top.cpp:80) in function 'combiner_top' for pipelining.
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Loop-3' (combiner/source/combiner_top.cpp:118) in function 'combiner_top' for pipelining.
+@I [XFORM-501] Unrolling loop 'Loop-1.1' (combiner/source/combiner_top.cpp:60) in function 'combiner_top' completely.
+@I [XFORM-501] Unrolling loop 'Loop-2.3.1' (combiner/source/combiner_top.cpp:87) in function 'combiner_top' completely.
+@I [XFORM-501] Unrolling loop 'Loop-2.3.2' (combiner/source/combiner_top.cpp:97) in function 'combiner_top' completely.
+@I [XFORM-501] Unrolling loop 'Loop-2.3.3' (combiner/source/combiner_top.cpp:105) in function 'combiner_top' completely.
+@I [XFORM-501] Unrolling loop 'Loop-3.1' (combiner/source/combiner_top.cpp:121) in function 'combiner_top' completely.
+@I [XFORM-102] Partitioning array 'centre_buffer.wgtCent.value' (combiner/source/combiner_top.cpp:54) in dimension 2 automatically.
+@I [XFORM-102] Partitioning array 'u.value' (combiner/source/combiner_top.cpp:86) automatically.
+@I [XFORM-102] Partitioning array 'prev_point.value' (combiner/source/combiner_top.cpp:95) automatically.
+@I [HLS-111] Elapsed time: 3.05 seconds; current memory usage: 53.1 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'combiner_top' ...
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'combiner_top' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'init_loop'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 1.
+@I [SCHED-61] Pipelining loop 'block_loop.1'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 8.
+@I [SCHED-61] Pipelining loop 'block_loop.2'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 8.
+@I [SCHED-61] Pipelining loop 'block_loop.3'.
+@I [SCHED-61] Pipelining result: Target II: 4, Final II: 3, Depth: 3.
+@I [SCHED-61] Pipelining loop 'Loop 3'.
+@W [SCHED-69] Unable to schedule 'store' operation (combiner/source/combiner_top.cpp:126) of variable 'tmp_30_2' on array 'c_buffer' due to limited memory ports.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 2, Depth: 38.
+@I [SCHED-61] Pipelining loop 'Loop 4'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 3.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.22 seconds; current memory usage: 54.1 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'combiner_top' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.06 seconds; current memory usage: 55.2 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'combiner_top' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/master_portA' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/master_portB' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/data_points_in_addr' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/kernel_info_in_addr' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/centres_out_addr' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/distortion_out' to 'ap_none' (register).
+@W [RTGEN-101] Port 'distortion_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/n' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/k' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on function 'combiner_top' to 'ap_ctrl_hs'.
+@W [RTGEN-101] Setting dangling out port 'combiner_top/master_portB_dataout' to 0.
+@I [RTGEN-100] Generating core module 'combiner_top_udiv_32ns_32ns_32_35': 3 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'combiner_top'.
+@I [HLS-111] Elapsed time: 0.14 seconds; current memory usage: 56.7 MB.
+@I [RTMG-282] Generating pipelined core: 'combiner_top_udiv_32ns_32ns_32_35_div'
+@I [RTMG-278] Implementing memory 'combiner_top_centre_buffer_0_wgtCent_value_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'combiner_top_i_buffer_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'combiner_top_p_buffer_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'combiner_top_c_buffer_ram' using block RAMs.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'combiner_top'.
+@I [WVHDL-304] Generating RTL VHDL for 'combiner_top'.
+@I [WVLOG-307] Generating RTL Verilog for 'combiner_top'.
 @I [IMPL-8] Exporting RTL as an IP in IP-XACT.
 
 ****** Vivado v2013.4 (64-bit)
@@ -16,11 +107,11 @@
 
 Attempting to get a license: Implementation
 Feature available: Implementation
-Loading parts and site information from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/arch.xml
-Parsing RTL primitives file [/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
-Finished parsing RTL primitives file [/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Loading parts and site information from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 source run_ippack.tcl -notrace
-INFO: [Common 17-206] Exiting Vivado at Sun Jun  1 16:10:00 2014...
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  2 23:32:18 2014...
 @I [IMPL-8] Starting RTL evaluation using Vivado ...
 
 ****** Vivado v2013.4 (64-bit)
@@ -30,13 +121,13 @@ INFO: [Common 17-206] Exiting Vivado at Sun Jun  1 16:10:00 2014...
 
 Attempting to get a license: Implementation
 Feature available: Implementation
-Loading parts and site information from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/arch.xml
-Parsing RTL primitives file [/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
-Finished parsing RTL primitives file [/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Loading parts and site information from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 source run_vivado.tcl -notrace
-[Sun Jun  1 16:10:05 2014] Launched synth_1...
-Run output will be captured here: /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/synth_1/runme.log
-[Sun Jun  1 16:10:05 2014] Waiting for synth_1 to finish...
+[Mon Jun  2 23:32:25 2014] Launched synth_1...
+Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/synth_1/runme.log
+[Mon Jun  2 23:32:25 2014] Waiting for synth_1 to finish...
 
 *** Running vivado
     with args -log combiner_top.rds -m64 -mode batch -messageDb vivado.pb -source combiner_top.tcl
@@ -49,9 +140,9 @@ Run output will be captured here: /home/sf306/phd_codebase/github/HeterogeneousH
 
 Attempting to get a license: Implementation
 Feature available: Implementation
-Loading parts and site information from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/arch.xml
-Parsing RTL primitives file [/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
-Finished parsing RTL primitives file [/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Loading parts and site information from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 source combiner_top.tcl
 # set_msg_config -id {HDL 9-1061} -limit 100000
 # set_msg_config -id {HDL 9-1654} -limit 100000
@@ -59,18 +150,18 @@ source combiner_top.tcl
 # set_property target_language VHDL [current_project]
 # set_param project.compositeFile.enableAutoGeneration 0
 # read_vhdl {
-#   /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd
-#   /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd
-#   /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd
-#   /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd
-#   /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd
-#   /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd
 # }
-# read_xdc /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc
-# set_property used_in_implementation false [get_files /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc]
+# read_xdc /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc
+# set_property used_in_implementation false [get_files /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc]
 # set_param synth.vivado.isSynthRun true
-# set_property webtalk.parent_dir /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.data/wt [current_project]
-# set_property parent.project_dir /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl [current_project]
+# set_property webtalk.parent_dir /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.data/wt [current_project]
+# set_property parent.project_dir /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl [current_project]
 # synth_design -top combiner_top -part xc7z020clg484-1 -no_lc -no_iobuf -mode out_of_context
 Command: synth_design -top combiner_top -part xc7z020clg484-1 -no_lc -no_iobuf -mode out_of_context
 
@@ -79,135 +170,135 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 768.605 ; gain = 148.391
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 777.652 ; gain = 148.391
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'combiner_top' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'combiner_top' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:47]
 	Parameter DataWidth bound to: 32 - type: integer 
 	Parameter AddressRange bound to: 256 - type: integer 
 	Parameter AddressWidth bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_centre_buffer_0_wgtCent_value' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:77' bound to instance 'centre_buffer_0_wgtCent_value_U' of component 'combiner_top_centre_buffer_0_wgtCent_value' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:492]
-INFO: [Synth 8-638] synthesizing module 'combiner_top_centre_buffer_0_wgtCent_value__parameterized0' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:92]
+INFO: [Synth 8-3491] module 'combiner_top_centre_buffer_0_wgtCent_value' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:77' bound to instance 'centre_buffer_0_wgtCent_value_U' of component 'combiner_top_centre_buffer_0_wgtCent_value' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:492]
+INFO: [Synth 8-638] synthesizing module 'combiner_top_centre_buffer_0_wgtCent_value__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:92]
 	Parameter DataWidth bound to: 32 - type: integer 
 	Parameter AddressRange bound to: 256 - type: integer 
 	Parameter AddressWidth bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_centre_buffer_0_wgtCent_value_ram' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:13' bound to instance 'combiner_top_centre_buffer_0_wgtCent_value_ram_U' of component 'combiner_top_centre_buffer_0_wgtCent_value_ram' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'combiner_top_centre_buffer_0_wgtCent_value_ram' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:31]
+INFO: [Synth 8-3491] module 'combiner_top_centre_buffer_0_wgtCent_value_ram' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:13' bound to instance 'combiner_top_centre_buffer_0_wgtCent_value_ram_U' of component 'combiner_top_centre_buffer_0_wgtCent_value_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'combiner_top_centre_buffer_0_wgtCent_value_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:31]
 	Parameter mem_type bound to: block - type: string 
 	Parameter dwidth bound to: 32 - type: integer 
 	Parameter awidth bound to: 8 - type: integer 
 	Parameter mem_size bound to: 256 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'combiner_top_centre_buffer_0_wgtCent_value_ram' (1#1) [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:31]
-INFO: [Synth 8-256] done synthesizing module 'combiner_top_centre_buffer_0_wgtCent_value__parameterized0' (2#1) [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'combiner_top_centre_buffer_0_wgtCent_value_ram' (1#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'combiner_top_centre_buffer_0_wgtCent_value__parameterized0' (2#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:92]
 	Parameter DataWidth bound to: 32 - type: integer 
 	Parameter AddressRange bound to: 256 - type: integer 
 	Parameter AddressWidth bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_centre_buffer_0_wgtCent_value' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:77' bound to instance 'centre_buffer_1_wgtCent_value_U' of component 'combiner_top_centre_buffer_0_wgtCent_value' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:506]
+INFO: [Synth 8-3491] module 'combiner_top_centre_buffer_0_wgtCent_value' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:77' bound to instance 'centre_buffer_1_wgtCent_value_U' of component 'combiner_top_centre_buffer_0_wgtCent_value' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:506]
 	Parameter DataWidth bound to: 32 - type: integer 
 	Parameter AddressRange bound to: 256 - type: integer 
 	Parameter AddressWidth bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_centre_buffer_0_wgtCent_value' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:77' bound to instance 'centre_buffer_2_wgtCent_value_U' of component 'combiner_top_centre_buffer_0_wgtCent_value' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:520]
+INFO: [Synth 8-3491] module 'combiner_top_centre_buffer_0_wgtCent_value' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:77' bound to instance 'centre_buffer_2_wgtCent_value_U' of component 'combiner_top_centre_buffer_0_wgtCent_value' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:520]
 	Parameter DataWidth bound to: 32 - type: integer 
 	Parameter AddressRange bound to: 256 - type: integer 
 	Parameter AddressWidth bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_centre_buffer_0_wgtCent_value' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:77' bound to instance 'centre_buffer_sum_sq_U' of component 'combiner_top_centre_buffer_0_wgtCent_value' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:534]
+INFO: [Synth 8-3491] module 'combiner_top_centre_buffer_0_wgtCent_value' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:77' bound to instance 'centre_buffer_sum_sq_U' of component 'combiner_top_centre_buffer_0_wgtCent_value' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:534]
 	Parameter DataWidth bound to: 32 - type: integer 
 	Parameter AddressRange bound to: 256 - type: integer 
 	Parameter AddressWidth bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_centre_buffer_0_wgtCent_value' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:77' bound to instance 'centre_buffer_count_U' of component 'combiner_top_centre_buffer_0_wgtCent_value' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:548]
+INFO: [Synth 8-3491] module 'combiner_top_centre_buffer_0_wgtCent_value' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd:77' bound to instance 'centre_buffer_count_U' of component 'combiner_top_centre_buffer_0_wgtCent_value' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:548]
 	Parameter DataWidth bound to: 32 - type: integer 
 	Parameter AddressRange bound to: 8 - type: integer 
 	Parameter AddressWidth bound to: 3 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_i_buffer' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd:77' bound to instance 'i_buffer_U' of component 'combiner_top_i_buffer' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:562]
-INFO: [Synth 8-638] synthesizing module 'combiner_top_i_buffer__parameterized0' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd:92]
+INFO: [Synth 8-3491] module 'combiner_top_i_buffer' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd:77' bound to instance 'i_buffer_U' of component 'combiner_top_i_buffer' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:562]
+INFO: [Synth 8-638] synthesizing module 'combiner_top_i_buffer__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd:92]
 	Parameter DataWidth bound to: 32 - type: integer 
 	Parameter AddressRange bound to: 8 - type: integer 
 	Parameter AddressWidth bound to: 3 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_i_buffer_ram' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd:13' bound to instance 'combiner_top_i_buffer_ram_U' of component 'combiner_top_i_buffer_ram' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'combiner_top_i_buffer_ram' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd:31]
+INFO: [Synth 8-3491] module 'combiner_top_i_buffer_ram' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd:13' bound to instance 'combiner_top_i_buffer_ram_U' of component 'combiner_top_i_buffer_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'combiner_top_i_buffer_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd:31]
 	Parameter mem_type bound to: block - type: string 
 	Parameter dwidth bound to: 32 - type: integer 
 	Parameter awidth bound to: 3 - type: integer 
 	Parameter mem_size bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'combiner_top_i_buffer_ram' (3#1) [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd:31]
-INFO: [Synth 8-256] done synthesizing module 'combiner_top_i_buffer__parameterized0' (4#1) [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'combiner_top_i_buffer_ram' (3#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'combiner_top_i_buffer__parameterized0' (4#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd:92]
 	Parameter DataWidth bound to: 32 - type: integer 
 	Parameter AddressRange bound to: 12 - type: integer 
 	Parameter AddressWidth bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_p_buffer' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd:102' bound to instance 'p_buffer_U' of component 'combiner_top_p_buffer' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:576]
-INFO: [Synth 8-638] synthesizing module 'combiner_top_p_buffer__parameterized0' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd:120]
+INFO: [Synth 8-3491] module 'combiner_top_p_buffer' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd:102' bound to instance 'p_buffer_U' of component 'combiner_top_p_buffer' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:576]
+INFO: [Synth 8-638] synthesizing module 'combiner_top_p_buffer__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd:120]
 	Parameter DataWidth bound to: 32 - type: integer 
 	Parameter AddressRange bound to: 12 - type: integer 
 	Parameter AddressWidth bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_p_buffer_ram' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd:13' bound to instance 'combiner_top_p_buffer_ram_U' of component 'combiner_top_p_buffer_ram' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd:138]
-INFO: [Synth 8-638] synthesizing module 'combiner_top_p_buffer_ram' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd:34]
+INFO: [Synth 8-3491] module 'combiner_top_p_buffer_ram' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd:13' bound to instance 'combiner_top_p_buffer_ram_U' of component 'combiner_top_p_buffer_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'combiner_top_p_buffer_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd:34]
 	Parameter mem_type bound to: block - type: string 
 	Parameter dwidth bound to: 32 - type: integer 
 	Parameter awidth bound to: 4 - type: integer 
 	Parameter mem_size bound to: 12 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'combiner_top_p_buffer_ram' (5#1) [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd:34]
-INFO: [Synth 8-256] done synthesizing module 'combiner_top_p_buffer__parameterized0' (6#1) [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'combiner_top_p_buffer_ram' (5#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'combiner_top_p_buffer__parameterized0' (6#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd:120]
 	Parameter DataWidth bound to: 32 - type: integer 
 	Parameter AddressRange bound to: 768 - type: integer 
 	Parameter AddressWidth bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_c_buffer' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd:93' bound to instance 'c_buffer_U' of component 'combiner_top_c_buffer' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:593]
-INFO: [Synth 8-638] synthesizing module 'combiner_top_c_buffer__parameterized0' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd:112]
+INFO: [Synth 8-3491] module 'combiner_top_c_buffer' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd:93' bound to instance 'c_buffer_U' of component 'combiner_top_c_buffer' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:593]
+INFO: [Synth 8-638] synthesizing module 'combiner_top_c_buffer__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd:112]
 	Parameter DataWidth bound to: 32 - type: integer 
 	Parameter AddressRange bound to: 768 - type: integer 
 	Parameter AddressWidth bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_c_buffer_ram' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd:13' bound to instance 'combiner_top_c_buffer_ram_U' of component 'combiner_top_c_buffer_ram' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd:131]
-INFO: [Synth 8-638] synthesizing module 'combiner_top_c_buffer_ram' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd:35]
+INFO: [Synth 8-3491] module 'combiner_top_c_buffer_ram' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd:13' bound to instance 'combiner_top_c_buffer_ram_U' of component 'combiner_top_c_buffer_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'combiner_top_c_buffer_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd:35]
 	Parameter mem_type bound to: block - type: string 
 	Parameter dwidth bound to: 32 - type: integer 
 	Parameter awidth bound to: 10 - type: integer 
 	Parameter mem_size bound to: 768 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'combiner_top_c_buffer_ram' (7#1) [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd:35]
-INFO: [Synth 8-256] done synthesizing module 'combiner_top_c_buffer__parameterized0' (8#1) [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'combiner_top_c_buffer_ram' (7#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'combiner_top_c_buffer__parameterized0' (8#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd:112]
 	Parameter ID bound to: 1 - type: integer 
 	Parameter NUM_STAGE bound to: 35 - type: integer 
 	Parameter din0_WIDTH bound to: 32 - type: integer 
 	Parameter din1_WIDTH bound to: 32 - type: integer 
 	Parameter dout_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_udiv_32ns_32ns_32_35' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:119' bound to instance 'combiner_top_udiv_32ns_32ns_32_35_U1' of component 'combiner_top_udiv_32ns_32ns_32_35' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:611]
-INFO: [Synth 8-638] synthesizing module 'combiner_top_udiv_32ns_32ns_32_35__parameterized0' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:135]
+INFO: [Synth 8-3491] module 'combiner_top_udiv_32ns_32ns_32_35' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:119' bound to instance 'combiner_top_udiv_32ns_32ns_32_35_U1' of component 'combiner_top_udiv_32ns_32ns_32_35' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:611]
+INFO: [Synth 8-638] synthesizing module 'combiner_top_udiv_32ns_32ns_32_35__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:135]
 	Parameter ID bound to: 1 - type: integer 
 	Parameter NUM_STAGE bound to: 35 - type: integer 
 	Parameter din0_WIDTH bound to: 32 - type: integer 
 	Parameter din1_WIDTH bound to: 32 - type: integer 
 	Parameter dout_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_udiv_32ns_32ns_32_35_div' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:13' bound to instance 'combiner_top_udiv_32ns_32ns_32_35_div_U' of component 'combiner_top_udiv_32ns_32ns_32_35_div' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:153]
-INFO: [Synth 8-638] synthesizing module 'combiner_top_udiv_32ns_32ns_32_35_div' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:24]
-WARNING: [Synth 8-3848] Net quot_tmp[0] in module/entity combiner_top_udiv_32ns_32ns_32_35_div does not have driver. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'combiner_top_udiv_32ns_32ns_32_35_div' (9#1) [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'combiner_top_udiv_32ns_32ns_32_35__parameterized0' (10#1) [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:135]
+INFO: [Synth 8-3491] module 'combiner_top_udiv_32ns_32ns_32_35_div' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:13' bound to instance 'combiner_top_udiv_32ns_32ns_32_35_div_U' of component 'combiner_top_udiv_32ns_32ns_32_35_div' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'combiner_top_udiv_32ns_32ns_32_35_div' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:24]
+WARNING: [Synth 8-3848] Net quot_tmp[0] in module/entity combiner_top_udiv_32ns_32ns_32_35_div does not have driver. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'combiner_top_udiv_32ns_32ns_32_35_div' (9#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'combiner_top_udiv_32ns_32ns_32_35__parameterized0' (10#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:135]
 	Parameter ID bound to: 2 - type: integer 
 	Parameter NUM_STAGE bound to: 35 - type: integer 
 	Parameter din0_WIDTH bound to: 32 - type: integer 
 	Parameter din1_WIDTH bound to: 32 - type: integer 
 	Parameter dout_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_udiv_32ns_32ns_32_35' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:119' bound to instance 'combiner_top_udiv_32ns_32ns_32_35_U2' of component 'combiner_top_udiv_32ns_32ns_32_35' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:626]
-INFO: [Synth 8-638] synthesizing module 'combiner_top_udiv_32ns_32ns_32_35__parameterized2' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:135]
+INFO: [Synth 8-3491] module 'combiner_top_udiv_32ns_32ns_32_35' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:119' bound to instance 'combiner_top_udiv_32ns_32ns_32_35_U2' of component 'combiner_top_udiv_32ns_32ns_32_35' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:626]
+INFO: [Synth 8-638] synthesizing module 'combiner_top_udiv_32ns_32ns_32_35__parameterized2' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:135]
 	Parameter ID bound to: 2 - type: integer 
 	Parameter NUM_STAGE bound to: 35 - type: integer 
 	Parameter din0_WIDTH bound to: 32 - type: integer 
 	Parameter din1_WIDTH bound to: 32 - type: integer 
 	Parameter dout_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_udiv_32ns_32ns_32_35_div' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:13' bound to instance 'combiner_top_udiv_32ns_32ns_32_35_div_U' of component 'combiner_top_udiv_32ns_32ns_32_35_div' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:153]
-INFO: [Synth 8-256] done synthesizing module 'combiner_top_udiv_32ns_32ns_32_35__parameterized2' (10#1) [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:135]
+INFO: [Synth 8-3491] module 'combiner_top_udiv_32ns_32ns_32_35_div' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:13' bound to instance 'combiner_top_udiv_32ns_32ns_32_35_div_U' of component 'combiner_top_udiv_32ns_32ns_32_35_div' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'combiner_top_udiv_32ns_32ns_32_35__parameterized2' (10#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:135]
 	Parameter ID bound to: 3 - type: integer 
 	Parameter NUM_STAGE bound to: 35 - type: integer 
 	Parameter din0_WIDTH bound to: 32 - type: integer 
 	Parameter din1_WIDTH bound to: 32 - type: integer 
 	Parameter dout_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_udiv_32ns_32ns_32_35' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:119' bound to instance 'combiner_top_udiv_32ns_32ns_32_35_U3' of component 'combiner_top_udiv_32ns_32ns_32_35' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:641]
-INFO: [Synth 8-638] synthesizing module 'combiner_top_udiv_32ns_32ns_32_35__parameterized4' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:135]
+INFO: [Synth 8-3491] module 'combiner_top_udiv_32ns_32ns_32_35' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:119' bound to instance 'combiner_top_udiv_32ns_32ns_32_35_U3' of component 'combiner_top_udiv_32ns_32ns_32_35' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:641]
+INFO: [Synth 8-638] synthesizing module 'combiner_top_udiv_32ns_32ns_32_35__parameterized4' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:135]
 	Parameter ID bound to: 3 - type: integer 
 	Parameter NUM_STAGE bound to: 35 - type: integer 
 	Parameter din0_WIDTH bound to: 32 - type: integer 
 	Parameter din1_WIDTH bound to: 32 - type: integer 
 	Parameter dout_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'combiner_top_udiv_32ns_32ns_32_35_div' declared at '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:13' bound to instance 'combiner_top_udiv_32ns_32ns_32_35_div_U' of component 'combiner_top_udiv_32ns_32ns_32_35_div' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:153]
-INFO: [Synth 8-256] done synthesizing module 'combiner_top_udiv_32ns_32ns_32_35__parameterized4' (10#1) [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:135]
-INFO: [Synth 8-256] done synthesizing module 'combiner_top' (11#1) [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:47]
+INFO: [Synth 8-3491] module 'combiner_top_udiv_32ns_32ns_32_35_div' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:13' bound to instance 'combiner_top_udiv_32ns_32ns_32_35_div_U' of component 'combiner_top_udiv_32ns_32ns_32_35_div' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'combiner_top_udiv_32ns_32ns_32_35__parameterized4' (10#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'combiner_top' (11#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:47]
 WARNING: [Synth 8-3917] design combiner_top has port master_portB_req_din driven by constant 0
 WARNING: [Synth 8-3917] design combiner_top has port master_portB_address[31] driven by constant 0
 WARNING: [Synth 8-3917] design combiner_top has port master_portB_address[30] driven by constant 0
@@ -277,7 +368,7 @@ WARNING: [Synth 8-3917] design combiner_top has port master_portB_size[1] driven
 WARNING: [Synth 8-3917] design combiner_top has port master_portB_size[0] driven by constant 0
 WARNING: [Synth 8-3331] design combiner_top has unconnected port master_portB_req_full_n
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 812.426 ; gain = 192.211
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 820.473 ; gain = 191.211
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -290,18 +381,18 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-Loading clock regions from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
-Loading clock buffers from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
-Loading clock placement rules from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
-Loading package pin functions from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/PinFunctions.xml...
-Loading package from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
-Loading io standards from /opt/Xilinx/2013.4/Vivado/2013.4/data/./parts/xilinx/zynq/IOStandards.xml
+Loading clock regions from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/PinFunctions.xml...
+Loading package from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/./parts/xilinx/zynq/IOStandards.xml
 
 Processing XDC Constraints
-Parsing XDC File [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc]
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'ap_clk' matched to 'port' objects. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc:1]
+Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'ap_clk' matched to 'port' objects. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc:1]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-Finished Parsing XDC File [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc]
+Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -316,101 +407,101 @@ Start RTL Optimization
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1149.184 ; gain = 528.969
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1157.730 ; gain = 528.469
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1149.184 ; gain = 528.969
+Finished RTL Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1157.730 ; gain = 528.469
 ---------------------------------------------------------------------------------
 
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[31]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[31]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[30]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[30]' and it is trimmed from '32' to '30' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[29]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[29]' and it is trimmed from '32' to '29' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[28]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[28]' and it is trimmed from '32' to '28' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[27]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[27]' and it is trimmed from '32' to '27' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[26]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[26]' and it is trimmed from '32' to '26' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[25]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[25]' and it is trimmed from '32' to '25' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[24]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[24]' and it is trimmed from '32' to '24' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[23]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[23]' and it is trimmed from '32' to '23' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[22]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[22]' and it is trimmed from '32' to '22' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[21]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[21]' and it is trimmed from '32' to '21' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[20]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[20]' and it is trimmed from '32' to '20' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[19]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[19]' and it is trimmed from '32' to '19' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[18]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[18]' and it is trimmed from '32' to '18' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[17]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[17]' and it is trimmed from '32' to '17' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[16]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[16]' and it is trimmed from '32' to '16' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[15]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[15]' and it is trimmed from '32' to '15' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[14]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[14]' and it is trimmed from '32' to '14' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[13]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[13]' and it is trimmed from '32' to '13' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[12]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[12]' and it is trimmed from '32' to '12' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[11]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[11]' and it is trimmed from '32' to '11' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[10]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[10]' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[9]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[9]' and it is trimmed from '32' to '9' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[8]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[8]' and it is trimmed from '32' to '8' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[7]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[7]' and it is trimmed from '32' to '7' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[6]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[6]' and it is trimmed from '32' to '6' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[5]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[5]' and it is trimmed from '32' to '5' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[4]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[4]' and it is trimmed from '32' to '4' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[3]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[3]' and it is trimmed from '32' to '3' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[2]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[2]' and it is trimmed from '32' to '2' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[1]' and it is trimmed from '32' to '31' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
-WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[1]' and it is trimmed from '32' to '1' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
-INFO: [Synth 8-4471] merging register 'centre_buffer_sum_sq_addr_2_reg_1231_reg[7:0]' into 'centre_buffer_count_addr_2_reg_1226_reg[7:0]' [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1691]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar2_reg_538_pp2_it6_reg' and it is trimmed from '4' to '3' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1564]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar2_reg_538_pp2_it5_reg' and it is trimmed from '4' to '3' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1563]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar2_reg_538_pp2_it4_reg' and it is trimmed from '4' to '3' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1562]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar2_reg_538_pp2_it3_reg' and it is trimmed from '4' to '3' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1561]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar2_reg_538_pp2_it2_reg' and it is trimmed from '4' to '3' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1560]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar2_reg_538_pp2_it1_reg' and it is trimmed from '4' to '3' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1559]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it18_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1601]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it17_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1600]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it16_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1599]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it15_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1598]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it14_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1597]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it13_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1596]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it12_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1595]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it11_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1594]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it10_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1593]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it9_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1593]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it8_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1608]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it7_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1607]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it6_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1606]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it5_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1605]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it4_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1604]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it3_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1603]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it2_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1602]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it1_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1592]
-WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_19_reg_1263_reg' and it is trimmed from '32' to '10' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1592]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[31]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[31]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[30]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[30]' and it is trimmed from '32' to '30' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[29]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[29]' and it is trimmed from '32' to '29' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[28]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[28]' and it is trimmed from '32' to '28' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[27]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[27]' and it is trimmed from '32' to '27' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[26]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[26]' and it is trimmed from '32' to '26' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[25]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[25]' and it is trimmed from '32' to '25' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[24]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[24]' and it is trimmed from '32' to '24' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[23]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[23]' and it is trimmed from '32' to '23' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[22]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[22]' and it is trimmed from '32' to '22' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[21]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[21]' and it is trimmed from '32' to '21' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[20]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[20]' and it is trimmed from '32' to '20' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[19]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[19]' and it is trimmed from '32' to '19' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[18]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[18]' and it is trimmed from '32' to '18' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[17]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[17]' and it is trimmed from '32' to '17' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[16]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[16]' and it is trimmed from '32' to '16' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[15]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[15]' and it is trimmed from '32' to '15' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[14]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[14]' and it is trimmed from '32' to '14' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[13]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[13]' and it is trimmed from '32' to '13' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[12]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[12]' and it is trimmed from '32' to '12' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[11]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[11]' and it is trimmed from '32' to '11' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[10]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[10]' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[9]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[9]' and it is trimmed from '32' to '9' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[8]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[8]' and it is trimmed from '32' to '8' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[7]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[7]' and it is trimmed from '32' to '7' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[6]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[6]' and it is trimmed from '32' to '6' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[5]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[5]' and it is trimmed from '32' to '5' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[4]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[4]' and it is trimmed from '32' to '4' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[3]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[3]' and it is trimmed from '32' to '3' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[2]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[2]' and it is trimmed from '32' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg[1]' and it is trimmed from '32' to '31' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:92]
+WARNING: [Synth 8-3936] Found unconnected internal register 'quot_tmp_reg[1]' and it is trimmed from '32' to '1' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd:108]
+INFO: [Synth 8-4471] merging register 'centre_buffer_sum_sq_addr_2_reg_1231_reg[7:0]' into 'centre_buffer_count_addr_2_reg_1226_reg[7:0]' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1691]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar2_reg_538_pp2_it6_reg' and it is trimmed from '4' to '3' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1564]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar2_reg_538_pp2_it5_reg' and it is trimmed from '4' to '3' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1563]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar2_reg_538_pp2_it4_reg' and it is trimmed from '4' to '3' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1562]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar2_reg_538_pp2_it3_reg' and it is trimmed from '4' to '3' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1561]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar2_reg_538_pp2_it2_reg' and it is trimmed from '4' to '3' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1560]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar2_reg_538_pp2_it1_reg' and it is trimmed from '4' to '3' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1559]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it18_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1601]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it17_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1600]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it16_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1599]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it15_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1598]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it14_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1597]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it13_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1596]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it12_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1595]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it11_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1594]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it10_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1593]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it9_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1593]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it8_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1608]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it7_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1607]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it6_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1606]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it5_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1605]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it4_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1604]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it3_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1603]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it2_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1602]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_tmp_19_reg_1263_pp4_it1_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1592]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_19_reg_1263_reg' and it is trimmed from '32' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:1592]
 INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_fsm_reg' in module 'combiner_top'
 INFO: [Synth 8-3969] The signal ram_reg was recognized as a RAM template for dedicated block RAM(s) but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (3 address bits)* is shallow.
 INFO: [Synth 8-3969] The signal ram_reg was recognized as a RAM template for dedicated block RAM(s) but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (4 address bits)* is shallow.
@@ -431,7 +522,7 @@ Part Resources:
 DSPs: 220 (col length:60)
 BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1152.172 ; gain = 531.957
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1162.715 ; gain = 533.453
 ---------------------------------------------------------------------------------
 
 
@@ -441,13 +532,13 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     33 Bit       Adders := 96    
-	   3 Input     32 Bit       Adders := 1     
 	   2 Input     32 Bit       Adders := 10    
-	   3 Input     10 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 2     
+	   3 Input     10 Bit       Adders := 1     
 	   2 Input      9 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 1     
 	   3 Input      5 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 2     
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
@@ -493,8 +584,8 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 20    
 	   2 Input     31 Bit        Muxes := 94    
 	   2 Input     30 Bit        Muxes := 3     
-	   2 Input     19 Bit        Muxes := 12    
 	  18 Input     19 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 12    
 	   2 Input     10 Bit        Muxes := 2     
 	   3 Input      8 Bit        Muxes := 4     
 	   2 Input      8 Bit        Muxes := 3     
@@ -540,16 +631,16 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 11    
 	   2 Input     31 Bit        Muxes := 1     
 	   2 Input     30 Bit        Muxes := 3     
-	  18 Input     19 Bit        Muxes := 1     
 	   2 Input     19 Bit        Muxes := 12    
+	  18 Input     19 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 3     
 	   3 Input      8 Bit        Muxes := 4     
 	  19 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 6     
 	   2 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 33    
 	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 33    
 Module combiner_top_centre_buffer_0_wgtCent_value_ram 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -737,7 +828,7 @@ WARNING: [Synth 8-3332] Sequential element (\dividend_tmp_reg[14][7] ) is unused
 WARNING: [Synth 8-3332] Sequential element (\dividend_tmp_reg[14][6] ) is unused and will be removed from module combiner_top_udiv_32ns_32ns_32_35_div.
 WARNING: [Synth 8-3332] Sequential element (\dividend_tmp_reg[14][5] ) is unused and will be removed from module combiner_top_udiv_32ns_32ns_32_35_div.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_27_reg_1181_reg' and it is trimmed from '5' to '4' bits. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:2069]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_27_reg_1181_reg' and it is trimmed from '5' to '4' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd:2069]
 WARNING: [Synth 8-3917] design combiner_top has port master_portA_address[31] driven by constant 0
 WARNING: [Synth 8-3917] design combiner_top has port master_portA_address[30] driven by constant 0
 WARNING: [Synth 8-3917] design combiner_top has port master_portA_size[31] driven by constant 0
@@ -777,7 +868,7 @@ WARNING: [Synth 8-3331] design combiner_top has unconnected port centres_out_add
 WARNING: [Synth 8-3331] design combiner_top has unconnected port centres_out_addr[0]
 WARNING: [Synth 8-3331] design combiner_top has unconnected port n[31]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1164.184 ; gain = 543.969
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1173.730 ; gain = 544.469
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -807,7 +898,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_8/\b_
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_8/\b_reg_502_reg[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_104/\FSM_onehot_ap_CS_fsm_reg[18] )
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1204.691 ; gain = 584.477
+Finished Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1213.230 ; gain = 583.969
 ---------------------------------------------------------------------------------
 
 
@@ -818,13 +909,13 @@ Start Timing Optimization
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
-Wrong number or type of arguments for overloaded function 'NRealModS_findPins'. at line 1 of file /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc
+Wrong number or type of arguments for overloaded function 'NRealModS_findPins'. at line 1 of file /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1204.691 ; gain = 584.477
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1213.230 ; gain = 583.969
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1204.691 ; gain = 584.477
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1213.230 ; gain = 583.969
 ---------------------------------------------------------------------------------
 
 
@@ -844,7 +935,7 @@ INFO: [Synth 8-4480] The timing for the instance \i_buffer_U/combiner_top_i_buff
 INFO: [Synth 8-4480] The timing for the instance \p_buffer_U/combiner_top_p_buffer_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance \p_buffer_U/combiner_top_p_buffer_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1242.957 ; gain = 622.742
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1251.496 ; gain = 622.234
 ---------------------------------------------------------------------------------
 
 
@@ -869,7 +960,7 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Gated Clock Conversion mode: off
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1242.957 ; gain = 622.742
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1251.496 ; gain = 622.234
 ---------------------------------------------------------------------------------
 
 
@@ -884,7 +975,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1242.957 ; gain = 622.742
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1251.496 ; gain = 622.234
 ---------------------------------------------------------------------------------
 
 
@@ -892,7 +983,7 @@ Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1242.957 ; gain = 622.742
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1251.496 ; gain = 622.234
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -1155,11 +1246,11 @@ Report Instance Areas:
 |23    |    combiner_top_centre_buffer_0_wgtCent_value_ram_U |combiner_top_centre_buffer_0_wgtCent_value_ram               |   105|
 +------+-----------------------------------------------------+-------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1242.957 ; gain = 622.742
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1251.496 ; gain = 622.234
 ---------------------------------------------------------------------------------
 
 Synthesis finished with 0 errors, 0 critical warnings and 2465 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1242.957 ; gain = 622.742
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1251.496 ; gain = 622.234
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Opt 31-138] Pushed 0 inverter(s).
@@ -1169,44 +1260,44 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 74 Infos, 294 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1576.441 ; gain = 860.832
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1584.980 ; gain = 859.328
 # write_checkpoint combiner_top.dcp
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 # report_utilization -file combiner_top_utilization_synth.rpt -pb combiner_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.22 . Memory (MB): peak = 1579.457 ; gain = 2.012
-INFO: [Common 17-206] Exiting Vivado at Sun Jun  1 16:10:49 2014...
-[Sun Jun  1 16:10:52 2014] synth_1 finished
-wait_on_run: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:47 . Memory (MB): peak = 729.609 ; gain = 8.000
+report_utilization: Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.73 . Memory (MB): peak = 1587.996 ; gain = 2.012
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  2 23:33:26 2014...
+[Mon Jun  2 23:33:27 2014] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:00.51 ; elapsed = 00:01:02 . Memory (MB): peak = 738.652 ; gain = 8.000
 Design is defaulting to impl run constrset: constrs_1
 Design is defaulting to synth run part: xc7z020clg484-1
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2013.4
-Loading clock regions from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
-Loading clock buffers from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
-Loading clock placement rules from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
-Loading package pin functions from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/PinFunctions.xml...
-Loading package from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
-Loading io standards from /opt/Xilinx/2013.4/Vivado/2013.4/data/./parts/xilinx/zynq/IOStandards.xml
-Parsing XDC File [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc]
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'ap_clk' matched to 'port' objects. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc:1]
+Loading clock regions from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/PinFunctions.xml...
+Loading package from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/./parts/xilinx/zynq/IOStandards.xml
+Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'ap_clk' matched to 'port' objects. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc:1]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-Finished Parsing XDC File [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc]
+Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1386.375 ; gain = 656.766
-report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1388.391 ; gain = 2.016
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1394.418 ; gain = 655.766
+report_utilization: Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.66 . Memory (MB): peak = 1397.434 ; gain = 3.016
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max, Constraints type: SDC.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
 Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
 INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
-[Sun Jun  1 16:11:08 2014] Launched impl_1...
-Run output will be captured here: /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/runme.log
-[Sun Jun  1 16:11:08 2014] Waiting for impl_1 to finish...
+[Mon Jun  2 23:33:50 2014] Launched impl_1...
+Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/runme.log
+[Mon Jun  2 23:33:50 2014] Waiting for impl_1 to finish...
 
 *** Running vivado
     with args -log combiner_top.rdi -applog -m64 -messageDb vivado.pb -mode batch -source combiner_top.tcl -notrace
@@ -1219,30 +1310,30 @@ Run output will be captured here: /home/sf306/phd_codebase/github/HeterogeneousH
 
 Attempting to get a license: Implementation
 Feature available: Implementation
-Loading parts and site information from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/arch.xml
-Parsing RTL primitives file [/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
-Finished parsing RTL primitives file [/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Loading parts and site information from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 source combiner_top.tcl -notrace
-Command: open_checkpoint /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/combiner_top.dcp
+Command: open_checkpoint /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/combiner_top.dcp
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2013.4
-Loading clock regions from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
-Loading clock buffers from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
-Loading clock placement rules from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
-Loading package pin functions from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/PinFunctions.xml...
-Loading package from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
-Loading io standards from /opt/Xilinx/2013.4/Vivado/2013.4/data/./parts/xilinx/zynq/IOStandards.xml
-Parsing XDC File [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/.Xil/Vivado-25363-ganymede/dcp/combiner_top.xdc]
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'ap_clk' matched to 'port' objects. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc:1]
+Loading clock regions from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/PinFunctions.xml...
+Loading package from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/./parts/xilinx/zynq/IOStandards.xml
+Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/.Xil/Vivado-679-ee-boxer0/dcp/combiner_top.xdc]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'ap_clk' matched to 'port' objects. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc:1]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-Finished Parsing XDC File [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/.Xil/Vivado-25363-ganymede/dcp/combiner_top.xdc]
+Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/.Xil/Vivado-679-ee-boxer0/dcp/combiner_top.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Project 1-484] Checkpoint was created with build 353583
-open_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1384.383 ; gain = 668.766
+open_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1393.422 ; gain = 669.766
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -1253,7 +1344,7 @@ INFO: [Drc 23-27] Running DRC with 8 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.21 . Memory (MB): peak = 1396.410 ; gain = 12.023
+Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.28 . Memory (MB): peak = 1404.449 ; gain = 11.023
 
 Starting Logic Optimization Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
@@ -1264,24 +1355,24 @@ INFO: [Opt 31-138] Pushed 0 inverter(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
 Phase 1 Retarget | Checksum: 19a764053
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.79 . Memory (MB): peak = 1475.230 ; gain = 78.820
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1483.270 ; gain = 78.820
 
 Phase 2 Constant Propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s).
 INFO: [Opt 31-10] Eliminated 176 cells.
 Phase 2 Constant Propagation | Checksum: 135a7327e
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1475.230 ; gain = 78.820
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1483.270 ; gain = 78.820
 
 Phase 3 Sweep
 INFO: [Opt 31-12] Eliminated 2858 unconnected nets.
 INFO: [Opt 31-11] Eliminated 1 unconnected cells.
 Phase 3 Sweep | Checksum: 18c77ad9b
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1475.230 ; gain = 78.820
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1483.270 ; gain = 78.820
 Ending Logic Optimization Task | Checksum: 18c77ad9b
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1475.230 ; gain = 78.820
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1483.270 ; gain = 78.820
 Implement Debug Cores | Checksum: 1f9083253
 Logic Optimization | Checksum: 1f9083253
 
@@ -1291,7 +1382,7 @@ Starting PowerOpt TimerUpdates Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Ending PowerOpt TimerUpdates Task | Checksum: 18c77ad9b
 
-Time (s): cpu = 00:00:00.85 ; elapsed = 00:00:00.58 . Memory (MB): peak = 1478.230 ; gain = 3.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.72 . Memory (MB): peak = 1486.270 ; gain = 3.000
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
 
@@ -1301,11 +1392,11 @@ INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 1 newly gated: 0 Total Ports: 16
 Ending Power Optimization Task | Checksum: 24047f72b
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1579.246 ; gain = 104.016
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1587.285 ; gain = 104.016
 INFO: [Common 17-83] Releasing license: Implementation
 24 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1579.246 ; gain = 194.863
+opt_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1587.285 ; gain = 193.863
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
@@ -1321,44 +1412,44 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Core
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1579.250 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1587.289 ; gain = 0.000
 
 Phase 1.1.1 Mandatory Logic Optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1579.250 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1587.289 ; gain = 0.000
 Phase 1.1.1 Mandatory Logic Optimization | Checksum: 99f8b879
 
-Time (s): cpu = 00:00:00.30 ; elapsed = 00:00:00.31 . Memory (MB): peak = 1579.250 ; gain = 0.000
+Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.37 . Memory (MB): peak = 1587.289 ; gain = 0.000
 
 Phase 1.1.2 Build Super Logic Region (SLR) Database
 Phase 1.1.2 Build Super Logic Region (SLR) Database | Checksum: 99f8b879
 
-Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.32 . Memory (MB): peak = 1579.250 ; gain = 0.000
+Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.39 . Memory (MB): peak = 1587.289 ; gain = 0.000
 
 Phase 1.1.3 Add Constraints
 Phase 1.1.3 Add Constraints | Checksum: 99f8b879
 
-Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.33 . Memory (MB): peak = 1579.250 ; gain = 0.000
+Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:00.39 . Memory (MB): peak = 1587.289 ; gain = 0.000
 
 Phase 1.1.4 Build Macros
 Phase 1.1.4 Build Macros | Checksum: b7358e79
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1579.250 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1587.289 ; gain = 0.000
 
 Phase 1.1.5 Implementation Feasibility check
 Phase 1.1.5 Implementation Feasibility check | Checksum: b7358e79
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1579.250 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1587.289 ; gain = 0.000
 
 Phase 1.1.6 Pre-Place Cells
 Phase 1.1.6 Pre-Place Cells | Checksum: b7358e79
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1579.250 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1587.289 ; gain = 0.000
 
 Phase 1.1.7 IO Placement/ Clock Placement/ Build Placer Device
 Phase 1.1.7 IO Placement/ Clock Placement/ Build Placer Device | Checksum: b7358e79
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1603.258 ; gain = 24.008
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1611.297 ; gain = 24.008
 
 Phase 1.1.8 Build Placer Netlist Model
 
@@ -1369,503 +1460,28 @@ Resolution: Set the HD.CLK_SRC property of the out-of-context port to the locati
 Phase 1.1.8.1.1 Build Clock Data
 Phase 1.1.8.1.1 Build Clock Data | Checksum: bc8db12c
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1603.258 ; gain = 24.008
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1611.297 ; gain = 24.008
 Phase 1.1.8.1 Place Init Design | Checksum: de8b5f3e
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1603.258 ; gain = 24.008
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1611.297 ; gain = 24.008
 Phase 1.1.8 Build Placer Netlist Model | Checksum: de8b5f3e
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1603.258 ; gain = 24.008
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1611.297 ; gain = 24.008
 
 Phase 1.1.9 Constrain Clocks/Macros
 
 Phase 1.1.9.1 Constrain Global/Regional Clocks
 Phase 1.1.9.1 Constrain Global/Regional Clocks | Checksum: de8b5f3e
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1603.258 ; gain = 24.008
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1611.297 ; gain = 24.008
 Phase 1.1.9 Constrain Clocks/Macros | Checksum: de8b5f3e
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1603.258 ; gain = 24.008
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1611.297 ; gain = 24.008
 Phase 1.1 Placer Initialization Core | Checksum: de8b5f3e
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1603.258 ; gain = 24.008
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1611.297 ; gain = 24.008
 Phase 1 Placer Initialization | Checksum: de8b5f3e
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1603.258 ; gain = 24.008
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1611.297 ; gain = 24.008
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 155c4f8f5
-
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:15 . Memory (MB): peak = 1603.258 ; gain = 24.008
-
-Phase 3 Detail Placement
-
-Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 155c4f8f5
-
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:15 . Memory (MB): peak = 1603.258 ; gain = 24.008
-
-Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 14a563f16
-
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:17 . Memory (MB): peak = 1603.258 ; gain = 24.008
-
-Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 1f1c2b6c6
-
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:17 . Memory (MB): peak = 1603.258 ; gain = 24.008
-
-Phase 3.4 Timing Path Optimizer
-Phase 3.4 Timing Path Optimizer | Checksum: 1cbc42751
-
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:17 . Memory (MB): peak = 1603.258 ; gain = 24.008
-
-Phase 3.5 Commit Small Macros & Core Logic
-Phase 3.5 Commit Small Macros & Core Logic | Checksum: 1b69d09f1
-
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:19 . Memory (MB): peak = 1627.270 ; gain = 48.020
-
-Phase 3.6 Re-assign LUT pins
-Phase 3.6 Re-assign LUT pins | Checksum: 1b69d09f1
-
-Time (s): cpu = 00:00:45 ; elapsed = 00:00:20 . Memory (MB): peak = 1627.270 ; gain = 48.020
-Phase 3 Detail Placement | Checksum: 1b69d09f1
-
-Time (s): cpu = 00:00:45 ; elapsed = 00:00:20 . Memory (MB): peak = 1627.270 ; gain = 48.020
-
-Phase 4 Post Placement Optimization and Clean-Up
-
-Phase 4.1 PCOPT Shape updates
-Phase 4.1 PCOPT Shape updates | Checksum: 1b69d09f1
-
-Time (s): cpu = 00:00:45 ; elapsed = 00:00:20 . Memory (MB): peak = 1627.270 ; gain = 48.020
-
-Phase 4.2 Post Placement Optimization
-WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
-Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
-
-Phase 4.2.1 Post Placement Timing Optimization
-Phase 4.2.1 Post Placement Timing Optimization | Checksum: 197ab9abc
-
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:21 . Memory (MB): peak = 1627.270 ; gain = 48.020
-Phase 4.2 Post Placement Optimization | Checksum: 197ab9abc
-
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:21 . Memory (MB): peak = 1627.270 ; gain = 48.020
-
-Phase 4.3 Post Placement Cleanup
-Phase 4.3 Post Placement Cleanup | Checksum: 197ab9abc
-
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:21 . Memory (MB): peak = 1627.270 ; gain = 48.020
-
-Phase 4.4 Placer Reporting
-
-Phase 4.4.1 Congestion Reporting
-Phase 4.4.1 Congestion Reporting | Checksum: 197ab9abc
-
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:21 . Memory (MB): peak = 1627.270 ; gain = 48.020
-
-Phase 4.4.2 updateTiming final
-Phase 4.4.2 updateTiming final | Checksum: 17d29bcd1
-
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:22 . Memory (MB): peak = 1627.270 ; gain = 48.020
-
-Phase 4.4.3 Dump Critical Paths 
-Phase 4.4.3 Dump Critical Paths  | Checksum: 17d29bcd1
-
-Time (s): cpu = 00:00:53 ; elapsed = 00:00:22 . Memory (MB): peak = 1627.270 ; gain = 48.020
-
-Phase 4.4.4 Restore STA
-Phase 4.4.4 Restore STA | Checksum: 17d29bcd1
-
-Time (s): cpu = 00:00:53 ; elapsed = 00:00:22 . Memory (MB): peak = 1627.270 ; gain = 48.020
-
-Phase 4.4.5 Print Final WNS
-WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
-Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
-INFO: [Place 30-100] Post Placement Timing Summary | WNS=1.703  | TNS=0.000  |
-
-Phase 4.4.5 Print Final WNS | Checksum: 17d29bcd1
-
-Time (s): cpu = 00:00:59 ; elapsed = 00:00:24 . Memory (MB): peak = 1627.270 ; gain = 48.020
-Phase 4.4 Placer Reporting | Checksum: 17d29bcd1
-
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:24 . Memory (MB): peak = 1627.270 ; gain = 48.020
-
-Phase 4.5 Final Placement Cleanup
-Phase 4.5 Final Placement Cleanup | Checksum: 17924020e
-
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:24 . Memory (MB): peak = 1627.270 ; gain = 48.020
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 17924020e
-
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:24 . Memory (MB): peak = 1627.270 ; gain = 48.020
-Ending Placer Task | Checksum: e1cc3125
-
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:24 . Memory (MB): peak = 1627.270 ; gain = 48.020
-INFO: [Common 17-83] Releasing license: Implementation
-33 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
-place_design completed successfully
-place_design: Time (s): cpu = 00:01:00 ; elapsed = 00:00:25 . Memory (MB): peak = 1627.270 ; gain = 48.020
-INFO: [Timing 38-163] DEBUG : Generate clock report | CPU: 0.25 secs 
-
-report_utilization: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.24 . Memory (MB): peak = 1629.285 ; gain = 0.000
-INFO: [Designutils 20-134] DEBUG : Generate Control Sets report | CPU: 0.13 secs 
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.73 ; elapsed = 00:00:00.75 . Memory (MB): peak = 1629.289 ; gain = 0.000
-Command: phys_opt_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
-INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
-INFO: [Common 17-83] Releasing license: Implementation
-38 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
-phys_opt_design completed successfully
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.74 ; elapsed = 00:00:00.75 . Memory (MB): peak = 1629.289 ; gain = 0.000
-Command: route_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
-Running DRC as a precondition to command route_design
-INFO: [Drc 23-27] Running DRC with 8 threads
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
-INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
-
-
-Starting Routing Task
-INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
-
-Starting Route Task
-
-Phase 1 Build RT Design
-
-Phase 1.1 Build Netlist & NodeGraph
-WARNING: [Route 35-197] Clock port "ap_clk" does not have an associated HD.CLK_SRC. Without this constraint, timing analysis may not be accurate and upstream checks cannot be done to ensure correct clock placement.
-WARNING: [Route 35-198] Port "ap_rst" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_rst". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "master_portB_rsp_empty_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portB_rsp_empty_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[19]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[19]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[28]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[28]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "kernel_info_in_addr[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "kernel_info_in_addr[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "ap_start" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_start". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[28]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[28]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[19]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[19]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "k[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[19]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[19]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[28]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[28]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "n[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "n[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "master_portA_rsp_empty_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_rsp_empty_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "centres_out_addr[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_out_addr[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "centres_out_addr[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_out_addr[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "centres_out_addr[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_out_addr[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "centres_out_addr[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_out_addr[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-WARNING: [Route 35-198] Port "master_portB_datain[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portB_datain[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
-INFO: [Common 17-14] Message 'Route 35-198' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-Phase 1.1 Build Netlist & NodeGraph | Checksum: e1cc3125
-
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1737.176 ; gain = 107.887
-Phase 1 Build RT Design | Checksum: 17700bb5f
-
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1737.176 ; gain = 107.887
-
-Phase 2 Router Initialization
-
-Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 17700bb5f
-
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1737.180 ; gain = 107.891
-
-Phase 2.2 Restore Routing
-Phase 2.2 Restore Routing | Checksum: 17700bb5f
-
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1751.230 ; gain = 121.941
-
-Phase 2.3 Special Net Routing
- Number of Nodes with overlaps = 0
-Phase 2.3 Special Net Routing | Checksum: 10d8bbb5c
-
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1751.230 ; gain = 121.941
-
-Phase 2.4 Local Clock Net Routing
-Phase 2.4 Local Clock Net Routing | Checksum: 10d8bbb5c
-
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1751.230 ; gain = 121.941
-
-Phase 2.5 Update Timing
-
-Phase 2.5.1 Update timing with NCN CRPR
-
-Phase 2.5.1.1 Hold Budgeting
-Phase 2.5.1.1 Hold Budgeting | Checksum: 10d8bbb5c
-
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:16 . Memory (MB): peak = 1758.918 ; gain = 129.629
-Phase 2.5.1 Update timing with NCN CRPR | Checksum: 10d8bbb5c
-
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:16 . Memory (MB): peak = 1758.918 ; gain = 129.629
-Phase 2.5 Update Timing | Checksum: 10d8bbb5c
-
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:16 . Memory (MB): peak = 1758.918 ; gain = 129.629
-INFO: [Route 35-57] Estimated Timing Summary | WNS=1.73   | TNS=0      | WHS=-0.0666| THS=-1.66  |
-
-
-Phase 2.6 Budgeting
-Phase 2.6 Budgeting | Checksum: 10d8bbb5c
-
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 1759.996 ; gain = 130.707
-Phase 2 Router Initialization | Checksum: 10d8bbb5c
-
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 1759.996 ; gain = 130.707
-
-Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: d04cc312
-
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 1771.996 ; gain = 142.707
-
-Phase 4 Rip-up And Reroute
-
-Phase 4.1 Global Iteration 0
-
-Phase 4.1.1 Remove Overlaps
- Number of Nodes with overlaps = 109
- Number of Nodes with overlaps = 7
- Number of Nodes with overlaps = 0
-Phase 4.1.1 Remove Overlaps | Checksum: c9dc063a
-
-Time (s): cpu = 00:00:35 ; elapsed = 00:00:18 . Memory (MB): peak = 1771.996 ; gain = 142.707
-
-Phase 4.1.2 Update Timing
-Phase 4.1.2 Update Timing | Checksum: c9dc063a
-
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:19 . Memory (MB): peak = 1771.996 ; gain = 142.707
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.161  | TNS=0      | WHS=N/A    | THS=N/A    |
-
-
-Phase 4.1.3 collectNewHoldAndFix
-Phase 4.1.3 collectNewHoldAndFix | Checksum: c9dc063a
-
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:19 . Memory (MB): peak = 1771.996 ; gain = 142.707
-Phase 4.1 Global Iteration 0 | Checksum: c9dc063a
-
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:19 . Memory (MB): peak = 1771.996 ; gain = 142.707
-Phase 4 Rip-up And Reroute | Checksum: c9dc063a
-
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:19 . Memory (MB): peak = 1771.996 ; gain = 142.707
-
-Phase 5 Delay CleanUp
-
-Phase 5.1 Update Timing
-Phase 5.1 Update Timing | Checksum: c9dc063a
-
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:19 . Memory (MB): peak = 1771.996 ; gain = 142.707
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.161  | TNS=0      | WHS=N/A    | THS=N/A    |
-
-Phase 5 Delay CleanUp | Checksum: c9dc063a
-
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:19 . Memory (MB): peak = 1771.996 ; gain = 142.707
-
-Phase 6 Post Hold Fix
-
-Phase 6.1 Full Hold Analysis
-
-Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: c9dc063a
-
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:19 . Memory (MB): peak = 1771.996 ; gain = 142.707
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.161  | TNS=0      | WHS=0.0574 | THS=0      |
-
-Phase 6.1 Full Hold Analysis | Checksum: c9dc063a
-
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:19 . Memory (MB): peak = 1771.996 ; gain = 142.707
-Phase 6 Post Hold Fix | Checksum: c9dc063a
-
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:19 . Memory (MB): peak = 1771.996 ; gain = 142.707
-
-Router Utilization Summary
-  Global Vertical Routing Utilization    = 1.53407 %
-  Global Horizontal Routing Utilization  = 2.3619 %
-  Routable Net Status*
-  *Does not include unroutable nets such as driverless and loadless.
-  Run report_route_status for detailed report.
-  Number of Failed Nets               = 0
-  Number of Unrouted Nets             = 0
-  Number of Partially Routed Nets     = 0
-  Number of Node Overlaps             = 0
-
-
-Phase 7 Verifying routed nets
-
- Verification completed successfully
-Phase 7 Verifying routed nets | Checksum: c9dc063a
-
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:20 . Memory (MB): peak = 1771.996 ; gain = 142.707
-
-Phase 8 Depositing Routes
-Phase 8 Depositing Routes | Checksum: 12963f1ac
-
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:20 . Memory (MB): peak = 1771.996 ; gain = 142.707
-
-Phase 9 Post Router Timing
-WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
-Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
-INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.162  | TNS=0.000  | WHS=0.058  | THS=0.000  |
-
-INFO: [Route 35-61] The design met the timing requirement.
-Phase 9 Post Router Timing | Checksum: 12963f1ac
-
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:23 . Memory (MB): peak = 1771.996 ; gain = 142.707
-INFO: [Route 35-16] Router Completed Successfully
-Ending Route Task | Checksum: 12963f1ac
-
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:23 . Memory (MB): peak = 1771.996 ; gain = 142.707
-
-Routing Is Done.
-
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:23 . Memory (MB): peak = 1771.996 ; gain = 142.707
-INFO: [Common 17-83] Releasing license: Implementation
-51 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
-route_design completed successfully
-route_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:24 . Memory (MB): peak = 1771.996 ; gain = 142.707
-INFO: [Drc 23-27] Running DRC with 8 threads
-INFO: [Coretcl 2-168] The results of DRC are in file /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/combiner_top_drc_routed.rpt.
-WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
-Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
-Running Vector-less Activity Propagation...
-WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
-Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
-WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
-Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
-
-Finished Running Vector-less Activity Propagation
-report_power: Time (s): cpu = 00:00:32 ; elapsed = 00:00:10 . Memory (MB): peak = 1780.004 ; gain = 8.008
-INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Constraints type: SDC.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1780.008 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Jun  1 16:12:41 2014...
-[Sun Jun  1 16:12:46 2014] impl_1 finished
-wait_on_run: Time (s): cpu = 00:00:00.26 ; elapsed = 00:01:37 . Memory (MB): peak = 1493.926 ; gain = 7.996
-INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2013.4
-Parsing XDC File [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/.Xil/Vivado-25207-ganymede/dcp/combiner_top.xdc]
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'ap_clk' matched to 'port' objects. [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc:1]
-Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-Finished Parsing XDC File [/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/.Xil/Vivado-25207-ganymede/dcp/combiner_top.xdc]
-Reading XDEF placement.
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.34 . Memory (MB): peak = 1590.926 ; gain = 7.000
-Restoring placement.
-Restored 2461 out of 2461 XDEF sites from archive | CPU: 1.220000 secs | Memory: 19.695961 MB |
-INFO: [Opt 31-138] Pushed 0 inverter(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Constraints type: SDC.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
-WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
-Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
-report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1711.059 ; gain = 0.000
-
-
-Implementation tool: Xilinx Vivado v.2013.4
-Device target:       xc7z020clg484-1
-Report date:         Sun Jun 01 16:12:53 BST 2014
-
-#=== Resource usage ===
-SLICE:         2453
-LUT:           7293
-FF:            6226
-DSP:              0
-BRAM:            10
-SRL:            196
-#=== Final timing ===
-CP required:    10.000
-CP achieved:    9.838
-Timing met
-INFO: [Common 17-206] Exiting Vivado at Sun Jun  1 16:12:53 2014...
-@I [LIC-101] Checked in feature [VIVADO_HLS]

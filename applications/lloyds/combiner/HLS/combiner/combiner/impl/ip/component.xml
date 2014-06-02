@@ -3179,11 +3179,11 @@
 		<spirit:fileSet>
 			<spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
 			<spirit:file>
-				<spirit:name>hdl/verilog/combiner_top_CONFIG_BUS_if.v</spirit:name>
+				<spirit:name>hdl/verilog/combiner_top_master_portB_if.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/combiner_top_p_buffer.v</spirit:name>
+				<spirit:name>hdl/verilog/combiner_top_CONFIG_BUS_if.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3191,15 +3191,7 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/combiner_top_ap_rst_if.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/combiner_top.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/combiner_top_udiv_32ns_32ns_32_35.v</spirit:name>
+				<spirit:name>hdl/verilog/combiner_top_i_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3207,19 +3199,27 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
+				<spirit:name>hdl/verilog/combiner_top_ap_rst_if.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>hdl/verilog/combiner_top_udiv_32ns_32ns_32_35.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>hdl/verilog/combiner_top_p_buffer.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
 				<spirit:name>hdl/verilog/combiner_top_centre_buffer_0_wgtCent_value.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/combiner_top_i_buffer.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/combiner_top_master_portB_if.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
 				<spirit:name>hdl/verilog/combiner_top_c_buffer.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>hdl/verilog/combiner_top.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3233,11 +3233,11 @@
 		<spirit:fileSet>
 			<spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
 			<spirit:file>
-				<spirit:name>hdl/verilog/combiner_top_CONFIG_BUS_if.v</spirit:name>
+				<spirit:name>hdl/verilog/combiner_top_master_portB_if.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/combiner_top_p_buffer.v</spirit:name>
+				<spirit:name>hdl/verilog/combiner_top_CONFIG_BUS_if.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3245,15 +3245,7 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/combiner_top_ap_rst_if.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/combiner_top.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/combiner_top_udiv_32ns_32ns_32_35.v</spirit:name>
+				<spirit:name>hdl/verilog/combiner_top_i_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3261,34 +3253,42 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
+				<spirit:name>hdl/verilog/combiner_top_ap_rst_if.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>hdl/verilog/combiner_top_udiv_32ns_32ns_32_35.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>hdl/verilog/combiner_top_p_buffer.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
 				<spirit:name>hdl/verilog/combiner_top_centre_buffer_0_wgtCent_value.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/combiner_top_i_buffer.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/combiner_top_master_portB_if.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
 				<spirit:name>hdl/verilog/combiner_top_c_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
+			<spirit:file>
+				<spirit:name>hdl/verilog/combiner_top.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
 		</spirit:fileSet>
 		<spirit:fileSet>
 			<spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
 			<spirit:file>
-				<spirit:name>drivers/combiner_top_top_v1_00_a/src/xcombiner_top_sinit.c</spirit:name>
-				<spirit:fileType>cSource</spirit:fileType>
+				<spirit:name>drivers/combiner_top_top_v1_00_a/data/combiner_top_top_v2_1_0.tcl</spirit:name>
+				<spirit:fileType>tclSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/combiner_top_top_v1_00_a/src/xcombiner_top_hw.h</spirit:name>
-				<spirit:fileType>cSource</spirit:fileType>
+				<spirit:name>drivers/combiner_top_top_v1_00_a/data/combiner_top_top_v2_1_0.mdd</spirit:name>
+				<spirit:userFileType>mdd</spirit:userFileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/combiner_top_top_v1_00_a/src/xcombiner_top.h</spirit:name>
+				<spirit:name>drivers/combiner_top_top_v1_00_a/src/xcombiner_top.c</spirit:name>
 				<spirit:fileType>cSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3296,7 +3296,7 @@
 				<spirit:fileType>cSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/combiner_top_top_v1_00_a/src/xcombiner_top.c</spirit:name>
+				<spirit:name>drivers/combiner_top_top_v1_00_a/src/xcombiner_top.h</spirit:name>
 				<spirit:fileType>cSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3304,12 +3304,12 @@
 				<spirit:fileType>unknown</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/combiner_top_top_v1_00_a/data/combiner_top_top_v2_1_0.mdd</spirit:name>
-				<spirit:userFileType>mdd</spirit:userFileType>
+				<spirit:name>drivers/combiner_top_top_v1_00_a/src/xcombiner_top_sinit.c</spirit:name>
+				<spirit:fileType>cSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/combiner_top_top_v1_00_a/data/combiner_top_top_v2_1_0.tcl</spirit:name>
-				<spirit:fileType>tclSource</spirit:fileType>
+				<spirit:name>drivers/combiner_top_top_v1_00_a/src/xcombiner_top_hw.h</spirit:name>
+				<spirit:fileType>cSource</spirit:fileType>
 			</spirit:file>
 		</spirit:fileSet>
 		<spirit:fileSet>
@@ -3730,8 +3730,8 @@
 				<xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
 			</xilinx:taxonomies>
 			<xilinx:displayName>Combiner_top</xilinx:displayName>
-			<xilinx:coreRevision>1406011609</xilinx:coreRevision>
-			<xilinx:coreCreationDateTime>2014-06-01T15:10:00Z</xilinx:coreCreationDateTime>
+			<xilinx:coreRevision>1406022332</xilinx:coreRevision>
+			<xilinx:coreCreationDateTime>2014-06-02T22:32:18Z</xilinx:coreCreationDateTime>
 		</xilinx:coreExtensions>
 		<xilinx:packagingInfo>
 			<xilinx:xilinxVersion>2013.4</xilinx:xilinxVersion>

@@ -48,9 +48,9 @@ set_msg_config -id {HDL 9-1654} -limit 100000
 start_step init_design
 set rc [catch {
   create_msg_db init_design.pb
-  open_checkpoint /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/combiner_top.dcp
-  set_property webtalk.parent_dir /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.data/wt [current_project]
-  set_property parent.project_dir /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl [current_project]
+  open_checkpoint /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/combiner_top.dcp
+  set_property webtalk.parent_dir /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.data/wt [current_project]
+  set_property parent.project_dir /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl [current_project]
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {

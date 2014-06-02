@@ -1,0 +1,2 @@
+@E [SIM-50] Cannot find C test bench. Please specify test bench files using 'add_files -tb'.
+@E [SIM-1] CSim failed with errors.

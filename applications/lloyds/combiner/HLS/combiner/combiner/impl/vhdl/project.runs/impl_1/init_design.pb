@@ -1,8 +1,8 @@
 
-Î
+‹
 Command: %s
-1870*	planAhead2æ
-©open_checkpoint /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/combiner_top.dcp2default:defaultZ12-2866
+1870*	planAhead2Ø
+öopen_checkpoint /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/combiner_top.dcp2default:defaultZ12-2866
 \
 -Analyzing %s Unisim elements for replacement
 17*netlist2
@@ -15,44 +15,44 @@ o
 Netlist was created with %s %s291*project2
 Vivado2default:default2
 2013.42default:defaultZ1-479
-ü
+≠
 Loading clock regions from %s
-13*device2h
-T/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml2default:defaultZ21-13
-†
+13*device2v
+b/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml2default:defaultZ21-13
+Æ
 Loading clock buffers from %s
-11*device2i
-U/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml2default:defaultZ21-11
-†
+11*device2w
+c/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml2default:defaultZ21-11
+Æ
 &Loading clock placement rules from %s
-318*place2`
-L/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/ClockPlacerRules.xml2default:defaultZ30-318
-û
+318*place2n
+Z/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/ClockPlacerRules.xml2default:defaultZ30-318
+¨
 )Loading package pin functions from %s...
-17*device2\
-H/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/PinFunctions.xml2default:defaultZ21-17
-ú
+17*device2j
+V/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/PinFunctions.xml2default:defaultZ21-17
+™
 Loading package from %s
-16*device2k
-W/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml2default:defaultZ21-16
-ì
+16*device2y
+e/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml2default:defaultZ21-16
+°
 Loading io standards from %s
-15*device2]
-I/opt/Xilinx/2013.4/Vivado/2013.4/data/./parts/xilinx/zynq/IOStandards.xml2default:defaultZ21-15
-Ñ
+15*device2k
+W/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/./parts/xilinx/zynq/IOStandards.xml2default:defaultZ21-15
+Ù
 Parsing XDC File [%s]
-179*designutils2Õ
-∏/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/.Xil/Vivado-25363-ganymede/dcp/combiner_top.xdc2default:defaultZ20-179
-‘
+179*designutils2Ω
+®/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/.Xil/Vivado-679-ee-boxer0/dcp/combiner_top.xdc2default:defaultZ20-179
+ƒ
 DImplicit search of objects for pattern '%s' matched to '%s' objects.1744*	planAhead2
 ap_clk2default:default2
-port2default:default2ú
-Ö/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc2default:default2
+port2default:default2å
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc2default:default2
 12default:default8@Z12-2286
-ç
+˝
 Finished Parsing XDC File [%s]
-178*designutils2Õ
-∏/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/.Xil/Vivado-25363-ganymede/dcp/combiner_top.xdc2default:defaultZ20-178
+178*designutils2Ω
+®/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/.Xil/Vivado-679-ee-boxer0/dcp/combiner_top.xdc2default:defaultZ20-178
 C
 Pushed %s inverter(s).
 98*opt2
@@ -69,10 +69,10 @@ $Checkpoint was created with build %s293*project2
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2%
 open_checkpoint: 2default:default2
-00:00:132default:default2
-00:00:132default:default2
-1384.3832default:default2
-668.7662default:defaultZ17-268
+00:00:182default:default2
+00:00:192default:default2
+1393.4222default:default2
+669.7662default:defaultZ17-268
 
 
 End Record

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+cd ./combiner/HLS/
+vivado_hls combiner/combiner/script.tcl
+rm *.log
+echo "--------------------------------------------"
+echo "Built the combiner core"
+echo "--------------------------------------------"
+cd ../../
+
+cd ./kernel/HLS/
+vivado_hls kernel/kernel/script.tcl
+rm *.log
+echo "--------------------------------------------"
+echo "Built the kernel core"
+echo "--------------------------------------------" 
+cd ..
+
+
+

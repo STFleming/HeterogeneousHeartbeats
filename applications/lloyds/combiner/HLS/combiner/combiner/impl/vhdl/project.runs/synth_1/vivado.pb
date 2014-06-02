@@ -7,18 +7,18 @@ Q
 Feature available: %s
 81*common2"
 Implementation2default:defaultZ17-81
-Œ
+š
 +Loading parts and site information from %s
-36*device2H
-4/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/arch.xml2default:defaultZ21-36
-™
+36*device2V
+B/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/arch.xml2default:defaultZ21-36
+§
 !Parsing RTL primitives file [%s]
-14*netlist2^
-J/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml2default:defaultZ29-14
-¢
+14*netlist2l
+X/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml2default:defaultZ29-14
+°
 *Finished parsing RTL primitives file [%s]
-11*netlist2^
-J/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml2default:defaultZ29-11
+11*netlist2l
+X/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml2default:defaultZ29-11
 –
 Command: %s
 53*	vivadotcl2n
@@ -40,12 +40,12 @@ Starting synthesis...
 xc7z0202default:defaultZ17-349
 œ
 %s*synth2Œ
-xStarting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 768.605 ; gain = 148.391
+xStarting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 777.652 ; gain = 148.391
 2default:default
-Ž
+þ
 synthesizing module '%s'638*oasys2 
-combiner_top2default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+combiner_top2default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 472default:default8@Z8-638
 V
 %s*synth2G
@@ -59,19 +59,19 @@ X
 %s*synth2I
 5	Parameter AddressWidth bound to: 8 - type: integer 
 2default:default
-§
+ˆ
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2>
-*combiner_top_centre_buffer_0_wgtCent_value2default:default2¸
-£/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
+*combiner_top_centre_buffer_0_wgtCent_value2default:default2©
+”/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
 772default:default23
 centre_buffer_0_wgtCent_value_U2default:default2>
-*combiner_top_centre_buffer_0_wgtCent_value2default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+*combiner_top_centre_buffer_0_wgtCent_value2default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 4922default:default8@Z8-3491
-Ú
+Ë
 synthesizing module '%s'638*oasys2N
-:combiner_top_centre_buffer_0_wgtCent_value__parameterized02default:default2º
-£/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
+:combiner_top_centre_buffer_0_wgtCent_value__parameterized02default:default2«
+”/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
 922default:default8@Z8-638
 V
 %s*synth2G
@@ -85,19 +85,19 @@ X
 %s*synth2I
 5	Parameter AddressWidth bound to: 8 - type: integer 
 2default:default
-Þ
+À
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2B
-.combiner_top_centre_buffer_0_wgtCent_value_ram2default:default2¸
-£/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
+.combiner_top_centre_buffer_0_wgtCent_value_ram2default:default2©
+”/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
 132default:default2D
 0combiner_top_centre_buffer_0_wgtCent_value_ram_U2default:default2B
-.combiner_top_centre_buffer_0_wgtCent_value_ram2default:default2º
-£/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
+.combiner_top_centre_buffer_0_wgtCent_value_ram2default:default2«
+”/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
 1072default:default8@Z8-3491
-Î
+¿
 synthesizing module '%s'638*oasys2B
-.combiner_top_centre_buffer_0_wgtCent_value_ram2default:default2º
-£/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
+.combiner_top_centre_buffer_0_wgtCent_value_ram2default:default2«
+”/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
 312default:default8@Z8-638
 W
 %s*synth2H
@@ -115,19 +115,19 @@ V
 %s*synth2G
 3	Parameter mem_size bound to: 256 - type: integer 
 2default:default
-‰
+ú
 %done synthesizing module '%s' (%s#%s)256*oasys2B
 .combiner_top_centre_buffer_0_wgtCent_value_ram2default:default2
 12default:default2
-12default:default2º
-£/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
+12default:default2«
+”/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
 312default:default8@Z8-256
-•
+†
 %done synthesizing module '%s' (%s#%s)256*oasys2N
 :combiner_top_centre_buffer_0_wgtCent_value__parameterized02default:default2
 22default:default2
-12default:default2º
-£/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
+12default:default2«
+”/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
 922default:default8@Z8-256
 V
 %s*synth2G
@@ -141,14 +141,14 @@ X
 %s*synth2I
 5	Parameter AddressWidth bound to: 8 - type: integer 
 2default:default
-§
+ˆ
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2>
-*combiner_top_centre_buffer_0_wgtCent_value2default:default2¸
-£/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
+*combiner_top_centre_buffer_0_wgtCent_value2default:default2©
+”/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
 772default:default23
 centre_buffer_1_wgtCent_value_U2default:default2>
-*combiner_top_centre_buffer_0_wgtCent_value2default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+*combiner_top_centre_buffer_0_wgtCent_value2default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 5062default:default8@Z8-3491
 V
 %s*synth2G
@@ -162,14 +162,14 @@ X
 %s*synth2I
 5	Parameter AddressWidth bound to: 8 - type: integer 
 2default:default
-§
+ˆ
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2>
-*combiner_top_centre_buffer_0_wgtCent_value2default:default2¸
-£/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
+*combiner_top_centre_buffer_0_wgtCent_value2default:default2©
+”/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
 772default:default23
 centre_buffer_2_wgtCent_value_U2default:default2>
-*combiner_top_centre_buffer_0_wgtCent_value2default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+*combiner_top_centre_buffer_0_wgtCent_value2default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 5202default:default8@Z8-3491
 V
 %s*synth2G
@@ -183,14 +183,14 @@ X
 %s*synth2I
 5	Parameter AddressWidth bound to: 8 - type: integer 
 2default:default
-ž
+ÿ
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2>
-*combiner_top_centre_buffer_0_wgtCent_value2default:default2¸
-£/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
+*combiner_top_centre_buffer_0_wgtCent_value2default:default2©
+”/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
 772default:default2*
 centre_buffer_sum_sq_U2default:default2>
-*combiner_top_centre_buffer_0_wgtCent_value2default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+*combiner_top_centre_buffer_0_wgtCent_value2default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 5342default:default8@Z8-3491
 V
 %s*synth2G
@@ -204,14 +204,14 @@ X
 %s*synth2I
 5	Parameter AddressWidth bound to: 8 - type: integer 
 2default:default
-
+þ
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2>
-*combiner_top_centre_buffer_0_wgtCent_value2default:default2¸
-£/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
+*combiner_top_centre_buffer_0_wgtCent_value2default:default2©
+”/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_centre_buffer_0_wgtCent_value.vhd2default:default2
 772default:default2)
 centre_buffer_count_U2default:default2>
-*combiner_top_centre_buffer_0_wgtCent_value2default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+*combiner_top_centre_buffer_0_wgtCent_value2default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 5482default:default8@Z8-3491
 V
 %s*synth2G
@@ -225,20 +225,20 @@ X
 %s*synth2I
 5	Parameter AddressWidth bound to: 3 - type: integer 
 2default:default
-Ó
+³
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2)
-combiner_top_i_buffer2default:default2£
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd2default:default2
+combiner_top_i_buffer2default:default2“
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd2default:default2
 772default:default2
 
 i_buffer_U2default:default2)
-combiner_top_i_buffer2default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+combiner_top_i_buffer2default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 5622default:default8@Z8-3491
-°
+ 
 synthesizing module '%s'638*oasys29
-%combiner_top_i_buffer__parameterized02default:default2¥
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd2default:default2
+%combiner_top_i_buffer__parameterized02default:default2•
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd2default:default2
 922default:default8@Z8-638
 V
 %s*synth2G
@@ -252,19 +252,19 @@ X
 %s*synth2I
 5	Parameter AddressWidth bound to: 3 - type: integer 
 2default:default
-õ
+Õ
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2-
-combiner_top_i_buffer_ram2default:default2£
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd2default:default2
+combiner_top_i_buffer_ram2default:default2“
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd2default:default2
 132default:default2/
 combiner_top_i_buffer_ram_U2default:default2-
-combiner_top_i_buffer_ram2default:default2¥
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd2default:default2
+combiner_top_i_buffer_ram2default:default2•
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd2default:default2
 1072default:default8@Z8-3491
-¤
+”
 synthesizing module '%s'638*oasys2-
-combiner_top_i_buffer_ram2default:default2¥
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd2default:default2
+combiner_top_i_buffer_ram2default:default2•
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd2default:default2
 312default:default8@Z8-638
 W
 %s*synth2H
@@ -282,19 +282,19 @@ T
 %s*synth2E
 1	Parameter mem_size bound to: 8 - type: integer 
 2default:default
-ß
+Ï
 %done synthesizing module '%s' (%s#%s)256*oasys2-
 combiner_top_i_buffer_ram2default:default2
 32default:default2
-12default:default2¥
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd2default:default2
+12default:default2•
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd2default:default2
 312default:default8@Z8-256
-ë
+Û
 %done synthesizing module '%s' (%s#%s)256*oasys29
 %combiner_top_i_buffer__parameterized02default:default2
 42default:default2
-12default:default2¥
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd2default:default2
+12default:default2•
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_i_buffer.vhd2default:default2
 922default:default8@Z8-256
 V
 %s*synth2G
@@ -308,20 +308,20 @@ X
 %s*synth2I
 5	Parameter AddressWidth bound to: 4 - type: integer 
 2default:default
-Ô
+´
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2)
-combiner_top_p_buffer2default:default2£
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd2default:default2
+combiner_top_p_buffer2default:default2“
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd2default:default2
 1022default:default2
 
 p_buffer_U2default:default2)
-combiner_top_p_buffer2default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+combiner_top_p_buffer2default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 5762default:default8@Z8-3491
-±
+¡
 synthesizing module '%s'638*oasys29
-%combiner_top_p_buffer__parameterized02default:default2¥
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd2default:default2
+%combiner_top_p_buffer__parameterized02default:default2•
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd2default:default2
 1202default:default8@Z8-638
 V
 %s*synth2G
@@ -335,19 +335,19 @@ X
 %s*synth2I
 5	Parameter AddressWidth bound to: 4 - type: integer 
 2default:default
-õ
+Õ
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2-
-combiner_top_p_buffer_ram2default:default2£
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd2default:default2
+combiner_top_p_buffer_ram2default:default2“
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd2default:default2
 132default:default2/
 combiner_top_p_buffer_ram_U2default:default2-
-combiner_top_p_buffer_ram2default:default2¥
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd2default:default2
+combiner_top_p_buffer_ram2default:default2•
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd2default:default2
 1382default:default8@Z8-3491
-¤
+”
 synthesizing module '%s'638*oasys2-
-combiner_top_p_buffer_ram2default:default2¥
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd2default:default2
+combiner_top_p_buffer_ram2default:default2•
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd2default:default2
 342default:default8@Z8-638
 W
 %s*synth2H
@@ -365,19 +365,19 @@ U
 %s*synth2F
 2	Parameter mem_size bound to: 12 - type: integer 
 2default:default
-ß
+Ï
 %done synthesizing module '%s' (%s#%s)256*oasys2-
 combiner_top_p_buffer_ram2default:default2
 52default:default2
-12default:default2¥
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd2default:default2
+12default:default2•
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd2default:default2
 342default:default8@Z8-256
-ì
+Ü
 %done synthesizing module '%s' (%s#%s)256*oasys29
 %combiner_top_p_buffer__parameterized02default:default2
 62default:default2
-12default:default2¥
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd2default:default2
+12default:default2•
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_p_buffer.vhd2default:default2
 1202default:default8@Z8-256
 V
 %s*synth2G
@@ -391,20 +391,20 @@ Y
 %s*synth2J
 6	Parameter AddressWidth bound to: 10 - type: integer 
 2default:default
-Ó
+³
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2)
-combiner_top_c_buffer2default:default2£
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd2default:default2
+combiner_top_c_buffer2default:default2“
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd2default:default2
 932default:default2
 
 c_buffer_U2default:default2)
-combiner_top_c_buffer2default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+combiner_top_c_buffer2default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 5932default:default8@Z8-3491
-±
+¡
 synthesizing module '%s'638*oasys29
-%combiner_top_c_buffer__parameterized02default:default2¥
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd2default:default2
+%combiner_top_c_buffer__parameterized02default:default2•
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd2default:default2
 1122default:default8@Z8-638
 V
 %s*synth2G
@@ -418,19 +418,19 @@ Y
 %s*synth2J
 6	Parameter AddressWidth bound to: 10 - type: integer 
 2default:default
-õ
+Õ
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2-
-combiner_top_c_buffer_ram2default:default2£
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd2default:default2
+combiner_top_c_buffer_ram2default:default2“
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd2default:default2
 132default:default2/
 combiner_top_c_buffer_ram_U2default:default2-
-combiner_top_c_buffer_ram2default:default2¥
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd2default:default2
+combiner_top_c_buffer_ram2default:default2•
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd2default:default2
 1312default:default8@Z8-3491
-¤
+”
 synthesizing module '%s'638*oasys2-
-combiner_top_c_buffer_ram2default:default2¥
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd2default:default2
+combiner_top_c_buffer_ram2default:default2•
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd2default:default2
 352default:default8@Z8-638
 W
 %s*synth2H
@@ -448,19 +448,19 @@ V
 %s*synth2G
 3	Parameter mem_size bound to: 768 - type: integer 
 2default:default
-ß
+Ï
 %done synthesizing module '%s' (%s#%s)256*oasys2-
 combiner_top_c_buffer_ram2default:default2
 72default:default2
-12default:default2¥
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd2default:default2
+12default:default2•
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd2default:default2
 352default:default8@Z8-256
-ì
+Ü
 %done synthesizing module '%s' (%s#%s)256*oasys29
 %combiner_top_c_buffer__parameterized02default:default2
 82default:default2
-12default:default2¥
-Ž/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd2default:default2
+12default:default2•
+/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_c_buffer.vhd2default:default2
 1122default:default8@Z8-256
 N
 %s*synth2?
@@ -482,19 +482,19 @@ W
 %s*synth2H
 4	Parameter dout_WIDTH bound to: 32 - type: integer 
 2default:default
-’
+ó
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys25
-!combiner_top_udiv_32ns_32ns_32_352default:default2¯
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+!combiner_top_udiv_32ns_32ns_32_352default:default2 
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1192default:default28
 $combiner_top_udiv_32ns_32ns_32_35_U12default:default25
-!combiner_top_udiv_32ns_32ns_32_352default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+!combiner_top_udiv_32ns_32ns_32_352default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 6112default:default8@Z8-3491
-É
+º
 synthesizing module '%s'638*oasys2E
-1combiner_top_udiv_32ns_32ns_32_35__parameterized02default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+1combiner_top_udiv_32ns_32ns_32_35__parameterized02default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1352default:default8@Z8-638
 N
 %s*synth2?
@@ -516,39 +516,39 @@ W
 %s*synth2H
 4	Parameter dout_WIDTH bound to: 32 - type: integer 
 2default:default
-±
+“
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys29
-%combiner_top_udiv_32ns_32ns_32_35_div2default:default2¯
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+%combiner_top_udiv_32ns_32ns_32_35_div2default:default2 
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 132default:default2;
 'combiner_top_udiv_32ns_32ns_32_35_div_U2default:default29
-%combiner_top_udiv_32ns_32ns_32_35_div2default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+%combiner_top_udiv_32ns_32ns_32_35_div2default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1532default:default8@Z8-3491
-¼
+­
 synthesizing module '%s'638*oasys29
-%combiner_top_udiv_32ns_32ns_32_35_div2default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+%combiner_top_udiv_32ns_32ns_32_35_div2default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 242default:default8@Z8-638
-÷
+è
 0Net %s in module/entity %s does not have driver.3422*oasys2
 quot_tmp[0]2default:default29
-%combiner_top_udiv_32ns_32ns_32_35_div2default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+%combiner_top_udiv_32ns_32ns_32_35_div2default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 292default:default8@Z8-3848
-÷
+è
 %done synthesizing module '%s' (%s#%s)256*oasys29
 %combiner_top_udiv_32ns_32ns_32_35_div2default:default2
 92default:default2
-12default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+12default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 242default:default8@Z8-256
-…
+ö
 %done synthesizing module '%s' (%s#%s)256*oasys2E
 1combiner_top_udiv_32ns_32ns_32_35__parameterized02default:default2
 102default:default2
-12default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+12default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1352default:default8@Z8-256
 N
 %s*synth2?
@@ -570,19 +570,19 @@ W
 %s*synth2H
 4	Parameter dout_WIDTH bound to: 32 - type: integer 
 2default:default
-’
+ó
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys25
-!combiner_top_udiv_32ns_32ns_32_352default:default2¯
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+!combiner_top_udiv_32ns_32ns_32_352default:default2 
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1192default:default28
 $combiner_top_udiv_32ns_32ns_32_35_U22default:default25
-!combiner_top_udiv_32ns_32ns_32_352default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+!combiner_top_udiv_32ns_32ns_32_352default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 6262default:default8@Z8-3491
-É
+º
 synthesizing module '%s'638*oasys2E
-1combiner_top_udiv_32ns_32ns_32_35__parameterized22default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+1combiner_top_udiv_32ns_32ns_32_35__parameterized22default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1352default:default8@Z8-638
 N
 %s*synth2?
@@ -604,21 +604,21 @@ W
 %s*synth2H
 4	Parameter dout_WIDTH bound to: 32 - type: integer 
 2default:default
-±
+“
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys29
-%combiner_top_udiv_32ns_32ns_32_35_div2default:default2¯
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+%combiner_top_udiv_32ns_32ns_32_35_div2default:default2 
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 132default:default2;
 'combiner_top_udiv_32ns_32ns_32_35_div_U2default:default29
-%combiner_top_udiv_32ns_32ns_32_35_div2default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+%combiner_top_udiv_32ns_32ns_32_35_div2default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1532default:default8@Z8-3491
-…
+ö
 %done synthesizing module '%s' (%s#%s)256*oasys2E
 1combiner_top_udiv_32ns_32ns_32_35__parameterized22default:default2
 102default:default2
-12default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+12default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1352default:default8@Z8-256
 N
 %s*synth2?
@@ -640,19 +640,19 @@ W
 %s*synth2H
 4	Parameter dout_WIDTH bound to: 32 - type: integer 
 2default:default
-’
+ó
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys25
-!combiner_top_udiv_32ns_32ns_32_352default:default2¯
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+!combiner_top_udiv_32ns_32ns_32_352default:default2 
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1192default:default28
 $combiner_top_udiv_32ns_32ns_32_35_U32default:default25
-!combiner_top_udiv_32ns_32ns_32_352default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+!combiner_top_udiv_32ns_32ns_32_352default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 6412default:default8@Z8-3491
-É
+º
 synthesizing module '%s'638*oasys2E
-1combiner_top_udiv_32ns_32ns_32_35__parameterized42default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+1combiner_top_udiv_32ns_32ns_32_35__parameterized42default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1352default:default8@Z8-638
 N
 %s*synth2?
@@ -674,28 +674,28 @@ W
 %s*synth2H
 4	Parameter dout_WIDTH bound to: 32 - type: integer 
 2default:default
-±
+“
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys29
-%combiner_top_udiv_32ns_32ns_32_35_div2default:default2¯
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+%combiner_top_udiv_32ns_32ns_32_35_div2default:default2 
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 132default:default2;
 'combiner_top_udiv_32ns_32ns_32_35_div_U2default:default29
-%combiner_top_udiv_32ns_32ns_32_35_div2default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+%combiner_top_udiv_32ns_32ns_32_35_div2default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1532default:default8@Z8-3491
-…
+ö
 %done synthesizing module '%s' (%s#%s)256*oasys2E
 1combiner_top_udiv_32ns_32ns_32_35__parameterized42default:default2
 102default:default2
-12default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+12default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1352default:default8@Z8-256
-Ê
+º
 %done synthesizing module '%s' (%s#%s)256*oasys2 
 combiner_top2default:default2
 112default:default2
-12default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+12default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 472default:default8@Z8-256
 §
 +design %s has port %s driven by constant %s3447*oasys2 
@@ -1038,7 +1038,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 master_portB_req_full_n2default:defaultZ8-3331
 œ
 %s*synth2Œ
-xFinished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 812.426 ; gain = 192.211
+xFinished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 820.473 ; gain = 191.211
 2default:default
 ;
 %s*synth2,
@@ -1065,48 +1065,48 @@ l
 %s*synth2]
 I+------+------------------+-------+---------+-------+------------------+
 2default:default
-Ÿ
+­
 Loading clock regions from %s
-13*device2h
-T/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml2default:defaultZ21-13
- 
+13*device2v
+b/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml2default:defaultZ21-13
+®
 Loading clock buffers from %s
-11*device2i
-U/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml2default:defaultZ21-11
- 
+11*device2w
+c/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml2default:defaultZ21-11
+®
 &Loading clock placement rules from %s
-318*place2`
-L/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/ClockPlacerRules.xml2default:defaultZ30-318
-ž
+318*place2n
+Z/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/ClockPlacerRules.xml2default:defaultZ30-318
+¬
 )Loading package pin functions from %s...
-17*device2\
-H/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/PinFunctions.xml2default:defaultZ21-17
-œ
+17*device2j
+V/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/PinFunctions.xml2default:defaultZ21-17
+ª
 Loading package from %s
-16*device2k
-W/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml2default:defaultZ21-16
-“
+16*device2y
+e/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml2default:defaultZ21-16
+¡
 Loading io standards from %s
-15*device2]
-I/opt/Xilinx/2013.4/Vivado/2013.4/data/./parts/xilinx/zynq/IOStandards.xml2default:defaultZ21-15
+15*device2k
+W/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/./parts/xilinx/zynq/IOStandards.xml2default:defaultZ21-15
 5
 
 Processing XDC Constraints
 244*projectZ1-262
-Ñ
+Á
 Parsing XDC File [%s]
-179*designutils2š
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc2default:defaultZ20-179
-Ô
+179*designutils2Š
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc2default:defaultZ20-179
+Ä
 DImplicit search of objects for pattern '%s' matched to '%s' objects.1744*	planAhead2
 ap_clk2default:default2
-port2default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc2default:default2
+port2default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc2default:default2
 12default:default8@Z12-2286
-Ú
+Ê
 Finished Parsing XDC File [%s]
-178*designutils2š
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc2default:defaultZ20-178
+178*designutils2Š
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc2default:defaultZ20-178
 ?
 &Completed Processing XDC Constraints
 
@@ -1118,626 +1118,626 @@ u
 2default:defaultZ1-111
 ¶
 %s*synth2¦
-‘Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1149.184 ; gain = 528.969
+‘Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1157.730 ; gain = 528.469
 2default:default
 ž
 %s*synth2Ž
-zFinished RTL Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1149.184 ; gain = 528.969
+zFinished RTL Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1157.730 ; gain = 528.469
 2default:default
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[31]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[31]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[30]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[30]2default:default2
 322default:default2
-302default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+302default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[29]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[29]2default:default2
 322default:default2
-292default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+292default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[28]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[28]2default:default2
 322default:default2
-282default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+282default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[27]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[27]2default:default2
 322default:default2
-272default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+272default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[26]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[26]2default:default2
 322default:default2
-262default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+262default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[25]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[25]2default:default2
 322default:default2
-252default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+252default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[24]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[24]2default:default2
 322default:default2
-242default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+242default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[23]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[23]2default:default2
 322default:default2
-232default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+232default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[22]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[22]2default:default2
 322default:default2
-222default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+222default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[21]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[21]2default:default2
 322default:default2
-212default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+212default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[20]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[20]2default:default2
 322default:default2
-202default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+202default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[19]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[19]2default:default2
 322default:default2
-192default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+192default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[18]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[18]2default:default2
 322default:default2
-182default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+182default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[17]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[17]2default:default2
 322default:default2
-172default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+172default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[16]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[16]2default:default2
 322default:default2
-162default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+162default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[15]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[15]2default:default2
 322default:default2
-152default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+152default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[14]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[14]2default:default2
 322default:default2
-142default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+142default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[13]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[13]2default:default2
 322default:default2
-132default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+132default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[12]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[12]2default:default2
 322default:default2
-122default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+122default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[11]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[11]2default:default2
 322default:default2
-112default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+112default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-“
+„
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 remd_tmp_reg[10]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-”
+…
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
 quot_tmp_reg[10]2default:default2
 322default:default2
-102default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+102default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 remd_tmp_reg[9]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 quot_tmp_reg[9]2default:default2
 322default:default2
-92default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+92default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 remd_tmp_reg[8]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 quot_tmp_reg[8]2default:default2
 322default:default2
-82default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+82default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 remd_tmp_reg[7]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 quot_tmp_reg[7]2default:default2
 322default:default2
-72default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+72default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 remd_tmp_reg[6]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 quot_tmp_reg[6]2default:default2
 322default:default2
-62default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+62default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 remd_tmp_reg[5]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 quot_tmp_reg[5]2default:default2
 322default:default2
-52default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+52default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 remd_tmp_reg[4]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 quot_tmp_reg[4]2default:default2
 322default:default2
-42default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+42default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 remd_tmp_reg[3]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 quot_tmp_reg[3]2default:default2
 322default:default2
-32default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+32default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 remd_tmp_reg[2]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 quot_tmp_reg[2]2default:default2
 322default:default2
-22default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+22default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 remd_tmp_reg[1]2default:default2
 322default:default2
-312default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+312default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 922default:default8@Z8-3936
-’
+ƒ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 quot_tmp_reg[1]2default:default2
 322default:default2
-12default:default2±
-š/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
+12default:default2¢
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top_udiv_32ns_32ns_32_35.vhd2default:default2
 1082default:default8@Z8-3936
-ü
+ì
 merging register '%s' into '%s'3619*oasys2A
 -centre_buffer_sum_sq_addr_2_reg_1231_reg[7:0]2default:default2@
-,centre_buffer_count_addr_2_reg_1226_reg[7:0]2default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+,centre_buffer_count_addr_2_reg_1226_reg[7:0]2default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 16912default:default8@Z8-4471
-–
+†
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2<
 (ap_reg_ppstg_indvar2_reg_538_pp2_it6_reg2default:default2
 42default:default2
-32default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+32default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 15642default:default8@Z8-3936
-–
+†
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2<
 (ap_reg_ppstg_indvar2_reg_538_pp2_it5_reg2default:default2
 42default:default2
-32default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+32default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 15632default:default8@Z8-3936
-–
+†
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2<
 (ap_reg_ppstg_indvar2_reg_538_pp2_it4_reg2default:default2
 42default:default2
-32default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+32default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 15622default:default8@Z8-3936
-–
+†
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2<
 (ap_reg_ppstg_indvar2_reg_538_pp2_it3_reg2default:default2
 42default:default2
-32default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+32default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 15612default:default8@Z8-3936
-–
+†
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2<
 (ap_reg_ppstg_indvar2_reg_538_pp2_it2_reg2default:default2
 42default:default2
-32default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+32default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 15602default:default8@Z8-3936
-–
+†
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2<
 (ap_reg_ppstg_indvar2_reg_538_pp2_it1_reg2default:default2
 42default:default2
-32default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+32default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 15592default:default8@Z8-3936
-™
+‰
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2=
 )ap_reg_ppstg_tmp_19_reg_1263_pp4_it18_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 16012default:default8@Z8-3936
-™
+‰
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2=
 )ap_reg_ppstg_tmp_19_reg_1263_pp4_it17_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 16002default:default8@Z8-3936
-™
+‰
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2=
 )ap_reg_ppstg_tmp_19_reg_1263_pp4_it16_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 15992default:default8@Z8-3936
-™
+‰
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2=
 )ap_reg_ppstg_tmp_19_reg_1263_pp4_it15_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 15982default:default8@Z8-3936
-™
+‰
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2=
 )ap_reg_ppstg_tmp_19_reg_1263_pp4_it14_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 15972default:default8@Z8-3936
-™
+‰
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2=
 )ap_reg_ppstg_tmp_19_reg_1263_pp4_it13_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 15962default:default8@Z8-3936
-™
+‰
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2=
 )ap_reg_ppstg_tmp_19_reg_1263_pp4_it12_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 15952default:default8@Z8-3936
-™
+‰
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2=
 )ap_reg_ppstg_tmp_19_reg_1263_pp4_it11_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 15942default:default8@Z8-3936
-™
+‰
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2=
 )ap_reg_ppstg_tmp_19_reg_1263_pp4_it10_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 15932default:default8@Z8-3936
-˜
+ˆ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2<
 (ap_reg_ppstg_tmp_19_reg_1263_pp4_it9_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 15932default:default8@Z8-3936
-˜
+ˆ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2<
 (ap_reg_ppstg_tmp_19_reg_1263_pp4_it8_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 16082default:default8@Z8-3936
-˜
+ˆ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2<
 (ap_reg_ppstg_tmp_19_reg_1263_pp4_it7_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 16072default:default8@Z8-3936
-˜
+ˆ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2<
 (ap_reg_ppstg_tmp_19_reg_1263_pp4_it6_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 16062default:default8@Z8-3936
-˜
+ˆ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2<
 (ap_reg_ppstg_tmp_19_reg_1263_pp4_it5_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 16052default:default8@Z8-3936
-˜
+ˆ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2<
 (ap_reg_ppstg_tmp_19_reg_1263_pp4_it4_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 16042default:default8@Z8-3936
-˜
+ˆ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2<
 (ap_reg_ppstg_tmp_19_reg_1263_pp4_it3_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 16032default:default8@Z8-3936
-˜
+ˆ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2<
 (ap_reg_ppstg_tmp_19_reg_1263_pp4_it2_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 16022default:default8@Z8-3936
-˜
+ˆ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2<
 (ap_reg_ppstg_tmp_19_reg_1263_pp4_it1_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 15922default:default8@Z8-3936
-ƒ
+ó
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2'
 tmp_19_reg_1263_reg2default:default2
 322default:default2
-102default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+102default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 15922default:default8@Z8-3936
 
 3inferred FSM for state register '%s' in module '%s'802*oasys2!
@@ -1791,7 +1791,7 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 2default:default
 ²
 %s*synth2¢
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1152.172 ; gain = 531.957
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1162.715 ; gain = 533.453
 2default:default
 B
 %s*synth23
@@ -1807,15 +1807,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input     32 Bit       Adders := 1     
-2default:default
-Q
-%s*synth2B
 .	   2 Input     32 Bit       Adders := 10    
 2default:default
 Q
 %s*synth2B
-.	   3 Input     10 Bit       Adders := 1     
+.	   3 Input     32 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
@@ -1823,15 +1819,19 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   3 Input     10 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
 .	   2 Input      9 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      5 Bit       Adders := 1     
+.	   3 Input      5 Bit       Adders := 2     
 2default:default
 Q
 %s*synth2B
-.	   3 Input      5 Bit       Adders := 2     
+.	   2 Input      5 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
@@ -2015,11 +2015,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     19 Bit        Muxes := 12    
+.	  18 Input     19 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  18 Input     19 Bit        Muxes := 1     
+.	   2 Input     19 Bit        Muxes := 12    
 2default:default
 Q
 %s*synth2B
@@ -2171,11 +2171,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  18 Input     19 Bit        Muxes := 1     
+.	   2 Input     19 Bit        Muxes := 12    
 2default:default
 Q
 %s*synth2B
-.	   2 Input     19 Bit        Muxes := 12    
+.	  18 Input     19 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -2203,11 +2203,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 33    
+.	   3 Input      1 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 1     
+.	   2 Input      1 Bit        Muxes := 33    
 2default:default
 Z
 %s*synth2K
@@ -2926,12 +2926,12 @@ ESequential element (%s) is unused and will be removed from module %s.3332*
 14*common2 
 Synth 8-33322default:default2
 1002default:defaultZ17-14
-
+ñ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2'
 tmp_27_reg_1181_reg2default:default2
 52default:default2
-42default:default2œ
-…/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
+42default:default2Œ
+v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.vhd2default:default2
 20692default:default8@Z8-3936
 «
 +design %s has port %s driven by constant %s3447*oasys2 
@@ -3121,7 +3121,7 @@ w
 n[31]2default:defaultZ8-3331
 ª
 %s*synth2š
-…Finished Cross Boundary Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1164.184 ; gain = 543.969
+…Finished Cross Boundary Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1173.730 ; gain = 544.469
 2default:default
 ¢
 %s*synth2’
@@ -3201,19 +3201,19 @@ R-------------------------------------------------------------------------------
 &i_4_104/\FSM_onehot_ap_CS_fsm_reg[18] 2default:defaultZ8-3333
 Ÿ
 %s*synth2
-{Finished Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1204.691 ; gain = 584.477
+{Finished Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1213.230 ; gain = 583.969
 2default:default
-
-%s*synth2ý
-èWrong number or type of arguments for overloaded function 'NRealModS_findPins'. at line 1 of file /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc
+þ
+%s*synth2î
+ÙWrong number or type of arguments for overloaded function 'NRealModS_findPins'. at line 1 of file /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc
 2default:default
 ®
 %s*synth2ž
-‰Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1204.691 ; gain = 584.477
+‰Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1213.230 ; gain = 583.969
 2default:default
 ¡
 %s*synth2‘
-}Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1204.691 ; gain = 584.477
+}Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1213.230 ; gain = 583.969
 2default:default
 á
 ×The timing for the instance %s (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
@@ -3265,7 +3265,7 @@ P\centre_buffer_count_U/combiner_top_centre_buffer_0_wgtCent_value_ram_U/ram_reg
 0\p_buffer_U/combiner_top_p_buffer_ram_U/ram_reg 2default:defaultZ8-4480
  
 %s*synth2
-|Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1242.957 ; gain = 622.742
+|Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1251.496 ; gain = 622.234
 2default:default
 D
 %s*synth25
@@ -3273,7 +3273,7 @@ D
 2default:default
 š
 %s*synth2Š
-vFinished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1242.957 ; gain = 622.742
+vFinished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1251.496 ; gain = 622.234
 2default:default
 ;
 %s*synth2,
@@ -3302,11 +3302,11 @@ I+------+------------------+-------+---------+-------+------------------+
 2default:default
 «
 %s*synth2›
-†Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1242.957 ; gain = 622.742
+†Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1251.496 ; gain = 622.234
 2default:default
 ¨
 %s*synth2˜
-ƒFinished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1242.957 ; gain = 622.742
+ƒFinished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1251.496 ; gain = 622.234
 2default:default
 ¢
 %s*synth2’
@@ -4309,7 +4309,7 @@ Report Instance Areas:
 2default:default
 §
 %s*synth2—
-‚Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1242.957 ; gain = 622.742
+‚Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1251.496 ; gain = 622.234
 2default:default
 l
 %s*synth2]
@@ -4317,7 +4317,7 @@ ISynthesis finished with 0 errors, 0 critical warnings and 2465 warnings.
 2default:default
 ¥
 %s*synth2•
-€Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1242.957 ; gain = 622.742
+€Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1251.496 ; gain = 622.234
 2default:default
 \
 -Analyzing %s Unisim elements for replacement
@@ -4355,18 +4355,18 @@ U
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
-00:00:372default:default2
-00:00:382default:default2
-1576.4412default:default2
-860.8322default:defaultZ17-268
+00:00:522default:default2
+00:00:532default:default2
+1584.9802default:default2
+859.3282default:defaultZ17-268
 <
 %Done setting XDC timing constraints.
 35*timingZ38-35
 ‚
-vreport_utilization: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.22 . Memory (MB): peak = 1579.457 ; gain = 2.012
+vreport_utilization: Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.73 . Memory (MB): peak = 1587.996 ; gain = 2.012
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Sun Jun  1 16:10:49 20142default:defaultZ17-206
+Mon Jun  2 23:33:26 20142default:defaultZ17-206
