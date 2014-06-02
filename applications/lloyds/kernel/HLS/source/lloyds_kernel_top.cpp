@@ -13,12 +13,12 @@
 
 
 
-void load_points_buffer(uint address, volatile bus_type *bus, data_type *buffer)
+void load_points_buffer(uint offset,uint address, volatile bus_type *bus, data_type *buffer)
 {
 
 	bus_type int_buffer[B*D];
 
-	memcpy(int_buffer, (bus_type *)(bus+address), B*D*sizeof(int));
+	memcpy(int_buffer, (const bus_type *)(bus + (offset + address)/4), B*D*sizeof(int));
 
 	for (uint i=0; i<B; i++) {
 		#pragma HLS loop_flatten
@@ -30,11 +30,11 @@ void load_points_buffer(uint address, volatile bus_type *bus, data_type *buffer)
 	}
 }
 
-void load_centres_buffer(uint address, volatile bus_type *bus, centre_index_type k, data_type *buffer)
+void load_centres_buffer(uint offset, uint address, volatile bus_type *bus, centre_index_type k, data_type *buffer)
 {
 	bus_type int_buffer[K*D];
 
-	memcpy(int_buffer, (bus_type *)(bus+address), (k+1)*D*sizeof(int));
+	memcpy(int_buffer, (const bus_type *)(bus + (offset + address)/4), (k+1)*D*sizeof(int));
 
 
 	for (centre_index_type i=0; i<=k; i++) {
@@ -50,7 +50,7 @@ void load_centres_buffer(uint address, volatile bus_type *bus, centre_index_type
 }
 
 
-void store_output_buffer(output_type *buffer, uint address, volatile bus_type *bus)
+void store_output_buffer(uint offset, output_type *buffer, uint address, volatile bus_type *bus)
 {
 	bus_type int_buffer[B*2];
 
@@ -63,38 +63,60 @@ void store_output_buffer(output_type *buffer, uint address, volatile bus_type *b
 
 	}
 
-	memcpy((bus_type *)(bus+address), int_buffer, B*2*sizeof(int));
+	memcpy((bus_type *)(bus + (offset + address)/4), int_buffer, B*2*sizeof(int));
 
 }
 
 
 // top-level function of the design
 void lloyds_kernel_top(  uint block_address,
-						 volatile bus_type *data_points,
-                         volatile bus_type *centres_in,
-                         volatile bus_type *output,
+						 volatile bus_type *master_portA,
+						 volatile bus_type *master_portB,
+						 uint data_points_addr,
+                         uint centres_in_addr,
+                         uint output_addr,
                          uint n,
-                         centre_index_type k
-                      )
+                         uint k //changed so that the AXI slave interface can be used.
+                         )
 {
 
 	// set up the axi bus interfaces
-	#pragma HLS INTERFACE ap_bus port=data_points depth=0x200000
-	#pragma HLS resource core=AXI4M variable=data_points
+	#pragma HLS INTERFACE ap_bus port=master_portA depth=0x200000
+	#pragma HLS resource core=AXI4M variable=master_portA
 
-	#pragma HLS INTERFACE ap_bus port=centres_in depth=0x002000
-	#pragma HLS resource core=AXI4M variable=centres_in
+	#pragma HLS INTERFACE ap_bus port=master_portB depth=0x002000
+	#pragma HLS resource core=AXI4M variable=master_portB
 
-	#pragma HLS INTERFACE ap_bus port=output depth=0x200000
-	#pragma HLS resource core=AXI4M variable=output
+	#pragma HLS INTERFACE ap_none register port=data_points_addr
+	#pragma HLS RESOURCE core=AXI4LiteS variable=data_points_addr metadata="-bus_bundle CONFIG_BUS"
 
+	#pragma HLS INTERFACE ap_none register port=centres_in_addr
+	#pragma HLS RESOURCE core=AXI4LiteS variable=centres_in_addr metadata="-bus_bundle CONFIG_BUS"
+
+	#pragma HLS INTERFACE ap_none register port=output_addr
+	#pragma HLS RESOURCE core=AXI4LiteS variable=output_addr metadata="-bus_bundle CONFIG_BUS"
+
+	#pragma HLS INTERFACE ap_none register port=n
+	#pragma HLS RESOURCE core=AXI4LiteS variable=n metadata="-bus_bundle CONFIG_BUS"
+
+	#pragma HLS INTERFACE ap_none register port=k
+	#pragma HLS RESOURCE core=AXI4LiteS variable=k metadata="-bus_bundle CONFIG_BUS"
+
+	#pragma HLS INTERFACE ap_none register port=block_address
+	#pragma HLS RESOURCE core=AXI4LiteS variable=block_address metadata="-bus_bundle CONFIG_BUS"
+
+	#pragma HLS RESOURCE variable=return core=AXI4LiteS	metadata="-bus_bundle CONFIG_BUS"
 
 	data_type data_points_buffer[B];
 	data_type centres_buffer[K];
 	output_type output_buffer[B];
 
-	load_points_buffer(block_address, data_points, data_points_buffer);
-	load_centres_buffer(0, centres_in, k, centres_buffer);
+
+	//void load_points_buffer(uint offset,uint address, volatile bus_type *bus, data_type *buffer)
+	//void load_centres_buffer(uint offset, uint address, volatile bus_type *bus, centre_index_type k, data_type *buffer)
+
+	load_points_buffer(data_points_addr, block_address, master_portA, data_points_buffer);
+	load_centres_buffer(centres_in_addr, 0, master_portB, k, centres_buffer);
 
     // iterate over all data points
     process_data_points_loop: for (uint i=0; i<B; i++) {
@@ -130,7 +152,9 @@ void lloyds_kernel_top(  uint block_address,
 
 	}
 
-    store_output_buffer(output_buffer, block_address, output);
+	//void store_output_buffer(uint offset, output_type *buffer, uint address, volatile bus_type *bus)
+
+    store_output_buffer(output_addr, output_buffer, block_address, master_portA);
 
 
 }

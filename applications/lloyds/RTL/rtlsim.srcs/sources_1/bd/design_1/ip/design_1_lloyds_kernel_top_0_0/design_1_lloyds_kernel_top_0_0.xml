@@ -1205,7 +1205,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>2533955424</spirit:value>
+            <spirit:value>817788518</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -1213,7 +1213,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 26 20:55:25 UTC 2014</spirit:value>
+            <spirit:value>Sun Jun 01 14:13:32 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -1232,7 +1232,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>2533955424</spirit:value>
+            <spirit:value>817788518</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -1240,7 +1240,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 26 20:55:25 UTC 2014</spirit:value>
+            <spirit:value>Sun Jun 01 14:13:32 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -1259,7 +1259,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>775223322</spirit:value>
+            <spirit:value>1533019863</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -1267,7 +1267,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 26 20:55:25 UTC 2014</spirit:value>
+            <spirit:value>Sun Jun 01 14:13:32 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -1285,7 +1285,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>2533955424</spirit:value>
+            <spirit:value>817788518</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -1293,7 +1293,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 26 20:55:26 UTC 2014</spirit:value>
+            <spirit:value>Sun Jun 01 14:13:32 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -3626,7 +3626,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_M_AXI_DATA_POINTS_TARGET_ADDR</spirit:name>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_DATA_POINTS_TARGET_ADDR" spirit:bitStringLength="32">0x00000000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_DATA_POINTS_TARGET_ADDR" spirit:bitStringLength="32">0x38400000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_M_AXI_DATA_POINTS_USER_VALUE</spirit:name>
@@ -3722,7 +3722,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_M_AXI_CENTRES_IN_TARGET_ADDR</spirit:name>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_CENTRES_IN_TARGET_ADDR" spirit:bitStringLength="32">0x00004000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_CENTRES_IN_TARGET_ADDR" spirit:bitStringLength="32">0x39000000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_M_AXI_CENTRES_IN_USER_VALUE</spirit:name>
@@ -3818,7 +3818,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_M_AXI_OUTPUT_R_TARGET_ADDR</spirit:name>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_OUTPUT_R_TARGET_ADDR" spirit:bitStringLength="32">0x00008000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_OUTPUT_R_TARGET_ADDR" spirit:bitStringLength="32">0x39000C00</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_M_AXI_OUTPUT_R_USER_VALUE</spirit:name>
@@ -3876,39 +3876,11 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>hdl/verilog/lloyds_kernel_top_centres_in_if.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/lloyds_kernel_top_data_points_if.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/store_output_buffer_int_buffer.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/lloyds_kernel_top_top.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/verilog/load_centres_buffer.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/lloyds_kernel_top_mul_32s_32s_64_7.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/lloyds_kernel_top_centres_buffer_0_value.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/lloyds_kernel_top_data_points_buffer_0_value.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/lloyds_kernel_top_output_r_if.v</spirit:name>
+        <spirit:name>hdl/verilog/load_points_buffer_int_buffer.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3920,7 +3892,15 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/load_points_buffer.v</spirit:name>
+        <spirit:name>hdl/verilog/lloyds_kernel_top_mul_32s_32s_64_6.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/lloyds_kernel_top_data_points_if.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/lloyds_kernel_top_top.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3928,15 +3908,39 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/load_centres_buffer_int_buffer.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/lloyds_kernel_top_add_32ns_32ns_32_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/lloyds_kernel_top_data_points_buffer_0_value.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/lloyds_kernel_top.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/load_points_buffer_int_buffer.v</spirit:name>
+        <spirit:name>hdl/verilog/lloyds_kernel_top_centres_buffer_0_value.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/load_centres_buffer_int_buffer.v</spirit:name>
+        <spirit:name>hdl/verilog/lloyds_kernel_top_centres_in_if.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/store_output_buffer_int_buffer.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/load_points_buffer.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/lloyds_kernel_top_output_r_if.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3955,39 +3959,11 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>hdl/verilog/lloyds_kernel_top_centres_in_if.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/lloyds_kernel_top_data_points_if.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/store_output_buffer_int_buffer.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/lloyds_kernel_top_top.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/verilog/load_centres_buffer.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/lloyds_kernel_top_mul_32s_32s_64_7.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/lloyds_kernel_top_centres_buffer_0_value.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/lloyds_kernel_top_data_points_buffer_0_value.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/lloyds_kernel_top_output_r_if.v</spirit:name>
+        <spirit:name>hdl/verilog/load_points_buffer_int_buffer.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3999,7 +3975,15 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/load_points_buffer.v</spirit:name>
+        <spirit:name>hdl/verilog/lloyds_kernel_top_mul_32s_32s_64_6.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/lloyds_kernel_top_data_points_if.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/lloyds_kernel_top_top.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -4007,15 +3991,39 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/load_centres_buffer_int_buffer.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/lloyds_kernel_top_add_32ns_32ns_32_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/lloyds_kernel_top_data_points_buffer_0_value.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/lloyds_kernel_top.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/load_points_buffer_int_buffer.v</spirit:name>
+        <spirit:name>hdl/verilog/lloyds_kernel_top_centres_buffer_0_value.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/load_centres_buffer_int_buffer.v</spirit:name>
+        <spirit:name>hdl/verilog/lloyds_kernel_top_centres_in_if.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/store_output_buffer_int_buffer.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/load_points_buffer.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/lloyds_kernel_top_output_r_if.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -4117,7 +4125,7 @@
     <spirit:parameter>
       <spirit:name>C_M_AXI_DATA_POINTS_TARGET_ADDR</spirit:name>
       <spirit:displayName>Base address of target slave</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_DATA_POINTS_TARGET_ADDR" spirit:order="10" spirit:configGroups="1 M_AXI_DATA_POINTS (AXI4 Master Interface)" spirit:bitStringLength="32">0x00000000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_DATA_POINTS_TARGET_ADDR" spirit:order="10" spirit:configGroups="1 M_AXI_DATA_POINTS (AXI4 Master Interface)" spirit:bitStringLength="32">0x38400000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_M_AXI_DATA_POINTS_USER_VALUE</spirit:name>
@@ -4225,7 +4233,7 @@
     <spirit:parameter>
       <spirit:name>C_M_AXI_CENTRES_IN_TARGET_ADDR</spirit:name>
       <spirit:displayName>Base address of target slave</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_CENTRES_IN_TARGET_ADDR" spirit:order="22" spirit:configGroups="1 M_AXI_CENTRES_IN (AXI4 Master Interface)" spirit:bitStringLength="32">0x00004000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_CENTRES_IN_TARGET_ADDR" spirit:order="22" spirit:configGroups="1 M_AXI_CENTRES_IN (AXI4 Master Interface)" spirit:bitStringLength="32">0x39000000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_M_AXI_CENTRES_IN_USER_VALUE</spirit:name>
@@ -4333,7 +4341,7 @@
     <spirit:parameter>
       <spirit:name>C_M_AXI_OUTPUT_R_TARGET_ADDR</spirit:name>
       <spirit:displayName>Base address of target slave</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_OUTPUT_R_TARGET_ADDR" spirit:order="34" spirit:configGroups="1 M_AXI_OUTPUT_R (AXI4 Master Interface)" spirit:bitStringLength="32">0x00008000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_OUTPUT_R_TARGET_ADDR" spirit:order="34" spirit:configGroups="1 M_AXI_OUTPUT_R (AXI4 Master Interface)" spirit:bitStringLength="32">0x39000C00</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_M_AXI_OUTPUT_R_USER_VALUE</spirit:name>
@@ -4372,8 +4380,8 @@
         <xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>Lloyds_kernel_top</xilinx:displayName>
-      <xilinx:coreRevision>1405262152</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2014-05-26T20:52:17Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1406011329</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2014-06-01T12:29:29Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2013.4</xilinx:xilinxVersion>

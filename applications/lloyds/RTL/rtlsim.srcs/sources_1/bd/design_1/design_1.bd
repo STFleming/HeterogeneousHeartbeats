@@ -14,6 +14,26 @@
     </spirit:parameters>
     <spirit:busInterfaces>
       <spirit:busInterface>
+        <spirit:name>M00_AXI</spirit:name>
+        <spirit:master/>
+        <spirit:busType spirit:library="interface" spirit:name="aximm" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="interface" spirit:name="aximm_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>DATA_WIDTH</spirit:name>
+            <spirit:value>32</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>PROTOCOL</spirit:name>
+            <spirit:value>AXI4</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>ADDR_WIDTH</spirit:name>
+            <spirit:value>32</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+      <spirit:busInterface>
         <spirit:name>CLK.CLK_IN1</spirit:name>
         <spirit:displayName>Clk</spirit:displayName>
         <spirit:description>Clock</spirit:description>
@@ -53,6 +73,30 @@
           <spirit:parameter>
             <spirit:name>POLARITY</spirit:name>
             <spirit:value>ACTIVE_HIGH</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>CLK.AXIM_CLOCK</spirit:name>
+        <spirit:displayName>Clk</spirit:displayName>
+        <spirit:description>Clock</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="clock" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="clock_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>CLK</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>AXIM_CLOCK</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+            <spirit:value>M00_AXI</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:busInterface>
@@ -133,74 +177,6 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>ap_start_1</spirit:name>
-          <spirit:wire>
-            <spirit:direction>in</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>data_points_in_dout</spirit:name>
-          <spirit:wire>
-            <spirit:direction>in</spirit:direction>
-            <spirit:vector>
-              <spirit:left>31</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>data_points_in_empty_n</spirit:name>
-          <spirit:wire>
-            <spirit:direction>in</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>centres_in_dout</spirit:name>
-          <spirit:wire>
-            <spirit:direction>in</spirit:direction>
-            <spirit:vector>
-              <spirit:left>31</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>centres_in_empty_n</spirit:name>
-          <spirit:wire>
-            <spirit:direction>in</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>data_points_in_read</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>centres_in_read</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>ap_ready_1</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>ap_done_1</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>ap_idle_1</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
           <spirit:name>ap_start_3</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
@@ -240,8 +216,25 @@
             </spirit:vector>
           </spirit:wire>
         </spirit:port>
+        <spirit:port>
+          <spirit:name>AXIM_CLOCK</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
       </spirit:ports>
     </spirit:model>
+    <spirit:memoryMaps>
+      <spirit:memoryMap>
+        <spirit:name>M00_AXI</spirit:name>
+        <spirit:addressBlock>
+          <spirit:name>Reg</spirit:name>
+          <spirit:baseAddress>0</spirit:baseAddress>
+          <spirit:range>64K</spirit:range>
+          <spirit:width>32</spirit:width>
+        </spirit:addressBlock>
+      </spirit:memoryMap>
+    </spirit:memoryMaps>
   </spirit:component>
 
   <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
@@ -276,40 +269,16 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>axi_bram_ctrl_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="axi_bram_ctrl" spirit:vendor="xilinx.com" spirit:version="3.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_axi_bram_ctrl_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SINGLE_PORT_BRAM">1</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>blk_mem_gen_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="blk_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.1"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_blk_mem_gen_0_0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>init_memory_top_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="hls" spirit:name="init_memory_top" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_init_memory_top_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_M_AXI_DATA_POINTS_OUT_ID_WIDTH">6</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_M_AXI_CENTRES_OUT_ID_WIDTH">6</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_M_AXI_CENTRES_OUT_TARGET_ADDR">0x00004000</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>lloyds_kernel_top_0</spirit:instanceName>
         <spirit:componentRef spirit:library="hls" spirit:name="lloyds_kernel_top" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_lloyds_kernel_top_0_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_M_AXI_DATA_POINTS_ID_WIDTH">6</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_M_AXI_DATA_POINTS_TARGET_ADDR">0x38400000</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_M_AXI_CENTRES_IN_ID_WIDTH">6</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_M_AXI_CENTRES_IN_TARGET_ADDR">0x00004000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_M_AXI_CENTRES_IN_TARGET_ADDR">0x39000000</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_M_AXI_OUTPUT_R_ID_WIDTH">6</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_M_AXI_OUTPUT_R_TARGET_ADDR">0x00008000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_M_AXI_OUTPUT_R_TARGET_ADDR">0x39000C00</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -318,10 +287,11 @@
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_combiner_top_0_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_M_AXI_DATA_POINTS_IN_ID_WIDTH">6</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_M_AXI_DATA_POINTS_IN_TARGET_ADDR">0x38400000</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_M_AXI_KERNEL_INFO_IN_ID_WIDTH">6</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_M_AXI_KERNEL_INFO_IN_TARGET_ADDR">0x00008000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_M_AXI_KERNEL_INFO_IN_TARGET_ADDR">0x39000C00</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_M_AXI_CENTRES_OUT_ID_WIDTH">6</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_M_AXI_CENTRES_OUT_TARGET_ADDR">0x00004000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_M_AXI_CENTRES_OUT_TARGET_ADDR">0x39000000</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -340,26 +310,6 @@
         <spirit:name>S00_AXI_1</spirit:name>
         <spirit:activeInterface spirit:busRef="S00_AXI" spirit:componentRef="axi_interconnect_0"/>
         <spirit:activeInterface spirit:busRef="M_AXI_DATA_POINTS" spirit:componentRef="lloyds_kernel_top_0"/>
-      </spirit:interconnection>
-      <spirit:interconnection>
-        <spirit:name>axi_interconnect_0_M00_AXI</spirit:name>
-        <spirit:activeInterface spirit:busRef="S_AXI" spirit:componentRef="axi_bram_ctrl_0"/>
-        <spirit:activeInterface spirit:busRef="M00_AXI" spirit:componentRef="axi_interconnect_0"/>
-      </spirit:interconnection>
-      <spirit:interconnection>
-        <spirit:name>axi_bram_ctrl_0_BRAM_PORTA</spirit:name>
-        <spirit:activeInterface spirit:busRef="BRAM_PORTA" spirit:componentRef="blk_mem_gen_0"/>
-        <spirit:activeInterface spirit:busRef="BRAM_PORTA" spirit:componentRef="axi_bram_ctrl_0"/>
-      </spirit:interconnection>
-      <spirit:interconnection>
-        <spirit:name>init_memory_top_0_M_AXI_DATA_POINTS_OUT</spirit:name>
-        <spirit:activeInterface spirit:busRef="M_AXI_DATA_POINTS_OUT" spirit:componentRef="init_memory_top_0"/>
-        <spirit:activeInterface spirit:busRef="S03_AXI" spirit:componentRef="axi_interconnect_0"/>
-      </spirit:interconnection>
-      <spirit:interconnection>
-        <spirit:name>init_memory_top_0_M_AXI_CENTRES_OUT</spirit:name>
-        <spirit:activeInterface spirit:busRef="M_AXI_CENTRES_OUT" spirit:componentRef="init_memory_top_0"/>
-        <spirit:activeInterface spirit:busRef="S04_AXI" spirit:componentRef="axi_interconnect_0"/>
       </spirit:interconnection>
       <spirit:interconnection>
         <spirit:name>S05_AXI_1</spirit:name>
@@ -398,15 +348,14 @@
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S01_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S02_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_0" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S03_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S04_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S05_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S06_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S07_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="init_memory_top_0" spirit:portRef="aclk"/>
         <spirit:internalPortReference spirit:componentRef="lloyds_kernel_top_0" spirit:portRef="aclk"/>
         <spirit:internalPortReference spirit:componentRef="combiner_top_0" spirit:portRef="aclk"/>
+        <spirit:externalPortReference spirit:portRef="AXIM_CLOCK"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>block_address_1</spirit:name>
@@ -425,27 +374,23 @@
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S01_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S02_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="axi_bram_ctrl_0" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S03_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S04_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S05_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S06_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S07_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="init_memory_top_0" spirit:portRef="aresetn"/>
         <spirit:internalPortReference spirit:componentRef="lloyds_kernel_top_0" spirit:portRef="aresetn"/>
         <spirit:internalPortReference spirit:componentRef="combiner_top_0" spirit:portRef="aresetn"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>n_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="n"/>
-        <spirit:internalPortReference spirit:componentRef="init_memory_top_0" spirit:portRef="n"/>
         <spirit:internalPortReference spirit:componentRef="lloyds_kernel_top_0" spirit:portRef="n"/>
         <spirit:internalPortReference spirit:componentRef="combiner_top_0" spirit:portRef="n"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>k_V_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="k_V"/>
-        <spirit:internalPortReference spirit:componentRef="init_memory_top_0" spirit:portRef="k_V"/>
         <spirit:internalPortReference spirit:componentRef="lloyds_kernel_top_0" spirit:portRef="k_V"/>
         <spirit:internalPortReference spirit:componentRef="combiner_top_0" spirit:portRef="k_V"/>
       </spirit:adHocConnection>
@@ -473,56 +418,6 @@
         <spirit:name>ARESETN_1</spirit:name>
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="interconnect_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="ARESETN"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>ap_start_1_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="ap_start_1"/>
-        <spirit:internalPortReference spirit:componentRef="init_memory_top_0" spirit:portRef="ap_start"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_points_in_dout_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="data_points_in_dout"/>
-        <spirit:internalPortReference spirit:componentRef="init_memory_top_0" spirit:portRef="data_points_in_dout"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>data_points_in_empty_n_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="data_points_in_empty_n"/>
-        <spirit:internalPortReference spirit:componentRef="init_memory_top_0" spirit:portRef="data_points_in_empty_n"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>centres_in_dout_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="centres_in_dout"/>
-        <spirit:internalPortReference spirit:componentRef="init_memory_top_0" spirit:portRef="centres_in_dout"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>centres_in_empty_n_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="centres_in_empty_n"/>
-        <spirit:internalPortReference spirit:componentRef="init_memory_top_0" spirit:portRef="centres_in_empty_n"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>init_memory_top_0_data_points_in_read</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="init_memory_top_0" spirit:portRef="data_points_in_read"/>
-        <spirit:externalPortReference spirit:portRef="data_points_in_read"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>init_memory_top_0_centres_in_read</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="init_memory_top_0" spirit:portRef="centres_in_read"/>
-        <spirit:externalPortReference spirit:portRef="centres_in_read"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>init_memory_top_0_ap_ready</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="init_memory_top_0" spirit:portRef="ap_ready"/>
-        <spirit:externalPortReference spirit:portRef="ap_ready_1"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>init_memory_top_0_ap_done</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="init_memory_top_0" spirit:portRef="ap_done"/>
-        <spirit:externalPortReference spirit:portRef="ap_done_1"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>init_memory_top_0_ap_idle</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="init_memory_top_0" spirit:portRef="ap_idle"/>
-        <spirit:externalPortReference spirit:portRef="ap_idle_1"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>ap_start_3</spirit:name>
@@ -555,6 +450,11 @@
         <spirit:externalPortReference spirit:portRef="distortion_out"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
+    <spirit:hierConnections>
+      <spirit:hierConnection spirit:interfaceRef="M00_AXI/axi_interconnect_0_M00_AXI">
+        <spirit:activeInterface spirit:busRef="M00_AXI" spirit:componentRef="axi_interconnect_0"/>
+      </spirit:hierConnection>
+    </spirit:hierConnections>
   </spirit:design>
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
@@ -1826,7 +1726,7 @@
         <spirit:instanceName>s07_data_fifo</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="axi_data_fifo" spirit:vendor="xilinx.com" spirit:version="2.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_s07_data_fifo_142</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_s07_data_fifo_198</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -2019,7 +1919,7 @@
         <spirit:instanceName>s06_data_fifo</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="axi_data_fifo" spirit:vendor="xilinx.com" spirit:version="2.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_s06_data_fifo_141</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_s06_data_fifo_197</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -2212,7 +2112,7 @@
         <spirit:instanceName>s05_data_fifo</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="axi_data_fifo" spirit:vendor="xilinx.com" spirit:version="2.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_s05_data_fifo_140</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_s05_data_fifo_196</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -2405,7 +2305,7 @@
         <spirit:instanceName>s04_data_fifo</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="axi_data_fifo" spirit:vendor="xilinx.com" spirit:version="2.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_s04_data_fifo_139</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_s04_data_fifo_195</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -2598,7 +2498,7 @@
         <spirit:instanceName>s03_data_fifo</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="axi_data_fifo" spirit:vendor="xilinx.com" spirit:version="2.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_s03_data_fifo_138</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_s03_data_fifo_194</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -2791,7 +2691,7 @@
         <spirit:instanceName>s02_data_fifo</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="axi_data_fifo" spirit:vendor="xilinx.com" spirit:version="2.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_s02_data_fifo_137</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_s02_data_fifo_193</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -2984,7 +2884,7 @@
         <spirit:instanceName>s01_data_fifo</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="axi_data_fifo" spirit:vendor="xilinx.com" spirit:version="2.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_s01_data_fifo_136</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_s01_data_fifo_192</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -3177,7 +3077,7 @@
         <spirit:instanceName>s00_data_fifo</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="axi_data_fifo" spirit:vendor="xilinx.com" spirit:version="2.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_s00_data_fifo_135</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_s00_data_fifo_191</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -3206,28 +3106,6 @@
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
-    <spirit:library>Addressing/init_memory_top_0</spirit:library>
-    <spirit:name>init_memory_top</spirit:name>
-    <spirit:version>1.0</spirit:version>
-    <spirit:addressSpaces>
-      <spirit:addressSpace>
-        <spirit:name>Data</spirit:name>
-        <spirit:range>4G</spirit:range>
-        <spirit:width>32</spirit:width>
-        <spirit:segments>
-          <spirit:segment>
-            <spirit:name>SEG_axi_bram_ctrl_0_Mem0</spirit:name>
-            <spirit:displayName>/axi_bram_ctrl_0/S_AXI/Mem0</spirit:displayName>
-            <spirit:addressOffset>0x00000000</spirit:addressOffset>
-            <spirit:range>256K</spirit:range>
-          </spirit:segment>
-        </spirit:segments>
-      </spirit:addressSpace>
-    </spirit:addressSpaces>
-  </spirit:component>
-
-  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
-    <spirit:vendor>xilinx.com</spirit:vendor>
     <spirit:library>Addressing/lloyds_kernel_top_0</spirit:library>
     <spirit:name>lloyds_kernel_top</spirit:name>
     <spirit:version>1.0</spirit:version>
@@ -3238,10 +3116,10 @@
         <spirit:width>32</spirit:width>
         <spirit:segments>
           <spirit:segment>
-            <spirit:name>SEG_axi_bram_ctrl_0_Mem0</spirit:name>
-            <spirit:displayName>/axi_bram_ctrl_0/S_AXI/Mem0</spirit:displayName>
+            <spirit:name>SEG_design_1_Reg</spirit:name>
+            <spirit:displayName>/M00_AXI/Reg</spirit:displayName>
             <spirit:addressOffset>0x00000000</spirit:addressOffset>
-            <spirit:range>256K</spirit:range>
+            <spirit:range>1G</spirit:range>
           </spirit:segment>
         </spirit:segments>
       </spirit:addressSpace>
@@ -3260,10 +3138,10 @@
         <spirit:width>32</spirit:width>
         <spirit:segments>
           <spirit:segment>
-            <spirit:name>SEG_axi_bram_ctrl_0_Mem0</spirit:name>
-            <spirit:displayName>/axi_bram_ctrl_0/S_AXI/Mem0</spirit:displayName>
+            <spirit:name>SEG_design_1_Reg</spirit:name>
+            <spirit:displayName>/M00_AXI/Reg</spirit:displayName>
             <spirit:addressOffset>0x00000000</spirit:addressOffset>
-            <spirit:range>256K</spirit:range>
+            <spirit:range>1G</spirit:range>
           </spirit:segment>
         </spirit:segments>
       </spirit:addressSpace>

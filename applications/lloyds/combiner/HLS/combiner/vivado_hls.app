@@ -14,7 +14,8 @@
         <file name="combiner/source/combiner_top.h" sc="0" tb="false" cflags=""/>
     </files>
     <solutions xmlns="">
-        <solution name="solution1" status="active"/>
+        <solution name="solution1" status="inactive"/>
+        <solution name="combiner" status="active"/>
     </solutions>
 </project>
 

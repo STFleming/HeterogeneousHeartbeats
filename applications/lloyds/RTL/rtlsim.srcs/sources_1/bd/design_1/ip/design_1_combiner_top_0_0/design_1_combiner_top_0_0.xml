@@ -1205,7 +1205,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>797777305</spirit:value>
+            <spirit:value>619722801</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -1213,7 +1213,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 26 20:55:41 UTC 2014</spirit:value>
+            <spirit:value>Sun Jun 01 14:13:36 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -1232,7 +1232,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>797777305</spirit:value>
+            <spirit:value>619722801</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -1240,7 +1240,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 26 20:55:41 UTC 2014</spirit:value>
+            <spirit:value>Sun Jun 01 14:13:36 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -1259,7 +1259,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>4096537858</spirit:value>
+            <spirit:value>902937635</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -1267,7 +1267,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 26 20:55:41 UTC 2014</spirit:value>
+            <spirit:value>Sun Jun 01 14:13:36 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -1285,7 +1285,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>797777305</spirit:value>
+            <spirit:value>619722801</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -1293,7 +1293,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 26 20:55:42 UTC 2014</spirit:value>
+            <spirit:value>Sun Jun 01 14:13:36 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -3639,7 +3639,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_M_AXI_DATA_POINTS_IN_TARGET_ADDR</spirit:name>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_DATA_POINTS_IN_TARGET_ADDR" spirit:bitStringLength="32">0x00000000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_DATA_POINTS_IN_TARGET_ADDR" spirit:bitStringLength="32">0x38400000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_M_AXI_DATA_POINTS_IN_USER_VALUE</spirit:name>
@@ -3735,7 +3735,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_M_AXI_KERNEL_INFO_IN_TARGET_ADDR</spirit:name>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_KERNEL_INFO_IN_TARGET_ADDR" spirit:bitStringLength="32">0x00008000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_KERNEL_INFO_IN_TARGET_ADDR" spirit:bitStringLength="32">0x39000C00</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_M_AXI_KERNEL_INFO_IN_USER_VALUE</spirit:name>
@@ -3831,7 +3831,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_M_AXI_CENTRES_OUT_TARGET_ADDR</spirit:name>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_CENTRES_OUT_TARGET_ADDR" spirit:bitStringLength="32">0x00004000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M_AXI_CENTRES_OUT_TARGET_ADDR" spirit:bitStringLength="32">0x39000000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_M_AXI_CENTRES_OUT_USER_VALUE</spirit:name>
@@ -3889,11 +3889,11 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>hdl/verilog/combiner_top_top.v</spirit:name>
+        <spirit:name>hdl/verilog/combiner_top_p_buffer.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/combiner_top_i_buffer.v</spirit:name>
+        <spirit:name>hdl/verilog/combiner_top_top.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3901,15 +3901,27 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/combiner_top_kernel_info_in_if.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/combiner_top.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/combiner_top_udiv_32ns_32ns_32_35.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/combiner_top_p_buffer.v</spirit:name>
+        <spirit:name>hdl/verilog/combiner_top_centre_buffer_0_wgtCent_value.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/combiner_top_centre_buffer_0_wgtCent_value.v</spirit:name>
+        <spirit:name>hdl/verilog/combiner_top_i_buffer.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/combiner_top_centres_out_if.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3918,18 +3930,6 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/combiner_top_c_buffer.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/combiner_top_centres_out_if.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/combiner_top.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/combiner_top_kernel_info_in_if.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3948,11 +3948,11 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>hdl/verilog/combiner_top_top.v</spirit:name>
+        <spirit:name>hdl/verilog/combiner_top_p_buffer.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/combiner_top_i_buffer.v</spirit:name>
+        <spirit:name>hdl/verilog/combiner_top_top.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3960,15 +3960,27 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/combiner_top_kernel_info_in_if.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/combiner_top.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/combiner_top_udiv_32ns_32ns_32_35.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/combiner_top_p_buffer.v</spirit:name>
+        <spirit:name>hdl/verilog/combiner_top_centre_buffer_0_wgtCent_value.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/combiner_top_centre_buffer_0_wgtCent_value.v</spirit:name>
+        <spirit:name>hdl/verilog/combiner_top_i_buffer.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/combiner_top_centres_out_if.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3977,18 +3989,6 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/combiner_top_c_buffer.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/combiner_top_centres_out_if.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/combiner_top.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/combiner_top_kernel_info_in_if.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -4090,7 +4090,7 @@
     <spirit:parameter>
       <spirit:name>C_M_AXI_DATA_POINTS_IN_TARGET_ADDR</spirit:name>
       <spirit:displayName>Base address of target slave</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_DATA_POINTS_IN_TARGET_ADDR" spirit:order="10" spirit:configGroups="1 M_AXI_DATA_POINTS_IN (AXI4 Master Interface)" spirit:bitStringLength="32">0x00000000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_DATA_POINTS_IN_TARGET_ADDR" spirit:order="10" spirit:configGroups="1 M_AXI_DATA_POINTS_IN (AXI4 Master Interface)" spirit:bitStringLength="32">0x38400000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_M_AXI_DATA_POINTS_IN_USER_VALUE</spirit:name>
@@ -4198,7 +4198,7 @@
     <spirit:parameter>
       <spirit:name>C_M_AXI_KERNEL_INFO_IN_TARGET_ADDR</spirit:name>
       <spirit:displayName>Base address of target slave</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_KERNEL_INFO_IN_TARGET_ADDR" spirit:order="22" spirit:configGroups="1 M_AXI_KERNEL_INFO_IN (AXI4 Master Interface)" spirit:bitStringLength="32">0x00008000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_KERNEL_INFO_IN_TARGET_ADDR" spirit:order="22" spirit:configGroups="1 M_AXI_KERNEL_INFO_IN (AXI4 Master Interface)" spirit:bitStringLength="32">0x39000C00</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_M_AXI_KERNEL_INFO_IN_USER_VALUE</spirit:name>
@@ -4306,7 +4306,7 @@
     <spirit:parameter>
       <spirit:name>C_M_AXI_CENTRES_OUT_TARGET_ADDR</spirit:name>
       <spirit:displayName>Base address of target slave</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_CENTRES_OUT_TARGET_ADDR" spirit:order="34" spirit:configGroups="1 M_AXI_CENTRES_OUT (AXI4 Master Interface)" spirit:bitStringLength="32">0x00004000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M_AXI_CENTRES_OUT_TARGET_ADDR" spirit:order="34" spirit:configGroups="1 M_AXI_CENTRES_OUT (AXI4 Master Interface)" spirit:bitStringLength="32">0x39000000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_M_AXI_CENTRES_OUT_USER_VALUE</spirit:name>
@@ -4345,8 +4345,8 @@
         <xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>Combiner_top</xilinx:displayName>
-      <xilinx:coreRevision>1405262153</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2014-05-26T20:53:41Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1406011320</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2014-06-01T12:20:55Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2013.4</xilinx:xilinxVersion>

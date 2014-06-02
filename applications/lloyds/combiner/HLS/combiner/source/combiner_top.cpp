@@ -13,27 +13,45 @@
 
 
 // top-level function of the design
-void combiner_top( volatile bus_type *data_points_in,
-				   volatile bus_type *kernel_info_in,
-				   volatile bus_type *centres_out,
+void combiner_top( volatile bus_type *master_portA,
+                   volatile bus_type *master_portB,
+                   uint data_points_in_addr,
+				   uint kernel_info_in_addr,
+				   uint centres_out_addr,
 				   uint *distortion_out,
                    uint n,
-                   centre_index_type k
+                   uint k //had to change from the centre type because I could not map it into the slave interface...
                   )
 {
 
 	// set up the axi bus interfaces
-	#pragma HLS INTERFACE ap_bus port=data_points_in depth=0x200000
-	#pragma HLS resource core=AXI4M variable=data_points_in
+	#pragma HLS INTERFACE ap_bus port=master_portA depth=0x200000
+	#pragma HLS resource core=AXI4M variable=master_portA
 
-	#pragma HLS INTERFACE ap_bus port=kernel_info_in depth=0x200000
-	#pragma HLS resource core=AXI4M variable=kernel_info_in
+	#pragma HLS INTERFACE ap_bus port=master_portB depth=0x200000
+	#pragma HLS resource core=AXI4M variable=master_portB
 
-	#pragma HLS INTERFACE ap_bus port=centres_out depth=0x002000
-	#pragma HLS resource core=AXI4M variable=centres_out
+    #pragma HLS INTERFACE ap_none register port=data_points_in_addr
+    #pragma HLS RESOURCE core=AXI4LiteS variable=data_points_in_addr metadata="-bus_bundle CONFIG_BUS"
 
+    #pragma HLS INTERFACE ap_none register port=kernel_info_in_addr
+    #pragma HLS RESOURCE core=AXI4LiteS variable=kernel_info_in_addr metadata="-bus_bundle CONFIG_BUS"
 
-	centre_type centre_buffer[K];
+    #pragma HLS INTERFACE ap_none register port=centres_out_addr
+    #pragma HLS RESOURCE core=AXI4LiteS variable=centres_out_addr metadata="-bus_bundle CONFIG_BUS"
+
+    #pragma HLS INTERFACE ap_none register port=distortion_out
+    #pragma HLS RESOURCE core=AXI4LiteS variable=distortion_out metadata="-bus_bundle CONFIG_BUS"
+
+    #pragma HLS INTERFACE ap_none register port=n
+    #pragma HLS RESOURCE core=AXI4LiteS variable=n metadata="-bus_bundle CONFIG_BUS"
+
+    #pragma HLS INTERFACE ap_none register port=k
+    #pragma HLS RESOURCE core=AXI4LiteS variable=k metadata="-bus_bundle CONFIG_BUS"
+
+    #pragma HLS RESOURCE variable=return core=AXI4LiteS metadata="-bus_bundle CONFIG_BUS"
+
+    centre_type centre_buffer[K];
 
 	init_loop: for (uint i=0; i<K; i++) {
 		#pragma HLS pipeline II=1
@@ -55,9 +73,9 @@ void combiner_top( volatile bus_type *data_points_in,
 		bus_type i_buffer[B*2];
 		bus_type p_buffer[B*D];
 
-		memcpy(p_buffer, (bus_type *)(data_points_in+b2), B*D*sizeof(int));
+		memcpy(p_buffer, (const bus_type *)(master_portA + (data_points_in_addr+b2)/4), B*D*sizeof(int));
 		b2 += B*D;
-		memcpy(i_buffer, (bus_type *)(kernel_info_in+b), B*2*sizeof(int));
+		memcpy(i_buffer, (const bus_type *)(master_portB + (kernel_info_in_addr+b)/4), B*2*sizeof(int));
 
 		for (uint i=0; i<B; i++) {
 			#pragma HLS pipeline II=4
@@ -111,7 +129,7 @@ void combiner_top( volatile bus_type *data_points_in,
 		total_distortion = total_distortion + centre_buffer[i].sum_sq;
 	}
 
-	memcpy((bus_type *)(centres_out), c_buffer, (k+1)*D*sizeof(int));
+	memcpy((bus_type *)(master_portA + (centres_out_addr)/4), c_buffer, (k+1)*D*sizeof(int));
 
 	*distortion_out = total_distortion;
 
