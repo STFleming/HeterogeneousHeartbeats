@@ -18,7 +18,8 @@
 
 
 //Drivers for our core
-
+#include "xcombiner_top.h"
+#include "xlloyds_kernel_top.h"
 
 #define INPUT_FRAME_ADDR 0x38400000
 #define CLUSTER_CENTER_ADDR 0x39000000
@@ -36,7 +37,9 @@ int main()
 	printf("----------------------------\nTesting the reserved memory\n----------------------------\n\n");
 	
 	cv::Mat hw_inputFrame;
-	hw_inputFrame.data =(uchar *) setup_reserved_mem(INPUT_FRAME_ADDR);	
+	hw_inputFrame.data =(uchar *) setup_reserved_mem(INPUT_FRAME_ADDR);
+	cv::Mat hw_outputFrame;
+	hw_outputFrame.data = (uchar *) setup_reserved_mem(OUTPUT_FRAME_ADDR);	
 	cv::Mat inFrame;
 	inFrame = cv::imread("test_image.jpg");
 
@@ -44,19 +47,48 @@ int main()
 	//Attempting some resizing
 	cv::Size size(1024,1024);
 	cv::resize(inFrame, hw_inputFrame, size); //Changing the image to size 1024 x 1024 so that it occupies the entire input memory
+	cv::resize(inFrame, hw_outputFrame, size);
 
 	//hw_inputFrame = inFrame; //Copy the frame into the HW address space
+	
+//HARDWAR SETUP-----------------------------------------------------------------------
+//sets up the two IP cores, this needs to be turned into a function
+	//Setup the kernel core parameters
+	XLloyds_kernel_top kernel_dev = setup_XLloyds_kernel_top();
+	XLloyds_kernel_top_SetBlock_address(&kernel_dev, 0);
+	XLloyds_kernel_top_SetData_points_addr(&kernel_dev, INPUT_FRAME_ADDR);
+	XLloyds_kernel_top_SetCentres_in_addr(&kernel_dev, INPUT_FRAME_ADDR);
+	XLloyds_kernel_top_SetOutput_addr(&kernel_dev, OUTPUT_FRAME_ADDR);
+	XLloyds_kernel_top_SetN(&kernel_dev, 3);
+	XLloyds_kernel_top_SetK(&kernel_dev, 256);
 
+	//Setting the parameters of the combiner 
+	XCombiner_top combiner_dev = setup_XCombiner_top();
+	XCombiner_top_SetData_points_in_addr(&combiner_dev, INPUT_FRAME_ADDR);
+	XCombiner_top_SetKernel_info_in_addr(&combiner_dev, KERNEL_INTERMEDIATE_ADDR);
+	XCombiner_top_SetCentres_out_addr(&combiner_dev,CLUSTER_CENTER_ADDR);
+	XCombiner_top_SetN(&combiner_dev, 3);
+	XCombiner_top_SetK(&combiner_dev, 256);	
+//------------------------------------------------------------------------------------
+	printf("Cores have been fully initialised.\n");
 
+	//this will be amazing if this magically works......
+	//start the kernel
+	XLloyds_kernel_top_Start(&kernel_dev);
+	printf("Started the kernel core\n");
+	while(XLloyds_kernel_top_IsDone(&kernel_dev) != 1) {} //block for the first hardware stage
+	printf("Kernel core completed,\nStarting the combiner core.\n");
+	XCombiner_top_Start(&combiner_dev);
+	while(XCombiner_top_IsDone(&combiner_dev) != 1) {} //block for the second hardware stage
+
+	//One shot operation is now completed, attempting to print result
+	
 	cv::Mat outFrame;
-	outFrame = hw_inputFrame;
+	outFrame = hw_outputFrame;
 	imshow("Test_image", outFrame);
+
 while(1)
 {
-	
-	//printf("pre-mem: %d\n", *((int *)vmapped_reserved_mem));
-	//*((int *)vmapped_reserved_mem) = 10;
-	//printf("post-mem: %d\n", *((int *)vmapped_reserved_mem));	
 	
         if (cv::waitKey(30) == 27) //wait for 'esc' key press for 30ms. If 'esc' key is pressed, break loop
        {
