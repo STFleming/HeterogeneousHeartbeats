@@ -26,6 +26,7 @@
 #define KERNEL_INTERMEDIATE_ADDR 0x39000C00
 #define OUTPUT_FRAME_ADDR 0x39800C00
 
+#define IMG_SIZE 128
 
 #define MAP_SIZE 40960000UL
 #define MAP_MASK (MAP_SIZE - 1)
@@ -37,19 +38,19 @@ int main()
 	printf("----------------------------\nTesting the reserved memory\n----------------------------\n\n");
 	
 	cv::Mat hw_inputFrame;
-	hw_inputFrame.data =(uchar *) setup_reserved_mem(INPUT_FRAME_ADDR);
-	cv::Mat hw_outputFrame;
-	hw_outputFrame.data = (uchar *) setup_reserved_mem(OUTPUT_FRAME_ADDR);	
-	cv::Mat inFrame;
-	inFrame = cv::imread("test_image.jpg");
+	hw_inputFrame.data =(uchar *) setup_reserved_mem(INPUT_FRAME_ADDR); //Point the input container to the reserved RAM
+	cv::Mat hw_outputFrame(cv::Size(IMG_SIZE,IMG_SIZE),CV_8UC3); //Setup the output image contained and give it a size
+	hw_outputFrame.data = (uchar *) setup_reserved_mem(OUTPUT_FRAME_ADDR);	//Point the container to the reserved RAM
+	cv::Mat inFrame; //Temporary input container
+	inFrame = cv::imread("test_image.jpg"); //Read the input
 
 
 	//Attempting some resizing
-	cv::Size size(1024,1024);
-	cv::resize(inFrame, hw_inputFrame, size); //Changing the image to size 1024 x 1024 so that it occupies the entire input memory
-	cv::resize(inFrame, hw_outputFrame, size);
-
-	//hw_inputFrame = inFrame; //Copy the frame into the HW address space
+	cv::Size size(IMG_SIZE,IMG_SIZE);
+	cv::resize(inFrame, hw_inputFrame, size); //Changing the image to size so that it complies with the HW modules
+	cv::Mat testOut; //Create an output container
+	testOut = hw_inputFrame; //Assign the output container with the input in the HW available memory
+	imshow("INPUT", testOut); //Print out the input that the HW sees
 	
 //HARDWAR SETUP-----------------------------------------------------------------------
 //sets up the two IP cores, this needs to be turned into a function
@@ -59,7 +60,7 @@ int main()
 	XLloyds_kernel_top_SetData_points_addr(&kernel_dev, INPUT_FRAME_ADDR);
 	XLloyds_kernel_top_SetCentres_in_addr(&kernel_dev, INPUT_FRAME_ADDR);
 	XLloyds_kernel_top_SetOutput_addr(&kernel_dev, OUTPUT_FRAME_ADDR);
-	XLloyds_kernel_top_SetN(&kernel_dev, (1024*1024)-1);
+	XLloyds_kernel_top_SetN(&kernel_dev, (IMG_SIZE*IMG_SIZE)-1);
 	XLloyds_kernel_top_SetK(&kernel_dev, 4);
 
 	//Setting the parameters of the combiner 
@@ -67,7 +68,7 @@ int main()
 	XCombiner_top_SetData_points_in_addr(&combiner_dev, INPUT_FRAME_ADDR);
 	XCombiner_top_SetKernel_info_in_addr(&combiner_dev, KERNEL_INTERMEDIATE_ADDR);
 	XCombiner_top_SetCentres_out_addr(&combiner_dev,CLUSTER_CENTER_ADDR);
-	XCombiner_top_SetN(&combiner_dev, (1024*1024)-1);
+	XCombiner_top_SetN(&combiner_dev, (IMG_SIZE*IMG_SIZE)-1);
 	XCombiner_top_SetK(&combiner_dev, 4);	
 //------------------------------------------------------------------------------------
 	printf("Cores have been fully initialised.\n");
@@ -76,15 +77,15 @@ int main()
 	//start the kernel
 	printf("Started the kernel core\n");
 	int i=0; //incrementor to keep track of the block address
-	for(i=0; i<=((1024*1024)/(16*3)); i++)
+	for(i=0; i<((IMG_SIZE*IMG_SIZE*3)/16); i++)
 	{
-		XLloyds_kernel_top_SetBlock_address(&kernel_dev, i*16);
-		XLloyds_kernel_top_Start(&kernel_dev);
+		XLloyds_kernel_top_SetBlock_address(&kernel_dev, i*16*3); //Reassign the kernel modules block address
+		XLloyds_kernel_top_Start(&kernel_dev); //Kick the Kernel block
 		while(XLloyds_kernel_top_IsDone(&kernel_dev) != 1) { } //block for the first hardware stage
 		printf(".");
 	}
 	printf("\nKernel core completed,\nStarting the combiner core.\n");
-	XCombiner_top_Start(&combiner_dev);
+	XCombiner_top_Start(&combiner_dev); //now that the kernel block has finished, kick the combiner
 	while(XCombiner_top_IsDone(&combiner_dev) != 1) {printf("."); } //block for the second hardware stage
 	//One shot operation is now completed, attempting to print result
 	printf("\n");
@@ -92,7 +93,7 @@ int main()
 	printf("Combiner Core is complete...\nDisplaying output frame\n");	
 	cv::Mat outFrame;
 	outFrame = hw_outputFrame;
-	imshow("Test_image", outFrame);
+	imshow("OUTPUT", outFrame); //displaying the output frame
 
 while(1)
 {
