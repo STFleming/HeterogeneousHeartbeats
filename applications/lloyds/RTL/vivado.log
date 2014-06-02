@@ -43,3 +43,28 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ee/s/sf306/Heterogeneou
 update_ip_catalog -rebuild
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner'.
+set_property ip_repo_paths  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner [current_fileset]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner'.
+set_property ip_repo_paths  {/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel} [current_fileset]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel'.
+report_ip_status -name ip_status_1 
+open_bd_design {/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/zynq_system.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.3 - processing_system7_0
+Adding component instance block -- xilinx.com:hls:combiner_top:1.0 - combiner_top_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_50M
+Adding component instance block -- xilinx.com:hls:lloyds_kernel_top:1.0 - lloyds_kernel_top_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <zynq_system> from BD file </home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/zynq_system.bd>
+open_bd_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:33 . Memory (MB): peak = 5032.500 ; gain = 117.328
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  2 23:14:22 2014...

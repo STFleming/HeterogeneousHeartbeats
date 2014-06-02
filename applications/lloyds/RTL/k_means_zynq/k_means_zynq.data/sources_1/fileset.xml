@@ -53,7 +53,8 @@
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="zynq_system_wrapper"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
-      <Option Name="IPRepoPath" Val="$PPRDIR/../../combiner/HLS/combiner"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../combiner/HLS/combiner/combiner"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../kernel/HLS/kernel/kernel"/>
     </Config>
   </FileSet>
 </DARoots>
