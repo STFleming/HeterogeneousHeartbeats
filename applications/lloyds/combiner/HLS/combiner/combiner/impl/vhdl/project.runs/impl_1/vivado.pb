@@ -19,3 +19,8 @@ X/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_
 *Finished parsing RTL primitives file [%s]
 11*netlist2l
 X/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml2default:defaultZ29-11
+w
+Exiting %s at %s...
+206*common2
+Vivado2default:default2,
+Mon Jun  2 23:35:53 20142default:defaultZ17-206

@@ -3179,11 +3179,31 @@
 		<spirit:fileSet>
 			<spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
 			<spirit:file>
+				<spirit:name>hdl/verilog/lloyds_kernel_top_master_portA_if.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>hdl/verilog/store_output_buffer_int_buffer.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>hdl/verilog/lloyds_kernel_top_top.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>hdl/verilog/lloyds_kernel_top_master_portB_if.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
 				<spirit:name>hdl/verilog/load_centres_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/load_points_buffer_int_buffer.v</spirit:name>
+				<spirit:name>hdl/verilog/lloyds_kernel_top_centres_buffer_0_value.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>hdl/verilog/lloyds_kernel_top_data_points_buffer_0_value.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3199,7 +3219,7 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_top.v</spirit:name>
+				<spirit:name>hdl/verilog/load_points_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3207,15 +3227,7 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/load_centres_buffer_int_buffer.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_add_32ns_32ns_32_1.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_data_points_buffer_0_value.v</spirit:name>
+				<spirit:name>hdl/verilog/lloyds_kernel_top_CONFIG_BUS_if.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3223,27 +3235,15 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_master_portA_if.v</spirit:name>
+				<spirit:name>hdl/verilog/load_points_buffer_int_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_master_portB_if.v</spirit:name>
+				<spirit:name>hdl/verilog/lloyds_kernel_top_add_32ns_32ns_32_1.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_centres_buffer_0_value.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/store_output_buffer_int_buffer.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/load_points_buffer.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_CONFIG_BUS_if.v</spirit:name>
+				<spirit:name>hdl/verilog/load_centres_buffer_int_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3257,11 +3257,31 @@
 		<spirit:fileSet>
 			<spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
 			<spirit:file>
+				<spirit:name>hdl/verilog/lloyds_kernel_top_master_portA_if.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>hdl/verilog/store_output_buffer_int_buffer.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>hdl/verilog/lloyds_kernel_top_top.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>hdl/verilog/lloyds_kernel_top_master_portB_if.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
 				<spirit:name>hdl/verilog/load_centres_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/load_points_buffer_int_buffer.v</spirit:name>
+				<spirit:name>hdl/verilog/lloyds_kernel_top_centres_buffer_0_value.v</spirit:name>
+				<spirit:fileType>verilogSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>hdl/verilog/lloyds_kernel_top_data_points_buffer_0_value.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3277,7 +3297,7 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_top.v</spirit:name>
+				<spirit:name>hdl/verilog/load_points_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3285,15 +3305,7 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/load_centres_buffer_int_buffer.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_add_32ns_32ns_32_1.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_data_points_buffer_0_value.v</spirit:name>
+				<spirit:name>hdl/verilog/lloyds_kernel_top_CONFIG_BUS_if.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3301,38 +3313,34 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_master_portA_if.v</spirit:name>
+				<spirit:name>hdl/verilog/load_points_buffer_int_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_master_portB_if.v</spirit:name>
+				<spirit:name>hdl/verilog/lloyds_kernel_top_add_32ns_32ns_32_1.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_centres_buffer_0_value.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/store_output_buffer_int_buffer.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/load_points_buffer.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_CONFIG_BUS_if.v</spirit:name>
+				<spirit:name>hdl/verilog/load_centres_buffer_int_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 		</spirit:fileSet>
 		<spirit:fileSet>
 			<spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
 			<spirit:file>
+				<spirit:name>drivers/lloyds_kernel_top_top_v1_00_a/data/lloyds_kernel_top_top_v2_1_0.mdd</spirit:name>
+				<spirit:userFileType>mdd</spirit:userFileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>drivers/lloyds_kernel_top_top_v1_00_a/data/lloyds_kernel_top_top_v2_1_0.tcl</spirit:name>
+				<spirit:fileType>tclSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
 				<spirit:name>drivers/lloyds_kernel_top_top_v1_00_a/src/xlloyds_kernel_top_sinit.c</spirit:name>
 				<spirit:fileType>cSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/lloyds_kernel_top_top_v1_00_a/src/xlloyds_kernel_top_linux.c</spirit:name>
+				<spirit:name>drivers/lloyds_kernel_top_top_v1_00_a/src/xlloyds_kernel_top_hw.h</spirit:name>
 				<spirit:fileType>cSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3348,16 +3356,8 @@
 				<spirit:fileType>unknown</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/lloyds_kernel_top_top_v1_00_a/src/xlloyds_kernel_top_hw.h</spirit:name>
+				<spirit:name>drivers/lloyds_kernel_top_top_v1_00_a/src/xlloyds_kernel_top_linux.c</spirit:name>
 				<spirit:fileType>cSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>drivers/lloyds_kernel_top_top_v1_00_a/data/lloyds_kernel_top_top_v2_1_0.tcl</spirit:name>
-				<spirit:fileType>tclSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>drivers/lloyds_kernel_top_top_v1_00_a/data/lloyds_kernel_top_top_v2_1_0.mdd</spirit:name>
-				<spirit:userFileType>mdd</spirit:userFileType>
 			</spirit:file>
 		</spirit:fileSet>
 		<spirit:fileSet>
@@ -3778,8 +3778,8 @@
 				<xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
 			</xilinx:taxonomies>
 			<xilinx:displayName>Lloyds_kernel_top</xilinx:displayName>
-			<xilinx:coreRevision>1406011706</xilinx:coreRevision>
-			<xilinx:coreCreationDateTime>2014-06-01T16:06:48Z</xilinx:coreCreationDateTime>
+			<xilinx:coreRevision>1406022337</xilinx:coreRevision>
+			<xilinx:coreCreationDateTime>2014-06-02T22:37:13Z</xilinx:coreCreationDateTime>
 		</xilinx:coreExtensions>
 		<xilinx:packagingInfo>
 			<xilinx:xilinxVersion>2013.4</xilinx:xilinxVersion>

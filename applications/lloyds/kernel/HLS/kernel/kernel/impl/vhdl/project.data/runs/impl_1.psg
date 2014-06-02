@@ -13,7 +13,7 @@
 	</Step>
 	<Step Id="post_place_power_opt_design">
 	</Step>
-	<Step Id="phys_opt_design" EnableStepBool="1">
+	<Step Id="phys_opt_design">
 	</Step>
 	<Step Id="route_design">
 	</Step>
