@@ -1,0 +1,92 @@
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
+| Date         : Sun Jun  1 17:08:10 2014
+| Host         : ganymede running 64-bit Ubuntu 12.04.3 LTS
+| Command      : report_control_sets -verbose -file lloyds_kernel_top_control_sets_placed.rpt
+| Design       : lloyds_kernel_top
+| Device       : xc7z020
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    39 |
+| Minimum Number of register sites lost to control set restrictions |    79 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             195 |           76 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              36 |           20 |
+| Yes          | No                    | No                     |             473 |          159 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             305 |           92 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+----------------+
+| Clock Signal |                                                Enable Signal                                                |                                            Set/Reset Signal                                           | Slice Load Count | Bel Load Count |
++--------------+-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  ap_clk      | grp_load_points_buffer_fu_349/n_3_tmp_6_reg_392[3]_i_1                                                      |                                                                                                       |                2 |              4 |
+|  ap_clk      | tmp_s_reg_5751                                                                                              |                                                                                                       |                1 |              4 |
+|  ap_clk      | grp_store_output_buffer_fu_362/i_reg_1570                                                                   |                                                                                                       |                3 |              4 |
+|  ap_clk      |                                                                                                             | grp_load_points_buffer_fu_349/ap_reg_ppiten_pp1_it00                                                  |                4 |              5 |
+|  ap_clk      | grp_load_points_buffer_fu_349/n_3_master_portA_rsp_read_INST_0_i_1                                          | ap_rst                                                                                                |                2 |              5 |
+|  ap_clk      | grp_load_centres_buffer_fu_337/int_buffer_U/load_centres_buffer_int_buffer_ram_U/O2                         | ap_rst                                                                                                |                2 |              5 |
+|  ap_clk      | grp_store_output_buffer_fu_362/i_reg_1570                                                                   | grp_store_output_buffer_fu_362/ap_reg_ppiten_pp0_it00                                                 |                3 |              5 |
+|  ap_clk      | data_points_buffer_1_value_U/lloyds_kernel_top_data_points_buffer_0_value_ram_U/O1                          |                                                                                                       |                3 |              5 |
+|  ap_clk      | output_buffer_sum_sq_U/lloyds_kernel_top_data_points_buffer_0_value_ram_U/WEBWE[0]                          | grp_load_centres_buffer_fu_337/SR[0]                                                                  |                3 |              5 |
+|  ap_clk      | grp_load_points_buffer_fu_349/int_buffer_U/load_points_buffer_int_buffer_ram_U/E[0]                         |                                                                                                       |                3 |              5 |
+|  ap_clk      | grp_load_points_buffer_fu_349/p_10_in                                                                       |                                                                                                       |                3 |              6 |
+|  ap_clk      | grp_load_points_buffer_fu_349/tmp_5_reg_3770                                                                |                                                                                                       |                3 |              6 |
+|  ap_clk      | grp_load_points_buffer_fu_349/E[0]                                                                          | grp_load_points_buffer_fu_349/ap_reg_ppiten_pp0_it00                                                  |                2 |              6 |
+|  ap_clk      | grp_store_output_buffer_fu_362/indvar_reg_1680                                                              | grp_store_output_buffer_fu_362/ap_reg_ppiten_pp1_it0                                                  |                3 |              6 |
+|  ap_clk      | ap_reg_ppiten_pp0_it1                                                                                       | ap_rst                                                                                                |                2 |              6 |
+|  ap_clk      | grp_load_centres_buffer_fu_337/int_buffer_U/load_centres_buffer_int_buffer_ram_U/E[0]                       |                                                                                                       |                5 |              8 |
+|  ap_clk      | grp_load_centres_buffer_fu_337/buffer_1_value_we0                                                           |                                                                                                       |                5 |              8 |
+|  ap_clk      | grp_load_centres_buffer_fu_337_ap_start_ap_start_reg                                                        |                                                                                                       |                4 |              8 |
+|  ap_clk      |                                                                                                             | grp_load_centres_buffer_fu_337/n_3_t_V_reg_205[7]_i_1                                                 |                5 |              8 |
+|  ap_clk      | centres_buffer_2_value_U/lloyds_kernel_top_centres_buffer_0_value_ram_U/final_centre_index_V_phi_fu_271_p41 | data_points_buffer_2_value_U/lloyds_kernel_top_data_points_buffer_0_value_ram_U/ap_reg_ppiten_pp0_it0 |                5 |              8 |
+|  ap_clk      | centres_buffer_2_value_U/lloyds_kernel_top_centres_buffer_0_value_ram_U/ii_V_reg_6150                       |                                                                                                       |                4 |              8 |
+|  ap_clk      | grp_load_centres_buffer_fu_337/tmp_10_reg_4480                                                              |                                                                                                       |                4 |             11 |
+|  ap_clk      | grp_load_points_buffer_fu_349/n_3_master_portA_rsp_read_INST_0_i_1                                          |                                                                                                       |                5 |             15 |
+|  ap_clk      | ap_reg_ppiten_pp0_it1                                                                                       |                                                                                                       |                5 |             21 |
+|  ap_clk      |                                                                                                             | ap_rst                                                                                                |               11 |             23 |
+|  ap_clk      | grp_load_centres_buffer_fu_337/int_buffer_U/load_centres_buffer_int_buffer_ram_U/O2                         |                                                                                                       |                7 |             23 |
+|  ap_clk      | grp_load_centres_buffer_fu_337/p_34_in                                                                      | grp_load_centres_buffer_fu_337/ap_reg_ppiten_pp0_it00                                                 |               10 |             30 |
+|  ap_clk      | grp_load_centres_buffer_fu_337/p_8_in                                                                       |                                                                                                       |                8 |             30 |
+|  ap_clk      | grp_load_points_buffer_fu_349/ap_reg_ppiten_pp0_it00                                                        |                                                                                                       |                8 |             30 |
+|  ap_clk      | lloyds_kernel_top_add_32ns_32ns_32_1_U25/lloyds_kernel_top_add_32ns_32ns_32_1_AddSubnS_0_U/O2               | n_3_min_dist_reg_303[30]_i_1                                                                          |                8 |             31 |
+|  ap_clk      | grp_load_centres_buffer_fu_337/E[0]                                                                         |                                                                                                       |                7 |             32 |
+|  ap_clk      | grp_load_points_buffer_fu_349/n_3_bus_addr_read_reg_363[31]_i_1                                             |                                                                                                       |                7 |             32 |
+|  ap_clk      | n_3_p_032_2_reg_314[7]_i_1                                                                                  |                                                                                                       |               16 |             40 |
+|  ap_clk      | n_3_p_s_reg_279[7]_i_2                                                                                      | n_3_p_s_reg_279[7]_i_1                                                                                |               14 |             40 |
+|  ap_clk      | grp_load_centres_buffer_fu_337/ap_reg_ppiten_pp0_it00                                                       |                                                                                                       |               17 |             41 |
+|  ap_clk      | result_2_reg_6720                                                                                           |                                                                                                       |               19 |             64 |
+|  ap_clk      | p_6_in                                                                                                      |                                                                                                       |               27 |             96 |
+|  ap_clk      | n_3_k0data_reg[31]_i_1                                                                                      | ap_rst                                                                                                |               38 |            158 |
+|  ap_clk      |                                                                                                             |                                                                                                       |               90 |            252 |
++--------------+-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

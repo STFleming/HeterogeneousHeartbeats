@@ -1,0 +1,204 @@
+
+
+================================================================
+== Vivado HLS Report for 'load_centres_buffer'
+================================================================
+* Date:           Sun Jun  1 17:06:20 2014
+
+* Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
+* Project:        kernel
+* Solution:       kernel
+* Product family: zynq zynq_fpv6 
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |  10.00|      8.75|        1.25|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    7|    ?|    7|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+------------+----------+-----------+-----------+----------------+----------+
+        |          |      Latency     | Iteration|  Initiation Interval  |      Trip      |          |
+        | Loop Name| min |     max    |  Latency |  achieved |   target  |      Count     | Pipelined|
+        +----------+-----+------------+----------+-----------+-----------+----------------+----------+
+        |- Loop 1  |    0|  1073741829|         8|          1|          1| 0 ~ 1073741823 |    yes   |
+        |- Loop 2  |    4|           ?|         3|          2|          1|      1 ~ ?     |    yes   |
+        +----------+-----+------------+----------+-----------+-----------+----------------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|Expression       |        -|      -|       0|    190|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        2|      -|       0|      0|
+|Multiplexer      |        -|      -|       -|     96|
+|Register         |        -|      -|     234|      -|
+|ShiftMemory      |        -|      -|       0|     31|
++-----------------+---------+-------+--------+-------+
+|Total            |        2|      0|     234|    317|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |    ~0   |      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    +--------------+--------------------------------+---------+------+-----+------+-------------+
+    |    Memory    |             Module             | BRAM_18K| Words| Bits| Banks| W*Bits*Banks|
+    +--------------+--------------------------------+---------+------+-----+------+-------------+
+    |int_buffer_U  |load_centres_buffer_int_buffer  |        2|   768|   32|     1|        24576|
+    +--------------+--------------------------------+---------+------+-----+------+-------------+
+    |Total         |                                |        2|   768|   32|     1|        24576|
+    +--------------+--------------------------------+---------+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Shift register: 
+    +-------------------+---+----+-----+-----------+
+    |        Name       | FF| LUT| Bits| Const Bits|
+    +-------------------+---+----+-----+-----------+
+    |exitcond3_reg_406  |  0|   1|    1|          0|
+    |indvar_reg_193     |  0|  30|   30|          0|
+    +-------------------+---+----+-----+-----------+
+    |Total              |  0|  31|   31|          0|
+    +-------------------+---+----+-----+-----------+
+
+    * Expression: 
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |i_V_fu_319_p2          |     +    |      0|  0|   8|           8|           1|
+    |indvar_next_fu_297_p2  |     +    |      0|  0|  30|          30|           1|
+    |tmp_12_1_fu_352_p2     |     +    |      0|  0|  11|          11|           1|
+    |tmp_12_2_fu_374_p2     |     +    |      0|  0|  11|          11|           2|
+    |tmp_6_add_i_fu_268_p2  |     +    |      0|  0|  13|          13|           4|
+    |tmp_5_fu_262_p2        |     -    |      0|  0|  13|          13|          13|
+    |tmp_9_fu_341_p2        |     -    |      0|  0|  11|          11|          11|
+    |ap_sig_bdd_79          |    and   |      0|  0|   1|           1|           1|
+    |exitcond3_fu_292_p2    |   icmp   |      0|  0|  38|          30|          30|
+    |isIter0_fu_303_p2      |   icmp   |      0|  0|  38|          30|           1|
+    |tmp_10_fu_363_p2       |   icmp   |      0|  0|   8|           8|           8|
+    |tmp_7_fu_314_p2        |   icmp   |      0|  0|   8|           8|           8|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |Total                  |          |      0|  0| 190|         174|          81|
+    +-----------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |indvar_phi_fu_197_p4  |  30|          2|   30|         60|
+    |indvar_reg_193        |  30|          2|   30|         60|
+    |int_buffer_address0   |  10|          3|   10|         30|
+    |int_buffer_address1   |  10|          3|   10|         30|
+    |t_V_phi_fu_209_p4     |   8|          2|    8|         16|
+    |t_V_reg_205           |   8|          2|    8|         16|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 |  96|         14|   96|        212|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------+----+-----+-----------+
+    |              Name              | FF | Bits| Const Bits|
+    +--------------------------------+----+-----+-----------+
+    |ap_CS_fsm                       |   3|    3|          0|
+    |ap_reg_ppiten_pp0_it0           |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it1           |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it2           |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it3           |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it4           |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it5           |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it6           |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it7           |   1|    1|          0|
+    |ap_reg_ppiten_pp1_it0           |   1|    1|          0|
+    |ap_reg_ppiten_pp1_it1           |   1|    1|          0|
+    |bus_addr_read_reg_419           |  32|   32|          0|
+    |bus_addr_reg_390                |  30|   32|          2|
+    |exitcond3_reg_406               |   1|    1|          0|
+    |i_V_reg_428                     |   8|    8|          0|
+    |indvar_next_reg_410             |  30|   30|          0|
+    |indvar_reg_193                  |  30|   30|          0|
+    |isIter0_reg_415                 |   1|    1|          0|
+    |t_V_reg_205                     |   8|    8|          0|
+    |tmp_10_reg_448                  |   1|    1|          0|
+    |tmp_6_add_i32_shr_cast_reg_401  |  30|   32|          2|
+    |tmp_6_add_i32_shr_reg_396       |  30|   30|          0|
+    |tmp_7_reg_424                   |   1|    1|          0|
+    |tmp_8_reg_452                   |   8|   64|         56|
+    |tmp_9_reg_433                   |  11|   11|          0|
+    +--------------------------------+----+-----+-----------+
+    |Total                           | 234|  294|         60|
+    +--------------------------------+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+---------------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++-------------------------+-----+-----+------------+---------------------+--------------+
+|ap_clk                   |  in |    1| ap_ctrl_hs | load_centres_buffer | return value |
+|ap_rst                   |  in |    1| ap_ctrl_hs | load_centres_buffer | return value |
+|ap_start                 |  in |    1| ap_ctrl_hs | load_centres_buffer | return value |
+|ap_done                  | out |    1| ap_ctrl_hs | load_centres_buffer | return value |
+|ap_idle                  | out |    1| ap_ctrl_hs | load_centres_buffer | return value |
+|ap_ready                 | out |    1| ap_ctrl_hs | load_centres_buffer | return value |
+|offset                   |  in |   32|   ap_none  |        offset       |    scalar    |
+|bus_r_req_din            | out |    1|   ap_bus   |        bus_r        |    pointer   |
+|bus_r_req_full_n         |  in |    1|   ap_bus   |        bus_r        |    pointer   |
+|bus_r_req_write          | out |    1|   ap_bus   |        bus_r        |    pointer   |
+|bus_r_rsp_empty_n        |  in |    1|   ap_bus   |        bus_r        |    pointer   |
+|bus_r_rsp_read           | out |    1|   ap_bus   |        bus_r        |    pointer   |
+|bus_r_address            | out |   32|   ap_bus   |        bus_r        |    pointer   |
+|bus_r_datain             |  in |   32|   ap_bus   |        bus_r        |    pointer   |
+|bus_r_dataout            | out |   32|   ap_bus   |        bus_r        |    pointer   |
+|bus_r_size               | out |   32|   ap_bus   |        bus_r        |    pointer   |
+|k_V                      |  in |    8|   ap_none  |         k_V         |    scalar    |
+|buffer_0_value_address0  | out |    8|  ap_memory |    buffer_0_value   |     array    |
+|buffer_0_value_ce0       | out |    1|  ap_memory |    buffer_0_value   |     array    |
+|buffer_0_value_we0       | out |    1|  ap_memory |    buffer_0_value   |     array    |
+|buffer_0_value_d0        | out |   32|  ap_memory |    buffer_0_value   |     array    |
+|buffer_1_value_address0  | out |    8|  ap_memory |    buffer_1_value   |     array    |
+|buffer_1_value_ce0       | out |    1|  ap_memory |    buffer_1_value   |     array    |
+|buffer_1_value_we0       | out |    1|  ap_memory |    buffer_1_value   |     array    |
+|buffer_1_value_d0        | out |   32|  ap_memory |    buffer_1_value   |     array    |
+|buffer_2_value_address0  | out |    8|  ap_memory |    buffer_2_value   |     array    |
+|buffer_2_value_ce0       | out |    1|  ap_memory |    buffer_2_value   |     array    |
+|buffer_2_value_we0       | out |    1|  ap_memory |    buffer_2_value   |     array    |
+|buffer_2_value_d0        | out |   32|  ap_memory |    buffer_2_value   |     array    |
++-------------------------+-----+-----+------------+---------------------+--------------+
+

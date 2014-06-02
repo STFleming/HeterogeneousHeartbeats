@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Port 'lloyds_kernel_top/n' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="kernel" solutionName="kernel" date="2014-06-01T17:06:20.404+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Setting dangling out port 'load_centres_buffer/bus_r_dataout' to 0." projectName="kernel" solutionName="kernel" date="2014-06-01T17:06:20.247+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Setting dangling out port 'load_points_buffer/bus_r_dataout' to 0." projectName="kernel" solutionName="kernel" date="2014-06-01T17:06:20.169+0100" type="Warning"/>
+        <logs message="@W [SCHED-69] Unable to schedule 'load' operation ('int_buffer_load_2', source/lloyds_kernel_top.cpp:45) on array 'int_buffer' due to limited memory ports." projectName="kernel" solutionName="kernel" date="2014-06-01T17:06:19.800+0100" type="Warning"/>
+        <logs message="@W [SCHED-69] Unable to schedule 'load' operation ('int_buffer_load_2', source/lloyds_kernel_top.cpp:28) on array 'int_buffer' due to limited memory ports." projectName="kernel" solutionName="kernel" date="2014-06-01T17:06:19.678+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Legalizing port name 'store_output_buffer/bus' to 'store_output_buffer/bus_r'." projectName="kernel" solutionName="kernel" date="2014-06-01T17:06:19.642+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Legalizing port name 'load_centres_buffer/bus' to 'load_centres_buffer/bus_r'." projectName="kernel" solutionName="kernel" date="2014-06-01T17:06:19.635+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Legalizing port name 'load_points_buffer/bus' to 'load_points_buffer/bus_r'." projectName="kernel" solutionName="kernel" date="2014-06-01T17:06:19.627+0100" type="Warning"/>
+        <logs message="@W [HLS-40] Directive 'RESOURCE' for core 'AddSubnS' cannot be applied: Variable 'tmp3' has no assigment in 'tree_adder'." projectName="kernel" solutionName="kernel" date="2014-06-01T17:06:06.394+0100" type="Warning"/>
+        <logs message="@W [HLS-40] Directive 'RESOURCE' for core 'AddSubnS' cannot be applied: Variable 'tmp3' has no assigment in 'tree_adder'." projectName="kernel" solutionName="kernel" date="2014-06-01T17:06:01.139+0100" type="Warning"/>
+        <logs message="@W [HLS-40] No /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/solution1/solution1.aps file found." projectName="kernel" solutionName="kernel" date="2014-06-01T17:05:35.493+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="@W [HLS-40] No /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/solution1/solution1.aps file found." projectName="kernel" solutionName="kernel" date="2014-06-01T17:06:42.439+0100" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
