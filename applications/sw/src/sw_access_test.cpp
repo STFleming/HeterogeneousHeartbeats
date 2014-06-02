@@ -59,30 +59,37 @@ int main()
 	XLloyds_kernel_top_SetData_points_addr(&kernel_dev, INPUT_FRAME_ADDR);
 	XLloyds_kernel_top_SetCentres_in_addr(&kernel_dev, INPUT_FRAME_ADDR);
 	XLloyds_kernel_top_SetOutput_addr(&kernel_dev, OUTPUT_FRAME_ADDR);
-	XLloyds_kernel_top_SetN(&kernel_dev, 3);
-	XLloyds_kernel_top_SetK(&kernel_dev, 256);
+	XLloyds_kernel_top_SetN(&kernel_dev, (1024*1024)-1);
+	XLloyds_kernel_top_SetK(&kernel_dev, 4);
 
 	//Setting the parameters of the combiner 
 	XCombiner_top combiner_dev = setup_XCombiner_top();
 	XCombiner_top_SetData_points_in_addr(&combiner_dev, INPUT_FRAME_ADDR);
 	XCombiner_top_SetKernel_info_in_addr(&combiner_dev, KERNEL_INTERMEDIATE_ADDR);
 	XCombiner_top_SetCentres_out_addr(&combiner_dev,CLUSTER_CENTER_ADDR);
-	XCombiner_top_SetN(&combiner_dev, 3);
-	XCombiner_top_SetK(&combiner_dev, 256);	
+	XCombiner_top_SetN(&combiner_dev, (1024*1024)-1);
+	XCombiner_top_SetK(&combiner_dev, 4);	
 //------------------------------------------------------------------------------------
 	printf("Cores have been fully initialised.\n");
 
 	//this will be amazing if this magically works......
 	//start the kernel
-	XLloyds_kernel_top_Start(&kernel_dev);
 	printf("Started the kernel core\n");
-	while(XLloyds_kernel_top_IsDone(&kernel_dev) != 1) {} //block for the first hardware stage
-	printf("Kernel core completed,\nStarting the combiner core.\n");
+	int i=0; //incrementor to keep track of the block address
+	for(i=0; i<=((1024*1024)/(16*3)); i++)
+	{
+		XLloyds_kernel_top_SetBlock_address(&kernel_dev, i*16);
+		XLloyds_kernel_top_Start(&kernel_dev);
+		while(XLloyds_kernel_top_IsDone(&kernel_dev) != 1) { } //block for the first hardware stage
+		printf(".");
+	}
+	printf("\nKernel core completed,\nStarting the combiner core.\n");
 	XCombiner_top_Start(&combiner_dev);
-	while(XCombiner_top_IsDone(&combiner_dev) != 1) {} //block for the second hardware stage
-
+	while(XCombiner_top_IsDone(&combiner_dev) != 1) {printf("."); } //block for the second hardware stage
 	//One shot operation is now completed, attempting to print result
-	
+	printf("\n");
+
+	printf("Combiner Core is complete...\nDisplaying output frame\n");	
 	cv::Mat outFrame;
 	outFrame = hw_outputFrame;
 	imshow("Test_image", outFrame);
