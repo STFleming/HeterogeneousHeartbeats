@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
-| Date             : Fri Apr 25 16:11:54 2014
+| Date             : Wed Apr 30 12:02:52 2014
 | Host             : ee-boxer0 running 64-bit Ubuntu 10.04.4 LTS
 | Command          : report_power -file zynq_system_wrapper_power_routed.rpt -pb zynq_system_wrapper_power_summary_routed.pb
 | Design           : zynq_system_wrapper
@@ -30,13 +30,13 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.494 |
-| Dynamic (W)              | 1.349 |
-| Device Static (W)        | 0.145 |
+| Total On-Chip Power (W)  | 1.611 |
+| Dynamic (W)              | 1.463 |
+| Device Static (W)        | 0.148 |
 | Total Off-Chip Power (W) | 0.121 |
 | Effective TJA (C/W)      | 11.5  |
-| Max Ambient (C)          | 67.8  |
-| Junction Temperature (C) | 42.2  |
+| Max Ambient (C)          | 66.4  |
+| Junction Temperature (C) | 43.6  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -50,19 +50,21 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.004 |        2 |       --- |             --- |
-| Slice Logic              |     0.001 |     3592 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |     1257 |     53200 |            2.36 |
-|   Register               |    <0.001 |     1580 |    106400 |            1.48 |
-|   CARRY4                 |    <0.001 |       80 |     13300 |            0.60 |
-|   LUT as Distributed RAM |    <0.001 |        8 |     17400 |            0.04 |
-|   LUT as Shift Register  |    <0.001 |      190 |     17400 |            1.09 |
-|   F7/F8 Muxes            |    <0.001 |        1 |     53200 |           <0.01 |
-|   Others                 |     0.000 |      186 |       --- |             --- |
-| Signals                  |     0.001 |     2613 |       --- |             --- |
+| Clocks                   |     0.010 |        6 |       --- |             --- |
+| Slice Logic              |     0.002 |    29050 |       --- |             --- |
+|   LUT as Logic           |     0.002 |    17429 |     53200 |           32.76 |
+|   Register               |    <0.001 |     4420 |    106400 |            4.15 |
+|   CARRY4                 |    <0.001 |     2998 |     13300 |           22.54 |
+|   LUT as Distributed RAM |    <0.001 |       76 |     17400 |            0.43 |
+|   F7/F8 Muxes            |    <0.001 |      391 |     53200 |            0.73 |
+|   LUT as Shift Register  |    <0.001 |      193 |     17400 |            1.10 |
+|   Others                 |     0.000 |      483 |       --- |             --- |
+| Signals                  |     0.003 |    25966 |       --- |             --- |
+| MMCM                     |     0.105 |        1 |         4 |           25.00 |
+| DSPs                     |     0.000 |       38 |       220 |           17.27 |
 | PS7                      |     1.343 |        1 |       --- |             --- |
-| Static Power             |     0.145 |          |           |                 |
-| Total                    |     1.494 |          |           |                 |
+| Static Power             |     0.148 |          |           |                 |
+| Total                    |     1.611 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,8 +74,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.019 |       0.006 |      0.014 |
-| Vccaux    |       1.800 |     0.020 |       0.000 |      0.020 |
+| Vccint    |       1.000 |     0.030 |       0.015 |      0.014 |
+| Vccaux    |       1.800 |     0.079 |       0.058 |      0.020 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -85,7 +87,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.419 |       0.391 |      0.028 |
+| Vccpint   |       1.000 |     0.420 |       0.391 |      0.029 |
 | Vccpaux   |       1.800 |     0.067 |       0.057 |      0.010 |
 | Vccpll    |       1.800 |     0.116 |       0.113 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.511 |       0.509 |      0.002 |
@@ -132,12 +134,16 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+----------------------------------------------------------------+----------------------------------------------------------------+-----------------+
-| Clock                                                          | Domain                                                         | Constraint (ns) |
-+----------------------------------------------------------------+----------------------------------------------------------------+-----------------+
-| zynq_system_i/processing_system7_0/inst/FCLK_CLK0              | zynq_system_i/processing_system7_0/inst/FCLK_CLK0              |            20.0 |
-| zynq_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0] | zynq_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0] |            20.0 |
-+----------------------------------------------------------------+----------------------------------------------------------------+-----------------+
++-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                     | Domain                                                                                    | Constraint (ns) |
++-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+-----------------+
+| zynq_system_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1_zynq_system_clk_wiz_0_0     | zynq_system_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1_zynq_system_clk_wiz_0_0     |            20.0 |
+| zynq_system_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clkfbout_buf_zynq_system_clk_wiz_0_0 | zynq_system_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clkfbout_buf_zynq_system_clk_wiz_0_0 |            20.0 |
+| zynq_system_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clkfbout_zynq_system_clk_wiz_0_0     | zynq_system_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clkfbout_zynq_system_clk_wiz_0_0     |            20.0 |
+| zynq_system_i/clk_wiz_0/inst/clk_out1                                                     | zynq_system_i/clk_wiz_0/inst/clk_out1                                                     |            20.0 |
+| zynq_system_i/processing_system7_0/inst/FCLK_CLK0                                         | zynq_system_i/processing_system7_0/inst/FCLK_CLK0                                         |            20.0 |
+| zynq_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]                            | zynq_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]                            |            20.0 |
++-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -146,22 +152,48 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| Name                                                                                                                                                                                             | Power (W) |
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| zynq_system_wrapper                                                                                                                                                                              |     1.349 |
-|   zynq_system_i                                                                                                                                                                                  |     1.349 |
-|     axi_mem_intercon                                                                                                                                                                             |     0.001 |
-|       s00_couplers/auto_pc                                                                                                                                                                       |     0.001 |
-|         inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_31_0_4      |    <0.001 |
-|         inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_31_0_4 |    <0.001 |
-|     hhb_query_0                                                                                                                                                                                  |     0.002 |
-|     processing_system7_0                                                                                                                                                                         |     1.343 |
-|       inst                                                                                                                                                                                       |     1.343 |
-|     processing_system7_0_axi_periph                                                                                                                                                              |     0.002 |
-|       s00_couplers/auto_pc                                                                                                                                                                       |     0.002 |
-|     rst_processing_system7_0_50M                                                                                                                                                                 |    <0.001 |
-|       U0                                                                                                                                                                                         |    <0.001 |
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| Name                                                                                                                                                                                                     | Power (W) |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| zynq_system_wrapper                                                                                                                                                                                      |     1.463 |
+|   zynq_system_i                                                                                                                                                                                          |     1.463 |
+|     axi_clock_converter_0                                                                                                                                                                                |     0.003 |
+|       inst                                                                                                                                                                                               |     0.003 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_0_5                                           |    <0.001 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_6_8                                           |    <0.001 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_0_5                                           |    <0.001 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_12_17                                         |    <0.001 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_18_23                                         |    <0.001 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_24_29                                         |    <0.001 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_30_33                                         |    <0.001 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_6_11                                          |    <0.001 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_0_5                                          |    <0.001 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_6_8                                          |    <0.001 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_0_5                                          |    <0.001 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_12_17                                        |    <0.001 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_18_23                                        |    <0.001 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_24_29                                        |    <0.001 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_30_35                                        |    <0.001 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_6_11                                         |    <0.001 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_0_0                                          |    <0.001 |
+|         gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_15_1_1                                          |    <0.001 |
+|     axi_mem_intercon                                                                                                                                                                                     |     0.002 |
+|       m00_couplers/auto_pc                                                                                                                                                                               |     0.001 |
+|         inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_31_0_0 |    <0.001 |
+|         inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_31_0_5              |    <0.001 |
+|         inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg_0_31_0_4         |    <0.001 |
+|       xbar                                                                                                                                                                                               |    <0.001 |
+|     clk_wiz_0                                                                                                                                                                                            |     0.109 |
+|       inst                                                                                                                                                                                               |     0.109 |
+|     hhb_query_0                                                                                                                                                                                          |     0.002 |
+|     hwfreqscale_simple_adder_0                                                                                                                                                                           |    <0.001 |
+|     processing_system7_0                                                                                                                                                                                 |     1.344 |
+|       inst                                                                                                                                                                                               |     1.344 |
+|     processing_system7_0_axi_periph                                                                                                                                                                      |     0.002 |
+|       s00_couplers/auto_pc                                                                                                                                                                               |     0.002 |
+|       xbar                                                                                                                                                                                               |    <0.001 |
+|     rst_processing_system7_0_50M                                                                                                                                                                         |    <0.001 |
+|       U0                                                                                                                                                                                                 |    <0.001 |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 
 

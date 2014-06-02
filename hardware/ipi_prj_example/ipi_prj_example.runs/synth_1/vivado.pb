@@ -26,6 +26,10 @@ X/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_
  Loaded user IP repository '%s'.
 1135*coregen2a
 M/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hhb_query2default:defaultZ19-1700
+Æ
+ Loaded user IP repository '%s'.
+1135*coregen2p
+\/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hwfreqscale_simple_adder2default:defaultZ19-1700
 ä
 "Loaded Vivado IP repository '%s'.
 1332*coregen2J
@@ -51,7 +55,7 @@ Starting synthesis...
 xc7z0202default:defaultZ17-349
 ú
 %s*synth2å
-xStarting RTL Elaboration : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 807.328 ; gain = 184.070
+xStarting RTL Elaboration : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 855.750 ; gain = 226.492
 2default:default
 ò
 synthesizing module '%s'638*oasys2'
@@ -62,11 +66,11 @@ xStarting RTL Elaboration : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memo
 Fall outputs are unconnected for this instance and logic may be removed3605*oasys2†
 â/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system_wrapper.v2default:default2
 692default:default8@Z8-4446
-ä
+ã
 synthesizing module '%s'638*oasys2
 zynq_system2default:default2ò
-Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
-6992default:default8@Z8-638
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+16682default:default8@Z8-638
 Ã
 synthesizing module '%s'638*oasys2
 GND2default:default2b
@@ -91,20 +95,6132 @@ L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2
 12default:default2b
 L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 357482default:default8@Z8-256
+Â
+synthesizing module '%s'638*oasys28
+$zynq_system_axi_clock_converter_0_262default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_axi_clock_converter_0_26/synth/zynq_system_axi_clock_converter_0_26.v2default:default2
+572default:default8@Z8-638
+Ö
+synthesizing module '%s'638*oasys2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:default2Û
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_cc_6/axi_clock_converter_v2_1/hdl/verilog/axi_clock_converter_v2_1_axi_clock_converter.v2default:default2
+712default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_S_AXI_ACLK_RATIO bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_M_AXI_ACLK_RATIO bound to: 2 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_AXI_IS_ACLK_ASYNC bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_AXI_SUPPORTS_WRITE bound to: 1 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_AXI_SUPPORTS_READ bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter P_AXI4 bound to: 0 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter P_AXI3 bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter P_AXILITE bound to: 2 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter P_LIGHT_WT bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter P_FULLY_REG bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter P_LUTRAM_ASYNC bound to: 12 - type: integer 
+2default:default
+I
+%s*synth2:
+&	Parameter P_SI_LT_MI bound to: 1'b1 
+2default:default
+]
+%s*synth2N
+:	Parameter P_ROUNDING_OFFSET bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter P_ACLK_RATIO bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AWUSER_RIGHT bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AWUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_AWQOS_RIGHT bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_AWQOS_WIDTH bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AWREGION_RIGHT bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AWREGION_WIDTH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AWPROT_RIGHT bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AWPROT_WIDTH bound to: 3 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_AWCACHE_RIGHT bound to: 3 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_AWCACHE_WIDTH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AWLOCK_RIGHT bound to: 3 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AWLOCK_WIDTH bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_AWBURST_RIGHT bound to: 3 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_AWBURST_WIDTH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AWSIZE_RIGHT bound to: 3 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AWSIZE_WIDTH bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_AWLEN_RIGHT bound to: 3 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_AWLEN_WIDTH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AWADDR_RIGHT bound to: 3 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AWADDR_WIDTH bound to: 6 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_AWID_RIGHT bound to: 9 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_AWID_WIDTH bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AW_WIDTH bound to: 9 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_FIFO_AW_WIDTH bound to: 9 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_WUSER_RIGHT bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_WUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_WLAST_RIGHT bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_WLAST_WIDTH bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_WSTRB_RIGHT bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_WSTRB_WIDTH bound to: 4 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_WDATA_RIGHT bound to: 4 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_WDATA_WIDTH bound to: 32 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WID_RIGHT bound to: 36 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WID_WIDTH bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_W_WIDTH bound to: 36 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_FIFO_W_WIDTH bound to: 36 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_BUSER_RIGHT bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_BUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_BRESP_RIGHT bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_BRESP_WIDTH bound to: 2 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_BID_RIGHT bound to: 2 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_BID_WIDTH bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_B_WIDTH bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_FIFO_B_WIDTH bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ARUSER_RIGHT bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ARUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_ARQOS_RIGHT bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_ARQOS_WIDTH bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_ARREGION_RIGHT bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_ARREGION_WIDTH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ARPROT_RIGHT bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ARPROT_WIDTH bound to: 3 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_ARCACHE_RIGHT bound to: 3 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_ARCACHE_WIDTH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ARLOCK_RIGHT bound to: 3 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ARLOCK_WIDTH bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_ARBURST_RIGHT bound to: 3 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_ARBURST_WIDTH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ARSIZE_RIGHT bound to: 3 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ARSIZE_WIDTH bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_ARLEN_RIGHT bound to: 3 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_ARLEN_WIDTH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ARADDR_RIGHT bound to: 3 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ARADDR_WIDTH bound to: 6 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_ARID_RIGHT bound to: 9 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_ARID_WIDTH bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AR_WIDTH bound to: 9 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_FIFO_AR_WIDTH bound to: 9 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_RUSER_RIGHT bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_RUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_RLAST_RIGHT bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_RLAST_WIDTH bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_RRESP_RIGHT bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_RRESP_WIDTH bound to: 2 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_RDATA_RIGHT bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_RDATA_WIDTH bound to: 32 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_RID_RIGHT bound to: 34 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RID_WIDTH bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_R_WIDTH bound to: 34 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_FIFO_R_WIDTH bound to: 34 - type: integer 
+2default:default
+›
+synthesizing module '%s'638*oasys2(
+fifo_generator_v11_02default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0.vhd2default:default2
+6612default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DIN_WIDTH bound to: 18 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_WIDTH bound to: 18 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+2default:default
+_
+%s*synth2P
+<	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_PRIM_FIFO_TYPE bound to: 4kx4 - type: string 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+l
+%s*synth2]
+I	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 1022 - type: integer 
+2default:default
+l
+%s*synth2]
+I	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 1021 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_RD_DEPTH bound to: 1024 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_RD_FREQ bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_RD_PNTR_WIDTH bound to: 10 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_WR_DEPTH bound to: 1024 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_WR_FREQ bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_PNTR_WIDTH bound to: 10 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_INTERFACE_TYPE bound to: 2 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 2 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_AXI_LEN_WIDTH bound to: 4 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXI_LOCK_WIDTH bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 12 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 12 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 12 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 12 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 12 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 11 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 512x36 - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DIN_WIDTH_WACH bound to: 9 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_WDCH bound to: 36 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DIN_WIDTH_RACH bound to: 9 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_RDCH bound to: 34 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_WDCH bound to: 16 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_RDCH bound to: 16 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 4 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+o
+%s*synth2`
+L	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 15 - type: integer 
+2default:default
+o
+%s*synth2`
+L	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 15 - type: integer 
+2default:default
+o
+%s*synth2`
+L	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 15 - type: integer 
+2default:default
+o
+%s*synth2`
+L	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 15 - type: integer 
+2default:default
+o
+%s*synth2`
+L	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 15 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+p
+%s*synth2a
+M	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 13 - type: integer 
+2default:default
+p
+%s*synth2a
+M	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 13 - type: integer 
+2default:default
+p
+%s*synth2a
+M	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 13 - type: integer 
+2default:default
+p
+%s*synth2a
+M	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 13 - type: integer 
+2default:default
+p
+%s*synth2a
+M	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 13 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1021 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+2default:default
+È
+synthesizing module '%s'638*oasys2.
+fifo_generator_v11_0_synth2default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd2default:default2
+6782default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DIN_WIDTH bound to: 18 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_WIDTH bound to: 18 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+2default:default
+_
+%s*synth2P
+<	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_PRIM_FIFO_TYPE bound to: 4kx4 - type: string 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+l
+%s*synth2]
+I	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 1022 - type: integer 
+2default:default
+l
+%s*synth2]
+I	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 1021 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_RD_DEPTH bound to: 1024 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_RD_FREQ bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_RD_PNTR_WIDTH bound to: 10 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_WR_DEPTH bound to: 1024 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_WR_FREQ bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_PNTR_WIDTH bound to: 10 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_INTERFACE_TYPE bound to: 2 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 2 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_AXI_LEN_WIDTH bound to: 4 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXI_LOCK_WIDTH bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 12 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 12 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 12 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 12 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 12 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 11 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 512x36 - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DIN_WIDTH_WACH bound to: 9 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_WDCH bound to: 36 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DIN_WIDTH_RACH bound to: 9 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_RDCH bound to: 34 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_WDCH bound to: 16 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_RDCH bound to: 16 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 4 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+o
+%s*synth2`
+L	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 15 - type: integer 
+2default:default
+o
+%s*synth2`
+L	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 15 - type: integer 
+2default:default
+o
+%s*synth2`
+L	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 15 - type: integer 
+2default:default
+o
+%s*synth2`
+L	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 15 - type: integer 
+2default:default
+o
+%s*synth2`
+L	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 15 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+p
+%s*synth2a
+M	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 13 - type: integer 
+2default:default
+p
+%s*synth2a
+M	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 13 - type: integer 
+2default:default
+p
+%s*synth2a
+M	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 13 - type: integer 
+2default:default
+p
+%s*synth2a
+M	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 13 - type: integer 
+2default:default
+p
+%s*synth2a
+M	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 13 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1021 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+2default:default
+Ÿ
+synthesizing module '%s'638*oasys2&
+fifo_generator_top2default:default2‡
+…/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
+2712default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 9 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 9 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 15 - type: integer 
+2default:default
+i
+%s*synth2Z
+F	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+k
+%s*synth2\
+H	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 13 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PRIM_FIFO_TYPE bound to: 512x36 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+2default:default
+_
+%s*synth2P
+<	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_RD_FREQ bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_WR_FREQ bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+2default:default
+È
+synthesizing module '%s'638*oasys2*
+fifo_generator_ramfifo2default:default2Ï
+’/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
+3082default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 9 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 9 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+k
+%s*synth2\
+H	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 13 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 15 - type: integer 
+2default:default
+i
+%s*synth2Z
+F	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 2 - type: integer 
+2default:default
+ﬂ
+synthesizing module '%s'638*oasys2%
+reset_blk_ramfifo2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+2222default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_RST_MAXFAN bound to: 2 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_RST_MAXFAN bound to: 3 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+2default:default
+Å
+&Detected and applied attribute %s = %s3620*oasys2
+	async_reg2default:default2
+true2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+2282default:default8@Z8-4472
+Å
+&Detected and applied attribute %s = %s3620*oasys2
+	async_reg2default:default2
+true2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+2292default:default8@Z8-4472
+Å
+&Detected and applied attribute %s = %s3620*oasys2
+	async_reg2default:default2
+true2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+2312default:default8@Z8-4472
+Å
+&Detected and applied attribute %s = %s3620*oasys2
+	async_reg2default:default2
+true2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+2322default:default8@Z8-4472
+Å
+&Detected and applied attribute %s = %s3620*oasys2
+	async_reg2default:default2
+true2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+2342default:default8@Z8-4472
+Å
+&Detected and applied attribute %s = %s3620*oasys2
+	async_reg2default:default2
+true2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+2352default:default8@Z8-4472
+Å
+&Detected and applied attribute %s = %s3620*oasys2
+	async_reg2default:default2
+true2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+5912default:default8@Z8-4472
+Å
+&Detected and applied attribute %s = %s3620*oasys2
+	async_reg2default:default2
+true2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+5922default:default8@Z8-4472
+Å
+&Detected and applied attribute %s = %s3620*oasys2
+	async_reg2default:default2
+true2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+5932default:default8@Z8-4472
+ö
+%done synthesizing module '%s' (%s#%s)256*oasys2%
+reset_blk_ramfifo2default:default2
+32default:default2
+12default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+2222default:default8@Z8-256
+Œ
+synthesizing module '%s'638*oasys2
+	input_blk2default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
+2782default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 9 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PKTFIFO_DATA_WIDTH bound to: 9 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 9 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+â
+%done synthesizing module '%s' (%s#%s)256*oasys2
+	input_blk2default:default2
+42default:default2
+12default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
+2782default:default8@Z8-256
+…
+synthesizing module '%s'638*oasys2
+memory2default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
+2152default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 9 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 9 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_LARGER_DEPTH bound to: 16 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SMALLER_DATA_WIDTH bound to: 9 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+≈
+synthesizing module '%s'638*oasys2
+dmem2default:default2⁄
+√/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+1652default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 9 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 9 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_LARGER_DEPTH bound to: 16 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SMALLER_DATA_WIDTH bound to: 9 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+˚
+&Detected and applied attribute %s = %s3620*oasys2
+	ram_style2default:default2
+distributed2default:default2⁄
+√/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+1792default:default8@Z8-4472
+Ä
+%done synthesizing module '%s' (%s#%s)256*oasys2
+dmem2default:default2
+52default:default2
+12default:default2⁄
+√/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+1652default:default8@Z8-256
+Ñ
+%done synthesizing module '%s' (%s#%s)256*oasys2
+memory2default:default2
+62default:default2
+12default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
+2152default:default8@Z8-256
+”
+synthesizing module '%s'638*oasys2
+clk_x_pntrs2default:default2·
+ /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/clk_x_pntrs.vhd2default:default2
+2132default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+⁄
+synthesizing module '%s'638*oasys2#
+synchronizer_ff2default:default2‰
+Õ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/synchronizer_ff.vhd2default:default2
+1382default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter C_WIDTH bound to: 4 - type: integer 
+2default:default
+˛
+&Detected and applied attribute %s = %s3620*oasys2
+	async_reg2default:default2
+true2default:default2‰
+Õ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/synchronizer_ff.vhd2default:default2
+1432default:default8@Z8-4472
+ï
+%done synthesizing module '%s' (%s#%s)256*oasys2#
+synchronizer_ff2default:default2
+72default:default2
+12default:default2‰
+Õ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/synchronizer_ff.vhd2default:default2
+1382default:default8@Z8-256
+é
+%done synthesizing module '%s' (%s#%s)256*oasys2
+clk_x_pntrs2default:default2
+82default:default2
+12default:default2·
+ /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/clk_x_pntrs.vhd2default:default2
+2132default:default8@Z8-256
+Õ
+synthesizing module '%s'638*oasys2
+rd_logic2default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_logic.vhd2default:default2
+2392default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+k
+%s*synth2\
+H	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 13 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+”
+synthesizing module '%s'638*oasys2
+rd_bin_cntr2default:default2·
+ /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_bin_cntr.vhd2default:default2
+1512default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+é
+%done synthesizing module '%s' (%s#%s)256*oasys2
+rd_bin_cntr2default:default2
+92default:default2
+12default:default2·
+ /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_bin_cntr.vhd2default:default2
+1512default:default8@Z8-256
+·
+synthesizing module '%s'638*oasys2&
+rd_status_flags_as2default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_status_flags_as.vhd2default:default2
+1712default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+À
+synthesizing module '%s'638*oasys2
+compare2default:default2›
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/compare.vhd2default:default2
+1382default:default8@Z8-638
+S
+%s*synth2D
+0	Parameter C_WIDTH bound to: 4 - type: integer 
+2default:default
+á
+%done synthesizing module '%s' (%s#%s)256*oasys2
+compare2default:default2
+102default:default2
+12default:default2›
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/compare.vhd2default:default2
+1382default:default8@Z8-256
+ù
+%done synthesizing module '%s' (%s#%s)256*oasys2&
+rd_status_flags_as2default:default2
+112default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_status_flags_as.vhd2default:default2
+1712default:default8@Z8-256
+À
+synthesizing module '%s'638*oasys2
+rd_fwft2default:default2›
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
+1542default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+±
+default block is never used226*oasys2›
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
+2552default:default8@Z8-226
+±
+default block is never used226*oasys2›
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
+5792default:default8@Z8-226
+±
+default block is never used226*oasys2›
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
+6642default:default8@Z8-226
+á
+%done synthesizing module '%s' (%s#%s)256*oasys2
+rd_fwft2default:default2
+122default:default2
+12default:default2›
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
+1542default:default8@Z8-256
+â
+%done synthesizing module '%s' (%s#%s)256*oasys2
+rd_logic2default:default2
+132default:default2
+12default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_logic.vhd2default:default2
+2392default:default8@Z8-256
+Õ
+synthesizing module '%s'638*oasys2
+wr_logic2default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_logic.vhd2default:default2
+2312default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 15 - type: integer 
+2default:default
+i
+%s*synth2Z
+F	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+2default:default
+”
+synthesizing module '%s'638*oasys2
+wr_bin_cntr2default:default2·
+ /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_bin_cntr.vhd2default:default2
+1552default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+è
+%done synthesizing module '%s' (%s#%s)256*oasys2
+wr_bin_cntr2default:default2
+142default:default2
+12default:default2·
+ /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_bin_cntr.vhd2default:default2
+1552default:default8@Z8-256
+·
+synthesizing module '%s'638*oasys2&
+wr_status_flags_as2default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_status_flags_as.vhd2default:default2
+1722default:default8@Z8-638
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+2default:default
+ù
+%done synthesizing module '%s' (%s#%s)256*oasys2&
+wr_status_flags_as2default:default2
+152default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_status_flags_as.vhd2default:default2
+1722default:default8@Z8-256
+â
+%done synthesizing module '%s' (%s#%s)256*oasys2
+wr_logic2default:default2
+162default:default2
+12default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_logic.vhd2default:default2
+2312default:default8@Z8-256
+–
+synthesizing module '%s'638*oasys2
+
+output_blk2default:default2ﬂ
+»/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
+2682default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 9 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 9 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PKTFIFO_DATA_WIDTH bound to: 9 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+å
+%done synthesizing module '%s' (%s#%s)256*oasys2
+
+output_blk2default:default2
+172default:default2
+12default:default2ﬂ
+»/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
+2682default:default8@Z8-256
+•
+%done synthesizing module '%s' (%s#%s)256*oasys2*
+fifo_generator_ramfifo2default:default2
+182default:default2
+12default:default2Ï
+’/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
+3082default:default8@Z8-256
+ï
+%done synthesizing module '%s' (%s#%s)256*oasys2&
+fifo_generator_top2default:default2
+192default:default2
+12default:default2‡
+…/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
+2712default:default8@Z8-256
+È
+synthesizing module '%s'638*oasys26
+"fifo_generator_top__parameterized02default:default2‡
+…/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
+2712default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DIN_WIDTH bound to: 36 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_WIDTH bound to: 36 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 15 - type: integer 
+2default:default
+i
+%s*synth2Z
+F	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+k
+%s*synth2\
+H	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 13 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PRIM_FIFO_TYPE bound to: 512x36 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+2default:default
+_
+%s*synth2P
+<	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_RD_FREQ bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_WR_FREQ bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+2default:default
+˘
+synthesizing module '%s'638*oasys2:
+&fifo_generator_ramfifo__parameterized02default:default2Ï
+’/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
+3082default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DIN_WIDTH bound to: 36 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_WIDTH bound to: 36 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+k
+%s*synth2\
+H	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 13 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 15 - type: integer 
+2default:default
+i
+%s*synth2Z
+F	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 2 - type: integer 
+2default:default
+ﬁ
+synthesizing module '%s'638*oasys2-
+input_blk__parameterized02default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
+2782default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DIN_WIDTH bound to: 36 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PKTFIFO_DATA_WIDTH bound to: 36 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_WIDTH bound to: 36 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+ö
+%done synthesizing module '%s' (%s#%s)256*oasys2-
+input_blk__parameterized02default:default2
+192default:default2
+12default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
+2782default:default8@Z8-256
+Ÿ
+synthesizing module '%s'638*oasys2*
+memory__parameterized02default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
+2152default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DIN_WIDTH bound to: 36 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_WIDTH bound to: 36 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_LARGER_DEPTH bound to: 16 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_SMALLER_DATA_WIDTH bound to: 36 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+’
+synthesizing module '%s'638*oasys2(
+dmem__parameterized02default:default2⁄
+√/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+1652default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DIN_WIDTH bound to: 36 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_WIDTH bound to: 36 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_LARGER_DEPTH bound to: 16 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_SMALLER_DATA_WIDTH bound to: 36 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+ë
+%done synthesizing module '%s' (%s#%s)256*oasys2(
+dmem__parameterized02default:default2
+192default:default2
+12default:default2⁄
+√/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+1652default:default8@Z8-256
+ï
+%done synthesizing module '%s' (%s#%s)256*oasys2*
+memory__parameterized02default:default2
+192default:default2
+12default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
+2152default:default8@Z8-256
+‡
+synthesizing module '%s'638*oasys2.
+output_blk__parameterized02default:default2ﬂ
+»/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
+2682default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DIN_WIDTH bound to: 36 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_WIDTH bound to: 36 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PKTFIFO_DATA_WIDTH bound to: 36 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+ú
+%done synthesizing module '%s' (%s#%s)256*oasys2.
+output_blk__parameterized02default:default2
+192default:default2
+12default:default2ﬂ
+»/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
+2682default:default8@Z8-256
+µ
+%done synthesizing module '%s' (%s#%s)256*oasys2:
+&fifo_generator_ramfifo__parameterized02default:default2
+192default:default2
+12default:default2Ï
+’/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
+3082default:default8@Z8-256
+•
+%done synthesizing module '%s' (%s#%s)256*oasys26
+"fifo_generator_top__parameterized02default:default2
+192default:default2
+12default:default2‡
+…/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
+2712default:default8@Z8-256
+È
+synthesizing module '%s'638*oasys26
+"fifo_generator_top__parameterized12default:default2‡
+…/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
+2712default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 2 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 2 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 15 - type: integer 
+2default:default
+i
+%s*synth2Z
+F	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+k
+%s*synth2\
+H	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 13 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PRIM_FIFO_TYPE bound to: 512x36 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+2default:default
+_
+%s*synth2P
+<	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_RD_FREQ bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_WR_FREQ bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+2default:default
+˘
+synthesizing module '%s'638*oasys2:
+&fifo_generator_ramfifo__parameterized12default:default2Ï
+’/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
+3082default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 2 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+k
+%s*synth2\
+H	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 13 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 15 - type: integer 
+2default:default
+i
+%s*synth2Z
+F	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 2 - type: integer 
+2default:default
+ﬁ
+synthesizing module '%s'638*oasys2-
+input_blk__parameterized12default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
+2782default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 2 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PKTFIFO_DATA_WIDTH bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 2 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+ö
+%done synthesizing module '%s' (%s#%s)256*oasys2-
+input_blk__parameterized12default:default2
+192default:default2
+12default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
+2782default:default8@Z8-256
+Ÿ
+synthesizing module '%s'638*oasys2*
+memory__parameterized12default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
+2152default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_LARGER_DEPTH bound to: 16 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SMALLER_DATA_WIDTH bound to: 2 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+’
+synthesizing module '%s'638*oasys2(
+dmem__parameterized12default:default2⁄
+√/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+1652default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 2 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 2 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_LARGER_DEPTH bound to: 16 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SMALLER_DATA_WIDTH bound to: 2 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+ë
+%done synthesizing module '%s' (%s#%s)256*oasys2(
+dmem__parameterized12default:default2
+192default:default2
+12default:default2⁄
+√/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+1652default:default8@Z8-256
+ï
+%done synthesizing module '%s' (%s#%s)256*oasys2*
+memory__parameterized12default:default2
+192default:default2
+12default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
+2152default:default8@Z8-256
+‡
+synthesizing module '%s'638*oasys2.
+output_blk__parameterized12default:default2ﬂ
+»/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
+2682default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 2 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PKTFIFO_DATA_WIDTH bound to: 2 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+ú
+%done synthesizing module '%s' (%s#%s)256*oasys2.
+output_blk__parameterized12default:default2
+192default:default2
+12default:default2ﬂ
+»/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
+2682default:default8@Z8-256
+µ
+%done synthesizing module '%s' (%s#%s)256*oasys2:
+&fifo_generator_ramfifo__parameterized12default:default2
+192default:default2
+12default:default2Ï
+’/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
+3082default:default8@Z8-256
+•
+%done synthesizing module '%s' (%s#%s)256*oasys26
+"fifo_generator_top__parameterized12default:default2
+192default:default2
+12default:default2‡
+…/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
+2712default:default8@Z8-256
+È
+synthesizing module '%s'638*oasys26
+"fifo_generator_top__parameterized22default:default2‡
+…/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
+2712default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DIN_WIDTH bound to: 34 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_WIDTH bound to: 34 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 15 - type: integer 
+2default:default
+i
+%s*synth2Z
+F	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+k
+%s*synth2\
+H	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 13 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PRIM_FIFO_TYPE bound to: 512x36 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+2default:default
+_
+%s*synth2P
+<	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_RD_FREQ bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_WR_FREQ bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+2default:default
+˘
+synthesizing module '%s'638*oasys2:
+&fifo_generator_ramfifo__parameterized22default:default2Ï
+’/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
+3082default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DIN_WIDTH bound to: 34 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_WIDTH bound to: 34 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+k
+%s*synth2\
+H	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 13 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 15 - type: integer 
+2default:default
+i
+%s*synth2Z
+F	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 2 - type: integer 
+2default:default
+ﬁ
+synthesizing module '%s'638*oasys2-
+input_blk__parameterized22default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
+2782default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DIN_WIDTH bound to: 34 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PKTFIFO_DATA_WIDTH bound to: 34 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_WIDTH bound to: 34 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+ö
+%done synthesizing module '%s' (%s#%s)256*oasys2-
+input_blk__parameterized22default:default2
+192default:default2
+12default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
+2782default:default8@Z8-256
+Ÿ
+synthesizing module '%s'638*oasys2*
+memory__parameterized22default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
+2152default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DIN_WIDTH bound to: 34 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_WIDTH bound to: 34 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_LARGER_DEPTH bound to: 16 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_SMALLER_DATA_WIDTH bound to: 34 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+’
+synthesizing module '%s'638*oasys2(
+dmem__parameterized22default:default2⁄
+√/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+1652default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DIN_WIDTH bound to: 34 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_WIDTH bound to: 34 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_LARGER_DEPTH bound to: 16 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_SMALLER_DATA_WIDTH bound to: 34 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+ë
+%done synthesizing module '%s' (%s#%s)256*oasys2(
+dmem__parameterized22default:default2
+192default:default2
+12default:default2⁄
+√/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+1652default:default8@Z8-256
+ï
+%done synthesizing module '%s' (%s#%s)256*oasys2*
+memory__parameterized22default:default2
+192default:default2
+12default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
+2152default:default8@Z8-256
+‡
+synthesizing module '%s'638*oasys2.
+output_blk__parameterized22default:default2ﬂ
+»/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
+2682default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DIN_WIDTH bound to: 34 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_WIDTH bound to: 34 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PKTFIFO_DATA_WIDTH bound to: 34 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+ú
+%done synthesizing module '%s' (%s#%s)256*oasys2.
+output_blk__parameterized22default:default2
+192default:default2
+12default:default2ﬂ
+»/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
+2682default:default8@Z8-256
+µ
+%done synthesizing module '%s' (%s#%s)256*oasys2:
+&fifo_generator_ramfifo__parameterized22default:default2
+192default:default2
+12default:default2Ï
+’/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
+3082default:default8@Z8-256
+•
+%done synthesizing module '%s' (%s#%s)256*oasys26
+"fifo_generator_top__parameterized22default:default2
+192default:default2
+12default:default2‡
+…/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
+2712default:default8@Z8-256
+•
+%done synthesizing module '%s' (%s#%s)256*oasys2.
+fifo_generator_v11_0_synth2default:default2
+202default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd2default:default2
+6782default:default8@Z8-256
+ô
+%done synthesizing module '%s' (%s#%s)256*oasys2(
+fifo_generator_v11_02default:default2
+212default:default2
+12default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0.vhd2default:default2
+6612default:default8@Z8-256
+Ú
+Ginstance '%s' of module '%s' requires %s connections, but only %s given350*oasys2!
+asyncfifo_axi2default:default2(
+fifo_generator_v11_02default:default2
+2302default:default2
+2282default:default2Û
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_cc_6/axi_clock_converter_v2_1/hdl/verilog/axi_clock_converter_v2_1_axi_clock_converter.v2default:default2
+7992default:default8@Z8-350
+¡
+%done synthesizing module '%s' (%s#%s)256*oasys2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:default2
+222default:default2
+12default:default2Û
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_cc_6/axi_clock_converter_v2_1/hdl/verilog/axi_clock_converter_v2_1_axi_clock_converter.v2default:default2
+712default:default8@Z8-256
+°
+%done synthesizing module '%s' (%s#%s)256*oasys28
+$zynq_system_axi_clock_converter_0_262default:default2
+232default:default2
+12default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_axi_clock_converter_0_26/synth/zynq_system_axi_clock_converter_0_26.v2default:default2
+572default:default8@Z8-256
+Æ
+Ginstance '%s' of module '%s' requires %s connections, but only %s given350*oasys2)
+axi_clock_converter_02default:default28
+$zynq_system_axi_clock_converter_0_262default:default2
+422default:default2
+402default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+19282default:default8@Z8-350
 û
 synthesizing module '%s'638*oasys22
 zynq_system_axi_mem_intercon_12default:default2ò
 Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
-12222default:default8@Z8-638
-ñ
-synthesizing module '%s'638*oasys2+
-s00_couplers_imp_5VZGPS2default:default2ò
-Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
-2982default:default8@Z8-638
+23962default:default8@Z8-638
+ï
+synthesizing module '%s'638*oasys2,
+m00_couplers_imp_1ULZJWI2default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+32default:default8@Z8-638
 ª
 synthesizing module '%s'638*oasys2*
-zynq_system_auto_pc_152default:default2ø
-®/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/synth/zynq_system_auto_pc_15.v2default:default2
+zynq_system_auto_pc_572default:default2ø
+®/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_57/synth/zynq_system_auto_pc_57.v2default:default2
 572default:default8@Z8-638
 ï
 synthesizing module '%s'638*oasys2F
@@ -129,7 +6245,7 @@ W
 2default:default
 Z
 %s*synth2K
-7	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+7	Parameter C_AXI_ID_WIDTH bound to: 2 - type: integer 
 2default:default
 ]
 %s*synth2N
@@ -222,7 +6338,7 @@ V
 2default:default
 Z
 %s*synth2K
-7	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+7	Parameter C_AXI_ID_WIDTH bound to: 2 - type: integer 
 2default:default
 ]
 %s*synth2N
@@ -287,7 +6403,7 @@ V
 2default:default
 Z
 %s*synth2K
-7	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+7	Parameter C_AXI_ID_WIDTH bound to: 2 - type: integer 
 2default:default
 ]
 %s*synth2N
@@ -356,7 +6472,7 @@ V
 2default:default
 X
 %s*synth2I
-5	Parameter C_FIFO_WIDTH bound to: 5 - type: integer 
+5	Parameter C_FIFO_WIDTH bound to: 6 - type: integer 
 2default:default
 X
 %s*synth2I
@@ -385,3219 +6501,7 @@ Z
 2default:default
 X
 %s*synth2I
-5	Parameter C_FIFO_WIDTH bound to: 5 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_FIFO_TYPE bound to: lut - type: string 
-2default:default
-Y
-%s*synth2J
-6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
-2default:default
-›
-synthesizing module '%s'638*oasys2(
-fifo_generator_v11_02default:default2‚
-À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0.vhd2default:default2
-6612default:default8@Z8-638
-Z
-%s*synth2K
-7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
-2default:default
-d
-%s*synth2U
-A	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
-2default:default
-W
-%s*synth2H
-4	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
-2default:default
-Y
-%s*synth2J
-6	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
-2default:default
-X
-%s*synth2I
-5	Parameter C_DOUT_WIDTH bound to: 5 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_FAMILY bound to: zynq - type: string 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-Y
-%s*synth2J
-6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
-2default:default
-_
-%s*synth2P
-<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_HAS_RST bound to: 1 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_HAS_SRST bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_HAS_VALID bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
-2default:default
-_
-%s*synth2P
-<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
-2default:default
-Y
-%s*synth2J
-6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
-2default:default
-d
-%s*synth2U
-A	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
-2default:default
-_
-%s*synth2P
-<	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_PRIM_FIFO_TYPE bound to: 512x36 - type: string 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 31 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 30 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_RD_DEPTH bound to: 32 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_RD_FREQ bound to: 1 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_USE_ECC bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_VALID_LOW bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_WR_DEPTH bound to: 32 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_WR_FREQ bound to: 1 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_AXI_TYPE bound to: 0 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_HAS_AXI_WR_CHANNEL bound to: 0 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_HAS_AXI_RD_CHANNEL bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_AXI_LOCK_WIDTH bound to: 2 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_AXIS_TDATA bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_AXIS_TUSER bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
-2default:default
-_
-%s*synth2P
-<	Parameter C_AXIS_TDATA_WIDTH bound to: 64 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_AXIS_TID_WIDTH bound to: 8 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_AXIS_TDEST_WIDTH bound to: 4 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_AXIS_TSTRB_WIDTH bound to: 4 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_AXIS_TKEEP_WIDTH bound to: 4 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_WACH_TYPE bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_RACH_TYPE bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
-2default:default
-f
-%s*synth2W
-C	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
-2default:default
-f
-%s*synth2W
-C	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
-2default:default
-f
-%s*synth2W
-C	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
-2default:default
-f
-%s*synth2W
-C	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
-2default:default
-f
-%s*synth2W
-C	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
-2default:default
-f
-%s*synth2W
-C	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
-2default:default
-c
-%s*synth2T
-@	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
-2default:default
-c
-%s*synth2T
-@	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
-2default:default
-c
-%s*synth2T
-@	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
-2default:default
-c
-%s*synth2T
-@	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
-2default:default
-c
-%s*synth2T
-@	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
-2default:default
-c
-%s*synth2T
-@	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
-2default:default
-e
-%s*synth2V
-B	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
-2default:default
-e
-%s*synth2V
-B	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 512x36 - type: string 
-2default:default
-e
-%s*synth2V
-B	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
-2default:default
-e
-%s*synth2V
-B	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
-2default:default
-e
-%s*synth2V
-B	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 512x36 - type: string 
-2default:default
-e
-%s*synth2V
-B	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 512x36 - type: string 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
-2default:default
-g
-%s*synth2X
-D	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
-2default:default
-g
-%s*synth2X
-D	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
-2default:default
-g
-%s*synth2X
-D	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
-2default:default
-g
-%s*synth2X
-D	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
-2default:default
-g
-%s*synth2X
-D	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
-2default:default
-g
-%s*synth2X
-D	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_DIN_WIDTH_WACH bound to: 32 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
-2default:default
-q
-%s*synth2b
-N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
-2default:default
-q
-%s*synth2b
-N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
-2default:default
-q
-%s*synth2b
-N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
-2default:default
-q
-%s*synth2b
-N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
-2default:default
-q
-%s*synth2b
-N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
-2default:default
-q
-%s*synth2b
-N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
-2default:default
-r
-%s*synth2c
-O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
-2default:default
-r
-%s*synth2c
-O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
-2default:default
-r
-%s*synth2c
-O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
-2default:default
-r
-%s*synth2c
-O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
-2default:default
-r
-%s*synth2c
-O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
-2default:default
-r
-%s*synth2c
-O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
-2default:default
-È
-synthesizing module '%s'638*oasys2.
-fifo_generator_v11_0_synth2default:default2Ë
-—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd2default:default2
-6782default:default8@Z8-638
-Z
-%s*synth2K
-7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
-2default:default
-d
-%s*synth2U
-A	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
-2default:default
-W
-%s*synth2H
-4	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
-2default:default
-Y
-%s*synth2J
-6	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
-2default:default
-X
-%s*synth2I
-5	Parameter C_DOUT_WIDTH bound to: 5 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_FAMILY bound to: zynq - type: string 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-Y
-%s*synth2J
-6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
-2default:default
-_
-%s*synth2P
-<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_HAS_RST bound to: 1 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_HAS_SRST bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_HAS_VALID bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
-2default:default
-_
-%s*synth2P
-<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
-2default:default
-Y
-%s*synth2J
-6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
-2default:default
-d
-%s*synth2U
-A	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
-2default:default
-_
-%s*synth2P
-<	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_PRIM_FIFO_TYPE bound to: 512x36 - type: string 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 31 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 30 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_RD_DEPTH bound to: 32 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_RD_FREQ bound to: 1 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_USE_ECC bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_VALID_LOW bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_WR_DEPTH bound to: 32 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_WR_FREQ bound to: 1 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_AXI_TYPE bound to: 0 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_HAS_AXI_WR_CHANNEL bound to: 0 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_HAS_AXI_RD_CHANNEL bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_AXI_LOCK_WIDTH bound to: 2 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_AXIS_TDATA bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_AXIS_TUSER bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
-2default:default
-_
-%s*synth2P
-<	Parameter C_AXIS_TDATA_WIDTH bound to: 64 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_AXIS_TID_WIDTH bound to: 8 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_AXIS_TDEST_WIDTH bound to: 4 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_AXIS_TSTRB_WIDTH bound to: 4 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_AXIS_TKEEP_WIDTH bound to: 4 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_WACH_TYPE bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_RACH_TYPE bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
-2default:default
-f
-%s*synth2W
-C	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
-2default:default
-f
-%s*synth2W
-C	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
-2default:default
-f
-%s*synth2W
-C	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
-2default:default
-f
-%s*synth2W
-C	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
-2default:default
-f
-%s*synth2W
-C	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
-2default:default
-f
-%s*synth2W
-C	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
-2default:default
-c
-%s*synth2T
-@	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
-2default:default
-c
-%s*synth2T
-@	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
-2default:default
-c
-%s*synth2T
-@	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
-2default:default
-c
-%s*synth2T
-@	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
-2default:default
-c
-%s*synth2T
-@	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
-2default:default
-c
-%s*synth2T
-@	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
-2default:default
-e
-%s*synth2V
-B	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
-2default:default
-e
-%s*synth2V
-B	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 512x36 - type: string 
-2default:default
-e
-%s*synth2V
-B	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
-2default:default
-e
-%s*synth2V
-B	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
-2default:default
-e
-%s*synth2V
-B	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 512x36 - type: string 
-2default:default
-e
-%s*synth2V
-B	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 512x36 - type: string 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
-2default:default
-g
-%s*synth2X
-D	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
-2default:default
-g
-%s*synth2X
-D	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
-2default:default
-g
-%s*synth2X
-D	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
-2default:default
-g
-%s*synth2X
-D	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
-2default:default
-g
-%s*synth2X
-D	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
-2default:default
-g
-%s*synth2X
-D	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_DIN_WIDTH_WACH bound to: 32 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
-2default:default
-q
-%s*synth2b
-N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
-2default:default
-q
-%s*synth2b
-N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
-2default:default
-q
-%s*synth2b
-N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
-2default:default
-q
-%s*synth2b
-N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
-2default:default
-q
-%s*synth2b
-N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
-2default:default
-q
-%s*synth2b
-N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
-2default:default
-r
-%s*synth2c
-O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
-2default:default
-r
-%s*synth2c
-O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
-2default:default
-r
-%s*synth2c
-O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
-2default:default
-r
-%s*synth2c
-O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
-2default:default
-r
-%s*synth2c
-O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
-2default:default
-r
-%s*synth2c
-O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
-2default:default
-Ÿ
-synthesizing module '%s'638*oasys2&
-fifo_generator_top2default:default2‡
-…/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
-2712default:default8@Z8-638
-V
-%s*synth2G
-3	Parameter C_FAMILY bound to: zynq - type: string 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
-2default:default
-Y
-%s*synth2J
-6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_WR_DEPTH bound to: 32 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_DOUT_WIDTH bound to: 5 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_RD_DEPTH bound to: 32 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 31 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 30 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_USE_ECC bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_PRIM_FIFO_TYPE bound to: 512x36 - type: string 
-2default:default
-W
-%s*synth2H
-4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_AXI_TYPE bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_HAS_RST bound to: 1 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_HAS_SRST bound to: 0 - type: integer 
-2default:default
-Y
-%s*synth2J
-6	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
-2default:default
-W
-%s*synth2H
-4	Parameter C_HAS_VALID bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_VALID_LOW bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
-2default:default
-_
-%s*synth2P
-<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
-2default:default
-_
-%s*synth2P
-<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
-2default:default
-d
-%s*synth2U
-A	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
-2default:default
-Y
-%s*synth2J
-6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
-2default:default
-d
-%s*synth2U
-A	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
-2default:default
-_
-%s*synth2P
-<	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_RD_FREQ bound to: 1 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_WR_FREQ bound to: 1 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
-2default:default
-È
-synthesizing module '%s'638*oasys2*
-fifo_generator_ramfifo2default:default2Ï
-’/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
-3082default:default8@Z8-638
-V
-%s*synth2G
-3	Parameter C_FAMILY bound to: zynq - type: string 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
-2default:default
-Y
-%s*synth2J
-6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_HAS_RST bound to: 1 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_HAS_SRST bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_DOUT_WIDTH bound to: 5 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
-2default:default
-W
-%s*synth2H
-4	Parameter C_RD_DEPTH bound to: 32 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_WR_DEPTH bound to: 32 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 31 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 30 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_HAS_VALID bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_VALID_LOW bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
-2default:default
-_
-%s*synth2P
-<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
-2default:default
-_
-%s*synth2P
-<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_USE_ECC bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_AXI_TYPE bound to: 0 - type: integer 
-2default:default
-ﬂ
-synthesizing module '%s'638*oasys2%
-reset_blk_ramfifo2default:default2Á
-–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
-2222default:default8@Z8-638
-V
-%s*synth2G
-3	Parameter C_FAMILY bound to: zynq - type: string 
-2default:default
-Y
-%s*synth2J
-6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_HAS_RST bound to: 1 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_HAS_SRST bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_WR_RST_MAXFAN bound to: 2 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_RD_RST_MAXFAN bound to: 3 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
-2default:default
-Å
-&Detected and applied attribute %s = %s3620*oasys2
-	async_reg2default:default2
-true2default:default2Á
-–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
-2282default:default8@Z8-4472
-Å
-&Detected and applied attribute %s = %s3620*oasys2
-	async_reg2default:default2
-true2default:default2Á
-–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
-2292default:default8@Z8-4472
-Å
-&Detected and applied attribute %s = %s3620*oasys2
-	async_reg2default:default2
-true2default:default2Á
-–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
-2312default:default8@Z8-4472
-Å
-&Detected and applied attribute %s = %s3620*oasys2
-	async_reg2default:default2
-true2default:default2Á
-–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
-2322default:default8@Z8-4472
-Å
-&Detected and applied attribute %s = %s3620*oasys2
-	async_reg2default:default2
-true2default:default2Á
-–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
-2342default:default8@Z8-4472
-Å
-&Detected and applied attribute %s = %s3620*oasys2
-	async_reg2default:default2
-true2default:default2Á
-–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
-2352default:default8@Z8-4472
-ö
-%done synthesizing module '%s' (%s#%s)256*oasys2%
-reset_blk_ramfifo2default:default2
-32default:default2
-12default:default2Á
-–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
-2222default:default8@Z8-256
-Œ
-synthesizing module '%s'638*oasys2
-	input_blk2default:default2ﬁ
-«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
-2782default:default8@Z8-638
-Z
-%s*synth2K
-7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_PKTFIFO_DATA_WIDTH bound to: 5 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_DOUT_WIDTH bound to: 5 - type: integer 
-2default:default
-Y
-%s*synth2J
-6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_USE_EMBEDDED_REG bound to: 1 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
-2default:default
-â
-%done synthesizing module '%s' (%s#%s)256*oasys2
-	input_blk2default:default2
-42default:default2
-12default:default2ﬁ
-«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
-2782default:default8@Z8-256
-…
-synthesizing module '%s'638*oasys2
-memory2default:default2‹
-≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
-2152default:default8@Z8-638
-V
-%s*synth2G
-3	Parameter C_FAMILY bound to: zynq - type: string 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_HAS_RST bound to: 1 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_HAS_SRST bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_DOUT_WIDTH bound to: 5 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
-2default:default
-Y
-%s*synth2J
-6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_LARGER_DEPTH bound to: 32 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_RD_DEPTH bound to: 32 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_WR_DEPTH bound to: 32 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_SMALLER_DATA_WIDTH bound to: 5 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_USE_ECC bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
-2default:default
-b
-%s*synth2S
-?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
-2default:default
-≈
-synthesizing module '%s'638*oasys2
-dmem2default:default2⁄
-√/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
-1652default:default8@Z8-638
-U
-%s*synth2F
-2	Parameter C_HAS_RST bound to: 1 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_HAS_SRST bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
-2default:default
-X
-%s*synth2I
-5	Parameter C_DOUT_WIDTH bound to: 5 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_LARGER_DEPTH bound to: 32 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_SMALLER_DATA_WIDTH bound to: 5 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
-2default:default
-˚
-&Detected and applied attribute %s = %s3620*oasys2
-	ram_style2default:default2
-distributed2default:default2⁄
-√/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
-1792default:default8@Z8-4472
-Ä
-%done synthesizing module '%s' (%s#%s)256*oasys2
-dmem2default:default2
-52default:default2
-12default:default2⁄
-√/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
-1652default:default8@Z8-256
-Ñ
-%done synthesizing module '%s' (%s#%s)256*oasys2
-memory2default:default2
-62default:default2
-12default:default2‹
-≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
-2152default:default8@Z8-256
-Õ
-synthesizing module '%s'638*oasys2
-rd_logic2default:default2ﬁ
-«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_logic.vhd2default:default2
-2392default:default8@Z8-638
-Z
-%s*synth2K
-7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
-2default:default
-_
-%s*synth2P
-<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_HAS_RST bound to: 1 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_HAS_SRST bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_HAS_VALID bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_VALID_LOW bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_RD_DEPTH bound to: 32 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_WR_DEPTH bound to: 32 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
-2default:default
-”
-synthesizing module '%s'638*oasys2
-rd_bin_cntr2default:default2·
- /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_bin_cntr.vhd2default:default2
-1512default:default8@Z8-638
-U
-%s*synth2F
-2	Parameter C_HAS_RST bound to: 1 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_HAS_SRST bound to: 0 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-é
-%done synthesizing module '%s' (%s#%s)256*oasys2
-rd_bin_cntr2default:default2
-72default:default2
-12default:default2·
- /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_bin_cntr.vhd2default:default2
-1512default:default8@Z8-256
-·
-synthesizing module '%s'638*oasys2&
-rd_status_flags_ss2default:default2Ë
-—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_status_flags_ss.vhd2default:default2
-1742default:default8@Z8-638
-U
-%s*synth2F
-2	Parameter C_HAS_RST bound to: 1 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_HAS_SRST bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
-2default:default
-À
-synthesizing module '%s'638*oasys2
-compare2default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/compare.vhd2default:default2
-1382default:default8@Z8-638
-S
-%s*synth2D
-0	Parameter C_WIDTH bound to: 5 - type: integer 
-2default:default
-Ü
-%done synthesizing module '%s' (%s#%s)256*oasys2
-compare2default:default2
-82default:default2
-12default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/compare.vhd2default:default2
-1382default:default8@Z8-256
-ú
-%done synthesizing module '%s' (%s#%s)256*oasys2&
-rd_status_flags_ss2default:default2
-92default:default2
-12default:default2Ë
-—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_status_flags_ss.vhd2default:default2
-1742default:default8@Z8-256
-À
-synthesizing module '%s'638*oasys2
-rd_fwft2default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
-1542default:default8@Z8-638
-U
-%s*synth2F
-2	Parameter C_HAS_RST bound to: 1 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_HAS_SRST bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_VALID_LOW bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
-2default:default
-±
-default block is never used226*oasys2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
-2552default:default8@Z8-226
-±
-default block is never used226*oasys2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
-5792default:default8@Z8-226
-±
-default block is never used226*oasys2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
-6642default:default8@Z8-226
-á
-%done synthesizing module '%s' (%s#%s)256*oasys2
-rd_fwft2default:default2
-102default:default2
-12default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
-1542default:default8@Z8-256
-â
-%done synthesizing module '%s' (%s#%s)256*oasys2
-rd_logic2default:default2
-112default:default2
-12default:default2ﬁ
-«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_logic.vhd2default:default2
-2392default:default8@Z8-256
-Õ
-synthesizing module '%s'638*oasys2
-wr_logic2default:default2ﬁ
-«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_logic.vhd2default:default2
-2312default:default8@Z8-638
-Z
-%s*synth2K
-7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
-2default:default
-_
-%s*synth2P
-<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_HAS_RST bound to: 1 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_HAS_SRST bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 31 - type: integer 
-2default:default
-j
-%s*synth2[
-G	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 30 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
-2default:default
-”
-synthesizing module '%s'638*oasys2
-wr_bin_cntr2default:default2·
- /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_bin_cntr.vhd2default:default2
-1552default:default8@Z8-638
-U
-%s*synth2F
-2	Parameter C_HAS_RST bound to: 1 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_HAS_SRST bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
-2default:default
-è
-%done synthesizing module '%s' (%s#%s)256*oasys2
-wr_bin_cntr2default:default2
-122default:default2
-12default:default2·
- /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_bin_cntr.vhd2default:default2
-1552default:default8@Z8-256
-·
-synthesizing module '%s'638*oasys2&
-wr_status_flags_ss2default:default2Ë
-—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_status_flags_ss.vhd2default:default2
-1802default:default8@Z8-638
-[
-%s*synth2L
-8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_HAS_RST bound to: 1 - type: integer 
-2default:default
-V
-%s*synth2G
-3	Parameter C_HAS_SRST bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
-2default:default
-ù
-%done synthesizing module '%s' (%s#%s)256*oasys2&
-wr_status_flags_ss2default:default2
-132default:default2
-12default:default2Ë
-—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_status_flags_ss.vhd2default:default2
-1802default:default8@Z8-256
-â
-%done synthesizing module '%s' (%s#%s)256*oasys2
-wr_logic2default:default2
-142default:default2
-12default:default2ﬁ
-«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_logic.vhd2default:default2
-2312default:default8@Z8-256
-–
-synthesizing module '%s'638*oasys2
-
-output_blk2default:default2ﬂ
-»/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
-2682default:default8@Z8-638
-Z
-%s*synth2K
-7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_DOUT_WIDTH bound to: 5 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_PKTFIFO_DATA_WIDTH bound to: 5 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
-2default:default
-_
-%s*synth2P
-<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_HAS_VALID bound to: 0 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
-2default:default
-_
-%s*synth2P
-<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
-2default:default
-a
-%s*synth2R
->	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter C_USE_ECC bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
-2default:default
-å
-%done synthesizing module '%s' (%s#%s)256*oasys2
-
-output_blk2default:default2
-152default:default2
-12default:default2ﬂ
-»/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
-2682default:default8@Z8-256
-•
-%done synthesizing module '%s' (%s#%s)256*oasys2*
-fifo_generator_ramfifo2default:default2
-162default:default2
-12default:default2Ï
-’/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
-3082default:default8@Z8-256
-ï
-%done synthesizing module '%s' (%s#%s)256*oasys2&
-fifo_generator_top2default:default2
-172default:default2
-12default:default2‡
-…/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
-2712default:default8@Z8-256
-•
-%done synthesizing module '%s' (%s#%s)256*oasys2.
-fifo_generator_v11_0_synth2default:default2
-182default:default2
-12default:default2Ë
-—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd2default:default2
-6782default:default8@Z8-256
-ô
-%done synthesizing module '%s' (%s#%s)256*oasys2(
-fifo_generator_v11_02default:default2
-192default:default2
-12default:default2‚
-À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0.vhd2default:default2
-6612default:default8@Z8-256
-‹
-Ginstance '%s' of module '%s' requires %s connections, but only %s given350*oasys2!
-fifo_gen_inst2default:default2(
-fifo_generator_v11_02default:default2
-2302default:default2
-2282default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
-2922default:default8@Z8-350
-ö
-%done synthesizing module '%s' (%s#%s)256*oasys2/
-axi_data_fifo_v2_1_fifo_gen2default:default2
-202default:default2
-12default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
-602default:default8@Z8-256
-ú
-%done synthesizing module '%s' (%s#%s)256*oasys20
-axi_data_fifo_v2_1_axic_fifo2default:default2
-212default:default2
-12default:default2ﬁ
-«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
-642default:default8@Z8-256
-ª
-%done synthesizing module '%s' (%s#%s)256*oasys2;
-'axi_protocol_converter_v2_1_a_axi3_conv2default:default2
-222default:default2
-12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
-622default:default8@Z8-256
-ˇ
-synthesizing module '%s'638*oasys2;
-'axi_protocol_converter_v2_1_w_axi3_conv2default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v2default:default2
-612default:default8@Z8-638
-V
-%s*synth2G
-3	Parameter C_FAMILY bound to: zynq - type: string 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
-2default:default
-g
-%s*synth2X
-D	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
-2default:default
-_
-%s*synth2P
-<	Parameter C_SUPPORT_SPLITTING bound to: 1 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_SUPPORT_BURSTS bound to: 1 - type: integer 
-2default:default
-ª
-%done synthesizing module '%s' (%s#%s)256*oasys2;
-'axi_protocol_converter_v2_1_w_axi3_conv2default:default2
-232default:default2
-12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v2default:default2
-612default:default8@Z8-256
-ˇ
-synthesizing module '%s'638*oasys2;
-'axi_protocol_converter_v2_1_b_downsizer2default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v2default:default2
-652default:default8@Z8-638
-V
-%s*synth2G
-3	Parameter C_FAMILY bound to: zynq - type: string 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
-2default:default
-g
-%s*synth2X
-D	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
-2default:default
-K
-%s*synth2<
-(	Parameter C_RESP_OKAY bound to: 2'b00 
-2default:default
-M
-%s*synth2>
-*	Parameter C_RESP_EXOKAY bound to: 2'b01 
-2default:default
-O
-%s*synth2@
-,	Parameter C_RESP_SLVERROR bound to: 2'b10 
-2default:default
-M
-%s*synth2>
-*	Parameter C_RESP_DECERR bound to: 2'b11 
-2default:default
-ª
-%done synthesizing module '%s' (%s#%s)256*oasys2;
-'axi_protocol_converter_v2_1_b_downsizer2default:default2
-242default:default2
-12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v2default:default2
-652default:default8@Z8-256
-è
-synthesizing module '%s'638*oasys2K
-7axi_protocol_converter_v2_1_a_axi3_conv__parameterized02default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
-622default:default8@Z8-638
-V
-%s*synth2G
-3	Parameter C_FAMILY bound to: zynq - type: string 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
-2default:default
-g
-%s*synth2X
-D	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
-2default:default
-]
-%s*synth2N
-:	Parameter C_AXI_AUSER_WIDTH bound to: 1 - type: integer 
-2default:default
-Y
-%s*synth2J
-6	Parameter C_AXI_CHANNEL bound to: 1 - type: integer 
-2default:default
-_
-%s*synth2P
-<	Parameter C_SUPPORT_SPLITTING bound to: 1 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_SUPPORT_BURSTS bound to: 1 - type: integer 
-2default:default
-[
-%s*synth2L
-8	Parameter C_SINGLE_THREAD bound to: 1 - type: integer 
-2default:default
-K
-%s*synth2<
-(	Parameter C_FIX_BURST bound to: 2'b00 
-2default:default
-L
-%s*synth2=
-)	Parameter C_INCR_BURST bound to: 2'b01 
-2default:default
-L
-%s*synth2=
-)	Parameter C_WRAP_BURST bound to: 2'b10 
-2default:default
-\
-%s*synth2M
-9	Parameter C_FIFO_DEPTH_LOG bound to: 5 - type: integer 
-2default:default
-r
-%s*synth2c
-O	Parameter C_SIZE_MASK bound to: 40'b1111111111111111111111111111111100000000 
-2default:default
-
-synthesizing module '%s'638*oasys2@
-,axi_data_fifo_v2_1_axic_fifo__parameterized02default:default2ﬁ
-«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
-642default:default8@Z8-638
-V
-%s*synth2G
-3	Parameter C_FAMILY bound to: zynq - type: string 
-2default:default
-\
-%s*synth2M
-9	Parameter C_FIFO_DEPTH_LOG bound to: 5 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_FIFO_WIDTH bound to: 1 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_FIFO_TYPE bound to: lut - type: string 
-2default:default
-Ó
-synthesizing module '%s'638*oasys2?
-+axi_data_fifo_v2_1_fifo_gen__parameterized02default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
-602default:default8@Z8-638
-V
-%s*synth2G
-3	Parameter C_FAMILY bound to: zynq - type: string 
-2default:default
-Z
-%s*synth2K
-7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
-2default:default
-`
-%s*synth2Q
-=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
-2default:default
-\
-%s*synth2M
-9	Parameter C_FIFO_DEPTH_LOG bound to: 5 - type: integer 
-2default:default
-X
-%s*synth2I
-5	Parameter C_FIFO_WIDTH bound to: 1 - type: integer 
+5	Parameter C_FIFO_WIDTH bound to: 6 - type: integer 
 2default:default
 X
 %s*synth2I
@@ -3634,7 +6538,7 @@ A	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string
 2default:default
 W
 %s*synth2H
-4	Parameter C_DIN_WIDTH bound to: 1 - type: integer 
+4	Parameter C_DIN_WIDTH bound to: 6 - type: integer 
 2default:default
 Y
 %s*synth2J
@@ -3642,7 +6546,7 @@ Y
 2default:default
 X
 %s*synth2I
-5	Parameter C_DOUT_WIDTH bound to: 1 - type: integer 
+5	Parameter C_DOUT_WIDTH bound to: 6 - type: integer 
 2default:default
 Z
 %s*synth2K
@@ -4431,6 +7335,5694 @@ A	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string
 2default:default
 W
 %s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 6 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 6 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+2default:default
+_
+%s*synth2P
+<	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PRIM_FIFO_TYPE bound to: 512x36 - type: string 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 31 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 30 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 32 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_RD_FREQ bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 32 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_WR_FREQ bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_HAS_AXI_WR_CHANNEL bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_HAS_AXI_RD_CHANNEL bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXI_LOCK_WIDTH bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TDATA bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TUSER bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_AXIS_TDATA_WIDTH bound to: 64 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXIS_TID_WIDTH bound to: 8 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TDEST_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TSTRB_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TKEEP_WIDTH bound to: 4 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 512x36 - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_WACH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+2default:default
+È
+synthesizing module '%s'638*oasys26
+"fifo_generator_top__parameterized32default:default2‡
+…/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
+2712default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 6 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 32 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 6 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 32 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 31 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 30 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PRIM_FIFO_TYPE bound to: 512x36 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+2default:default
+_
+%s*synth2P
+<	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_RD_FREQ bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_WR_FREQ bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+2default:default
+˘
+synthesizing module '%s'638*oasys2:
+&fifo_generator_ramfifo__parameterized32default:default2Ï
+’/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
+3082default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 6 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 6 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 32 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 32 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 31 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 30 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 0 - type: integer 
+2default:default
+Ô
+synthesizing module '%s'638*oasys25
+!reset_blk_ramfifo__parameterized02default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+2222default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_RST_MAXFAN bound to: 2 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_RST_MAXFAN bound to: 3 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+2default:default
+´
+%done synthesizing module '%s' (%s#%s)256*oasys25
+!reset_blk_ramfifo__parameterized02default:default2
+232default:default2
+12default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+2222default:default8@Z8-256
+ﬁ
+synthesizing module '%s'638*oasys2-
+input_blk__parameterized32default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
+2782default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 6 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PKTFIFO_DATA_WIDTH bound to: 6 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 6 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+ö
+%done synthesizing module '%s' (%s#%s)256*oasys2-
+input_blk__parameterized32default:default2
+232default:default2
+12default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
+2782default:default8@Z8-256
+Ÿ
+synthesizing module '%s'638*oasys2*
+memory__parameterized32default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
+2152default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 6 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 6 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_LARGER_DEPTH bound to: 32 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 32 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 32 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SMALLER_DATA_WIDTH bound to: 6 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+’
+synthesizing module '%s'638*oasys2(
+dmem__parameterized32default:default2⁄
+√/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+1652default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 6 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 6 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_LARGER_DEPTH bound to: 32 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SMALLER_DATA_WIDTH bound to: 6 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+ë
+%done synthesizing module '%s' (%s#%s)256*oasys2(
+dmem__parameterized32default:default2
+232default:default2
+12default:default2⁄
+√/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+1652default:default8@Z8-256
+ï
+%done synthesizing module '%s' (%s#%s)256*oasys2*
+memory__parameterized32default:default2
+232default:default2
+12default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
+2152default:default8@Z8-256
+›
+synthesizing module '%s'638*oasys2,
+rd_logic__parameterized02default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_logic.vhd2default:default2
+2392default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 32 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 32 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+„
+synthesizing module '%s'638*oasys2/
+rd_bin_cntr__parameterized02default:default2·
+ /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_bin_cntr.vhd2default:default2
+1512default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+ü
+%done synthesizing module '%s' (%s#%s)256*oasys2/
+rd_bin_cntr__parameterized02default:default2
+232default:default2
+12default:default2·
+ /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_bin_cntr.vhd2default:default2
+1512default:default8@Z8-256
+·
+synthesizing module '%s'638*oasys2&
+rd_status_flags_ss2default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_status_flags_ss.vhd2default:default2
+1742default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+€
+synthesizing module '%s'638*oasys2+
+compare__parameterized02default:default2›
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/compare.vhd2default:default2
+1382default:default8@Z8-638
+S
+%s*synth2D
+0	Parameter C_WIDTH bound to: 5 - type: integer 
+2default:default
+ó
+%done synthesizing module '%s' (%s#%s)256*oasys2+
+compare__parameterized02default:default2
+232default:default2
+12default:default2›
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/compare.vhd2default:default2
+1382default:default8@Z8-256
+ù
+%done synthesizing module '%s' (%s#%s)256*oasys2&
+rd_status_flags_ss2default:default2
+242default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_status_flags_ss.vhd2default:default2
+1742default:default8@Z8-256
+ô
+%done synthesizing module '%s' (%s#%s)256*oasys2,
+rd_logic__parameterized02default:default2
+242default:default2
+12default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_logic.vhd2default:default2
+2392default:default8@Z8-256
+›
+synthesizing module '%s'638*oasys2,
+wr_logic__parameterized02default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_logic.vhd2default:default2
+2312default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 31 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 30 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+2default:default
+„
+synthesizing module '%s'638*oasys2/
+wr_bin_cntr__parameterized02default:default2·
+ /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_bin_cntr.vhd2default:default2
+1552default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+ü
+%done synthesizing module '%s' (%s#%s)256*oasys2/
+wr_bin_cntr__parameterized02default:default2
+242default:default2
+12default:default2·
+ /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_bin_cntr.vhd2default:default2
+1552default:default8@Z8-256
+·
+synthesizing module '%s'638*oasys2&
+wr_status_flags_ss2default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_status_flags_ss.vhd2default:default2
+1802default:default8@Z8-638
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+2default:default
+ù
+%done synthesizing module '%s' (%s#%s)256*oasys2&
+wr_status_flags_ss2default:default2
+252default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_status_flags_ss.vhd2default:default2
+1802default:default8@Z8-256
+ô
+%done synthesizing module '%s' (%s#%s)256*oasys2,
+wr_logic__parameterized02default:default2
+252default:default2
+12default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_logic.vhd2default:default2
+2312default:default8@Z8-256
+‡
+synthesizing module '%s'638*oasys2.
+output_blk__parameterized32default:default2ﬂ
+»/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
+2682default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 6 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 6 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PKTFIFO_DATA_WIDTH bound to: 6 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+ú
+%done synthesizing module '%s' (%s#%s)256*oasys2.
+output_blk__parameterized32default:default2
+252default:default2
+12default:default2ﬂ
+»/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
+2682default:default8@Z8-256
+µ
+%done synthesizing module '%s' (%s#%s)256*oasys2:
+&fifo_generator_ramfifo__parameterized32default:default2
+252default:default2
+12default:default2Ï
+’/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
+3082default:default8@Z8-256
+•
+%done synthesizing module '%s' (%s#%s)256*oasys26
+"fifo_generator_top__parameterized32default:default2
+252default:default2
+12default:default2‡
+…/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
+2712default:default8@Z8-256
+µ
+%done synthesizing module '%s' (%s#%s)256*oasys2>
+*fifo_generator_v11_0_synth__parameterized02default:default2
+252default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd2default:default2
+6782default:default8@Z8-256
+©
+%done synthesizing module '%s' (%s#%s)256*oasys28
+$fifo_generator_v11_0__parameterized02default:default2
+252default:default2
+12default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0.vhd2default:default2
+6612default:default8@Z8-256
+‹
+Ginstance '%s' of module '%s' requires %s connections, but only %s given350*oasys2!
+fifo_gen_inst2default:default2(
+fifo_generator_v11_02default:default2
+2302default:default2
+2282default:default2›
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
+2922default:default8@Z8-350
+ö
+%done synthesizing module '%s' (%s#%s)256*oasys2/
+axi_data_fifo_v2_1_fifo_gen2default:default2
+262default:default2
+12default:default2›
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
+602default:default8@Z8-256
+ú
+%done synthesizing module '%s' (%s#%s)256*oasys20
+axi_data_fifo_v2_1_axic_fifo2default:default2
+272default:default2
+12default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
+642default:default8@Z8-256
+
+synthesizing module '%s'638*oasys2@
+,axi_data_fifo_v2_1_axic_fifo__parameterized02default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
+642default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+\
+%s*synth2M
+9	Parameter C_FIFO_DEPTH_LOG bound to: 5 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_FIFO_WIDTH bound to: 5 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_FIFO_TYPE bound to: lut - type: string 
+2default:default
+Ó
+synthesizing module '%s'638*oasys2?
++axi_data_fifo_v2_1_fifo_gen__parameterized02default:default2›
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
+602default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_FIFO_DEPTH_LOG bound to: 5 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_FIFO_WIDTH bound to: 5 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_FIFO_TYPE bound to: lut - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+2default:default
+Ì
+synthesizing module '%s'638*oasys28
+$fifo_generator_v11_0__parameterized12default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0.vhd2default:default2
+6612default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 5 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+2default:default
+_
+%s*synth2P
+<	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PRIM_FIFO_TYPE bound to: 512x36 - type: string 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 31 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 30 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 32 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_RD_FREQ bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 32 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_WR_FREQ bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_HAS_AXI_WR_CHANNEL bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_HAS_AXI_RD_CHANNEL bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXI_LOCK_WIDTH bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TDATA bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TUSER bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_AXIS_TDATA_WIDTH bound to: 64 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXIS_TID_WIDTH bound to: 8 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TDEST_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TSTRB_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TKEEP_WIDTH bound to: 4 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 512x36 - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_WACH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+2default:default
+˘
+synthesizing module '%s'638*oasys2>
+*fifo_generator_v11_0_synth__parameterized12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd2default:default2
+6782default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 5 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+2default:default
+_
+%s*synth2P
+<	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PRIM_FIFO_TYPE bound to: 512x36 - type: string 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 31 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 30 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 32 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_RD_FREQ bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 32 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_WR_FREQ bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_HAS_AXI_WR_CHANNEL bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_HAS_AXI_RD_CHANNEL bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXI_LOCK_WIDTH bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TDATA bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TUSER bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_AXIS_TDATA_WIDTH bound to: 64 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXIS_TID_WIDTH bound to: 8 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TDEST_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TSTRB_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TKEEP_WIDTH bound to: 4 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 512x36 - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_WACH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+2default:default
+È
+synthesizing module '%s'638*oasys26
+"fifo_generator_top__parameterized42default:default2‡
+…/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
+2712default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 32 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 5 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 32 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 31 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 30 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PRIM_FIFO_TYPE bound to: 512x36 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+2default:default
+_
+%s*synth2P
+<	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_RD_FREQ bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_WR_FREQ bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+2default:default
+˘
+synthesizing module '%s'638*oasys2:
+&fifo_generator_ramfifo__parameterized42default:default2Ï
+’/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
+3082default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 5 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 32 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 32 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 31 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 30 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 0 - type: integer 
+2default:default
+ﬁ
+synthesizing module '%s'638*oasys2-
+input_blk__parameterized42default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
+2782default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PKTFIFO_DATA_WIDTH bound to: 5 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 5 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
+2default:default
+ö
+%done synthesizing module '%s' (%s#%s)256*oasys2-
+input_blk__parameterized42default:default2
+272default:default2
+12default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
+2782default:default8@Z8-256
+Ÿ
+synthesizing module '%s'638*oasys2*
+memory__parameterized42default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
+2152default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 5 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_LARGER_DEPTH bound to: 32 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 32 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 32 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SMALLER_DATA_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+’
+synthesizing module '%s'638*oasys2(
+dmem__parameterized42default:default2⁄
+√/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+1652default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DOUT_RST_VAL bound to: 0000 - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_LARGER_DEPTH bound to: 32 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_RD bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SMALLER_DATA_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+ë
+%done synthesizing module '%s' (%s#%s)256*oasys2(
+dmem__parameterized42default:default2
+272default:default2
+12default:default2⁄
+√/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+1652default:default8@Z8-256
+ï
+%done synthesizing module '%s' (%s#%s)256*oasys2*
+memory__parameterized42default:default2
+272default:default2
+12default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
+2152default:default8@Z8-256
+‡
+synthesizing module '%s'638*oasys2.
+output_blk__parameterized42default:default2ﬂ
+»/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
+2682default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 5 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PKTFIFO_DATA_WIDTH bound to: 5 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DEPTH_RATIO_WR bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
+2default:default
+ú
+%done synthesizing module '%s' (%s#%s)256*oasys2.
+output_blk__parameterized42default:default2
+272default:default2
+12default:default2ﬂ
+»/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
+2682default:default8@Z8-256
+µ
+%done synthesizing module '%s' (%s#%s)256*oasys2:
+&fifo_generator_ramfifo__parameterized42default:default2
+272default:default2
+12default:default2Ï
+’/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
+3082default:default8@Z8-256
+•
+%done synthesizing module '%s' (%s#%s)256*oasys26
+"fifo_generator_top__parameterized42default:default2
+272default:default2
+12default:default2‡
+…/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
+2712default:default8@Z8-256
+µ
+%done synthesizing module '%s' (%s#%s)256*oasys2>
+*fifo_generator_v11_0_synth__parameterized12default:default2
+272default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd2default:default2
+6782default:default8@Z8-256
+©
+%done synthesizing module '%s' (%s#%s)256*oasys28
+$fifo_generator_v11_0__parameterized12default:default2
+272default:default2
+12default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0.vhd2default:default2
+6612default:default8@Z8-256
+‹
+Ginstance '%s' of module '%s' requires %s connections, but only %s given350*oasys2!
+fifo_gen_inst2default:default2(
+fifo_generator_v11_02default:default2
+2302default:default2
+2282default:default2›
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
+2922default:default8@Z8-350
+™
+%done synthesizing module '%s' (%s#%s)256*oasys2?
++axi_data_fifo_v2_1_fifo_gen__parameterized02default:default2
+272default:default2
+12default:default2›
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
+602default:default8@Z8-256
+¨
+%done synthesizing module '%s' (%s#%s)256*oasys2@
+,axi_data_fifo_v2_1_axic_fifo__parameterized02default:default2
+272default:default2
+12default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
+642default:default8@Z8-256
+ª
+%done synthesizing module '%s' (%s#%s)256*oasys2;
+'axi_protocol_converter_v2_1_a_axi3_conv2default:default2
+282default:default2
+12default:default2Ú
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
+622default:default8@Z8-256
+ˇ
+synthesizing module '%s'638*oasys2;
+'axi_protocol_converter_v2_1_w_axi3_conv2default:default2Ú
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v2default:default2
+612default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_SUPPORT_SPLITTING bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_SUPPORT_BURSTS bound to: 1 - type: integer 
+2default:default
+ª
+%done synthesizing module '%s' (%s#%s)256*oasys2;
+'axi_protocol_converter_v2_1_w_axi3_conv2default:default2
+292default:default2
+12default:default2Ú
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v2default:default2
+612default:default8@Z8-256
+ˇ
+synthesizing module '%s'638*oasys2;
+'axi_protocol_converter_v2_1_b_downsizer2default:default2Ú
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v2default:default2
+652default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 2 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+K
+%s*synth2<
+(	Parameter C_RESP_OKAY bound to: 2'b00 
+2default:default
+M
+%s*synth2>
+*	Parameter C_RESP_EXOKAY bound to: 2'b01 
+2default:default
+O
+%s*synth2@
+,	Parameter C_RESP_SLVERROR bound to: 2'b10 
+2default:default
+M
+%s*synth2>
+*	Parameter C_RESP_DECERR bound to: 2'b11 
+2default:default
+ª
+%done synthesizing module '%s' (%s#%s)256*oasys2;
+'axi_protocol_converter_v2_1_b_downsizer2default:default2
+302default:default2
+12default:default2Ú
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v2default:default2
+652default:default8@Z8-256
+è
+synthesizing module '%s'638*oasys2K
+7axi_protocol_converter_v2_1_a_axi3_conv__parameterized02default:default2Ú
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
+622default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_AUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_AXI_CHANNEL bound to: 1 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_SUPPORT_SPLITTING bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_SUPPORT_BURSTS bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_SINGLE_THREAD bound to: 1 - type: integer 
+2default:default
+K
+%s*synth2<
+(	Parameter C_FIX_BURST bound to: 2'b00 
+2default:default
+L
+%s*synth2=
+)	Parameter C_INCR_BURST bound to: 2'b01 
+2default:default
+L
+%s*synth2=
+)	Parameter C_WRAP_BURST bound to: 2'b10 
+2default:default
+\
+%s*synth2M
+9	Parameter C_FIFO_DEPTH_LOG bound to: 5 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_SIZE_MASK bound to: 40'b1111111111111111111111111111111100000000 
+2default:default
+
+synthesizing module '%s'638*oasys2@
+,axi_data_fifo_v2_1_axic_fifo__parameterized12default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
+642default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+\
+%s*synth2M
+9	Parameter C_FIFO_DEPTH_LOG bound to: 5 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_FIFO_WIDTH bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_FIFO_TYPE bound to: lut - type: string 
+2default:default
+Ó
+synthesizing module '%s'638*oasys2?
++axi_data_fifo_v2_1_fifo_gen__parameterized12default:default2›
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
+602default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_FIFO_DEPTH_LOG bound to: 5 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_FIFO_WIDTH bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_FIFO_TYPE bound to: lut - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+2default:default
+Ì
+synthesizing module '%s'638*oasys28
+$fifo_generator_v11_0__parameterized22default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0.vhd2default:default2
+6612default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+2default:default
+W
+%s*synth2H
+4	Parameter C_DIN_WIDTH bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DOUT_WIDTH bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_HAS_RST bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_HAS_SRST bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_HAS_VALID bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+2default:default
+_
+%s*synth2P
+<	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_PRIM_FIFO_TYPE bound to: 512x36 - type: string 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 31 - type: integer 
+2default:default
+j
+%s*synth2[
+G	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 30 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RD_DEPTH bound to: 32 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_RD_FREQ bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_USE_ECC bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_VALID_LOW bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WR_DEPTH bound to: 32 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_WR_FREQ bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_AXI_TYPE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_HAS_AXI_WR_CHANNEL bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_HAS_AXI_RD_CHANNEL bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXI_LOCK_WIDTH bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TDATA bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TUSER bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_AXIS_TDATA_WIDTH bound to: 64 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXIS_TID_WIDTH bound to: 8 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TDEST_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TSTRB_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXIS_TKEEP_WIDTH bound to: 4 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 512x36 - type: string 
+2default:default
+e
+%s*synth2V
+B	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 512x36 - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_WACH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+2default:default
+q
+%s*synth2b
+N	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+2default:default
+r
+%s*synth2c
+O	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+2default:default
+˘
+synthesizing module '%s'638*oasys2>
+*fifo_generator_v11_0_synth__parameterized22default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd2default:default2
+6782default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+2default:default
+W
+%s*synth2H
 4	Parameter C_DIN_WIDTH bound to: 1 - type: integer 
 2default:default
 Y
@@ -5207,7 +13799,7 @@ a
 2default:default
 È
 synthesizing module '%s'638*oasys26
-"fifo_generator_top__parameterized02default:default2‡
+"fifo_generator_top__parameterized52default:default2‡
 …/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
 2712default:default8@Z8-638
 V
@@ -5484,7 +14076,7 @@ a
 2default:default
 ˘
 synthesizing module '%s'638*oasys2:
-&fifo_generator_ramfifo__parameterized02default:default2Ï
+&fifo_generator_ramfifo__parameterized52default:default2Ï
 ’/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
 3082default:default8@Z8-638
 V
@@ -5701,7 +14293,7 @@ V
 2default:default
 ﬁ
 synthesizing module '%s'638*oasys2-
-input_blk__parameterized02default:default2ﬁ
+input_blk__parameterized52default:default2ﬁ
 «/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
 2782default:default8@Z8-638
 Z
@@ -5778,14 +14370,14 @@ Z
 2default:default
 ö
 %done synthesizing module '%s' (%s#%s)256*oasys2-
-input_blk__parameterized02default:default2
-242default:default2
+input_blk__parameterized52default:default2
+302default:default2
 12default:default2ﬁ
 «/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
 2782default:default8@Z8-256
 Ÿ
 synthesizing module '%s'638*oasys2*
-memory__parameterized02default:default2‹
+memory__parameterized52default:default2‹
 ≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
 2152default:default8@Z8-638
 V
@@ -5882,7 +14474,7 @@ W
 2default:default
 ’
 synthesizing module '%s'638*oasys2(
-dmem__parameterized02default:default2⁄
+dmem__parameterized52default:default2⁄
 √/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
 1652default:default8@Z8-638
 U
@@ -5939,21 +14531,21 @@ W
 2default:default
 ë
 %done synthesizing module '%s' (%s#%s)256*oasys2(
-dmem__parameterized02default:default2
-242default:default2
+dmem__parameterized52default:default2
+302default:default2
 12default:default2⁄
 √/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
 1652default:default8@Z8-256
 ï
 %done synthesizing module '%s' (%s#%s)256*oasys2*
-memory__parameterized02default:default2
-242default:default2
+memory__parameterized52default:default2
+302default:default2
 12default:default2‹
 ≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
 2152default:default8@Z8-256
 ‡
 synthesizing module '%s'638*oasys2.
-output_blk__parameterized02default:default2ﬂ
+output_blk__parameterized52default:default2ﬂ
 »/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
 2682default:default8@Z8-638
 Z
@@ -6058,36 +14650,36 @@ W
 2default:default
 ú
 %done synthesizing module '%s' (%s#%s)256*oasys2.
-output_blk__parameterized02default:default2
-242default:default2
+output_blk__parameterized52default:default2
+302default:default2
 12default:default2ﬂ
 »/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
 2682default:default8@Z8-256
 µ
 %done synthesizing module '%s' (%s#%s)256*oasys2:
-&fifo_generator_ramfifo__parameterized02default:default2
-242default:default2
+&fifo_generator_ramfifo__parameterized52default:default2
+302default:default2
 12default:default2Ï
 ’/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
 3082default:default8@Z8-256
 •
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"fifo_generator_top__parameterized02default:default2
-242default:default2
+"fifo_generator_top__parameterized52default:default2
+302default:default2
 12default:default2‡
 …/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
 2712default:default8@Z8-256
 µ
 %done synthesizing module '%s' (%s#%s)256*oasys2>
-*fifo_generator_v11_0_synth__parameterized02default:default2
-242default:default2
+*fifo_generator_v11_0_synth__parameterized22default:default2
+302default:default2
 12default:default2Ë
 —/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd2default:default2
 6782default:default8@Z8-256
 ©
 %done synthesizing module '%s' (%s#%s)256*oasys28
-$fifo_generator_v11_0__parameterized02default:default2
-242default:default2
+$fifo_generator_v11_0__parameterized22default:default2
+302default:default2
 12default:default2‚
 À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0.vhd2default:default2
 6612default:default8@Z8-256
@@ -6101,22 +14693,22 @@ Ginstance '%s' of module '%s' requires %s connections, but only %s given350*
 2922default:default8@Z8-350
 ™
 %done synthesizing module '%s' (%s#%s)256*oasys2?
-+axi_data_fifo_v2_1_fifo_gen__parameterized02default:default2
-242default:default2
++axi_data_fifo_v2_1_fifo_gen__parameterized12default:default2
+302default:default2
 12default:default2›
 ∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
 602default:default8@Z8-256
 ¨
 %done synthesizing module '%s' (%s#%s)256*oasys2@
-,axi_data_fifo_v2_1_axic_fifo__parameterized02default:default2
-242default:default2
+,axi_data_fifo_v2_1_axic_fifo__parameterized12default:default2
+302default:default2
 12default:default2ﬁ
 «/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
 642default:default8@Z8-256
 À
 %done synthesizing module '%s' (%s#%s)256*oasys2K
 7axi_protocol_converter_v2_1_a_axi3_conv__parameterized02default:default2
-242default:default2
+302default:default2
 12default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
 622default:default8@Z8-256
@@ -6131,7 +14723,7 @@ V
 2default:default
 Z
 %s*synth2K
-7	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+7	Parameter C_AXI_ID_WIDTH bound to: 2 - type: integer 
 2default:default
 ]
 %s*synth2N
@@ -6176,45 +14768,5363 @@ M
 ª
 %done synthesizing module '%s' (%s#%s)256*oasys2;
 'axi_protocol_converter_v2_1_r_axi3_conv2default:default2
-252default:default2
+312default:default2
 12default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v2default:default2
 612default:default8@Z8-256
 ∑
 %done synthesizing module '%s' (%s#%s)256*oasys29
 %axi_protocol_converter_v2_1_axi3_conv2default:default2
-262default:default2
+322default:default2
 12default:default2
 Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v2default:default2
 692default:default8@Z8-256
 —
 %done synthesizing module '%s' (%s#%s)256*oasys2F
 2axi_protocol_converter_v2_1_axi_protocol_converter2default:default2
-272default:default2
+332default:default2
 12default:default2˝
 Ê/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
 622default:default8@Z8-256
 ˜
 %done synthesizing module '%s' (%s#%s)256*oasys2*
-zynq_system_auto_pc_152default:default2
-282default:default2
+zynq_system_auto_pc_572default:default2
+342default:default2
 12default:default2ø
-®/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/synth/zynq_system_auto_pc_15.v2default:default2
+®/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_57/synth/zynq_system_auto_pc_57.v2default:default2
 572default:default8@Z8-256
-“
+—
+%done synthesizing module '%s' (%s#%s)256*oasys2,
+m00_couplers_imp_1ULZJWI2default:default2
+352default:default2
+12default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+32default:default8@Z8-256
+ó
+synthesizing module '%s'638*oasys2+
+s00_couplers_imp_5VZGPS2default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+11232default:default8@Z8-638
+”
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 s00_couplers_imp_5VZGPS2default:default2
-292default:default2
+362default:default2
 12default:default2ò
-Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
-2982default:default8@Z8-256
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+11232default:default8@Z8-256
+ò
+synthesizing module '%s'638*oasys2,
+s01_couplers_imp_1XMYHY62default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+13952default:default8@Z8-638
+‘
+%done synthesizing module '%s' (%s#%s)256*oasys2,
+s01_couplers_imp_1XMYHY62default:default2
+372default:default2
+12default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+13952default:default8@Z8-256
+Ø
+synthesizing module '%s'638*oasys2&
+zynq_system_xbar_12default:default2∑
+†/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/synth/zynq_system_xbar_1.v2default:default2
+572default:default8@Z8-638
+ﬂ
+synthesizing module '%s'638*oasys22
+axi_crossbar_v2_1_axi_crossbar2default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v2default:default2
+542default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+]
+%s*synth2N
+:	Parameter C_NUM_SLAVE_SLOTS bound to: 2 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_NUM_MASTER_SLOTS bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_NUM_ADDR_RANGES bound to: 3 - type: integer 
+2default:default
+ì
+%s*synth2É
+Ó	Parameter C_M_AXI_BASE_ADDR bound to: 192'b000000000000000000000000000000001111110000000000000000000000000000000000000000000000000000000000111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+≥
+%s*synth2£
+é	Parameter C_M_AXI_ADDR_WIDTH bound to: 96'b000000000000000000000000000110000000000000000000000000000001011000000000000000000000000000011110 
+2default:default
+é
+%s*synth2
+k	Parameter C_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000001000000000000000000000000000000000 
+2default:default
+ó
+%s*synth2á
+s	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+2default:default
+g
+%s*synth2X
+D	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+f
+%s*synth2W
+C	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 3 - type: integer 
+2default:default
+e
+%s*synth2V
+B	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 3 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_R_REGISTER bound to: 0 - type: integer 
+2default:default
+ï
+%s*synth2Ö
+q	Parameter C_S_AXI_SINGLE_THREAD bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+ò
+%s*synth2à
+t	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 64'b0000000000000000000000000000001000000000000000000000000000000001 
+2default:default
+ó
+%s*synth2á
+s	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 64'b0000000000000000000000000000001000000000000000000000000000000001 
+2default:default
+a
+%s*synth2R
+>	Parameter C_M_AXI_WRITE_ISSUING bound to: 8 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_M_AXI_READ_ISSUING bound to: 8 - type: integer 
+2default:default
+î
+%s*synth2Ñ
+p	Parameter C_S_AXI_ARB_PRIORITY bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_M_AXI_SECURE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_CONNECTIVITY_MODE bound to: 1 - type: integer 
+2default:default
+Ü
+%s*synth2w
+c	Parameter P_ONES bound to: 65'b11111111111111111111111111111111111111111111111111111111111111111 
+2default:default
+—
+%s*synth2¡
+¨	Parameter P_S_AXI_BASE_ID bound to: 128'b00000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+—
+%s*synth2¡
+¨	Parameter P_S_AXI_HIGH_ID bound to: 128'b00000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000001 
+2default:default
+R
+%s*synth2C
+/	Parameter P_AXI4 bound to: 0 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter P_AXI3 bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter P_AXILITE bound to: 2 - type: integer 
+2default:default
+O
+%s*synth2@
+,	Parameter P_AXILITE_SIZE bound to: 3'b010 
+2default:default
+F
+%s*synth27
+#	Parameter P_INCR bound to: 2'b01 
+2default:default
+U
+%s*synth2F
+2	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 1'b1 
+2default:default
+T
+%s*synth2E
+1	Parameter P_M_AXI_SUPPORTS_READ bound to: 1'b1 
+2default:default
+V
+%s*synth2G
+3	Parameter P_S_AXI_SUPPORTS_WRITE bound to: 2'b11 
+2default:default
+U
+%s*synth2F
+2	Parameter P_S_AXI_SUPPORTS_READ bound to: 2'b11 
+2default:default
+S
+%s*synth2D
+0	Parameter C_DEBUG bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter P_RANGE_CHECK bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter P_ADDR_DECODE bound to: 1 - type: integer 
+2default:default
+o
+%s*synth2`
+L	Parameter P_M_AXI_ERR_MODE bound to: 32'b00000000000000000000000000000000 
+2default:default
+Q
+%s*synth2B
+.	Parameter P_LEN bound to: 8 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter P_LOCK bound to: 1 - type: integer 
+2default:default
+◊
+synthesizing module '%s'638*oasys2.
+axi_crossbar_v2_1_crossbar2default:default2◊
+¿/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_crossbar.v2default:default2
+902default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+]
+%s*synth2N
+:	Parameter C_NUM_SLAVE_SLOTS bound to: 2 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_NUM_MASTER_SLOTS bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_NUM_ADDR_RANGES bound to: 3 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
+2default:default
+ì
+%s*synth2É
+Ó	Parameter C_M_AXI_BASE_ADDR bound to: 192'b000000000000000000000000000000001111110000000000000000000000000000000000000000000000000000000000111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+ì
+%s*synth2É
+Ó	Parameter C_M_AXI_HIGH_ADDR bound to: 192'b000000000000000000000000000000001111110011111111111111111111111100000000000000000000000000000000111000000011111111111111111111110000000000000000000000000000000000111111111111111111111111111111 
+2default:default
+—
+%s*synth2¡
+¨	Parameter C_S_AXI_BASE_ID bound to: 128'b00000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+—
+%s*synth2¡
+¨	Parameter C_S_AXI_HIGH_ID bound to: 128'b00000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000001 
+2default:default
+ó
+%s*synth2á
+s	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+2default:default
+g
+%s*synth2X
+D	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_S_AXI_SUPPORTS_WRITE bound to: 2'b11 
+2default:default
+U
+%s*synth2F
+2	Parameter C_S_AXI_SUPPORTS_READ bound to: 2'b11 
+2default:default
+U
+%s*synth2F
+2	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 1'b1 
+2default:default
+T
+%s*synth2E
+1	Parameter C_M_AXI_SUPPORTS_READ bound to: 1'b1 
+2default:default
+f
+%s*synth2W
+C	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 3 - type: integer 
+2default:default
+e
+%s*synth2V
+B	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 3 - type: integer 
+2default:default
+ï
+%s*synth2Ö
+q	Parameter C_S_AXI_SINGLE_THREAD bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+ò
+%s*synth2à
+t	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 64'b0000000000000000000000000000001000000000000000000000000000000001 
+2default:default
+ó
+%s*synth2á
+s	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 64'b0000000000000000000000000000001000000000000000000000000000000001 
+2default:default
+a
+%s*synth2R
+>	Parameter C_M_AXI_WRITE_ISSUING bound to: 8 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_M_AXI_READ_ISSUING bound to: 8 - type: integer 
+2default:default
+î
+%s*synth2Ñ
+p	Parameter C_S_AXI_ARB_PRIORITY bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_M_AXI_SECURE bound to: 0 - type: integer 
+2default:default
+o
+%s*synth2`
+L	Parameter C_M_AXI_ERR_MODE bound to: 32'b00000000000000000000000000000000 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
+2default:default
+é
+%s*synth2
+k	Parameter C_W_ISSUE_WIDTH bound to: 64'b0000000000000000000000000000000000000000000000000000000000000011 
+2default:default
+é
+%s*synth2
+k	Parameter C_R_ISSUE_WIDTH bound to: 64'b0000000000000000000000000000000000000000000000000000000000000011 
+2default:default
+ê
+%s*synth2Ä
+l	Parameter C_W_ACCEPT_WIDTH bound to: 64'b0000000000000000000000000000000100000000000000000000000000000000 
+2default:default
+ê
+%s*synth2Ä
+l	Parameter C_R_ACCEPT_WIDTH bound to: 64'b0000000000000000000000000000000100000000000000000000000000000000 
+2default:default
+S
+%s*synth2D
+0	Parameter C_DEBUG bound to: 1 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter P_AXI4 bound to: 0 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter P_AXI3 bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter P_AXILITE bound to: 2 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter P_WRITE bound to: 0 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter P_READ bound to: 1 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter P_NUM_MASTER_SLOTS_LOG bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter P_NUM_SLAVE_SLOTS_LOG bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter P_AXI_WID_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter P_ST_AWMESG_WIDTH bound to: 11 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter P_AA_AWMESG_WIDTH bound to: 65 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter P_ST_ARMESG_WIDTH bound to: 11 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter P_AA_ARMESG_WIDTH bound to: 65 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter P_ST_BMESG_WIDTH bound to: 3 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter P_ST_RMESG_WIDTH bound to: 35 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter P_WR_WMESG_WIDTH bound to: 38 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter P_BYPASS bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter P_FWD_REV bound to: 1 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter P_SIMPLE bound to: 7 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter P_M_AXI_SUPPORTS_READ bound to: 2'b11 
+2default:default
+V
+%s*synth2G
+3	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 2'b11 
+2default:default
+ö
+%s*synth2ä
+v	Parameter P_M_AXI_WRITE_CONNECTIVITY bound to: 64'b1111111111111111111111111111111100000000000000000000000000000011 
+2default:default
+ô
+%s*synth2â
+u	Parameter P_M_AXI_READ_CONNECTIVITY bound to: 64'b1111111111111111111111111111111100000000000000000000000000000011 
+2default:default
+ö
+%s*synth2ä
+v	Parameter P_S_AXI_WRITE_CONNECTIVITY bound to: 64'b1111111111111111111111111111111111111111111111111111111111111111 
+2default:default
+ô
+%s*synth2â
+u	Parameter P_S_AXI_READ_CONNECTIVITY bound to: 64'b1111111111111111111111111111111111111111111111111111111111111111 
+2default:default
+î
+%s*synth2Ñ
+p	Parameter P_M_AXI_READ_ISSUING bound to: 64'b0000000000000000000000000000000100000000000000000000000000001000 
+2default:default
+ï
+%s*synth2Ö
+q	Parameter P_M_AXI_WRITE_ISSUING bound to: 64'b0000000000000000000000000000000100000000000000000000000000001000 
+2default:default
+H
+%s*synth29
+%	Parameter P_DECERR bound to: 2'b11 
+2default:default
+·
+synthesizing module '%s'638*oasys23
+axi_crossbar_v2_1_si_transactor2default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_si_transactor.v2default:default2
+812default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+P
+%s*synth2A
+-	Parameter C_SI bound to: 0 - type: integer 
+2default:default
+Q
+%s*synth2B
+.	Parameter C_DIR bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_NUM_ADDR_RANGES bound to: 3 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter C_NUM_M bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_NUM_M_LOG bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_ACCEPTANCE bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_ACCEPTANCE_LOG bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_ID_WIDTH bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_THREAD_ID_WIDTH bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AMESG_WIDTH bound to: 11 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_RMESG_WIDTH bound to: 35 - type: integer 
+2default:default
+I
+%s*synth2:
+&	Parameter C_BASE_ID bound to: 2'b00 
+2default:default
+I
+%s*synth2:
+&	Parameter C_HIGH_ID bound to: 2'b01 
+2default:default
+ç
+%s*synth2˝
+Ë	Parameter C_BASE_ADDR bound to: 192'b000000000000000000000000000000001111110000000000000000000000000000000000000000000000000000000000111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+ç
+%s*synth2˝
+Ë	Parameter C_HIGH_ADDR bound to: 192'b000000000000000000000000000000001111110011111111111111111111111100000000000000000000000000000000111000000011111111111111111111110000000000000000000000000000000000111111111111111111111111111111 
+2default:default
+[
+%s*synth2L
+8	Parameter C_SINGLE_THREAD bound to: 0 - type: integer 
+2default:default
+L
+%s*synth2=
+)	Parameter C_TARGET_QUAL bound to: 1'b1 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_M_AXI_SECURE bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
+2default:default
+i
+%s*synth2Z
+F	Parameter C_ERR_MODE bound to: 32'b00000000000000000000000000000000 
+2default:default
+S
+%s*synth2D
+0	Parameter C_DEBUG bound to: 1 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter P_WRITE bound to: 0 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter P_READ bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter P_RMUX_MESG_WIDTH bound to: 38 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter P_AXILITE_ERRMODE bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter P_NONSECURE_BIT bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter P_NUM_M_LOG_M1 bound to: 1 - type: integer 
+2default:default
+J
+%s*synth2;
+'	Parameter P_M_AXILITE bound to: 1'b0 
+2default:default
+G
+%s*synth28
+$	Parameter P_FIXED bound to: 2'b00 
+2default:default
+Z
+%s*synth2K
+7	Parameter P_NUM_M_DE_LOG bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter P_THREAD_ID_WIDTH_M1 bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter P_NUM_ID_VAL bound to: 2 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter P_NUM_THREADS bound to: 1 - type: integer 
+2default:default
+N
+%s*synth2?
++	Parameter P_M_SECURE_MASK bound to: 1'b0 
+2default:default
+ﬂ
+synthesizing module '%s'638*oasys22
+axi_crossbar_v2_1_addr_decoder2default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_decoder.v2default:default2
+692default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_NUM_TARGETS bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_NUM_TARGETS_LOG bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_NUM_RANGES bound to: 3 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_TARGET_ENC bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_TARGET_HOT bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_REGION_ENC bound to: 1 - type: integer 
+2default:default
+ç
+%s*synth2˝
+Ë	Parameter C_BASE_ADDR bound to: 192'b000000000000000000000000000000001111110000000000000000000000000000000000000000000000000000000000111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+ç
+%s*synth2˝
+Ë	Parameter C_HIGH_ADDR bound to: 192'b000000000000000000000000000000001111110011111111111111111111111100000000000000000000000000000000111000000011111111111111111111110000000000000000000000000000000000111111111111111111111111111111 
+2default:default
+M
+%s*synth2>
+*	Parameter C_TARGET_QUAL bound to: 2'b01 
+2default:default
+X
+%s*synth2I
+5	Parameter C_RESOLUTION bound to: 2 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
+2default:default
+ˇ
+synthesizing module '%s'638*oasys2=
+)generic_baseblocks_v2_1_comparator_static2default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
+612default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_FAMILY bound to: rtl - type: string 
+2default:default
+d
+%s*synth2U
+A	Parameter C_VALUE bound to: 30'b000000000000000000000000000000 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_NUM_LUT bound to: 5 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+2default:default
+Ô
+synthesizing module '%s'638*oasys25
+!generic_baseblocks_v2_1_carry_and2default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v2default:default2
+622default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_FAMILY bound to: rtl - type: string 
+2default:default
+´
+%done synthesizing module '%s' (%s#%s)256*oasys25
+!generic_baseblocks_v2_1_carry_and2default:default2
+382default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v2default:default2
+622default:default8@Z8-256
+ª
+%done synthesizing module '%s' (%s#%s)256*oasys2=
+)generic_baseblocks_v2_1_comparator_static2default:default2
+392default:default2
+12default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
+612default:default8@Z8-256
+è
+synthesizing module '%s'638*oasys2M
+9generic_baseblocks_v2_1_comparator_static__parameterized02default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
+612default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_FAMILY bound to: rtl - type: string 
+2default:default
+d
+%s*synth2U
+A	Parameter C_VALUE bound to: 30'b111000000000000000000000000000 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_NUM_LUT bound to: 5 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+2default:default
+À
+%done synthesizing module '%s' (%s#%s)256*oasys2M
+9generic_baseblocks_v2_1_comparator_static__parameterized02default:default2
+392default:default2
+12default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
+612default:default8@Z8-256
+è
+synthesizing module '%s'638*oasys2M
+9generic_baseblocks_v2_1_comparator_static__parameterized12default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
+612default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_FAMILY bound to: rtl - type: string 
+2default:default
+d
+%s*synth2U
+A	Parameter C_VALUE bound to: 30'b111111000000000000000000000000 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_NUM_LUT bound to: 5 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+2default:default
+À
+%done synthesizing module '%s' (%s#%s)256*oasys2M
+9generic_baseblocks_v2_1_comparator_static__parameterized12default:default2
+392default:default2
+12default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
+612default:default8@Z8-256
+õ
+%done synthesizing module '%s' (%s#%s)256*oasys22
+axi_crossbar_v2_1_addr_decoder2default:default2
+402default:default2
+12default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_decoder.v2default:default2
+692default:default8@Z8-256
+Î
+synthesizing module '%s'638*oasys23
+generic_baseblocks_v2_1_mux_enc2default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+S
+%s*synth2D
+0	Parameter C_RATIO bound to: 2 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DATA_WIDTH bound to: 38 - type: integer 
+2default:default
+ß
+%done synthesizing module '%s' (%s#%s)256*oasys23
+generic_baseblocks_v2_1_mux_enc2default:default2
+412default:default2
+12default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-256
+Ë
+synthesizing module '%s'638*oasys24
+ axi_data_fifo_v2_1_axic_srl_fifo2default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v2default:default2
+612default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_FIFO_WIDTH bound to: 8 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_FIFO_DEPTH_LOG bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_USE_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter P_FIFO_DEPTH_LOG bound to: 2 - type: integer 
+2default:default
+G
+%s*synth28
+$	Parameter P_EMPTY bound to: 2'b11 
+2default:default
+M
+%s*synth2>
+*	Parameter P_ALMOSTEMPTY bound to: 2'b00 
+2default:default
+R
+%s*synth2C
+/	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110 
+2default:default
+L
+%s*synth2=
+)	Parameter P_ALMOSTFULL bound to: 2'b10 
+2default:default
+V
+%s*synth2G
+3	Parameter P_NUM_REPS bound to: 1 - type: integer 
+2default:default
+‡
+synthesizing module '%s'638*oasys20
+axi_data_fifo_v2_1_ndeep_srl2default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v2default:default2
+582default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+U
+%s*synth2F
+2	Parameter C_A_WIDTH bound to: 2 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter P_SRLASIZE bound to: 5 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter P_NUMSRLS bound to: 1 - type: integer 
+2default:default
+—
+synthesizing module '%s'638*oasys2
+SRLC32E2default:default2b
+L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+349502default:default8@Z8-638
+N
+%s*synth2?
++	Parameter IS_CLK_INVERTED bound to: 1'b0 
+2default:default
+c
+%s*synth2T
+@	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+2default:default
+ç
+%done synthesizing module '%s' (%s#%s)256*oasys2
+SRLC32E2default:default2
+422default:default2
+12default:default2b
+L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+349502default:default8@Z8-256
+ú
+%done synthesizing module '%s' (%s#%s)256*oasys20
+axi_data_fifo_v2_1_ndeep_srl2default:default2
+432default:default2
+12default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v2default:default2
+582default:default8@Z8-256
+§
+%done synthesizing module '%s' (%s#%s)256*oasys24
+ axi_data_fifo_v2_1_axic_srl_fifo2default:default2
+442default:default2
+12default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v2default:default2
+612default:default8@Z8-256
+ù
+%done synthesizing module '%s' (%s#%s)256*oasys23
+axi_crossbar_v2_1_si_transactor2default:default2
+452default:default2
+12default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_si_transactor.v2default:default2
+812default:default8@Z8-256
+Ò
+synthesizing module '%s'638*oasys2C
+/axi_crossbar_v2_1_si_transactor__parameterized02default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_si_transactor.v2default:default2
+812default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+P
+%s*synth2A
+-	Parameter C_SI bound to: 0 - type: integer 
+2default:default
+Q
+%s*synth2B
+.	Parameter C_DIR bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_NUM_ADDR_RANGES bound to: 3 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter C_NUM_M bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_NUM_M_LOG bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_ACCEPTANCE bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_ACCEPTANCE_LOG bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_ID_WIDTH bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_THREAD_ID_WIDTH bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AMESG_WIDTH bound to: 11 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_RMESG_WIDTH bound to: 3 - type: integer 
+2default:default
+I
+%s*synth2:
+&	Parameter C_BASE_ID bound to: 2'b00 
+2default:default
+I
+%s*synth2:
+&	Parameter C_HIGH_ID bound to: 2'b01 
+2default:default
+ç
+%s*synth2˝
+Ë	Parameter C_BASE_ADDR bound to: 192'b000000000000000000000000000000001111110000000000000000000000000000000000000000000000000000000000111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+ç
+%s*synth2˝
+Ë	Parameter C_HIGH_ADDR bound to: 192'b000000000000000000000000000000001111110011111111111111111111111100000000000000000000000000000000111000000011111111111111111111110000000000000000000000000000000000111111111111111111111111111111 
+2default:default
+[
+%s*synth2L
+8	Parameter C_SINGLE_THREAD bound to: 0 - type: integer 
+2default:default
+L
+%s*synth2=
+)	Parameter C_TARGET_QUAL bound to: 1'b1 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_M_AXI_SECURE bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
+2default:default
+i
+%s*synth2Z
+F	Parameter C_ERR_MODE bound to: 32'b00000000000000000000000000000000 
+2default:default
+S
+%s*synth2D
+0	Parameter C_DEBUG bound to: 1 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter P_WRITE bound to: 0 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter P_READ bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter P_RMUX_MESG_WIDTH bound to: 6 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter P_AXILITE_ERRMODE bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter P_NONSECURE_BIT bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter P_NUM_M_LOG_M1 bound to: 1 - type: integer 
+2default:default
+J
+%s*synth2;
+'	Parameter P_M_AXILITE bound to: 1'b0 
+2default:default
+G
+%s*synth28
+$	Parameter P_FIXED bound to: 2'b00 
+2default:default
+Z
+%s*synth2K
+7	Parameter P_NUM_M_DE_LOG bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter P_THREAD_ID_WIDTH_M1 bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter P_NUM_ID_VAL bound to: 2 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter P_NUM_THREADS bound to: 1 - type: integer 
+2default:default
+N
+%s*synth2?
++	Parameter P_M_SECURE_MASK bound to: 1'b0 
+2default:default
+˚
+synthesizing module '%s'638*oasys2C
+/generic_baseblocks_v2_1_mux_enc__parameterized02default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+S
+%s*synth2D
+0	Parameter C_RATIO bound to: 2 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DATA_WIDTH bound to: 6 - type: integer 
+2default:default
+∑
+%done synthesizing module '%s' (%s#%s)256*oasys2C
+/generic_baseblocks_v2_1_mux_enc__parameterized02default:default2
+452default:default2
+12default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-256
+≠
+%done synthesizing module '%s' (%s#%s)256*oasys2C
+/axi_crossbar_v2_1_si_transactor__parameterized02default:default2
+452default:default2
+12default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_si_transactor.v2default:default2
+812default:default8@Z8-256
+◊
+synthesizing module '%s'638*oasys2.
+axi_crossbar_v2_1_splitter2default:default2◊
+¿/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_splitter.v2default:default2
+722default:default8@Z8-638
+S
+%s*synth2D
+0	Parameter C_NUM_M bound to: 2 - type: integer 
+2default:default
+ì
+%done synthesizing module '%s' (%s#%s)256*oasys2.
+axi_crossbar_v2_1_splitter2default:default2
+462default:default2
+12default:default2◊
+¿/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_splitter.v2default:default2
+722default:default8@Z8-256
+ﬂ
+synthesizing module '%s'638*oasys22
+axi_crossbar_v2_1_wdata_router2default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_wdata_router.v2default:default2
+672default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_WMESG_WIDTH bound to: 38 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_SELECT_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_FIFO_DEPTH_LOG bound to: 0 - type: integer 
+2default:default
+
+synthesizing module '%s'638*oasys28
+$axi_data_fifo_v2_1_axic_reg_srl_fifo2default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v2default:default2
+612default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_FIFO_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_FIFO_DEPTH_LOG bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_USE_FULL bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter P_FIFO_DEPTH_LOG bound to: 2 - type: integer 
+2default:default
+G
+%s*synth28
+$	Parameter P_EMPTY bound to: 2'b11 
+2default:default
+M
+%s*synth2>
+*	Parameter P_ALMOSTEMPTY bound to: 2'b00 
+2default:default
+R
+%s*synth2C
+/	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110 
+2default:default
+L
+%s*synth2=
+)	Parameter P_ALMOSTFULL bound to: 2'b10 
+2default:default
+V
+%s*synth2G
+3	Parameter P_NUM_REPS bound to: 1 - type: integer 
+2default:default
+D
+%s*synth25
+!	Parameter ZERO bound to: 2'b10 
+2default:default
+C
+%s*synth24
+ 	Parameter ONE bound to: 2'b11 
+2default:default
+C
+%s*synth24
+ 	Parameter TWO bound to: 2'b01 
+2default:default
+Ã
+-case statement is not full and has no default155*oasys2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v2default:default2
+1572default:default8@Z8-155
+¨
+%done synthesizing module '%s' (%s#%s)256*oasys28
+$axi_data_fifo_v2_1_axic_reg_srl_fifo2default:default2
+472default:default2
+12default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v2default:default2
+612default:default8@Z8-256
+õ
+%done synthesizing module '%s' (%s#%s)256*oasys22
+axi_crossbar_v2_1_wdata_router2default:default2
+482default:default2
+12default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_wdata_router.v2default:default2
+672default:default8@Z8-256
+Ò
+synthesizing module '%s'638*oasys2C
+/axi_crossbar_v2_1_si_transactor__parameterized12default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_si_transactor.v2default:default2
+812default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+P
+%s*synth2A
+-	Parameter C_SI bound to: 1 - type: integer 
+2default:default
+Q
+%s*synth2B
+.	Parameter C_DIR bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_NUM_ADDR_RANGES bound to: 3 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter C_NUM_M bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_NUM_M_LOG bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_ACCEPTANCE bound to: 2 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_ACCEPTANCE_LOG bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_ID_WIDTH bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_THREAD_ID_WIDTH bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AMESG_WIDTH bound to: 11 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_RMESG_WIDTH bound to: 35 - type: integer 
+2default:default
+I
+%s*synth2:
+&	Parameter C_BASE_ID bound to: 2'b10 
+2default:default
+I
+%s*synth2:
+&	Parameter C_HIGH_ID bound to: 2'b10 
+2default:default
+ç
+%s*synth2˝
+Ë	Parameter C_BASE_ADDR bound to: 192'b000000000000000000000000000000001111110000000000000000000000000000000000000000000000000000000000111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+ç
+%s*synth2˝
+Ë	Parameter C_HIGH_ADDR bound to: 192'b000000000000000000000000000000001111110011111111111111111111111100000000000000000000000000000000111000000011111111111111111111110000000000000000000000000000000000111111111111111111111111111111 
+2default:default
+[
+%s*synth2L
+8	Parameter C_SINGLE_THREAD bound to: 0 - type: integer 
+2default:default
+L
+%s*synth2=
+)	Parameter C_TARGET_QUAL bound to: 1'b1 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_M_AXI_SECURE bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
+2default:default
+i
+%s*synth2Z
+F	Parameter C_ERR_MODE bound to: 32'b00000000000000000000000000000000 
+2default:default
+S
+%s*synth2D
+0	Parameter C_DEBUG bound to: 1 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter P_WRITE bound to: 0 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter P_READ bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter P_RMUX_MESG_WIDTH bound to: 38 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter P_AXILITE_ERRMODE bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter P_NONSECURE_BIT bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter P_NUM_M_LOG_M1 bound to: 1 - type: integer 
+2default:default
+J
+%s*synth2;
+'	Parameter P_M_AXILITE bound to: 1'b0 
+2default:default
+G
+%s*synth28
+$	Parameter P_FIXED bound to: 2'b00 
+2default:default
+Z
+%s*synth2K
+7	Parameter P_NUM_M_DE_LOG bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter P_THREAD_ID_WIDTH_M1 bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter P_NUM_ID_VAL bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter P_NUM_THREADS bound to: 1 - type: integer 
+2default:default
+N
+%s*synth2?
++	Parameter P_M_SECURE_MASK bound to: 1'b0 
+2default:default
+¯
+synthesizing module '%s'638*oasys2D
+0axi_data_fifo_v2_1_axic_srl_fifo__parameterized02default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v2default:default2
+612default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_FIFO_WIDTH bound to: 8 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_FIFO_DEPTH_LOG bound to: 2 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_USE_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter P_FIFO_DEPTH_LOG bound to: 2 - type: integer 
+2default:default
+G
+%s*synth28
+$	Parameter P_EMPTY bound to: 2'b11 
+2default:default
+M
+%s*synth2>
+*	Parameter P_ALMOSTEMPTY bound to: 2'b00 
+2default:default
+R
+%s*synth2C
+/	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110 
+2default:default
+L
+%s*synth2=
+)	Parameter P_ALMOSTFULL bound to: 2'b10 
+2default:default
+V
+%s*synth2G
+3	Parameter P_NUM_REPS bound to: 1 - type: integer 
+2default:default
+¥
+%done synthesizing module '%s' (%s#%s)256*oasys2D
+0axi_data_fifo_v2_1_axic_srl_fifo__parameterized02default:default2
+482default:default2
+12default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v2default:default2
+612default:default8@Z8-256
+≠
+%done synthesizing module '%s' (%s#%s)256*oasys2C
+/axi_crossbar_v2_1_si_transactor__parameterized12default:default2
+482default:default2
+12default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_si_transactor.v2default:default2
+812default:default8@Z8-256
+Ò
+synthesizing module '%s'638*oasys2C
+/axi_crossbar_v2_1_si_transactor__parameterized22default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_si_transactor.v2default:default2
+812default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+P
+%s*synth2A
+-	Parameter C_SI bound to: 1 - type: integer 
+2default:default
+Q
+%s*synth2B
+.	Parameter C_DIR bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_NUM_ADDR_RANGES bound to: 3 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter C_NUM_M bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_NUM_M_LOG bound to: 0 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_ACCEPTANCE bound to: 2 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_ACCEPTANCE_LOG bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_ID_WIDTH bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_THREAD_ID_WIDTH bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AMESG_WIDTH bound to: 11 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_RMESG_WIDTH bound to: 3 - type: integer 
+2default:default
+I
+%s*synth2:
+&	Parameter C_BASE_ID bound to: 2'b10 
+2default:default
+I
+%s*synth2:
+&	Parameter C_HIGH_ID bound to: 2'b10 
+2default:default
+ç
+%s*synth2˝
+Ë	Parameter C_BASE_ADDR bound to: 192'b000000000000000000000000000000001111110000000000000000000000000000000000000000000000000000000000111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+ç
+%s*synth2˝
+Ë	Parameter C_HIGH_ADDR bound to: 192'b000000000000000000000000000000001111110011111111111111111111111100000000000000000000000000000000111000000011111111111111111111110000000000000000000000000000000000111111111111111111111111111111 
+2default:default
+[
+%s*synth2L
+8	Parameter C_SINGLE_THREAD bound to: 0 - type: integer 
+2default:default
+L
+%s*synth2=
+)	Parameter C_TARGET_QUAL bound to: 1'b1 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_M_AXI_SECURE bound to: 0 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
+2default:default
+i
+%s*synth2Z
+F	Parameter C_ERR_MODE bound to: 32'b00000000000000000000000000000000 
+2default:default
+S
+%s*synth2D
+0	Parameter C_DEBUG bound to: 1 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter P_WRITE bound to: 0 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter P_READ bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter P_RMUX_MESG_WIDTH bound to: 6 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter P_AXILITE_ERRMODE bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter P_NONSECURE_BIT bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter P_NUM_M_LOG_M1 bound to: 1 - type: integer 
+2default:default
+J
+%s*synth2;
+'	Parameter P_M_AXILITE bound to: 1'b0 
+2default:default
+G
+%s*synth28
+$	Parameter P_FIXED bound to: 2'b00 
+2default:default
+Z
+%s*synth2K
+7	Parameter P_NUM_M_DE_LOG bound to: 1 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter P_THREAD_ID_WIDTH_M1 bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter P_NUM_ID_VAL bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter P_NUM_THREADS bound to: 1 - type: integer 
+2default:default
+N
+%s*synth2?
++	Parameter P_M_SECURE_MASK bound to: 1'b0 
+2default:default
+≠
+%done synthesizing module '%s' (%s#%s)256*oasys2C
+/axi_crossbar_v2_1_si_transactor__parameterized22default:default2
+482default:default2
+12default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_si_transactor.v2default:default2
+812default:default8@Z8-256
+Ô
+synthesizing module '%s'638*oasys2B
+.axi_crossbar_v2_1_wdata_router__parameterized02default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_wdata_router.v2default:default2
+672default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_WMESG_WIDTH bound to: 38 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_SELECT_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_FIFO_DEPTH_LOG bound to: 1 - type: integer 
+2default:default
+Ä
+synthesizing module '%s'638*oasys2H
+4axi_data_fifo_v2_1_axic_reg_srl_fifo__parameterized02default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v2default:default2
+612default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_FIFO_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_FIFO_DEPTH_LOG bound to: 1 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_USE_FULL bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter P_FIFO_DEPTH_LOG bound to: 2 - type: integer 
+2default:default
+G
+%s*synth28
+$	Parameter P_EMPTY bound to: 2'b11 
+2default:default
+M
+%s*synth2>
+*	Parameter P_ALMOSTEMPTY bound to: 2'b00 
+2default:default
+R
+%s*synth2C
+/	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110 
+2default:default
+L
+%s*synth2=
+)	Parameter P_ALMOSTFULL bound to: 2'b10 
+2default:default
+V
+%s*synth2G
+3	Parameter P_NUM_REPS bound to: 1 - type: integer 
+2default:default
+D
+%s*synth25
+!	Parameter ZERO bound to: 2'b10 
+2default:default
+C
+%s*synth24
+ 	Parameter ONE bound to: 2'b11 
+2default:default
+C
+%s*synth24
+ 	Parameter TWO bound to: 2'b01 
+2default:default
+Ã
+-case statement is not full and has no default155*oasys2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v2default:default2
+1572default:default8@Z8-155
+º
+%done synthesizing module '%s' (%s#%s)256*oasys2H
+4axi_data_fifo_v2_1_axic_reg_srl_fifo__parameterized02default:default2
+482default:default2
+12default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v2default:default2
+612default:default8@Z8-256
+´
+%done synthesizing module '%s' (%s#%s)256*oasys2B
+.axi_crossbar_v2_1_wdata_router__parameterized02default:default2
+482default:default2
+12default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_wdata_router.v2default:default2
+672default:default8@Z8-256
+Ô
+synthesizing module '%s'638*oasys2B
+.axi_crossbar_v2_1_addr_decoder__parameterized02default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_decoder.v2default:default2
+692default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_NUM_TARGETS bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_NUM_TARGETS_LOG bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_NUM_RANGES bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_ADDR_WIDTH bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_TARGET_ENC bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_TARGET_HOT bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_REGION_ENC bound to: 0 - type: integer 
+2default:default
+Õ
+%s*synth2Ω
+®	Parameter C_BASE_ADDR bound to: 128'b00000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+Õ
+%s*synth2Ω
+®	Parameter C_HIGH_ADDR bound to: 128'b00000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000001 
+2default:default
+N
+%s*synth2?
++	Parameter C_TARGET_QUAL bound to: 3'b011 
+2default:default
+X
+%s*synth2I
+5	Parameter C_RESOLUTION bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
+2default:default
+´
+%done synthesizing module '%s' (%s#%s)256*oasys2B
+.axi_crossbar_v2_1_addr_decoder__parameterized02default:default2
+482default:default2
+12default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_decoder.v2default:default2
+692default:default8@Z8-256
+Ÿ
+synthesizing module '%s'638*oasys2/
+axi_crossbar_v2_1_wdata_mux2default:default2ÿ
+¡/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_wdata_mux.v2default:default2
+682default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_WMESG_WIDTH bound to: 38 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_NUM_SLAVE_SLOTS bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_SELECT_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_FIFO_DEPTH_LOG bound to: 3 - type: integer 
+2default:default
+Ä
+synthesizing module '%s'638*oasys2H
+4axi_data_fifo_v2_1_axic_reg_srl_fifo__parameterized12default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v2default:default2
+612default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_FIFO_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_FIFO_DEPTH_LOG bound to: 3 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_USE_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter P_FIFO_DEPTH_LOG bound to: 3 - type: integer 
+2default:default
+H
+%s*synth29
+%	Parameter P_EMPTY bound to: 3'b111 
+2default:default
+N
+%s*synth2?
++	Parameter P_ALMOSTEMPTY bound to: 3'b000 
+2default:default
+S
+%s*synth2D
+0	Parameter P_ALMOSTFULL_TEMP bound to: 4'b1110 
+2default:default
+M
+%s*synth2>
+*	Parameter P_ALMOSTFULL bound to: 3'b110 
+2default:default
+V
+%s*synth2G
+3	Parameter P_NUM_REPS bound to: 1 - type: integer 
+2default:default
+D
+%s*synth25
+!	Parameter ZERO bound to: 2'b10 
+2default:default
+C
+%s*synth24
+ 	Parameter ONE bound to: 2'b11 
+2default:default
+C
+%s*synth24
+ 	Parameter TWO bound to: 2'b01 
+2default:default
+
+synthesizing module '%s'638*oasys2@
+,axi_data_fifo_v2_1_ndeep_srl__parameterized02default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v2default:default2
+582default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+U
+%s*synth2F
+2	Parameter C_A_WIDTH bound to: 3 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter P_SRLASIZE bound to: 5 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter P_NUMSRLS bound to: 1 - type: integer 
+2default:default
+¨
+%done synthesizing module '%s' (%s#%s)256*oasys2@
+,axi_data_fifo_v2_1_ndeep_srl__parameterized02default:default2
+482default:default2
+12default:default2ﬁ
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v2default:default2
+582default:default8@Z8-256
+Ã
+-case statement is not full and has no default155*oasys2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v2default:default2
+1572default:default8@Z8-155
+º
+%done synthesizing module '%s' (%s#%s)256*oasys2H
+4axi_data_fifo_v2_1_axic_reg_srl_fifo__parameterized12default:default2
+482default:default2
+12default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v2default:default2
+612default:default8@Z8-256
+˚
+synthesizing module '%s'638*oasys2C
+/generic_baseblocks_v2_1_mux_enc__parameterized12default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_FAMILY bound to: rtl - type: string 
+2default:default
+S
+%s*synth2D
+0	Parameter C_RATIO bound to: 2 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DATA_WIDTH bound to: 38 - type: integer 
+2default:default
+∑
+%done synthesizing module '%s' (%s#%s)256*oasys2C
+/generic_baseblocks_v2_1_mux_enc__parameterized12default:default2
+482default:default2
+12default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-256
+ï
+%done synthesizing module '%s' (%s#%s)256*oasys2/
+axi_crossbar_v2_1_wdata_mux2default:default2
+492default:default2
+12default:default2ÿ
+¡/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_wdata_mux.v2default:default2
+682default:default8@Z8-256
+¯
+synthesizing module '%s'638*oasys2D
+0axi_data_fifo_v2_1_axic_srl_fifo__parameterized12default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v2default:default2
+612default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_FIFO_WIDTH bound to: 8 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_FIFO_DEPTH_LOG bound to: 3 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_USE_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter P_FIFO_DEPTH_LOG bound to: 3 - type: integer 
+2default:default
+H
+%s*synth29
+%	Parameter P_EMPTY bound to: 3'b111 
+2default:default
+N
+%s*synth2?
++	Parameter P_ALMOSTEMPTY bound to: 3'b000 
+2default:default
+S
+%s*synth2D
+0	Parameter P_ALMOSTFULL_TEMP bound to: 4'b1110 
+2default:default
+M
+%s*synth2>
+*	Parameter P_ALMOSTFULL bound to: 3'b110 
+2default:default
+V
+%s*synth2G
+3	Parameter P_NUM_REPS bound to: 1 - type: integer 
+2default:default
+¥
+%done synthesizing module '%s' (%s#%s)256*oasys2D
+0axi_data_fifo_v2_1_axic_srl_fifo__parameterized12default:default2
+492default:default2
+12default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v2default:default2
+612default:default8@Z8-256
+Å
+synthesizing module '%s'638*oasys2>
+*axi_register_slice_v2_1_axi_register_slice2default:default2Ò
+⁄/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
+642default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 2 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXI_ADDR_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_REG_CONFIG_AW bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_REG_CONFIG_W bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_REG_CONFIG_B bound to: 7 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_REG_CONFIG_AR bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_REG_CONFIG_R bound to: 1 - type: integer 
+2default:default
+i
+%s*synth2Z
+F	Parameter C_AXI_SUPPORTS_REGION_SIGNALS bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWADDR_INDEX bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWADDR_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWPROT_INDEX bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWPROT_WIDTH bound to: 3 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWSIZE_INDEX bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWSIZE_WIDTH bound to: 3 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWBURST_INDEX bound to: 7 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWBURST_WIDTH bound to: 2 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWCACHE_INDEX bound to: 9 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWCACHE_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWLEN_INDEX bound to: 13 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_AWLEN_WIDTH bound to: 8 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWLOCK_INDEX bound to: 21 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWLOCK_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_AWID_INDEX bound to: 22 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter G_AXI_AWID_WIDTH bound to: 2 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWQOS_INDEX bound to: 24 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_AWQOS_WIDTH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter G_AXI_AWREGION_INDEX bound to: 28 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter G_AXI_AWREGION_WIDTH bound to: 4 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWUSER_INDEX bound to: 32 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter G_AXI_AWPAYLOAD_WIDTH bound to: 32 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARADDR_INDEX bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARADDR_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARPROT_INDEX bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARPROT_WIDTH bound to: 3 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARSIZE_INDEX bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARSIZE_WIDTH bound to: 3 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARBURST_INDEX bound to: 7 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARBURST_WIDTH bound to: 2 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARCACHE_INDEX bound to: 9 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARCACHE_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARLEN_INDEX bound to: 13 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_ARLEN_WIDTH bound to: 8 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARLOCK_INDEX bound to: 21 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARLOCK_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_ARID_INDEX bound to: 22 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter G_AXI_ARID_WIDTH bound to: 2 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARQOS_INDEX bound to: 24 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_ARQOS_WIDTH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter G_AXI_ARREGION_INDEX bound to: 28 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter G_AXI_ARREGION_WIDTH bound to: 4 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARUSER_INDEX bound to: 32 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter G_AXI_ARPAYLOAD_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_WDATA_INDEX bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_WDATA_WIDTH bound to: 32 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_WSTRB_INDEX bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_WLAST_INDEX bound to: 36 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_WLAST_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter G_AXI_WID_INDEX bound to: 37 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter G_AXI_WID_WIDTH bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_WUSER_INDEX bound to: 37 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter G_AXI_WPAYLOAD_WIDTH bound to: 37 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_BRESP_INDEX bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_BRESP_WIDTH bound to: 2 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter G_AXI_BID_INDEX bound to: 2 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter G_AXI_BID_WIDTH bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_BUSER_INDEX bound to: 4 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter G_AXI_BPAYLOAD_WIDTH bound to: 4 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_RDATA_INDEX bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_RDATA_WIDTH bound to: 32 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_RRESP_INDEX bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_RRESP_WIDTH bound to: 2 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_RLAST_INDEX bound to: 34 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_RLAST_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter G_AXI_RID_INDEX bound to: 35 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter G_AXI_RID_WIDTH bound to: 2 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_RUSER_INDEX bound to: 37 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 37 - type: integer 
+2default:default
+Ò
+synthesizing module '%s'638*oasys26
+"axi_infrastructure_v1_1_axi2vector2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
+602default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 2 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXI_ADDR_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+2default:default
+i
+%s*synth2Z
+F	Parameter C_AXI_SUPPORTS_REGION_SIGNALS bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AWPAYLOAD_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_WPAYLOAD_WIDTH bound to: 37 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_BPAYLOAD_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_ARPAYLOAD_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_RPAYLOAD_WIDTH bound to: 37 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWADDR_INDEX bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWADDR_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWPROT_INDEX bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWPROT_WIDTH bound to: 3 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWSIZE_INDEX bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWSIZE_WIDTH bound to: 3 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWBURST_INDEX bound to: 7 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWBURST_WIDTH bound to: 2 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWCACHE_INDEX bound to: 9 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWCACHE_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWLEN_INDEX bound to: 13 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_AWLEN_WIDTH bound to: 8 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWLOCK_INDEX bound to: 21 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWLOCK_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_AWID_INDEX bound to: 22 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter G_AXI_AWID_WIDTH bound to: 2 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWQOS_INDEX bound to: 24 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_AWQOS_WIDTH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter G_AXI_AWREGION_INDEX bound to: 28 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter G_AXI_AWREGION_WIDTH bound to: 4 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWUSER_INDEX bound to: 32 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter G_AXI_AWPAYLOAD_WIDTH bound to: 32 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARADDR_INDEX bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARADDR_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARPROT_INDEX bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARPROT_WIDTH bound to: 3 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARSIZE_INDEX bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARSIZE_WIDTH bound to: 3 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARBURST_INDEX bound to: 7 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARBURST_WIDTH bound to: 2 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARCACHE_INDEX bound to: 9 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARCACHE_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARLEN_INDEX bound to: 13 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_ARLEN_WIDTH bound to: 8 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARLOCK_INDEX bound to: 21 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARLOCK_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_ARID_INDEX bound to: 22 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter G_AXI_ARID_WIDTH bound to: 2 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARQOS_INDEX bound to: 24 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_ARQOS_WIDTH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter G_AXI_ARREGION_INDEX bound to: 28 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter G_AXI_ARREGION_WIDTH bound to: 4 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARUSER_INDEX bound to: 32 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter G_AXI_ARPAYLOAD_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_WDATA_INDEX bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_WDATA_WIDTH bound to: 32 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_WSTRB_INDEX bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_WLAST_INDEX bound to: 36 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_WLAST_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter G_AXI_WID_INDEX bound to: 37 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter G_AXI_WID_WIDTH bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_WUSER_INDEX bound to: 37 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter G_AXI_WPAYLOAD_WIDTH bound to: 37 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_BRESP_INDEX bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_BRESP_WIDTH bound to: 2 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter G_AXI_BID_INDEX bound to: 2 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter G_AXI_BID_WIDTH bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_BUSER_INDEX bound to: 4 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter G_AXI_BPAYLOAD_WIDTH bound to: 4 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_RDATA_INDEX bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_RDATA_WIDTH bound to: 32 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_RRESP_INDEX bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_RRESP_WIDTH bound to: 2 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_RLAST_INDEX bound to: 34 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_RLAST_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter G_AXI_RID_INDEX bound to: 35 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter G_AXI_RID_WIDTH bound to: 2 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_RUSER_INDEX bound to: 37 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 37 - type: integer 
+2default:default
+≠
+%done synthesizing module '%s' (%s#%s)256*oasys26
+"axi_infrastructure_v1_1_axi2vector2default:default2
+502default:default2
+12default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
+602default:default8@Z8-256
+É
+synthesizing module '%s'638*oasys2?
++axi_register_slice_v2_1_axic_register_slice2default:default2Ú
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+622default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+2default:default
+ø
+%done synthesizing module '%s' (%s#%s)256*oasys2?
++axi_register_slice_v2_1_axic_register_slice2default:default2
+512default:default2
+12default:default2Ú
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+622default:default8@Z8-256
+ì
+synthesizing module '%s'638*oasys2O
+;axi_register_slice_v2_1_axic_register_slice__parameterized02default:default2Ú
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+622default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DATA_WIDTH bound to: 37 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+2default:default
+œ
+%done synthesizing module '%s' (%s#%s)256*oasys2O
+;axi_register_slice_v2_1_axic_register_slice__parameterized02default:default2
+512default:default2
+12default:default2Ú
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+622default:default8@Z8-256
+ì
+synthesizing module '%s'638*oasys2O
+;axi_register_slice_v2_1_axic_register_slice__parameterized12default:default2Ú
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+622default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DATA_WIDTH bound to: 4 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_REG_CONFIG bound to: 7 - type: integer 
+2default:default
+œ
+%done synthesizing module '%s' (%s#%s)256*oasys2O
+;axi_register_slice_v2_1_axic_register_slice__parameterized12default:default2
+512default:default2
+12default:default2Ú
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+622default:default8@Z8-256
+ì
+synthesizing module '%s'638*oasys2O
+;axi_register_slice_v2_1_axic_register_slice__parameterized22default:default2Ú
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+622default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DATA_WIDTH bound to: 37 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_REG_CONFIG bound to: 1 - type: integer 
+2default:default
+œ
+%done synthesizing module '%s' (%s#%s)256*oasys2O
+;axi_register_slice_v2_1_axic_register_slice__parameterized22default:default2
+512default:default2
+12default:default2Ú
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+622default:default8@Z8-256
+Ò
+synthesizing module '%s'638*oasys26
+"axi_infrastructure_v1_1_vector2axi2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
+602default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 2 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_AXI_ADDR_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+2default:default
+i
+%s*synth2Z
+F	Parameter C_AXI_SUPPORTS_REGION_SIGNALS bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AWPAYLOAD_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_WPAYLOAD_WIDTH bound to: 37 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_BPAYLOAD_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_ARPAYLOAD_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_RPAYLOAD_WIDTH bound to: 37 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWADDR_INDEX bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWADDR_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWPROT_INDEX bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWPROT_WIDTH bound to: 3 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWSIZE_INDEX bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWSIZE_WIDTH bound to: 3 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWBURST_INDEX bound to: 7 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWBURST_WIDTH bound to: 2 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWCACHE_INDEX bound to: 9 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWCACHE_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWLEN_INDEX bound to: 13 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_AWLEN_WIDTH bound to: 8 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWLOCK_INDEX bound to: 21 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWLOCK_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_AWID_INDEX bound to: 22 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter G_AXI_AWID_WIDTH bound to: 2 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWQOS_INDEX bound to: 24 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_AWQOS_WIDTH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter G_AXI_AWREGION_INDEX bound to: 28 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter G_AXI_AWREGION_WIDTH bound to: 4 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_AWUSER_INDEX bound to: 32 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter G_AXI_AWPAYLOAD_WIDTH bound to: 32 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARADDR_INDEX bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARADDR_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARPROT_INDEX bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARPROT_WIDTH bound to: 3 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARSIZE_INDEX bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARSIZE_WIDTH bound to: 3 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARBURST_INDEX bound to: 7 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARBURST_WIDTH bound to: 2 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARCACHE_INDEX bound to: 9 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARCACHE_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARLEN_INDEX bound to: 13 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_ARLEN_WIDTH bound to: 8 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARLOCK_INDEX bound to: 21 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARLOCK_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_ARID_INDEX bound to: 22 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter G_AXI_ARID_WIDTH bound to: 2 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARQOS_INDEX bound to: 24 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_ARQOS_WIDTH bound to: 4 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter G_AXI_ARREGION_INDEX bound to: 28 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter G_AXI_ARREGION_WIDTH bound to: 4 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter G_AXI_ARUSER_INDEX bound to: 32 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter G_AXI_ARPAYLOAD_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_WDATA_INDEX bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_WDATA_WIDTH bound to: 32 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_WSTRB_INDEX bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_WLAST_INDEX bound to: 36 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_WLAST_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter G_AXI_WID_INDEX bound to: 37 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter G_AXI_WID_WIDTH bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_WUSER_INDEX bound to: 37 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter G_AXI_WPAYLOAD_WIDTH bound to: 37 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_BRESP_INDEX bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_BRESP_WIDTH bound to: 2 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter G_AXI_BID_INDEX bound to: 2 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter G_AXI_BID_WIDTH bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_BUSER_INDEX bound to: 4 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+`
+%s*synth2Q
+=	Parameter G_AXI_BPAYLOAD_WIDTH bound to: 4 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_RDATA_INDEX bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_RDATA_WIDTH bound to: 32 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_RRESP_INDEX bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_RRESP_WIDTH bound to: 2 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_RLAST_INDEX bound to: 34 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_RLAST_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter G_AXI_RID_INDEX bound to: 35 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter G_AXI_RID_WIDTH bound to: 2 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter G_AXI_RUSER_INDEX bound to: 37 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 37 - type: integer 
+2default:default
+≠
+%done synthesizing module '%s' (%s#%s)256*oasys26
+"axi_infrastructure_v1_1_vector2axi2default:default2
+522default:default2
+12default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
+602default:default8@Z8-256
+Ω
+%done synthesizing module '%s' (%s#%s)256*oasys2>
+*axi_register_slice_v2_1_axi_register_slice2default:default2
+532default:default2
+12default:default2Ò
+⁄/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
+642default:default8@Z8-256
+È
+synthesizing module '%s'638*oasys2?
++axi_crossbar_v2_1_wdata_mux__parameterized02default:default2ÿ
+¡/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_wdata_mux.v2default:default2
+682default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_WMESG_WIDTH bound to: 38 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_NUM_SLAVE_SLOTS bound to: 2 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_SELECT_WIDTH bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_FIFO_DEPTH_LOG bound to: 0 - type: integer 
+2default:default
+Ä
+synthesizing module '%s'638*oasys2H
+4axi_data_fifo_v2_1_axic_reg_srl_fifo__parameterized22default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v2default:default2
+612default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_FIFO_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_FIFO_DEPTH_LOG bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_USE_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter P_FIFO_DEPTH_LOG bound to: 2 - type: integer 
+2default:default
+G
+%s*synth28
+$	Parameter P_EMPTY bound to: 2'b11 
+2default:default
+M
+%s*synth2>
+*	Parameter P_ALMOSTEMPTY bound to: 2'b00 
+2default:default
+R
+%s*synth2C
+/	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110 
+2default:default
+L
+%s*synth2=
+)	Parameter P_ALMOSTFULL bound to: 2'b10 
+2default:default
+V
+%s*synth2G
+3	Parameter P_NUM_REPS bound to: 1 - type: integer 
+2default:default
+D
+%s*synth25
+!	Parameter ZERO bound to: 2'b10 
+2default:default
+C
+%s*synth24
+ 	Parameter ONE bound to: 2'b11 
+2default:default
+C
+%s*synth24
+ 	Parameter TWO bound to: 2'b01 
+2default:default
+Ã
+-case statement is not full and has no default155*oasys2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v2default:default2
+1572default:default8@Z8-155
+º
+%done synthesizing module '%s' (%s#%s)256*oasys2H
+4axi_data_fifo_v2_1_axic_reg_srl_fifo__parameterized22default:default2
+532default:default2
+12default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v2default:default2
+612default:default8@Z8-256
+•
+%done synthesizing module '%s' (%s#%s)256*oasys2?
++axi_crossbar_v2_1_wdata_mux__parameterized02default:default2
+532default:default2
+12default:default2ÿ
+¡/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_wdata_mux.v2default:default2
+682default:default8@Z8-256
+¯
+synthesizing module '%s'638*oasys2D
+0axi_data_fifo_v2_1_axic_srl_fifo__parameterized22default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v2default:default2
+612default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+X
+%s*synth2I
+5	Parameter C_FIFO_WIDTH bound to: 8 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_MAX_CTRL_FANOUT bound to: 33 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter C_FIFO_DEPTH_LOG bound to: 0 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter C_USE_FULL bound to: 0 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter P_FIFO_DEPTH_LOG bound to: 2 - type: integer 
+2default:default
+G
+%s*synth28
+$	Parameter P_EMPTY bound to: 2'b11 
+2default:default
+M
+%s*synth2>
+*	Parameter P_ALMOSTEMPTY bound to: 2'b00 
+2default:default
+R
+%s*synth2C
+/	Parameter P_ALMOSTFULL_TEMP bound to: 3'b110 
+2default:default
+L
+%s*synth2=
+)	Parameter P_ALMOSTFULL bound to: 2'b10 
+2default:default
+V
+%s*synth2G
+3	Parameter P_NUM_REPS bound to: 1 - type: integer 
+2default:default
+¥
+%done synthesizing module '%s' (%s#%s)256*oasys2D
+0axi_data_fifo_v2_1_axic_srl_fifo__parameterized22default:default2
+532default:default2
+12default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v2default:default2
+612default:default8@Z8-256
+ﬂ
+synthesizing module '%s'638*oasys22
+axi_crossbar_v2_1_addr_arbiter2default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_arbiter.v2default:default2
+652default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+S
+%s*synth2D
+0	Parameter C_NUM_S bound to: 2 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_NUM_S_LOG bound to: 1 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter C_NUM_M bound to: 2 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_MESG_WIDTH bound to: 65 - type: integer 
+2default:default
+ç
+%s*synth2~
+j	Parameter C_ARB_PRIORITY bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+K
+%s*synth2<
+(	Parameter P_PRIO_MASK bound to: 2'b00 
+2default:default
+˚
+synthesizing module '%s'638*oasys2C
+/generic_baseblocks_v2_1_mux_enc__parameterized22default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_FAMILY bound to: rtl - type: string 
+2default:default
+S
+%s*synth2D
+0	Parameter C_RATIO bound to: 2 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DATA_WIDTH bound to: 65 - type: integer 
+2default:default
+∑
+%done synthesizing module '%s' (%s#%s)256*oasys2C
+/generic_baseblocks_v2_1_mux_enc__parameterized22default:default2
+532default:default2
+12default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-256
+˚
+synthesizing module '%s'638*oasys2C
+/generic_baseblocks_v2_1_mux_enc__parameterized32default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_FAMILY bound to: rtl - type: string 
+2default:default
+S
+%s*synth2D
+0	Parameter C_RATIO bound to: 2 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DATA_WIDTH bound to: 2 - type: integer 
+2default:default
+∑
+%done synthesizing module '%s' (%s#%s)256*oasys2C
+/generic_baseblocks_v2_1_mux_enc__parameterized32default:default2
+532default:default2
+12default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-256
+»
+RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2/
+gen_arbiter.next_rr_hot_reg2default:default2
+162default:default2
+22default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_arbiter.v2default:default2
+2762default:default8@Z8-3936
+õ
+%done synthesizing module '%s' (%s#%s)256*oasys22
+axi_crossbar_v2_1_addr_arbiter2default:default2
+542default:default2
+12default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_arbiter.v2default:default2
+652default:default8@Z8-256
+ﬂ
+synthesizing module '%s'638*oasys22
+axi_crossbar_v2_1_decerr_slave2default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v2default:default2
+642default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter C_RESP bound to: 3 - type: integer 
+2default:default
+L
+%s*synth2=
+)	Parameter P_WRITE_IDLE bound to: 2'b00 
+2default:default
+L
+%s*synth2=
+)	Parameter P_WRITE_DATA bound to: 2'b01 
+2default:default
+L
+%s*synth2=
+)	Parameter P_WRITE_RESP bound to: 2'b10 
+2default:default
+J
+%s*synth2;
+'	Parameter P_READ_IDLE bound to: 1'b0 
+2default:default
+J
+%s*synth2;
+'	Parameter P_READ_DATA bound to: 1'b1 
+2default:default
+R
+%s*synth2C
+/	Parameter P_AXI4 bound to: 0 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter P_AXI3 bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter P_AXILITE bound to: 2 - type: integer 
+2default:default
+¡
+-case statement is not full and has no default155*oasys2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v2default:default2
+1952default:default8@Z8-155
+õ
+%done synthesizing module '%s' (%s#%s)256*oasys22
+axi_crossbar_v2_1_decerr_slave2default:default2
+552default:default2
+12default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v2default:default2
+642default:default8@Z8-256
+ì
+%done synthesizing module '%s' (%s#%s)256*oasys2.
+axi_crossbar_v2_1_crossbar2default:default2
+562default:default2
+12default:default2◊
+¿/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_crossbar.v2default:default2
+902default:default8@Z8-256
+õ
+%done synthesizing module '%s' (%s#%s)256*oasys22
+axi_crossbar_v2_1_axi_crossbar2default:default2
+572default:default2
+12default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v2default:default2
+542default:default8@Z8-256
+Î
+%done synthesizing module '%s' (%s#%s)256*oasys2&
+zynq_system_xbar_12default:default2
+582default:default2
+12default:default2∑
+†/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/synth/zynq_system_xbar_1.v2default:default2
+572default:default8@Z8-256
+Ì
+0Net %s in module/entity %s does not have driver.3422*oasys23
+NLW_xbar_s_axi_awid_UNCONNECTED2default:default22
+zynq_system_axi_mem_intercon_12default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+28722default:default8@Z8-3848
+Ì
+0Net %s in module/entity %s does not have driver.3422*oasys23
+NLW_xbar_s_axi_arid_UNCONNECTED2default:default22
+zynq_system_axi_mem_intercon_12default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+28712default:default8@Z8-3848
 ⁄
 %done synthesizing module '%s' (%s#%s)256*oasys22
 zynq_system_axi_mem_intercon_12default:default2
-302default:default2
+592default:default2
 12default:default2ò
 Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
-12222default:default8@Z8-256
+23962default:default8@Z8-256
+•
+Ginstance '%s' of module '%s' requires %s connections, but only %s given350*oasys2$
+axi_mem_intercon2default:default22
+zynq_system_axi_mem_intercon_12default:default2
+1202default:default2
+1092default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+19692default:default8@Z8-350
+∏
+synthesizing module '%s'638*oasys2+
+zynq_system_clk_wiz_0_02default:default2ª
+§/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0.v2default:default2
+692default:default8@Z8-638
+Ÿ
+synthesizing module '%s'638*oasys2:
+&zynq_system_clk_wiz_0_0_axi_clk_config2default:default2Ã
+µ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_axi_clk_config.vhd2default:default2
+1772default:default8@Z8-638
+_
+%s*synth2P
+<	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+Ë
+&Detected and applied attribute %s = %s3620*oasys2
+
+max_fanout2default:default2
+100002default:default2Ã
+µ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_axi_clk_config.vhd2default:default2
+1282default:default8@Z8-4472
+Ë
+&Detected and applied attribute %s = %s3620*oasys2
+
+max_fanout2default:default2
+100002default:default2Ã
+µ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_axi_clk_config.vhd2default:default2
+1292default:default8@Z8-4472
+˙
+synthesizing module '%s'638*oasys29
+%zynq_system_clk_wiz_0_0_axi_lite_ipif2default:default2Ó
+◊/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_axi_lite_ipif.vhd2default:default2
+2412default:default8@Z8-638
+_
+%s*synth2P
+<	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+2default:default
+o
+%s*synth2`
+L	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000011111111111 
+2default:default
+W
+%s*synth2H
+4	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
+2default:default
+ÿ
+%s*synth2»
+≥	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000011111111111 
+2default:default
+í
+%s*synth2Ç
+n	Parameter C_ARD_NUM_CE_ARRAY bound to: 64'b0000000000000000000000000000100000000000000000000000000000000001 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_FAMILY bound to: virtex7 - type: string 
+2default:default
+Ä
+synthesizing module '%s'638*oasys2<
+(zynq_system_clk_wiz_0_0_slave_attachment2default:default2Ò
+⁄/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_slave_attachment.vhd2default:default2
+2272default:default8@Z8-638
+ÿ
+%s*synth2»
+≥	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000011111111111 
+2default:default
+í
+%s*synth2Ç
+n	Parameter C_ARD_NUM_CE_ARRAY bound to: 64'b0000000000000000000000000000100000000000000000000000000000000001 
+2default:default
+^
+%s*synth2O
+;	Parameter C_IPIF_ABUS_WIDTH bound to: 11 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_S_AXI_MIN_SIZE bound to: 2047 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_FAMILY bound to: virtex7 - type: string 
+2default:default
+˛
+synthesizing module '%s'638*oasys2;
+'zynq_system_clk_wiz_0_0_address_decoder2default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_address_decoder.vhd2default:default2
+1762default:default8@Z8-638
+Y
+%s*synth2J
+6	Parameter C_BUS_AWIDTH bound to: 11 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_S_AXI_MIN_SIZE bound to: 2047 - type: integer 
+2default:default
+ÿ
+%s*synth2»
+≥	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000011111111111 
+2default:default
+í
+%s*synth2Ç
+n	Parameter C_ARD_NUM_CE_ARRAY bound to: 64'b0000000000000000000000000000100000000000000000000000000000000001 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_FAMILY bound to: nofamily - type: string 
+2default:default
+
+synthesizing module '%s'638*oasys25
+!zynq_system_clk_wiz_0_0_pselect_f2default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-638
+P
+%s*synth2A
+-	Parameter C_AB bound to: 6 - type: integer 
+2default:default
+Q
+%s*synth2B
+.	Parameter C_AW bound to: 11 - type: integer 
+2default:default
+O
+%s*synth2@
+,	Parameter C_BAR bound to: 11'b00000000000 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_FAMILY bound to: nofamily - type: string 
+2default:default
+¨
+%done synthesizing module '%s' (%s#%s)256*oasys25
+!zynq_system_clk_wiz_0_0_pselect_f2default:default2
+602default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-256
+Ä
+synthesizing module '%s'638*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized02default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-638
+P
+%s*synth2A
+-	Parameter C_AB bound to: 3 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter C_AW bound to: 3 - type: integer 
+2default:default
+F
+%s*synth27
+#	Parameter C_BAR bound to: 3'b000 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_FAMILY bound to: nofamily - type: string 
+2default:default
+º
+%done synthesizing module '%s' (%s#%s)256*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized02default:default2
+602default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-256
+Ä
+synthesizing module '%s'638*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-638
+P
+%s*synth2A
+-	Parameter C_AB bound to: 3 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter C_AW bound to: 3 - type: integer 
+2default:default
+F
+%s*synth27
+#	Parameter C_BAR bound to: 3'b001 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_FAMILY bound to: nofamily - type: string 
+2default:default
+º
+%done synthesizing module '%s' (%s#%s)256*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized12default:default2
+602default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-256
+Ä
+synthesizing module '%s'638*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized22default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-638
+P
+%s*synth2A
+-	Parameter C_AB bound to: 3 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter C_AW bound to: 3 - type: integer 
+2default:default
+F
+%s*synth27
+#	Parameter C_BAR bound to: 3'b010 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_FAMILY bound to: nofamily - type: string 
+2default:default
+º
+%done synthesizing module '%s' (%s#%s)256*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized22default:default2
+602default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-256
+Ä
+synthesizing module '%s'638*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized32default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-638
+P
+%s*synth2A
+-	Parameter C_AB bound to: 3 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter C_AW bound to: 3 - type: integer 
+2default:default
+F
+%s*synth27
+#	Parameter C_BAR bound to: 3'b011 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_FAMILY bound to: nofamily - type: string 
+2default:default
+º
+%done synthesizing module '%s' (%s#%s)256*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized32default:default2
+602default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-256
+Ä
+synthesizing module '%s'638*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized42default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-638
+P
+%s*synth2A
+-	Parameter C_AB bound to: 3 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter C_AW bound to: 3 - type: integer 
+2default:default
+F
+%s*synth27
+#	Parameter C_BAR bound to: 3'b100 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_FAMILY bound to: nofamily - type: string 
+2default:default
+º
+%done synthesizing module '%s' (%s#%s)256*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized42default:default2
+602default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-256
+Ä
+synthesizing module '%s'638*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized52default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-638
+P
+%s*synth2A
+-	Parameter C_AB bound to: 3 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter C_AW bound to: 3 - type: integer 
+2default:default
+F
+%s*synth27
+#	Parameter C_BAR bound to: 3'b101 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_FAMILY bound to: nofamily - type: string 
+2default:default
+º
+%done synthesizing module '%s' (%s#%s)256*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized52default:default2
+602default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-256
+Ä
+synthesizing module '%s'638*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized62default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-638
+P
+%s*synth2A
+-	Parameter C_AB bound to: 3 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter C_AW bound to: 3 - type: integer 
+2default:default
+F
+%s*synth27
+#	Parameter C_BAR bound to: 3'b110 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_FAMILY bound to: nofamily - type: string 
+2default:default
+º
+%done synthesizing module '%s' (%s#%s)256*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized62default:default2
+602default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-256
+Ä
+synthesizing module '%s'638*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized72default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-638
+P
+%s*synth2A
+-	Parameter C_AB bound to: 3 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter C_AW bound to: 3 - type: integer 
+2default:default
+F
+%s*synth27
+#	Parameter C_BAR bound to: 3'b111 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_FAMILY bound to: nofamily - type: string 
+2default:default
+º
+%done synthesizing module '%s' (%s#%s)256*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized72default:default2
+602default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-256
+Ä
+synthesizing module '%s'638*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized82default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-638
+P
+%s*synth2A
+-	Parameter C_AB bound to: 0 - type: integer 
+2default:default
+Q
+%s*synth2B
+.	Parameter C_AW bound to: 11 - type: integer 
+2default:default
+O
+%s*synth2@
+,	Parameter C_BAR bound to: 11'b01000000000 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_FAMILY bound to: nofamily - type: string 
+2default:default
+º
+%done synthesizing module '%s' (%s#%s)256*oasys2E
+1zynq_system_clk_wiz_0_0_pselect_f__parameterized82default:default2
+602default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_pselect_f.vhd2default:default2
+1692default:default8@Z8-256
+∫
+%done synthesizing module '%s' (%s#%s)256*oasys2;
+'zynq_system_clk_wiz_0_0_address_decoder2default:default2
+612default:default2
+12default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_address_decoder.vhd2default:default2
+1762default:default8@Z8-256
+≈
+default block is never used226*oasys2Ò
+⁄/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_slave_attachment.vhd2default:default2
+3812default:default8@Z8-226
+º
+%done synthesizing module '%s' (%s#%s)256*oasys2<
+(zynq_system_clk_wiz_0_0_slave_attachment2default:default2
+622default:default2
+12default:default2Ò
+⁄/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_slave_attachment.vhd2default:default2
+2272default:default8@Z8-256
+∂
+%done synthesizing module '%s' (%s#%s)256*oasys29
+%zynq_system_clk_wiz_0_0_axi_lite_ipif2default:default2
+632default:default2
+12default:default2Ó
+◊/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_axi_lite_ipif.vhd2default:default2
+2412default:default8@Z8-256
+_
+%s*synth2P
+<	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_FAMILY bound to: virtex7 - type: string 
+2default:default
+V
+%s*synth2G
+3	Parameter CE_NUMBERS bound to: 9 - type: integer 
+2default:default
+»
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys27
+#zynq_system_clk_wiz_0_0_clk_wiz_drp2default:default2«
+≤/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_clk_wiz_drp.vhd2default:default2
+1122default:default2"
+CLK_CORE_DRP_I2default:default27
+#zynq_system_clk_wiz_0_0_clk_wiz_drp2default:default2Ã
+µ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_axi_clk_config.vhd2default:default2
+4382default:default8@Z8-3491
+„
+synthesizing module '%s'638*oasys2G
+3zynq_system_clk_wiz_0_0_clk_wiz_drp__parameterized02default:default2…
+≤/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_clk_wiz_drp.vhd2default:default2
+1502default:default8@Z8-638
+_
+%s*synth2P
+<	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_FAMILY bound to: virtex7 - type: string 
+2default:default
+V
+%s*synth2G
+3	Parameter CE_NUMBERS bound to: 9 - type: integer 
+2default:default
+∞
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys23
+zynq_system_clk_wiz_0_0_clk_wiz2default:default2¡
+¨/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_clk_wiz.v2default:default2
+672default:default2
+clk_inst2default:default23
+zynq_system_clk_wiz_0_0_clk_wiz2default:default2…
+≤/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_clk_wiz_drp.vhd2default:default2
+4192default:default8@Z8-3491
+»
+synthesizing module '%s'638*oasys23
+zynq_system_clk_wiz_0_0_clk_wiz2default:default2√
+¨/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_clk_wiz.v2default:default2
+672default:default8@Z8-638
+Œ
+synthesizing module '%s'638*oasys2
+IBUF2default:default2b
+L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+105802default:default8@Z8-638
+^
+%s*synth2O
+;	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+2default:default
+[
+%s*synth2L
+8	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+2default:default
+]
+%s*synth2N
+:	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+2default:default
+[
+%s*synth2L
+8	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+2default:default
+ä
+%done synthesizing module '%s' (%s#%s)256*oasys2
+IBUF2default:default2
+642default:default2
+12default:default2b
+L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+105802default:default8@Z8-256
+‘
+synthesizing module '%s'638*oasys2
+
+MMCME2_ADV2default:default2b
+L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+162812default:default8@Z8-638
+\
+%s*synth2M
+9	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+2default:default
+c
+%s*synth2T
+@	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+2default:default
+b
+%s*synth2S
+?	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+2default:default
+b
+%s*synth2S
+?	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+2default:default
+b
+%s*synth2S
+?	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+2default:default
+b
+%s*synth2S
+?	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+2default:default
+^
+%s*synth2O
+;	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+2default:default
+b
+%s*synth2S
+?	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+2default:default
+b
+%s*synth2S
+?	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+2default:default
+b
+%s*synth2S
+?	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+2default:default
+[
+%s*synth2L
+8	Parameter COMPENSATION bound to: ZHOLD - type: string 
+2default:default
+T
+%s*synth2E
+1	Parameter SS_EN bound to: FALSE - type: string 
+2default:default
+\
+%s*synth2M
+9	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+2default:default
+[
+%s*synth2L
+8	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+2default:default
+S
+%s*synth2D
+0	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+2default:default
+O
+%s*synth2@
+,	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+2default:default
+S
+%s*synth2D
+0	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+2default:default
+Q
+%s*synth2B
+.	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+2default:default
+N
+%s*synth2?
++	Parameter IS_RST_INVERTED bound to: 1'b0 
+2default:default
+Z
+%s*synth2K
+7	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter CLKFBOUT_MULT_F bound to: 20.000000 - type: float 
+2default:default
+_
+%s*synth2P
+<	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+2default:default
+_
+%s*synth2P
+<	Parameter CLKIN1_PERIOD bound to: 20.000000 - type: float 
+2default:default
+^
+%s*synth2O
+;	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+2default:default
+b
+%s*synth2S
+?	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: float 
+2default:default
+c
+%s*synth2T
+@	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+2default:default
+^
+%s*synth2O
+;	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+2default:default
+c
+%s*synth2T
+@	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+2default:default
+^
+%s*synth2O
+;	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+2default:default
+c
+%s*synth2T
+@	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+2default:default
+^
+%s*synth2O
+;	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+2default:default
+c
+%s*synth2T
+@	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+2default:default
+^
+%s*synth2O
+;	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+2default:default
+c
+%s*synth2T
+@	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+2default:default
+^
+%s*synth2O
+;	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+2default:default
+c
+%s*synth2T
+@	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+2default:default
+^
+%s*synth2O
+;	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+2default:default
+c
+%s*synth2T
+@	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+2default:default
+^
+%s*synth2O
+;	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+2default:default
+\
+%s*synth2M
+9	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+2default:default
+\
+%s*synth2M
+9	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+2default:default
+ê
+%done synthesizing module '%s' (%s#%s)256*oasys2
+
+MMCME2_ADV2default:default2
+652default:default2
+12default:default2b
+L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+162812default:default8@Z8-256
+Ã
+synthesizing module '%s'638*oasys2
+BUFG2default:default2b
+L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+6122default:default8@Z8-638
+à
+%done synthesizing module '%s' (%s#%s)256*oasys2
+BUFG2default:default2
+662default:default2
+12default:default2b
+L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+6122default:default8@Z8-256
+Ñ
+%done synthesizing module '%s' (%s#%s)256*oasys23
+zynq_system_clk_wiz_0_0_clk_wiz2default:default2
+672default:default2
+12default:default2√
+¨/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_clk_wiz.v2default:default2
+672default:default8@Z8-256
+]
+%s*synth2N
+:	Parameter S1_CLKFBOUT_MULT bound to: 20 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter S1_CLKFBOUT_PHASE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKFBOUT_FRAC bound to: 1024 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKFBOUT_FRAC_EN bound to: 1 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_BANDWIDTH bound to: OPTIMIZED - type: string 
+2default:default
+\
+%s*synth2M
+9	Parameter S1_DIVCLK_DIVIDE bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter S1_CLKOUT0_DIVIDE bound to: 20 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter S1_CLKOUT0_PHASE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKOUT0_DUTY bound to: 50000 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter S1_CLKOUT0_FRAC bound to: 1024 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter S1_CLKOUT0_FRAC_EN bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter S1_CLKOUT1_DIVIDE bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter S1_CLKOUT1_PHASE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKOUT1_DUTY bound to: 50000 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter S1_CLKOUT2_DIVIDE bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter S1_CLKOUT2_PHASE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKOUT2_DUTY bound to: 50000 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter S1_CLKOUT3_DIVIDE bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter S1_CLKOUT3_PHASE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKOUT3_DUTY bound to: 50000 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter S1_CLKOUT4_DIVIDE bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter S1_CLKOUT4_PHASE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKOUT4_DUTY bound to: 50000 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter S1_CLKOUT5_DIVIDE bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter S1_CLKOUT5_PHASE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKOUT5_DUTY bound to: 50000 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter S1_CLKOUT6_DIVIDE bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter S1_CLKOUT6_PHASE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKOUT6_DUTY bound to: 50000 - type: integer 
+2default:default
+º
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys24
+ zynq_system_clk_wiz_0_0_mmcm_drp2default:default2∆
+±/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_mmcm_pll_drp.v2default:default2
+462default:default2!
+mmcm_drp_inst2default:default24
+ zynq_system_clk_wiz_0_0_mmcm_drp2default:default2…
+≤/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_clk_wiz_drp.vhd2default:default2
+4382default:default8@Z8-3491
+Œ
+synthesizing module '%s'638*oasys24
+ zynq_system_clk_wiz_0_0_mmcm_drp2default:default2»
+±/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_mmcm_pll_drp.v2default:default2
+462default:default8@Z8-638
+]
+%s*synth2N
+:	Parameter S1_CLKFBOUT_MULT bound to: 20 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter S1_CLKFBOUT_PHASE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKFBOUT_FRAC bound to: 1024 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKFBOUT_FRAC_EN bound to: 1 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_BANDWIDTH bound to: OPTIMIZED - type: string 
+2default:default
+\
+%s*synth2M
+9	Parameter S1_DIVCLK_DIVIDE bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter S1_CLKOUT0_DIVIDE bound to: 20 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter S1_CLKOUT0_PHASE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKOUT0_DUTY bound to: 50000 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter S1_CLKOUT0_FRAC bound to: 1024 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter S1_CLKOUT0_FRAC_EN bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter S1_CLKOUT1_DIVIDE bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter S1_CLKOUT1_PHASE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKOUT1_DUTY bound to: 50000 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter S1_CLKOUT2_DIVIDE bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter S1_CLKOUT2_PHASE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKOUT2_DUTY bound to: 50000 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter S1_CLKOUT3_DIVIDE bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter S1_CLKOUT3_PHASE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKOUT3_DUTY bound to: 50000 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter S1_CLKOUT4_DIVIDE bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter S1_CLKOUT4_PHASE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKOUT4_DUTY bound to: 50000 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter S1_CLKOUT5_DIVIDE bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter S1_CLKOUT5_PHASE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKOUT5_DUTY bound to: 50000 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter S1_CLKOUT6_DIVIDE bound to: 1 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter S1_CLKOUT6_PHASE bound to: 0 - type: integer 
+2default:default
+_
+%s*synth2P
+<	Parameter S1_CLKOUT6_DUTY bound to: 50000 - type: integer 
+2default:default
+Q
+%s*synth2B
+.	Parameter TCQ bound to: 100 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter S2_BANDWIDTH bound to: LOW - type: string 
+2default:default
+p
+%s*synth2a
+M	Parameter S1_CLKFBOUT bound to: 38'b00000000000000000000000000001010001010 
+2default:default
+z
+%s*synth2k
+W	Parameter S1_CLKFBOUT_FRAC_CALC bound to: 38'b00000000001000000000000000001001001001 
+2default:default
+X
+%s*synth2I
+5	Parameter S1_DIGITAL_FILT bound to: 10'b1111110000 
+2default:default
+n
+%s*synth2_
+K	Parameter S1_LOCK bound to: 40'b1111111111011111010011111010010000000001 
+2default:default
+n
+%s*synth2_
+K	Parameter S1_DIVCLK bound to: 38'b00000000000000010000000000000001000001 
+2default:default
+o
+%s*synth2`
+L	Parameter S1_CLKOUT0 bound to: 38'b00000000000000000000000000001010001010 
+2default:default
+y
+%s*synth2j
+V	Parameter S1_CLKOUT0_FRAC_CALC bound to: 38'b00000000001000000000000000001001001001 
+2default:default
+o
+%s*synth2`
+L	Parameter S1_CLKOUT1 bound to: 38'b00000000000000010000000000000001000001 
+2default:default
+o
+%s*synth2`
+L	Parameter S1_CLKOUT2 bound to: 38'b00000000000000010000000000000001000001 
+2default:default
+o
+%s*synth2`
+L	Parameter S1_CLKOUT3 bound to: 38'b00000000000000010000000000000001000001 
+2default:default
+o
+%s*synth2`
+L	Parameter S1_CLKOUT4 bound to: 38'b00000000000000010000000000000001000001 
+2default:default
+o
+%s*synth2`
+L	Parameter S1_CLKOUT5 bound to: 38'b00000000000000010000000000000001000001 
+2default:default
+o
+%s*synth2`
+L	Parameter S1_CLKOUT6 bound to: 38'b00000000000000010000000000000001000001 
+2default:default
+I
+%s*synth2:
+&	Parameter RESTART bound to: 4'b0001 
+2default:default
+K
+%s*synth2<
+(	Parameter WAIT_LOCK bound to: 4'b0010 
+2default:default
+J
+%s*synth2;
+'	Parameter WAIT_SEN bound to: 4'b0011 
+2default:default
+I
+%s*synth2:
+&	Parameter ADDRESS bound to: 4'b0100 
+2default:default
+M
+%s*synth2>
+*	Parameter WAIT_A_DRDY bound to: 4'b0101 
+2default:default
+I
+%s*synth2:
+&	Parameter BITMASK bound to: 4'b0110 
+2default:default
+H
+%s*synth29
+%	Parameter BITSET bound to: 4'b0111 
+2default:default
+G
+%s*synth28
+$	Parameter WRITE bound to: 4'b1000 
+2default:default
+K
+%s*synth2<
+(	Parameter WAIT_DRDY bound to: 4'b1001 
+2default:default
+^
+%s*synth2O
+;	Parameter STATE_COUNT_CONST bound to: 23 - type: integer 
+2default:default
+È
+&Detected and applied attribute %s = %s3620*oasys2
+	ram_style2default:default2
+distributed2default:default2»
+±/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_mmcm_pll_drp.v2default:default2
+2372default:default8@Z8-4472
+ä
+%done synthesizing module '%s' (%s#%s)256*oasys24
+ zynq_system_clk_wiz_0_0_mmcm_drp2default:default2
+682default:default2
+12default:default2»
+±/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_mmcm_pll_drp.v2default:default2
+462default:default8@Z8-256
+ü
+%done synthesizing module '%s' (%s#%s)256*oasys2G
+3zynq_system_clk_wiz_0_0_clk_wiz_drp__parameterized02default:default2
+692default:default2
+12default:default2…
+≤/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_clk_wiz_drp.vhd2default:default2
+1502default:default8@Z8-256
+Ú
+synthesizing module '%s'638*oasys26
+"zynq_system_clk_wiz_0_0_soft_reset2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+1442default:default8@Z8-638
+[
+%s*synth2L
+8	Parameter C_SIPIF_DWIDTH bound to: 32 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_RESET_WIDTH bound to: 16 - type: integer 
+2default:default
+C
+%s*synth24
+ 	Parameter INIT bound to: 1'b0 
+2default:default
+M
+%s*synth2>
+*	Parameter IS_CE_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_C_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_D_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_R_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_S_INVERTED bound to: 1'b0 
+2default:default
+à
+,binding component instance '%s' to cell '%s'113*oasys2
+	RST_FLOPS2default:default2
+FDRSE2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+2752default:default8@Z8-113
+C
+%s*synth24
+ 	Parameter INIT bound to: 1'b0 
+2default:default
+M
+%s*synth2>
+*	Parameter IS_CE_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_C_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_D_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_R_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_S_INVERTED bound to: 1'b0 
+2default:default
+à
+,binding component instance '%s' to cell '%s'113*oasys2
+	RST_FLOPS2default:default2
+FDRSE2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+2752default:default8@Z8-113
+C
+%s*synth24
+ 	Parameter INIT bound to: 1'b0 
+2default:default
+M
+%s*synth2>
+*	Parameter IS_CE_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_C_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_D_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_R_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_S_INVERTED bound to: 1'b0 
+2default:default
+à
+,binding component instance '%s' to cell '%s'113*oasys2
+	RST_FLOPS2default:default2
+FDRSE2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+2752default:default8@Z8-113
+C
+%s*synth24
+ 	Parameter INIT bound to: 1'b0 
+2default:default
+M
+%s*synth2>
+*	Parameter IS_CE_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_C_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_D_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_R_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_S_INVERTED bound to: 1'b0 
+2default:default
+à
+,binding component instance '%s' to cell '%s'113*oasys2
+	RST_FLOPS2default:default2
+FDRSE2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+2752default:default8@Z8-113
+C
+%s*synth24
+ 	Parameter INIT bound to: 1'b0 
+2default:default
+M
+%s*synth2>
+*	Parameter IS_CE_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_C_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_D_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_R_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_S_INVERTED bound to: 1'b0 
+2default:default
+à
+,binding component instance '%s' to cell '%s'113*oasys2
+	RST_FLOPS2default:default2
+FDRSE2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+2752default:default8@Z8-113
+C
+%s*synth24
+ 	Parameter INIT bound to: 1'b0 
+2default:default
+M
+%s*synth2>
+*	Parameter IS_CE_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_C_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_D_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_R_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_S_INVERTED bound to: 1'b0 
+2default:default
+à
+,binding component instance '%s' to cell '%s'113*oasys2
+	RST_FLOPS2default:default2
+FDRSE2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+2752default:default8@Z8-113
+C
+%s*synth24
+ 	Parameter INIT bound to: 1'b0 
+2default:default
+M
+%s*synth2>
+*	Parameter IS_CE_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_C_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_D_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_R_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_S_INVERTED bound to: 1'b0 
+2default:default
+à
+,binding component instance '%s' to cell '%s'113*oasys2
+	RST_FLOPS2default:default2
+FDRSE2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+2752default:default8@Z8-113
+C
+%s*synth24
+ 	Parameter INIT bound to: 1'b0 
+2default:default
+M
+%s*synth2>
+*	Parameter IS_CE_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_C_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_D_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_R_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_S_INVERTED bound to: 1'b0 
+2default:default
+à
+,binding component instance '%s' to cell '%s'113*oasys2
+	RST_FLOPS2default:default2
+FDRSE2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+2752default:default8@Z8-113
+C
+%s*synth24
+ 	Parameter INIT bound to: 1'b0 
+2default:default
+M
+%s*synth2>
+*	Parameter IS_CE_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_C_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_D_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_R_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_S_INVERTED bound to: 1'b0 
+2default:default
+à
+,binding component instance '%s' to cell '%s'113*oasys2
+	RST_FLOPS2default:default2
+FDRSE2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+2752default:default8@Z8-113
+C
+%s*synth24
+ 	Parameter INIT bound to: 1'b0 
+2default:default
+M
+%s*synth2>
+*	Parameter IS_CE_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_C_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_D_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_R_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_S_INVERTED bound to: 1'b0 
+2default:default
+à
+,binding component instance '%s' to cell '%s'113*oasys2
+	RST_FLOPS2default:default2
+FDRSE2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+2752default:default8@Z8-113
+C
+%s*synth24
+ 	Parameter INIT bound to: 1'b0 
+2default:default
+M
+%s*synth2>
+*	Parameter IS_CE_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_C_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_D_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_R_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_S_INVERTED bound to: 1'b0 
+2default:default
+à
+,binding component instance '%s' to cell '%s'113*oasys2
+	RST_FLOPS2default:default2
+FDRSE2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+2752default:default8@Z8-113
+C
+%s*synth24
+ 	Parameter INIT bound to: 1'b0 
+2default:default
+M
+%s*synth2>
+*	Parameter IS_CE_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_C_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_D_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_R_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_S_INVERTED bound to: 1'b0 
+2default:default
+à
+,binding component instance '%s' to cell '%s'113*oasys2
+	RST_FLOPS2default:default2
+FDRSE2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+2752default:default8@Z8-113
+C
+%s*synth24
+ 	Parameter INIT bound to: 1'b0 
+2default:default
+M
+%s*synth2>
+*	Parameter IS_CE_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_C_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_D_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_R_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_S_INVERTED bound to: 1'b0 
+2default:default
+à
+,binding component instance '%s' to cell '%s'113*oasys2
+	RST_FLOPS2default:default2
+FDRSE2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+2752default:default8@Z8-113
+C
+%s*synth24
+ 	Parameter INIT bound to: 1'b0 
+2default:default
+M
+%s*synth2>
+*	Parameter IS_CE_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_C_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_D_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_R_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_S_INVERTED bound to: 1'b0 
+2default:default
+à
+,binding component instance '%s' to cell '%s'113*oasys2
+	RST_FLOPS2default:default2
+FDRSE2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+2752default:default8@Z8-113
+C
+%s*synth24
+ 	Parameter INIT bound to: 1'b0 
+2default:default
+M
+%s*synth2>
+*	Parameter IS_CE_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_C_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_D_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_R_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_S_INVERTED bound to: 1'b0 
+2default:default
+à
+,binding component instance '%s' to cell '%s'113*oasys2
+	RST_FLOPS2default:default2
+FDRSE2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+2752default:default8@Z8-113
+C
+%s*synth24
+ 	Parameter INIT bound to: 1'b0 
+2default:default
+M
+%s*synth2>
+*	Parameter IS_CE_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_C_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_D_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_R_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_S_INVERTED bound to: 1'b0 
+2default:default
+à
+,binding component instance '%s' to cell '%s'113*oasys2
+	RST_FLOPS2default:default2
+FDRSE2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+2752default:default8@Z8-113
+C
+%s*synth24
+ 	Parameter INIT bound to: 1'b0 
+2default:default
+M
+%s*synth2>
+*	Parameter IS_CE_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_C_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_D_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_R_INVERTED bound to: 1'b0 
+2default:default
+L
+%s*synth2=
+)	Parameter IS_S_INVERTED bound to: 1'b0 
+2default:default
+á
+,binding component instance '%s' to cell '%s'113*oasys2
+FF_WRACK2default:default2
+FDRSE2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+2982default:default8@Z8-113
+Æ
+%done synthesizing module '%s' (%s#%s)256*oasys26
+"zynq_system_clk_wiz_0_0_soft_reset2default:default2
+702default:default2
+12default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/zynq_system_clk_wiz_0_0_soft_reset.vhd2default:default2
+1442default:default8@Z8-256
+ï
+%done synthesizing module '%s' (%s#%s)256*oasys2:
+&zynq_system_clk_wiz_0_0_axi_clk_config2default:default2
+712default:default2
+12default:default2Ã
+µ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_axi_clk_config.vhd2default:default2
+1772default:default8@Z8-256
+Ù
+%done synthesizing module '%s' (%s#%s)256*oasys2+
+zynq_system_clk_wiz_0_02default:default2
+722default:default2
+12default:default2ª
+§/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0.v2default:default2
+692default:default8@Z8-256
+ï
+Ginstance '%s' of module '%s' requires %s connections, but only %s given350*oasys2
+	clk_wiz_02default:default2+
+zynq_system_clk_wiz_0_02default:default2
+222default:default2
+212default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+20792default:default8@Z8-350
 ƒ
 synthesizing module '%s'638*oasys2-
 zynq_system_hhb_query_0_02default:default2≈
@@ -6365,7 +20275,7 @@ F
 Ê
 %done synthesizing module '%s' (%s#%s)256*oasys2
 	hhb_query2default:default2
-312default:default2
+732default:default2
 12default:default2ª
 §/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query.v2default:default2
 122default:default8@Z8-256
@@ -6463,14 +20373,14 @@ V
 Ù
 %done synthesizing module '%s' (%s#%s)256*oasys2$
 hhb_query_a_fifo2default:default2
-322default:default2
+742default:default2
 12default:default2¿
 ©/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query_a_if.v2default:default2
 12672default:default8@Z8-256
 É
 %done synthesizing module '%s' (%s#%s)256*oasys24
  hhb_query_a_request_preprocessor2default:default2
-332default:default2
+752default:default2
 12default:default2¿
 ©/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query_a_if.v2default:default2
 2212default:default8@Z8-256
@@ -6586,7 +20496,7 @@ W
 Ù
 %done synthesizing module '%s' (%s#%s)256*oasys2%
 hhb_query_a_write2default:default2
-342default:default2
+762default:default2
 12default:default2¿
 ©/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query_a_if.v2default:default2
 3342default:default8@Z8-256
@@ -6760,7 +20670,7 @@ C
 ˘
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 hhb_query_a_reg_slice2default:default2
-352default:default2
+772default:default2
 12default:default2¿
 ©/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query_a_if.v2default:default2
 13392default:default8@Z8-256
@@ -6784,28 +20694,28 @@ V
 Ñ
 %done synthesizing module '%s' (%s#%s)256*oasys24
  hhb_query_a_fifo__parameterized02default:default2
-352default:default2
+772default:default2
 12default:default2¿
 ©/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query_a_if.v2default:default2
 12672default:default8@Z8-256
 ˛
 %done synthesizing module '%s' (%s#%s)256*oasys2/
 hhb_query_a_read_data_align2default:default2
-362default:default2
+782default:default2
 12default:default2¿
 ©/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query_a_if.v2default:default2
 9592default:default8@Z8-256
 Û
 %done synthesizing module '%s' (%s#%s)256*oasys2$
 hhb_query_a_read2default:default2
-372default:default2
+792default:default2
 12default:default2¿
 ©/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query_a_if.v2default:default2
 7222default:default8@Z8-256
 
 %done synthesizing module '%s' (%s#%s)256*oasys2"
 hhb_query_a_if2default:default2
-382default:default2
+802default:default2
 12default:default2¿
 ©/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query_a_if.v2default:default2
 102default:default8@Z8-256
@@ -6893,7 +20803,7 @@ F
 ˜
 %done synthesizing module '%s' (%s#%s)256*oasys2&
 hhb_query_BUS_A_if2default:default2
-392default:default2
+812default:default2
 12default:default2ƒ
 ≠/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query_BUS_A_if.v2default:default2
 92default:default8@Z8-256
@@ -6909,32 +20819,242 @@ F
 ˙
 %done synthesizing module '%s' (%s#%s)256*oasys2'
 hhb_query_ap_rst_if2default:default2
-402default:default2
+822default:default2
 12default:default2≈
 Æ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query_ap_rst_if.v2default:default2
 102default:default8@Z8-256
 Ì
 %done synthesizing module '%s' (%s#%s)256*oasys2!
 hhb_query_top2default:default2
-412default:default2
+832default:default2
 12default:default2ø
 ®/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/hdl/verilog/hhb_query_top.v2default:default2
 92default:default8@Z8-256
 Ä
 %done synthesizing module '%s' (%s#%s)256*oasys2-
 zynq_system_hhb_query_0_02default:default2
-422default:default2
+842default:default2
 12default:default2≈
 Æ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/synth/zynq_system_hhb_query_0_0.v2default:default2
 562default:default8@Z8-256
-ò
+ô
 Ginstance '%s' of module '%s' requires %s connections, but only %s given350*oasys2
 hhb_query_02default:default2-
 zynq_system_hhb_query_0_02default:default2
 572default:default2
 562default:default2ò
-Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
-9872default:default8@Z8-350
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+21012default:default8@Z8-350
+Ò
+synthesizing module '%s'638*oasys2<
+(zynq_system_hwfreqscale_simple_adder_0_12default:default2„
+Ã/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hwfreqscale_simple_adder_0_1/synth/zynq_system_hwfreqscale_simple_adder_0_1.v2default:default2
+562default:default8@Z8-638
+ﬁ
+synthesizing module '%s'638*oasys20
+hwfreqscale_simple_adder_top2default:default2›
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hwfreqscale_simple_adder_0_1/hdl/verilog/hwfreqscale_simple_adder_top.v2default:default2
+92default:default8@Z8-638
+d
+%s*synth2U
+A	Parameter C_S_AXI_BUS_A_ADDR_WIDTH bound to: 6 - type: integer 
+2default:default
+e
+%s*synth2V
+B	Parameter C_S_AXI_BUS_A_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+\
+%s*synth2M
+9	Parameter RESET_ACTIVE_LOW bound to: 1 - type: integer 
+2default:default
+◊
+synthesizing module '%s'638*oasys2,
+hwfreqscale_simple_adder2default:default2Ÿ
+¬/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hwfreqscale_simple_adder_0_1/hdl/verilog/hwfreqscale_simple_adder.v2default:default2
+122default:default8@Z8-638
+O
+%s*synth2@
+,	Parameter ap_const_logic_1 bound to: 1'b1 
+2default:default
+O
+%s*synth2@
+,	Parameter ap_const_logic_0 bound to: 1'b0 
+2default:default
+O
+%s*synth2@
+,	Parameter ap_ST_st1_fsm_0 bound to: 2'b00 
+2default:default
+O
+%s*synth2@
+,	Parameter ap_ST_st2_fsm_1 bound to: 2'b01 
+2default:default
+O
+%s*synth2@
+,	Parameter ap_ST_st3_fsm_2 bound to: 2'b10 
+2default:default
+[
+%s*synth2L
+8	Parameter ap_const_lv32_0 bound to: 0 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter ap_const_lv32_2A bound to: 42 - type: integer 
+2default:default
+F
+%s*synth27
+#	Parameter ap_true bound to: 1'b1 
+2default:default
+É
+merging register '%s' into '%s'3619*oasys2&
+input20vld_reg_reg2default:default2&
+input10vld_reg_reg2default:default2Ÿ
+¬/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hwfreqscale_simple_adder_0_1/hdl/verilog/hwfreqscale_simple_adder.v2default:default2
+2552default:default8@Z8-4471
+Ö
+merging register '%s' into '%s'3619*oasys2(
+output_r1vld_reg_reg2default:default2&
+input10vld_reg_reg2default:default2Ÿ
+¬/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hwfreqscale_simple_adder_0_1/hdl/verilog/hwfreqscale_simple_adder.v2default:default2
+2562default:default8@Z8-4471
+å
+merging register '%s' into '%s'3619*oasys2/
+frequency_value1vld_reg_reg2default:default2&
+input10vld_reg_reg2default:default2Ÿ
+¬/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hwfreqscale_simple_adder_0_1/hdl/verilog/hwfreqscale_simple_adder.v2default:default2
+2612default:default8@Z8-4471
+ì
+%done synthesizing module '%s' (%s#%s)256*oasys2,
+hwfreqscale_simple_adder2default:default2
+852default:default2
+12default:default2Ÿ
+¬/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hwfreqscale_simple_adder_0_1/hdl/verilog/hwfreqscale_simple_adder.v2default:default2
+122default:default8@Z8-256
+Ë
+synthesizing module '%s'638*oasys25
+!hwfreqscale_simple_adder_BUS_A_if2default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hwfreqscale_simple_adder_0_1/hdl/verilog/hwfreqscale_simple_adder_BUS_A_if.v2default:default2
+92default:default8@Z8-638
+X
+%s*synth2I
+5	Parameter C_ADDR_WIDTH bound to: 6 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter ADDR_BITS bound to: 6 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter ADDR_AP_CTRL bound to: 6'b000000 
+2default:default
+L
+%s*synth2=
+)	Parameter ADDR_GIE bound to: 6'b000100 
+2default:default
+L
+%s*synth2=
+)	Parameter ADDR_IER bound to: 6'b001000 
+2default:default
+L
+%s*synth2=
+)	Parameter ADDR_ISR bound to: 6'b001100 
+2default:default
+T
+%s*synth2E
+1	Parameter ADDR_INPUT1_CTRL bound to: 6'b010000 
+2default:default
+V
+%s*synth2G
+3	Parameter ADDR_INPUT1_DATA_0 bound to: 6'b010100 
+2default:default
+T
+%s*synth2E
+1	Parameter ADDR_INPUT2_CTRL bound to: 6'b011000 
+2default:default
+V
+%s*synth2G
+3	Parameter ADDR_INPUT2_DATA_0 bound to: 6'b011100 
+2default:default
+V
+%s*synth2G
+3	Parameter ADDR_OUTPUT_R_CTRL bound to: 6'b100000 
+2default:default
+X
+%s*synth2I
+5	Parameter ADDR_OUTPUT_R_DATA_0 bound to: 6'b100100 
+2default:default
+F
+%s*synth27
+#	Parameter WRIDLE bound to: 2'b00 
+2default:default
+F
+%s*synth27
+#	Parameter WRDATA bound to: 2'b01 
+2default:default
+F
+%s*synth27
+#	Parameter WRRESP bound to: 2'b10 
+2default:default
+F
+%s*synth27
+#	Parameter RDIDLE bound to: 2'b00 
+2default:default
+F
+%s*synth27
+#	Parameter RDDATA bound to: 2'b01 
+2default:default
+»
+-case statement is not full and has no default155*oasys2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hwfreqscale_simple_adder_0_1/hdl/verilog/hwfreqscale_simple_adder_BUS_A_if.v2default:default2
+2162default:default8@Z8-155
+§
+%done synthesizing module '%s' (%s#%s)256*oasys25
+!hwfreqscale_simple_adder_BUS_A_if2default:default2
+862default:default2
+12default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hwfreqscale_simple_adder_0_1/hdl/verilog/hwfreqscale_simple_adder_BUS_A_if.v2default:default2
+92default:default8@Z8-256
+Î
+synthesizing module '%s'638*oasys26
+"hwfreqscale_simple_adder_ap_rst_if2default:default2„
+Ã/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hwfreqscale_simple_adder_0_1/hdl/verilog/hwfreqscale_simple_adder_ap_rst_if.v2default:default2
+102default:default8@Z8-638
+\
+%s*synth2M
+9	Parameter RESET_ACTIVE_LOW bound to: 1 - type: integer 
+2default:default
+ß
+%done synthesizing module '%s' (%s#%s)256*oasys26
+"hwfreqscale_simple_adder_ap_rst_if2default:default2
+872default:default2
+12default:default2„
+Ã/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hwfreqscale_simple_adder_0_1/hdl/verilog/hwfreqscale_simple_adder_ap_rst_if.v2default:default2
+102default:default8@Z8-256
+ö
+%done synthesizing module '%s' (%s#%s)256*oasys20
+hwfreqscale_simple_adder_top2default:default2
+882default:default2
+12default:default2›
+∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hwfreqscale_simple_adder_0_1/hdl/verilog/hwfreqscale_simple_adder_top.v2default:default2
+92default:default8@Z8-256
+≠
+%done synthesizing module '%s' (%s#%s)256*oasys2<
+(zynq_system_hwfreqscale_simple_adder_0_12default:default2
+892default:default2
+12default:default2„
+Ã/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_hwfreqscale_simple_adder_0_1/synth/zynq_system_hwfreqscale_simple_adder_0_1.v2default:default2
+562default:default8@Z8-256
+∑
+Ginstance '%s' of module '%s' requires %s connections, but only %s given350*oasys2.
+hwfreqscale_simple_adder_02default:default2<
+(zynq_system_hwfreqscale_simple_adder_0_12default:default2
+212default:default2
+192default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+21582default:default8@Z8-350
 ﬂ
 synthesizing module '%s'638*oasys26
 "zynq_system_processing_system7_0_02default:default2◊
@@ -7105,18 +21225,6 @@ V
 %s*synth2O
 ;	Parameter C_PACKAGE_NAME bound to: clg484 - type: string 
 2default:default
-Ã
-synthesizing module '%s'638*oasys2
-BUFG2default:default2b
-L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
-6122default:default8@Z8-638
-à
-%done synthesizing module '%s' (%s#%s)256*oasys2
-BUFG2default:default2
-432default:default2
-12default:default2b
-L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
-6122default:default8@Z8-256
 Á
 Fall outputs are unconnected for this instance and logic may be removed3605*oasys2Â
 Œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v2default:default2
@@ -7129,7 +21237,7 @@ L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2
 â
 %done synthesizing module '%s' (%s#%s)256*oasys2
 BIBUF2default:default2
-442default:default2
+902default:default2
 12default:default2b
 L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 2682default:default8@Z8-256
@@ -7538,7 +21646,7 @@ L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2
 â
 %done synthesizing module '%s' (%s#%s)256*oasys2
 PS72default:default2
-452default:default2
+912default:default2
 12default:default2b
 L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 267372default:default8@Z8-256
@@ -7659,7 +21767,7 @@ L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2
 ≤
 %done synthesizing module '%s' (%s#%s)256*oasys2>
 *processing_system7_v5_3_processing_system72default:default2
-462default:default2
+922default:default2
 12default:default2Â
 Œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_processing_system7_0_0/hdl/verilog/processing_system7_v5_3_processing_system7.v2default:default2
 1532default:default8@Z8-256
@@ -7674,34 +21782,34 @@ Ginstance '%s' of module '%s' requires %s connections, but only %s given350*
 õ
 %done synthesizing module '%s' (%s#%s)256*oasys26
 "zynq_system_processing_system7_0_02default:default2
-472default:default2
+932default:default2
 12default:default2◊
 ¿/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_processing_system7_0_0/synth/zynq_system_processing_system7_0_0.v2default:default2
 572default:default8@Z8-256
 ¨
 Pwidth (%s) of port connection '%s' does not match port width (%s) of module '%s'689*oasys2
-12default:default2"
+22default:default2"
 S_AXI_GP0_ARID2default:default2
 62default:default26
 "zynq_system_processing_system7_0_02default:default2ò
 Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
-11112default:default8@Z8-689
+22452default:default8@Z8-689
 ¨
 Pwidth (%s) of port connection '%s' does not match port width (%s) of module '%s'689*oasys2
-12default:default2"
+22default:default2"
 S_AXI_GP0_AWID2default:default2
 62default:default26
 "zynq_system_processing_system7_0_02default:default2ò
 Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
-11222default:default8@Z8-689
+22562default:default8@Z8-689
 ´
 Pwidth (%s) of port connection '%s' does not match port width (%s) of module '%s'689*oasys2
-12default:default2!
+22default:default2!
 S_AXI_GP0_WID2default:default2
 62default:default26
 "zynq_system_processing_system7_0_02default:default2ò
 Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
-11412default:default8@Z8-689
+22752default:default8@Z8-689
 ≠
 Ginstance '%s' of module '%s' requires %s connections, but only %s given350*oasys2(
 processing_system7_02default:default26
@@ -7709,21 +21817,57 @@ Ginstance '%s' of module '%s' requires %s connections, but only %s given350*
 1102default:default2
 1052default:default2ò
 Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
-10442default:default8@Z8-350
+21782default:default8@Z8-350
 ≠
 synthesizing module '%s'638*oasys2A
 -zynq_system_processing_system7_0_axi_periph_02default:default2ò
 Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
-16272default:default8@Z8-638
-ï
+33152default:default8@Z8-638
+ñ
+synthesizing module '%s'638*oasys2+
+m00_couplers_imp_VG7ZLK2default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+4082default:default8@Z8-638
+“
+%done synthesizing module '%s' (%s#%s)256*oasys2+
+m00_couplers_imp_VG7ZLK2default:default2
+942default:default2
+12default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+4082default:default8@Z8-256
+ó
+synthesizing module '%s'638*oasys2,
+m01_couplers_imp_180AW1Y2default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+5402default:default8@Z8-638
+”
+%done synthesizing module '%s' (%s#%s)256*oasys2,
+m01_couplers_imp_180AW1Y2default:default2
+952default:default2
+12default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+5402default:default8@Z8-256
+ñ
+synthesizing module '%s'638*oasys2+
+m02_couplers_imp_WNEIF92default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+6862default:default8@Z8-638
+“
+%done synthesizing module '%s' (%s#%s)256*oasys2+
+m02_couplers_imp_WNEIF92default:default2
+962default:default2
+12default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+6862default:default8@Z8-256
+ó
 synthesizing module '%s'638*oasys2,
 s00_couplers_imp_156Q4UY2default:default2ò
-Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
-32default:default8@Z8-638
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+8182default:default8@Z8-638
 ª
 synthesizing module '%s'638*oasys2*
-zynq_system_auto_pc_142default:default2ø
-®/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/synth/zynq_system_auto_pc_14.v2default:default2
+zynq_system_auto_pc_562default:default2ø
+®/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_56/synth/zynq_system_auto_pc_56.v2default:default2
 572default:default8@Z8-638
 •
 synthesizing module '%s'638*oasys2V
@@ -7859,9 +22003,9 @@ _
 %s*synth2P
 <	Parameter C_AXI_SUPPORTS_READ bound to: 1 - type: integer 
 2default:default
-Å
-synthesizing module '%s'638*oasys2>
-*axi_register_slice_v2_1_axi_register_slice2default:default2Ò
+ë
+synthesizing module '%s'638*oasys2N
+:axi_register_slice_v2_1_axi_register_slice__parameterized02default:default2Ò
 ⁄/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
 642default:default8@Z8-638
 Y
@@ -8232,9 +22376,9 @@ a
 %s*synth2R
 >	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
 2default:default
-Ò
-synthesizing module '%s'638*oasys26
-"axi_infrastructure_v1_1_axi2vector2default:default2È
+Å
+synthesizing module '%s'638*oasys2F
+2axi_infrastructure_v1_1_axi2vector__parameterized02default:default2È
 “/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
 602default:default8@Z8-638
 Z
@@ -8601,16 +22745,16 @@ a
 %s*synth2R
 >	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
 2default:default
-≠
-%done synthesizing module '%s' (%s#%s)256*oasys26
-"axi_infrastructure_v1_1_axi2vector2default:default2
-482default:default2
+Ω
+%done synthesizing module '%s' (%s#%s)256*oasys2F
+2axi_infrastructure_v1_1_axi2vector__parameterized02default:default2
+962default:default2
 12default:default2È
 “/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
 602default:default8@Z8-256
-É
-synthesizing module '%s'638*oasys2?
-+axi_register_slice_v2_1_axic_register_slice2default:default2Ú
+ì
+synthesizing module '%s'638*oasys2O
+;axi_register_slice_v2_1_axic_register_slice__parameterized32default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
@@ -8625,16 +22769,16 @@ X
 %s*synth2I
 5	Parameter C_REG_CONFIG bound to: 1 - type: integer 
 2default:default
-ø
-%done synthesizing module '%s' (%s#%s)256*oasys2?
-+axi_register_slice_v2_1_axic_register_slice2default:default2
-492default:default2
+œ
+%done synthesizing module '%s' (%s#%s)256*oasys2O
+;axi_register_slice_v2_1_axic_register_slice__parameterized32default:default2
+962default:default2
 12default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
 ì
 synthesizing module '%s'638*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized02default:default2Ú
+;axi_register_slice_v2_1_axic_register_slice__parameterized42default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
@@ -8651,14 +22795,14 @@ X
 2default:default
 œ
 %done synthesizing module '%s' (%s#%s)256*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized02default:default2
-492default:default2
+;axi_register_slice_v2_1_axic_register_slice__parameterized42default:default2
+962default:default2
 12default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
 ì
 synthesizing module '%s'638*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized12default:default2Ú
+;axi_register_slice_v2_1_axic_register_slice__parameterized52default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
@@ -8675,14 +22819,14 @@ X
 2default:default
 œ
 %done synthesizing module '%s' (%s#%s)256*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized12default:default2
-492default:default2
+;axi_register_slice_v2_1_axic_register_slice__parameterized52default:default2
+962default:default2
 12default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
 ì
 synthesizing module '%s'638*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized22default:default2Ú
+;axi_register_slice_v2_1_axic_register_slice__parameterized62default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
@@ -8699,14 +22843,14 @@ X
 2default:default
 œ
 %done synthesizing module '%s' (%s#%s)256*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized22default:default2
-492default:default2
+;axi_register_slice_v2_1_axic_register_slice__parameterized62default:default2
+962default:default2
 12default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
-Ò
-synthesizing module '%s'638*oasys26
-"axi_infrastructure_v1_1_vector2axi2default:default2È
+Å
+synthesizing module '%s'638*oasys2F
+2axi_infrastructure_v1_1_vector2axi__parameterized02default:default2È
 “/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
 602default:default8@Z8-638
 Z
@@ -9073,17 +23217,17 @@ a
 %s*synth2R
 >	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
 2default:default
-≠
-%done synthesizing module '%s' (%s#%s)256*oasys26
-"axi_infrastructure_v1_1_vector2axi2default:default2
-502default:default2
+Ω
+%done synthesizing module '%s' (%s#%s)256*oasys2F
+2axi_infrastructure_v1_1_vector2axi__parameterized02default:default2
+962default:default2
 12default:default2È
 “/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
 602default:default8@Z8-256
-Ω
-%done synthesizing module '%s' (%s#%s)256*oasys2>
-*axi_register_slice_v2_1_axi_register_slice2default:default2
-512default:default2
+Õ
+%done synthesizing module '%s' (%s#%s)256*oasys2N
+:axi_register_slice_v2_1_axi_register_slice__parameterized02default:default2
+962default:default2
 12default:default2Ò
 ⁄/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
 642default:default8@Z8-256
@@ -9137,7 +23281,7 @@ _
 Ω
 %done synthesizing module '%s' (%s#%s)256*oasys2<
 (axi_protocol_converter_v2_1_b2s_incr_cmd2default:default2
-522default:default2
+972default:default2
 12default:default2Û
 ‹/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v2default:default2
 112default:default8@Z8-256
@@ -9157,14 +23301,14 @@ _
 Ω
 %done synthesizing module '%s' (%s#%s)256*oasys2<
 (axi_protocol_converter_v2_1_b2s_wrap_cmd2default:default2
-532default:default2
+982default:default2
 12default:default2Û
 ‹/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v2default:default2
 112default:default8@Z8-256
 …
 %done synthesizing module '%s' (%s#%s)256*oasys2B
 .axi_protocol_converter_v2_1_b2s_cmd_translator2default:default2
-542default:default2
+992default:default2
 12default:default2˘
 ‚/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v2default:default2
 172default:default8@Z8-256
@@ -9193,17 +23337,17 @@ L
 default block is never used226*oasys2ı
 ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v2default:default2
 642default:default8@Z8-226
-¡
+¬
 %done synthesizing module '%s' (%s#%s)256*oasys2>
-*axi_protocol_converter_v2_1_b2s_wr_cmd_fsm2default:default2
-552default:default2
+*axi_protocol_converter_v2_1_b2s_wr_cmd_fsm2default:default2
+1002default:default2
 12default:default2ı
 ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v2default:default2
 102default:default8@Z8-256
-¿
+¡
 %done synthesizing module '%s' (%s#%s)256*oasys2>
-*axi_protocol_converter_v2_1_b2s_aw_channel2default:default2
-562default:default2
+*axi_protocol_converter_v2_1_b2s_aw_channel2default:default2
+1012default:default2
 12default:default2ı
 ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v2default:default2
 52default:default8@Z8-256
@@ -9289,10 +23433,10 @@ J
 %s*synth2;
 '	Parameter C_FULL_PRE bound to: 2'b01 
 2default:default
-¬
+√
 %done synthesizing module '%s' (%s#%s)256*oasys2?
-+axi_protocol_converter_v2_1_b2s_simple_fifo2default:default2
-572default:default2
++axi_protocol_converter_v2_1_b2s_simple_fifo2default:default2
+1022default:default2
 12default:default2ˆ
 ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-256
@@ -9329,17 +23473,17 @@ J
 %s*synth2;
 '	Parameter C_FULL_PRE bound to: 2'b01 
 2default:default
-“
+”
 %done synthesizing module '%s' (%s#%s)256*oasys2O
-;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized02default:default2
-572default:default2
+;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized02default:default2
+1022default:default2
 12default:default2ˆ
 ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-256
-ø
+¿
 %done synthesizing module '%s' (%s#%s)256*oasys2=
-)axi_protocol_converter_v2_1_b2s_b_channel2default:default2
-582default:default2
+)axi_protocol_converter_v2_1_b2s_b_channel2default:default2
+1032default:default2
 12default:default2Ù
 ›/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v2default:default2
 102default:default8@Z8-256
@@ -9381,17 +23525,17 @@ $	Parameter SM_DONE bound to: 2'b11
 default block is never used226*oasys2ı
 ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v2default:default2
 722default:default8@Z8-226
-¡
+¬
 %done synthesizing module '%s' (%s#%s)256*oasys2>
-*axi_protocol_converter_v2_1_b2s_rd_cmd_fsm2default:default2
-592default:default2
+*axi_protocol_converter_v2_1_b2s_rd_cmd_fsm2default:default2
+1042default:default2
 12default:default2ı
 ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v2default:default2
 102default:default8@Z8-256
-¿
+¡
 %done synthesizing module '%s' (%s#%s)256*oasys2>
-*axi_protocol_converter_v2_1_b2s_ar_channel2default:default2
-602default:default2
+*axi_protocol_converter_v2_1_b2s_ar_channel2default:default2
+1052default:default2
 12default:default2ı
 ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v2default:default2
 52default:default8@Z8-256
@@ -9465,10 +23609,10 @@ M
 %s*synth2>
 *	Parameter C_FULL_PRE bound to: 5'b11010 
 2default:default
-“
+”
 %done synthesizing module '%s' (%s#%s)256*oasys2O
-;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized12default:default2
-602default:default2
+;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized12default:default2
+1052default:default2
 12default:default2ˆ
 ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-256
@@ -9505,23 +23649,23 @@ M
 %s*synth2>
 *	Parameter C_FULL_PRE bound to: 5'b11010 
 2default:default
-“
+”
 %done synthesizing module '%s' (%s#%s)256*oasys2O
-;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized22default:default2
-602default:default2
+;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized22default:default2
+1052default:default2
 12default:default2ˆ
 ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-256
-ø
+¿
 %done synthesizing module '%s' (%s#%s)256*oasys2=
-)axi_protocol_converter_v2_1_b2s_r_channel2default:default2
-612default:default2
+)axi_protocol_converter_v2_1_b2s_r_channel2default:default2
+1062default:default2
 12default:default2Ù
 ›/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v2default:default2
 212default:default8@Z8-256
 ë
 synthesizing module '%s'638*oasys2N
-:axi_register_slice_v2_1_axi_register_slice__parameterized02default:default2Ò
+:axi_register_slice_v2_1_axi_register_slice__parameterized12default:default2Ò
 ⁄/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
 642default:default8@Z8-638
 Y
@@ -9894,7 +24038,7 @@ a
 2default:default
 Å
 synthesizing module '%s'638*oasys2F
-2axi_infrastructure_v1_1_axi2vector__parameterized02default:default2È
+2axi_infrastructure_v1_1_axi2vector__parameterized12default:default2È
 “/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
 602default:default8@Z8-638
 Z
@@ -10261,16 +24405,16 @@ a
 %s*synth2R
 >	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
 2default:default
-Ω
+æ
 %done synthesizing module '%s' (%s#%s)256*oasys2F
-2axi_infrastructure_v1_1_axi2vector__parameterized02default:default2
-612default:default2
+2axi_infrastructure_v1_1_axi2vector__parameterized12default:default2
+1062default:default2
 12default:default2È
 “/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
 602default:default8@Z8-256
 ì
 synthesizing module '%s'638*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized32default:default2Ú
+;axi_register_slice_v2_1_axic_register_slice__parameterized72default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
@@ -10285,16 +24429,16 @@ X
 %s*synth2I
 5	Parameter C_REG_CONFIG bound to: 0 - type: integer 
 2default:default
-œ
+–
 %done synthesizing module '%s' (%s#%s)256*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized32default:default2
-612default:default2
+;axi_register_slice_v2_1_axic_register_slice__parameterized72default:default2
+1062default:default2
 12default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
 ì
 synthesizing module '%s'638*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized42default:default2Ú
+;axi_register_slice_v2_1_axic_register_slice__parameterized82default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
@@ -10309,16 +24453,16 @@ X
 %s*synth2I
 5	Parameter C_REG_CONFIG bound to: 0 - type: integer 
 2default:default
-œ
+–
 %done synthesizing module '%s' (%s#%s)256*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized42default:default2
-612default:default2
+;axi_register_slice_v2_1_axic_register_slice__parameterized82default:default2
+1062default:default2
 12default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
 ì
 synthesizing module '%s'638*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized52default:default2Ú
+;axi_register_slice_v2_1_axic_register_slice__parameterized92default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
@@ -10333,16 +24477,16 @@ X
 %s*synth2I
 5	Parameter C_REG_CONFIG bound to: 0 - type: integer 
 2default:default
-œ
+–
 %done synthesizing module '%s' (%s#%s)256*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized52default:default2
-612default:default2
+;axi_register_slice_v2_1_axic_register_slice__parameterized92default:default2
+1062default:default2
 12default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
-ì
-synthesizing module '%s'638*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized62default:default2Ú
+î
+synthesizing module '%s'638*oasys2P
+<axi_register_slice_v2_1_axic_register_slice__parameterized102default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
@@ -10357,16 +24501,16 @@ X
 %s*synth2I
 5	Parameter C_REG_CONFIG bound to: 0 - type: integer 
 2default:default
-œ
-%done synthesizing module '%s' (%s#%s)256*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized62default:default2
-612default:default2
+—
+%done synthesizing module '%s' (%s#%s)256*oasys2P
+<axi_register_slice_v2_1_axic_register_slice__parameterized102default:default2
+1062default:default2
 12default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
 Å
 synthesizing module '%s'638*oasys2F
-2axi_infrastructure_v1_1_vector2axi__parameterized02default:default2È
+2axi_infrastructure_v1_1_vector2axi__parameterized12default:default2È
 “/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
 602default:default8@Z8-638
 Z
@@ -10733,63 +24877,935 @@ a
 %s*synth2R
 >	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
 2default:default
-Ω
+æ
 %done synthesizing module '%s' (%s#%s)256*oasys2F
-2axi_infrastructure_v1_1_vector2axi__parameterized02default:default2
-612default:default2
+2axi_infrastructure_v1_1_vector2axi__parameterized12default:default2
+1062default:default2
 12default:default2È
 “/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
 602default:default8@Z8-256
-Õ
+Œ
 %done synthesizing module '%s' (%s#%s)256*oasys2N
-:axi_register_slice_v2_1_axi_register_slice__parameterized02default:default2
-612default:default2
+:axi_register_slice_v2_1_axi_register_slice__parameterized12default:default2
+1062default:default2
 12default:default2Ò
 ⁄/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
 642default:default8@Z8-256
-´
+¨
 %done synthesizing module '%s' (%s#%s)256*oasys23
-axi_protocol_converter_v2_1_b2s2default:default2
-622default:default2
+axi_protocol_converter_v2_1_b2s2default:default2
+1072default:default2
 12default:default2Í
 ”/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v2default:default2
 392default:default8@Z8-256
-·
+‚
 %done synthesizing module '%s' (%s#%s)256*oasys2V
-Baxi_protocol_converter_v2_1_axi_protocol_converter__parameterized02default:default2
-622default:default2
+Baxi_protocol_converter_v2_1_axi_protocol_converter__parameterized02default:default2
+1072default:default2
 12default:default2˝
 Ê/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
 622default:default8@Z8-256
-˜
+¯
 %done synthesizing module '%s' (%s#%s)256*oasys2*
-zynq_system_auto_pc_142default:default2
-632default:default2
+zynq_system_auto_pc_562default:default2
+1082default:default2
 12default:default2ø
-®/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/synth/zynq_system_auto_pc_14.v2default:default2
+®/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_56/synth/zynq_system_auto_pc_56.v2default:default2
 572default:default8@Z8-256
-ë
-Ginstance '%s' of module '%s' requires %s connections, but only %s given350*oasys2
-auto_pc2default:default2*
-zynq_system_auto_pc_142default:default2
-592default:default2
-572default:default2ò
-Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
-2382default:default8@Z8-350
-—
+‘
 %done synthesizing module '%s' (%s#%s)256*oasys2,
-s00_couplers_imp_156Q4UY2default:default2
-642default:default2
+s00_couplers_imp_156Q4UY2default:default2
+1092default:default2
 12default:default2ò
-Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
-32default:default8@Z8-256
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+8182default:default8@Z8-256
+Ø
+synthesizing module '%s'638*oasys2&
+zynq_system_xbar_22default:default2∑
+†/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/synth/zynq_system_xbar_2.v2default:default2
+572default:default8@Z8-638
+Ô
+synthesizing module '%s'638*oasys2B
+.axi_crossbar_v2_1_axi_crossbar__parameterized02default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v2default:default2
+542default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+]
+%s*synth2N
+:	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_NUM_MASTER_SLOTS bound to: 3 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+2default:default
+ì
+%s*synth2É
+Ó	Parameter C_M_AXI_BASE_ADDR bound to: 192'b000000000000000000000000000000000100001111000010000000000000000000000000000000000000000000000000010000111100000100000000000000000000000000000000000000000000000001000011110000000000000000000000 
+2default:default
+≥
+%s*synth2£
+é	Parameter C_M_AXI_ADDR_WIDTH bound to: 96'b000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000 
+2default:default
+[
+%s*synth2L
+8	Parameter C_S_AXI_BASE_ID bound to: 0 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 0 - type: integer 
+2default:default
+g
+%s*synth2X
+D	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+ª
+%s*synth2´
+ñ	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+2default:default
+∫
+%s*synth2™
+ï	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+2default:default
+X
+%s*synth2I
+5	Parameter C_R_REGISTER bound to: 1 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter C_S_AXI_SINGLE_THREAD bound to: 1 - type: integer 
+2default:default
+d
+%s*synth2U
+A	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 1 - type: integer 
+2default:default
+c
+%s*synth2T
+@	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 1 - type: integer 
+2default:default
+∂
+%s*synth2¶
+ë	Parameter C_M_AXI_WRITE_ISSUING bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+2default:default
+µ
+%s*synth2•
+ê	Parameter C_M_AXI_READ_ISSUING bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
+2default:default
+Ø
+%s*synth2ü
+ä	Parameter C_M_AXI_SECURE bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+_
+%s*synth2P
+<	Parameter C_CONNECTIVITY_MODE bound to: 0 - type: integer 
+2default:default
+Ü
+%s*synth2w
+c	Parameter P_ONES bound to: 65'b11111111111111111111111111111111111111111111111111111111111111111 
+2default:default
+é
+%s*synth2
+k	Parameter P_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+é
+%s*synth2
+k	Parameter P_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+R
+%s*synth2C
+/	Parameter P_AXI4 bound to: 0 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter P_AXI3 bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter P_AXILITE bound to: 2 - type: integer 
+2default:default
+O
+%s*synth2@
+,	Parameter P_AXILITE_SIZE bound to: 3'b010 
+2default:default
+F
+%s*synth27
+#	Parameter P_INCR bound to: 2'b01 
+2default:default
+W
+%s*synth2H
+4	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 3'b111 
+2default:default
+V
+%s*synth2G
+3	Parameter P_M_AXI_SUPPORTS_READ bound to: 3'b111 
+2default:default
+U
+%s*synth2F
+2	Parameter P_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
+2default:default
+T
+%s*synth2E
+1	Parameter P_S_AXI_SUPPORTS_READ bound to: 1'b1 
+2default:default
+S
+%s*synth2D
+0	Parameter C_DEBUG bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter P_RANGE_CHECK bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter P_ADDR_DECODE bound to: 1 - type: integer 
+2default:default
+±
+%s*synth2°
+å	Parameter P_M_AXI_ERR_MODE bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+Q
+%s*synth2B
+.	Parameter P_LEN bound to: 8 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter P_LOCK bound to: 1 - type: integer 
+2default:default
+·
+synthesizing module '%s'638*oasys23
+axi_crossbar_v2_1_crossbar_sasd2default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_crossbar_sasd.v2default:default2
+792default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+]
+%s*synth2N
+:	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_NUM_MASTER_SLOTS bound to: 3 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+2default:default
+ì
+%s*synth2É
+Ó	Parameter C_M_AXI_BASE_ADDR bound to: 192'b000000000000000000000000000000000100001111000010000000000000000000000000000000000000000000000000010000111100000100000000000000000000000000000000000000000000000001000011110000000000000000000000 
+2default:default
+ì
+%s*synth2É
+Ó	Parameter C_M_AXI_HIGH_ADDR bound to: 192'b000000000000000000000000000000000100001111000010111111111111111100000000000000000000000000000000010000111100000111111111111111110000000000000000000000000000000001000011110000001111111111111111 
+2default:default
+é
+%s*synth2
+k	Parameter C_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+é
+%s*synth2
+k	Parameter C_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+g
+%s*synth2X
+D	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
+2default:default
+T
+%s*synth2E
+1	Parameter C_S_AXI_SUPPORTS_READ bound to: 1'b1 
+2default:default
+W
+%s*synth2H
+4	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 3'b111 
+2default:default
+V
+%s*synth2G
+3	Parameter C_M_AXI_SUPPORTS_READ bound to: 3'b111 
+2default:default
+`
+%s*synth2Q
+=	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
+2default:default
+Ø
+%s*synth2ü
+ä	Parameter C_M_AXI_SECURE bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+±
+%s*synth2°
+å	Parameter C_M_AXI_ERR_MODE bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+2default:default
+X
+%s*synth2I
+5	Parameter C_R_REGISTER bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter C_DEBUG bound to: 1 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter P_AXI4 bound to: 0 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter P_AXI3 bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter P_AXILITE bound to: 2 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter P_NUM_MASTER_SLOTS_DE bound to: 4 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter P_NUM_MASTER_SLOTS_LOG bound to: 2 - type: integer 
+2default:default
+e
+%s*synth2V
+B	Parameter P_NUM_MASTER_SLOTS_DE_LOG bound to: 2 - type: integer 
+2default:default
+a
+%s*synth2R
+>	Parameter P_NUM_SLAVE_SLOTS_LOG bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter P_AXI_AUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter P_AXI_WID_WIDTH bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter P_AMESG_WIDTH bound to: 64 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter P_BMESG_WIDTH bound to: 3 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter P_RMESG_WIDTH bound to: 36 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter P_WMESG_WIDTH bound to: 39 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter P_AXILITE_ERRMODE bound to: 1 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter P_NONSECURE_BIT bound to: 1 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter P_M_SECURE_MASK bound to: 3'b000 
+2default:default
+Q
+%s*synth2B
+.	Parameter P_M_AXILITE_MASK bound to: 3'b000 
+2default:default
+G
+%s*synth28
+$	Parameter P_FIXED bound to: 2'b00 
+2default:default
+T
+%s*synth2E
+1	Parameter P_BYPASS bound to: 0 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter P_LIGHTWT bound to: 7 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter P_FULLY_REG bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter P_R_REG_CONFIG bound to: 1 - type: integer 
+2default:default
+H
+%s*synth29
+%	Parameter P_DECERR bound to: 2'b11 
+2default:default
 È
+synthesizing module '%s'638*oasys27
+#axi_crossbar_v2_1_addr_arbiter_sasd2default:default2‡
+…/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_arbiter_sasd.v2default:default2
+652default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+S
+%s*synth2D
+0	Parameter C_NUM_S bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_NUM_S_LOG bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AMESG_WIDTH bound to: 64 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_GRANT_ENC bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_ARB_PRIORITY bound to: 0 - type: integer 
+2default:default
+J
+%s*synth2;
+'	Parameter P_PRIO_MASK bound to: 1'b0 
+2default:default
+¶
+%done synthesizing module '%s' (%s#%s)256*oasys27
+#axi_crossbar_v2_1_addr_arbiter_sasd2default:default2
+1102default:default2
+12default:default2‡
+…/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_arbiter_sasd.v2default:default2
+652default:default8@Z8-256
+Ô
+synthesizing module '%s'638*oasys2B
+.axi_crossbar_v2_1_addr_decoder__parameterized12default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_decoder.v2default:default2
+692default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_NUM_TARGETS bound to: 3 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_NUM_TARGETS_LOG bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_NUM_RANGES bound to: 1 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_TARGET_ENC bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_TARGET_HOT bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_REGION_ENC bound to: 1 - type: integer 
+2default:default
+ç
+%s*synth2˝
+Ë	Parameter C_BASE_ADDR bound to: 192'b000000000000000000000000000000000100001111000010000000000000000000000000000000000000000000000000010000111100000100000000000000000000000000000000000000000000000001000011110000000000000000000000 
+2default:default
+ç
+%s*synth2˝
+Ë	Parameter C_HIGH_ADDR bound to: 192'b000000000000000000000000000000000100001111000010111111111111111100000000000000000000000000000000010000111100000111111111111111110000000000000000000000000000000001000011110000001111111111111111 
+2default:default
+O
+%s*synth2@
+,	Parameter C_TARGET_QUAL bound to: 4'b0111 
+2default:default
+X
+%s*synth2I
+5	Parameter C_RESOLUTION bound to: 2 - type: integer 
+2default:default
+b
+%s*synth2S
+?	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
+2default:default
+è
+synthesizing module '%s'638*oasys2M
+9generic_baseblocks_v2_1_comparator_static__parameterized22default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
+612default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_FAMILY bound to: rtl - type: string 
+2default:default
+d
+%s*synth2U
+A	Parameter C_VALUE bound to: 30'b010000111100000000000000000000 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_NUM_LUT bound to: 5 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+2default:default
+Ã
+%done synthesizing module '%s' (%s#%s)256*oasys2M
+9generic_baseblocks_v2_1_comparator_static__parameterized22default:default2
+1102default:default2
+12default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
+612default:default8@Z8-256
+è
+synthesizing module '%s'638*oasys2M
+9generic_baseblocks_v2_1_comparator_static__parameterized32default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
+612default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_FAMILY bound to: rtl - type: string 
+2default:default
+d
+%s*synth2U
+A	Parameter C_VALUE bound to: 30'b010000111100000100000000000000 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_NUM_LUT bound to: 5 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+2default:default
+Ã
+%done synthesizing module '%s' (%s#%s)256*oasys2M
+9generic_baseblocks_v2_1_comparator_static__parameterized32default:default2
+1102default:default2
+12default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
+612default:default8@Z8-256
+è
+synthesizing module '%s'638*oasys2M
+9generic_baseblocks_v2_1_comparator_static__parameterized42default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
+612default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_FAMILY bound to: rtl - type: string 
+2default:default
+d
+%s*synth2U
+A	Parameter C_VALUE bound to: 30'b010000111100001000000000000000 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_NUM_LUT bound to: 5 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+2default:default
+Ã
+%done synthesizing module '%s' (%s#%s)256*oasys2M
+9generic_baseblocks_v2_1_comparator_static__parameterized42default:default2
+1102default:default2
+12default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
+612default:default8@Z8-256
+¨
+%done synthesizing module '%s' (%s#%s)256*oasys2B
+.axi_crossbar_v2_1_addr_decoder__parameterized12default:default2
+1102default:default2
+12default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_decoder.v2default:default2
+692default:default8@Z8-256
+Á
+synthesizing module '%s'638*oasys2>
+*axi_crossbar_v2_1_splitter__parameterized02default:default2◊
+¿/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_splitter.v2default:default2
+722default:default8@Z8-638
+S
+%s*synth2D
+0	Parameter C_NUM_M bound to: 3 - type: integer 
+2default:default
+§
+%done synthesizing module '%s' (%s#%s)256*oasys2>
+*axi_crossbar_v2_1_splitter__parameterized02default:default2
+1102default:default2
+12default:default2◊
+¿/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_splitter.v2default:default2
+722default:default8@Z8-256
+˚
+synthesizing module '%s'638*oasys2C
+/generic_baseblocks_v2_1_mux_enc__parameterized42default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_FAMILY bound to: rtl - type: string 
+2default:default
+S
+%s*synth2D
+0	Parameter C_RATIO bound to: 4 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
+2default:default
+∏
+%done synthesizing module '%s' (%s#%s)256*oasys2C
+/generic_baseblocks_v2_1_mux_enc__parameterized42default:default2
+1102default:default2
+12default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-256
+˚
+synthesizing module '%s'638*oasys2C
+/generic_baseblocks_v2_1_mux_enc__parameterized52default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_FAMILY bound to: rtl - type: string 
+2default:default
+S
+%s*synth2D
+0	Parameter C_RATIO bound to: 1 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
+2default:default
+∏
+%done synthesizing module '%s' (%s#%s)256*oasys2C
+/generic_baseblocks_v2_1_mux_enc__parameterized52default:default2
+1102default:default2
+12default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-256
+˚
+synthesizing module '%s'638*oasys2C
+/generic_baseblocks_v2_1_mux_enc__parameterized62default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_FAMILY bound to: rtl - type: string 
+2default:default
+S
+%s*synth2D
+0	Parameter C_RATIO bound to: 4 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
+2default:default
+∏
+%done synthesizing module '%s' (%s#%s)256*oasys2C
+/generic_baseblocks_v2_1_mux_enc__parameterized62default:default2
+1102default:default2
+12default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-256
+î
+synthesizing module '%s'638*oasys2P
+<axi_register_slice_v2_1_axic_register_slice__parameterized112default:default2Ú
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+622default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter C_FAMILY bound to: zynq - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_REG_CONFIG bound to: 1 - type: integer 
+2default:default
+—
+%done synthesizing module '%s' (%s#%s)256*oasys2P
+<axi_register_slice_v2_1_axic_register_slice__parameterized112default:default2
+1102default:default2
+12default:default2Ú
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+622default:default8@Z8-256
+˚
+synthesizing module '%s'638*oasys2C
+/generic_baseblocks_v2_1_mux_enc__parameterized72default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_FAMILY bound to: rtl - type: string 
+2default:default
+S
+%s*synth2D
+0	Parameter C_RATIO bound to: 4 - type: integer 
+2default:default
+W
+%s*synth2H
+4	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
+2default:default
+∏
+%done synthesizing module '%s' (%s#%s)256*oasys2C
+/generic_baseblocks_v2_1_mux_enc__parameterized72default:default2
+1102default:default2
+12default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+632default:default8@Z8-256
+Ô
+synthesizing module '%s'638*oasys2B
+.axi_crossbar_v2_1_decerr_slave__parameterized02default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v2default:default2
+642default:default8@Z8-638
+Z
+%s*synth2K
+7	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+]
+%s*synth2N
+:	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+2default:default
+Z
+%s*synth2K
+7	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter C_RESP bound to: 3 - type: integer 
+2default:default
+L
+%s*synth2=
+)	Parameter P_WRITE_IDLE bound to: 2'b00 
+2default:default
+L
+%s*synth2=
+)	Parameter P_WRITE_DATA bound to: 2'b01 
+2default:default
+L
+%s*synth2=
+)	Parameter P_WRITE_RESP bound to: 2'b10 
+2default:default
+J
+%s*synth2;
+'	Parameter P_READ_IDLE bound to: 1'b0 
+2default:default
+J
+%s*synth2;
+'	Parameter P_READ_DATA bound to: 1'b1 
+2default:default
+R
+%s*synth2C
+/	Parameter P_AXI4 bound to: 0 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter P_AXI3 bound to: 1 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter P_AXILITE bound to: 2 - type: integer 
+2default:default
+¨
+%done synthesizing module '%s' (%s#%s)256*oasys2B
+.axi_crossbar_v2_1_decerr_slave__parameterized02default:default2
+1102default:default2
+12default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v2default:default2
+642default:default8@Z8-256
+û
+%done synthesizing module '%s' (%s#%s)256*oasys23
+axi_crossbar_v2_1_crossbar_sasd2default:default2
+1112default:default2
+12default:default2‹
+≈/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_crossbar_sasd.v2default:default2
+792default:default8@Z8-256
+¨
+%done synthesizing module '%s' (%s#%s)256*oasys2B
+.axi_crossbar_v2_1_axi_crossbar__parameterized02default:default2
+1112default:default2
+12default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v2default:default2
+542default:default8@Z8-256
+Ï
+%done synthesizing module '%s' (%s#%s)256*oasys2&
+zynq_system_xbar_22default:default2
+1122default:default2
+12default:default2∑
+†/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/synth/zynq_system_xbar_2.v2default:default2
+572default:default8@Z8-256
+ö
+Pwidth (%s) of port connection '%s' does not match port width (%s) of module '%s'689*oasys2
+62default:default2 
+m_axi_arprot2default:default2
+92default:default2&
+zynq_system_xbar_22default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+39832default:default8@Z8-689
+ö
+Pwidth (%s) of port connection '%s' does not match port width (%s) of module '%s'689*oasys2
+62default:default2 
+m_axi_awprot2default:default2
+92default:default2&
+zynq_system_xbar_22default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+39872default:default8@Z8-689
+Í
 %done synthesizing module '%s' (%s#%s)256*oasys2A
--zynq_system_processing_system7_0_axi_periph_02default:default2
-652default:default2
+-zynq_system_processing_system7_0_axi_periph_02default:default2
+1132default:default2
 12default:default2ò
 Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
-16272default:default8@Z8-256
+33152default:default8@Z8-256
 ˘
 synthesizing module '%s'638*oasys2>
 *zynq_system_rst_processing_system7_0_50M_02default:default2È
@@ -10920,17 +25936,17 @@ S
 %s*synth2D
 0	Parameter INIT bound to: 16'b0000000000000000 
 2default:default
-ã
+å
 %done synthesizing module '%s' (%s#%s)256*oasys2
-SRL162default:default2
-662default:default2
+SRL162default:default2
+1142default:default2
 12default:default2b
 L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 347842default:default8@Z8-256
-É
+Ñ
 %done synthesizing module '%s' (%s#%s)256*oasys2
-lpf2default:default2
-672default:default2
+lpf2default:default2
+1152default:default2
 12default:default2›
 ∆/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/proc_sys_reset_v5_0/hdl/src/vhdl/lpf.vhd2default:default2
 1362default:default8@Z8-256
@@ -10948,31 +25964,31 @@ R
 %s*synth2C
 /	Parameter C_SIZE bound to: 6 - type: integer 
 2default:default
-ã
+å
 %done synthesizing module '%s' (%s#%s)256*oasys2
-upcnt_n2default:default2
-682default:default2
+upcnt_n2default:default2
+1162default:default2
 12default:default2·
  /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/proc_sys_reset_v5_0/hdl/src/vhdl/upcnt_n.vhd2default:default2
 1262default:default8@Z8-256
-ç
+é
 %done synthesizing module '%s' (%s#%s)256*oasys2
-sequence2default:default2
-692default:default2
+sequence2default:default2
+1172default:default2
 12default:default2‚
 À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/proc_sys_reset_v5_0/hdl/src/vhdl/sequence.vhd2default:default2
 1462default:default8@Z8-256
-©
+™
 %done synthesizing module '%s' (%s#%s)256*oasys22
-proc_sys_reset__parameterized02default:default2
-702default:default2
+proc_sys_reset__parameterized02default:default2
+1182default:default2
 12default:default2Ë
 —/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/proc_sys_reset_v5_0/hdl/src/vhdl/proc_sys_reset.vhd2default:default2
 1992default:default8@Z8-256
-µ
+∂
 %done synthesizing module '%s' (%s#%s)256*oasys2>
-*zynq_system_rst_processing_system7_0_50M_02default:default2
-712default:default2
+*zynq_system_rst_processing_system7_0_50M_02default:default2
+1192default:default2
 12default:default2È
 “/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/synth/zynq_system_rst_processing_system7_0_50M_0.vhd2default:default2
 712default:default8@Z8-256
@@ -10983,24 +25999,24 @@ Ginstance '%s' of module '%s' requires %s connections, but only %s given350*
 102default:default2
 72default:default2ò
 Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
-12122default:default8@Z8-350
-∆
+23862default:default8@Z8-350
+»
 %done synthesizing module '%s' (%s#%s)256*oasys2
-zynq_system2default:default2
-722default:default2
+zynq_system2default:default2
+1202default:default2
 12default:default2ò
-Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
-6992default:default8@Z8-256
-‘
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+16682default:default8@Z8-256
+’
 %done synthesizing module '%s' (%s#%s)256*oasys2'
-zynq_system_wrapper2default:default2
-732default:default2
+zynq_system_wrapper2default:default2
+1212default:default2
 12default:default2†
 â/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system_wrapper.v2default:default2
 32default:default8@Z8-256
-ú
-%s*synth2å
-xFinished RTL Elaboration : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 899.148 ; gain = 275.891
+ù
+%s*synth2ç
+yFinished RTL Elaboration : Time (s): cpu = 00:02:07 ; elapsed = 00:02:12 . Memory (MB): peak = 1007.570 ; gain = 378.312
 2default:default
 ;
 %s*synth2,
@@ -11027,10 +26043,24 @@ l
 %s*synth2]
 I+------+------------------+-------+---------+-------+------------------+
 2default:default
-\
+∏
+'tying undriven pin %s:%s to constant 0
+3295*oasys2
+xbar2default:default2!
+s_axi_awid[1]2default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+32342default:default8@Z8-3295
+∏
+'tying undriven pin %s:%s to constant 0
+3295*oasys2
+xbar2default:default2!
+s_axi_arid[1]2default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+32342default:default8@Z8-3295
+]
 -Analyzing %s Unisim elements for replacement
-17*netlist2
-12default:defaultZ29-17
+17*netlist2
+202default:defaultZ29-17
 a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
@@ -11059,6 +26089,15 @@ e/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z
 Loading io standards from %s
 15*device2k
 W/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/./parts/xilinx/zynq/IOStandards.xml2default:defaultZ21-15
+’
+ôCould not create '%s' constraint because cell '%s' is not directly connected to top level port. '%s' is ignored by %s but preserved inside the database.
+527*constraints2 
+IBUF_LOW_PWR2default:default2W
+Azynq_system_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clkin1_ibufg	2default:default2 
+IBUF_LOW_PWR2default:default2
+Vivado2default:default2√
+¨/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_clk_wiz.v2default:default2
+872default:default8@Z18-549
 5
 
 Processing XDC Constraints
@@ -11073,6 +26112,9 @@ $Parsing XDC File [%s] for cell '%s'
 847*designutils2—
 º/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_processing_system7_0_0/zynq_system_processing_system7_0_0.xdc2default:default2;
 'zynq_system_i/processing_system7_0/inst2default:defaultZ20-847
+/
+Deriving generated clocks
+2*timingZ38-2
 „
 ŸImplementation specific constraints were found while reading constraint file [%s]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [%s].
 233*project2—
@@ -11098,6 +26140,34 @@ $Parsing XDC File [%s] for cell '%s'
 847*designutils2Á
 “/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/zynq_system_rst_processing_system7_0_50M_0_board.xdc2default:default2A
 -zynq_system_i/rst_processing_system7_0_50M/U02default:defaultZ20-847
+≤
+$Parsing XDC File [%s] for cell '%s'
+848*designutils2ª
+¶/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0.xdc2default:default20
+zynq_system_i/clk_wiz_0/inst2default:defaultZ20-848
+ª
+-Finished Parsing XDC File [%s] for cell '%s'
+847*designutils2ª
+¶/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0.xdc2default:default20
+zynq_system_i/clk_wiz_0/inst2default:defaultZ20-847
+/
+Deriving generated clocks
+2*timingZ38-2
+Õ
+ŸImplementation specific constraints were found while reading constraint file [%s]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [%s].
+233*project2ª
+¶/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0.xdc2default:default2ô
+Ñ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/.Xil/zynq_system_wrapper_propImpl.xdc2default:defaultZ1-236
+∏
+$Parsing XDC File [%s] for cell '%s'
+848*designutils2¡
+¨/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_board.xdc2default:default20
+zynq_system_i/clk_wiz_0/inst2default:defaultZ20-848
+¡
+-Finished Parsing XDC File [%s] for cell '%s'
+847*designutils2¡
+¨/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_board.xdc2default:default20
+zynq_system_i/clk_wiz_0/inst2default:defaultZ20-847
 ∏
 Parsing XDC File [%s]
 179*designutils2Å
@@ -11105,7 +26175,7 @@ m/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_examp
 –
 No cells matched '%s'.
 180*	planAhead2w
-cget_cells -hier -filter {REF_NAME==zynq_system_auto_pc_10 || ORIG_REF_NAME==zynq_system_auto_pc_10}2default:default2É
+cget_cells -hier -filter {REF_NAME==zynq_system_auto_pc_14 || ORIG_REF_NAME==zynq_system_auto_pc_14}2default:default2É
 m/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/dont_touch.xdc2default:default2
 232default:default8@Z12-180
 ˇ
@@ -11123,6 +26193,26 @@ m/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_examp
 233*project2Å
 m/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/dont_touch.xdc2default:default2ô
 Ñ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/.Xil/zynq_system_wrapper_propImpl.xdc2default:defaultZ1-236
+Ê
+ZCould not find module '%s'. The XDC file %s will not be read for any cell of this module.
+1082*designutils2)
+zynq_system_auto_cc_62default:default2æ
+©/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_cc_6/zynq_system_auto_cc_6_clocks.xdc2default:defaultZ20-1280
+ﬂ
+$Parsing XDC File [%s] for cell '%s'
+848*designutils2‹
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_axi_clock_converter_0_26/zynq_system_axi_clock_converter_0_26_clocks.xdc2default:default2<
+(zynq_system_i/axi_clock_converter_0/inst2default:defaultZ20-848
+Ë
+-Finished Parsing XDC File [%s] for cell '%s'
+847*designutils2‹
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_axi_clock_converter_0_26/zynq_system_axi_clock_converter_0_26_clocks.xdc2default:default2<
+(zynq_system_i/axi_clock_converter_0/inst2default:defaultZ20-847
+Ó
+ŸImplementation specific constraints were found while reading constraint file [%s]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [%s].
+233*project2‹
+«/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_axi_clock_converter_0_26/zynq_system_axi_clock_converter_0_26_clocks.xdc2default:default2ô
+Ñ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/.Xil/zynq_system_wrapper_propImpl.xdc2default:defaultZ1-236
 ?
 &Completed Processing XDC Constraints
 
@@ -11130,20 +26220,37 @@ m/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_examp
 |
 MSuccessfully populated the BRAM INIT strings from the following elf files: %s96*memdata2
  2default:defaultZ28-144
-ö
+Õ
 !Unisim Transformation Summary:
-%s111*project2^
-J  A total of 1 instances were transformed.
+%s111*project2ê
+|  A total of 18 instances were transformed.
+  FDRSE => FDRSE (LUT4, FDRE, VCC): 17 instances
   SRL16 => SRL16E: 1 instances
 2default:defaultZ1-111
 ∂
 %s*synth2¶
-ëFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1145.504 ; gain = 522.246
+ëFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:32 ; elapsed = 00:02:34 . Memory (MB): peak = 1322.312 ; gain = 693.055
 2default:default
 û
 %s*synth2é
-zFinished RTL Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1145.504 ; gain = 522.246
+zFinished RTL Optimization : Time (s): cpu = 00:02:32 ; elapsed = 00:02:34 . Memory (MB): peak = 1322.312 ; gain = 693.055
 2default:default
+£
+3inferred FSM for state register '%s' in module '%s'802*oasys2
+	state_reg2default:default28
+$axi_data_fifo_v2_1_axic_reg_srl_fifo2default:defaultZ8-802
+≥
+3inferred FSM for state register '%s' in module '%s'802*oasys2
+	state_reg2default:default2H
+4axi_data_fifo_v2_1_axic_reg_srl_fifo__parameterized02default:defaultZ8-802
+≥
+3inferred FSM for state register '%s' in module '%s'802*oasys2
+	state_reg2default:default2H
+4axi_data_fifo_v2_1_axic_reg_srl_fifo__parameterized12default:defaultZ8-802
+≥
+3inferred FSM for state register '%s' in module '%s'802*oasys2
+	state_reg2default:default2H
+4axi_data_fifo_v2_1_axic_reg_srl_fifo__parameterized22default:defaultZ8-802
 å
 3inferred FSM for state register '%s' in module '%s'802*oasys2!
 ap_CS_fsm_reg2default:default2
@@ -11161,12 +26268,50 @@ zFinished RTL Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Mem
 3inferred FSM for state register '%s' in module '%s'802*oasys2
 	state_reg2default:default2$
 hhb_query_a_read2default:defaultZ8-802
+û
+merging register '%s' into '%s'3619*oasys22
+gen_axilite.s_axi_wready_i_reg2default:default23
+gen_axilite.s_axi_awready_i_reg2default:default2€
+ƒ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_1/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v2default:default2
+1362default:default8@Z8-4471
 Ç
 merging register '%s' into '%s'3619*oasys2"
 seq_cnt_en_reg2default:default2 
 from_sys_reg2default:default2‚
 À/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/proc_sys_reset_v5_0/hdl/src/vhdl/sequence.vhd2default:default2
 2222default:default8@Z8-4471
+÷
+Gencoded FSM with state register '%s' using encoding '%s' in module '%s'3353*oasys2
+	state_reg2default:default2
+one-hot2default:default28
+$axi_data_fifo_v2_1_axic_reg_srl_fifo2default:defaultZ8-3354
+Ê
+Gencoded FSM with state register '%s' using encoding '%s' in module '%s'3353*oasys2
+	state_reg2default:default2
+one-hot2default:default2H
+4axi_data_fifo_v2_1_axic_reg_srl_fifo__parameterized02default:defaultZ8-3354
+Ê
+Gencoded FSM with state register '%s' using encoding '%s' in module '%s'3353*oasys2
+	state_reg2default:default2
+one-hot2default:default2H
+4axi_data_fifo_v2_1_axic_reg_srl_fifo__parameterized12default:defaultZ8-3354
+Ê
+Gencoded FSM with state register '%s' using encoding '%s' in module '%s'3353*oasys2
+	state_reg2default:default2
+one-hot2default:default2H
+4axi_data_fifo_v2_1_axic_reg_srl_fifo__parameterized22default:defaultZ8-3354
+Ì
+0Net %s in module/entity %s does not have driver.3422*oasys23
+NLW_xbar_s_axi_awid_UNCONNECTED2default:default22
+zynq_system_axi_mem_intercon_12default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+28722default:default8@Z8-3848
+Ì
+0Net %s in module/entity %s does not have driver.3422*oasys23
+NLW_xbar_s_axi_arid_UNCONNECTED2default:default22
+zynq_system_axi_mem_intercon_12default:default2ò
+Å/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/hdl/zynq_system.v2default:default2
+28712default:default8@Z8-3848
 ø
 Gencoded FSM with state register '%s' using encoding '%s' in module '%s'3353*oasys2!
 ap_CS_fsm_reg2default:default2
@@ -11301,21 +26446,173 @@ Gencoded FSM with state register '%s' using encoding '%s' in module '%s'3353
 
 Report RTL Partitions: 
 2default:default
-N
-%s*synth2?
-++-+--------------+------------+----------+
+~
+%s*synth2o
+[+------+---------------------------------------------------------+------------+----------+
 2default:default
-N
-%s*synth2?
-+| |RTL Partition |Replication |Instances |
+~
+%s*synth2o
+[|      |RTL Partition                                            |Replication |Instances |
 2default:default
-N
-%s*synth2?
-++-+--------------+------------+----------+
+~
+%s*synth2o
+[+------+---------------------------------------------------------+------------+----------+
 2default:default
-N
-%s*synth2?
-++-+--------------+------------+----------+
+~
+%s*synth2o
+[|1     |zynq_system_clk_wiz_0_0_clk_wiz__GC0                     |           1|         3|
+2default:default
+~
+%s*synth2o
+[|2     |case__183__GD                                            |           1|     54847|
+2default:default
+~
+%s*synth2o
+[|3     |zynq_system_clk_wiz_0_0_mmcm_drp__GB1                    |           1|     19193|
+2default:default
+~
+%s*synth2o
+[|4     |datapath__118__GD                                        |           1|      2424|
+2default:default
+~
+%s*synth2o
+[|5     |case__284__GD                                            |           1|         6|
+2default:default
+~
+%s*synth2o
+[|6     |zynq_system_clk_wiz_0_0_mmcm_drp__GB4                    |           1|      1397|
+2default:default
+~
+%s*synth2o
+[|7     |datapath__70__GD                                         |           1|      2424|
+2default:default
+~
+%s*synth2o
+[|8     |zynq_system_clk_wiz_0_0_mmcm_drp__GB7                    |           1|      3425|
+2default:default
+~
+%s*synth2o
+[|9     |zynq_system_clk_wiz_0_0_mmcm_drp__GB8                    |           1|      3221|
+2default:default
+~
+%s*synth2o
+[|10    |datapath__199__GD                                        |           1|      1458|
+2default:default
+~
+%s*synth2o
+[|11    |zynq_system_clk_wiz_0_0_mmcm_drp__GB10                   |           1|      1198|
+2default:default
+~
+%s*synth2o
+[|12    |zynq_system_clk_wiz_0_0_mmcm_drp__GB11                   |           1|      3169|
+2default:default
+~
+%s*synth2o
+[|13    |datapath__195__GD                                        |           1|      1458|
+2default:default
+~
+%s*synth2o
+[|14    |zynq_system_clk_wiz_0_0_mmcm_drp__GB14                   |           1|        40|
+2default:default
+~
+%s*synth2o
+[|15    |zynq_system_clk_wiz_0_0_mmcm_drp__GB15                   |           1|        26|
+2default:default
+~
+%s*synth2o
+[|16    |zynq_system_clk_wiz_0_0_mmcm_drp__GB16                   |           1|        41|
+2default:default
+~
+%s*synth2o
+[|17    |zynq_system_clk_wiz_0_0_mmcm_drp__GB17                   |           1|      3425|
+2default:default
+~
+%s*synth2o
+[|18    |zynq_system_clk_wiz_0_0_mmcm_drp__GB18                   |           1|      2732|
+2default:default
+~
+%s*synth2o
+[|19    |datapath__75__GD                                         |           1|      1458|
+2default:default
+~
+%s*synth2o
+[|20    |datapath__147__GD                                        |           1|      1458|
+2default:default
+~
+%s*synth2o
+[|21    |datapath__179__GD                                        |           1|      1458|
+2default:default
+~
+%s*synth2o
+[|22    |datapath__167__GD                                        |           1|       198|
+2default:default
+~
+%s*synth2o
+[|23    |zynq_system_clk_wiz_0_0_mmcm_drp__GB23                   |           1|       297|
+2default:default
+~
+%s*synth2o
+[|24    |zynq_system_clk_wiz_0_0_mmcm_drp__GB24                   |           1|        19|
+2default:default
+~
+%s*synth2o
+[|25    |zynq_system_clk_wiz_0_0_mmcm_drp__GB25                   |           1|       495|
+2default:default
+~
+%s*synth2o
+[|26    |zynq_system_clk_wiz_0_0_mmcm_drp__GB26                   |           1|      3687|
+2default:default
+~
+%s*synth2o
+[|27    |zynq_system_clk_wiz_0_0_mmcm_drp__GB27                   |           1|      3465|
+2default:default
+~
+%s*synth2o
+[|28    |zynq_system_clk_wiz_0_0_mmcm_drp__GB28                   |           1|       938|
+2default:default
+~
+%s*synth2o
+[|29    |zynq_system_clk_wiz_0_0_mmcm_drp__GB30                   |           1|       938|
+2default:default
+~
+%s*synth2o
+[|30    |zynq_system_clk_wiz_0_0_mmcm_drp__GB31                   |           1|       938|
+2default:default
+~
+%s*synth2o
+[|31    |zynq_system_clk_wiz_0_0_mmcm_drp__GB32                   |           1|       938|
+2default:default
+~
+%s*synth2o
+[|32    |zynq_system_clk_wiz_0_0_mmcm_drp__GB33                   |           1|        20|
+2default:default
+~
+%s*synth2o
+[|33    |datapath__91__GD                                         |           1|      1458|
+2default:default
+~
+%s*synth2o
+[|34    |datapath__145__GD                                        |           1|       891|
+2default:default
+~
+%s*synth2o
+[|35    |datapath__146__GD                                        |           1|        47|
+2default:default
+~
+%s*synth2o
+[|36    |zynq_system_clk_wiz_0_0_clk_wiz_drp__parameterized0__GC0 |           1|      2652|
+2default:default
+~
+%s*synth2o
+[|37    |zynq_system_clk_wiz_0_0_axi_clk_config__GC0              |           1|       262|
+2default:default
+~
+%s*synth2o
+[|38    |zynq_system__GC0                                         |           1|     15336|
+2default:default
+~
+%s*synth2o
+[+------+---------------------------------------------------------+------------+----------+
 2default:default
 z
 %s*synth2k
@@ -11325,7 +26622,7 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 2default:default
 ≤
 %s*synth2¢
-çFinished Loading Part and Timing Information : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1185.516 ; gain = 562.258
+çFinished Loading Part and Timing Information : Time (s): cpu = 00:02:47 ; elapsed = 00:02:50 . Memory (MB): peak = 1327.312 ; gain = 698.055
 2default:default
 B
 %s*synth23
@@ -11341,7 +26638,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit       Adders := 2     
+.	   2 Input     33 Bit       Adders := 2     
 2default:default
 Q
 %s*synth2B
@@ -11349,7 +26646,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     16 Bit       Adders := 2     
+.	   2 Input     32 Bit       Adders := 14    
+2default:default
+Q
+%s*synth2B
+.	   2 Input     16 Bit       Adders := 10    
+2default:default
+Q
+%s*synth2B
+.	   2 Input     13 Bit       Adders := 2     
 2default:default
 Q
 %s*synth2B
@@ -11365,23 +26670,47 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      8 Bit       Adders := 4     
+.	   4 Input      8 Bit       Adders := 2     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      6 Bit       Adders := 6     
+.	   2 Input      8 Bit       Adders := 7     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      5 Bit       Adders := 14    
+.	   2 Input      7 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit       Adders := 7     
+.	   3 Input      6 Bit       Adders := 14    
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit       Adders := 2     
+.	   2 Input      6 Bit       Adders := 16    
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit       Adders := 15    
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit       Adders := 19    
+2default:default
+Q
+%s*synth2B
+.	   3 Input      3 Bit       Adders := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      3 Bit       Adders := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit       Adders := 12    
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit       Adders := 2     
 2default:default
 /
 %s*synth2 
@@ -11389,7 +26718,23 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit         XORs := 62    
+.	   2 Input      1 Bit         XORs := 184   
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Wide XORs := 10    
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Wide XORs := 10    
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Wide XORs := 10    
 2default:default
 4
 %s*synth2%
@@ -11401,15 +26746,35 @@ Q
 2default:default
 Q
 %s*synth2B
+.	               65 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	               64 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
 .	               47 Bit    Registers := 2     
 2default:default
 Q
 %s*synth2B
-.	               34 Bit    Registers := 2     
+.	               39 Bit    Registers := 24    
 2default:default
 Q
 %s*synth2B
-.	               32 Bit    Registers := 21    
+.	               37 Bit    Registers := 4     
+2default:default
+Q
+%s*synth2B
+.	               36 Bit    Registers := 3     
+2default:default
+Q
+%s*synth2B
+.	               34 Bit    Registers := 3     
+2default:default
+Q
+%s*synth2B
+.	               32 Bit    Registers := 60    
 2default:default
 Q
 %s*synth2B
@@ -11417,7 +26782,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               16 Bit    Registers := 4     
+.	               16 Bit    Registers := 5     
 2default:default
 Q
 %s*synth2B
@@ -11429,15 +26794,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                9 Bit    Registers := 4     
+.	                9 Bit    Registers := 6     
 2default:default
 Q
 %s*synth2B
-.	                8 Bit    Registers := 5     
+.	                8 Bit    Registers := 8     
 2default:default
 Q
 %s*synth2B
-.	                6 Bit    Registers := 5     
+.	                7 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                6 Bit    Registers := 8     
 2default:default
 Q
 %s*synth2B
@@ -11445,19 +26814,31 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                4 Bit    Registers := 16    
+.	                4 Bit    Registers := 97    
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 10    
+.	                3 Bit    Registers := 18    
 2default:default
 Q
 %s*synth2B
-.	                2 Bit    Registers := 28    
+.	                2 Bit    Registers := 87    
 2default:default
 Q
 %s*synth2B
-.	                1 Bit    Registers := 153   
+.	                1 Bit    Registers := 350   
+2default:default
+6
+%s*synth2'
++---Multipliers : 
+2default:default
+Q
+%s*synth2B
+.	                 6x32  Multipliers := 1     
+2default:default
+Q
+%s*synth2B
+.	                 4x32  Multipliers := 1     
 2default:default
 0
 %s*synth2!
@@ -11465,7 +26846,23 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input     64 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   2 Input     47 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     39 Bit        Muxes := 6     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     37 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     36 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -11473,19 +26870,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit        Muxes := 13    
+.	   3 Input     32 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
-.	   8 Input     32 Bit        Muxes := 1     
+.	   8 Input     32 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   3 Input     32 Bit        Muxes := 2     
+.	   2 Input     32 Bit        Muxes := 54    
 2default:default
 Q
 %s*synth2B
-.	   2 Input     16 Bit        Muxes := 6     
+.	   2 Input     16 Bit        Muxes := 10    
 2default:default
 Q
 %s*synth2B
@@ -11497,11 +26894,23 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input     11 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   2 Input      9 Bit        Muxes := 9     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      8 Bit        Muxes := 2     
+.	   2 Input      8 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      7 Bit        Muxes := 11    
+2default:default
+Q
+%s*synth2B
+.	   2 Input      6 Bit        Muxes := 42    
 2default:default
 Q
 %s*synth2B
@@ -11509,23 +26918,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      6 Bit        Muxes := 9     
+.	   2 Input      5 Bit        Muxes := 19    
 2default:default
 Q
 %s*synth2B
-.	   2 Input      5 Bit        Muxes := 7     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      5 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   5 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      4 Bit        Muxes := 11    
+.	   4 Input      5 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
@@ -11533,7 +26930,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      3 Bit        Muxes := 1     
+.	   2 Input      4 Bit        Muxes := 18    
+2default:default
+Q
+%s*synth2B
+.	   5 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      3 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
@@ -11541,23 +26946,39 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      2 Bit        Muxes := 8     
+.	   8 Input      3 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 42    
+.	   4 Input      2 Bit        Muxes := 17    
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 4     
+.	   3 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   4 Input      1 Bit        Muxes := 6     
+.	   2 Input      2 Bit        Muxes := 97    
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 101   
+.	   5 Input      2 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	  10 Input      1 Bit        Muxes := 9     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 370   
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 36    
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 11    
 2default:default
 F
 %s*synth27
@@ -11566,6 +26987,874 @@ F
 ?
 %s*synth20
 Module zynq_system_wrapper 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+K
+%s*synth2<
+(Module zynq_system_clk_wiz_0_0_clk_wiz 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module zynq_system_clk_wiz_0_0_mmcm_drp 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     33 Bit       Adders := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit       Adders := 11    
+2default:default
+Q
+%s*synth2B
+.	   2 Input     16 Bit       Adders := 8     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     13 Bit       Adders := 2     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      8 Bit       Adders := 2     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      6 Bit       Adders := 14    
+2default:default
+Q
+%s*synth2B
+.	   2 Input      6 Bit       Adders := 10    
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      3 Bit       Adders := 2     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               39 Bit    Registers := 24    
+2default:default
+Q
+%s*synth2B
+.	               16 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                7 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                6 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                5 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 4     
+2default:default
+6
+%s*synth2'
++---Multipliers : 
+2default:default
+Q
+%s*synth2B
+.	                 4x32  Multipliers := 1     
+2default:default
+Q
+%s*synth2B
+.	                 6x32  Multipliers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     39 Bit        Muxes := 6     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 40    
+2default:default
+Q
+%s*synth2B
+.	   2 Input      7 Bit        Muxes := 11    
+2default:default
+Q
+%s*synth2B
+.	   2 Input      6 Bit        Muxes := 31    
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      3 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 53    
+2default:default
+Q
+%s*synth2B
+.	  10 Input      1 Bit        Muxes := 9     
+2default:default
+_
+%s*synth2P
+<Module zynq_system_clk_wiz_0_0_clk_wiz_drp__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               32 Bit    Registers := 32    
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 6     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   3 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 64    
+2default:default
+M
+%s*synth2>
+*Module zynq_system_clk_wiz_0_0_pselect_f 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+]
+%s*synth2N
+:Module zynq_system_clk_wiz_0_0_pselect_f__parameterized8 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+]
+%s*synth2N
+:Module zynq_system_clk_wiz_0_0_pselect_f__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+]
+%s*synth2N
+:Module zynq_system_clk_wiz_0_0_pselect_f__parameterized1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+]
+%s*synth2N
+:Module zynq_system_clk_wiz_0_0_pselect_f__parameterized2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+]
+%s*synth2N
+:Module zynq_system_clk_wiz_0_0_pselect_f__parameterized3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+]
+%s*synth2N
+:Module zynq_system_clk_wiz_0_0_pselect_f__parameterized4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+]
+%s*synth2N
+:Module zynq_system_clk_wiz_0_0_pselect_f__parameterized5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+]
+%s*synth2N
+:Module zynq_system_clk_wiz_0_0_pselect_f__parameterized6 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+]
+%s*synth2N
+:Module zynq_system_clk_wiz_0_0_pselect_f__parameterized7 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+S
+%s*synth2D
+0Module zynq_system_clk_wiz_0_0_address_decoder 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 12    
+2default:default
+T
+%s*synth2E
+1Module zynq_system_clk_wiz_0_0_slave_attachment 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      7 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               32 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                7 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 3     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     11 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 9     
+2default:default
+Q
+%s*synth2B
+.Module zynq_system_clk_wiz_0_0_axi_lite_ipif 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+N
+%s*synth2?
++Module zynq_system_clk_wiz_0_0_soft_reset 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+R
+%s*synth2C
+/Module zynq_system_clk_wiz_0_0_axi_clk_config 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 10    
+2default:default
+C
+%s*synth24
+ Module zynq_system_clk_wiz_0_0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+@
+%s*synth21
+Module reset_blk_ramfifo__8 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 10    
+2default:default
+8
+%s*synth2)
+Module input_blk__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+9
+%s*synth2*
+Module output_blk__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+3
+%s*synth2$
+Module dmem__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+5
+%s*synth2&
+Module memory__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                9 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__30 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__29 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__28 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__27 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__26 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__25 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+:
+%s*synth2+
+Module clk_x_pntrs__5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 6     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Wide XORs := 2     
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Wide XORs := 2     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Wide XORs := 2     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 4     
+2default:default
+:
+%s*synth2+
+Module rd_bin_cntr__5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 2     
+2default:default
+7
+%s*synth2(
+Module compare__20 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
+2default:default
+7
+%s*synth2(
+Module compare__19 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
+2default:default
+A
+%s*synth22
+Module rd_status_flags_as__5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+6
+%s*synth2'
+Module rd_fwft__8 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 5     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   4 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+7
+%s*synth2(
+Module rd_logic__5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+:
+%s*synth2+
+Module wr_bin_cntr__5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 3     
+2default:default
+7
+%s*synth2(
+Module compare__18 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
+2default:default
+7
+%s*synth2(
+Module compare__17 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
+2default:default
+A
+%s*synth22
+Module wr_status_flags_as__5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+7
+%s*synth2(
+Module wr_logic__5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+E
+%s*synth26
+"Module fifo_generator_ramfifo__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+A
+%s*synth22
+Module fifo_generator_top__2 
 2default:default
 B
 %s*synth23
@@ -11593,35 +27882,35 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                1 Bit    Registers := 6     
+.	                1 Bit    Registers := 10    
 2default:default
-5
-%s*synth2&
-Module input_blk 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-6
-%s*synth2'
-Module output_blk 
+E
+%s*synth26
+"Module input_blk__parameterized0 
 2default:default
 B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
-0
-%s*synth2!
-Module dmem 
+F
+%s*synth27
+#Module output_blk__parameterized0 
 2default:default
 B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
-2
-%s*synth2#
-Module memory 
+@
+%s*synth21
+Module dmem__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+B
+%s*synth23
+Module memory__parameterized0 
 2default:default
 B
 %s*synth23
@@ -11633,7 +27922,143 @@ B
 2default:default
 Q
 %s*synth2B
-.	                5 Bit    Registers := 1     
+.	               36 Bit    Registers := 1     
+2default:default
+>
+%s*synth2/
+Module synchronizer_ff__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+>
+%s*synth2/
+Module synchronizer_ff__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+>
+%s*synth2/
+Module synchronizer_ff__4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+>
+%s*synth2/
+Module synchronizer_ff__5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+>
+%s*synth2/
+Module synchronizer_ff__6 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+;
+%s*synth2,
+Module synchronizer_ff 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+7
+%s*synth2(
+Module clk_x_pntrs 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 6     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Wide XORs := 2     
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Wide XORs := 2     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Wide XORs := 2     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 4     
 2default:default
 7
 %s*synth2(
@@ -11649,7 +28074,7 @@ B
 2default:default
 Q
 %s*synth2B
-.	   2 Input      5 Bit       Adders := 1     
+.	   2 Input      4 Bit       Adders := 1     
 2default:default
 4
 %s*synth2%
@@ -11657,7 +28082,23 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                5 Bit    Registers := 2     
+.	                4 Bit    Registers := 2     
+2default:default
+6
+%s*synth2'
+Module compare__4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
 2default:default
 3
 %s*synth2$
@@ -11673,11 +28114,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit         XORs := 5     
+.	   2 Input      1 Bit         XORs := 4     
 2default:default
 >
 %s*synth2/
-Module rd_status_flags_ss 
+Module rd_status_flags_as 
 2default:default
 B
 %s*synth23
@@ -11757,7 +28198,7 @@ B
 2default:default
 Q
 %s*synth2B
-.	   2 Input      5 Bit       Adders := 1     
+.	   2 Input      4 Bit       Adders := 1     
 2default:default
 4
 %s*synth2%
@@ -11765,11 +28206,43 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                5 Bit    Registers := 2     
+.	                4 Bit    Registers := 3     
+2default:default
+6
+%s*synth2'
+Module compare__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
+2default:default
+6
+%s*synth2'
+Module compare__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
 2default:default
 >
 %s*synth2/
-Module wr_status_flags_ss 
+Module wr_status_flags_as 
 2default:default
 B
 %s*synth23
@@ -11791,6 +28264,846 @@ B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
+R
+%s*synth2C
+/Module fifo_generator_ramfifo__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+N
+%s*synth2?
++Module fifo_generator_top__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+@
+%s*synth21
+Module reset_blk_ramfifo__7 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 10    
+2default:default
+E
+%s*synth26
+"Module input_blk__parameterized1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+F
+%s*synth27
+#Module output_blk__parameterized1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+@
+%s*synth21
+Module dmem__parameterized1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+B
+%s*synth23
+Module memory__parameterized1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__24 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__23 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__22 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__21 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__20 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__19 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+:
+%s*synth2+
+Module clk_x_pntrs__4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 6     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Wide XORs := 2     
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Wide XORs := 2     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Wide XORs := 2     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 4     
+2default:default
+:
+%s*synth2+
+Module rd_bin_cntr__4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 2     
+2default:default
+7
+%s*synth2(
+Module compare__16 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
+2default:default
+7
+%s*synth2(
+Module compare__15 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
+2default:default
+A
+%s*synth22
+Module rd_status_flags_as__4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+6
+%s*synth2'
+Module rd_fwft__7 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 5     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   4 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+7
+%s*synth2(
+Module rd_logic__4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+:
+%s*synth2+
+Module wr_bin_cntr__4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 3     
+2default:default
+7
+%s*synth2(
+Module compare__10 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
+2default:default
+6
+%s*synth2'
+Module compare__9 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
+2default:default
+A
+%s*synth22
+Module wr_status_flags_as__4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+7
+%s*synth2(
+Module wr_logic__4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+R
+%s*synth2C
+/Module fifo_generator_ramfifo__parameterized1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+N
+%s*synth2?
++Module fifo_generator_top__parameterized1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+@
+%s*synth21
+Module reset_blk_ramfifo__6 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 10    
+2default:default
+5
+%s*synth2&
+Module input_blk 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+6
+%s*synth2'
+Module output_blk 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
+Module dmem 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+2
+%s*synth2#
+Module memory 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                9 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__18 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__17 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__16 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__15 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__14 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__13 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+:
+%s*synth2+
+Module clk_x_pntrs__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 6     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Wide XORs := 2     
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Wide XORs := 2     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Wide XORs := 2     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 4     
+2default:default
+:
+%s*synth2+
+Module rd_bin_cntr__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 2     
+2default:default
+7
+%s*synth2(
+Module compare__14 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
+2default:default
+7
+%s*synth2(
+Module compare__13 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
+2default:default
+A
+%s*synth22
+Module rd_status_flags_as__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+6
+%s*synth2'
+Module rd_fwft__6 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 5     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   4 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+7
+%s*synth2(
+Module rd_logic__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+:
+%s*synth2+
+Module wr_bin_cntr__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 3     
+2default:default
+6
+%s*synth2'
+Module compare__8 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
+2default:default
+6
+%s*synth2'
+Module compare__7 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
+2default:default
+A
+%s*synth22
+Module wr_status_flags_as__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+7
+%s*synth2(
+Module wr_logic__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
 B
 %s*synth23
 Module fifo_generator_ramfifo 
@@ -11802,6 +29115,426 @@ B
 >
 %s*synth2/
 Module fifo_generator_top 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+@
+%s*synth21
+Module reset_blk_ramfifo__5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 10    
+2default:default
+E
+%s*synth26
+"Module input_blk__parameterized2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+F
+%s*synth27
+#Module output_blk__parameterized2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+@
+%s*synth21
+Module dmem__parameterized2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+B
+%s*synth23
+Module memory__parameterized2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               34 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__12 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__11 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+?
+%s*synth20
+Module synchronizer_ff__10 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+>
+%s*synth2/
+Module synchronizer_ff__9 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+>
+%s*synth2/
+Module synchronizer_ff__8 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+>
+%s*synth2/
+Module synchronizer_ff__7 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+:
+%s*synth2+
+Module clk_x_pntrs__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 6     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Wide XORs := 2     
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Wide XORs := 2     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Wide XORs := 2     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 4     
+2default:default
+:
+%s*synth2+
+Module rd_bin_cntr__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 2     
+2default:default
+7
+%s*synth2(
+Module compare__12 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
+2default:default
+7
+%s*synth2(
+Module compare__11 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
+2default:default
+A
+%s*synth22
+Module rd_status_flags_as__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+6
+%s*synth2'
+Module rd_fwft__5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 5     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   4 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+7
+%s*synth2(
+Module rd_logic__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+:
+%s*synth2+
+Module wr_bin_cntr__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 3     
+2default:default
+6
+%s*synth2'
+Module compare__6 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
+2default:default
+6
+%s*synth2'
+Module compare__5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 4     
+2default:default
+A
+%s*synth22
+Module wr_status_flags_as__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+7
+%s*synth2(
+Module wr_logic__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+R
+%s*synth2C
+/Module fifo_generator_ramfifo__parameterized2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+N
+%s*synth2?
++Module fifo_generator_top__parameterized2 
 2default:default
 B
 %s*synth23
@@ -11823,6 +29556,322 @@ B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
+X
+%s*synth2I
+5Module axi_clock_converter_v2_1_axi_clock_converter 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+P
+%s*synth2A
+-Module zynq_system_axi_clock_converter_0_26 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+M
+%s*synth2>
+*Module reset_blk_ramfifo__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 6     
+2default:default
+E
+%s*synth26
+"Module input_blk__parameterized3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+F
+%s*synth27
+#Module output_blk__parameterized3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+@
+%s*synth21
+Module dmem__parameterized3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+B
+%s*synth23
+Module memory__parameterized3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                6 Bit    Registers := 1     
+2default:default
+G
+%s*synth28
+$Module rd_bin_cntr__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                5 Bit    Registers := 2     
+2default:default
+F
+%s*synth27
+#Module compare__parameterized0__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 5     
+2default:default
+C
+%s*synth24
+ Module compare__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 5     
+2default:default
+>
+%s*synth2/
+Module rd_status_flags_ss 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+6
+%s*synth2'
+Module rd_fwft__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 5     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   4 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+D
+%s*synth25
+!Module rd_logic__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+G
+%s*synth28
+$Module wr_bin_cntr__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                5 Bit    Registers := 2     
+2default:default
+F
+%s*synth27
+#Module compare__parameterized0__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 5     
+2default:default
+F
+%s*synth27
+#Module compare__parameterized0__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 5     
+2default:default
+>
+%s*synth2/
+Module wr_status_flags_ss 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+D
+%s*synth25
+!Module wr_logic__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+R
+%s*synth2C
+/Module fifo_generator_ramfifo__parameterized3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+N
+%s*synth2?
++Module fifo_generator_top__parameterized3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+V
+%s*synth2G
+3Module fifo_generator_v11_0_synth__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+P
+%s*synth2A
+-Module fifo_generator_v11_0__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
 G
 %s*synth28
 $Module axi_data_fifo_v2_1_fifo_gen 
@@ -11834,6 +29883,322 @@ B
 H
 %s*synth29
 %Module axi_data_fifo_v2_1_axic_fifo 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+P
+%s*synth2A
+-Module reset_blk_ramfifo__parameterized0__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 6     
+2default:default
+E
+%s*synth26
+"Module input_blk__parameterized4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+F
+%s*synth27
+#Module output_blk__parameterized4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+@
+%s*synth21
+Module dmem__parameterized4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+B
+%s*synth23
+Module memory__parameterized4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                5 Bit    Registers := 1     
+2default:default
+J
+%s*synth2;
+'Module rd_bin_cntr__parameterized0__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                5 Bit    Registers := 2     
+2default:default
+G
+%s*synth28
+$Module compare__parameterized0__11 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 5     
+2default:default
+G
+%s*synth28
+$Module compare__parameterized0__10 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 5     
+2default:default
+A
+%s*synth22
+Module rd_status_flags_ss__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+6
+%s*synth2'
+Module rd_fwft__4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 5     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   4 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+G
+%s*synth28
+$Module rd_logic__parameterized0__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+J
+%s*synth2;
+'Module wr_bin_cntr__parameterized0__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                5 Bit    Registers := 2     
+2default:default
+F
+%s*synth27
+#Module compare__parameterized0__7 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 5     
+2default:default
+F
+%s*synth27
+#Module compare__parameterized0__6 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 5     
+2default:default
+A
+%s*synth22
+Module wr_status_flags_ss__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+G
+%s*synth28
+$Module wr_logic__parameterized0__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+R
+%s*synth2C
+/Module fifo_generator_ramfifo__parameterized4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+N
+%s*synth2?
++Module fifo_generator_top__parameterized4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+V
+%s*synth2G
+3Module fifo_generator_v11_0_synth__parameterized1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+P
+%s*synth2A
+-Module fifo_generator_v11_0__parameterized1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+W
+%s*synth2H
+4Module axi_data_fifo_v2_1_fifo_gen__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+X
+%s*synth2I
+5Module axi_data_fifo_v2_1_axic_fifo__parameterized0 
 2default:default
 B
 %s*synth23
@@ -11897,11 +30262,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                2 Bit    Registers := 3     
+.	                2 Bit    Registers := 5     
 2default:default
 Q
 %s*synth2B
-.	                1 Bit    Registers := 13    
+.	                1 Bit    Registers := 11    
 2default:default
 0
 %s*synth2!
@@ -12007,9 +30372,33 @@ Q
 %s*synth2B
 .	   2 Input      2 Bit        Muxes := 2     
 2default:default
+P
+%s*synth2A
+-Module reset_blk_ramfifo__parameterized0__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 6     
+2default:default
 E
 %s*synth26
-"Module input_blk__parameterized0 
+"Module input_blk__parameterized5 
 2default:default
 B
 %s*synth23
@@ -12017,7 +30406,7 @@ B
 2default:default
 F
 %s*synth27
-#Module output_blk__parameterized0 
+#Module output_blk__parameterized5 
 2default:default
 B
 %s*synth23
@@ -12025,7 +30414,7 @@ B
 2default:default
 @
 %s*synth21
-Module dmem__parameterized0 
+Module dmem__parameterized5 
 2default:default
 B
 %s*synth23
@@ -12033,7 +30422,7 @@ B
 2default:default
 B
 %s*synth23
-Module memory__parameterized0 
+Module memory__parameterized5 
 2default:default
 B
 %s*synth23
@@ -12047,9 +30436,213 @@ Q
 %s*synth2B
 .	                1 Bit    Registers := 1     
 2default:default
+J
+%s*synth2;
+'Module rd_bin_cntr__parameterized0__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                5 Bit    Registers := 2     
+2default:default
+F
+%s*synth27
+#Module compare__parameterized0__9 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 5     
+2default:default
+F
+%s*synth27
+#Module compare__parameterized0__8 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 5     
+2default:default
+A
+%s*synth22
+Module rd_status_flags_ss__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+6
+%s*synth2'
+Module rd_fwft__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 5     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   4 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+G
+%s*synth28
+$Module rd_logic__parameterized0__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+J
+%s*synth2;
+'Module wr_bin_cntr__parameterized0__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                5 Bit    Registers := 2     
+2default:default
+F
+%s*synth27
+#Module compare__parameterized0__5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 5     
+2default:default
+F
+%s*synth27
+#Module compare__parameterized0__4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 5     
+2default:default
+A
+%s*synth22
+Module wr_status_flags_ss__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+G
+%s*synth28
+$Module wr_logic__parameterized0__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
 R
 %s*synth2C
-/Module fifo_generator_ramfifo__parameterized0 
+/Module fifo_generator_ramfifo__parameterized5 
 2default:default
 B
 %s*synth23
@@ -12057,7 +30650,7 @@ B
 2default:default
 N
 %s*synth2?
-+Module fifo_generator_top__parameterized0 
++Module fifo_generator_top__parameterized5 
 2default:default
 B
 %s*synth23
@@ -12065,7 +30658,7 @@ B
 2default:default
 V
 %s*synth2G
-3Module fifo_generator_v11_0_synth__parameterized0 
+3Module fifo_generator_v11_0_synth__parameterized2 
 2default:default
 B
 %s*synth23
@@ -12073,7 +30666,7 @@ B
 2default:default
 P
 %s*synth2A
--Module fifo_generator_v11_0__parameterized0 
+-Module fifo_generator_v11_0__parameterized2 
 2default:default
 B
 %s*synth23
@@ -12081,7 +30674,7 @@ B
 2default:default
 W
 %s*synth2H
-4Module axi_data_fifo_v2_1_fifo_gen__parameterized0 
+4Module axi_data_fifo_v2_1_fifo_gen__parameterized1 
 2default:default
 B
 %s*synth23
@@ -12089,7 +30682,7 @@ B
 2default:default
 X
 %s*synth2I
-5Module axi_data_fifo_v2_1_axic_fifo__parameterized0 
+5Module axi_data_fifo_v2_1_axic_fifo__parameterized1 
 2default:default
 B
 %s*synth23
@@ -12153,11 +30746,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                2 Bit    Registers := 3     
+.	                2 Bit    Registers := 5     
 2default:default
 Q
 %s*synth2B
-.	                1 Bit    Registers := 12    
+.	                1 Bit    Registers := 10    
 2default:default
 0
 %s*synth2!
@@ -12209,7 +30802,15 @@ B
 2default:default
 B
 %s*synth23
-Module zynq_system_auto_pc_15 
+Module zynq_system_auto_pc_57 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+D
+%s*synth25
+!Module m00_couplers_imp_1ULZJWI 
 2default:default
 B
 %s*synth23
@@ -12218,6 +30819,2430 @@ B
 C
 %s*synth24
  Module s00_couplers_imp_5VZGPS 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+D
+%s*synth25
+!Module s01_couplers_imp_1XMYHY6 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+^
+%s*synth2O
+;Module generic_baseblocks_v2_1_mux_enc__parameterized2__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+^
+%s*synth2O
+;Module generic_baseblocks_v2_1_mux_enc__parameterized3__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+M
+%s*synth2>
+*Module axi_crossbar_v2_1_addr_arbiter__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               65 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 5     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 5     
+2default:default
+[
+%s*synth2L
+8Module generic_baseblocks_v2_1_mux_enc__parameterized2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+[
+%s*synth2L
+8Module generic_baseblocks_v2_1_mux_enc__parameterized3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+J
+%s*synth2;
+'Module axi_crossbar_v2_1_addr_arbiter 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               65 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 5     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 5     
+2default:default
+I
+%s*synth2:
+&Module axi_crossbar_v2_1_splitter__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+J
+%s*synth2;
+'Module axi_crossbar_v2_1_decerr_slave 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      8 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                8 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 3     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 7     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      8 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 14    
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 8     
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__26 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__27 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__28 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__29 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+M
+%s*synth2>
+*Module generic_baseblocks_v2_1_carry_and 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+U
+%s*synth2F
+2Module generic_baseblocks_v2_1_comparator_static 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__21 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__22 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__23 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__24 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__25 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+e
+%s*synth2V
+BModule generic_baseblocks_v2_1_comparator_static__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__16 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__17 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__18 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__19 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__20 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+e
+%s*synth2V
+BModule generic_baseblocks_v2_1_comparator_static__parameterized1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+J
+%s*synth2;
+'Module axi_crossbar_v2_1_addr_decoder 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+K
+%s*synth2<
+(Module generic_baseblocks_v2_1_mux_enc 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__20 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__21 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__22 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__23 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__24 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__25 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__26 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+H
+%s*synth29
+%Module axi_data_fifo_v2_1_ndeep_srl 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_axic_srl_fifo 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit       Adders := 1     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+K
+%s*synth2<
+(Module axi_crossbar_v2_1_si_transactor 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__74 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__73 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__72 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__71 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__70 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+X
+%s*synth2I
+5Module generic_baseblocks_v2_1_comparator_static__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__69 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__68 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__67 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__66 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__65 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+h
+%s*synth2Y
+EModule generic_baseblocks_v2_1_comparator_static__parameterized0__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__64 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__63 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__62 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__61 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__60 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+h
+%s*synth2Y
+EModule generic_baseblocks_v2_1_comparator_static__parameterized1__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+M
+%s*synth2>
+*Module axi_crossbar_v2_1_addr_decoder__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+[
+%s*synth2L
+8Module generic_baseblocks_v2_1_mux_enc__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__42 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__41 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__40 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__39 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__38 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__37 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__36 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__35 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+O
+%s*synth2@
+,Module axi_data_fifo_v2_1_axic_srl_fifo__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit       Adders := 1     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+[
+%s*synth2L
+8Module axi_crossbar_v2_1_si_transactor__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+I
+%s*synth2:
+&Module axi_crossbar_v2_1_splitter__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__19 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+P
+%s*synth2A
+-Module axi_data_fifo_v2_1_axic_reg_srl_fifo 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit       Adders := 1     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 4     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      5 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   5 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 7     
+2default:default
+J
+%s*synth2;
+'Module axi_crossbar_v2_1_wdata_router 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__59 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__58 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__57 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__56 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__55 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+X
+%s*synth2I
+5Module generic_baseblocks_v2_1_comparator_static__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__54 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__53 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__52 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__51 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__50 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+h
+%s*synth2Y
+EModule generic_baseblocks_v2_1_comparator_static__parameterized0__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__49 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__48 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__47 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__46 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__45 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+h
+%s*synth2Y
+EModule generic_baseblocks_v2_1_comparator_static__parameterized1__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+M
+%s*synth2>
+*Module axi_crossbar_v2_1_addr_decoder__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+N
+%s*synth2?
++Module generic_baseblocks_v2_1_mux_enc__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__11 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__12 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__13 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__14 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__15 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__16 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__17 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__18 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+\
+%s*synth2M
+9Module axi_data_fifo_v2_1_axic_srl_fifo__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit       Adders := 1     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+[
+%s*synth2L
+8Module axi_crossbar_v2_1_si_transactor__parameterized1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__44 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__43 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__42 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__41 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__40 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+X
+%s*synth2I
+5Module generic_baseblocks_v2_1_comparator_static__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__39 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__38 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__37 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__36 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__35 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+h
+%s*synth2Y
+EModule generic_baseblocks_v2_1_comparator_static__parameterized0__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__34 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__33 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__32 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__31 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__30 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+h
+%s*synth2Y
+EModule generic_baseblocks_v2_1_comparator_static__parameterized1__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+M
+%s*synth2>
+*Module axi_crossbar_v2_1_addr_decoder__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+^
+%s*synth2O
+;Module generic_baseblocks_v2_1_mux_enc__parameterized0__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__34 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__33 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__32 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__31 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__30 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__29 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__28 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__27 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+_
+%s*synth2P
+<Module axi_data_fifo_v2_1_axic_srl_fifo__parameterized0__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit       Adders := 1     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+[
+%s*synth2L
+8Module axi_crossbar_v2_1_si_transactor__parameterized2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+F
+%s*synth27
+#Module axi_crossbar_v2_1_splitter 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+L
+%s*synth2=
+)Module axi_data_fifo_v2_1_ndeep_srl__10 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+`
+%s*synth2Q
+=Module axi_data_fifo_v2_1_axic_reg_srl_fifo__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit       Adders := 1     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 4     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      5 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   5 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 7     
+2default:default
+Z
+%s*synth2K
+7Module axi_crossbar_v2_1_wdata_router__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+]
+%s*synth2N
+:Module axi_crossbar_v2_1_addr_decoder__parameterized0__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+]
+%s*synth2N
+:Module axi_crossbar_v2_1_addr_decoder__parameterized0__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+X
+%s*synth2I
+5Module axi_data_fifo_v2_1_ndeep_srl__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+`
+%s*synth2Q
+=Module axi_data_fifo_v2_1_axic_reg_srl_fifo__parameterized1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      3 Bit       Adders := 1     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      5 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   5 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+[
+%s*synth2L
+8Module generic_baseblocks_v2_1_mux_enc__parameterized1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+G
+%s*synth28
+$Module axi_crossbar_v2_1_wdata_mux 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+[
+%s*synth2L
+8Module axi_data_fifo_v2_1_ndeep_srl__parameterized0__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+[
+%s*synth2L
+8Module axi_data_fifo_v2_1_ndeep_srl__parameterized0__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+[
+%s*synth2L
+8Module axi_data_fifo_v2_1_ndeep_srl__parameterized0__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+[
+%s*synth2L
+8Module axi_data_fifo_v2_1_ndeep_srl__parameterized0__4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+[
+%s*synth2L
+8Module axi_data_fifo_v2_1_ndeep_srl__parameterized0__5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+[
+%s*synth2L
+8Module axi_data_fifo_v2_1_ndeep_srl__parameterized0__6 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+[
+%s*synth2L
+8Module axi_data_fifo_v2_1_ndeep_srl__parameterized0__7 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+[
+%s*synth2L
+8Module axi_data_fifo_v2_1_ndeep_srl__parameterized0__8 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+\
+%s*synth2M
+9Module axi_data_fifo_v2_1_axic_srl_fifo__parameterized1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      3 Bit       Adders := 1     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.Module axi_infrastructure_v1_1_axi2vector__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Z
+%s*synth2K
+7Module axi_register_slice_v2_1_axic_register_slice__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+j
+%s*synth2[
+GModule axi_register_slice_v2_1_axic_register_slice__parameterized0__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+j
+%s*synth2[
+GModule axi_register_slice_v2_1_axic_register_slice__parameterized1__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+Z
+%s*synth2K
+7Module axi_register_slice_v2_1_axic_register_slice__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+j
+%s*synth2[
+GModule axi_register_slice_v2_1_axic_register_slice__parameterized2__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               37 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     37 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.Module axi_infrastructure_v1_1_vector2axi__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Y
+%s*synth2J
+6Module axi_register_slice_v2_1_axi_register_slice__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+]
+%s*synth2N
+:Module axi_crossbar_v2_1_addr_decoder__parameterized0__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+Z
+%s*synth2K
+7Module axi_crossbar_v2_1_addr_decoder__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+K
+%s*synth2<
+(Module axi_data_fifo_v2_1_ndeep_srl__9 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+`
+%s*synth2Q
+=Module axi_data_fifo_v2_1_axic_reg_srl_fifo__parameterized2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit       Adders := 1     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      5 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   5 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+^
+%s*synth2O
+;Module generic_baseblocks_v2_1_mux_enc__parameterized1__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+W
+%s*synth2H
+4Module axi_crossbar_v2_1_wdata_mux__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+K
+%s*synth2<
+(Module axi_data_fifo_v2_1_ndeep_srl__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+K
+%s*synth2<
+(Module axi_data_fifo_v2_1_ndeep_srl__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+K
+%s*synth2<
+(Module axi_data_fifo_v2_1_ndeep_srl__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+K
+%s*synth2<
+(Module axi_data_fifo_v2_1_ndeep_srl__4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+K
+%s*synth2<
+(Module axi_data_fifo_v2_1_ndeep_srl__5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+K
+%s*synth2<
+(Module axi_data_fifo_v2_1_ndeep_srl__6 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+K
+%s*synth2<
+(Module axi_data_fifo_v2_1_ndeep_srl__7 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+K
+%s*synth2<
+(Module axi_data_fifo_v2_1_ndeep_srl__8 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+\
+%s*synth2M
+9Module axi_data_fifo_v2_1_axic_srl_fifo__parameterized2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit       Adders := 1     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+N
+%s*synth2?
++Module axi_infrastructure_v1_1_axi2vector 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Z
+%s*synth2K
+7Module axi_register_slice_v2_1_axic_register_slice__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+g
+%s*synth2X
+DModule axi_register_slice_v2_1_axic_register_slice__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+g
+%s*synth2X
+DModule axi_register_slice_v2_1_axic_register_slice__parameterized1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+W
+%s*synth2H
+4Module axi_register_slice_v2_1_axic_register_slice 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+g
+%s*synth2X
+DModule axi_register_slice_v2_1_axic_register_slice__parameterized2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               37 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     37 Bit        Muxes := 1     
+2default:default
+N
+%s*synth2?
++Module axi_infrastructure_v1_1_vector2axi 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+V
+%s*synth2G
+3Module axi_register_slice_v2_1_axi_register_slice 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+F
+%s*synth27
+#Module axi_crossbar_v2_1_crossbar 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      8 Bit       Adders := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit       Adders := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit       Adders := 2     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                8 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     16 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+J
+%s*synth2;
+'Module axi_crossbar_v2_1_axi_crossbar 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+>
+%s*synth2/
+Module zynq_system_xbar_1 
 2default:default
 B
 %s*synth23
@@ -12431,9 +33456,9 @@ Q
 %s*synth2B
 .	   2 Input      1 Bit        Muxes := 7     
 2default:default
-A
-%s*synth22
-Module hhb_query_a_reg_slice 
+D
+%s*synth25
+!Module hhb_query_a_reg_slice__1 
 2default:default
 B
 %s*synth23
@@ -12510,6 +33535,50 @@ Q
 Q
 %s*synth2B
 .	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 4     
+2default:default
+A
+%s*synth22
+Module hhb_query_a_reg_slice 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               32 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -12723,6 +33792,150 @@ B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
+D
+%s*synth25
+!Module hwfreqscale_simple_adder 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               32 Bit    Registers := 3     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      6 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+M
+%s*synth2>
+*Module hwfreqscale_simple_adder_BUS_A_if 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 2     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               32 Bit    Registers := 3     
+2default:default
+Q
+%s*synth2B
+.	                6 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 3     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 6     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   8 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 4     
+2default:default
+N
+%s*synth2?
++Module hwfreqscale_simple_adder_ap_rst_if 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+H
+%s*synth29
+%Module hwfreqscale_simple_adder_top 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+T
+%s*synth2E
+1Module zynq_system_hwfreqscale_simple_adder_0_1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
 V
 %s*synth2G
 3Module processing_system7_v5_3_processing_system7 
@@ -12739,17 +33952,41 @@ B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
-N
-%s*synth2?
-+Module axi_infrastructure_v1_1_axi2vector 
+C
+%s*synth24
+ Module m00_couplers_imp_VG7ZLK 
 2default:default
 B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
-W
-%s*synth2H
-4Module axi_register_slice_v2_1_axic_register_slice 
+D
+%s*synth25
+!Module m01_couplers_imp_180AW1Y 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+C
+%s*synth24
+ Module m02_couplers_imp_WNEIF9 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+^
+%s*synth2O
+;Module axi_infrastructure_v1_1_axi2vector__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+j
+%s*synth2[
+GModule axi_register_slice_v2_1_axic_register_slice__parameterized3__1 
 2default:default
 B
 %s*synth23
@@ -12773,7 +34010,7 @@ Q
 2default:default
 g
 %s*synth2X
-DModule axi_register_slice_v2_1_axic_register_slice__parameterized0 
+DModule axi_register_slice_v2_1_axic_register_slice__parameterized4 
 2default:default
 B
 %s*synth23
@@ -12781,7 +34018,7 @@ B
 2default:default
 g
 %s*synth2X
-DModule axi_register_slice_v2_1_axic_register_slice__parameterized1 
+DModule axi_register_slice_v2_1_axic_register_slice__parameterized5 
 2default:default
 B
 %s*synth23
@@ -12813,7 +34050,31 @@ Q
 2default:default
 g
 %s*synth2X
-DModule axi_register_slice_v2_1_axic_register_slice__parameterized2 
+DModule axi_register_slice_v2_1_axic_register_slice__parameterized3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               66 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+g
+%s*synth2X
+DModule axi_register_slice_v2_1_axic_register_slice__parameterized6 
 2default:default
 B
 %s*synth23
@@ -12843,17 +34104,17 @@ Q
 %s*synth2B
 .	   2 Input     47 Bit        Muxes := 1     
 2default:default
-N
-%s*synth2?
-+Module axi_infrastructure_v1_1_vector2axi 
+^
+%s*synth2O
+;Module axi_infrastructure_v1_1_vector2axi__parameterized0 
 2default:default
 B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
-V
-%s*synth2G
-3Module axi_register_slice_v2_1_axi_register_slice 
+f
+%s*synth2W
+CModule axi_register_slice_v2_1_axi_register_slice__parameterized0 
 2default:default
 B
 %s*synth23
@@ -13159,6 +34420,162 @@ Q
 %s*synth2B
 .	                1 Bit    Registers := 3     
 2default:default
+W
+%s*synth2H
+4Module axi_protocol_converter_v2_1_b2s_incr_cmd__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     12 Bit       Adders := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     10 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      9 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                9 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      9 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 4     
+2default:default
+W
+%s*synth2H
+4Module axi_protocol_converter_v2_1_b2s_wrap_cmd__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     12 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      6 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit       Adders := 2     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               12 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                5 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 3     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     12 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 4     
+2default:default
+]
+%s*synth2N
+:Module axi_protocol_converter_v2_1_b2s_cmd_translator__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   3 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 4     
+2default:default
 V
 %s*synth2G
 3Module axi_protocol_converter_v2_1_b2s_rd_cmd_fsm 
@@ -13289,7 +34706,15 @@ Q
 2default:default
 ^
 %s*synth2O
-;Module axi_infrastructure_v1_1_axi2vector__parameterized0 
+;Module axi_infrastructure_v1_1_axi2vector__parameterized1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+j
+%s*synth2[
+GModule axi_register_slice_v2_1_axic_register_slice__parameterized7__1 
 2default:default
 B
 %s*synth23
@@ -13297,7 +34722,7 @@ B
 2default:default
 g
 %s*synth2X
-DModule axi_register_slice_v2_1_axic_register_slice__parameterized3 
+DModule axi_register_slice_v2_1_axic_register_slice__parameterized8 
 2default:default
 B
 %s*synth23
@@ -13305,7 +34730,7 @@ B
 2default:default
 g
 %s*synth2X
-DModule axi_register_slice_v2_1_axic_register_slice__parameterized4 
+DModule axi_register_slice_v2_1_axic_register_slice__parameterized9 
 2default:default
 B
 %s*synth23
@@ -13313,15 +34738,15 @@ B
 2default:default
 g
 %s*synth2X
-DModule axi_register_slice_v2_1_axic_register_slice__parameterized5 
+DModule axi_register_slice_v2_1_axic_register_slice__parameterized7 
 2default:default
 B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
-g
-%s*synth2X
-DModule axi_register_slice_v2_1_axic_register_slice__parameterized6 
+h
+%s*synth2Y
+EModule axi_register_slice_v2_1_axic_register_slice__parameterized10 
 2default:default
 B
 %s*synth23
@@ -13329,7 +34754,7 @@ B
 2default:default
 ^
 %s*synth2O
-;Module axi_infrastructure_v1_1_vector2axi__parameterized0 
+;Module axi_infrastructure_v1_1_vector2axi__parameterized1 
 2default:default
 B
 %s*synth23
@@ -13337,7 +34762,7 @@ B
 2default:default
 f
 %s*synth2W
-CModule axi_register_slice_v2_1_axi_register_slice__parameterized0 
+CModule axi_register_slice_v2_1_axi_register_slice__parameterized1 
 2default:default
 B
 %s*synth23
@@ -13369,7 +34794,7 @@ B
 2default:default
 B
 %s*synth23
-Module zynq_system_auto_pc_14 
+Module zynq_system_auto_pc_56 
 2default:default
 B
 %s*synth23
@@ -13378,6 +34803,462 @@ B
 D
 %s*synth25
 !Module s00_couplers_imp_156Q4UY 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+O
+%s*synth2@
+,Module axi_crossbar_v2_1_addr_arbiter_sasd 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               64 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 7     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     64 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__11 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__12 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__13 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__14 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__15 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+e
+%s*synth2V
+BModule generic_baseblocks_v2_1_comparator_static__parameterized2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+P
+%s*synth2A
+-Module generic_baseblocks_v2_1_carry_and__6 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+P
+%s*synth2A
+-Module generic_baseblocks_v2_1_carry_and__7 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+P
+%s*synth2A
+-Module generic_baseblocks_v2_1_carry_and__8 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+P
+%s*synth2A
+-Module generic_baseblocks_v2_1_carry_and__9 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Q
+%s*synth2B
+.Module generic_baseblocks_v2_1_carry_and__10 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+e
+%s*synth2V
+BModule generic_baseblocks_v2_1_comparator_static__parameterized3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+P
+%s*synth2A
+-Module generic_baseblocks_v2_1_carry_and__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+P
+%s*synth2A
+-Module generic_baseblocks_v2_1_carry_and__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+P
+%s*synth2A
+-Module generic_baseblocks_v2_1_carry_and__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+P
+%s*synth2A
+-Module generic_baseblocks_v2_1_carry_and__4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+P
+%s*synth2A
+-Module generic_baseblocks_v2_1_carry_and__5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+e
+%s*synth2V
+BModule generic_baseblocks_v2_1_comparator_static__parameterized4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+Z
+%s*synth2K
+7Module axi_crossbar_v2_1_addr_decoder__parameterized1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      3 Bit        Muxes := 1     
+2default:default
+V
+%s*synth2G
+3Module axi_crossbar_v2_1_splitter__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Registers := 1     
+2default:default
+I
+%s*synth2:
+&Module axi_crossbar_v2_1_splitter__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+^
+%s*synth2O
+;Module generic_baseblocks_v2_1_mux_enc__parameterized4__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 4     
+2default:default
+^
+%s*synth2O
+;Module generic_baseblocks_v2_1_mux_enc__parameterized4__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 4     
+2default:default
+^
+%s*synth2O
+;Module generic_baseblocks_v2_1_mux_enc__parameterized4__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 4     
+2default:default
+^
+%s*synth2O
+;Module generic_baseblocks_v2_1_mux_enc__parameterized5__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+[
+%s*synth2L
+8Module generic_baseblocks_v2_1_mux_enc__parameterized5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+^
+%s*synth2O
+;Module generic_baseblocks_v2_1_mux_enc__parameterized4__4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 4     
+2default:default
+[
+%s*synth2L
+8Module generic_baseblocks_v2_1_mux_enc__parameterized6 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 4     
+2default:default
+h
+%s*synth2Y
+EModule axi_register_slice_v2_1_axic_register_slice__parameterized11 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               36 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     36 Bit        Muxes := 1     
+2default:default
+[
+%s*synth2L
+8Module generic_baseblocks_v2_1_mux_enc__parameterized4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 4     
+2default:default
+[
+%s*synth2L
+8Module generic_baseblocks_v2_1_mux_enc__parameterized7 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 4     
+2default:default
+Z
+%s*synth2K
+7Module axi_crossbar_v2_1_decerr_slave__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 4     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+K
+%s*synth2<
+(Module axi_crossbar_v2_1_crossbar_sasd 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit        Muxes := 1     
+2default:default
+Z
+%s*synth2K
+7Module axi_crossbar_v2_1_axi_crossbar__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+>
+%s*synth2/
+Module zynq_system_xbar_2 
 2default:default
 B
 %s*synth23
@@ -13495,142 +35376,876 @@ B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
+˛
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2n
+Z\gen_master_slots[0].gen_mi_write.gen_debug_w.debug_w_seq_fifo/gen_rep[0].fifoaddr_reg[2] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+˛
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2n
+Z\gen_master_slots[0].gen_mi_write.gen_debug_w.debug_w_seq_fifo/gen_rep[0].fifoaddr_reg[1] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+˛
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2n
+Z\gen_master_slots[0].gen_mi_write.gen_debug_w.debug_w_seq_fifo/gen_rep[0].fifoaddr_reg[0] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+Ò
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2a
+M\gen_master_slots[0].gen_mi_write.gen_debug_w.debug_w_seq_fifo/M_VALID_i_reg 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+˛
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2n
+Z\gen_master_slots[1].gen_mi_write.gen_debug_w.debug_w_seq_fifo/gen_rep[0].fifoaddr_reg[1] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+˛
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2n
+Z\gen_master_slots[1].gen_mi_write.gen_debug_w.debug_w_seq_fifo/gen_rep[0].fifoaddr_reg[0] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+Ò
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2a
+M\gen_master_slots[1].gen_mi_write.gen_debug_w.debug_w_seq_fifo/M_VALID_i_reg 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2?
++\gen_master_slots[1].w_issuing_cnt_reg[15] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2?
++\gen_master_slots[1].w_issuing_cnt_reg[14] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2?
++\gen_master_slots[1].w_issuing_cnt_reg[13] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2?
++\gen_master_slots[1].w_issuing_cnt_reg[12] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2?
++\gen_master_slots[1].w_issuing_cnt_reg[11] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2?
++\gen_master_slots[1].w_issuing_cnt_reg[10] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+Œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2>
+*\gen_master_slots[1].w_issuing_cnt_reg[9] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+Œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2>
+*\gen_master_slots[0].w_issuing_cnt_reg[7] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+Œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2>
+*\gen_master_slots[0].w_issuing_cnt_reg[6] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+Œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2>
+*\gen_master_slots[0].w_issuing_cnt_reg[5] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+Œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2>
+*\gen_master_slots[0].w_issuing_cnt_reg[4] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2?
++\gen_master_slots[1].r_issuing_cnt_reg[15] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2?
++\gen_master_slots[1].r_issuing_cnt_reg[14] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2?
++\gen_master_slots[1].r_issuing_cnt_reg[13] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2?
++\gen_master_slots[1].r_issuing_cnt_reg[12] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2?
++\gen_master_slots[1].r_issuing_cnt_reg[11] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2?
++\gen_master_slots[1].r_issuing_cnt_reg[10] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+Œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2>
+*\gen_master_slots[1].r_issuing_cnt_reg[9] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+Œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2>
+*\gen_master_slots[0].r_issuing_cnt_reg[7] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+Œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2>
+*\gen_master_slots[0].r_issuing_cnt_reg[6] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+Œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2>
+*\gen_master_slots[0].r_issuing_cnt_reg[5] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+Œ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2>
+*\gen_master_slots[0].r_issuing_cnt_reg[4] 2default:default2.
+axi_crossbar_v2_1_crossbar2default:defaultZ8-3332
+_
+%s*synth2P
+<DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+j
+%s*synth2[
+GDSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+_
+%s*synth2P
+<DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+j
+%s*synth2[
+GDSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+_
+%s*synth2P
+<DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+j
+%s*synth2[
+GDSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+_
+%s*synth2P
+<DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+j
+%s*synth2[
+GDSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+_
+%s*synth2P
+<DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+j
+%s*synth2[
+GDSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+_
+%s*synth2P
+<DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+j
+%s*synth2[
+GDSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+_
+%s*synth2P
+<DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+j
+%s*synth2[
+GDSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+_
+%s*synth2P
+<DSP Report: Generating DSP decimal, operation Mode is: A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator decimal is absorbed into DSP decimal.
+2default:default
+\
+%s*synth2M
+9DSP Report: Generating DSP P0, operation Mode is: C+A*B.
+2default:default
+T
+%s*synth2E
+1DSP Report: operator P0 is absorbed into DSP P0.
+2default:default
+Y
+%s*synth2J
+6DSP Report: operator decimal is absorbed into DSP P0.
+2default:default
+_
+%s*synth2P
+<DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+j
+%s*synth2[
+GDSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+\
+%s*synth2M
+9DSP Report: Generating DSP P0, operation Mode is: C+A*B.
+2default:default
+T
+%s*synth2E
+1DSP Report: operator P0 is absorbed into DSP P0.
+2default:default
+Y
+%s*synth2J
+6DSP Report: operator decimal is absorbed into DSP P0.
+2default:default
+_
+%s*synth2P
+<DSP Report: Generating DSP decimal, operation Mode is: A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator decimal is absorbed into DSP decimal.
+2default:default
+\
+%s*synth2M
+9DSP Report: Generating DSP P0, operation Mode is: C+A*B.
+2default:default
+T
+%s*synth2E
+1DSP Report: operator P0 is absorbed into DSP P0.
+2default:default
+Y
+%s*synth2J
+6DSP Report: operator decimal is absorbed into DSP P0.
+2default:default
+_
+%s*synth2P
+<DSP Report: Generating DSP decimal, operation Mode is: A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator decimal is absorbed into DSP decimal.
+2default:default
+\
+%s*synth2M
+9DSP Report: Generating DSP P0, operation Mode is: C+A*B.
+2default:default
+T
+%s*synth2E
+1DSP Report: operator P0 is absorbed into DSP P0.
+2default:default
+Y
+%s*synth2J
+6DSP Report: operator decimal is absorbed into DSP P0.
+2default:default
+_
+%s*synth2P
+<DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+j
+%s*synth2[
+GDSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+_
+%s*synth2P
+<DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+j
+%s*synth2[
+GDSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+\
+%s*synth2M
+9DSP Report: Generating DSP P0, operation Mode is: C+A*B.
+2default:default
+T
+%s*synth2E
+1DSP Report: operator P0 is absorbed into DSP P0.
+2default:default
+Y
+%s*synth2J
+6DSP Report: operator decimal is absorbed into DSP P0.
+2default:default
+_
+%s*synth2P
+<DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+j
+%s*synth2[
+GDSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+_
+%s*synth2P
+<DSP Report: Generating DSP decimal, operation Mode is: A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator decimal is absorbed into DSP decimal.
+2default:default
+\
+%s*synth2M
+9DSP Report: Generating DSP P0, operation Mode is: C+A*B.
+2default:default
+T
+%s*synth2E
+1DSP Report: operator P0 is absorbed into DSP P0.
+2default:default
+Y
+%s*synth2J
+6DSP Report: operator decimal is absorbed into DSP P0.
+2default:default
+_
+%s*synth2P
+<DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+j
+%s*synth2[
+GDSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+2default:default
+_
+%s*synth2P
+<DSP Report: Generating DSP decimal, operation Mode is: A*B.
+2default:default
+^
+%s*synth2O
+;DSP Report: operator decimal is absorbed into DSP decimal.
+2default:default
+\
+%s*synth2M
+9DSP Report: Generating DSP P0, operation Mode is: C+A*B.
+2default:default
+T
+%s*synth2E
+1DSP Report: operator P0 is absorbed into DSP P0.
+2default:default
+Y
+%s*synth2J
+6DSP Report: operator decimal is absorbed into DSP P0.
+2default:default
+ò
+merging register '%s' into '%s'3619*oasys20
+bus2ip_reset_active_high_reg2default:default2>
+*AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg2default:default2Ã
+µ/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_axi_clk_config.vhd2default:default2
+4212default:default8@Z8-4471
+÷
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2≥
+û\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+Ÿ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2∂
+°\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+ÿ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2µ
+†\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+ﬁ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2ª
+¶\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+÷
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2≥
+û\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+Ÿ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2∂
+°\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+ÿ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2µ
+†\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+ﬁ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2ª
+¶\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+÷
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2≥
+û\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+Ÿ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2∂
+°\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+ÿ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2µ
+†\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+ﬁ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2ª
+¶\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+’
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2≤
+ù\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+ÿ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2µ
+†\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+◊
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2¥
+ü\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+›
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2∫
+•\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+’
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2≤
+ù\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+ÿ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2µ
+†\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+◊
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2¥
+ü\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+›
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2∫
+•\gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg 2default:default2@
+,axi_clock_converter_v2_1_axi_clock_converter2default:defaultZ8-3332
+ó
+merging register '%s' into '%s'3619*oasys2®
+ìgen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d1_reg2default:default2®
+ìgen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d1_reg2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+6152default:default8@Z8-4471
+ó
+merging register '%s' into '%s'3619*oasys2®
+ìgen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg2default:default2®
+ìgen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+6162default:default8@Z8-4471
+ó
+merging register '%s' into '%s'3619*oasys2®
+ìgen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg2default:default2®
+ìgen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+6172default:default8@Z8-4471
+£
+merging register '%s' into '%s'3619*oasys2Æ
+ôgen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/grstd1.grst_full.grst_f.RST_FULL_GEN_reg2default:default2Æ
+ôgen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/grstd1.grst_full.grst_f.RST_FULL_GEN_reg2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+6182default:default8@Z8-4471
+ñ
+merging register '%s' into '%s'3619*oasys2ß
+ígen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d1_reg2default:default2®
+ìgen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d1_reg2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+6152default:default8@Z8-4471
+ñ
+merging register '%s' into '%s'3619*oasys2ß
+ígen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg2default:default2®
+ìgen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+6162default:default8@Z8-4471
+ñ
+merging register '%s' into '%s'3619*oasys2ß
+ígen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg2default:default2®
+ìgen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+6172default:default8@Z8-4471
+¢
+merging register '%s' into '%s'3619*oasys2≠
+ògen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/grstd1.grst_full.grst_f.RST_FULL_GEN_reg2default:default2Æ
+ôgen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/grstd1.grst_full.grst_f.RST_FULL_GEN_reg2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+6182default:default8@Z8-4471
+ñ
+merging register '%s' into '%s'3619*oasys2ß
+ígen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d1_reg2default:default2®
+ìgen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d1_reg2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+6152default:default8@Z8-4471
+ñ
+merging register '%s' into '%s'3619*oasys2ß
+ígen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg2default:default2®
+ìgen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+6162default:default8@Z8-4471
+ñ
+merging register '%s' into '%s'3619*oasys2ß
+ígen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg2default:default2®
+ìgen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+6172default:default8@Z8-4471
+¢
+merging register '%s' into '%s'3619*oasys2≠
+ògen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/grstd1.grst_full.grst_f.RST_FULL_GEN_reg2default:default2Æ
+ôgen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/grstd1.grst_full.grst_f.RST_FULL_GEN_reg2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+6182default:default8@Z8-4471
 Ÿ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2Ã
 ∑\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 ‹
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2œ
 ∫\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 ﬂ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2“
 Ω\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 ﬁ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2—
 º\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 ‰
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2◊
 ¬\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 ﬁ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2—
 º\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 ·
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2‘
 ø\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 ‰
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2◊
 ¬\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 „
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2÷
 ¡\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 È
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2‹
 «\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[7] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[6] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[5] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[4] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 Ê
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2Ÿ
 ƒ\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 È
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2‹
 «\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 Ï
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2ﬂ
  \inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_fb_reg 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 Î
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2ﬁ
 …\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/aempty_fwft_i_reg 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2‰
 œ\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/gpregsm1.user_valid_reg 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 ˚
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[7] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 ˚
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[6] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 ˚
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[5] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 ˚
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[4] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 Ÿ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2Ã
 ∑\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 ﬁ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2—
 º\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[7] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[6] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[5] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 Ò
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2e
 Q\inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/S_AXI_ALEN_Q_reg[4] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 Ê
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2Ÿ
 ƒ\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 ˚
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[7] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 ˚
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[6] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 ˚
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[5] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
 ˚
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2o
 [\inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/S_AXI_ALEN_Q_reg[4] 2default:default2*
-zynq_system_auto_pc_152default:defaultZ8-3332
+zynq_system_auto_pc_572default:defaultZ8-3332
+ç
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2x
+d\gen_single_issue.gen_debug_r_single_issue.debug_r_seq_fifo_single_issue/gen_rep[0].fifoaddr_reg[1] 2default:default23
+axi_crossbar_v2_1_si_transactor2default:defaultZ8-3332
+ç
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2x
+d\gen_single_issue.gen_debug_r_single_issue.debug_r_seq_fifo_single_issue/gen_rep[0].fifoaddr_reg[0] 2default:default23
+axi_crossbar_v2_1_si_transactor2default:defaultZ8-3332
+Ä
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2k
+W\gen_single_issue.gen_debug_r_single_issue.debug_r_seq_fifo_single_issue/M_VALID_i_reg 2default:default23
+axi_crossbar_v2_1_si_transactor2default:defaultZ8-3332
+ù
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2x
+d\gen_single_issue.gen_debug_r_single_issue.debug_r_seq_fifo_single_issue/gen_rep[0].fifoaddr_reg[1] 2default:default2C
+/axi_crossbar_v2_1_si_transactor__parameterized02default:defaultZ8-3332
+ù
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2x
+d\gen_single_issue.gen_debug_r_single_issue.debug_r_seq_fifo_single_issue/gen_rep[0].fifoaddr_reg[0] 2default:default2C
+/axi_crossbar_v2_1_si_transactor__parameterized02default:defaultZ8-3332
+ê
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2k
+W\gen_single_issue.gen_debug_r_single_issue.debug_r_seq_fifo_single_issue/M_VALID_i_reg 2default:default2C
+/axi_crossbar_v2_1_si_transactor__parameterized02default:defaultZ8-3332
+†
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2{
+g\gen_single_thread.gen_debug_r_single_thread.debug_r_seq_fifo_single_thread/gen_rep[0].fifoaddr_reg[1] 2default:default2C
+/axi_crossbar_v2_1_si_transactor__parameterized12default:defaultZ8-3332
+†
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2{
+g\gen_single_thread.gen_debug_r_single_thread.debug_r_seq_fifo_single_thread/gen_rep[0].fifoaddr_reg[0] 2default:default2C
+/axi_crossbar_v2_1_si_transactor__parameterized12default:defaultZ8-3332
+ì
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2n
+Z\gen_single_thread.gen_debug_r_single_thread.debug_r_seq_fifo_single_thread/M_VALID_i_reg 2default:default2C
+/axi_crossbar_v2_1_si_transactor__parameterized12default:defaultZ8-3332
+†
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2{
+g\gen_single_thread.gen_debug_r_single_thread.debug_r_seq_fifo_single_thread/gen_rep[0].fifoaddr_reg[1] 2default:default2C
+/axi_crossbar_v2_1_si_transactor__parameterized22default:defaultZ8-3332
+†
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2{
+g\gen_single_thread.gen_debug_r_single_thread.debug_r_seq_fifo_single_thread/gen_rep[0].fifoaddr_reg[0] 2default:default2C
+/axi_crossbar_v2_1_si_transactor__parameterized22default:defaultZ8-3332
+ì
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2n
+Z\gen_single_thread.gen_debug_r_single_thread.debug_r_seq_fifo_single_thread/M_VALID_i_reg 2default:default2C
+/axi_crossbar_v2_1_si_transactor__parameterized22default:defaultZ8-3332
 ◊
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2H
 4\inst/hhb_query_U/applist_phys_addr0data_reg_reg[1] 2default:default2-
@@ -13651,250 +36266,6 @@ ESequential element (%s) is unused and will be removed from module %s.3332*
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2V
 B\inst/hhb_query_a_if_U/bus_write/wide_to_narrow.data_valid_reg[3] 2default:default2-
 zynq_system_hhb_query_0_02default:defaultZ8-3332
-Â
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2V
-B\inst/hhb_query_a_if_U/bus_write/wide_to_narrow.data_valid_reg[2] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-Â
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2V
-B\inst/hhb_query_a_if_U/bus_write/wide_to_narrow.data_valid_reg[1] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-’
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2F
-2\inst/hhb_query_a_if_U/bus_write/addr_buf_reg[33] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-’
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2F
-2\inst/hhb_query_a_if_U/bus_write/addr_buf_reg[32] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-‘
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2E
-1\inst/hhb_query_a_if_U/bus_read/addr_buf_reg[33] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-‘
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2E
-1\inst/hhb_query_a_if_U/bus_read/addr_buf_reg[32] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[31] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[30] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[29] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[28] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[27] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[26] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[25] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[24] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[23] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[22] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[21] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[20] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[19] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[18] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[17] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[16] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[15] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[14] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[13] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[12] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[11] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-”
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2D
-0\inst/hhb_query_a_if_U/bus_read/len_buf_reg[10] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-“
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2C
-/\inst/hhb_query_a_if_U/bus_read/len_buf_reg[9] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-“
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2C
-/\inst/hhb_query_a_if_U/bus_read/len_buf_reg[8] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-“
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2C
-/\inst/hhb_query_a_if_U/bus_read/len_buf_reg[7] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-“
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2C
-/\inst/hhb_query_a_if_U/bus_read/len_buf_reg[6] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-“
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2C
-/\inst/hhb_query_a_if_U/bus_read/len_buf_reg[5] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-“
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2C
-/\inst/hhb_query_a_if_U/bus_read/len_buf_reg[4] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-“
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2C
-/\inst/hhb_query_a_if_U/bus_read/len_buf_reg[3] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-“
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2C
-/\inst/hhb_query_a_if_U/bus_read/len_buf_reg[2] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-“
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2C
-/\inst/hhb_query_a_if_U/bus_read/len_buf_reg[1] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-“
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2C
-/\inst/hhb_query_a_if_U/bus_read/len_buf_reg[0] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-Â
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2V
-B\inst/hhb_query_a_if_U/bus_write/wide_to_narrow.data_valid_reg[3] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-Â
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2V
-B\inst/hhb_query_a_if_U/bus_write/wide_to_narrow.data_valid_reg[2] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-Â
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2V
-B\inst/hhb_query_a_if_U/bus_write/wide_to_narrow.data_valid_reg[1] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-’
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2F
-2\inst/hhb_query_a_if_U/bus_write/addr_buf_reg[33] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-’
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2F
-2\inst/hhb_query_a_if_U/bus_write/addr_buf_reg[32] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-‘
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2E
-1\inst/hhb_query_a_if_U/bus_read/addr_buf_reg[33] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-‘
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2E
-1\inst/hhb_query_a_if_U/bus_read/addr_buf_reg[32] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-◊
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2H
-4\inst/hhb_query_U/applist_phys_addr0data_reg_reg[1] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-◊
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2H
-4\inst/hhb_query_U/applist_phys_addr0data_reg_reg[0] 2default:default2-
-zynq_system_hhb_query_0_02default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[65] 2default:default2*
-zynq_system_auto_pc_142default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[64] 2default:default2*
-zynq_system_auto_pc_142default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[63] 2default:default2*
-zynq_system_auto_pc_142default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[62] 2default:default2*
-zynq_system_auto_pc_142default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[49] 2default:default2*
-zynq_system_auto_pc_142default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[48] 2default:default2*
-zynq_system_auto_pc_142default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[43] 2default:default2*
-zynq_system_auto_pc_142default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[42] 2default:default2*
-zynq_system_auto_pc_142default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[41] 2default:default2*
-zynq_system_auto_pc_142default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[40] 2default:default2*
-zynq_system_auto_pc_142default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[37] 2default:default2*
-zynq_system_auto_pc_142default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[65] 2default:default2*
-zynq_system_auto_pc_142default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[64] 2default:default2*
-zynq_system_auto_pc_142default:defaultZ8-3332
-Ó
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2b
-N\inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[63] 2default:default2*
-zynq_system_auto_pc_142default:defaultZ8-3332
 ‘
 ÅMessage '%s' appears more than %s times and has been disabled. User can change this message limit to see more message instances.
 14*common2 
@@ -13914,9 +36285,32 @@ Hinst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg2defau
 622default:default2Ú
 €/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 1212default:default8@Z8-3936
+˛
+RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2M
+9inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg2default:default2
+362default:default2
+352default:default2Ú
+€/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+1212default:default8@Z8-3936
+|
+%s*synth2m
+YDSP Report: Generating DSP CLK_CORE_DRP_I/mmcm_drp_inst/decimal, operation Mode is: A*B.
+2default:default
+ô
+%s*synth2â
+uDSP Report: operator CLK_CORE_DRP_I/mmcm_drp_inst/decimal is absorbed into DSP CLK_CORE_DRP_I/mmcm_drp_inst/decimal.
+2default:default
+|
+%s*synth2m
+YDSP Report: Generating DSP CLK_CORE_DRP_I/mmcm_drp_inst/decimal, operation Mode is: A*B.
+2default:default
+ô
+%s*synth2â
+uDSP Report: operator CLK_CORE_DRP_I/mmcm_drp_inst/decimal is absorbed into DSP CLK_CORE_DRP_I/mmcm_drp_inst/decimal.
+2default:default
 ™
 %s*synth2ö
-ÖFinished Cross Boundary Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1195.531 ; gain = 572.273
+ÖFinished Cross Boundary Optimization : Time (s): cpu = 00:03:10 ; elapsed = 00:03:13 . Memory (MB): peak = 1346.344 ; gain = 717.086
 2default:default
 ¢
 %s*synth2í
@@ -13932,38 +36326,228 @@ R-------------------------------------------------------------------------------
 
 Distributed RAM: 
 2default:default
-ñ
-%s*synth2Ü
-Ò+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+-----------------------------------------------------------------------------------------------+
+®
+%s*synth2ò
+É+---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+-------------------------------------------------------------------------------------------+
 2default:default
-ó
-%s*synth2á
-Ú|Module Name            | RTL Object                                                                                                                                                                              | Inference Criteria | Size (depth X width) | Primitives     | Hierarchical Name                                                                             | 
+©
+%s*synth2ô
+Ñ|Module Name                                  | RTL Object                                                                                                                                                                              | Inference Criteria | Size (depth X width) | Primitives     | Hierarchical Name                                                                         | 
 2default:default
-ñ
-%s*synth2Ü
-Ò+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+-----------------------------------------------------------------------------------------------+
+®
+%s*synth2ò
+É+---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+-------------------------------------------------------------------------------------------+
 2default:default
-ó
-%s*synth2á
-Ú|zynq_system_auto_pc_15 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg              | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_15/ram__6  | 
+©
+%s*synth2ô
+Ñ|axi_clock_converter_v2_1_axi_clock_converter | gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg                                          | User Attribute     | 16 X 9               | RAM32M x 2     | zynq_system_axi_clock_converter_0_26/axi_clock_converter_v2_1_axi_clock_converter/ram__16 | 
 2default:default
-ó
-%s*synth2á
-Ú|zynq_system_auto_pc_15 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg         | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_15/ram__8  | 
+©
+%s*synth2ô
+Ñ|axi_clock_converter_v2_1_axi_clock_converter | gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg                                          | User Attribute     | 16 X 36              | RAM32M x 6     | zynq_system_axi_clock_converter_0_26/axi_clock_converter_v2_1_axi_clock_converter/ram__18 | 
 2default:default
-ó
-%s*synth2á
-Ú|zynq_system_auto_pc_15 | inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg | User Attribute     | 32 X 1               | RAM32X1D x 1   | zynq_system_wrapper/zynq_system/zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_15/ram__10 | 
+©
+%s*synth2ô
+Ñ|axi_clock_converter_v2_1_axi_clock_converter | gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg                                          | User Attribute     | 16 X 2               | RAM16X1D x 2   | zynq_system_axi_clock_converter_0_26/axi_clock_converter_v2_1_axi_clock_converter/ram__20 | 
 2default:default
-ó
-%s*synth2á
-Ú+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+-----------------------------------------------------------------------------------------------+
+©
+%s*synth2ô
+Ñ|axi_clock_converter_v2_1_axi_clock_converter | gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg                                           | User Attribute     | 16 X 9               | RAM32M x 2     | zynq_system_axi_clock_converter_0_26/axi_clock_converter_v2_1_axi_clock_converter/ram__22 | 
+2default:default
+©
+%s*synth2ô
+Ñ|axi_clock_converter_v2_1_axi_clock_converter | gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg                                           | User Attribute     | 16 X 34              | RAM32M x 6     | zynq_system_axi_clock_converter_0_26/axi_clock_converter_v2_1_axi_clock_converter/ram__24 | 
+2default:default
+©
+%s*synth2ô
+Ñ|zynq_system_auto_pc_57                       | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg              | User Attribute     | 32 X 6               | RAM32M x 1     | zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_57/ram__26                             | 
+2default:default
+©
+%s*synth2ô
+Ñ|zynq_system_auto_pc_57                       | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg         | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_57/ram__28                             | 
+2default:default
+©
+%s*synth2ô
+Ñ|zynq_system_auto_pc_57                       | inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg | User Attribute     | 32 X 1               | RAM32X1D x 1   | zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_57/ram__30                             | 
+2default:default
+©
+%s*synth2ô
+Ñ+---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+-------------------------------------------------------------------------------------------+
 
 2default:default
-∆
-%s*synth2∂
-°Note: Mutiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the hierarchical modules names of the RAM and only part of it is displayed.
+À
+%s*synth2ª
+¶Note: Mutiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the hierarchical modules names of the RAM and only part of it is displayed.
+DSP:
+2default:default
+√
+%s*synth2≥
+û+---------------------------------+----------------+--------------+------------------+--------+--------+--------+--------+------+------+------+------+------+
+2default:default
+ƒ
+%s*synth2¥
+ü|Module Name                      | OP MODE        | Neg Edge Clk | A Size (Signed?) | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | PREG | 
+2default:default
+√
+%s*synth2≥
+û+---------------------------------+----------------+--------------+------------------+--------+--------+--------+--------+------+------+------+------+------+
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 18 (N)           | 14 (N) | 48 (N) | 25 (N) | 48 (Y) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | (PCIN>>17)+A*B | No           | 15 (N)           | 14 (N) | 15 (Y) | 25 (N) | 15 (N) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 18 (N)           | 14 (N) | 48 (N) | 25 (N) | 48 (Y) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | (PCIN>>17)+A*B | No           | 17 (N)           | 14 (N) | 29 (Y) | 25 (N) | 29 (N) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 18 (N)           | 14 (N) | 48 (N) | 25 (N) | 48 (Y) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | (PCIN>>17)+A*B | No           | 15 (N)           | 14 (N) | 15 (Y) | 25 (N) | 15 (N) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 18 (N)           | 14 (N) | 48 (N) | 25 (N) | 48 (Y) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | (PCIN>>17)+A*B | No           | 17 (N)           | 14 (N) | 29 (Y) | 25 (N) | 29 (N) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 18 (N)           | 9 (N)  | 48 (N) | 25 (N) | 48 (Y) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | (PCIN>>17)+A*B | No           | 15 (N)           | 9 (N)  | 15 (Y) | 25 (N) | 15 (N) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 18 (N)           | 9 (N)  | 48 (N) | 25 (N) | 48 (Y) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | (PCIN>>17)+A*B | No           | 15 (N)           | 9 (N)  | 15 (Y) | 25 (N) | 15 (N) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 18 (N)           | 9 (N)  | 48 (N) | 25 (N) | 48 (Y) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | (PCIN>>17)+A*B | No           | 15 (N)           | 9 (N)  | 15 (Y) | 25 (N) | 15 (N) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 16 (N)           | 8 (N)  | 48 (N) | 25 (N) | 17 (N) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | C+A*B          | No           | 16 (N)           | 8 (N)  | 10 (N) | 25 (N) | 17 (N) | 0    | 0    | 0    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 18 (N)           | 9 (N)  | 48 (N) | 25 (N) | 48 (Y) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | (PCIN>>17)+A*B | No           | 15 (N)           | 9 (N)  | 15 (Y) | 25 (N) | 15 (N) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | C+A*B          | No           | 16 (N)           | 8 (N)  | 10 (N) | 25 (N) | 17 (N) | 0    | 0    | 0    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 16 (N)           | 8 (N)  | 48 (N) | 25 (N) | 17 (N) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | C+A*B          | No           | 16 (N)           | 8 (N)  | 10 (N) | 25 (N) | 17 (N) | 0    | 0    | 0    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 16 (N)           | 8 (N)  | 48 (N) | 25 (N) | 17 (N) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | C+A*B          | No           | 16 (N)           | 8 (N)  | 10 (N) | 25 (N) | 17 (N) | 0    | 0    | 0    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 18 (N)           | 9 (N)  | 48 (N) | 25 (N) | 48 (Y) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | (PCIN>>17)+A*B | No           | 15 (N)           | 9 (N)  | 15 (Y) | 25 (N) | 15 (N) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 18 (N)           | 9 (N)  | 48 (N) | 25 (N) | 48 (Y) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | (PCIN>>17)+A*B | No           | 15 (N)           | 9 (N)  | 15 (Y) | 25 (N) | 15 (N) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | C+A*B          | No           | 16 (N)           | 8 (N)  | 10 (N) | 25 (N) | 17 (N) | 0    | 0    | 0    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 18 (N)           | 9 (N)  | 48 (N) | 25 (N) | 48 (Y) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | (PCIN>>17)+A*B | No           | 15 (N)           | 9 (N)  | 15 (Y) | 25 (N) | 15 (N) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 9 (N)            | 8 (N)  | 48 (N) | 25 (N) | 9 (N)  | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | C+A*B          | No           | 16 (N)           | 8 (N)  | 10 (N) | 25 (N) | 17 (N) | 0    | 0    | 0    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 18 (N)           | 9 (N)  | 48 (N) | 25 (N) | 48 (Y) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | (PCIN>>17)+A*B | No           | 15 (N)           | 9 (N)  | 15 (Y) | 25 (N) | 15 (N) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 16 (N)           | 8 (N)  | 48 (N) | 25 (N) | 17 (N) | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | C+A*B          | No           | 16 (N)           | 8 (N)  | 10 (N) | 25 (N) | 17 (N) | 0    | 0    | 0    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 9 (N)            | 8 (N)  | 48 (N) | 25 (N) | 9 (N)  | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü|zynq_system_clk_wiz_0_0_mmcm_drp | A*B            | No           | 9 (N)            | 8 (N)  | 48 (N) | 25 (N) | 9 (N)  | 0    | 0    | 1    | 1    | 0    | 
+2default:default
+ƒ
+%s*synth2¥
+ü+---------------------------------+----------------+--------------+------------------+--------+--------+--------+--------+------+------+------+------+------+
+
 2default:default
 ¶
 %s*synth2ñ
@@ -13974,37 +36558,75 @@ u
 %s*synth2f
 R---------------------------------------------------------------------------------
 2default:default
-ü
-%s*synth2è
-{Finished Area Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1235.445 ; gain = 612.188
+◊
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default2o
+[zynq_system_i/clk_wiz_0/inst/i_36/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0] 2default:defaultZ8-3333
+◊
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default2o
+[zynq_system_i/clk_wiz_0/inst/i_36/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] 2default:defaultZ8-3333
+ª
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default2S
+?zynq_system_i/clk_wiz_0/inst/mmcm_drp_insti_2/\ram_reg[37][15] 2default:defaultZ8-3333
+ª
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default2S
+?zynq_system_i/clk_wiz_0/inst/mmcm_drp_insti_2/\ram_reg[25][15] 2default:defaultZ8-3333
+ª
+6propagating constant %s across sequential element (%s)3333*oasys2
+12default:default2S
+?zynq_system_i/clk_wiz_0/inst/mmcm_drp_insti_2/\ram_reg[32][36] 2default:defaultZ8-3333
+ª
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default2S
+?zynq_system_i/clk_wiz_0/inst/mmcm_drp_insti_2/\ram_reg[24][38] 2default:defaultZ8-3333
+∫
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default2R
+>zynq_system_i/clk_wiz_0/inst/mmcm_drp_insti_2/\ram_do_reg[24] 2default:defaultZ8-3333
+†
+%s*synth2ê
+|Finished Area Optimization : Time (s): cpu = 00:09:51 ; elapsed = 00:09:55 . Memory (MB): peak = 1769.156 ; gain = 1139.898
 2default:default
 {
 %s*synth2l
-XINFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+XINFO: Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 2default:default
-Æ
-%s*synth2û
-âFinished Applying XDC Timing Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:01:30 . Memory (MB): peak = 1384.445 ; gain = 761.188
+Ø
+%s*synth2ü
+äFinished Applying XDC Timing Constraints : Time (s): cpu = 00:10:23 ; elapsed = 00:10:28 . Memory (MB): peak = 1909.156 ; gain = 1279.898
+2default:default
+¢
+%s*synth2í
+~Finished Timing Optimization : Time (s): cpu = 00:10:38 ; elapsed = 00:10:42 . Memory (MB): peak = 1998.164 ; gain = 1368.906
 2default:default
 °
 %s*synth2ë
-}Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 1401.453 ; gain = 778.195
-2default:default
-†
-%s*synth2ê
-|Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:01:33 . Memory (MB): peak = 1409.461 ; gain = 786.203
+}Finished Technology Mapping : Time (s): cpu = 00:11:38 ; elapsed = 00:11:44 . Memory (MB): peak = 2080.211 ; gain = 1450.953
 2default:default
 q
 %s*synth2b
-Ndesign zynq_system_auto_pc_14 has 4 max_fanout violations cannot be satisfied
+Ndesign zynq_system_auto_pc_56 has 4 max_fanout violations cannot be satisfied
 2default:default
 D
 %s*synth25
 !Gated Clock Conversion mode: off
 2default:default
-ö
-%s*synth2ä
-vFinished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1409.461 ; gain = 786.203
+}
+'tying undriven pin %s:%s to constant 0
+3295*oasys2
+xbar2default:default2!
+s_axi_awid[1]2default:defaultZ8-3295
+}
+'tying undriven pin %s:%s to constant 0
+3295*oasys2
+xbar2default:default2!
+s_axi_arid[1]2default:defaultZ8-3295
+õ
+%s*synth2ã
+wFinished IO Insertion : Time (s): cpu = 00:11:42 ; elapsed = 00:11:47 . Memory (MB): peak = 2080.211 ; gain = 1450.953
 2default:default
 ;
 %s*synth2,
@@ -14031,13 +36653,13 @@ l
 %s*synth2]
 I+------+------------------+-------+---------+-------+------------------+
 2default:default
-´
-%s*synth2õ
-ÜFinished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1409.461 ; gain = 786.203
+¨
+%s*synth2ú
+áFinished Renaming Generated Instances : Time (s): cpu = 00:11:43 ; elapsed = 00:11:48 . Memory (MB): peak = 2080.211 ; gain = 1450.953
 2default:default
-®
-%s*synth2ò
-ÉFinished Rebuilding User Hierarchy : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1409.461 ; gain = 786.203
+©
+%s*synth2ô
+ÑFinished Rebuilding User Hierarchy : Time (s): cpu = 00:11:46 ; elapsed = 00:11:52 . Memory (MB): peak = 2080.211 ; gain = 1450.953
 2default:default
 ¢
 %s*synth2í
@@ -14155,109 +36777,125 @@ A
 
 Report Cell Usage: 
 2default:default
-=
-%s*synth2.
-+------+---------+------+
+?
+%s*synth20
++------+-----------+------+
 2default:default
-=
-%s*synth2.
-|      |Cell     |Count |
+?
+%s*synth20
+|      |Cell       |Count |
 2default:default
-=
-%s*synth2.
-+------+---------+------+
+?
+%s*synth20
++------+-----------+------+
 2default:default
-=
-%s*synth2.
-|1     |BIBUF    |   130|
+?
+%s*synth20
+|1     |BIBUF      |   130|
 2default:default
-=
-%s*synth2.
-|2     |BUFG     |     1|
+?
+%s*synth20
+|2     |BUFG       |     3|
 2default:default
-=
-%s*synth2.
-|3     |CARRY4   |    86|
+?
+%s*synth20
+|3     |CARRY4     |  3136|
 2default:default
-=
-%s*synth2.
-|4     |GND      |     2|
+?
+%s*synth20
+|4     |DSP48E1_1  |    31|
 2default:default
-=
-%s*synth2.
-|5     |LUT1     |   242|
+?
+%s*synth20
+|5     |DSP48E1_2  |     7|
 2default:default
-=
-%s*synth2.
-|6     |LUT2     |   142|
+?
+%s*synth20
+|6     |LUT1       |  2147|
 2default:default
-=
-%s*synth2.
-|7     |LUT3     |   452|
+?
+%s*synth20
+|7     |LUT2       |  2599|
 2default:default
-=
-%s*synth2.
-|8     |LUT4     |   284|
+?
+%s*synth20
+|8     |LUT3       |  5920|
 2default:default
-=
-%s*synth2.
-|9     |LUT5     |   407|
+?
+%s*synth20
+|9     |LUT4       |  2990|
 2default:default
-=
-%s*synth2.
-|10    |LUT6     |   343|
+?
+%s*synth20
+|10    |LUT5       |  3640|
 2default:default
-=
-%s*synth2.
-|11    |MUXF7    |     1|
+?
+%s*synth20
+|11    |LUT6       |  5268|
 2default:default
-=
-%s*synth2.
-|12    |PS7      |     1|
+?
+%s*synth20
+|12    |MMCME2_ADV |     1|
 2default:default
-=
-%s*synth2.
-|13    |RAM32M   |     2|
+?
+%s*synth20
+|13    |MUXF7      |   331|
 2default:default
-=
-%s*synth2.
-|14    |RAM32X1D |     1|
+?
+%s*synth20
+|14    |MUXF8      |    60|
 2default:default
-=
-%s*synth2.
-|15    |SRL16    |     1|
+?
+%s*synth20
+|15    |PS7        |     1|
 2default:default
-=
-%s*synth2.
-|16    |SRL16E   |    23|
+?
+%s*synth20
+|16    |RAM16X1D   |     2|
 2default:default
-=
-%s*synth2.
-|17    |SRLC32E  |   174|
+?
+%s*synth20
+|17    |RAM32M     |    18|
 2default:default
-=
-%s*synth2.
-|18    |VCC      |     1|
+?
+%s*synth20
+|18    |RAM32X1D   |     1|
 2default:default
-=
-%s*synth2.
-|19    |FDCE     |    66|
+?
+%s*synth20
+|19    |SRL16      |     1|
 2default:default
-=
-%s*synth2.
-|20    |FDPE     |    33|
+?
+%s*synth20
+|20    |SRL16E     |    23|
 2default:default
-=
-%s*synth2.
-|21    |FDRE     |  1627|
+?
+%s*synth20
+|21    |SRLC32E    |   178|
 2default:default
-=
-%s*synth2.
-|22    |FDSE     |    69|
+?
+%s*synth20
+|22    |FDCE       |   363|
 2default:default
-=
-%s*synth2.
-+------+---------+------+
+?
+%s*synth20
+|23    |FDPE       |   114|
+2default:default
+?
+%s*synth20
+|24    |FDRE       |  4017|
+2default:default
+?
+%s*synth20
+|25    |FDSE       |    89|
+2default:default
+?
+%s*synth20
+|26    |IBUF       |     1|
+2default:default
+?
+%s*synth20
++------+-----------+------+
 2default:default
 <
 %s*synth2-
@@ -14278,78 +36916,115 @@ d+------+------------------------------------+----------------------------------
 2default:default
 á
 %s*synth2x
-d|1     |top                                 |                                              |  4088|
+d|1     |top                                 |                                              | 31071|
 2default:default
 á
 %s*synth2x
-d|2     |  zynq_system_i                     |zynq_system                                   |  4088|
+d|2     |  zynq_system_i                     |zynq_system                                   | 31071|
 2default:default
 á
 %s*synth2x
-d|3     |    axi_mem_intercon                |zynq_system_axi_mem_intercon_1                |   948|
+d|3     |    clk_wiz_0                       |zynq_system_clk_wiz_0_0                       | 24505|
 2default:default
 á
 %s*synth2x
-d|4     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_15                        |   947|
+d|4     |      inst                          |zynq_system_clk_wiz_0_0_axi_clk_config        | 24505|
 2default:default
 á
 %s*synth2x
-d|5     |    hhb_query_0                     |zynq_system_hhb_query_0_0                     |  1576|
+d|5     |    axi_clock_converter_0           |zynq_system_axi_clock_converter_0_26          |   814|
 2default:default
 á
 %s*synth2x
-d|6     |    processing_system7_0            |zynq_system_processing_system7_0_0            |   221|
+d|6     |      inst                          |axi_clock_converter_v2_1_axi_clock_converter  |   814|
 2default:default
 á
 %s*synth2x
-d|7     |      inst                          |processing_system7_v5_3_processing_system7    |   221|
+d|7     |    axi_mem_intercon                |zynq_system_axi_mem_intercon_1                |  1908|
 2default:default
 á
 %s*synth2x
-d|8     |    processing_system7_0_axi_periph |zynq_system_processing_system7_0_axi_periph_0 |  1276|
+d|8     |      \m00_couplers/auto_pc         |zynq_system_auto_pc_57                        |   947|
 2default:default
 á
 %s*synth2x
-d|9     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_14                        |  1276|
+d|9     |      xbar                          |zynq_system_xbar_1                            |   961|
 2default:default
 á
 %s*synth2x
-d|10    |    rst_processing_system7_0_50M    |zynq_system_rst_processing_system7_0_50M_0    |    65|
+d|10    |    hhb_query_0                     |zynq_system_hhb_query_0_0                     |  1575|
 2default:default
 á
 %s*synth2x
-d|11    |      U0                            |proc_sys_reset__parameterized0                |    65|
+d|11    |    hwfreqscale_simple_adder_0      |zynq_system_hwfreqscale_simple_adder_0_1      |   397|
+2default:default
+á
+%s*synth2x
+d|12    |    processing_system7_0            |zynq_system_processing_system7_0_0            |   221|
+2default:default
+á
+%s*synth2x
+d|13    |      inst                          |processing_system7_v5_3_processing_system7    |   221|
+2default:default
+á
+%s*synth2x
+d|14    |    processing_system7_0_axi_periph |zynq_system_processing_system7_0_axi_periph_0 |  1586|
+2default:default
+á
+%s*synth2x
+d|15    |      \s00_couplers/auto_pc         |zynq_system_auto_pc_56                        |  1276|
+2default:default
+á
+%s*synth2x
+d|16    |      xbar                          |zynq_system_xbar_2                            |   310|
+2default:default
+á
+%s*synth2x
+d|17    |    rst_processing_system7_0_50M    |zynq_system_rst_processing_system7_0_50M_0    |    65|
+2default:default
+á
+%s*synth2x
+d|18    |      U0                            |proc_sys_reset__parameterized0                |    65|
 2default:default
 á
 %s*synth2x
 d+------+------------------------------------+----------------------------------------------+------+
 2default:default
-ß
-%s*synth2ó
-ÇFinished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1409.461 ; gain = 786.203
+®
+%s*synth2ò
+ÉFinished Writing Synthesis Report : Time (s): cpu = 00:11:47 ; elapsed = 00:11:52 . Memory (MB): peak = 2080.211 ; gain = 1450.953
 2default:default
 j
 %s*synth2[
-GSynthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+GSynthesis finished with 0 errors, 0 critical warnings and 26 warnings.
 2default:default
-•
-%s*synth2ï
-ÄSynthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1409.461 ; gain = 786.203
+¶
+%s*synth2ñ
+ÅSynthesis Optimization Complete : Time (s): cpu = 00:11:47 ; elapsed = 00:11:52 . Memory (MB): peak = 2080.211 ; gain = 1450.953
 2default:default
-\
+]
 -Analyzing %s Unisim elements for replacement
-17*netlist2
-42default:defaultZ29-17
+17*netlist2
+622default:defaultZ29-17
 a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
 02default:defaultZ29-28
+π
+NRemoving redundant IBUF since it is not being driven by a top-level port. %s 
+32*opt2U
+Azynq_system_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clkin1_ibufg2default:defaultZ31-32
 ^
 1Inserted %s IBUFs to IO ports without IO buffers.100*opt2
 02default:defaultZ31-140
 ^
 1Inserted %s OBUFs to IO ports without IO buffers.101*opt2
 02default:defaultZ31-141
+Ê
+ZCould not find module '%s'. The XDC file %s will not be read for any cell of this module.
+1082*designutils2)
+zynq_system_auto_cc_62default:default2æ
+©/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_cc_6/zynq_system_auto_cc_6_clocks.xdc2default:defaultZ20-1280
 C
 Pushed %s inverter(s).
 98*opt2
@@ -14357,13 +37032,15 @@ C
 |
 MSuccessfully populated the BRAM INIT strings from the following elf files: %s96*memdata2
  2default:defaultZ28-144
-≤
+è
 !Unisim Transformation Summary:
-%s111*project2ı
-‡  A total of 4 instances were transformed.
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 2 instances
+%s111*project2“
+Ω  A total of 26 instances were transformed.
+  RAM16X1D => RAM16X1D (RAMD32, RAMD32, GND): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 18 instances
   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
   SRL16 => SRL16E: 1 instances
+  SRLC32E => SRL16E: 4 instances
 2default:defaultZ1-111
 L
 Releasing license: %s
@@ -14372,9 +37049,9 @@ L
 ¿
 G%s Infos, %s Warnings, %s Critical Warnings and %s Errors encountered.
 28*	vivadotcl2
-3382default:default2
-1512default:default2
-12default:default2
+6832default:default2
+1692default:default2
+32default:default2
 02default:defaultZ4-41
 U
 %s completed successfully
@@ -14384,18 +37061,18 @@ U
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
-00:01:412default:default2
-00:01:432default:default2
-1766.9452default:default2
-1018.6172default:defaultZ17-268
+00:11:582default:default2
+00:12:022default:default2
+2113.2112default:default2
+1326.4612default:defaultZ17-268
 <
 %Done setting XDC timing constraints.
 35*timingZ38-35
 Ç
-vreport_utilization: Time (s): cpu = 00:00:00.69 ; elapsed = 00:00:00.78 . Memory (MB): peak = 1766.949 ; gain = 0.000
+vreport_utilization: Time (s): cpu = 00:00:00.89 ; elapsed = 00:00:00.98 . Memory (MB): peak = 2113.211 ; gain = 0.000
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Fri Apr 25 16:10:34 20142default:defaultZ17-206
+Wed Apr 30 11:57:27 20142default:defaultZ17-206

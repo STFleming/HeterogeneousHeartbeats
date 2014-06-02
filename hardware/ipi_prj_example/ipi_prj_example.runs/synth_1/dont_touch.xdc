@@ -19,14 +19,29 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_rst
 # IP: bd/zynq_system/ip/zynq_system_axi_mem_intercon_1/zynq_system_axi_mem_intercon_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_axi_mem_intercon_1 || ORIG_REF_NAME==zynq_system_axi_mem_intercon_1}]
 
-# IP: bd/zynq_system/ip/zynq_system_auto_pc_10/zynq_system_auto_pc_10.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_10 || ORIG_REF_NAME==zynq_system_auto_pc_10}]
-
 # IP: bd/zynq_system/ip/zynq_system_auto_pc_14/zynq_system_auto_pc_14.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_14 || ORIG_REF_NAME==zynq_system_auto_pc_14}]
 
-# IP: bd/zynq_system/ip/zynq_system_auto_pc_15/zynq_system_auto_pc_15.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_15 || ORIG_REF_NAME==zynq_system_auto_pc_15}]
+# IP: bd/zynq_system/ip/zynq_system_xbar_1/zynq_system_xbar_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_xbar_1 || ORIG_REF_NAME==zynq_system_xbar_1}]
+
+# IP: bd/zynq_system/ip/zynq_system_xbar_2/zynq_system_xbar_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_xbar_2 || ORIG_REF_NAME==zynq_system_xbar_2}]
+
+# IP: bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_clk_wiz_0_0 || ORIG_REF_NAME==zynq_system_clk_wiz_0_0}]
+
+# IP: bd/zynq_system/ip/zynq_system_hwfreqscale_simple_adder_0_1/zynq_system_hwfreqscale_simple_adder_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_hwfreqscale_simple_adder_0_1 || ORIG_REF_NAME==zynq_system_hwfreqscale_simple_adder_0_1}]
+
+# IP: bd/zynq_system/ip/zynq_system_axi_clock_converter_0_26/zynq_system_axi_clock_converter_0_26.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_axi_clock_converter_0_26 || ORIG_REF_NAME==zynq_system_axi_clock_converter_0_26}]
+
+# IP: bd/zynq_system/ip/zynq_system_auto_pc_56/zynq_system_auto_pc_56.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_56 || ORIG_REF_NAME==zynq_system_auto_pc_56}]
+
+# IP: bd/zynq_system/ip/zynq_system_auto_pc_57/zynq_system_auto_pc_57.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_57 || ORIG_REF_NAME==zynq_system_auto_pc_57}]
 
 # XDC: bd/zynq_system/ip/zynq_system_processing_system7_0_0/zynq_system_processing_system7_0_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zynq_system_processing_system7_0_0 || ORIG_REF_NAME==zynq_system_processing_system7_0_0}] {/inst }]/inst ]]
@@ -43,6 +58,27 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/zynq_system/ip/zynq_system_auto_pc_14/zynq_system_auto_pc_14_ooc.xdc
 
-# XDC: bd/zynq_system/ip/zynq_system_auto_pc_15/zynq_system_auto_pc_15_ooc.xdc
+# XDC: bd/zynq_system/ip/zynq_system_xbar_1/zynq_system_xbar_1_ooc.xdc
+
+# XDC: bd/zynq_system/ip/zynq_system_xbar_2/zynq_system_xbar_2_ooc.xdc
+
+# XDC: bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zynq_system_clk_wiz_0_0 || ORIG_REF_NAME==zynq_system_clk_wiz_0_0}] {/inst }]/inst ]]
+
+# XDC: bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_OOC.xdc
+
+# XDC: bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0_board.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zynq_system_clk_wiz_0_0 || ORIG_REF_NAME==zynq_system_clk_wiz_0_0}] {/inst }]/inst ]]
+
+# XDC: bd/zynq_system/ip/zynq_system_hwfreqscale_simple_adder_0_1/constraints/hwfreqscale_simple_adder_ooc.xdc
+
+# XDC: bd/zynq_system/ip/zynq_system_axi_clock_converter_0_26/zynq_system_axi_clock_converter_0_26_ooc.xdc
+
+# XDC: bd/zynq_system/ip/zynq_system_axi_clock_converter_0_26/zynq_system_axi_clock_converter_0_26_clocks.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zynq_system_axi_clock_converter_0_26 || ORIG_REF_NAME==zynq_system_axi_clock_converter_0_26}] {/inst }]/inst ]]
+
+# XDC: bd/zynq_system/ip/zynq_system_auto_pc_56/zynq_system_auto_pc_56_ooc.xdc
+
+# XDC: bd/zynq_system/ip/zynq_system_auto_pc_57/zynq_system_auto_pc_57_ooc.xdc
 
 # XDC: bd/zynq_system/zynq_system_ooc.xdc
