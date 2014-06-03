@@ -39,7 +39,7 @@ BPlease refer to the DRC report (report_drc) for more information.
 
 %s
 *constraints2v
-bTime (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.28 . Memory (MB): peak = 1404.449 ; gain = 11.0232default:default
+bTime (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.29 . Memory (MB): peak = 1404.449 ; gain = 11.0232default:default
 X
 
 Starting %s Task
@@ -65,11 +65,11 @@ B
 3
 'Phase 1 Retarget | Checksum: 19a764053
 *common
-‡
+Š
 
 %s
-*constraints2p
-\Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1483.270 ; gain = 78.8202default:default
+*constraints2s
+_Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.98 . Memory (MB): peak = 1483.270 ; gain = 78.8202default:default
 l
 
 Phase %s%s
@@ -144,11 +144,11 @@ Starting %s Task
 D
 8Ending PowerOpt TimerUpdates Task | Checksum: 18c77ad9b
 *common
-‰
+Œ
 
 %s
-*constraints2r
-^Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.72 . Memory (MB): peak = 1486.270 ; gain = 3.0002default:default
+*constraints2u
+aTime (s): cpu = 00:00:00.95 ; elapsed = 00:00:00.70 . Memory (MB): peak = 1486.270 ; gain = 3.0002default:default
 4
 Applying IDT optimizations ...
 9*pwroptZ34-9

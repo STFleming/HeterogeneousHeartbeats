@@ -3778,8 +3778,8 @@
 				<xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
 			</xilinx:taxonomies>
 			<xilinx:displayName>Lloyds_kernel_top</xilinx:displayName>
-			<xilinx:coreRevision>1406022337</xilinx:coreRevision>
-			<xilinx:coreCreationDateTime>2014-06-02T22:37:13Z</xilinx:coreCreationDateTime>
+			<xilinx:coreRevision>1406030954</xilinx:coreRevision>
+			<xilinx:coreCreationDateTime>2014-06-03T08:54:24Z</xilinx:coreCreationDateTime>
 		</xilinx:coreExtensions>
 		<xilinx:packagingInfo>
 			<xilinx:xilinxVersion>2013.4</xilinx:xilinxVersion>

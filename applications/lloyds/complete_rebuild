@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm ../output_bitstream/k_means_system.bit 
+
 cd ./combiner/HLS/
 vivado_hls combiner/combiner/script.tcl
 rm *.log

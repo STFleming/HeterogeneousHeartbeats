@@ -3730,8 +3730,8 @@
 				<xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
 			</xilinx:taxonomies>
 			<xilinx:displayName>Combiner_top</xilinx:displayName>
-			<xilinx:coreRevision>1406022332</xilinx:coreRevision>
-			<xilinx:coreCreationDateTime>2014-06-02T22:32:18Z</xilinx:coreCreationDateTime>
+			<xilinx:coreRevision>1406030949</xilinx:coreRevision>
+			<xilinx:coreCreationDateTime>2014-06-03T08:49:27Z</xilinx:coreCreationDateTime>
 		</xilinx:coreExtensions>
 		<xilinx:packagingInfo>
 			<xilinx:xilinxVersion>2013.4</xilinx:xilinxVersion>

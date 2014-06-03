@@ -39,20 +39,20 @@ e/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z
 Loading io standards from %s
 15*device2k
 W/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/./parts/xilinx/zynq/IOStandards.xml2default:defaultZ21-15
-ô
+õ
 Parsing XDC File [%s]
-179*designutils2½
-¨/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/.Xil/Vivado-679-ee-boxer0/dcp/combiner_top.xdc2default:defaultZ20-179
+179*designutils2¾
+©/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/.Xil/Vivado-9493-ee-boxer0/dcp/combiner_top.xdc2default:defaultZ20-179
 Ä
 DImplicit search of objects for pattern '%s' matched to '%s' objects.1744*	planAhead2
 ap_clk2default:default2
 port2default:default2Œ
 v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/combiner_top.xdc2default:default2
 12default:default8@Z12-2286
-ý
+þ
 Finished Parsing XDC File [%s]
-178*designutils2½
-¨/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/.Xil/Vivado-679-ee-boxer0/dcp/combiner_top.xdc2default:defaultZ20-178
+178*designutils2¾
+©/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner/impl/vhdl/project.runs/impl_1/.Xil/Vivado-9493-ee-boxer0/dcp/combiner_top.xdc2default:defaultZ20-178
 C
 Pushed %s inverter(s).
 98*opt2

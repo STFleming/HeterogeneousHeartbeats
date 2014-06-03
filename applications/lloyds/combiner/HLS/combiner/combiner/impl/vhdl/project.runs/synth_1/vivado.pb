@@ -40,7 +40,7 @@ Starting synthesis...
 xc7z0202default:defaultZ17-349
 ú
 %s*synth2å
-xStarting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 777.652 ; gain = 148.391
+xStarting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 776.648 ; gain = 147.391
 2default:default
 ˛
 synthesizing module '%s'638*oasys2 
@@ -1038,7 +1038,7 @@ v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combi
 master_portB_req_full_n2default:defaultZ8-3331
 ú
 %s*synth2å
-xFinished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 820.473 ; gain = 191.211
+xFinished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 820.469 ; gain = 191.211
 2default:default
 ;
 %s*synth2,
@@ -1118,11 +1118,11 @@ u
 2default:defaultZ1-111
 ∂
 %s*synth2¶
-ëFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1157.730 ; gain = 528.469
+ëFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1157.727 ; gain = 528.469
 2default:default
 û
 %s*synth2é
-zFinished RTL Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1157.730 ; gain = 528.469
+zFinished RTL Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1157.727 ; gain = 528.469
 2default:default
 Ñ
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2$
@@ -1791,7 +1791,7 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 2default:default
 ≤
 %s*synth2¢
-çFinished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1162.715 ; gain = 533.453
+çFinished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1162.711 ; gain = 533.453
 2default:default
 B
 %s*synth23
@@ -1807,11 +1807,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit       Adders := 10    
+.	   3 Input     32 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
-.	   3 Input     32 Bit       Adders := 1     
+.	   2 Input     32 Bit       Adders := 10    
 2default:default
 Q
 %s*synth2B
@@ -1827,11 +1827,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      5 Bit       Adders := 2     
+.	   2 Input      5 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      5 Bit       Adders := 1     
+.	   3 Input      5 Bit       Adders := 2     
 2default:default
 Q
 %s*synth2B
@@ -2015,11 +2015,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  18 Input     19 Bit        Muxes := 1     
+.	   2 Input     19 Bit        Muxes := 12    
 2default:default
 Q
 %s*synth2B
-.	   2 Input     19 Bit        Muxes := 12    
+.	  18 Input     19 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -2183,11 +2183,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      8 Bit        Muxes := 3     
+.	   3 Input      8 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
-.	   3 Input      8 Bit        Muxes := 4     
+.	   2 Input      8 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -3121,7 +3121,7 @@ w
 n[31]2default:defaultZ8-3331
 ™
 %s*synth2ö
-ÖFinished Cross Boundary Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1173.730 ; gain = 544.469
+ÖFinished Cross Boundary Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1173.727 ; gain = 544.469
 2default:default
 ¢
 %s*synth2í
@@ -3201,7 +3201,7 @@ R-------------------------------------------------------------------------------
 &i_4_104/\FSM_onehot_ap_CS_fsm_reg[18] 2default:defaultZ8-3333
 ü
 %s*synth2è
-{Finished Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1213.230 ; gain = 583.969
+{Finished Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1213.227 ; gain = 583.969
 2default:default
 ˛
 %s*synth2Ó
@@ -3209,11 +3209,11 @@ R-------------------------------------------------------------------------------
 2default:default
 Æ
 %s*synth2û
-âFinished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1213.230 ; gain = 583.969
+âFinished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1213.227 ; gain = 583.969
 2default:default
 °
 %s*synth2ë
-}Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1213.230 ; gain = 583.969
+}Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1213.227 ; gain = 583.969
 2default:default
 ·
 ◊The timing for the instance %s (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
@@ -3265,7 +3265,7 @@ P\centre_buffer_count_U/combiner_top_centre_buffer_0_wgtCent_value_ram_U/ram_reg
 0\p_buffer_U/combiner_top_p_buffer_ram_U/ram_reg 2default:defaultZ8-4480
 †
 %s*synth2ê
-|Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1251.496 ; gain = 622.234
+|Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1251.492 ; gain = 622.234
 2default:default
 D
 %s*synth25
@@ -3273,7 +3273,7 @@ D
 2default:default
 ö
 %s*synth2ä
-vFinished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1251.496 ; gain = 622.234
+vFinished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1251.492 ; gain = 622.234
 2default:default
 ;
 %s*synth2,
@@ -3302,11 +3302,11 @@ I+------+------------------+-------+---------+-------+------------------+
 2default:default
 ´
 %s*synth2õ
-ÜFinished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1251.496 ; gain = 622.234
+ÜFinished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1251.492 ; gain = 622.234
 2default:default
 ®
 %s*synth2ò
-ÉFinished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1251.496 ; gain = 622.234
+ÉFinished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1251.492 ; gain = 622.234
 2default:default
 ¢
 %s*synth2í
@@ -4309,7 +4309,7 @@ Report Instance Areas:
 2default:default
 ß
 %s*synth2ó
-ÇFinished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1251.496 ; gain = 622.234
+ÇFinished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1251.492 ; gain = 622.234
 2default:default
 l
 %s*synth2]
@@ -4317,7 +4317,7 @@ ISynthesis finished with 0 errors, 0 critical warnings and 2465 warnings.
 2default:default
 •
 %s*synth2ï
-ÄSynthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1251.496 ; gain = 622.234
+ÄSynthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1251.492 ; gain = 622.234
 2default:default
 \
 -Analyzing %s Unisim elements for replacement
@@ -4356,17 +4356,17 @@ I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
 00:00:522default:default2
-00:00:532default:default2
-1584.9802default:default2
-859.3282default:defaultZ17-268
+00:00:542default:default2
+1585.9772default:default2
+860.3282default:defaultZ17-268
 <
 %Done setting XDC timing constraints.
 35*timingZ38-35
 Ç
-vreport_utilization: Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.73 . Memory (MB): peak = 1587.996 ; gain = 2.012
+vreport_utilization: Time (s): cpu = 00:00:00.60 ; elapsed = 00:00:00.75 . Memory (MB): peak = 1588.992 ; gain = 2.012
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Mon Jun  2 23:33:26 20142default:defaultZ17-206
+Tue Jun  3 09:50:36 20142default:defaultZ17-206
