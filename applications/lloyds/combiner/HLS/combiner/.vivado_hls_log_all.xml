@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Setting dangling out port 'combiner_top/master_portB_dataout' to 0." projectName="combiner" solutionName="combiner" date="2014-06-01T16:09:20.686+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'distortion_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="combiner" solutionName="combiner" date="2014-06-01T16:09:20.637+0100" type="Warning"/>
+        <logs message="@W [SCHED-69] Unable to schedule 'store' operation (combiner/source/combiner_top.cpp:126) of variable 'tmp_30_2' on array 'c_buffer' due to limited memory ports." projectName="combiner" solutionName="combiner" date="2014-06-01T16:09:20.455+0100" type="Warning"/>
+        <logs message="@W [HLS-40] No /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/solution1/solution1.aps file found." projectName="combiner" solutionName="combiner" date="2014-06-01T16:09:05.650+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="@W [HLS-40] No /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/solution1/solution1.aps file found." projectName="combiner" solutionName="combiner" date="2014-06-01T16:09:55.364+0100" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

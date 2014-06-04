@@ -63,7 +63,7 @@ void store_output_buffer(uint offset, output_type *buffer, uint address, volatil
 
 	}
 
-	memcpy((bus_type *)(bus + (offset + address)/4), int_buffer, B*2*sizeof(int));
+	memcpy((bus_type *)(bus + (offset + address)/4 ), int_buffer, B*2*sizeof(int));
 
 }
 

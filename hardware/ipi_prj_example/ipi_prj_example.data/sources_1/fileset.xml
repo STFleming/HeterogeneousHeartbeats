@@ -34,6 +34,7 @@
       <Option Name="TopModule" Val="zynq_system_wrapper"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
       <Option Name="IPRepoPath" Val="$PPRDIR/../hhb_ip_repository/hhb_query"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../hhb_ip_repository/hwfreqscale_simple_adder"/>
     </Config>
   </FileSet>
 </DARoots>

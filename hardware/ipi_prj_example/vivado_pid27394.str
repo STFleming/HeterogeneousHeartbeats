@@ -1,0 +1,2204 @@
+/*
+
+Vivado v2013.4 (64-bit)
+SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+Process ID: 27394
+
+Current time: 	4/29/14 11:41:21 AM
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: DISTRIB_ID=Ubuntu
+Version: 2.6.32-41-server
+Architecture: amd64
+Available processors (cores): 12
+
+DISPLAY: localhost:11.0
+Screen size: 2760x1920
+Screen resolution (DPI): 96
+Available screens: 2
+
+Java version: 	1.7.0_40 64-bit
+Java home: 	/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/tps/lnx64/jre
+
+User name: 	sf306
+User directory: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+GUI Allocated memory:	137 mb
+GUI Max memory:		3,066 mb
+Engine Allocated memory: 4220 mb
+
+*/
+
+// TclEventType: START_GUI
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 11:41:22 AM
+// [GUI Memory]: 59 mb (+59454kb) [00:00:25]
+// [Engine Memory]: 4,217 mb (+4270656kb) [00:00:25]
+selectButton (PAResourceAtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // h:j (JPanel:JComponent, bT:JFrame)
+// [GUI Memory]: 61 mb (+1783kb) [00:00:50]
+selectMenuItem ((HResource) null, "/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.xpr"); // ah:JMenuItem (al:JPopupMenu, Popup:JWindow)
+// cb:I (bT:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 11:42:02 AM
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 75 mb (+15154kb) [00:00:56]
+// [Engine Memory]: 4,268 mb (+53501kb) [00:00:56]
+// [Engine Memory]: 4,275 mb (+6774kb) [00:00:57]
+// [GUI Memory]: 94 mb (+19991kb) [00:00:58]
+// [Engine Memory]: 4,280 mb (+5087kb) [00:00:58]
+// [Engine Memory]: 4,286 mb (+6291kb) [00:00:58]
+// [GUI Memory]: 95 mb (+992kb) [00:00:59]
+// [Engine Memory]: 4,293 mb (+7585kb) [00:00:59]
+// [GUI Memory]: 117 mb (+22396kb) [00:01:00]
+// [Engine Memory]: 4,337 mb (+45776kb) [00:01:00]
+// [GUI Memory]: 120 mb (+4084kb) [00:01:00]
+// [Engine Memory]: 4,346 mb (+9830kb) [00:01:00]
+// [GUI Memory]: 121 mb (+852kb) [00:01:00]
+// [GUI Memory]: 124 mb (+3154kb) [00:01:00]
+// Tcl Message: open_project /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hhb_query'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hwfreqscale_simple_adder'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 5021.293 ; gain = 109.594 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 12 seconds
+dismissDialog ("Open Project"); // cb:I (bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 4,358 mb (+12902kb) [00:01:10]
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 42 seconds
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_system_wrapper (zynq_system_wrapper.v)]", 1); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_system_wrapper (zynq_system_wrapper.v), zynq_system_i - zynq_system (zynq_system.bd)]", 2); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_system_wrapper (zynq_system_wrapper.v), zynq_system_i - zynq_system (zynq_system.bd)]", 2, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// cb:I (bT:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: PARAM_UPDATED
+// Tcl Message: open_bd_design {/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd} 
+// Tcl Message: Adding component instance block -- xilinx.com:ip:processing_system7:5.3 - processing_system7_0 
+// TclEventType: PARAM_UPDATED
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: RSB_PROPERTY_CHANGE
+// [Engine Memory]: 4,358 mb (+16kb) [00:01:53]
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_50M 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:clk_wiz:5.1 - clk_wiz_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: PARAM_UPDATED
+// Tcl Message: Adding component instance block -- sfleming:HHB:hhb_query:1.0 - hhb_query_0 Adding component instance block -- sfleming:HHB:hwfreqscale_simple_adder:1.0 - hwfreqscale_simple_adder_0 Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 4,361 mb (+3158kb) [00:01:59]
+// [Engine Memory]: 4,365 mb (+3842kb) [00:01:59]
+// [Engine Memory]: 4,369 mb (+4767kb) [00:01:59]
+// [Engine Memory]: 4,370 mb (+1048kb) [00:01:59]
+// [GUI Memory]: 126 mb (+2214kb) [00:01:59]
+// [Engine Memory]: 4,373 mb (+2842kb) [00:01:59]
+// [Engine Memory]: 4,377 mb (+3932kb) [00:01:59]
+// [Engine Memory]: 4,381 mb (+4136kb) [00:01:59]
+// [Engine Memory]: 4,384 mb (+3670kb) [00:01:59]
+// [Engine Memory]: 4,387 mb (+3055kb) [00:01:59]
+// [Engine Memory]: 4,388 mb (+1048kb) [00:02:00]
+// [Engine Memory]: 4,391 mb (+3145kb) [00:02:00]
+// [Engine Memory]: 4,398 mb (+7184kb) [00:02:00]
+// [GUI Memory]: 129 mb (+2235kb) [00:02:00]
+// [Engine Memory]: 4,405 mb (+6930kb) [00:02:00]
+// [Engine Memory]: 4,407 mb (+2195kb) [00:02:00]
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Successfully read diagram <zynq_system> from BD file </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd> 
+// [Engine Memory]: 4,412 mb (+5087kb) [00:02:00]
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 11:43:07 AM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 5099.309 ; gain = 65.711 
+// Elapsed time: 12 seconds
+dismissDialog ("Open Block Design"); // cb:I (bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 26 seconds
+selectButton (PAResourceQtoZ.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h:j (JPanel:JComponent, bT:JFrame)
+selectMenuItem ((HResource) null, "/clk_wiz_0/s_axi_lite"); // ah:JMenuItem (al:JPopupMenu, Popup:JWindow)
+// o:u (bT:JFrame): Run Connection Automation: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, o:u)
+dismissDialog ("Run Connection Automation"); // o:u (bT:JFrame)
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" }  [get_bd_intf_pins clk_wiz_0/s_axi_lite] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// cb:I (bT:JFrame):  Run Connection Automation : addNotify
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: </clk_wiz_0/s_axi_lite/Reg> is being mapped into </processing_system7_0/Data> at <0x43C20000[ 64K ]> 
+dismissDialog ("Run Connection Automation"); // cb:I (bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+// Elapsed time: 39 seconds
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15); // w:Q (v:u, bT:JFrame)
+// af:bw (bT:JFrame): Run Synthesis: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, af:bw)
+// aT:X (bT:JFrame): Save Project: addNotify
+dismissDialog ("Run Synthesis"); // af:bw (bT:JFrame)
+selectButton (PAResourceQtoZ.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aT:X)
+// cb:I (bT:JFrame):  Save Design : addNotify
+dismissDialog ("Save Project"); // aT:X (bT:JFrame)
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd>  
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: launch_runs synth_1 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// [GUI Memory]: 133 mb (+5193kb) [00:04:10]
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S00_AXI(1) and /hhb_query_0/M_AXI_A(0) INFO: [BD 41-237] Bus Interface property NUM_READ_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) INFO: [BD 41-237] Bus Interface property NUM_WRITE_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) 
+// Tcl Message: Verilog Output written to : zynq_system.v Verilog Output written to : zynq_system_wrapper.v 
+// TclEventType: RSB_SCRIPT_TASK
+// [GUI Memory]: 146 mb (+13382kb) [00:04:20]
+// [Engine Memory]: 4,485 mb (+77258kb) [00:04:20]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 11:45:27 AM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// Tcl Message: Wrote  : </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd>  
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block /processing_system7_0_axi_periph/xbar . INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'zynq_system_clk_wiz_0_0'... 
+// TclEventType: PARAM_UPDATED
+// [Engine Memory]: 4,493 mb (+7864kb) [00:04:30]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 29 11:45:38 2014] Launched synth_1... Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 5180.488 ; gain = 81.180 
+// az:a (bT:JFrame): Launch Run Critical Messages: addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 41 seconds
+selectButton (PAResourceAtoH.CmdMsgDialog_OK, "OK"); // g:a (JPanel:JComponent, az:a)
+// 'q' command handler elapsed time: 54 seconds
+dismissDialog ("Launch Run Critical Messages"); // az:a (bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+// [Engine Memory]: 4,498 mb (+5087kb) [00:04:46]
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3.5 2147 502} [get_bd_cells hhb_query_0] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net -net [get_bd_nets rst_processing_system7_0_50M_peripheral_aresetn] [get_bd_pins clk_wiz_0/s_axi_aresetn] [get_bd_pins rst_processing_system7_0_50M/peripheral_aresetn] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 4,501 mb (+3244kb) [00:05:55]
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd>  
+// Elapsed time: 81 seconds
+selectButton (PAResourceQtoZ.StateMonitor_CANCEL, "Cancel"); // a:JButton (v:JPanel, bT:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+selectButton ((HResource) null, "Delete Files"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// Tcl Message: reset_run synth_1 
+// [Engine Memory]: 4,510 mb (+9641kb) [00:06:09]
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15); // w:Q (v:u, bT:JFrame)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_SCRIPT_TASK
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 11:47:17 AM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: launch_runs synth_1 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S00_AXI(1) and /hhb_query_0/M_AXI_A(0) INFO: [BD 41-237] Bus Interface property NUM_READ_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) INFO: [BD 41-237] Bus Interface property NUM_WRITE_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) 
+// Tcl Message: Verilog Output written to : zynq_system.v Verilog Output written to : zynq_system_wrapper.v Wrote  : </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd>  
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 29 11:47:27 2014] Launched synth_1... Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 5197.629 ; gain = 0.000 
+// 'q' command handler elapsed time: 11 seconds
+// Elapsed time: 11 seconds
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 4,516 mb (+6348kb) [00:11:00]
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 718 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 29 11:59:27 2014] Launched impl_1... Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/runme.log 
+// [Engine Memory]: 4,521 mb (+5087kb) [00:18:22]
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 11:59:37 AM
+// [Engine Memory]: 4,530 mb (+9281kb) [00:18:45]
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Implementation Completed: addNotify
+// Elapsed time: 252 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// cb:I (bT:JFrame):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 4,647 mb (+122978kb) [00:22:40]
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 12:03:47 PM
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// [Engine Memory]: 5,137 mb (+513556kb) [00:22:56]
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 5,247 mb (+115908kb) [00:23:02]
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 12:04:08 PM
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 5,291 mb (+46137kb) [00:23:02]
+// [Engine Memory]: 5,438 mb (+153763kb) [00:23:03]
+// [GUI Memory]: 147 mb (+761kb) [00:23:05]
+// [GUI Memory]: 148 mb (+1479kb) [00:23:05]
+// [GUI Memory]: 149 mb (+917kb) [00:23:05]
+// [GUI Memory]: 151 mb (+1479kb) [00:23:05]
+// [GUI Memory]: 152 mb (+1479kb) [00:23:05]
+// [GUI Memory]: 153 mb (+917kb) [00:23:05]
+// [GUI Memory]: 154 mb (+1173kb) [00:23:05]
+// [GUI Memory]: 156 mb (+1479kb) [00:23:05]
+// [GUI Memory]: 156 mb (+391kb) [00:23:05]
+// [GUI Memory]: 157 mb (+872kb) [00:23:05]
+// [GUI Memory]: 158 mb (+1163kb) [00:23:05]
+// [GUI Memory]: 159 mb (+1308kb) [00:23:05]
+// [GUI Memory]: 160 mb (+872kb) [00:23:05]
+// [GUI Memory]: 161 mb (+872kb) [00:23:05]
+// [GUI Memory]: 173 mb (+13157kb) [00:23:07]
+// Device: addNotify
+// [GUI Memory]: 174 mb (+883kb) [00:23:07]
+// [GUI Memory]: 178 mb (+4377kb) [00:23:07]
+// [GUI Memory]: 182 mb (+3547kb) [00:23:08]
+// TclEventType: CURR_DESIGN_SET
+// [GUI Memory]: 184 mb (+2596kb) [00:23:08]
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2013.4 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0.xdc:56] INFO: [Timing 38-2] Deriving generated clocks [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0.xdc:56] 
+// Tcl Message: Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/.Xil/Vivado-27394-ee-boxer0/dcp/zynq_system_wrapper.xdc] Reading XDEF placement. Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 5914.465 ; gain = 14.000 
+// Tcl Message: Restoring placement. Restored 5396 out of 5396 XDEF sites from archive | CPU: 3.660000 secs | Memory: 40.521996 MB | 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s). INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files:  INFO: [Project 1-111] Unisim Transformation Summary:   A total of 47 instances were transformed.   RAM16X1D => RAM16X1D (RAMD32, RAMD32, GND): 4 instances   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 42 instances   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances  
+// TclEventType: CURR_DESIGN_SET
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:55 ; elapsed = 00:00:35 . Memory (MB): peak = 6125.617 ; gain = 908.230 
+// 'dd' command handler elapsed time: 36 seconds
+// [GUI Memory]: 185 mb (+502kb) [00:23:11]
+// [GUI Memory]: 185 mb (+781kb) [00:23:11]
+// [GUI Memory]: 186 mb (+781kb) [00:23:11]
+// [GUI Memory]: 187 mb (+781kb) [00:23:11]
+// Elapsed time: 37 seconds
+dismissDialog ("Open Implemented Design"); // cb:I (bT:JFrame)
+// [GUI Memory]: 196 mb (+9208kb) [00:23:15]
+// Elapsed time: 58 seconds
+selectTab ((HResource) null, (HResource) null, "Sources", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_system_wrapper (zynq_system_wrapper.v)]", 1); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_system_wrapper (zynq_system_wrapper.v), zynq_system_i - zynq_system (zynq_system.bd)]", 2); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_system_wrapper (zynq_system_wrapper.v), zynq_system_i - zynq_system (zynq_system.bd)]", 2, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// cb:I (bT:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd} 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [GUI Memory]: 198 mb (+2288kb) [00:24:15]
+dismissDialog ("Open Block Design"); // cb:I (bT:JFrame)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// cb:I (bT:JFrame):  Re-customize IP : addNotify
+// TclEventType: PARAM_UPDATED
+// q:I (bT:JFrame): Re-customize IP: addNotify
+// Elapsed time: 36 seconds
+dismissDialog ("Re-customize IP"); // cb:I (bT:JFrame)
+// [GUI Memory]: 208 mb (+10867kb) [00:25:00]
+// Elapsed time: 14 seconds
+selectTab (PAResourceQtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 1); // bW:g (t:JPanel, q:I)
+selectRadioButton ((HResource) null, "MMCM"); // bR:a
+// Elapsed time: 21 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, q:I)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CANVAS_LOCATION
+// [GUI Memory]: 213 mb (+4913kb) [00:25:31]
+// [GUI Memory]: 215 mb (+1749kb) [00:25:31]
+// [GUI Memory]: 215 mb (+879kb) [00:25:31]
+// [GUI Memory]: 216 mb (+874kb) [00:25:31]
+// [GUI Memory]: 217 mb (+874kb) [00:25:31]
+// TclEventType: RSB_BLOCK_SIZE
+// Tcl Message: startgroup set_property -dict [list CONFIG.PRIMITIVE {MMCM}] [get_bd_cells clk_wiz_0] 
+// cb:I (q:I):  Customize IP : addNotify
+// Tcl Message: endgroup 
+dismissDialog ("Customize IP"); // cb:I (q:I)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// [GUI Memory]: 230 mb (+13620kb) [00:25:33]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 5,439 mb (+1048kb) [00:25:37]
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15); // w:Q (v:u, bT:JFrame)
+// af:bw (bT:JFrame): Run Synthesis: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, af:bw)
+// aT:X (bT:JFrame): Save Project: addNotify
+dismissDialog ("Run Synthesis"); // af:bw (bT:JFrame)
+// Elapsed time: 61 seconds
+selectButton (PAResourceQtoZ.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aT:X)
+// cb:I (bT:JFrame):  Save Design : addNotify
+dismissDialog ("Save Project"); // aT:X (bT:JFrame)
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd>  
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// Tcl Message: reset_run synth_1 
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: launch_runs synth_1 
+// TclEventType: RSB_REMOVE_OBJECT
+// [GUI Memory]: 232 mb (+2150kb) [00:26:56]
+// TclEventType: RSB_REMOVE_OBJECT
+// [GUI Memory]: 244 mb (+12173kb) [00:26:57]
+// TclEventType: RSB_REMOVE_OBJECT
+// [GUI Memory]: 249 mb (+5688kb) [00:26:57]
+// TclEventType: RSB_REMOVE_OBJECT
+// [GUI Memory]: 262 mb (+13134kb) [00:26:58]
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 6125.617 ; gain = 0.000 
+// TclEventType: RSB_REMOVE_OBJECT
+// [GUI Memory]: 262 mb (+56kb) [00:27:01]
+// TclEventType: RSB_REMOVE_OBJECT
+// [GUI Memory]: 265 mb (+3107kb) [00:27:02]
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// [GUI Memory]: 277 mb (+13171kb) [00:27:02]
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// [GUI Memory]: 286 mb (+9049kb) [00:27:21]
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// Tcl Message: INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S00_AXI(1) and /hhb_query_0/M_AXI_A(0) INFO: [BD 41-237] Bus Interface property NUM_READ_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) INFO: [BD 41-237] Bus Interface property NUM_WRITE_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) 
+// Tcl Message: Verilog Output written to : zynq_system.v Verilog Output written to : zynq_system_wrapper.v Wrote  : </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd>  
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 29 12:08:43 2014] Launched synth_1... Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:54 ; elapsed = 00:00:44 . Memory (MB): peak = 6125.617 ; gain = 0.000 
+// 'q' command handler elapsed time: 117 seconds
+// Elapsed time: 49 seconds
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 12:11:07 PM
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 818 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 29 12:22:24 2014] Launched impl_1... Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/runme.log 
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Implementation Completed: addNotify
+// Elapsed time: 305 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// cb:I (bT:JFrame):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 12:27:36 PM
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 12:27:56 PM
+// [Engine Memory]: 5,466 mb (+27893kb) [00:46:50]
+// Device: addNotify
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 86 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2013.4 
+// Tcl Message: Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/.Xil/Vivado-27394-ee-boxer0/dcp/zynq_system_wrapper_early.xdc] Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/.Xil/Vivado-27394-ee-boxer0/dcp/zynq_system_wrapper_early.xdc] Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/.Xil/Vivado-27394-ee-boxer0/dcp/zynq_system_wrapper.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0.xdc:56] INFO: [Timing 38-2] Deriving generated clocks [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0.xdc:56] 
+// Tcl Message: Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/.Xil/Vivado-27394-ee-boxer0/dcp/zynq_system_wrapper.xdc] Reading XDEF placement. Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 6125.617 ; gain = 0.000 
+// Tcl Message: Restoring placement. Restored 6527 out of 6527 XDEF sites from archive | CPU: 4.430000 secs | Memory: 51.236008 MB | 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s). INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files:  
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:29 . Memory (MB): peak = 6153.219 ; gain = 27.602 
+// Device view-level: 0.0
+// Elapsed time: 33 seconds
+dismissDialog ("Reloading"); // cb:I (bT:JFrame)
+// Elapsed time: 206 seconds
+selectTable (PAResourceAtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Vivado Synthesis Report ; Tue Apr 29 12:22:00 BST 2014 ; 769755", 1); // C:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Vivado Synthesis Report ; Tue Apr 29 12:22:00 BST 2014 ; 769755", 1, false, false, false, false, true); // C:aj (JViewport:JComponent, bT:JFrame) - DOUBLE CLICK
+selectCodeEditor ("Vivado Synthesis Report - synth_1", 244, 130); // K:aR (JPanel:JComponent, bT:JFrame)
+// Elapsed time: 34 seconds
+selectCodeEditor ("Vivado Synthesis Report - synth_1", 144, 429); // K:aR (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("Vivado Synthesis Report - synth_1", 139, 438); // K:aR (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("Vivado Synthesis Report - synth_1", 219, 448, false, false, false, true, false); // K:aR (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("Vivado Synthesis Report - synth_1", 238, 436); // K:aR (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("Vivado Synthesis Report - synth_1", 251, 444); // K:aR (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("Vivado Synthesis Report - synth_1", 140, 445); // K:aR (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("Vivado Synthesis Report - synth_1", 457, 446, false, false, false, true, false); // K:aR (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceItoP.PACodeView_COPY, "Copy"); // ah:JMenuItem (al:JPopupMenu, Popup:JWindow)
+// Elapsed time: 167 seconds
+selectTable (PAResourceAtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Utilization Report ; Tue Apr 29 12:21:59 BST 2014 ; 6470", 2); // C:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Utilization Report ; Tue Apr 29 12:21:59 BST 2014 ; 6470", 2, false, false, false, false, true); // C:aj (JViewport:JComponent, bT:JFrame) - DOUBLE CLICK
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 12:36:24 PM
+// Elapsed time: 79 seconds
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_system_wrapper (zynq_system_wrapper.v)]", 1); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_system_wrapper (zynq_system_wrapper.v), zynq_system_i - zynq_system (zynq_system.bd)]", 2); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_system_wrapper (zynq_system_wrapper.v), zynq_system_i - zynq_system (zynq_system.bd)]", 2, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// cb:I (bT:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd} 
+dismissDialog ("Open Block Design"); // cb:I (bT:JFrame)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// cb:I (bT:JFrame):  Re-customize IP : addNotify
+// TclEventType: PARAM_UPDATED
+// q:I (bT:JFrame): Re-customize IP: addNotify
+dismissDialog ("Re-customize IP"); // cb:I (bT:JFrame)
+// [Engine Memory]: 5,474 mb (+8355kb) [00:55:50]
+// Elapsed time: 20 seconds
+selectTab (PAResourceQtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 1); // bW:g (t:JPanel, q:I)
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 12:41:07 PM
+// Elapsed time: 253 seconds
+selectTab (PAResourceQtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 2); // bW:g (t:JPanel, q:I)
+// Elapsed time: 17 seconds
+selectTab (PAResourceQtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // bW:g (t:JPanel, q:I)
+// Elapsed time: 17 seconds
+selectTab (PAResourceQtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 4); // bW:g (t:JPanel, q:I)
+// Elapsed time: 14 seconds
+selectTab (PAResourceQtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 5); // bW:g (t:JPanel, q:I)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, q:I)
+// Tcl Message: startgroup endgroup 
+// Elapsed time: 38 seconds
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 433, 356, 763, 507, false, false, false, true, false); // cA:aC (TdiGroup:JideTabbedPane, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "Validate Design"); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// cb:I (bT:JFrame):  Validate Design : addNotify
+// Tcl Message: validate_bd_design 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 6161.184 ; gain = 0.000 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// [GUI Memory]: 288 mb (+1813kb) [01:01:57]
+// TclEventType: RSB_REMOVE_OBJECT
+// [GUI Memory]: 289 mb (+1769kb) [01:01:57]
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// [GUI Memory]: 295 mb (+6393kb) [01:01:58]
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// Tcl Message: INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S00_AXI(1) and /hhb_query_0/M_AXI_A(0) INFO: [BD 41-237] Bus Interface property NUM_READ_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) INFO: [BD 41-237] Bus Interface property NUM_WRITE_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) 
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 6161.184 ; gain = 0.000 
+// Tcl Message: success 
+// Elapsed time: 31 seconds
+dismissDialog ("Validate Design"); // cb:I (bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 283 seconds
+selectButton ((HResource) null, "OK"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// Elapsed time: 167 seconds
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31); // w:Q (v:u, bT:JFrame)
+// aT:X (bT:JFrame): Save Project: addNotify
+selectButton (PAResourceQtoZ.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aT:X)
+// cb:I (bT:JFrame):  Save Design : addNotify
+dismissDialog ("Save Project"); // aT:X (bT:JFrame)
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd>  
+// TclEventType: DG_GRAPH_STALE
+// af:bw (bT:JFrame): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 297 mb (+1345kb) [01:09:49]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// [GUI Memory]: 299 mb (+2023kb) [01:09:49]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton (RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, af:bw)
+// 'bF' command handler elapsed time: 10 seconds
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 308 mb (+9555kb) [01:09:53]
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog ("Synthesis is Out-of-date"); // af:bw (bT:JFrame)
+dismissDialog ("Synthesis is Out-of-date"); // af:bw (bT:JFrame)
+// Tcl Message: reset_run synth_1 
+closeView (PAResourceItoP.PAViews_PAR_REPORT, "PAR Report"); // c:I
+closeView (PAResourceItoP.PAViews_PAR_REPORT, "PAR Report"); // c:I
+// cb:I (bT:JFrame):  Generate Bitstream : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// [GUI Memory]: 313 mb (+5852kb) [01:10:10]
+// TclEventType: RSB_REMOVE_OBJECT
+// [GUI Memory]: 314 mb (+246kb) [01:10:10]
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S00_AXI(1) and /hhb_query_0/M_AXI_A(0) INFO: [BD 41-237] Bus Interface property NUM_READ_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) INFO: [BD 41-237] Bus Interface property NUM_WRITE_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: Verilog Output written to : zynq_system.v Verilog Output written to : zynq_system_wrapper.v Wrote  : </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd>  
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 29 12:51:33 2014] Launched synth_1... Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/runme.log [Tue Apr 29 12:51:33 2014] Launched impl_1... Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 6161.184 ; gain = 0.000 
+// Elapsed time: 33 seconds
+dismissDialog ("Generate Bitstream"); // cb:I (bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// [Engine Memory]: 5,478 mb (+4194kb) [01:25:30]
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 1:11:07 PM
+// Elapsed time: 1587 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+dismissDialog ("Bitstream Generation Completed"); // O:af (bT:JFrame)
+// Elapsed time: 560 seconds
+selectMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+// Elapsed time: 19 seconds
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_EXPORT, "Export"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem (PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ah:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+// Elapsed time: 11 seconds
+setFileChooser ("/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/configuration_bitstreams/hhb_example_system.bit");
+// 'a' command handler elapsed time: 11 seconds
+// [Engine Memory]: 5,478 mb (+233kb) [01:46:50]
+selectButton ((HResource) null, "OK"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// Tcl Message: file copy -force /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/zynq_system_wrapper.bit /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/configuration_bitstreams/hhb_example_system.bit 
+selectButton ((HResource) null, "OK"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// cb:I (bT:JFrame):  Re-customize IP : addNotify
+// TclEventType: PARAM_UPDATED
+// q:I (bT:JFrame): Re-customize IP: addNotify
+// Elapsed time: 205 seconds
+dismissDialog ("Re-customize IP"); // cb:I (bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 1:31:28 PM
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, q:I)
+// [Engine Memory]: 5,496 mb (+19398kb) [01:50:22]
+// Tcl Message: startgroup endgroup 
+// cb:I (bT:JFrame):  Re-customize IP : addNotify
+// TclEventType: PARAM_UPDATED
+// q:I (bT:JFrame): Re-customize IP: addNotify
+dismissDialog ("Re-customize IP"); // cb:I (bT:JFrame)
+// Elapsed time: 12 seconds
+selectTab (PAResourceQtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 1); // bW:g (t:JPanel, q:I)
+selectTab (PAResourceQtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 2); // bW:g (t:JPanel, q:I)
+selectTab (PAResourceQtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 2); // bW:g (t:JPanel, q:I)
+selectButton (RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, q:I)
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 2406 716} [get_bd_cells hhb_query_0] 
+// Elapsed time: 47 seconds
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 292, 114, 763, 507, false, false, false, true, false); // cA:aC (TdiGroup:JideTabbedPane, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_DISCONNECT_RSB_PIN, "Disconnect Pin"); // ah:JMenuItem (al:JPopupMenu, Popup:JWindow)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: disconnect_bd_net /clk_wiz_0_clk_out1 [get_bd_pins clk_wiz_0/s_axi_aclk] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net -net [get_bd_nets processing_system7_0_FCLK_CLK0] [get_bd_pins clk_wiz_0/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] 
+// Elapsed time: 75 seconds
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15); // w:Q (v:u, bT:JFrame)
+// af:bw (bT:JFrame): Run Synthesis: addNotify
+// Elapsed time: 58 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, af:bw)
+// aT:X (bT:JFrame): Save Project: addNotify
+dismissDialog ("Run Synthesis"); // af:bw (bT:JFrame)
+selectButton (PAResourceQtoZ.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aT:X)
+// cb:I (bT:JFrame):  Save Design : addNotify
+dismissDialog ("Save Project"); // aT:X (bT:JFrame)
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd>  
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: launch_runs synth_1 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S00_AXI(1) and /hhb_query_0/M_AXI_A(0) INFO: [BD 41-237] Bus Interface property NUM_READ_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) INFO: [BD 41-237] Bus Interface property NUM_WRITE_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) 
+// Tcl Message: ERROR: [BD 41-237] Bus Interface property CLK_DOMAIN does not match between /clk_wiz_0/s_axi_lite(zynq_system_processing_system7_0_0_FCLK_CLK0) and /processing_system7_0_axi_periph/m02_couplers/auto_cc/M_AXI(zynq_system_clk_wiz_0_0_clk_out1) ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd  
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S00_AXI(1) and /hhb_query_0/M_AXI_A(0) INFO: [BD 41-237] Bus Interface property NUM_READ_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) INFO: [BD 41-237] Bus Interface property NUM_WRITE_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) 
+// Tcl Message: ERROR: [BD 41-237] Bus Interface property CLK_DOMAIN does not match between /clk_wiz_0/s_axi_lite(zynq_system_processing_system7_0_0_FCLK_CLK0) and /processing_system7_0_axi_periph/m02_couplers/auto_cc/M_AXI(zynq_system_clk_wiz_0_0_clk_out1) ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd  
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 29 13:35:27 2014] Launched synth_1... Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 6183.906 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'launch_runs' failed due to earlier errors. 
+// az:a (bT:JFrame): Launch Run Critical Messages: addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_FAILED
+// O:af (bT:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 146 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+dismissDialog ("Synthesis Failed"); // O:af (bT:JFrame)
+// Elapsed time: 82 seconds
+selectButton (PAResourceAtoH.CmdMsgDialog_OK, "OK"); // g:a (JPanel:JComponent, az:a)
+// 'q' command handler elapsed time: 292 seconds
+dismissDialog ("Launch Run Critical Messages"); // az:a (bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 1:41:07 PM
+// Elapsed time: 797 seconds
+maximizeView (PAResourceItoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O:J (Workspace:JPanel, bT:JFrame)
+// Elapsed time: 32 seconds
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 662, 56, 1128, 748, false, false, false, true, false); // cA:aC (TdiGroup:JideTabbedPane, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "Regenerate Layout"); // ah:JMenuItem (al:JPopupMenu, Popup:JWindow)
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// Elapsed time: 199 seconds
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15); // w:Q (v:u, bT:JFrame)
+// aT:X (bT:JFrame): Save Project: addNotify
+selectButton (PAResourceQtoZ.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aT:X)
+// cb:I (bT:JFrame):  Save Design : addNotify
+dismissDialog ("Save Project"); // aT:X (bT:JFrame)
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd>  
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_GRAPH_STALE
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: launch_runs synth_1 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S00_AXI(1) and /hhb_query_0/M_AXI_A(0) INFO: [BD 41-237] Bus Interface property NUM_READ_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) INFO: [BD 41-237] Bus Interface property NUM_WRITE_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) 
+// Tcl Message: ERROR: [BD 41-237] Bus Interface property CLK_DOMAIN does not match between /clk_wiz_0/s_axi_lite(zynq_system_processing_system7_0_0_FCLK_CLK0) and /processing_system7_0_axi_periph/m02_couplers/auto_cc/M_AXI(zynq_system_clk_wiz_0_0_clk_out1) ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd  
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S00_AXI(1) and /hhb_query_0/M_AXI_A(0) INFO: [BD 41-237] Bus Interface property NUM_READ_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) INFO: [BD 41-237] Bus Interface property NUM_WRITE_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) 
+// Tcl Message: ERROR: [BD 41-237] Bus Interface property CLK_DOMAIN does not match between /clk_wiz_0/s_axi_lite(zynq_system_processing_system7_0_0_FCLK_CLK0) and /processing_system7_0_axi_periph/m02_couplers/auto_cc/M_AXI(zynq_system_clk_wiz_0_0_clk_out1) ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 29 13:56:31 2014] Launched synth_1... Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 6183.906 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'launch_runs' failed due to earlier errors. 
+// az:a (bT:JFrame): Launch Run Critical Messages: addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_FAILED
+// O:af (bT:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 186 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+dismissDialog ("Synthesis Failed"); // O:af (bT:JFrame)
+// Elapsed time: 20 seconds
+selectButton (PAResourceAtoH.CmdMsgDialog_OK, "OK"); // g:a (JPanel:JComponent, az:a)
+// 'q' command handler elapsed time: 210 seconds
+dismissDialog ("Launch Run Critical Messages"); // az:a (bT:JFrame)
+// Elapsed time: 40 seconds
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 251, 232, 1128, 505, false, false, false, true, false); // cA:aC (TdiGroup:JideTabbedPane, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_DISCONNECT_RSB_PIN, "Disconnect Pin"); // ah:JMenuItem (al:JPopupMenu, Popup:JWindow)
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: disconnect_bd_net /clk_wiz_0_clk_out1 [get_bd_pins processing_system7_0_axi_periph/M02_ACLK] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net -net [get_bd_nets processing_system7_0_FCLK_CLK0] [get_bd_pins processing_system7_0_axi_periph/M02_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0] 
+// Elapsed time: 60 seconds
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15); // w:Q (v:u, bT:JFrame)
+// aT:X (bT:JFrame): Save Project: addNotify
+selectButton (PAResourceQtoZ.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aT:X)
+// cb:I (bT:JFrame):  Save Design : addNotify
+dismissDialog ("Save Project"); // aT:X (bT:JFrame)
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd>  
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: launch_runs synth_1 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S00_AXI(1) and /hhb_query_0/M_AXI_A(0) INFO: [BD 41-237] Bus Interface property NUM_READ_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) INFO: [BD 41-237] Bus Interface property NUM_WRITE_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) 
+// Tcl Message: Verilog Output written to : zynq_system.v Verilog Output written to : zynq_system_wrapper.v Wrote  : </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd>  
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 29 14:01:36 2014] Launched synth_1... Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 6183.906 ; gain = 0.000 
+// 'q' command handler elapsed time: 14 seconds
+// Elapsed time: 11 seconds
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 2:11:07 PM
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 766 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 
+// Tcl Message: [Tue Apr 29 14:14:25 2014] Launched impl_1... Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/runme.log 
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Implementation Completed: addNotify
+// Elapsed time: 327 seconds
+selectRadioButton (PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a:JRadioButton (JPanel:JComponent, O:af)
+selectRadioButton (PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN, "Open Implemented Design"); // a:JRadioButton (JPanel:JComponent, O:af)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// cb:I (bT:JFrame):  Reloading : addNotify
+// [Engine Memory]: 5,496 mb (+4kb) [02:38:50]
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// [Engine Memory]: 5,511 mb (+15724kb) [02:38:52]
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 2:19:59 PM
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 2:20:20 PM
+// [Engine Memory]: 5,512 mb (+815kb) [02:39:14]
+// [Engine Memory]: 5,536 mb (+24748kb) [02:39:14]
+// [Engine Memory]: 5,537 mb (+1048kb) [02:39:14]
+// [Engine Memory]: 5,538 mb (+1392kb) [02:39:15]
+// [Engine Memory]: 5,540 mb (+2097kb) [02:39:15]
+// [Engine Memory]: 5,541 mb (+1581kb) [02:39:15]
+// [Engine Memory]: 5,543 mb (+1392kb) [02:39:16]
+// [Engine Memory]: 5,544 mb (+1048kb) [02:39:16]
+// [Engine Memory]: 5,546 mb (+1949kb) [02:39:16]
+// [Engine Memory]: 5,550 mb (+4882kb) [02:39:17]
+// [Engine Memory]: 5,555 mb (+4882kb) [02:39:17]
+// Device: addNotify
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 60 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2013.4 
+// Tcl Message: Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/.Xil/Vivado-27394-ee-boxer0/dcp/zynq_system_wrapper_early.xdc] Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/.Xil/Vivado-27394-ee-boxer0/dcp/zynq_system_wrapper_early.xdc] Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/.Xil/Vivado-27394-ee-boxer0/dcp/zynq_system_wrapper.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0.xdc:56] INFO: [Timing 38-2] Deriving generated clocks [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0.xdc:56] 
+// Tcl Message: Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/.Xil/Vivado-27394-ee-boxer0/dcp/zynq_system_wrapper.xdc] Reading XDEF placement. Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 6198.906 ; gain = 0.000 
+// Tcl Message: Restoring placement. Restored 6271 out of 6271 XDEF sites from archive | CPU: 4.370000 secs | Memory: 48.789719 MB | 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s). INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files:  
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:28 . Memory (MB): peak = 6242.625 ; gain = 58.719 
+// Device view-level: 0.0
+// Elapsed time: 33 seconds
+dismissDialog ("Reloading"); // cb:I (bT:JFrame)
+// Elapsed time: 84 seconds
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31); // w:Q (v:u, bT:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// cb:I (bT:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Tue Apr 29 14:21:53 2014] Launched impl_1... Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/runme.log 
+dismissDialog ("Generate Bitstream"); // cb:I (bT:JFrame)
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 2:23:23 PM
+// O:af (bT:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 94 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+dismissDialog ("Bitstream Generation Completed"); // O:af (bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_IMPORT, "Import"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_EXPORT, "Export"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem (PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ah:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+setFileChooser ("/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/configuration_bitstreams/hhb_example_system.bit");
+// 'a' command handler elapsed time: 7 seconds
+// [Engine Memory]: 5,555 mb (+233kb) [02:42:38]
+selectButton ((HResource) null, "OK"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// Tcl Message: file copy -force /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/zynq_system_wrapper.bit /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/configuration_bitstreams/hhb_example_system.bit 
+selectButton ((HResource) null, "OK"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+applyEnter (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, (String) null); // w:Q (v:u, bT:JFrame)
+// Elapsed time: 845 seconds
+selectTable (PAResourceAtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Utilization Report ; Tue Apr 29 14:14:00 BST 2014 ; 6470", 2); // C:aj (JViewport:JComponent, bT:JFrame)
+expandTreeTable (PAResourceAtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Utilization Report ; Tue Apr 29 14:14:00 BST 2014 ; 6470", 2); // C:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Utilization Report ; Tue Apr 29 14:14:00 BST 2014 ; 6470", 2, false, false, false, false, true); // C:aj (JViewport:JComponent, bT:JFrame) - DOUBLE CLICK
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 2:41:07 PM
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 3:11:07 PM
+// Elapsed time: 3092 seconds
+selectMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_IMPORT, "Import"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_IMPORT, "Import"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_EXPORT, "Export"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem (PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware for SDK..."); // ah:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+// s:X (bT:JFrame): Export Hardware for SDK: addNotify
+selectCheckBox (PAResourceAtoH.ExportHardwareDialog_LAUNCH_SDK, "Launch SDK", true); // v:JCheckBox (JPanel:JComponent, s:X): TRUE
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, s:X)
+// 'd' command handler elapsed time: 4 seconds
+dismissDialog ("Export Hardware for SDK"); // s:X (bT:JFrame)
+// cb:I (bT:JFrame):  Export Hardware for SDK : addNotify
+// Tcl Message: export_hardware [get_files /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd] [get_runs impl_1] -bitstream 
+// Tcl Message: Exporting to file /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.sdk/SDK/SDK_Export/hw/zynq_system.xml 
+// Tcl Message: INFO: [BD 41-436] exporting bit file '/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/zynq_system_wrapper.bit'... 
+// Tcl Message: export_hardware: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 6246.844 ; gain = 4.000 
+// Tcl Message: launch_sdk -bit /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.sdk/SDK/SDK_Export/hw/zynq_system_wrapper.bit -workspace /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.sdk/SDK/SDK_Export -hwspec /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.sdk/SDK/SDK_Export/hw/zynq_system.xml 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -bit /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.sdk/SDK/SDK_Export/hw/zynq_system_wrapper.bit -workspace /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.sdk/SDK/SDK_Export -hwspec /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.sdk/SDK/SDK_Export/hw/zynq_system.xml 
+// Tcl Message: ERROR: [Common 17-70] Application Exception: Not found in path: xsdk 
+// HOptionPane Error: 'ERROR: [Common 17-70] Application Exception: Not found in path: xsdk  (Export Hardware for SDK)'
+// [Engine Memory]: 5,559 mb (+4194kb) [03:48:56]
+// Elapsed time: 19 seconds
+selectButton ((HResource) null, "OK"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// [Engine Memory]: 5,560 mb (+1048kb) [03:48:56]
+// Elapsed time: 41 seconds
+selectMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_EXPORT, "Export"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem (PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware for SDK..."); // ah:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+// s:X (bT:JFrame): Export Hardware for SDK: addNotify
+selectCheckBox (PAResourceAtoH.ExportHardwareDialog_LAUNCH_SDK, "Launch SDK", true); // v:JCheckBox (JPanel:JComponent, s:X): TRUE
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, s:X)
+// 'd' command handler elapsed time: 11 seconds
+selectButton ((HResource) null, "Yes"); // JButton:AbstractButton (JPanel:JComponent, W:JDialog)
+dismissDialog ("Export Hardware for SDK"); // s:X (bT:JFrame)
+// Tcl Message: export_hardware [get_files /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd] [get_runs impl_1] -bitstream 
+// cb:I (bT:JFrame):  Export Hardware for SDK : addNotify
+// Tcl Message: Exporting to file /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.sdk/SDK/SDK_Export/hw/zynq_system.xml 
+// Tcl Message: INFO: [BD 41-436] exporting bit file '/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/zynq_system_wrapper.bit'... 
+// Tcl Message: export_hardware: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 6246.844 ; gain = 0.000 
+// Tcl Message: launch_sdk -bit /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.sdk/SDK/SDK_Export/hw/zynq_system_wrapper.bit -workspace /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.sdk/SDK/SDK_Export -hwspec /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.sdk/SDK/SDK_Export/hw/zynq_system.xml 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -bit /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.sdk/SDK/SDK_Export/hw/zynq_system_wrapper.bit -workspace /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.sdk/SDK/SDK_Export -hwspec /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.sdk/SDK/SDK_Export/hw/zynq_system.xml 
+// Tcl Message: ERROR: [Common 17-70] Application Exception: Not found in path: xsdk 
+// HOptionPane Error: 'ERROR: [Common 17-70] Application Exception: Not found in path: xsdk  (Export Hardware for SDK)'
+// Elapsed time: 82 seconds
+selectButton ((HResource) null, "OK"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 3:41:07 PM
+// Elapsed time: 2232 seconds
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_system_wrapper (zynq_system_wrapper.v)]", 1); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_system_wrapper (zynq_system_wrapper.v), zynq_system_i - zynq_system (zynq_system.bd)]", 2); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, zynq_system_wrapper (zynq_system_wrapper.v), zynq_system_i - zynq_system (zynq_system.bd)]", 2, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// cb:I (bT:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd} 
+dismissDialog ("Open Block Design"); // cb:I (bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 4:11:07 PM
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 4:41:07 PM
+// Elapsed time: 2423 seconds
+selectMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_EXPORT, "Export"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_EXPORT, "Export"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem (PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ah:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+setFileChooser ("/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/configuration_bitstreams/hhb_example_system.bit");
+// 'a' command handler elapsed time: 8 seconds
+selectButton ((HResource) null, "OK"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// Tcl Message: file copy -force /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/zynq_system_wrapper.bit /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/configuration_bitstreams/hhb_example_system.bit 
+selectButton ((HResource) null, "OK"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// Elapsed time: 94 seconds
+selectMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_EXPORT, "Export"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem (PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ah:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+setFileChooser ("/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/configuration_bitstreams/hhb_example_system.bit");
+// 'a' command handler elapsed time: 8 seconds
+selectButton ((HResource) null, "OK"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// Tcl Message: file copy -force /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/zynq_system_wrapper.bit /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/configuration_bitstreams/hhb_example_system.bit 
+selectButton ((HResource) null, "OK"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 5:11:07 PM
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 5:41:07 PM
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 6:11:07 PM
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 6:41:07 PM
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 7:11:07 PM
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 7:41:07 PM
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 8:11:07 PM
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 8:41:07 PM
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 9:11:07 PM
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 9:41:08 PM
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 10:11:08 PM
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 10:41:08 PM
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 11:11:08 PM
+// HMemoryUtils.trashcanNow. Current time: 4/29/14 11:41:08 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 12:11:08 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 12:41:08 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 1:11:08 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 1:41:08 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 2:11:08 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 2:41:08 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 3:11:08 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 3:41:08 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 4:11:08 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 4:41:08 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 5:11:08 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 5:41:09 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 6:11:08 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 6:41:08 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 7:11:09 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 7:41:09 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 8:11:09 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 8:41:09 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 9:11:09 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 9:41:09 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 10:11:09 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 10:41:09 AM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 11:11:09 AM
+// Elapsed time: 66249 seconds
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 418, 343, 1128, 505, false, false, false, true, false); // cA:aC (TdiGroup:JideTabbedPane, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceQtoZ.SystemBuilderMenu_ADD_IP, "Add IP..."); // ah:JMenuItem (al:JPopupMenu, Popup:JWindow)
+// Elapsed time: 14 seconds
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Data Width Converter ; xilinx.com:ip:axi_dwidth_converter:2.1", 142); // F:aj (JViewport:JComponent, ResizableWindow:JWindow)
+// Elapsed time: 13 seconds
+setText ("PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "AXI"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Clock Converter ; xilinx.com:ip:axi_clock_converter:2.1", 18); // F:aj (JViewport:JComponent, ResizableWindow:JWindow)
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Clock Converter ; xilinx.com:ip:axi_clock_converter:2.1", 18); // F:aj (JViewport:JComponent, ResizableWindow:JWindow)
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Clock Converter ; xilinx.com:ip:axi_clock_converter:2.1", 18, false, false, false, false, true); // F:aj (JViewport:JComponent, ResizableWindow:JWindow) - DOUBLE CLICK
+// TclEventType: PARAM_UPDATED
+// Tcl Message: startgroup create_bd_cell -type ip -vlnv xilinx.com:ip:axi_clock_converter:2.1 axi_clock_converter_0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// cb:I (bT:JFrame):  Add IP : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog ("Add IP"); // cb:I (bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 802, 227, 1128, 505, false, false, false, true, false); // cA:aC (TdiGroup:JideTabbedPane, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (RDIResourceCommand.RDICommands_DELETE, "Delete"); // ah:JMenuItem (al:JPopupMenu, Popup:JWindow)
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_nets processing_system7_0_axi_periph_M01_AXI] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins axi_clock_converter_0/M_AXI] [get_bd_intf_pins hwfreqscale_simple_adder_0/S_AXI_BUS_A] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins axi_clock_converter_0/S_AXI] [get_bd_intf_pins processing_system7_0_axi_periph/M01_AXI] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net -net [get_bd_nets clk_wiz_0_clk_out1] [get_bd_pins axi_clock_converter_0/m_axi_aclk] [get_bd_pins clk_wiz_0/clk_out1] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net -net [get_bd_nets rst_processing_system7_0_50M_peripheral_aresetn] [get_bd_pins axi_clock_converter_0/m_axi_aresetn] [get_bd_pins rst_processing_system7_0_50M/peripheral_aresetn] 
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 11:41:09 AM
+// Elapsed time: 1425 seconds
+selectView (PAResourceItoP.PAViews_SYSTEM, "System", 85, 177, 1128, 505, false, false, false, true, false); // cA:aC (TdiGroup:JideTabbedPane, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_DISCONNECT_RSB_PIN, "Disconnect Pin"); // ah:JMenuItem (al:JPopupMenu, Popup:JWindow)
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: disconnect_bd_net /clk_wiz_0_clk_out1 [get_bd_pins processing_system7_0_axi_periph/M01_ACLK] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net -net [get_bd_nets processing_system7_0_FCLK_CLK0] [get_bd_pins processing_system7_0_axi_periph/M01_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net -net [get_bd_nets processing_system7_0_FCLK_CLK0] [get_bd_pins axi_clock_converter_0/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net -net [get_bd_nets rst_processing_system7_0_50M_peripheral_aresetn] [get_bd_pins axi_clock_converter_0/s_axi_aresetn] [get_bd_pins rst_processing_system7_0_50M/peripheral_aresetn] 
+// Elapsed time: 34 seconds
+selectMenu (PAResourceItoP.MainMenuMgr_TOOLS, "Tools"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenuItem (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "Validate Design"); // ah:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu (PAResourceItoP.MainMenuMgr_TOOLS, "Tools"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// cb:I (bT:JFrame):  Validate Design : addNotify
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: validate_bd_design 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S00_AXI(1) and /hhb_query_0/M_AXI_A(0) INFO: [BD 41-237] Bus Interface property NUM_READ_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) INFO: [BD 41-237] Bus Interface property NUM_WRITE_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) 
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6246.844 ; gain = 0.000 
+// Tcl Message: success 
+// cZ:a (bT:JFrame): Critical Messages: addNotify
+dismissDialog ("Validate Design"); // cb:I (bT:JFrame)
+selectButton (PAResourceAtoH.CmdMsgDialog_OK, "OK"); // g:a (JPanel:JComponent, cZ:a)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTreeTable (PAResourceAtoH.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "Unmapped Slaves (1) ; Unmapped Slaves (1) ; Unmapped Slaves (1) ; Unmapped Slaves (1) ; Unmapped Slaves (1) ; Unmapped Slaves (1)", 4); // d:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "hwfreqscale_simple_adder_0 ; S_AXI_BUS_A ; Reg ;  ;  ; ", 5, false, false, false, true, false); // d:aj (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_AUTO_ASSIGN_ADDRESS, "Auto Assign Address"); // ah:JMenuItem (al:JPopupMenu, Popup:JWindow)
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: assign_bd_address 
+// Tcl Message: </hwfreqscale_simple_adder_0/S_AXI_BUS_A/Reg> is being mapped into </processing_system7_0/Data> at <0x43C10000[ 64K ]> 
+// cb:I (bT:JFrame):  Auto Assign Address : addNotify
+dismissDialog ("Auto Assign Address"); // cb:I (bT:JFrame)
+selectTable (PAResourceAtoH.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "hwfreqscale_simple_adder_0 ; S_AXI_BUS_A ; Reg ; 0x43C10000 ; 64K ; 0x43C1FFFF", 4); // d:aj (JViewport:JComponent, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_TOOLS, "Tools"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenuItem (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "Validate Design"); // ah:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu (PAResourceItoP.MainMenuMgr_TOOLS, "Tools"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// cb:I (bT:JFrame):  Validate Design : addNotify
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: validate_bd_design 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S00_AXI(1) and /hhb_query_0/M_AXI_A(0) INFO: [BD 41-237] Bus Interface property NUM_READ_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) INFO: [BD 41-237] Bus Interface property NUM_WRITE_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) 
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 6246.844 ; gain = 0.000 
+// Tcl Message: success 
+dismissDialog ("Validate Design"); // cb:I (bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+selectButton ((HResource) null, "OK"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// Elapsed time: 49 seconds
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15); // w:Q (v:u, bT:JFrame)
+// af:bw (bT:JFrame): Run Synthesis: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, af:bw)
+// aT:X (bT:JFrame): Save Project: addNotify
+dismissDialog ("Run Synthesis"); // af:bw (bT:JFrame)
+// Elapsed time: 56 seconds
+selectButton (PAResourceQtoZ.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aT:X)
+// cb:I (bT:JFrame):  Save Design : addNotify
+dismissDialog ("Save Project"); // aT:X (bT:JFrame)
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd>  
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+closeView (PAResourceItoP.PAViews_PAR_REPORT, "PAR Report"); // c:I
+// TclEventType: RUN_MODIFY
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: launch_runs synth_1 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /axi_mem_intercon/xbar/S00_AXI(1) and /hhb_query_0/M_AXI_A(0) INFO: [BD 41-237] Bus Interface property NUM_READ_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) INFO: [BD 41-237] Bus Interface property NUM_WRITE_OUTSTANDING does not match between /axi_mem_intercon/xbar/S00_AXI(2) and /hhb_query_0/M_AXI_A(1) 
+// Tcl Message: Verilog Output written to : zynq_system.v Verilog Output written to : zynq_system_wrapper.v Wrote  : </home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd>  
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 30 11:45:09 2014] Launched synth_1... Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 6246.844 ; gain = 0.000 
+// 'q' command handler elapsed time: 78 seconds
+// [Engine Memory]: 5,564 mb (+4038kb) [24:04:03]
+// Elapsed time: 12 seconds
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 5,568 mb (+4194kb) [24:04:04]
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 787 seconds
+selectRadioButton (PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // a:JRadioButton (JPanel:JComponent, O:af)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 
+// Tcl Message: [Wed Apr 30 11:58:20 2014] Launched impl_1... Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/runme.log 
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Implementation Completed: addNotify
+// Elapsed time: 406 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// cb:I (bT:JFrame):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 12:05:10 PM
+// TclEventType: DESIGN_REFRESH
+// [Engine Memory]: 5,617 mb (+51126kb) [24:24:05]
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 12:05:12 PM
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 12:05:32 PM
+// [Engine Memory]: 5,620 mb (+2916kb) [24:24:26]
+// [Engine Memory]: 5,624 mb (+4317kb) [24:24:29]
+// [Engine Memory]: 5,625 mb (+1048kb) [24:24:29]
+// [Engine Memory]: 5,627 mb (+2785kb) [24:24:29]
+// [Engine Memory]: 5,635 mb (+7610kb) [24:24:31]
+// Device: addNotify
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 60 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2013.4 
+// Tcl Message: Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/.Xil/Vivado-27394-ee-boxer0/dcp/zynq_system_wrapper_early.xdc] Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/.Xil/Vivado-27394-ee-boxer0/dcp/zynq_system_wrapper_early.xdc] Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/.Xil/Vivado-27394-ee-boxer0/dcp/zynq_system_wrapper.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0.xdc:56] INFO: [Timing 38-2] Deriving generated clocks [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0.xdc:56] 
+// Tcl Message: Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/.Xil/Vivado-27394-ee-boxer0/dcp/zynq_system_wrapper.xdc] Reading XDEF placement. Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 6303.453 ; gain = 0.000 
+// Tcl Message: Restoring placement. Restored 6156 out of 6156 XDEF sites from archive | CPU: 4.190000 secs | Memory: 49.119667 MB | 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s). INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files:  
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:30 . Memory (MB): peak = 6322.266 ; gain = 66.570 
+// Elapsed time: 33 seconds
+dismissDialog ("Reloading"); // cb:I (bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 12:11:09 PM
+// Device view-level: 0.0
+// Elapsed time: 554 seconds
+selectMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_IMPORT, "Import"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_EXPORT, "Export"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31); // w:Q (v:u, bT:JFrame)
+// TclEventType: RUN_LAUNCH
+// [Engine Memory]: 5,635 mb (+0kb) [24:33:59]
+// TclEventType: RUN_MODIFY
+// cb:I (bT:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Wed Apr 30 12:15:05 2014] Launched impl_1... Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/runme.log 
+dismissDialog ("Generate Bitstream"); // cb:I (bT:JFrame)
+// Elapsed time: 70 seconds
+selectMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_IMPORT, "Import"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_EXPORT, "Export"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_EXPORT, "Export"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_EXPORT, "Export"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 12:16:35 PM
+// O:af (bT:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 93 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+dismissDialog ("Bitstream Generation Completed"); // O:af (bT:JFrame)
+// Elapsed time: 18 seconds
+selectMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+// Elapsed time: 33 seconds
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_IMPORT, "Import"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu (PAResourceItoP.MainMenuMgr_EXPORT, "Export"); // ae:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem (PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ah:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+// [Engine Memory]: 5,635 mb (+233kb) [24:38:02]
+// Elapsed time: 18 seconds
+setFileChooser ("/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/configuration_bitstreams/hhb_example_system.bit");
+// 'a' command handler elapsed time: 18 seconds
+selectButton ((HResource) null, "OK"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// Tcl Message: file copy -force /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/impl_1/zynq_system_wrapper.bit /home/ee/s/sf306/HeterogeneousHeartbeats/hardware/configuration_bitstreams/hhb_example_system.bit 
+selectButton ((HResource) null, "OK"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 12:41:09 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 1:11:09 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 1:41:09 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 2:11:09 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 2:41:09 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 3:11:09 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 3:41:09 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 4:11:09 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 4:41:10 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 5:11:10 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 5:41:10 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 6:11:10 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 6:41:10 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 7:11:10 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 7:41:10 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 8:11:10 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 8:41:10 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 9:11:10 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 9:41:10 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 10:11:10 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 10:41:10 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 11:11:10 PM
+// HMemoryUtils.trashcanNow. Current time: 4/30/14 11:41:10 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 12:11:10 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 12:41:10 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 1:11:10 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 1:41:11 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 2:11:11 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 2:41:11 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 3:11:11 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 3:41:11 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 4:11:11 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 4:41:11 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 5:11:11 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 5:41:11 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 6:11:11 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 6:41:11 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 7:11:11 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 7:41:11 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 8:11:11 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 8:41:11 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 9:11:11 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 9:41:11 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 10:11:12 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 10:41:12 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 11:11:12 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 11:41:12 AM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 12:11:12 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 12:41:12 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 1:11:12 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 1:41:12 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 2:11:12 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 2:41:12 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 3:11:12 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 3:41:12 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 4:11:12 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 4:41:12 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 5:11:12 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 5:41:12 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 6:11:12 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 6:41:12 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 7:11:13 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 7:41:13 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 8:11:13 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 8:41:13 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 9:11:13 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 9:41:13 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 10:11:13 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 10:41:13 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 11:11:13 PM
+// HMemoryUtils.trashcanNow. Current time: 5/1/14 11:41:13 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 12:11:13 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 12:41:13 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 1:11:13 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 1:41:13 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 2:11:13 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 2:41:13 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 3:11:13 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 3:41:13 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 4:11:14 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 4:41:14 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 5:11:14 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 5:41:14 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 6:11:14 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 6:41:14 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 7:11:14 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 7:41:14 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 8:11:14 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 8:41:14 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 9:11:14 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 9:41:14 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 10:11:14 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 10:41:14 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 11:11:14 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 11:41:14 AM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 12:11:14 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 12:41:14 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 1:11:15 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 1:41:15 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 2:11:15 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 2:41:15 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 3:11:15 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 3:41:16 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 4:11:15 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 4:41:15 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 5:11:15 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 5:41:15 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 6:11:15 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 6:41:15 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 7:11:16 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 7:41:16 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 8:11:15 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 8:41:15 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 9:11:15 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 9:41:15 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 10:11:15 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 10:41:15 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 11:11:16 PM
+// HMemoryUtils.trashcanNow. Current time: 5/2/14 11:41:16 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 12:11:16 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 12:41:16 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 1:11:16 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 1:41:16 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 2:11:16 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 2:41:16 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 3:11:16 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 3:41:16 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 4:11:16 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 4:41:15 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 5:11:15 AM
+// [GUI Memory]: 315 mb (+1545kb) [89:34:34]
+// [GUI Memory]: 315 mb (+511kb) [89:38:54]
+// [GUI Memory]: 318 mb (+2768kb) [89:39:09]
+// [GUI Memory]: 320 mb (+1605kb) [89:43:04]
+// [GUI Memory]: 323 mb (+4021kb) [89:43:29]
+// [GUI Memory]: 325 mb (+1897kb) [89:47:39]
+// [GUI Memory]: 330 mb (+4438kb) [89:48:04]
+// [GUI Memory]: 331 mb (+1519kb) [89:52:09]
+// [GUI Memory]: 334 mb (+3293kb) [89:52:29]
+// [GUI Memory]: 337 mb (+2640kb) [89:56:39]
+// [GUI Memory]: 340 mb (+3968kb) [89:56:59]
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 5:41:16 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 6:11:16 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 6:41:16 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 7:11:16 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 7:41:16 AM
+// [GUI Memory]: 343 mb (+2296kb) [92:27:05]
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 8:11:17 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 8:41:17 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 9:11:17 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 9:41:17 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 10:11:17 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 10:41:16 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 11:11:16 AM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 11:41:16 AM
+// [GUI Memory]: 346 mb (+3837kb) [96:04:10]
+// [GUI Memory]: 349 mb (+3283kb) [96:04:30]
+// [GUI Memory]: 354 mb (+4775kb) [96:08:55]
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 12:11:17 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 12:41:16 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 1:11:16 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 1:41:16 PM
+// [GUI Memory]: 355 mb (+1222kb) [98:09:05]
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 2:11:16 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 2:41:16 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 3:11:17 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 3:41:17 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 4:11:17 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 4:41:18 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 5:11:18 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 5:41:18 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 6:11:18 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 6:41:18 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 7:11:18 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 7:41:18 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 8:11:17 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 8:41:17 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 9:11:18 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 9:41:18 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 10:11:17 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 10:41:17 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 11:11:18 PM
+// HMemoryUtils.trashcanNow. Current time: 5/3/14 11:41:17 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 12:11:18 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 12:41:18 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 1:11:18 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 1:41:18 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 2:11:18 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 2:41:18 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 3:11:18 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 3:41:18 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 4:11:18 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 4:41:18 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 5:11:18 AM
+// [GUI Memory]: 355 mb (+261kb) [113:43:47]
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 5:41:19 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 6:11:19 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 6:41:18 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 7:11:19 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 7:41:18 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 8:11:19 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 8:41:19 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 9:11:19 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 9:41:19 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 10:11:19 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 10:41:19 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 11:11:19 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 11:41:20 AM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 12:11:20 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 12:41:20 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 1:11:20 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 1:41:20 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 2:11:20 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 2:41:20 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 3:11:20 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 3:41:20 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 4:11:20 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 4:41:20 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 5:11:20 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 5:41:20 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 6:11:20 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 6:41:20 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 7:11:20 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 7:41:20 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 8:11:21 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 8:41:21 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 9:11:21 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 9:41:21 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 10:11:21 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 10:41:21 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 11:11:21 PM
+// HMemoryUtils.trashcanNow. Current time: 5/4/14 11:41:21 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 12:11:21 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 12:41:21 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 1:11:21 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 1:41:21 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 2:11:21 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 2:41:21 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 3:11:21 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 3:41:21 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 4:11:21 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 4:41:21 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 5:11:22 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 5:41:22 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 6:11:22 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 6:41:22 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 7:11:22 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 7:41:22 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 8:11:22 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 8:41:22 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 9:11:22 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 9:41:22 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 10:11:22 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 10:41:22 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 11:11:22 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 11:41:22 AM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 12:11:22 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 12:41:22 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 1:11:22 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 1:41:22 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 2:11:22 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 2:41:23 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 3:11:23 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 3:41:23 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 4:11:23 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 4:41:23 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 5:11:23 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 5:41:23 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 6:11:23 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 6:41:22 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 7:11:23 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 7:41:23 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 8:11:22 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 8:41:23 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 9:11:23 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 9:41:23 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 10:11:23 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 10:41:23 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 11:11:23 PM
+// HMemoryUtils.trashcanNow. Current time: 5/5/14 11:41:24 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 12:11:23 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 12:41:24 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 1:11:23 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 1:41:23 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 2:11:24 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 2:41:24 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 3:11:23 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 3:41:23 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 4:11:23 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 4:41:23 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 5:11:23 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 5:41:23 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 6:11:24 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 6:41:24 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 7:11:24 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 7:41:24 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 8:11:24 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 8:41:24 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 9:11:24 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 9:41:24 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 10:11:24 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 10:41:24 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 11:11:24 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 11:41:24 AM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 12:11:24 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 12:41:24 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 1:11:25 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 1:41:24 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 2:11:25 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 2:41:24 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 3:11:25 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 3:41:25 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 4:11:25 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 4:41:25 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 5:11:25 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 5:41:26 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 6:11:26 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 6:41:25 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 7:11:25 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 7:41:25 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 8:11:25 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 8:41:25 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 9:11:25 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 9:41:26 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 10:11:26 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 10:41:25 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 11:11:25 PM
+// HMemoryUtils.trashcanNow. Current time: 5/6/14 11:41:28 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 12:11:25 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 12:41:26 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 1:11:26 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 1:41:26 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 2:11:26 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 2:41:26 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 3:11:26 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 3:41:27 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 4:11:26 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 4:41:26 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 5:11:26 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 5:41:27 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 6:11:26 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 6:41:26 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 7:11:26 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 7:41:27 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 8:11:26 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 8:41:27 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 9:11:27 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 9:41:27 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 10:11:27 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 10:41:27 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 11:11:27 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 11:41:27 AM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 12:11:28 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 12:41:27 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 1:11:27 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 1:41:27 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 2:11:27 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 2:41:27 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 3:11:27 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 3:41:28 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 4:11:28 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 4:41:27 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 5:11:28 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 5:41:28 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 6:11:28 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 6:41:27 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 7:11:28 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 7:41:28 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 8:11:28 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 8:41:28 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 9:11:28 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 9:41:28 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 10:11:28 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 10:41:28 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 11:11:28 PM
+// HMemoryUtils.trashcanNow. Current time: 5/7/14 11:41:28 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 12:11:29 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 12:41:29 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 1:11:28 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 1:41:29 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 2:11:28 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 2:41:28 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 3:11:28 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 3:41:28 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 4:11:29 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 4:41:29 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 5:11:29 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 5:41:29 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 6:11:29 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 6:41:29 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 7:11:30 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 7:41:30 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 8:11:29 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 8:41:29 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 9:11:29 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 9:41:29 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 10:11:30 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 10:41:30 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 11:11:30 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 11:41:30 AM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 12:11:30 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 12:41:29 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 1:11:29 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 1:41:30 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 2:11:30 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 2:41:30 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 3:11:30 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 3:41:30 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 4:11:31 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 4:41:31 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 5:11:31 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 5:41:30 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 6:11:30 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 6:41:31 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 7:11:31 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 7:41:31 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 8:11:31 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 8:41:31 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 9:11:31 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 9:41:30 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 10:11:31 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 10:41:30 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 11:11:31 PM
+// HMemoryUtils.trashcanNow. Current time: 5/8/14 11:41:31 PM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 12:11:31 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 12:41:31 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 1:11:31 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 1:41:32 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 2:11:32 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 2:41:32 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 3:11:32 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 3:41:31 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 4:11:32 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 4:41:32 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 5:11:32 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 5:41:32 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 6:11:32 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 6:41:31 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 7:11:32 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 7:41:32 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 8:11:32 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 8:41:32 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 9:11:32 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 9:41:32 AM
+// HMemoryUtils.trashcanNow. Current time: 5/9/14 10:11:32 AM
