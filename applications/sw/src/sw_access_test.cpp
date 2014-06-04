@@ -73,7 +73,7 @@ int main()
 
 	testOut.convertTo(testOut, CV_8UC3); //convert into a sensible format that can be displayed
 	imshow("INPUT", testOut); //Print out the input that the HW sees
-/*	
+	
 //HARDWAR SETUP-----------------------------------------------------------------------
 //sets up the two IP cores, this needs to be turned into a function
 	//Setup the kernel core parameters
@@ -111,15 +111,13 @@ int main()
 	while(XCombiner_top_IsDone(&combiner_dev) != 1) {printf("."); } //block for the second hardware stage
 	//One shot operation is now completed, attempting to print result
 	printf("\n");
-*/
+
 	printf("Combiner Core is complete...\nDisplaying output frame\n");	
-	cv::Mat outFrame_wrongformat;
-	outFrame_wrongformat = hw_outputFrame;
-	cv::Mat outFrame_rightformat;
-	outFrame_wrongformat.convertTo(outFrame_rightformat, CV_8UC3);	
+	cv::Mat outFrame;
+	outFrame = hw_outputFrame;	//Grab the output data
 
-
-	imshow("OUTPUT", outFrame_rightformat); //displaying the output frame
+	outFrame.convertTo(outFrame, CV_8UC3); //Convert into the right output format
+	imshow("OUTPUT", outFrame); //displaying the output frame
 
 while(1)
 {
