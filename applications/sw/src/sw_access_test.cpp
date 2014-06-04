@@ -36,22 +36,44 @@ void *setup_reserved_mem(uint input_address);
 int main()
 {
 	printf("----------------------------\nTesting the reserved memory\n----------------------------\n\n");
-	
+
+	//Define the Hardware input container	
 	cv::Mat hw_inputFrame;
 	hw_inputFrame.data =(uchar *) setup_reserved_mem(INPUT_FRAME_ADDR); //Point the input container to the reserved RAM
-	cv::Mat hw_outputFrame(cv::Size(IMG_SIZE,IMG_SIZE),CV_8UC3); //Setup the output image contained and give it a size
+	//Define the Hardware output container
+	cv::Mat hw_outputFrame(cv::Size(IMG_SIZE,IMG_SIZE),CV_32SC3); //Setup the output image contained and give it a size
 	hw_outputFrame.data = (uchar *) setup_reserved_mem(OUTPUT_FRAME_ADDR);	//Point the container to the reserved RAM
+
+	//Input container
 	cv::Mat inFrame; //Temporary input container
 	inFrame = cv::imread("test_image.jpg"); //Read the input
 
 
 	//Attempting some resizing
 	cv::Size size(IMG_SIZE,IMG_SIZE);
-	cv::resize(inFrame, hw_inputFrame, size); //Changing the image to size so that it complies with the HW modules
-	cv::Mat testOut; //Create an output container
-	testOut = hw_inputFrame; //Assign the output container with the input in the HW available memory
+	cv::resize(inFrame, inFrame, size); //Changing the image to size so that it complies with the HW modules
+	//Convert the inFrame to the format that is recognised by the hardware
+	inFrame.convertTo(inFrame, CV_32SC3);
+	hw_inputFrame = inFrame;
+
+	cv::Mat testOut;
+	testOut = hw_inputFrame; //Grab the hardware input frame to attempt to output it
+
+	FILE *fp;
+	fp=fopen("data_points.mat", "w");
+
+    	for(int y=0;y<IMG_SIZE;y++)
+       	{
+        	for(int x=0;x<IMG_SIZE;x++)
+           	{
+              		fprintf(fp,"%d\n%d\n%d\n", testOut.at<cv::Vec3b>(y,x)[0], testOut.at<cv::Vec3b>(y,x)[1], testOut.at<cv::Vec3b>(y,x)[2]);
+           	}         
+	}
+	fclose(fp);
+
+	testOut.convertTo(testOut, CV_8UC3); //convert into a sensible format that can be displayed
 	imshow("INPUT", testOut); //Print out the input that the HW sees
-	
+/*	
 //HARDWAR SETUP-----------------------------------------------------------------------
 //sets up the two IP cores, this needs to be turned into a function
 	//Setup the kernel core parameters
@@ -89,11 +111,15 @@ int main()
 	while(XCombiner_top_IsDone(&combiner_dev) != 1) {printf("."); } //block for the second hardware stage
 	//One shot operation is now completed, attempting to print result
 	printf("\n");
-
+*/
 	printf("Combiner Core is complete...\nDisplaying output frame\n");	
-	cv::Mat outFrame;
-	outFrame = hw_outputFrame;
-	imshow("OUTPUT", outFrame); //displaying the output frame
+	cv::Mat outFrame_wrongformat;
+	outFrame_wrongformat = hw_outputFrame;
+	cv::Mat outFrame_rightformat;
+	outFrame_wrongformat.convertTo(outFrame_rightformat, CV_8UC3);	
+
+
+	imshow("OUTPUT", outFrame_rightformat); //displaying the output frame
 
 while(1)
 {
