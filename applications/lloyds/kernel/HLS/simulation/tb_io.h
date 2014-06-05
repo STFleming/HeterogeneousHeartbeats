@@ -15,7 +15,7 @@
 #include "../source/lloyds_kernel_top.h"
 
 //file IO
-bool read_data_points(uint n, uint k, double std_dev, bus_type* points);
+bool read_data_points(uint n, const char *filename, bus_type* points);
 bool read_initial_centres(uint n, uint k, double std_dev, bus_type *initial_centre_positions);
 
 // debug IO

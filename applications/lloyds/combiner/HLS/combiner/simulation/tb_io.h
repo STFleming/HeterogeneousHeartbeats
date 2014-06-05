@@ -15,8 +15,9 @@
 #include "../source/combiner_top.h"
 
 //file IO
-bool read_data_points(uint n, uint k, double std_dev, bus_type* points);
-bool read_initial_centres(uint n, uint k, double std_dev, bus_type *initial_centre_positions);
+bool read_data_points(uint n, const char *filename, bus_type* points);
+bool read_kernel_output(uint n, const char *filename, bus_type* data);
+
 
 // debug IO
 //void print_data_type_array(data_type *c, centre_index_type k);

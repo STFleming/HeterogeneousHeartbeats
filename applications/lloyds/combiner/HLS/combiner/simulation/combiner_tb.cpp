@@ -16,45 +16,47 @@
 #include "../source/combiner_top.h"
 #include "tb_io.h"
 
+#define N 128*128
 
-bus_type data_points[N*D];
-bus_type kernel_info[N*2];
+//bus_type mem_a[N*D+N*2];
+//bus_type mem_b[K*D];
 
-bus_type centres_out[K*(D+1)];
 
 int main()
 {
     // these parameters must match the input data files
     const uint n = 128;
     const uint k = 4;
-    const double std_dev = 0.75;
+
+    bus_type *mem_a = new bus_type[N*D+N*2];
+    bus_type *mem_b = new bus_type[K*D];
 
     // read data points from file
-    if (read_data_points(n,k,std_dev,data_points) == false)
+    if (read_data_points(n,"data_points_N128_K4_D3_s0.75.mat",&mem_a[0]) == false)
     	return 1;
 
-    // print initial centres
-    printf("Initial data points\n");
-    for (uint i=0; i<n; i++) {
-        printf("%d: ",i);
-        for (uint d=0; d<D-1; d++) {
-            printf("%d ",data_points[i*D+d]);
-        }
-        printf("%d\n",data_points[i*D+D-1]);
-    }
+    // read kernel output from file
+    if (read_kernel_output(n,"intermediate.mat",&mem_a[N*D]) == false)
+    	return 1;
 
-    // TODO: set up kernel_info
 
     uint distortion_out;
 
-    // run init
-    combiner_top( 	data_points,
-    				kernel_info,
-    				centres_out,
-    				&distortion_out,
-                    n-1,
-                    k-1
-    			);
+    uint data_points_in_addr = 0;
+    uint kernel_info_in_addr = D*N;
+    uint centres_out_addr = 0;
+
+
+    combiner_top( mem_a,
+                  mem_b,
+                  data_points_in_addr*sizeof(bus_type),
+    			  kernel_info_in_addr*sizeof(bus_type),
+    			  centres_out_addr*sizeof(bus_type),
+    			  &distortion_out,
+                  n-1,
+                  k-1
+                );
+
 
     printf("\n");
 
@@ -63,12 +65,15 @@ int main()
     for (uint i=0; i<k; i++) {
         printf("%d: ",i);
         for (uint d=0; d<D-1; d++) {
-            printf("%d ",centres_out[i*D+d]);
+            printf("%d ",mem_b[i*D+d]);
         }
-        printf("%d\n",centres_out[i*D+D-1]);
+        printf("%d\n",mem_b[i*D+D-1]);
     }
 
     printf("distortion: %d\n",distortion_out);
+
+    delete mem_a;
+    delete mem_b;
 
     return 0;
 }

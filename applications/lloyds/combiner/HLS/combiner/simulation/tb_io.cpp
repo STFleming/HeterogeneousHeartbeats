@@ -23,13 +23,10 @@ void make_initial_centres_file_name(char *result, uint n, uint k, uint d, double
 }
 
 
-
-bool read_data_points(uint n, uint k, double std_dev, bus_type* points)
+bool read_data_points(uint n, const char *filename, bus_type* points)
 {
 
     FILE *fp;
-    char filename[256];
-    make_data_points_file_name(filename,n,k,D,std_dev);
     fp=fopen(filename, "r");
 
     if (fp == 0) {
@@ -50,6 +47,46 @@ bool read_data_points(uint n, uint k, double std_dev, bus_type* points)
                 points[i*D+j] = b;
             }
         }
+    }
+
+    fclose(fp);
+
+    return true;
+}
+
+
+bool read_kernel_output(uint n, const char *filename, bus_type* data)
+{
+
+    FILE *fp;
+    fp=fopen(filename, "r");
+
+    if (fp == 0) {
+        printf("failed to open file\n");
+        return false;
+    }
+    char tmp[16];
+
+    for (uint i=0;i<n;i++) {
+
+		if (fgets(tmp,16,fp) == 0) {
+			fclose(fp);
+			return false;
+		} else {
+			bus_type b;
+			b = (mytype)atoi(tmp); // assume bus_type==int
+			data[i*2+0] = b;
+		}
+
+		if (fgets(tmp,16,fp) == 0) {
+			fclose(fp);
+			return false;
+		} else {
+			bus_type b;
+			b = (mytype)atoi(tmp); // assume bus_type==int
+			data[i*2+1] = b;
+		}
+
     }
 
     fclose(fp);

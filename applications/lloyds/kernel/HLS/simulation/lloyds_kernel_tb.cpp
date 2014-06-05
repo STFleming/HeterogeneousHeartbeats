@@ -17,64 +17,101 @@
 #include "../source/lloyds_util.h"
 #include "tb_io.h"
 
+#define N 128*128     // max. number of data points
 
-bus_type data_points[N];
-bus_type initial_centre_positions[K];
-bus_type output[N];
 
 int main()
 {
     // these parameters must match the input data files
-    const uint n = 128;
+    const uint n = 128*128;
     const uint k = 4;
-    const double std_dev = 0.75;
+
+    bus_type *mem_a = new bus_type[D*N+D*N];
+    bus_type *mem_b = new bus_type[D*K];
 
     // read data points from file
-    if (read_data_points(n,k,std_dev,data_points) == false)
+    if (read_data_points(n,"data_points.mat",mem_a) == false)
         return 1;
 
-    // read intial centre from file (random placement
-    if (read_initial_centres(n,k,std_dev,initial_centre_positions) == false)
-        return 1;
+    for (uint i=0; i<k; i++) {
+    	uint idx = rand() % n;
+    	for (uint d=0; d<D; d++) {
+    		mem_b[i*D+d]	= mem_a[idx*D+d];
+    	}
+    }
 
     // print initial centres
     printf("Initial centres\n");
     for (uint i=0; i<k; i++) {
         printf("%d: ",i);
         for (uint d=0; d<D-1; d++) {
-            printf("%d ",initial_centre_positions[i*D+d]);
+            printf("%d ",mem_b[i*D+d]);
         }
-        printf("%d\n",initial_centre_positions[i*D+D-1]);
+        printf("%d\n",mem_b[i*D+D-1]);
     }
 
 
-    // run Lloyd's kernel
-    lloyds_kernel_top(  0,
-    					data_points,
-    					initial_centre_positions,
-    					output,
-                        n,
-                        k-1
-                     );
+	uint data_points_addr = 0;
+	uint centres_in_addr = 0;
+	uint output_addr = D*N;
 
-    // print output
-    printf("Output\n");
-    for (uint i=0; i<B; i++) {
-        printf("%d: ",i);
-        printf("%d %d\n",output[i*2+0], output[i*2+1]);
+    uint block_address = 0;
+
+    uint update_points = 0; // turn on in last clustering iteration
+
+    for (block_address=0; block_address<n; block_address+=B) {
+
+		lloyds_kernel_top(	 block_address*sizeof(bus_type),
+							 mem_a,
+							 mem_b,
+							 data_points_addr*sizeof(bus_type),
+							 centres_in_addr*sizeof(bus_type),
+							 output_addr*sizeof(bus_type),
+							 update_points,
+							 n-1,
+							 k-1
+						);
+
+		/*
+		printf("\n\n%d: Block address %d\n",block_address/B,block_address);
+	    for (uint i=0; i<B; i++) {
+	        printf("%d: ",block_address+i*2+0);
+	        printf("%d %d\n",mem_a[output_addr+block_address+i*2+0], mem_a[output_addr+block_address+i*2+1]);
+	    }
+	    */
+
     }
 
-/*
-    // print cluster centres
-    printf("New centres after clustering\n");
-    for (uint i=0; i<k; i++) {
-        printf("%d: ",i);
-        for (uint d=0; d<D-1; d++) {
-            printf("%d ",get_coord_type_vector_item(clusters_out[i].value, d).to_int());
-        }
-        printf("%d\n",get_coord_type_vector_item(clusters_out[i].value, D-1).to_int());
+    if (update_points == 0) {
+
+		// print output
+		printf("Write output to intermediate.mat\n");
+
+		FILE *fp;
+		fp=fopen("intermediate.mat", "w");
+
+		for (uint i=0; i<n; i++) {
+			//printf("%d: ",i);
+			//printf("%d %d\n",mem_a[output_addr+i*2+0], mem_a[output_addr+i*2+1]);
+			fprintf(fp,"%d\n%d\n",mem_a[output_addr+i*2+0], mem_a[output_addr+i*2+1]);
+		}
+		fclose(fp);
+
+    } else {
+    	/*
+    	printf("\n");
+		for (uint i=0; i<n; i++) {
+			printf("%d: ",i);
+			for (uint d=0; d<D; d++) {
+				printf("%d ",mem_a[output_addr+i*D+d]);
+			}
+			printf("\n");
+		}
+		*/
     }
-*/
+
+    delete mem_a;
+    delete mem_b;
 
     return 0;
 }
