@@ -72,10 +72,10 @@ reg   [0:0] exitcond_reg_286;
 reg    ap_reg_ppiten_pp0_it0 = 1'b0;
 reg    ap_reg_ppiten_pp0_it1 = 1'b0;
 wire   [4:0] i_2_fu_186_p2;
-wire   [3:0] tmp_16_fu_198_p1;
-reg   [3:0] tmp_16_reg_300;
-wire   [4:0] tmp_21_fu_202_p2;
-reg   [4:0] tmp_21_reg_305;
+wire   [3:0] tmp_22_fu_198_p1;
+reg   [3:0] tmp_22_reg_300;
+wire   [4:0] tmp_23_fu_202_p2;
+reg   [4:0] tmp_23_reg_305;
 reg   [31:0] bus_addr_reg_315;
 wire   [0:0] exitcond5_fu_253_p2;
 reg   [0:0] exitcond5_reg_320;
@@ -98,14 +98,14 @@ wire   [4:0] int_buffer_address1;
 reg    int_buffer_ce1;
 reg    int_buffer_we1;
 wire   [31:0] int_buffer_d1;
-wire   [63:0] tmp_14_fu_192_p1;
-wire   [63:0] tmp_17_fu_213_p1;
+wire   [63:0] tmp_16_fu_192_p1;
+wire   [63:0] tmp_s_fu_213_p1;
 wire   [63:0] tmp_19_fu_224_p1;
 wire   [63:0] tmp_20_fu_265_p1;
-wire   [63:0] tmp_13_fu_243_p1;
+wire   [63:0] tmp_13_cast_fu_243_p1;
 wire   [4:0] tmp_18_fu_217_p3;
 wire   [31:0] tmp_fu_229_p2;
-wire   [29:0] tmp_s_fu_233_p4;
+wire   [29:0] tmp_13_fu_233_p4;
 reg   [2:0] ap_NS_fsm;
 parameter    ap_const_logic_1 = 1'b1;
 parameter    ap_const_logic_0 = 1'b0;
@@ -261,36 +261,36 @@ end
 always @(posedge ap_clk)
 begin
     if ((ap_ST_st4_fsm_2 == ap_CS_fsm)) begin
-        bus_addr_reg_315[0] <= tmp_13_fu_243_p1[0];
-bus_addr_reg_315[1] <= tmp_13_fu_243_p1[1];
-bus_addr_reg_315[2] <= tmp_13_fu_243_p1[2];
-bus_addr_reg_315[3] <= tmp_13_fu_243_p1[3];
-bus_addr_reg_315[4] <= tmp_13_fu_243_p1[4];
-bus_addr_reg_315[5] <= tmp_13_fu_243_p1[5];
-bus_addr_reg_315[6] <= tmp_13_fu_243_p1[6];
-bus_addr_reg_315[7] <= tmp_13_fu_243_p1[7];
-bus_addr_reg_315[8] <= tmp_13_fu_243_p1[8];
-bus_addr_reg_315[9] <= tmp_13_fu_243_p1[9];
-bus_addr_reg_315[10] <= tmp_13_fu_243_p1[10];
-bus_addr_reg_315[11] <= tmp_13_fu_243_p1[11];
-bus_addr_reg_315[12] <= tmp_13_fu_243_p1[12];
-bus_addr_reg_315[13] <= tmp_13_fu_243_p1[13];
-bus_addr_reg_315[14] <= tmp_13_fu_243_p1[14];
-bus_addr_reg_315[15] <= tmp_13_fu_243_p1[15];
-bus_addr_reg_315[16] <= tmp_13_fu_243_p1[16];
-bus_addr_reg_315[17] <= tmp_13_fu_243_p1[17];
-bus_addr_reg_315[18] <= tmp_13_fu_243_p1[18];
-bus_addr_reg_315[19] <= tmp_13_fu_243_p1[19];
-bus_addr_reg_315[20] <= tmp_13_fu_243_p1[20];
-bus_addr_reg_315[21] <= tmp_13_fu_243_p1[21];
-bus_addr_reg_315[22] <= tmp_13_fu_243_p1[22];
-bus_addr_reg_315[23] <= tmp_13_fu_243_p1[23];
-bus_addr_reg_315[24] <= tmp_13_fu_243_p1[24];
-bus_addr_reg_315[25] <= tmp_13_fu_243_p1[25];
-bus_addr_reg_315[26] <= tmp_13_fu_243_p1[26];
-bus_addr_reg_315[27] <= tmp_13_fu_243_p1[27];
-bus_addr_reg_315[28] <= tmp_13_fu_243_p1[28];
-bus_addr_reg_315[29] <= tmp_13_fu_243_p1[29];
+        bus_addr_reg_315[0] <= tmp_13_cast_fu_243_p1[0];
+bus_addr_reg_315[1] <= tmp_13_cast_fu_243_p1[1];
+bus_addr_reg_315[2] <= tmp_13_cast_fu_243_p1[2];
+bus_addr_reg_315[3] <= tmp_13_cast_fu_243_p1[3];
+bus_addr_reg_315[4] <= tmp_13_cast_fu_243_p1[4];
+bus_addr_reg_315[5] <= tmp_13_cast_fu_243_p1[5];
+bus_addr_reg_315[6] <= tmp_13_cast_fu_243_p1[6];
+bus_addr_reg_315[7] <= tmp_13_cast_fu_243_p1[7];
+bus_addr_reg_315[8] <= tmp_13_cast_fu_243_p1[8];
+bus_addr_reg_315[9] <= tmp_13_cast_fu_243_p1[9];
+bus_addr_reg_315[10] <= tmp_13_cast_fu_243_p1[10];
+bus_addr_reg_315[11] <= tmp_13_cast_fu_243_p1[11];
+bus_addr_reg_315[12] <= tmp_13_cast_fu_243_p1[12];
+bus_addr_reg_315[13] <= tmp_13_cast_fu_243_p1[13];
+bus_addr_reg_315[14] <= tmp_13_cast_fu_243_p1[14];
+bus_addr_reg_315[15] <= tmp_13_cast_fu_243_p1[15];
+bus_addr_reg_315[16] <= tmp_13_cast_fu_243_p1[16];
+bus_addr_reg_315[17] <= tmp_13_cast_fu_243_p1[17];
+bus_addr_reg_315[18] <= tmp_13_cast_fu_243_p1[18];
+bus_addr_reg_315[19] <= tmp_13_cast_fu_243_p1[19];
+bus_addr_reg_315[20] <= tmp_13_cast_fu_243_p1[20];
+bus_addr_reg_315[21] <= tmp_13_cast_fu_243_p1[21];
+bus_addr_reg_315[22] <= tmp_13_cast_fu_243_p1[22];
+bus_addr_reg_315[23] <= tmp_13_cast_fu_243_p1[23];
+bus_addr_reg_315[24] <= tmp_13_cast_fu_243_p1[24];
+bus_addr_reg_315[25] <= tmp_13_cast_fu_243_p1[25];
+bus_addr_reg_315[26] <= tmp_13_cast_fu_243_p1[26];
+bus_addr_reg_315[27] <= tmp_13_cast_fu_243_p1[27];
+bus_addr_reg_315[28] <= tmp_13_cast_fu_243_p1[28];
+bus_addr_reg_315[29] <= tmp_13_cast_fu_243_p1[29];
     end
 end
 
@@ -330,11 +330,11 @@ end
 always @(posedge ap_clk)
 begin
     if (((ap_ST_pp0_stg0_fsm_1 == ap_CS_fsm) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it0) & (exitcond_fu_180_p2 == ap_const_lv1_0))) begin
-        tmp_16_reg_300 <= tmp_16_fu_198_p1;
-        tmp_21_reg_305[1] <= tmp_21_fu_202_p2[1];
-tmp_21_reg_305[2] <= tmp_21_fu_202_p2[2];
-tmp_21_reg_305[3] <= tmp_21_fu_202_p2[3];
-tmp_21_reg_305[4] <= tmp_21_fu_202_p2[4];
+        tmp_22_reg_300 <= tmp_22_fu_198_p1;
+        tmp_23_reg_305[1] <= tmp_23_fu_202_p2[1];
+tmp_23_reg_305[2] <= tmp_23_fu_202_p2[2];
+tmp_23_reg_305[3] <= tmp_23_fu_202_p2[3];
+tmp_23_reg_305[4] <= tmp_23_fu_202_p2[4];
     end
 end
 
@@ -409,10 +409,10 @@ begin
 end
 
 /// int_buffer_address0 assign process. ///
-always @ (ap_CS_fsm or ap_reg_ppiten_pp0_it1 or ap_reg_ppiten_pp1_it0 or tmp_17_fu_213_p1 or tmp_20_fu_265_p1)
+always @ (ap_CS_fsm or ap_reg_ppiten_pp0_it1 or ap_reg_ppiten_pp1_it0 or tmp_s_fu_213_p1 or tmp_20_fu_265_p1)
 begin
     if (((ap_ST_pp0_stg0_fsm_1 == ap_CS_fsm) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it1))) begin
-        int_buffer_address0 = tmp_17_fu_213_p1;
+        int_buffer_address0 = tmp_s_fu_213_p1;
     end else if (((ap_ST_pp1_stg0_fsm_3 == ap_CS_fsm) & (ap_const_logic_1 == ap_reg_ppiten_pp1_it0))) begin
         int_buffer_address0 = tmp_20_fu_265_p1;
     end else begin
@@ -496,8 +496,8 @@ always @ (bus_r_req_full_n or ap_reg_ppstg_exitcond5_reg_320_pp1_it1)
 begin
     ap_sig_bdd_95 = ((bus_r_req_full_n == ap_const_logic_0) & (ap_const_lv1_0 == ap_reg_ppstg_exitcond5_reg_320_pp1_it1));
 end
-assign buffer_min_idx_V_address0 = tmp_14_fu_192_p1;
-assign buffer_sum_sq_address0 = tmp_14_fu_192_p1;
+assign buffer_min_idx_V_address0 = tmp_16_fu_192_p1;
+assign buffer_sum_sq_address0 = tmp_16_fu_192_p1;
 assign bus_r_address = bus_addr_reg_315;
 assign bus_r_dataout = int_buffer_load_reg_338;
 assign bus_r_rsp_read = ap_const_logic_0;
@@ -510,19 +510,19 @@ assign int_buffer_address1 = tmp_19_fu_224_p1;
 assign int_buffer_d0 = $unsigned(buffer_min_idx_V_q0);
 assign int_buffer_d1 = buffer_sum_sq_q0;
 assign isIter0_fu_270_p2 = (indvar_reg_168 == ap_const_lv6_0? 1'b1: 1'b0);
-assign tmp_13_fu_243_p1 = $unsigned(tmp_s_fu_233_p4);
-assign tmp_14_fu_192_p1 = $unsigned(i_reg_157);
-assign tmp_16_fu_198_p1 = i_reg_157[3:0];
-assign tmp_17_fu_213_p1 = $unsigned(tmp_21_reg_305);
-assign tmp_18_fu_217_p3 = {{tmp_16_reg_300}, {ap_const_lv1_1}};
+assign tmp_13_cast_fu_243_p1 = $unsigned(tmp_13_fu_233_p4);
+assign tmp_13_fu_233_p4 = {{tmp_fu_229_p2[ap_const_lv32_1F : ap_const_lv32_2]}};
+assign tmp_16_fu_192_p1 = $unsigned(i_reg_157);
+assign tmp_18_fu_217_p3 = {{tmp_22_reg_300}, {ap_const_lv1_1}};
 assign tmp_19_fu_224_p1 = $unsigned(tmp_18_fu_217_p3);
 assign tmp_20_fu_265_p1 = $unsigned(indvar_reg_168);
-assign tmp_21_fu_202_p2 = i_reg_157 << ap_const_lv5_1;
+assign tmp_22_fu_198_p1 = i_reg_157[3:0];
+assign tmp_23_fu_202_p2 = i_reg_157 << ap_const_lv5_1;
 assign tmp_fu_229_p2 = (address + offset);
-assign tmp_s_fu_233_p4 = {{tmp_fu_229_p2[ap_const_lv32_1F : ap_const_lv32_2]}};
+assign tmp_s_fu_213_p1 = $unsigned(tmp_23_reg_305);
 always @ (posedge ap_clk)
 begin
-    tmp_21_reg_305[0] <= 1'b0;
+    tmp_23_reg_305[0] <= 1'b0;
     bus_addr_reg_315[31:30] <= 2'b00;
 end
 

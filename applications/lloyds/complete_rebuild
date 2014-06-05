@@ -4,7 +4,7 @@ rm ../output_bitstream/k_means_system.bit
 rm ../output_bitstream/k_means_system.bit.bin
 
 cd ./combiner/HLS/
-vivado_hls combiner/combiner/script.tcl
+vivado_hls combiner/combiner/auto_script.tcl
 rm *.log
 echo "--------------------------------------------"
 echo "Built the combiner core"
@@ -12,7 +12,7 @@ echo "--------------------------------------------"
 cd ../../
 
 cd ./kernel/HLS/
-vivado_hls kernel/kernel/script.tcl
+vivado_hls kernel/kernel/auto_script.tcl
 rm *.log
 echo "--------------------------------------------"
 echo "Built the kernel core"

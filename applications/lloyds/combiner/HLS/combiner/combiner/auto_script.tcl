@@ -3,22 +3,20 @@
 ## Please DO NOT edit it.
 ## Copyright (C) 2013 Xilinx Inc. All rights reserved.
 ############################################################
-open_project kernel
-set_top lloyds_kernel_top
-add_files source/lloyds_kernel_top.cpp
-add_files source/lloyds_kernel_top.h
-add_files source/lloyds_util.cpp
-add_files source/lloyds_util.h
-add_files -tb ../../test_data/data_points.mat
+open_project combiner
+set_top combiner_top
+add_files combiner/source/combiner_top.h
+add_files combiner/source/combiner_top.cpp
+add_files -tb combiner/simulation/tb_io.h
+add_files -tb combiner/simulation/tb_io.cpp
+add_files -tb ../../test_data/intermediate.mat
 add_files -tb ../../test_data/data_points_N128_K4_D3_s0.75.mat
-add_files -tb intermediate.mat
-add_files -tb simulation/lloyds_kernel_tb.cpp
-add_files -tb simulation/tb_io.cpp
-add_files -tb simulation/tb_io.h
-open_solution "kernel"
+add_files -tb ../../test_data/data_points.mat
+add_files -tb combiner/simulation/combiner_tb.cpp
+open_solution "combiner"
 set_part {xc7z020clg484-1}
 create_clock -period 10 -name default
-source "./kernel/kernel/directives.tcl"
+source "./combiner/combiner/directives.tcl"
 #csim_design
 csynth_design
 #cosim_design -trace_level none

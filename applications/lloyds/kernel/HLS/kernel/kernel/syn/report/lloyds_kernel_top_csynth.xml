@@ -57,10 +57,10 @@
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>12</BRAM_18K>
+<BRAM_18K>16</BRAM_18K>
 <DSP48E>12</DSP48E>
-<FF>1024</FF>
-<LUT>1184</LUT>
+<FF>1539</FF>
+<LUT>1795</LUT>
 <SLICE>0</SLICE>
 </Resources>
 <AvailableResources>
@@ -394,6 +394,18 @@
 <RtlPorts>
 <name>output_addr</name>
 <Object>output_addr</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig>register</IOConfig>
+<Dir>in</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>update_points</name>
+<Object>update_points</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

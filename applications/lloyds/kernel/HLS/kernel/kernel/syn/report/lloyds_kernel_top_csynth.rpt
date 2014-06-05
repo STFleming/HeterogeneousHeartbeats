@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'lloyds_kernel_top'
 ================================================================
-* Date:           Tue Jun  3 09:54:16 2014
+* Date:           Thu Jun  5 14:26:08 2014
 
 * Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
 * Project:        kernel
@@ -34,14 +34,15 @@
 
     + Detail: 
         * Instance: 
-        +--------------------------------+---------------------+-----+-----+-----+-----+---------+
-        |                                |                     |  Latency  |  Interval | Pipeline|
-        |            Instance            |        Module       | min | max | min | max |   Type  |
-        +--------------------------------+---------------------+-----+-----+-----+-----+---------+
-        |grp_load_centres_buffer_fu_337  |load_centres_buffer  |    7|    ?|    7|    ?|   none  |
-        |grp_load_points_buffer_fu_349   |load_points_buffer   |   89|   89|   89|   89|   none  |
-        |grp_store_output_buffer_fu_362  |store_output_buffer  |   53|   53|   53|   53|   none  |
-        +--------------------------------+---------------------+-----+-----+-----+-----+---------+
+        +---------------------------------------+----------------------------+-----+-----+-----+-----+---------+
+        |                                       |                            |  Latency  |  Interval | Pipeline|
+        |                Instance               |           Module           | min | max | min | max |   Type  |
+        +---------------------------------------+----------------------------+-----+-----+-----+-----+---------+
+        |grp_load_centres_buffer_fu_504         |load_centres_buffer         |    7|    ?|    7|    ?|   none  |
+        |grp_store_output_points_buffer_fu_516  |store_output_points_buffer  |   85|   85|   85|   85|   none  |
+        |grp_load_points_buffer_fu_527          |load_points_buffer          |   89|   89|   89|   89|   none  |
+        |grp_store_output_buffer_fu_539         |store_output_buffer         |   53|   53|   53|   53|   none  |
+        +---------------------------------------+----------------------------+-----+-----+-----+-----+---------+
 
         * Loop: 
         +----------------------------+-----+-----+----------+-----------+-----------+-------+----------+
@@ -61,19 +62,19 @@
 +-----------------+---------+-------+--------+-------+
 |       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
 +-----------------+---------+-------+--------+-------+
-|Expression       |        -|      -|       0|    309|
+|Expression       |        -|      -|       0|    477|
 |FIFO             |        -|      -|       -|      -|
-|Instance         |        4|     12|     440|    592|
-|Memory           |        8|      -|       0|      0|
-|Multiplexer      |        -|      -|       -|    273|
-|Register         |        -|      -|     584|      -|
-|ShiftMemory      |        -|      -|       0|     10|
+|Instance         |        5|     12|     570|    735|
+|Memory           |       11|      -|       0|      0|
+|Multiplexer      |        -|      -|       -|    477|
+|Register         |        -|      -|     969|      -|
+|ShiftMemory      |        -|      -|       0|    106|
 +-----------------+---------+-------+--------+-------+
-|Total            |       12|     12|    1024|   1184|
+|Total            |       16|     12|    1539|   1795|
 +-----------------+---------+-------+--------+-------+
 |Available        |      280|    220|  106400|  53200|
 +-----------------+---------+-------+--------+-------+
-|Utilization (%)  |        4|      5|   ~0   |      2|
+|Utilization (%)  |        5|      5|       1|      3|
 +-----------------+---------+-------+--------+-------+
 
 + Detail: 
@@ -81,148 +82,184 @@
     +------------------------------------------+--------------------------------------+---------+-------+-----+-----+
     |                 Instance                 |                Module                | BRAM_18K| DSP48E|  FF | LUT |
     +------------------------------------------+--------------------------------------+---------+-------+-----+-----+
-    |lloyds_kernel_top_add_32ns_32ns_32_1_U24  |lloyds_kernel_top_add_32ns_32ns_32_1  |        0|      0|    0|   36|
-    |lloyds_kernel_top_add_32ns_32ns_32_1_U25  |lloyds_kernel_top_add_32ns_32ns_32_1  |        0|      0|    0|   36|
-    |lloyds_kernel_top_mul_32s_32s_64_6_U21    |lloyds_kernel_top_mul_32s_32s_64_6    |        0|      4|    0|    0|
-    |lloyds_kernel_top_mul_32s_32s_64_6_U22    |lloyds_kernel_top_mul_32s_32s_64_6    |        0|      4|    0|    0|
-    |lloyds_kernel_top_mul_32s_32s_64_6_U23    |lloyds_kernel_top_mul_32s_32s_64_6    |        0|      4|    0|    0|
-    |grp_load_centres_buffer_fu_337            |load_centres_buffer                   |        2|      0|  234|  317|
-    |grp_load_points_buffer_fu_349             |load_points_buffer                    |        1|      0|  112|  124|
-    |grp_store_output_buffer_fu_362            |store_output_buffer                   |        1|      0|   94|   79|
+    |lloyds_kernel_top_add_32ns_32ns_32_1_U31  |lloyds_kernel_top_add_32ns_32ns_32_1  |        0|      0|    0|   36|
+    |lloyds_kernel_top_add_32ns_32ns_32_1_U32  |lloyds_kernel_top_add_32ns_32ns_32_1  |        0|      0|    0|   36|
+    |lloyds_kernel_top_mul_32s_32s_64_6_U28    |lloyds_kernel_top_mul_32s_32s_64_6    |        0|      4|    0|    0|
+    |lloyds_kernel_top_mul_32s_32s_64_6_U29    |lloyds_kernel_top_mul_32s_32s_64_6    |        0|      4|    0|    0|
+    |lloyds_kernel_top_mul_32s_32s_64_6_U30    |lloyds_kernel_top_mul_32s_32s_64_6    |        0|      4|    0|    0|
+    |grp_load_centres_buffer_fu_504            |load_centres_buffer                   |        2|      0|  234|  317|
+    |grp_load_points_buffer_fu_527             |load_points_buffer                    |        1|      0|  112|  124|
+    |grp_store_output_buffer_fu_539            |store_output_buffer                   |        1|      0|   94|   79|
+    |grp_store_output_points_buffer_fu_516     |store_output_points_buffer            |        1|      0|  130|  143|
     +------------------------------------------+--------------------------------------+---------+-------+-----+-----+
-    |Total                                     |                                      |        4|     12|  440|  592|
+    |Total                                     |                                      |        5|     12|  570|  735|
     +------------------------------------------+--------------------------------------+---------+-------+-----+-----+
 
     * Memory: 
-    +------------------------------+----------------------------------------------+---------+------+-----+------+-------------+
-    |            Memory            |                    Module                    | BRAM_18K| Words| Bits| Banks| W*Bits*Banks|
-    +------------------------------+----------------------------------------------+---------+------+-----+------+-------------+
-    |centres_buffer_0_value_U      |lloyds_kernel_top_centres_buffer_0_value      |        1|   256|   32|     1|         8192|
-    |centres_buffer_1_value_U      |lloyds_kernel_top_centres_buffer_0_value      |        1|   256|   32|     1|         8192|
-    |centres_buffer_2_value_U      |lloyds_kernel_top_centres_buffer_0_value      |        1|   256|   32|     1|         8192|
-    |data_points_buffer_0_value_U  |lloyds_kernel_top_data_points_buffer_0_value  |        1|    16|   32|     1|          512|
-    |data_points_buffer_1_value_U  |lloyds_kernel_top_data_points_buffer_0_value  |        1|    16|   32|     1|          512|
-    |data_points_buffer_2_value_U  |lloyds_kernel_top_data_points_buffer_0_value  |        1|    16|   32|     1|          512|
-    |output_buffer_sum_sq_U        |lloyds_kernel_top_data_points_buffer_0_value  |        1|    16|   32|     1|          512|
-    |output_buffer_min_idx_V_U     |lloyds_kernel_top_output_buffer_min_idx_V     |        1|    16|    8|     1|          128|
-    +------------------------------+----------------------------------------------+---------+------+-----+------+-------------+
-    |Total                         |                                              |        8|   848|  232|     8|        26752|
-    +------------------------------+----------------------------------------------+---------+------+-----+------+-------------+
+    +--------------------------------+----------------------------------------------+---------+------+-----+------+-------------+
+    |             Memory             |                    Module                    | BRAM_18K| Words| Bits| Banks| W*Bits*Banks|
+    +--------------------------------+----------------------------------------------+---------+------+-----+------+-------------+
+    |centres_buffer_0_value_U        |lloyds_kernel_top_centres_buffer_0_value      |        1|   256|   32|     1|         8192|
+    |centres_buffer_1_value_U        |lloyds_kernel_top_centres_buffer_0_value      |        1|   256|   32|     1|         8192|
+    |centres_buffer_2_value_U        |lloyds_kernel_top_centres_buffer_0_value      |        1|   256|   32|     1|         8192|
+    |data_points_buffer_0_value_U    |lloyds_kernel_top_data_points_buffer_0_value  |        1|    16|   32|     1|          512|
+    |data_points_buffer_1_value_U    |lloyds_kernel_top_data_points_buffer_0_value  |        1|    16|   32|     1|          512|
+    |data_points_buffer_2_value_U    |lloyds_kernel_top_data_points_buffer_0_value  |        1|    16|   32|     1|          512|
+    |output_buffer_sum_sq_U          |lloyds_kernel_top_data_points_buffer_0_value  |        1|    16|   32|     1|          512|
+    |output_points_buffer_0_value_U  |lloyds_kernel_top_data_points_buffer_0_value  |        1|    16|   32|     1|          512|
+    |output_points_buffer_1_value_U  |lloyds_kernel_top_data_points_buffer_0_value  |        1|    16|   32|     1|          512|
+    |output_points_buffer_2_value_U  |lloyds_kernel_top_data_points_buffer_0_value  |        1|    16|   32|     1|          512|
+    |output_buffer_min_idx_V_U       |lloyds_kernel_top_output_buffer_min_idx_V     |        1|    16|    8|     1|          128|
+    +--------------------------------+----------------------------------------------+---------+------+-----+------+-------------+
+    |Total                           |                                              |       11|   896|  328|    11|        28288|
+    +--------------------------------+----------------------------------------------+---------+------+-----+------+-------------+
 
     * FIFO: 
     N/A
 
     * Shift register: 
-    +------------------------------+---+----+-----+-----------+
-    |             Name             | FF| LUT| Bits| Const Bits|
-    +------------------------------+---+----+-----+-----------+
-    |final_centre_index_V_reg_267  |  0|   8|    8|          0|
-    |tmp_12_reg_635                |  0|   1|    1|          0|
-    |tmp_2_reg_611                 |  0|   1|    1|          0|
-    +------------------------------+---+----+-----+-----------+
-    |Total                         |  0|  10|   10|          0|
-    +------------------------------+---+----+-----+-----------+
+    +--------------------------------+---+----+-----+-----------+
+    |              Name              | FF| LUT| Bits| Const Bits|
+    +--------------------------------+---+----+-----+-----------+
+    |closest_centre_value_0_reg_883  |  0|  32|   32|          0|
+    |closest_centre_value_1_reg_889  |  0|  32|   32|          0|
+    |closest_centre_value_2_reg_895  |  0|  32|   32|          0|
+    |final_centre_index_V_reg_362    |  0|   8|    8|          0|
+    |tmp_14_reg_879                  |  0|   1|    1|          0|
+    |tmp_3_reg_855                   |  0|   1|    1|          0|
+    +--------------------------------+---+----+-----+-----------+
+    |Total                           |  0| 106|  106|          0|
+    +--------------------------------+---+----+-----+-----------+
 
     * Expression: 
-    +------------------------+----------+-------+---+----+------------+------------+
-    |      Variable Name     | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
-    +------------------------+----------+-------+---+----+------------+------------+
-    |i_1_fu_383_p2           |     +    |      0|  0|   5|           5|           1|
-    |ii_V_fu_405_p2          |     +    |      0|  0|   8|           8|           1|
-    |tmp_2_1_fu_428_p2       |     -    |      0|  0|  32|          32|          32|
-    |tmp_2_2_fu_433_p2       |     -    |      0|  0|  32|          32|          32|
-    |tmp_8_fu_423_p2         |     -    |      0|  0|  32|          32|          32|
-    |p_034_0_s_fu_511_p3     |  Select  |      0|  0|   8|           1|           8|
-    |p_min_dist_fu_527_p3    |  Select  |      0|  0|  32|           1|          32|
-    |p_sum_sq_out_fu_519_p3  |  Select  |      0|  0|  32|           1|          32|
-    |ap_sig_bdd_339          |    and   |      0|  0|   1|           1|           1|
-    |ap_sig_bdd_532          |    and   |      0|  0|   1|           1|           1|
-    |exitcond_fu_377_p2      |   icmp   |      0|  0|   6|           5|           6|
-    |tmp_11_fu_505_p2        |   icmp   |      0|  0|  40|          32|          32|
-    |tmp_12_fu_418_p2        |   icmp   |      0|  0|  40|          32|          32|
-    |tmp_2_fu_400_p2         |   icmp   |      0|  0|  40|          32|          32|
-    +------------------------+----------+-------+---+----+------------+------------+
-    |Total                   |          |      0|  0| 309|         215|         274|
-    +------------------------+----------+-------+---+----+------------+------------+
+    +-----------------------------------------------------------+----------+-------+---+----+------------+------------+
+    |                       Variable Name                       | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------------------------------+----------+-------+---+----+------------+------------+
+    |i_1_fu_578_p2                                              |     +    |      0|  0|   5|           5|           1|
+    |ii_V_fu_605_p2                                             |     +    |      0|  0|   8|           8|           1|
+    |data_points_block_address_fu_555_p2                        |     -    |      0|  0|  32|          32|          32|
+    |tmp_2_1_fu_637_p2                                          |     -    |      0|  0|  32|          32|          32|
+    |tmp_2_2_fu_651_p2                                          |     -    |      0|  0|  32|          32|          32|
+    |tmp_9_fu_623_p2                                            |     -    |      0|  0|  32|          32|          32|
+    |closest_centre_value_0_closest_centre_value_0_1_fu_725_p3  |  Select  |      0|  0|  32|           1|          32|
+    |closest_centre_value_1_closest_centre_value_1_1_fu_718_p3  |  Select  |      0|  0|  32|           1|          32|
+    |closest_centre_value_2_closest_centre_value_2_1_fu_711_p3  |  Select  |      0|  0|  32|           1|          32|
+    |final_centre_index_V_s_fu_732_p3                           |  Select  |      0|  0|   8|           1|           8|
+    |tmp_dist_min_dist_fu_748_p3                                |  Select  |      0|  0|  32|           1|          32|
+    |tmp_dist_sum_sq_out_fu_740_p3                              |  Select  |      0|  0|  32|           1|          32|
+    |ap_sig_bdd_408                                             |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_660                                             |    and   |      0|  0|   1|           1|           1|
+    |exitcond_fu_572_p2                                         |   icmp   |      0|  0|   6|           5|           6|
+    |tmp_13_fu_705_p2                                           |   icmp   |      0|  0|  40|          32|          32|
+    |tmp_14_fu_618_p2                                           |   icmp   |      0|  0|  40|          32|          32|
+    |tmp_3_fu_600_p2                                            |   icmp   |      0|  0|  40|          32|          32|
+    |tmp_s_fu_591_p2                                            |   icmp   |      0|  0|  40|          32|           1|
+    +-----------------------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                                      |          |      0|  0| 477|         282|         403|
+    +-----------------------------------------------------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
-    +-------------------------------------+----+-----------+-----+-----------+
-    |                 Name                | LUT| Input Size| Bits| Total Bits|
-    +-------------------------------------+----+-----------+-----+-----------+
-    |centres_buffer_0_value_address0      |   8|          3|    8|         24|
-    |centres_buffer_1_value_address0      |   8|          3|    8|         24|
-    |centres_buffer_2_value_address0      |   8|          3|    8|         24|
-    |data_points_buffer_0_value_address0  |   4|          3|    4|         12|
-    |data_points_buffer_1_value_address0  |   4|          3|    4|         12|
-    |data_points_buffer_2_value_address0  |   4|          3|    4|         12|
-    |final_centre_index_V_phi_fu_271_p4   |   8|          2|    8|         16|
-    |final_centre_index_V_reg_267         |   8|          2|    8|         16|
-    |i_reg_256                            |   5|          2|    5|         10|
-    |master_portA_address                 |  32|          3|   32|         96|
-    |master_portA_dataout                 |  32|          3|   32|         96|
-    |master_portA_size                    |  32|          3|   32|         96|
-    |min_dist_reg_303                     |  32|          2|   32|         64|
-    |output_buffer_min_idx_V_address0     |   4|          3|    4|         12|
-    |output_buffer_sum_sq_address0        |   4|          3|    4|         12|
-    |p_032_2_reg_314                      |   8|          2|    8|         16|
-    |p_s_reg_279                          |   8|          2|    8|         16|
-    |sum_sq_out_2_reg_325                 |  32|          2|   32|         64|
-    |sum_sq_out_reg_291                   |  32|          2|   32|         64|
-    +-------------------------------------+----+-----------+-----+-----------+
-    |Total                                | 273|         49|  273|        686|
-    +-------------------------------------+----+-----------+-----+-----------+
+    +---------------------------------------+----+-----------+-----+-----------+
+    |                  Name                 | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------+----+-----------+-----+-----------+
+    |centres_buffer_0_value_address0        |   8|          3|    8|         24|
+    |centres_buffer_1_value_address0        |   8|          3|    8|         24|
+    |centres_buffer_2_value_address0        |   8|          3|    8|         24|
+    |closest_centre_value_0_1_reg_396       |  32|          2|   32|         64|
+    |closest_centre_value_0_3_reg_468       |  32|          2|   32|         64|
+    |closest_centre_value_1_1_reg_385       |  32|          2|   32|         64|
+    |closest_centre_value_1_3_reg_455       |  32|          2|   32|         64|
+    |closest_centre_value_2_1_reg_374       |  32|          2|   32|         64|
+    |closest_centre_value_2_3_reg_442       |  32|          2|   32|         64|
+    |data_points_buffer_0_value_address0    |   4|          3|    4|         12|
+    |data_points_buffer_1_value_address0    |   4|          3|    4|         12|
+    |data_points_buffer_2_value_address0    |   4|          3|    4|         12|
+    |final_centre_index_V_phi_fu_366_p4     |   8|          2|    8|         16|
+    |final_centre_index_V_reg_362           |   8|          2|    8|         16|
+    |i_reg_351                              |   5|          2|    5|         10|
+    |master_portA_address                   |  32|          4|   32|        128|
+    |master_portA_dataout                   |  32|          4|   32|        128|
+    |master_portA_size                      |  32|          4|   32|        128|
+    |min_dist_reg_431                       |  32|          2|   32|         64|
+    |output_buffer_min_idx_V_address0       |   4|          3|    4|         12|
+    |output_buffer_sum_sq_address0          |   4|          3|    4|         12|
+    |output_points_buffer_0_value_address0  |   4|          3|    4|         12|
+    |output_points_buffer_1_value_address0  |   4|          3|    4|         12|
+    |output_points_buffer_2_value_address0  |   4|          3|    4|         12|
+    |p_036_2_reg_481                        |   8|          2|    8|         16|
+    |p_s_reg_407                            |   8|          2|    8|         16|
+    |sum_sq_out_2_reg_492                   |  32|          2|   32|         64|
+    |sum_sq_out_reg_419                     |  32|          2|   32|         64|
+    +---------------------------------------+----+-----------+-----+-----------+
+    |Total                                  | 477|         73|  477|       1202|
+    +---------------------------------------+----+-----------+-----+-----------+
 
     * Register: 
-    +------------------------------------------------------+----+-----+-----------+
-    |                         Name                         | FF | Bits| Const Bits|
-    +------------------------------------------------------+----+-----+-----------+
-    |ap_CS_fsm                                             |   3|    3|          0|
-    |ap_reg_ppiten_pp0_it0                                 |   1|    1|          0|
-    |ap_reg_ppiten_pp0_it1                                 |   1|    1|          0|
-    |ap_reg_ppiten_pp0_it2                                 |   1|    1|          0|
-    |ap_reg_ppiten_pp0_it3                                 |   1|    1|          0|
-    |ap_reg_ppiten_pp0_it4                                 |   1|    1|          0|
-    |ap_reg_ppiten_pp0_it5                                 |   1|    1|          0|
-    |ap_reg_ppiten_pp0_it6                                 |   1|    1|          0|
-    |ap_reg_ppiten_pp0_it7                                 |   1|    1|          0|
-    |ap_reg_ppiten_pp0_it8                                 |   1|    1|          0|
-    |block_address0data_reg                                |  32|   32|          0|
-    |block_address0vld_reg                                 |   0|    1|          1|
-    |centres_in_addr0data_reg                              |  32|   32|          0|
-    |centres_in_addr0vld_reg                               |   0|    1|          1|
-    |data_points_addr0data_reg                             |  32|   32|          0|
-    |data_points_addr0vld_reg                              |   0|    1|          1|
-    |data_points_buffer_0_value_load_reg_596               |  32|   32|          0|
-    |data_points_buffer_1_value_load_reg_601               |  32|   32|          0|
-    |data_points_buffer_2_value_load_reg_606               |  32|   32|          0|
-    |final_centre_index_V_reg_267                          |   8|    8|          0|
-    |grp_load_centres_buffer_fu_337_ap_start_ap_start_reg  |   1|    1|          0|
-    |grp_load_points_buffer_fu_349_ap_start_ap_start_reg   |   1|    1|          0|
-    |grp_store_output_buffer_fu_362_ap_start_ap_start_reg  |   1|    1|          0|
-    |i_1_reg_570                                           |   5|    5|          0|
-    |i_reg_256                                             |   5|    5|          0|
-    |ii_V_reg_615                                          |   8|    8|          0|
-    |k0data_reg                                            |  32|   32|          0|
-    |k0vld_reg                                             |   0|    1|          1|
-    |min_dist_reg_303                                      |  32|   32|          0|
-    |output_addr0data_reg                                  |  32|   32|          0|
-    |output_addr0vld_reg                                   |   0|    1|          1|
-    |p_032_2_reg_314                                       |   8|    8|          0|
-    |p_s_reg_279                                           |   8|    8|          0|
-    |result_2_reg_672                                      |  32|   32|          0|
-    |sum_sq_out_2_reg_325                                  |  32|   32|          0|
-    |sum_sq_out_reg_291                                    |  32|   32|          0|
-    |tmp3_reg_677                                          |  32|   32|          0|
-    |tmp_12_reg_635                                        |   1|    1|          0|
-    |tmp_13_reg_562                                        |   8|    8|          0|
-    |tmp_2_1_reg_644                                       |  32|   32|          0|
-    |tmp_2_2_reg_649                                       |  32|   32|          0|
-    |tmp_2_reg_611                                         |   1|    1|          0|
-    |tmp_8_reg_639                                         |  32|   32|          0|
-    |tmp_s_reg_575                                         |   5|   64|         59|
-    +------------------------------------------------------+----+-----+-----------+
-    |Total                                                 | 584|  648|         64|
-    +------------------------------------------------------+----+-----+-----------+
+    +-------------------------------------------------------------+----+-----+-----------+
+    |                             Name                            | FF | Bits| Const Bits|
+    +-------------------------------------------------------------+----+-----+-----------+
+    |ap_CS_fsm                                                    |   3|    3|          0|
+    |ap_reg_ppiten_pp0_it0                                        |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it1                                        |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it2                                        |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it3                                        |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it4                                        |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it5                                        |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it6                                        |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it7                                        |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it8                                        |   1|    1|          0|
+    |block_address0data_reg                                       |  32|   32|          0|
+    |block_address0vld_reg                                        |   0|    1|          1|
+    |centres_in_addr0data_reg                                     |  32|   32|          0|
+    |centres_in_addr0vld_reg                                      |   0|    1|          1|
+    |closest_centre_value_0_1_reg_396                             |  32|   32|          0|
+    |closest_centre_value_0_3_reg_468                             |  32|   32|          0|
+    |closest_centre_value_0_reg_883                               |  32|   32|          0|
+    |closest_centre_value_0_s_reg_339                             |  32|   32|          0|
+    |closest_centre_value_1_1_reg_385                             |  32|   32|          0|
+    |closest_centre_value_1_3_reg_455                             |  32|   32|          0|
+    |closest_centre_value_1_reg_889                               |  32|   32|          0|
+    |closest_centre_value_1_s_reg_327                             |  32|   32|          0|
+    |closest_centre_value_2_1_reg_374                             |  32|   32|          0|
+    |closest_centre_value_2_3_reg_442                             |  32|   32|          0|
+    |closest_centre_value_2_reg_895                               |  32|   32|          0|
+    |closest_centre_value_2_s_reg_315                             |  32|   32|          0|
+    |data_points_addr0data_reg                                    |  32|   32|          0|
+    |data_points_addr0vld_reg                                     |   0|    1|          1|
+    |data_points_block_address_reg_788                            |  32|   32|          0|
+    |data_points_buffer_0_value_load_reg_840                      |  32|   32|          0|
+    |data_points_buffer_1_value_load_reg_845                      |  32|   32|          0|
+    |data_points_buffer_2_value_load_reg_850                      |  32|   32|          0|
+    |final_centre_index_V_reg_362                                 |   8|    8|          0|
+    |grp_load_centres_buffer_fu_504_ap_start_ap_start_reg         |   1|    1|          0|
+    |grp_load_points_buffer_fu_527_ap_start_ap_start_reg          |   1|    1|          0|
+    |grp_store_output_buffer_fu_539_ap_start_ap_start_reg         |   1|    1|          0|
+    |grp_store_output_points_buffer_fu_516_ap_start_ap_start_reg  |   1|    1|          0|
+    |i_1_reg_807                                                  |   5|    5|          0|
+    |i_reg_351                                                    |   5|    5|          0|
+    |ii_V_reg_859                                                 |   8|    8|          0|
+    |k0data_reg                                                   |  32|   32|          0|
+    |k0vld_reg                                                    |   0|    1|          1|
+    |kernel_info_block_address_reg_799                            |  31|   32|          1|
+    |min_dist_reg_431                                             |  32|   32|          0|
+    |output_addr0data_reg                                         |  32|   32|          0|
+    |output_addr0vld_reg                                          |   0|    1|          1|
+    |p_036_2_reg_481                                              |   8|    8|          0|
+    |p_s_reg_407                                                  |   8|    8|          0|
+    |result_2_reg_919                                             |  32|   32|          0|
+    |sum_sq_out_2_reg_492                                         |  32|   32|          0|
+    |sum_sq_out_reg_419                                           |  32|   32|          0|
+    |tmp3_reg_924                                                 |  32|   32|          0|
+    |tmp_14_reg_879                                               |   1|    1|          0|
+    |tmp_16_reg_794                                               |   8|    8|          0|
+    |tmp_1_reg_812                                                |   5|   64|         59|
+    |tmp_3_reg_855                                                |   1|    1|          0|
+    |tmp_s_reg_836                                                |   1|    1|          0|
+    |update_points0data_reg                                       |  32|   32|          0|
+    |update_points0vld_reg                                        |   0|    1|          1|
+    +-------------------------------------------------------------+----+-----+-----------+
+    |Total                                                        | 969| 1035|         66|
+    +-------------------------------------------------------------+----+-----+-----------+
 
 
 
@@ -261,6 +298,7 @@
 |data_points_addr          |  in |   32|   ap_none  |  data_points_addr |    scalar    |
 |centres_in_addr           |  in |   32|   ap_none  |  centres_in_addr  |    scalar    |
 |output_addr               |  in |   32|   ap_none  |    output_addr    |    scalar    |
+|update_points             |  in |   32|   ap_none  |   update_points   |    scalar    |
 |n                         |  in |   32|   ap_none  |         n         |    scalar    |
 |k                         |  in |   32|   ap_none  |         k         |    scalar    |
 +--------------------------+-----+-----+------------+-------------------+--------------+
