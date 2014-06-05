@@ -60,6 +60,13 @@ XLloyds_kernel_top setup_XLloyds_kernel_top(void)
 
 }
 
+void XLloyds_kernel_top_SetUpdate_points(XLloyds_kernel_top *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XLloyds_kernel_top_WriteReg(InstancePtr->Config_bus_BaseAddress, XLLOYDS_KERNEL_TOP_CONFIG_BUS_ADDR_UPDATE_POINTS_DATA, Data);
+}
+
 void XLloyds_kernel_top_Start(XLloyds_kernel_top *InstancePtr) {
     u32 Data;
 

@@ -86,6 +86,7 @@ int XLloyds_kernel_top_Release(XLloyds_kernel_top *InstancePtr);
 
 XLloyds_kernel_top setup_XLloyds_kernel_top(void);
 
+void XLloyds_kernel_top_SetUpdate_points(XLloyds_kernel_top *InstancePtr, u32 Data);
 void XLloyds_kernel_top_Start(XLloyds_kernel_top *InstancePtr);
 u32 XLloyds_kernel_top_IsDone(XLloyds_kernel_top *InstancePtr);
 u32 XLloyds_kernel_top_IsIdle(XLloyds_kernel_top *InstancePtr);
