@@ -5,18 +5,19 @@
 ############################################################
 open_project combiner
 set_top combiner_top
-add_files combiner/source/combiner_top.h
-add_files combiner/source/combiner_top.cpp
-add_files -tb combiner/simulation/tb_io.h
-add_files -tb combiner/simulation/tb_io.cpp
-add_files -tb ../../test_data/intermediate.mat
-add_files -tb ../../test_data/data_points_N128_K4_D3_s0.75.mat
-add_files -tb ../../test_data/data_points.mat
-add_files -tb combiner/simulation/combiner_tb.cpp
+puts [pwd]
+add_files combiner/HLS/combiner/source/combiner_top.h
+add_files combiner/HLS/combiner/source/combiner_top.cpp
+add_files -tb combiner/HLS/combiner/simulation/tb_io.h
+add_files -tb combiner/HLS/combiner/simulation/tb_io.cpp
+add_files -tb ./test_data/intermediate.mat
+add_files -tb ./test_data/data_points_N128_K4_D3_s0.75.mat
+add_files -tb ./test_data/data_points.mat
+add_files -tb combiner/HLS/combiner/simulation/combiner_tb.cpp
 open_solution "combiner"
 set_part {xc7z020clg484-1}
 create_clock -period 10 -name default
-source "./combiner/combiner/directives.tcl"
+#source "directives.tcl"
 #csim_design
 csynth_design
 #cosim_design -trace_level none

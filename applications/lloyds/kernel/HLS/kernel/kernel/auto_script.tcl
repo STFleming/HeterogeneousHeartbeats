@@ -5,20 +5,20 @@
 ############################################################
 open_project kernel
 set_top lloyds_kernel_top
-add_files source/lloyds_kernel_top.cpp
-add_files source/lloyds_kernel_top.h
-add_files source/lloyds_util.cpp
-add_files source/lloyds_util.h
-add_files -tb ../../test_data/data_points.mat
-add_files -tb ../../test_data/data_points_N128_K4_D3_s0.75.mat
-add_files -tb intermediate.mat
-add_files -tb simulation/lloyds_kernel_tb.cpp
-add_files -tb simulation/tb_io.cpp
-add_files -tb simulation/tb_io.h
+add_files kernel/HLS/source/lloyds_kernel_top.cpp
+add_files kernel/HLS/source/lloyds_kernel_top.h
+add_files kernel/HLS/source/lloyds_util.cpp
+add_files kernel/HLS/source/lloyds_util.h
+add_files -tb ./test_data/data_points.mat
+add_files -tb ./test_data/data_points_N128_K4_D3_s0.75.mat
+add_files -tb kernel/HLS/intermediate.mat
+add_files -tb kernel/HLS/simulation/lloyds_kernel_tb.cpp
+add_files -tb kernel/HLS/simulation/tb_io.cpp
+add_files -tb kernel/HLS/simulation/tb_io.h
 open_solution "kernel"
 set_part {xc7z020clg484-1}
 create_clock -period 10 -name default
-source "./kernel/kernel/directives.tcl"
+#source "./kernel/kernel/directives.tcl"
 #csim_design
 csynth_design
 #cosim_design -trace_level none
