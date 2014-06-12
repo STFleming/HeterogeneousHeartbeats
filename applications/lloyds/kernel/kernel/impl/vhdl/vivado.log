@@ -1,0 +1,1888 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Thu Jun 12 14:16:58 2014
+# Process ID: 15663
+# Log file: /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/vivado.log
+# Journal file: /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/vivado.jou
+#-----------------------------------------------------------
+Attempting to get a license: Implementation
+Feature available: Implementation
+Loading parts and site information from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source run_vivado.tcl -notrace
+[Thu Jun 12 14:17:06 2014] Launched synth_1...
+Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/project.runs/synth_1/runme.log
+[Thu Jun 12 14:17:06 2014] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log lloyds_kernel_top.rds -m64 -mode batch -messageDb vivado.pb -source lloyds_kernel_top.tcl
+
+
+****** Vivado v2013.4 (64-bit)
+  **** SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+  **** IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+Attempting to get a license: Implementation
+Feature available: Implementation
+Loading parts and site information from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source lloyds_kernel_top.tcl
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7z020clg484-1
+# set_property target_language VHDL [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# read_vhdl {
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_points_buffer_int_buffer.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_buffer_int_buffer.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_points_buffer_int_buffer.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer_int_buffer.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_points_buffer.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_buffer.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_points_buffer.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_output_buffer_min_idx_V.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_data_points_buffer_0_value.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_centres_buffer_0_value.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_add_32ns_32ns_32_1.vhd
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd
+# }
+# read_xdc /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.xdc
+# set_property used_in_implementation false [get_files /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/project.data/wt [current_project]
+# set_property parent.project_dir /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl [current_project]
+# synth_design -top lloyds_kernel_top -part xc7z020clg484-1 -no_lc -no_iobuf -mode out_of_context
+Command: synth_design -top lloyds_kernel_top -part xc7z020clg484-1 -no_lc -no_iobuf -mode out_of_context
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 770.648 ; gain = 147.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'lloyds_kernel_top' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:40]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_data_points_buffer_0_value' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_data_points_buffer_0_value.vhd:77' bound to instance 'data_points_buffer_0_value_U' of component 'lloyds_kernel_top_data_points_buffer_0_value' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:593]
+INFO: [Synth 8-638] synthesizing module 'lloyds_kernel_top_data_points_buffer_0_value__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_data_points_buffer_0_value.vhd:92]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_data_points_buffer_0_value_ram' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_data_points_buffer_0_value.vhd:13' bound to instance 'lloyds_kernel_top_data_points_buffer_0_value_ram_U' of component 'lloyds_kernel_top_data_points_buffer_0_value_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_data_points_buffer_0_value.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'lloyds_kernel_top_data_points_buffer_0_value_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_data_points_buffer_0_value.vhd:31]
+	Parameter mem_type bound to: block - type: string 
+	Parameter dwidth bound to: 32 - type: integer 
+	Parameter awidth bound to: 4 - type: integer 
+	Parameter mem_size bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'lloyds_kernel_top_data_points_buffer_0_value_ram' (1#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_data_points_buffer_0_value.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'lloyds_kernel_top_data_points_buffer_0_value__parameterized0' (2#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_data_points_buffer_0_value.vhd:92]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_data_points_buffer_0_value' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_data_points_buffer_0_value.vhd:77' bound to instance 'data_points_buffer_1_value_U' of component 'lloyds_kernel_top_data_points_buffer_0_value' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:607]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_data_points_buffer_0_value' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_data_points_buffer_0_value.vhd:77' bound to instance 'data_points_buffer_2_value_U' of component 'lloyds_kernel_top_data_points_buffer_0_value' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:621]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_centres_buffer_0_value' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_centres_buffer_0_value.vhd:77' bound to instance 'centres_buffer_0_value_U' of component 'lloyds_kernel_top_centres_buffer_0_value' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:635]
+INFO: [Synth 8-638] synthesizing module 'lloyds_kernel_top_centres_buffer_0_value__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_centres_buffer_0_value.vhd:92]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_centres_buffer_0_value_ram' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_centres_buffer_0_value.vhd:13' bound to instance 'lloyds_kernel_top_centres_buffer_0_value_ram_U' of component 'lloyds_kernel_top_centres_buffer_0_value_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_centres_buffer_0_value.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'lloyds_kernel_top_centres_buffer_0_value_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_centres_buffer_0_value.vhd:31]
+	Parameter mem_type bound to: block - type: string 
+	Parameter dwidth bound to: 32 - type: integer 
+	Parameter awidth bound to: 8 - type: integer 
+	Parameter mem_size bound to: 256 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'lloyds_kernel_top_centres_buffer_0_value_ram' (3#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_centres_buffer_0_value.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'lloyds_kernel_top_centres_buffer_0_value__parameterized0' (4#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_centres_buffer_0_value.vhd:92]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_centres_buffer_0_value' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_centres_buffer_0_value.vhd:77' bound to instance 'centres_buffer_1_value_U' of component 'lloyds_kernel_top_centres_buffer_0_value' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:649]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_centres_buffer_0_value' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_centres_buffer_0_value.vhd:77' bound to instance 'centres_buffer_2_value_U' of component 'lloyds_kernel_top_centres_buffer_0_value' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:663]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_output_buffer_min_idx_V' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_output_buffer_min_idx_V.vhd:77' bound to instance 'output_buffer_min_idx_V_U' of component 'lloyds_kernel_top_output_buffer_min_idx_V' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:677]
+INFO: [Synth 8-638] synthesizing module 'lloyds_kernel_top_output_buffer_min_idx_V__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_output_buffer_min_idx_V.vhd:92]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_output_buffer_min_idx_V_ram' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_output_buffer_min_idx_V.vhd:13' bound to instance 'lloyds_kernel_top_output_buffer_min_idx_V_ram_U' of component 'lloyds_kernel_top_output_buffer_min_idx_V_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_output_buffer_min_idx_V.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'lloyds_kernel_top_output_buffer_min_idx_V_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_output_buffer_min_idx_V.vhd:31]
+	Parameter mem_type bound to: block - type: string 
+	Parameter dwidth bound to: 8 - type: integer 
+	Parameter awidth bound to: 4 - type: integer 
+	Parameter mem_size bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'lloyds_kernel_top_output_buffer_min_idx_V_ram' (5#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_output_buffer_min_idx_V.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'lloyds_kernel_top_output_buffer_min_idx_V__parameterized0' (6#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_output_buffer_min_idx_V.vhd:92]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_data_points_buffer_0_value' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_data_points_buffer_0_value.vhd:77' bound to instance 'output_buffer_sum_sq_U' of component 'lloyds_kernel_top_data_points_buffer_0_value' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:691]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_data_points_buffer_0_value' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_data_points_buffer_0_value.vhd:77' bound to instance 'output_points_buffer_0_value_U' of component 'lloyds_kernel_top_data_points_buffer_0_value' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:705]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_data_points_buffer_0_value' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_data_points_buffer_0_value.vhd:77' bound to instance 'output_points_buffer_1_value_U' of component 'lloyds_kernel_top_data_points_buffer_0_value' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:719]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_data_points_buffer_0_value' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_data_points_buffer_0_value.vhd:77' bound to instance 'output_points_buffer_2_value_U' of component 'lloyds_kernel_top_data_points_buffer_0_value' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:733]
+INFO: [Synth 8-3491] module 'load_centres_buffer' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer.vhd:12' bound to instance 'grp_load_centres_buffer_fu_522' of component 'load_centres_buffer' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:747]
+INFO: [Synth 8-638] synthesizing module 'load_centres_buffer' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer.vhd:46]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 768 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'load_centres_buffer_int_buffer' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer_int_buffer.vhd:102' bound to instance 'int_buffer_U' of component 'load_centres_buffer_int_buffer' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'load_centres_buffer_int_buffer__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer_int_buffer.vhd:120]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 768 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'load_centres_buffer_int_buffer_ram' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer_int_buffer.vhd:13' bound to instance 'load_centres_buffer_int_buffer_ram_U' of component 'load_centres_buffer_int_buffer_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer_int_buffer.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'load_centres_buffer_int_buffer_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer_int_buffer.vhd:34]
+	Parameter mem_type bound to: block - type: string 
+	Parameter dwidth bound to: 32 - type: integer 
+	Parameter awidth bound to: 10 - type: integer 
+	Parameter mem_size bound to: 768 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'load_centres_buffer_int_buffer_ram' (7#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer_int_buffer.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'load_centres_buffer_int_buffer__parameterized0' (8#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer_int_buffer.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'load_centres_buffer' (9#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer.vhd:46]
+INFO: [Synth 8-3491] module 'store_output_points_buffer' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_points_buffer.vhd:12' bound to instance 'grp_store_output_points_buffer_fu_533' of component 'store_output_points_buffer' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:779]
+INFO: [Synth 8-638] synthesizing module 'store_output_points_buffer' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_points_buffer.vhd:43]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 48 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'store_output_points_buffer_int_buffer' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_points_buffer_int_buffer.vhd:93' bound to instance 'int_buffer_U' of component 'store_output_points_buffer_int_buffer' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_points_buffer.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'store_output_points_buffer_int_buffer__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_points_buffer_int_buffer.vhd:112]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 48 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'store_output_points_buffer_int_buffer_ram' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_points_buffer_int_buffer.vhd:13' bound to instance 'store_output_points_buffer_int_buffer_ram_U' of component 'store_output_points_buffer_int_buffer_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_points_buffer_int_buffer.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'store_output_points_buffer_int_buffer_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_points_buffer_int_buffer.vhd:35]
+	Parameter mem_type bound to: block - type: string 
+	Parameter dwidth bound to: 32 - type: integer 
+	Parameter awidth bound to: 6 - type: integer 
+	Parameter mem_size bound to: 48 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'store_output_points_buffer_int_buffer_ram' (10#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_points_buffer_int_buffer.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'store_output_points_buffer_int_buffer__parameterized0' (11#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_points_buffer_int_buffer.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'store_output_points_buffer' (12#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_points_buffer.vhd:43]
+INFO: [Synth 8-3491] module 'load_points_buffer' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_points_buffer.vhd:12' bound to instance 'grp_load_points_buffer_fu_544' of component 'load_points_buffer' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:808]
+INFO: [Synth 8-638] synthesizing module 'load_points_buffer' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_points_buffer.vhd:46]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 48 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'load_points_buffer_int_buffer' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_points_buffer_int_buffer.vhd:102' bound to instance 'int_buffer_U' of component 'load_points_buffer_int_buffer' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_points_buffer.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'load_points_buffer_int_buffer__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_points_buffer_int_buffer.vhd:120]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 48 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'load_points_buffer_int_buffer_ram' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_points_buffer_int_buffer.vhd:13' bound to instance 'load_points_buffer_int_buffer_ram_U' of component 'load_points_buffer_int_buffer_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_points_buffer_int_buffer.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'load_points_buffer_int_buffer_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_points_buffer_int_buffer.vhd:34]
+	Parameter mem_type bound to: block - type: string 
+	Parameter dwidth bound to: 32 - type: integer 
+	Parameter awidth bound to: 6 - type: integer 
+	Parameter mem_size bound to: 48 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'load_points_buffer_int_buffer_ram' (13#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_points_buffer_int_buffer.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'load_points_buffer_int_buffer__parameterized0' (14#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_points_buffer_int_buffer.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'load_points_buffer' (15#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_points_buffer.vhd:46]
+INFO: [Synth 8-3491] module 'store_output_buffer' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_buffer.vhd:12' bound to instance 'grp_store_output_buffer_fu_556' of component 'store_output_buffer' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:840]
+INFO: [Synth 8-638] synthesizing module 'store_output_buffer' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_buffer.vhd:40]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'store_output_buffer_int_buffer' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_buffer_int_buffer.vhd:93' bound to instance 'int_buffer_U' of component 'store_output_buffer_int_buffer' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_buffer.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'store_output_buffer_int_buffer__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_buffer_int_buffer.vhd:112]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'store_output_buffer_int_buffer_ram' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_buffer_int_buffer.vhd:13' bound to instance 'store_output_buffer_int_buffer_ram_U' of component 'store_output_buffer_int_buffer_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_buffer_int_buffer.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'store_output_buffer_int_buffer_ram' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_buffer_int_buffer.vhd:35]
+	Parameter mem_type bound to: block - type: string 
+	Parameter dwidth bound to: 32 - type: integer 
+	Parameter awidth bound to: 5 - type: integer 
+	Parameter mem_size bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'store_output_buffer_int_buffer_ram' (16#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_buffer_int_buffer.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'store_output_buffer_int_buffer__parameterized0' (17#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_buffer_int_buffer.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'store_output_buffer' (18#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_buffer.vhd:40]
+	Parameter ID bound to: 28 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_mul_32s_32s_64_6' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:63' bound to instance 'lloyds_kernel_top_mul_32s_32s_64_6_U28' of component 'lloyds_kernel_top_mul_32s_32s_64_6' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:866]
+INFO: [Synth 8-638] synthesizing module 'lloyds_kernel_top_mul_32s_32s_64_6__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:79]
+	Parameter ID bound to: 28 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:12' bound to instance 'lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U' of component 'lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:21]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:23]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0' (19#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'lloyds_kernel_top_mul_32s_32s_64_6__parameterized0' (20#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:79]
+	Parameter ID bound to: 29 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_mul_32s_32s_64_6' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:63' bound to instance 'lloyds_kernel_top_mul_32s_32s_64_6_U29' of component 'lloyds_kernel_top_mul_32s_32s_64_6' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:881]
+INFO: [Synth 8-638] synthesizing module 'lloyds_kernel_top_mul_32s_32s_64_6__parameterized2' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:79]
+	Parameter ID bound to: 29 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:12' bound to instance 'lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U' of component 'lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:93]
+INFO: [Synth 8-256] done synthesizing module 'lloyds_kernel_top_mul_32s_32s_64_6__parameterized2' (20#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:79]
+	Parameter ID bound to: 30 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_mul_32s_32s_64_6' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:63' bound to instance 'lloyds_kernel_top_mul_32s_32s_64_6_U30' of component 'lloyds_kernel_top_mul_32s_32s_64_6' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:896]
+INFO: [Synth 8-638] synthesizing module 'lloyds_kernel_top_mul_32s_32s_64_6__parameterized4' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:79]
+	Parameter ID bound to: 30 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:12' bound to instance 'lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U' of component 'lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:93]
+INFO: [Synth 8-256] done synthesizing module 'lloyds_kernel_top_mul_32s_32s_64_6__parameterized4' (20#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:79]
+	Parameter ID bound to: 31 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_add_32ns_32ns_32_1' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_add_32ns_32ns_32_1.vhd:33' bound to instance 'lloyds_kernel_top_add_32ns_32ns_32_1_U31' of component 'lloyds_kernel_top_add_32ns_32ns_32_1' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:911]
+INFO: [Synth 8-638] synthesizing module 'lloyds_kernel_top_add_32ns_32ns_32_1__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_add_32ns_32ns_32_1.vhd:46]
+	Parameter ID bound to: 31 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_add_32ns_32ns_32_1_AddSubnS_0' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_add_32ns_32ns_32_1.vhd:14' bound to instance 'lloyds_kernel_top_add_32ns_32ns_32_1_AddSubnS_0_U' of component 'lloyds_kernel_top_add_32ns_32ns_32_1_AddSubnS_0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_add_32ns_32ns_32_1.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'lloyds_kernel_top_add_32ns_32ns_32_1_AddSubnS_0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_add_32ns_32ns_32_1.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'lloyds_kernel_top_add_32ns_32ns_32_1_AddSubnS_0' (21#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_add_32ns_32ns_32_1.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'lloyds_kernel_top_add_32ns_32ns_32_1__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_add_32ns_32ns_32_1.vhd:46]
+	Parameter ID bound to: 32 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_add_32ns_32ns_32_1' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_add_32ns_32ns_32_1.vhd:33' bound to instance 'lloyds_kernel_top_add_32ns_32ns_32_1_U32' of component 'lloyds_kernel_top_add_32ns_32ns_32_1' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:923]
+INFO: [Synth 8-638] synthesizing module 'lloyds_kernel_top_add_32ns_32ns_32_1__parameterized2' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_add_32ns_32ns_32_1.vhd:46]
+	Parameter ID bound to: 32 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'lloyds_kernel_top_add_32ns_32ns_32_1_AddSubnS_0' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_add_32ns_32ns_32_1.vhd:14' bound to instance 'lloyds_kernel_top_add_32ns_32ns_32_1_AddSubnS_0_U' of component 'lloyds_kernel_top_add_32ns_32ns_32_1_AddSubnS_0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_add_32ns_32ns_32_1.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'lloyds_kernel_top_add_32ns_32ns_32_1__parameterized2' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_add_32ns_32ns_32_1.vhd:46]
+INFO: [Synth 8-4512] found unpartitioned construct node [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:2215]
+INFO: [Synth 8-256] done synthesizing module 'lloyds_kernel_top' (23#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd:40]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[31]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[30]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[29]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[28]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[27]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[26]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[25]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[24]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[23]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[22]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[21]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[20]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[19]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[18]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[17]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[16]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[15]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[14]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[13]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[12]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[11]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[10]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[9]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[8]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[7]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[6]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[5]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[4]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[3]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[2]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[1]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 813.469 ; gain = 190.211
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/PinFunctions.xml...
+Loading package from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/./parts/xilinx/zynq/IOStandards.xml
+
+Processing XDC Constraints
+Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.xdc]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'ap_clk' matched to 'port' objects. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.xdc:1]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1070.520 ; gain = 447.262
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1070.520 ; gain = 447.262
+---------------------------------------------------------------------------------
+
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar_reg_193_pp0_it6_reg' and it is trimmed from '30' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer.vhd:407]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar_reg_193_pp0_it5_reg' and it is trimmed from '30' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer.vhd:406]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar_reg_193_pp0_it4_reg' and it is trimmed from '30' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer.vhd:405]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar_reg_193_pp0_it3_reg' and it is trimmed from '30' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer.vhd:404]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar_reg_193_pp0_it2_reg' and it is trimmed from '30' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer.vhd:403]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_ppstg_indvar_reg_193_pp0_it1_reg' and it is trimmed from '30' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer.vhd:402]
+INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_fsm_reg' in module 'load_centres_buffer'
+INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_fsm_reg' in module 'store_output_points_buffer'
+INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_fsm_reg' in module 'load_points_buffer'
+INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_fsm_reg' in module 'store_output_buffer'
+INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_fsm_reg' in module 'lloyds_kernel_top'
+INFO: [Synth 8-3969] The signal ram_reg was recognized as a RAM template for dedicated block RAM(s) but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (4 address bits)* is shallow.
+INFO: [Synth 8-3969] The signal ram_reg was recognized as a RAM template for dedicated block RAM(s) but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (4 address bits)* is shallow.
+INFO: [Synth 8-3354] encoded FSM with state register 'ap_CS_fsm_reg' using encoding 'one-hot' in module 'load_centres_buffer'
+INFO: [Synth 8-3969] The signal ram_reg was recognized as a RAM template for dedicated block RAM(s) but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (6 address bits)* is shallow.
+INFO: [Synth 8-3971] The signal ram_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3354] encoded FSM with state register 'ap_CS_fsm_reg' using encoding 'one-hot' in module 'store_output_points_buffer'
+INFO: [Synth 8-3969] The signal ram_reg was recognized as a RAM template for dedicated block RAM(s) but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (6 address bits)* is shallow.
+INFO: [Synth 8-3354] encoded FSM with state register 'ap_CS_fsm_reg' using encoding 'one-hot' in module 'load_points_buffer'
+INFO: [Synth 8-3969] The signal ram_reg was recognized as a RAM template for dedicated block RAM(s) but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (5 address bits)* is shallow.
+INFO: [Synth 8-3971] The signal ram_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3354] encoded FSM with state register 'ap_CS_fsm_reg' using encoding 'one-hot' in module 'store_output_buffer'
+INFO: [Synth 8-3354] encoded FSM with state register 'ap_CS_fsm_reg' using encoding 'one-hot' in module 'lloyds_kernel_top'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1137.523 ; gain = 514.266
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 4     
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     13 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 3     
+	   3 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 4     
++---Registers : 
+	               64 Bit    Registers := 3     
+	               48 Bit    Registers := 12    
+	               32 Bit    Registers := 79    
+	               30 Bit    Registers := 2     
+	               18 Bit    Registers := 3     
+	               15 Bit    Registers := 9     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 15    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 10    
+	                5 Bit    Registers := 8     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 89    
++---RAMs : 
+	              24K Bit         RAMs := 1     
+	               8K Bit         RAMs := 3     
+	             1024 Bit         RAMs := 1     
+	               1K Bit         RAMs := 2     
+	              512 Bit         RAMs := 7     
+	              128 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 23    
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 3     
+	  11 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 6     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 10    
+	   6 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 18    
+	   5 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 5     
+	   3 Input      4 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   6 Input      3 Bit        Muxes := 3     
+	   7 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 95    
+
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module lloyds_kernel_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 47    
+	                8 Bit    Registers := 12    
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 30    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 22    
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 6     
+	  11 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 8     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	  12 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 50    
+Module lloyds_kernel_top_data_points_buffer_0_value_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module lloyds_kernel_top_data_points_buffer_0_value__parameterized0 
+Detailed RTL Component Info : 
+Module lloyds_kernel_top_centres_buffer_0_value_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
+Module lloyds_kernel_top_centres_buffer_0_value__parameterized0 
+Detailed RTL Component Info : 
+Module lloyds_kernel_top_output_buffer_min_idx_V_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              128 Bit         RAMs := 1     
+Module lloyds_kernel_top_output_buffer_min_idx_V__parameterized0 
+Detailed RTL Component Info : 
+Module load_centres_buffer_int_buffer_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              24K Bit         RAMs := 1     
+Module load_centres_buffer_int_buffer__parameterized0 
+Detailed RTL Component Info : 
+Module load_centres_buffer 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     13 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	               30 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 4     
+	   5 Input      6 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module store_output_points_buffer_int_buffer_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	               1K Bit         RAMs := 1     
+Module store_output_points_buffer_int_buffer__parameterized0 
+Detailed RTL Component Info : 
+Module store_output_points_buffer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   3 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   6 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+Module load_points_buffer_int_buffer_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	               1K Bit         RAMs := 1     
+Module load_points_buffer_int_buffer__parameterized0 
+Detailed RTL Component Info : 
+Module load_points_buffer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 8     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 8     
+	   2 Input      5 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+Module store_output_buffer_int_buffer_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module store_output_buffer_int_buffer__parameterized0 
+Detailed RTL Component Info : 
+Module store_output_buffer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+Module lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0 
+Detailed RTL Component Info : 
++---Registers : 
+	               48 Bit    Registers := 4     
+	               32 Bit    Registers := 2     
+	               18 Bit    Registers := 1     
+	               15 Bit    Registers := 3     
+Module lloyds_kernel_top_mul_32s_32s_64_6__parameterized0 
+Detailed RTL Component Info : 
+Module lloyds_kernel_top_mul_32s_32s_64_6__parameterized2 
+Detailed RTL Component Info : 
+Module lloyds_kernel_top_mul_32s_32s_64_6__parameterized4 
+Detailed RTL Component Info : 
+Module lloyds_kernel_top_add_32ns_32ns_32_1_AddSubnS_0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module lloyds_kernel_top_add_32ns_32ns_32_1__parameterized0 
+Detailed RTL Component Info : 
+Module lloyds_kernel_top_add_32ns_32ns_32_1__parameterized2 
+Detailed RTL Component Info : 
+
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\tmp_9_reg_433_reg[10] ) is unused and will be removed from module load_centres_buffer.
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_9_reg_433_reg' and it is trimmed from '11' to '10' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_centres_buffer.vhd:530]
+WARNING: [Synth 8-3332] Sequential element (\isIter0_reg_399_reg[0] ) is unused and will be removed from module store_output_points_buffer.
+WARNING: [Synth 8-3332] Sequential element (\ap_reg_ppstg_isIter0_reg_399_pp1_it1_reg[0] ) is unused and will be removed from module store_output_points_buffer.
+WARNING: [Synth 8-3332] Sequential element (\tmp_16_reg_353_reg[6] ) is unused and will be removed from module store_output_points_buffer.
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_16_reg_353_reg' and it is trimmed from '7' to '6' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/store_output_points_buffer.vhd:395]
+WARNING: [Synth 8-3332] Sequential element (\tmp_5_reg_377_reg[6] ) is unused and will be removed from module load_points_buffer.
+WARNING: [Synth 8-3332] Sequential element (\tmp_6_reg_392_reg[4] ) is unused and will be removed from module load_points_buffer.
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_5_reg_377_reg' and it is trimmed from '7' to '6' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/load_points_buffer.vhd:488]
+WARNING: [Synth 8-3332] Sequential element (\tmp_6_reg_392_reg[4] ) is unused and will be removed from module load_points_buffer.
+WARNING: [Synth 8-3332] Sequential element (\isIter0_reg_334_reg[0] ) is unused and will be removed from module store_output_buffer.
+WARNING: [Synth 8-3332] Sequential element (\ap_reg_ppstg_isIter0_reg_334_pp1_it1_reg[0] ) is unused and will be removed from module store_output_buffer.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[47] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[46] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[45] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[44] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[43] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[42] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[41] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[40] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[39] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[38] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[37] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[36] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[35] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[34] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[33] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[32] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[31] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[30] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[29] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[28] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[27] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[26] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[25] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[24] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[23] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[22] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[21] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[20] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[19] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[18] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[17] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[3] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[2] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[1] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[0] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[47] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[46] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[45] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[44] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[43] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[42] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[41] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[40] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[39] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[38] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[37] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[36] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[35] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[34] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[33] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[32] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[31] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[30] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[29] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[28] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[27] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[26] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[25] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[24] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[23] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[22] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[21] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[20] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[19] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[18] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[17] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[3] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[2] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[1] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg[0] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[47] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[46] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[45] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[44] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[43] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[42] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[41] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[40] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[39] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[38] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[37] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[36] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[35] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[34] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[33] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[32] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[31] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[30] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[29] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[28] ) is unused and will be removed from module lloyds_kernel_top.
+WARNING: [Synth 8-3332] Sequential element (\lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[27] ) is unused and will be removed from module lloyds_kernel_top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg' and it is trimmed from '48' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:42]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg' and it is trimmed from '48' to '17' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:42]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg' and it is trimmed from '48' to '17' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:42]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg' and it is trimmed from '48' to '17' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg' and it is trimmed from '48' to '17' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:52]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg' and it is trimmed from '48' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg' and it is trimmed from '15' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:52]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg' and it is trimmed from '15' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg' and it is trimmed from '15' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:52]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg' and it is trimmed from '15' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg' and it is trimmed from '48' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:42]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg' and it is trimmed from '48' to '17' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:42]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg' and it is trimmed from '48' to '17' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:42]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg' and it is trimmed from '48' to '17' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg' and it is trimmed from '48' to '17' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:52]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg' and it is trimmed from '48' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg' and it is trimmed from '15' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:52]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg' and it is trimmed from '15' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg' and it is trimmed from '15' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:52]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg' and it is trimmed from '15' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg' and it is trimmed from '48' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:42]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg' and it is trimmed from '48' to '17' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:42]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg' and it is trimmed from '48' to '17' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:42]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg' and it is trimmed from '48' to '17' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg' and it is trimmed from '48' to '17' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:52]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg' and it is trimmed from '48' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:53]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg' and it is trimmed from '15' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:52]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg' and it is trimmed from '15' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg' and it is trimmed from '15' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:52]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg' and it is trimmed from '15' to '2' bits. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd:51]
+DSP Report: Generating DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register B is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg.
+DSP Report: register A is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg.
+DSP Report: Generating DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg, operation Mode is: ((PCIN>>17)+(A2*B2)')'.
+DSP Report: register B is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: register A is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: Generating DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg, operation Mode is: (PCIN+(A''*B'')')'.
+DSP Report: register B is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: register A is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: register A is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: Generating DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register B is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg.
+DSP Report: register A is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg.
+DSP Report: Generating DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg, operation Mode is: ((PCIN>>17)+(A2*B2)')'.
+DSP Report: register B is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: register A is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: Generating DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg, operation Mode is: (PCIN+(A''*B'')')'.
+DSP Report: register B is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: register A is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: register A is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: Generating DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register B is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg.
+DSP Report: register A is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg.
+DSP Report: Generating DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg, operation Mode is: ((PCIN>>17)+(A2*B2)')'.
+DSP Report: register B is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: register A is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg.
+DSP Report: Generating DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg, operation Mode is: (PCIN+(A''*B'')')'.
+DSP Report: register B is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: register A is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: register A is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port centres_in_addr[1]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port centres_in_addr[0]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[31]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[30]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[29]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[28]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[27]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[26]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[25]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[24]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[23]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[22]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[21]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[20]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[19]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[18]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[17]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[16]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[15]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[14]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[13]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[12]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[11]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[10]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[9]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[8]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[7]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[6]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[5]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[4]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[3]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[2]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[1]
+WARNING: [Synth 8-3331] design lloyds_kernel_top has unconnected port n[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1148.539 ; gain = 525.281
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM:
++-------------------------------------------------+------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+---------------------------------------------------------+
+|Module Name                                      | RTL Object | PORT A (depth X width) | W | R | PORT B (depth X width) | W | R | OUT_REG      | RAMB18 | RAMB36 | Hierarchical Name                                       | 
++-------------------------------------------------+------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+---------------------------------------------------------+
+|lloyds_kernel_top_data_points_buffer_0_value_ram | ram_reg    | 16 X 32(WRITE_FIRST)   | W | R |                        |   |   | Port A       | 1      | 0      | lloyds_kernel_top_data_points_buffer_0_value_ram/extram | 
+|lloyds_kernel_top_centres_buffer_0_value_ram     | ram_reg    | 256 X 32(WRITE_FIRST)  | W | R |                        |   |   | Port A       | 1      | 0      | lloyds_kernel_top_centres_buffer_0_value_ram/extram__1  | 
+|lloyds_kernel_top_output_buffer_min_idx_V_ram    | ram_reg    | 16 X 8(WRITE_FIRST)    | W | R |                        |   |   | Port A       | 1      | 0      | lloyds_kernel_top_output_buffer_min_idx_V_ram/extram__2 | 
+|load_centres_buffer_int_buffer_ram               | ram_reg    | 1 K X 32(WRITE_FIRST)  | W | R | 1 K X 32(WRITE_FIRST)  |   | R | Port A and B | 0      | 1      | load_centres_buffer_int_buffer_ram/extram__3            | 
+|store_output_points_buffer_int_buffer_ram        | ram_reg    | 64 X 32(WRITE_FIRST)   | W |   | 64 X 32(WRITE_FIRST)   | W | R | Port A and B | 0      | 1      | store_output_points_buffer_int_buffer_ram/extram__4     | 
+|load_points_buffer_int_buffer_ram                | ram_reg    | 64 X 32(WRITE_FIRST)   | W | R | 64 X 32(WRITE_FIRST)   |   | R | Port A and B | 0      | 1      | load_points_buffer_int_buffer_ram/extram__5             | 
+|store_output_buffer_int_buffer_ram               | ram_reg    | 32 X 32(WRITE_FIRST)   | W | R | 32 X 32(READ_FIRST)    | W |   | Port A and B | 0      | 1      | store_output_buffer_int_buffer_ram/extram__6            | 
++-------------------------------------------------+------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+---------------------------------------------------------+
+
+Note: Mutiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the hierarchical modules names of the RAM and only part of it is displayed.
+DSP:
++-------------------------------------------+------------------------+--------------+------------------+--------+--------+--------+--------+------+------+------+------+------+
+|Module Name                                | OP MODE                | Neg Edge Clk | A Size (Signed?) | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | PREG | 
++-------------------------------------------+------------------------+--------------+------------------+--------+--------+--------+--------+------+------+------+------+------+
+|lloyds_kernel_top                          | (A2*B2)'               | No           | 18 (N)           | 18 (N) | 48 (N) | 25 (N) | 48 (Y) | 1    | 1    | 1    | 1    | 1    | 
+|lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0 | ((PCIN>>17)+(A2*B2)')' | No           | 18 (N)           | 15 (Y) | 48 (Y) | 25 (N) | 48 (Y) | 1    | 1    | 1    | 1    | 1    | 
+|lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0 | (PCIN+(A''*B'')')'     | No           | 18 (N)           | 15 (Y) | 48 (Y) | 25 (N) | 48 (Y) | 1    | 1    | 1    | 1    | 1    | 
+|lloyds_kernel_top                          | (A2*B2)'               | No           | 18 (N)           | 18 (N) | 48 (N) | 25 (N) | 48 (Y) | 1    | 1    | 1    | 1    | 1    | 
+|lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0 | ((PCIN>>17)+(A2*B2)')' | No           | 18 (N)           | 15 (Y) | 48 (Y) | 25 (N) | 48 (Y) | 1    | 1    | 1    | 1    | 1    | 
+|lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0 | (PCIN+(A''*B'')')'     | No           | 18 (N)           | 15 (Y) | 48 (Y) | 25 (N) | 48 (Y) | 1    | 1    | 1    | 1    | 1    | 
+|lloyds_kernel_top                          | (A2*B2)'               | No           | 18 (N)           | 18 (N) | 48 (N) | 25 (N) | 48 (Y) | 1    | 1    | 1    | 1    | 1    | 
+|lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0 | ((PCIN>>17)+(A2*B2)')' | No           | 18 (N)           | 15 (Y) | 48 (Y) | 25 (N) | 48 (Y) | 1    | 1    | 1    | 1    | 1    | 
+|lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0 | (PCIN+(A''*B'')')'     | No           | 18 (N)           | 15 (Y) | 48 (Y) | 25 (N) | 48 (Y) | 1    | 1    | 1    | 1    | 1    | 
++-------------------------------------------+------------------------+--------------+------------------+--------+--------+--------+--------+------+------+------+------+------+
+
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_load_centres_buffer_fu_522i_3_18/\grp_load_centres_buffer_fu_522/FSM_onehot_ap_CS_fsm_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_load_points_buffer_fu_544i_3_94/\grp_load_points_buffer_fu_544/FSM_onehot_ap_CS_fsm_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3_21/\FSM_onehot_ap_CS_fsm_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_store_output_points_buffer_fu_533i_3_47/\grp_store_output_points_buffer_fu_533/FSM_onehot_ap_CS_fsm_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_store_output_buffer_fu_556i_3_116/\grp_store_output_buffer_fu_556/FSM_onehot_ap_CS_fsm_reg[5] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1200.586 ; gain = 577.328
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+Wrong number or type of arguments for overloaded function 'NRealModS_findPins'. at line 1 of file /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.xdc
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1208.586 ; gain = 585.328
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1209.586 ; gain = 586.328
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance \data_points_buffer_0_value_U/lloyds_kernel_top_data_points_buffer_0_value_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \data_points_buffer_0_value_U/lloyds_kernel_top_data_points_buffer_0_value_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \output_buffer_min_idx_V_U/lloyds_kernel_top_output_buffer_min_idx_V_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \output_buffer_sum_sq_U/lloyds_kernel_top_data_points_buffer_0_value_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \output_buffer_sum_sq_U/lloyds_kernel_top_data_points_buffer_0_value_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \output_points_buffer_0_value_U/lloyds_kernel_top_data_points_buffer_0_value_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \output_points_buffer_0_value_U/lloyds_kernel_top_data_points_buffer_0_value_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \output_points_buffer_1_value_U/lloyds_kernel_top_data_points_buffer_0_value_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \output_points_buffer_1_value_U/lloyds_kernel_top_data_points_buffer_0_value_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \grp_load_centres_buffer_fu_522/int_buffer_U/load_centres_buffer_int_buffer_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \grp_load_centres_buffer_fu_522/int_buffer_U/load_centres_buffer_int_buffer_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \grp_load_points_buffer_fu_544/int_buffer_U/load_points_buffer_int_buffer_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \grp_load_points_buffer_fu_544/int_buffer_U/load_points_buffer_int_buffer_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1232.648 ; gain = 609.391
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+Gated Clock Conversion mode: off
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1232.648 ; gain = 609.391
+---------------------------------------------------------------------------------
+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1232.648 ; gain = 609.391
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1232.648 ; gain = 609.391
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register:
++------------------+-----------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name       | RTL Name                                                                                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------------+-----------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|lloyds_kernel_top | grp_load_centres_buffer_fu_522/ap_reg_ppstg_exitcond3_reg_406_pp0_it5_reg[0]                        | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|lloyds_kernel_top | grp_load_centres_buffer_fu_522/ap_reg_ppstg_indvar_reg_193_pp0_it6_reg[9]                           | 6      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|lloyds_kernel_top | grp_load_points_buffer_fu_544/ap_reg_ppstg_exitcond2_reg_350_pp0_it5_reg[0]                         | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|lloyds_kernel_top | grp_load_points_buffer_fu_544/ap_reg_ppstg_indvar_reg_188_pp0_it6_reg[5]                            | 6      | 6     | NO           | NO                 | YES               | 6      | 0       | 
+|lloyds_kernel_top | lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[16]   | 3      | 13    | NO           | NO                 | YES               | 13     | 0       | 
+|lloyds_kernel_top | lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[16]   | 3      | 13    | NO           | NO                 | YES               | 13     | 0       | 
+|lloyds_kernel_top | ap_reg_ppstg_tmp_14_reg_901_pp0_it7_reg[0]                                                          | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|lloyds_kernel_top | ap_reg_ppstg_tmp_3_reg_877_pp0_it6_reg[0]                                                           | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|lloyds_kernel_top | ap_reg_ppstg_closest_centre_value_0_reg_905_pp0_it7_reg[31]                                         | 6      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|lloyds_kernel_top | ap_reg_ppstg_closest_centre_value_1_reg_911_pp0_it7_reg[31]                                         | 6      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|lloyds_kernel_top | ap_reg_ppstg_closest_centre_value_2_reg_917_pp0_it7_reg[31]                                         | 6      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|lloyds_kernel_top | ap_reg_ppstg_final_centre_index_V_reg_380_pp0_it7_reg[7]                                            | 7      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|lloyds_kernel_top | lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff3_reg[16]   | 3      | 13    | NO           | NO                 | YES               | 13     | 0       | 
+|lloyds_kernel_top | lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[1]__0 | 3      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|lloyds_kernel_top | lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[1]__0 | 3      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|lloyds_kernel_top | lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg[1]__0 | 3      | 4     | NO           | NO                 | YES               | 4      | 0       | 
++------------------+-----------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |   103|
+|2     |DSP48E1_1  |     3|
+|3     |DSP48E1_2  |     3|
+|4     |DSP48E1_3  |     3|
+|5     |LUT1       |     9|
+|6     |LUT2       |   335|
+|7     |LUT3       |   343|
+|8     |LUT4       |   148|
+|9     |LUT5       |   395|
+|10    |LUT6       |   225|
+|11    |MUXF7      |     2|
+|12    |RAMB18E1   |     5|
+|13    |RAMB18E1_1 |     4|
+|14    |RAMB18E1_2 |     1|
+|15    |RAMB18E1_3 |     1|
+|16    |RAMB36E1_1 |     2|
+|17    |RAMB36E1_3 |     1|
+|18    |RAMB36E1_4 |     1|
+|19    |SRL16E     |   175|
+|20    |FDRE       |  1442|
+|21    |FDSE       |    67|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------------------+---------------------------------------------------------------+------+
+|      |Instance                                               |Module                                                         |Cells |
++------+-------------------------------------------------------+---------------------------------------------------------------+------+
+|1     |top                                                    |                                                               |  3268|
+|2     |  output_buffer_sum_sq_U                               |lloyds_kernel_top_data_points_buffer_0_value__parameterized0   |     5|
+|3     |    lloyds_kernel_top_data_points_buffer_0_value_ram_U |lloyds_kernel_top_data_points_buffer_0_value_ram_18            |     5|
+|4     |  data_points_buffer_1_value_U                         |lloyds_kernel_top_data_points_buffer_0_value__parameterized0_0 |     3|
+|5     |    lloyds_kernel_top_data_points_buffer_0_value_ram_U |lloyds_kernel_top_data_points_buffer_0_value_ram_17            |     3|
+|6     |  grp_store_output_points_buffer_fu_533                |store_output_points_buffer                                     |   258|
+|7     |    int_buffer_U                                       |store_output_points_buffer_int_buffer__parameterized0          |    22|
+|8     |      store_output_points_buffer_int_buffer_ram_U      |store_output_points_buffer_int_buffer_ram                      |    22|
+|9     |  lloyds_kernel_top_mul_32s_32s_64_6_U30               |lloyds_kernel_top_mul_32s_32s_64_6__parameterized4             |    62|
+|10    |    lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U       |lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_16                  |    62|
+|11    |  centres_buffer_0_value_U                             |lloyds_kernel_top_centres_buffer_0_value__parameterized0       |    42|
+|12    |    lloyds_kernel_top_centres_buffer_0_value_ram_U     |lloyds_kernel_top_centres_buffer_0_value_ram_15                |    42|
+|13    |  output_buffer_min_idx_V_U                            |lloyds_kernel_top_output_buffer_min_idx_V__parameterized0      |     1|
+|14    |    lloyds_kernel_top_output_buffer_min_idx_V_ram_U    |lloyds_kernel_top_output_buffer_min_idx_V_ram                  |     1|
+|15    |  centres_buffer_2_value_U                             |lloyds_kernel_top_centres_buffer_0_value__parameterized0_1     |    49|
+|16    |    lloyds_kernel_top_centres_buffer_0_value_ram_U     |lloyds_kernel_top_centres_buffer_0_value_ram_14                |    49|
+|17    |  lloyds_kernel_top_mul_32s_32s_64_6_U28               |lloyds_kernel_top_mul_32s_32s_64_6__parameterized0             |    62|
+|18    |    lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U       |lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_13                  |    62|
+|19    |  grp_store_output_buffer_fu_556                       |store_output_buffer                                            |   218|
+|20    |    int_buffer_U                                       |store_output_buffer_int_buffer__parameterized0                 |    44|
+|21    |      store_output_buffer_int_buffer_ram_U             |store_output_buffer_int_buffer_ram                             |    44|
+|22    |  lloyds_kernel_top_mul_32s_32s_64_6_U29               |lloyds_kernel_top_mul_32s_32s_64_6__parameterized2             |    62|
+|23    |    lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U       |lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0                     |    62|
+|24    |  grp_load_points_buffer_fu_544                        |load_points_buffer                                             |   308|
+|25    |    int_buffer_U                                       |load_points_buffer_int_buffer__parameterized0                  |    31|
+|26    |      load_points_buffer_int_buffer_ram_U              |load_points_buffer_int_buffer_ram                              |    31|
+|27    |  lloyds_kernel_top_add_32ns_32ns_32_1_U31             |lloyds_kernel_top_add_32ns_32ns_32_1__parameterized0           |    40|
+|28    |    lloyds_kernel_top_add_32ns_32ns_32_1_AddSubnS_0_U  |lloyds_kernel_top_add_32ns_32ns_32_1_AddSubnS_0_12             |    40|
+|29    |  lloyds_kernel_top_add_32ns_32ns_32_1_U32             |lloyds_kernel_top_add_32ns_32ns_32_1__parameterized2           |   350|
+|30    |    lloyds_kernel_top_add_32ns_32ns_32_1_AddSubnS_0_U  |lloyds_kernel_top_add_32ns_32ns_32_1_AddSubnS_0                |   350|
+|31    |  output_points_buffer_2_value_U                       |lloyds_kernel_top_data_points_buffer_0_value__parameterized0_2 |     1|
+|32    |    lloyds_kernel_top_data_points_buffer_0_value_ram_U |lloyds_kernel_top_data_points_buffer_0_value_ram_11            |     1|
+|33    |  centres_buffer_1_value_U                             |lloyds_kernel_top_centres_buffer_0_value__parameterized0_3     |    44|
+|34    |    lloyds_kernel_top_centres_buffer_0_value_ram_U     |lloyds_kernel_top_centres_buffer_0_value_ram                   |    44|
+|35    |  grp_load_centres_buffer_fu_522                       |load_centres_buffer                                            |   478|
+|36    |    int_buffer_U                                       |load_centres_buffer_int_buffer__parameterized0                 |    32|
+|37    |      load_centres_buffer_int_buffer_ram_U             |load_centres_buffer_int_buffer_ram                             |    32|
+|38    |  data_points_buffer_0_value_U                         |lloyds_kernel_top_data_points_buffer_0_value__parameterized0_4 |     6|
+|39    |    lloyds_kernel_top_data_points_buffer_0_value_ram_U |lloyds_kernel_top_data_points_buffer_0_value_ram_10            |     6|
+|40    |  output_points_buffer_1_value_U                       |lloyds_kernel_top_data_points_buffer_0_value__parameterized0_5 |     1|
+|41    |    lloyds_kernel_top_data_points_buffer_0_value_ram_U |lloyds_kernel_top_data_points_buffer_0_value_ram_9             |     1|
+|42    |  data_points_buffer_2_value_U                         |lloyds_kernel_top_data_points_buffer_0_value__parameterized0_6 |     7|
+|43    |    lloyds_kernel_top_data_points_buffer_0_value_ram_U |lloyds_kernel_top_data_points_buffer_0_value_ram_8             |     7|
+|44    |  output_points_buffer_0_value_U                       |lloyds_kernel_top_data_points_buffer_0_value__parameterized0_7 |    33|
+|45    |    lloyds_kernel_top_data_points_buffer_0_value_ram_U |lloyds_kernel_top_data_points_buffer_0_value_ram               |    33|
++------+-------------------------------------------------------+---------------------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1232.648 ; gain = 609.391
+---------------------------------------------------------------------------------
+
+Synthesis finished with 0 errors, 0 critical warnings and 1128 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1232.648 ; gain = 609.391
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+134 Infos, 205 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1560.133 ; gain = 840.484
+# write_checkpoint lloyds_kernel_top.dcp
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+# report_utilization -file lloyds_kernel_top_utilization_synth.rpt -pb lloyds_kernel_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.61 ; elapsed = 00:00:00.72 . Memory (MB): peak = 1562.148 ; gain = 2.012
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 12 14:18:06 2014...
+[Thu Jun 12 14:18:08 2014] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:00.58 ; elapsed = 00:01:02 . Memory (MB): peak = 732.648 ; gain = 8.000
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2013.4
+Loading clock regions from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/PinFunctions.xml...
+Loading package from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/./parts/xilinx/zynq/IOStandards.xml
+Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.xdc]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'ap_clk' matched to 'port' objects. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.xdc:1]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1373.414 ; gain = 640.766
+report_utilization: Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:00.72 . Memory (MB): peak = 1376.430 ; gain = 3.016
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max, Constraints type: SDC.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+[Thu Jun 12 14:18:29 2014] Launched impl_1...
+Run output will be captured here: /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/project.runs/impl_1/runme.log
+[Thu Jun 12 14:18:29 2014] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log lloyds_kernel_top.rdi -applog -m64 -messageDb vivado.pb -mode batch -source lloyds_kernel_top.tcl -notrace
+
+
+****** Vivado v2013.4 (64-bit)
+  **** SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+  **** IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+Attempting to get a license: Implementation
+Feature available: Implementation
+Loading parts and site information from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source lloyds_kernel_top.tcl -notrace
+Command: open_checkpoint /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/project.runs/impl_1/lloyds_kernel_top.dcp
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2013.4
+Loading clock regions from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/PinFunctions.xml...
+Loading package from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/./parts/xilinx/zynq/IOStandards.xml
+Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/project.runs/impl_1/.Xil/Vivado-15913-ee-boxer0/dcp/lloyds_kernel_top.xdc]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'ap_clk' matched to 'port' objects. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.xdc:1]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/project.runs/impl_1/.Xil/Vivado-15913-ee-boxer0/dcp/lloyds_kernel_top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-484] Checkpoint was created with build 353583
+open_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1372.414 ; gain = 654.766
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1383.441 ; gain = 11.023
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1 Retarget
+
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: bca026b5
+
+Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.53 . Memory (MB): peak = 1402.770 ; gain = 19.328
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: 1425e5967
+
+Time (s): cpu = 00:00:00.76 ; elapsed = 00:00:00.63 . Memory (MB): peak = 1402.770 ; gain = 19.328
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 483 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 1e95cf621
+
+Time (s): cpu = 00:00:00.98 ; elapsed = 00:00:00.85 . Memory (MB): peak = 1402.770 ; gain = 19.328
+Ending Logic Optimization Task | Checksum: 1e95cf621
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.87 . Memory (MB): peak = 1402.770 ; gain = 19.328
+Implement Debug Cores | Checksum: 11a797f31
+Logic Optimization | Checksum: 11a797f31
+
+Starting Power Optimization Task
+
+Starting PowerOpt TimerUpdates Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending PowerOpt TimerUpdates Task | Checksum: 1e95cf621
+
+Time (s): cpu = 00:00:00.50 ; elapsed = 00:00:00.40 . Memory (MB): peak = 1404.770 ; gain = 2.000
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 1 BRAM(s) out of a total of 15 was updated to NO_CHANGE to save power.
+    Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 2 newly gated: 0 Total Ports: 30
+Ending Power Optimization Task | Checksum: 1b3d31664
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1502.785 ; gain = 100.016
+INFO: [Common 17-83] Releasing license: Implementation
+24 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1502.789 ; gain = 0.000
+
+Phase 1.1.1 Mandatory Logic Optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1502.789 ; gain = 0.000
+Phase 1.1.1 Mandatory Logic Optimization | Checksum: 99f8b879
+
+Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1502.789 ; gain = 0.000
+
+Phase 1.1.2 Build Super Logic Region (SLR) Database
+Phase 1.1.2 Build Super Logic Region (SLR) Database | Checksum: 99f8b879
+
+Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1502.789 ; gain = 0.000
+
+Phase 1.1.3 Add Constraints
+Phase 1.1.3 Add Constraints | Checksum: 99f8b879
+
+Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1502.789 ; gain = 0.000
+
+Phase 1.1.4 Build Macros
+Phase 1.1.4 Build Macros | Checksum: b8547174
+
+Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.55 . Memory (MB): peak = 1502.789 ; gain = 0.000
+
+Phase 1.1.5 Implementation Feasibility check
+Phase 1.1.5 Implementation Feasibility check | Checksum: b8547174
+
+Time (s): cpu = 00:00:00.86 ; elapsed = 00:00:00.87 . Memory (MB): peak = 1502.789 ; gain = 0.000
+
+Phase 1.1.6 Pre-Place Cells
+Phase 1.1.6 Pre-Place Cells | Checksum: b8547174
+
+Time (s): cpu = 00:00:00.87 ; elapsed = 00:00:00.88 . Memory (MB): peak = 1502.789 ; gain = 0.000
+
+Phase 1.1.7 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.1.7 IO Placement/ Clock Placement/ Build Placer Device | Checksum: b8547174
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1508.797 ; gain = 6.008
+
+Phase 1.1.8 Build Placer Netlist Model
+
+Phase 1.1.8.1 Place Init Design
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+
+Phase 1.1.8.1.1 Build Clock Data
+Phase 1.1.8.1.1 Build Clock Data | Checksum: 12e266d2b
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1508.797 ; gain = 6.008
+Phase 1.1.8.1 Place Init Design | Checksum: e3103df6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1508.797 ; gain = 6.008
+Phase 1.1.8 Build Placer Netlist Model | Checksum: e3103df6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1508.797 ; gain = 6.008
+
+Phase 1.1.9 Constrain Clocks/Macros
+
+Phase 1.1.9.1 Constrain Global/Regional Clocks
+Phase 1.1.9.1 Constrain Global/Regional Clocks | Checksum: e3103df6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1508.797 ; gain = 6.008
+Phase 1.1.9 Constrain Clocks/Macros | Checksum: e3103df6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1508.797 ; gain = 6.008
+Phase 1.1 Placer Initialization Core | Checksum: e3103df6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1508.797 ; gain = 6.008
+Phase 1 Placer Initialization | Checksum: e3103df6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1508.797 ; gain = 6.008
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 11f0d2b96
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 1508.797 ; gain = 6.008
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 11f0d2b96
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 1508.797 ; gain = 6.008
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 10efb51f3
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 1508.797 ; gain = 6.008
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 10882b64a
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 1508.797 ; gain = 6.008
+
+Phase 3.4 Timing Path Optimizer
+Phase 3.4 Timing Path Optimizer | Checksum: e16f7101
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 1508.797 ; gain = 6.008
+
+Phase 3.5 Commit Small Macros & Core Logic
+Phase 3.5 Commit Small Macros & Core Logic | Checksum: 27b9853fc
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1514.809 ; gain = 12.020
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 27b9853fc
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1514.809 ; gain = 12.020
+Phase 3 Detail Placement | Checksum: 27b9853fc
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1514.809 ; gain = 12.020
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 PCOPT Shape updates
+Phase 4.1 PCOPT Shape updates | Checksum: 27b9853fc
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1514.809 ; gain = 12.020
+
+Phase 4.2 Post Placement Optimization
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+
+Phase 4.2.1 Post Placement Timing Optimization
+Phase 4.2.1 Post Placement Timing Optimization | Checksum: 21f5c8e6c
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 1514.809 ; gain = 12.020
+Phase 4.2 Post Placement Optimization | Checksum: 21f5c8e6c
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 1514.809 ; gain = 12.020
+
+Phase 4.3 Post Placement Cleanup
+Phase 4.3 Post Placement Cleanup | Checksum: 21f5c8e6c
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 1514.809 ; gain = 12.020
+
+Phase 4.4 Placer Reporting
+
+Phase 4.4.1 Congestion Reporting
+Phase 4.4.1 Congestion Reporting | Checksum: 21f5c8e6c
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 1514.809 ; gain = 12.020
+
+Phase 4.4.2 updateTiming final
+Phase 4.4.2 updateTiming final | Checksum: 1ac87527d
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 1514.809 ; gain = 12.020
+
+Phase 4.4.3 Dump Critical Paths 
+Phase 4.4.3 Dump Critical Paths  | Checksum: 1ac87527d
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 1514.809 ; gain = 12.020
+
+Phase 4.4.4 Restore STA
+Phase 4.4.4 Restore STA | Checksum: 1ac87527d
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 1514.809 ; gain = 12.020
+
+Phase 4.4.5 Print Final WNS
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [Place 30-100] Post Placement Timing Summary | WNS=2.614  | TNS=0.000  |
+
+Phase 4.4.5 Print Final WNS | Checksum: 1ac87527d
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:12 . Memory (MB): peak = 1514.809 ; gain = 12.020
+Phase 4.4 Placer Reporting | Checksum: 1ac87527d
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 1514.809 ; gain = 12.020
+
+Phase 4.5 Final Placement Cleanup
+Phase 4.5 Final Placement Cleanup | Checksum: 1a8b6abeb
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 1514.809 ; gain = 12.020
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1a8b6abeb
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 1514.809 ; gain = 12.020
+Ending Placer Task | Checksum: 194ffb51a
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 1514.809 ; gain = 12.020
+INFO: [Common 17-83] Releasing license: Implementation
+33 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 1514.809 ; gain = 12.020
+INFO: [Timing 38-163] DEBUG : Generate clock report | CPU: 0.81 secs 
+
+report_utilization: Time (s): cpu = 00:00:00.65 ; elapsed = 00:00:00.74 . Memory (MB): peak = 1516.824 ; gain = 0.000
+INFO: [Designutils 20-134] DEBUG : Generate Control Sets report | CPU: 0.69 secs 
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.36 . Memory (MB): peak = 1516.828 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+38 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.36 . Memory (MB): peak = 1516.828 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [Drc 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+
+Starting Route Task
+
+Phase 1 Build RT Design
+
+Phase 1.1 Build Netlist & NodeGraph
+WARNING: [Route 35-197] Clock port "ap_clk" does not have an associated HD.CLK_SRC. Without this constraint, timing analysis may not be accurate and upstream checks cannot be done to ensure correct clock placement.
+WARNING: [Route 35-198] Port "ap_rst" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_rst". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_rsp_empty_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_rsp_empty_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[28]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[28]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "k[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "k[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "ap_start" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_start". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[19]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[19]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[28]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[28]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "master_portA_datain[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "master_portA_datain[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[19]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[19]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_addr[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_addr[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_addr[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_addr[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_addr[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_addr[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_addr[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_addr[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "block_address[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "block_address[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "block_address[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "block_address[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "block_address[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "block_address[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_addr[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_addr[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_addr[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_addr[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_addr[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_addr[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_addr[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_addr[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_addr[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_addr[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_addr[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_addr[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_addr[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_addr[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_addr[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_addr[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_addr[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_addr[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "output_addr[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "output_addr[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "centres_in_addr[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "centres_in_addr[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+INFO: [Common 17-14] Message 'Route 35-198' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Phase 1.1 Build Netlist & NodeGraph | Checksum: 194ffb51a
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 1607.332 ; gain = 90.504
+Phase 1 Build RT Design | Checksum: 78279be3
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 1607.332 ; gain = 90.504
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 78279be3
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 1607.336 ; gain = 90.508
+
+Phase 2.2 Restore Routing
+Phase 2.2 Restore Routing | Checksum: 78279be3
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 1622.387 ; gain = 105.559
+
+Phase 2.3 Special Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Special Net Routing | Checksum: 918ce962
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 1622.387 ; gain = 105.559
+
+Phase 2.4 Local Clock Net Routing
+Phase 2.4 Local Clock Net Routing | Checksum: 918ce962
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 1622.387 ; gain = 105.559
+
+Phase 2.5 Update Timing
+
+Phase 2.5.1 Update timing with NCN CRPR
+
+Phase 2.5.1.1 Hold Budgeting
+Phase 2.5.1.1 Hold Budgeting | Checksum: 918ce962
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 1622.387 ; gain = 105.559
+Phase 2.5.1 Update timing with NCN CRPR | Checksum: 918ce962
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 1622.387 ; gain = 105.559
+Phase 2.5 Update Timing | Checksum: 918ce962
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 1622.387 ; gain = 105.559
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.8    | TNS=0      | WHS=-0.0666| THS=-1.4   |
+
+
+Phase 2.6 Budgeting
+Phase 2.6 Budgeting | Checksum: 918ce962
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 1622.387 ; gain = 105.559
+Phase 2 Router Initialization | Checksum: 918ce962
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 1622.387 ; gain = 105.559
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1452d89bb
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:22 . Memory (MB): peak = 1625.387 ; gain = 108.559
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+
+Phase 4.1.1 Remove Overlaps
+ Number of Nodes with overlaps = 119
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+Phase 4.1.1 Remove Overlaps | Checksum: 1384f321e
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1625.387 ; gain = 108.559
+
+Phase 4.1.2 Update Timing
+Phase 4.1.2 Update Timing | Checksum: 1384f321e
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1626.387 ; gain = 109.559
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.33   | TNS=0      | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.3 collectNewHoldAndFix
+Phase 4.1.3 collectNewHoldAndFix | Checksum: 9e7fd0ca
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1626.387 ; gain = 109.559
+Phase 4.1 Global Iteration 0 | Checksum: 9e7fd0ca
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1626.387 ; gain = 109.559
+Phase 4 Rip-up And Reroute | Checksum: 9e7fd0ca
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1626.387 ; gain = 109.559
+
+Phase 5 Delay CleanUp
+
+Phase 5.1 Update Timing
+Phase 5.1 Update Timing | Checksum: 9e7fd0ca
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:23 . Memory (MB): peak = 1626.387 ; gain = 109.559
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.33   | TNS=0      | WHS=N/A    | THS=N/A    |
+
+Phase 5 Delay CleanUp | Checksum: 9e7fd0ca
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:23 . Memory (MB): peak = 1626.387 ; gain = 109.559
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Full Hold Analysis
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 9e7fd0ca
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:23 . Memory (MB): peak = 1626.387 ; gain = 109.559
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.33   | TNS=0      | WHS=0.0124 | THS=0      |
+
+Phase 6.1 Full Hold Analysis | Checksum: 9e7fd0ca
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:23 . Memory (MB): peak = 1626.387 ; gain = 109.559
+Phase 6 Post Hold Fix | Checksum: 9e7fd0ca
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:23 . Memory (MB): peak = 1626.387 ; gain = 109.559
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.537072 %
+  Global Horizontal Routing Utilization  = 0.650355 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 7 Verifying routed nets
+
+ Verification completed successfully
+Phase 7 Verifying routed nets | Checksum: 9e7fd0ca
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:23 . Memory (MB): peak = 1628.387 ; gain = 111.559
+
+Phase 8 Depositing Routes
+Phase 8 Depositing Routes | Checksum: d28c8448
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:23 . Memory (MB): peak = 1628.387 ; gain = 111.559
+
+Phase 9 Post Router Timing
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=2.337  | TNS=0.000  | WHS=0.013  | THS=0.000  |
+
+INFO: [Route 35-61] The design met the timing requirement.
+Phase 9 Post Router Timing | Checksum: d28c8448
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:24 . Memory (MB): peak = 1628.387 ; gain = 111.559
+INFO: [Route 35-16] Router Completed Successfully
+Ending Route Task | Checksum: d28c8448
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:24 . Memory (MB): peak = 1628.387 ; gain = 111.559
+
+Routing Is Done.
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:24 . Memory (MB): peak = 1628.387 ; gain = 111.559
+INFO: [Common 17-83] Releasing license: Implementation
+51 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:25 . Memory (MB): peak = 1628.387 ; gain = 111.559
+INFO: [Drc 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/project.runs/impl_1/lloyds_kernel_top_drc_routed.rpt.
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+Running Vector-less Activity Propagation...
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+
+Finished Running Vector-less Activity Propagation
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Constraints type: SDC.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.47 . Memory (MB): peak = 1636.398 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 12 14:19:51 2014...
+[Thu Jun 12 14:19:52 2014] impl_1 finished
+wait_on_run: Time (s): cpu = 00:00:00.55 ; elapsed = 00:01:22 . Memory (MB): peak = 1416.785 ; gain = 7.996
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2013.4
+Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/.Xil/Vivado-15663-ee-boxer0/dcp/lloyds_kernel_top.xdc]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'ap_clk' matched to 'port' objects. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/lloyds_kernel_top.xdc:1]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/impl/vhdl/.Xil/Vivado-15663-ee-boxer0/dcp/lloyds_kernel_top.xdc]
+Reading XDEF placement.
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1498.785 ; gain = 0.000
+Restoring placement.
+Restored 556 out of 556 XDEF sites from archive | CPU: 0.490000 secs | Memory: 5.004814 MB |
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Constraints type: SDC.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_utilization: Time (s): cpu = 00:00:00.61 ; elapsed = 00:00:00.70 . Memory (MB): peak = 1540.074 ; gain = 0.000
+
+
+Implementation tool: Xilinx Vivado v.2013.4
+Device target:       xc7z020clg484-1
+Report date:         Thu Jun 12 14:19:57 BST 2014
+
+#=== Resource usage ===
+SLICE:          532
+LUT:           1533
+FF:            1509
+DSP:              9
+BRAM:            19
+SRL:            102
+#=== Final timing ===
+CP required:    10.000
+CP achieved:    7.663
+Timing met
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 12 14:19:57 2014...

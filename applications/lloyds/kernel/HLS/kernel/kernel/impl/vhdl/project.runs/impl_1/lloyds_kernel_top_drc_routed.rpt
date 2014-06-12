@@ -1,0 +1,834 @@
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
+| Date         : Tue Jun 10 14:59:21 2014
+| Host         : ee-boxer0 running 64-bit Ubuntu 10.04.4 LTS
+| Command      : report_drc
+-----------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+
+REPORT SUMMARY
+            Netlist: netlist
+          Floorplan: checkpoint_lloyds_kernel_top
+      Design limits: <entire design considered>
+             Checks: defined_DATA_RATE
+                     DSP48E1_AregAcascreg
+                     Bank IO standard internal Vref conflict
+                     Bank IO standard limits
+                     Bank IO standard Support
+                     Bank IO standard Vcc
+                     Bank IO standard Vref utilization
+                     Bank IO standard Vref
+                     Bank IO standard Termination
+                     Input Buffer Connections
+                     Missing CFGBVS and CONFIG_VOLTAGE Design Properties
+                     Design Rule Check Disabled
+                     DCI Cascade IO standard
+                     DCI Cascade with part compatibility
+                     DCI Cascade Checks
+                     Bank IO standard VRN/VRP Occupied
+                     Inconsistent Diff pair IOStandards
+                     Inconsistent Diff pair IOStandards
+                     Inconsistent Diff pair IOStandards
+                     DSP48 Buffering
+                     DSP48 Cascade
+                     DSP input pipelining
+                     DSP input registers
+                     DSP output pipelining
+                     DSP output registers
+                     DSP48E1_PregOpmodeZmuxP
+                     Cascade input routing
+                     Area group tile alignment
+                     Pblock overlap
+                     Pblock partition
+                     FIFO_SynSameClk
+                     Reconfigurable modules must have a pblock defined
+                     RESET_AFTER_RECONFIG only supported on reconfigurable pblocks
+                     Black Box Instances
+                     IN_TERM / OUT_TERM requirements
+                     IO Bus SLR Crossings
+                     Number of IOs
+                     IOB clock sharing
+                     IOs crosstalk to MGT
+                     Directionless IOs
+                     Differential IO pads
+                     Part compatibility for differing bank types.
+                     Incompatible BUFGs among compatible parts.
+                     MGT not allowed for part compatibility
+                     Part compatibility implied prohibits not respected
+                     Part compatibility between monolithic and multi-die devices.
+                     IOs placed on disallowed sites
+                     IOB set reset sharing
+                     IOStandard Type
+                     INTERNAL_VREF
+                     Longest carry chain height
+                     HLUTNM on instances assigned to non-overlapping pblocks
+                     Pblock ranges contradict LOC constraints on logic assigned to the pblock
+                     LUTNM on instances assigned to non-overlapping pblocks
+                     Combinatorial Loop
+                     Bidirection LVDS IOs
+                     Multiple Driver Nets
+                     Crossing SLR boundary
+                     Driverless Nets
+                     Unspecified I/O Standard
+                     defined_IBUF_LOW_PWR
+                     connects_TDO
+                     Invalid Site Configuration
+                     BSCAN_JtagChain
+                     Non-Optimal connections to BUFG
+                     Unroutable connections to BUFG
+                     DRC check of BUFIO loads
+                     Clock Placer Checks
+                     Placement Constraints Check for Clock Region(s)
+                     Design Exceptions
+                     Placement Constraints Check for Design Lock
+                     DSP Connectivity Checks
+                     Unroutable connections to GTH instance
+                     Non-Optimal connections which could lead to hold violations
+                     IDELAYCTRL DRC Checks
+                     IDELAY DRC Checks
+                     Dangling IBUFDS output inside IOBUFDS_DIFF_OUT macro 
+                     Unroutable connection between IOB and IDDR
+                     DRC check between IO and buffer(IBUF/OBUF)
+                     IOSTANDARD violations
+                     Placement Constraints Check for IO constraints
+                     ODELAY Check for 3.3 V standard
+                     Inconsistent port properties
+                     RAMB output registers
+                     connects_I0_connects_I1
+                     IO port drives logic
+                     Unrouted net
+                     Missing Site Driver
+                     OSERDES driving OBUF
+                     Unconstrained Logical Port
+                     Resource utilization
+                     VCCAUX_IO unsupported with I/O Standard
+                     VCCAUX
+                     Vccaux voltage requirement for LVCMOS25
+                     VCCOSENSEMODE not supported
+                     Runtime intensive exceptions
+                     Hold option missing in multicycle path constraint
+                     PS7 block required
+           Max violations: <unlimited>
+         Violations found: 140
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+NDRV-2#1 Warning
+Out of context terminal  
+Port ap_done does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/ap_done. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#2 Warning
+Out of context terminal  
+Port ap_idle does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal ap_idle. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#3 Warning
+Out of context terminal  
+Port ap_rst does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal ap_rst. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#4 Warning
+Out of context terminal  
+Port ap_start does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal ap_start. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#5 Warning
+Out of context terminal  
+Port block_address[0] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[0]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#6 Warning
+Out of context terminal  
+Port block_address[10] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[10]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#7 Warning
+Out of context terminal  
+Port block_address[11] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[11]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#8 Warning
+Out of context terminal  
+Port block_address[12] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[12]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#9 Warning
+Out of context terminal  
+Port block_address[13] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[13]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#10 Warning
+Out of context terminal  
+Port block_address[14] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[14]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#11 Warning
+Out of context terminal  
+Port block_address[15] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[15]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#12 Warning
+Out of context terminal  
+Port block_address[16] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[16]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#13 Warning
+Out of context terminal  
+Port block_address[17] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[17]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#14 Warning
+Out of context terminal  
+Port block_address[18] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[18]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#15 Warning
+Out of context terminal  
+Port block_address[19] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[19]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#16 Warning
+Out of context terminal  
+Port block_address[1] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[1]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#17 Warning
+Out of context terminal  
+Port block_address[20] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[20]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#18 Warning
+Out of context terminal  
+Port block_address[21] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[21]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#19 Warning
+Out of context terminal  
+Port block_address[22] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[22]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#20 Warning
+Out of context terminal  
+Port block_address[23] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[23]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#21 Warning
+Out of context terminal  
+Port block_address[24] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[24]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#22 Warning
+Out of context terminal  
+Port block_address[25] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[25]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#23 Warning
+Out of context terminal  
+Port block_address[26] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[26]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#24 Warning
+Out of context terminal  
+Port block_address[27] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[27]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#25 Warning
+Out of context terminal  
+Port block_address[28] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[28]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#26 Warning
+Out of context terminal  
+Port block_address[29] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[29]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#27 Warning
+Out of context terminal  
+Port block_address[2] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[2]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#28 Warning
+Out of context terminal  
+Port block_address[30] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[30]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#29 Warning
+Out of context terminal  
+Port block_address[31] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[31]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#30 Warning
+Out of context terminal  
+Port block_address[3] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[3]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#31 Warning
+Out of context terminal  
+Port block_address[4] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[4]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#32 Warning
+Out of context terminal  
+Port block_address[5] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[5]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#33 Warning
+Out of context terminal  
+Port block_address[6] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[6]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#34 Warning
+Out of context terminal  
+Port block_address[7] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[7]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#35 Warning
+Out of context terminal  
+Port block_address[8] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[8]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#36 Warning
+Out of context terminal  
+Port block_address[9] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal block_address[9]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#37 Warning
+Out of context terminal  
+Port data_points_addr[0] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[0]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#38 Warning
+Out of context terminal  
+Port data_points_addr[10] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[10]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#39 Warning
+Out of context terminal  
+Port data_points_addr[11] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[11]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#40 Warning
+Out of context terminal  
+Port data_points_addr[12] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[12]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#41 Warning
+Out of context terminal  
+Port data_points_addr[13] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[13]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#42 Warning
+Out of context terminal  
+Port data_points_addr[14] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[14]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#43 Warning
+Out of context terminal  
+Port data_points_addr[15] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[15]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#44 Warning
+Out of context terminal  
+Port data_points_addr[16] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[16]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#45 Warning
+Out of context terminal  
+Port data_points_addr[17] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[17]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#46 Warning
+Out of context terminal  
+Port data_points_addr[18] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[18]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#47 Warning
+Out of context terminal  
+Port data_points_addr[19] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[19]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#48 Warning
+Out of context terminal  
+Port data_points_addr[1] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[1]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#49 Warning
+Out of context terminal  
+Port data_points_addr[20] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[20]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#50 Warning
+Out of context terminal  
+Port data_points_addr[21] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[21]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#51 Warning
+Out of context terminal  
+Port data_points_addr[22] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[22]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#52 Warning
+Out of context terminal  
+Port data_points_addr[23] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[23]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#53 Warning
+Out of context terminal  
+Port data_points_addr[24] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[24]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#54 Warning
+Out of context terminal  
+Port data_points_addr[25] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[25]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#55 Warning
+Out of context terminal  
+Port data_points_addr[26] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[26]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#56 Warning
+Out of context terminal  
+Port data_points_addr[27] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[27]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#57 Warning
+Out of context terminal  
+Port data_points_addr[28] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[28]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#58 Warning
+Out of context terminal  
+Port data_points_addr[29] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[29]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#59 Warning
+Out of context terminal  
+Port data_points_addr[2] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[2]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#60 Warning
+Out of context terminal  
+Port data_points_addr[30] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[30]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#61 Warning
+Out of context terminal  
+Port data_points_addr[31] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[31]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#62 Warning
+Out of context terminal  
+Port data_points_addr[3] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[3]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#63 Warning
+Out of context terminal  
+Port data_points_addr[4] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[4]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#64 Warning
+Out of context terminal  
+Port data_points_addr[5] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[5]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#65 Warning
+Out of context terminal  
+Port data_points_addr[6] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[6]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#66 Warning
+Out of context terminal  
+Port data_points_addr[7] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[7]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#67 Warning
+Out of context terminal  
+Port data_points_addr[8] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[8]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#68 Warning
+Out of context terminal  
+Port data_points_addr[9] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal data_points_addr[9]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#69 Warning
+Out of context terminal  
+Port master_portA_address[0] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[0]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#70 Warning
+Out of context terminal  
+Port master_portA_address[10] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[10]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#71 Warning
+Out of context terminal  
+Port master_portA_address[11] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[11]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#72 Warning
+Out of context terminal  
+Port master_portA_address[12] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[12]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#73 Warning
+Out of context terminal  
+Port master_portA_address[13] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[13]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#74 Warning
+Out of context terminal  
+Port master_portA_address[14] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[14]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#75 Warning
+Out of context terminal  
+Port master_portA_address[15] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[15]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#76 Warning
+Out of context terminal  
+Port master_portA_address[16] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[16]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#77 Warning
+Out of context terminal  
+Port master_portA_address[17] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[17]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#78 Warning
+Out of context terminal  
+Port master_portA_address[18] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[18]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#79 Warning
+Out of context terminal  
+Port master_portA_address[19] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[19]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#80 Warning
+Out of context terminal  
+Port master_portA_address[1] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[1]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#81 Warning
+Out of context terminal  
+Port master_portA_address[20] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[20]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#82 Warning
+Out of context terminal  
+Port master_portA_address[21] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[21]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#83 Warning
+Out of context terminal  
+Port master_portA_address[22] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[22]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#84 Warning
+Out of context terminal  
+Port master_portA_address[23] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[23]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#85 Warning
+Out of context terminal  
+Port master_portA_address[24] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[24]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#86 Warning
+Out of context terminal  
+Port master_portA_address[25] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[25]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#87 Warning
+Out of context terminal  
+Port master_portA_address[26] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[26]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#88 Warning
+Out of context terminal  
+Port master_portA_address[27] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[27]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#89 Warning
+Out of context terminal  
+Port master_portA_address[28] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[28]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#90 Warning
+Out of context terminal  
+Port master_portA_address[29] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[29]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#91 Warning
+Out of context terminal  
+Port master_portA_address[2] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[2]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#92 Warning
+Out of context terminal  
+Port master_portA_address[30] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal <const0>. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#93 Warning
+Out of context terminal  
+Port master_portA_address[3] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[3]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#94 Warning
+Out of context terminal  
+Port master_portA_address[4] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[4]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#95 Warning
+Out of context terminal  
+Port master_portA_address[5] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[5]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#96 Warning
+Out of context terminal  
+Port master_portA_address[6] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[6]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#97 Warning
+Out of context terminal  
+Port master_portA_address[7] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[7]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#98 Warning
+Out of context terminal  
+Port master_portA_address[8] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[8]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#99 Warning
+Out of context terminal  
+Port master_portA_address[9] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_address[9]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#100 Warning
+Out of context terminal  
+Port master_portA_req_din does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_req_din. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#101 Warning
+Out of context terminal  
+Port master_portA_req_full_n does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal master_portA_req_full_n. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#102 Warning
+Out of context terminal  
+Port master_portA_req_write does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_store_output_points_buffer_fu_99/master_portA_req_write. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#103 Warning
+Out of context terminal  
+Port master_portA_rsp_empty_n does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal master_portA_rsp_empty_n. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#104 Warning
+Out of context terminal  
+Port master_portA_rsp_read does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal grp_load_points_buffer_fu_87/master_portA_rsp_read. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#105 Warning
+Out of context terminal  
+Port master_portA_size[4] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal <const1>. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#106 Warning
+Out of context terminal  
+Port output_addr[0] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[0]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#107 Warning
+Out of context terminal  
+Port output_addr[10] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[10]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#108 Warning
+Out of context terminal  
+Port output_addr[11] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[11]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#109 Warning
+Out of context terminal  
+Port output_addr[12] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[12]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#110 Warning
+Out of context terminal  
+Port output_addr[13] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[13]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#111 Warning
+Out of context terminal  
+Port output_addr[14] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[14]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#112 Warning
+Out of context terminal  
+Port output_addr[15] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[15]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#113 Warning
+Out of context terminal  
+Port output_addr[16] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[16]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#114 Warning
+Out of context terminal  
+Port output_addr[17] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[17]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#115 Warning
+Out of context terminal  
+Port output_addr[18] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[18]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#116 Warning
+Out of context terminal  
+Port output_addr[19] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[19]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#117 Warning
+Out of context terminal  
+Port output_addr[1] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[1]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#118 Warning
+Out of context terminal  
+Port output_addr[20] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[20]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#119 Warning
+Out of context terminal  
+Port output_addr[21] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[21]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#120 Warning
+Out of context terminal  
+Port output_addr[22] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[22]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#121 Warning
+Out of context terminal  
+Port output_addr[23] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[23]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#122 Warning
+Out of context terminal  
+Port output_addr[24] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[24]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#123 Warning
+Out of context terminal  
+Port output_addr[25] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[25]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#124 Warning
+Out of context terminal  
+Port output_addr[26] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[26]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#125 Warning
+Out of context terminal  
+Port output_addr[27] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[27]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#126 Warning
+Out of context terminal  
+Port output_addr[28] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[28]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#127 Warning
+Out of context terminal  
+Port output_addr[29] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[29]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#128 Warning
+Out of context terminal  
+Port output_addr[2] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[2]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#129 Warning
+Out of context terminal  
+Port output_addr[30] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[30]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#130 Warning
+Out of context terminal  
+Port output_addr[31] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[31]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#131 Warning
+Out of context terminal  
+Port output_addr[3] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[3]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#132 Warning
+Out of context terminal  
+Port output_addr[4] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[4]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#133 Warning
+Out of context terminal  
+Port output_addr[5] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[5]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#134 Warning
+Out of context terminal  
+Port output_addr[6] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[6]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#135 Warning
+Out of context terminal  
+Port output_addr[7] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[7]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#136 Warning
+Out of context terminal  
+Port output_addr[8] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[8]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-2#137 Warning
+Out of context terminal  
+Port output_addr[9] does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal output_addr[9]. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Related violations: <none>
+
+NDRV-3#1 Warning
+Out of context clock terminal  
+Clock port ap_clk does not have an associated HD.CLK_SRC property. Without this constraint, timing analysis may not be accurate for signal ap_clk and upstream checks cannot be done to ensure correct clock placement.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

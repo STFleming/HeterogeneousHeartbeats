@@ -41,7 +41,7 @@ struct centre_type {
 };
 
 void combiner_top( volatile bus_type *master_portA,
-                   volatile bus_type *master_portB,
+                   //volatile bus_type *master_portB,
                    uint data_points_in_addr,
 				   uint kernel_info_in_addr,
 				   uint centres_out_addr,

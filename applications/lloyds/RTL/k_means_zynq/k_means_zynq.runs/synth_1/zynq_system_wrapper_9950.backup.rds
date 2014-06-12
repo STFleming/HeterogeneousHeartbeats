@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Thu Jun 12 12:54:00 2014
+# Process ID: 9233
+# Log file: /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/zynq_system_wrapper.rds
+# Journal file: /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+Attempting to get a license: Implementation
+Feature available: Implementation
+Loading parts and site information from /mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source zynq_system_wrapper.tcl
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7z020clg484-1
+# set_property target_language VHDL [current_project]
+# set_property board xilinx.com:zynq:zc702:1.0 [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property ip_repo_paths {
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner
+#   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel
+# } [current_fileset]
+# add_files /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/zynq_system.bd
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/combiner'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/ip'.
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 794.043 ; gain = 72.379
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_processing_system7_0_0/zynq_system_processing_system7_0_0.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_combiner_top_0_1/constraints/combiner_top_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_lloyds_kernel_top_0_0/constraints/lloyds_kernel_top_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_1/zynq_system_rst_processing_system7_0_50M_1.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_1/zynq_system_rst_processing_system7_0_50M_1_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_1/zynq_system_rst_processing_system7_0_50M_1_board.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_5/zynq_system_xbar_5_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_1/zynq_system_auto_pc_1_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/zynq_system_auto_pc_2_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_3/zynq_system_auto_pc_3_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_4/zynq_system_auto_pc_4_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/zynq_system_auto_pc_10_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_11/zynq_system_auto_pc_11_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_us_8/zynq_system_auto_us_8_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_us_8/zynq_system_auto_us_8_clocks.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_12/zynq_system_auto_pc_12_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_us_9/zynq_system_auto_us_9_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_us_9/zynq_system_auto_us_9_clocks.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_13/zynq_system_auto_pc_13_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_us_10/zynq_system_auto_us_10_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_us_10/zynq_system_auto_us_10_clocks.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_14/zynq_system_auto_pc_14_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_us_11/zynq_system_auto_us_11_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_us_11/zynq_system_auto_us_11_clocks.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/zynq_system_ooc.xdc]
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property is_locked true [get_files /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/zynq_system.bd]
+# read_vhdl /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system_wrapper.vhd
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.data/wt [current_project]
+# set_property parent.project_dir /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq [current_project]
+# synth_design -top zynq_system_wrapper -part xc7z020clg484-1
+Command: synth_design -top zynq_system_wrapper -part xc7z020clg484-1
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design failed
+INFO: [Common 17-344] 'source' was cancelled
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 12 12:58:25 2014...

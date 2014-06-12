@@ -7,17 +7,97 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 
 @I [SYN-201] Setting up clock 'default' with a period of 10ns.
 @I [HLS-10] Setting target device to 'xc7z020clg484-1'
-@I [HLS-10] Importing test bench file 'combiner/simulation/combiner_tb.cpp' ... 
-@W [HLS-40] Cannot find test bench file 'combiner/simulation/combiner_tb.cpp'
-@I [HLS-10] Importing test bench file 'combiner/simulation/data_points_N128_K4_D3_s0.75.mat' ... 
-@W [HLS-40] Cannot find test bench file 'combiner/simulation/data_points_N128_K4_D3_s0.75.mat'
-@I [HLS-10] Importing test bench file 'combiner/simulation/data_points_N16384_K128_D3_s0.20.mat' ... 
-@W [HLS-40] Cannot find test bench file 'combiner/simulation/data_points_N16384_K128_D3_s0.20.mat'
-@I [HLS-10] Importing test bench file 'combiner/simulation/tb_io.cpp' ... 
-@W [HLS-40] Cannot find test bench file 'combiner/simulation/tb_io.cpp'
-@I [HLS-10] Importing test bench file 'combiner/simulation/tb_io.h' ... 
-@W [HLS-40] Cannot find test bench file 'combiner/simulation/tb_io.h'
-@W [HLS-40] Cannot find source file combiner/source/combiner_top.cpp; skipping it.
-@W [HLS-40] Cannot find source file combiner/source/combiner_top.h; skipping it.
-@E [HLS-70] Cannot find any design unit to elaborate.
+@I [HLS-10] Importing test bench file 'combiner/HLS/combiner/simulation/combiner_tb.cpp' ... 
+@I [HLS-10] Importing test bench file 'test_data/data_points.mat' ... 
+@I [HLS-10] Importing test bench file 'test_data/data_points_N128_K4_D3_s0.75.mat' ... 
+@I [HLS-10] Importing test bench file 'test_data/intermediate.mat' ... 
+@I [HLS-10] Importing test bench file 'combiner/HLS/combiner/simulation/tb_io.cpp' ... 
+@I [HLS-10] Importing test bench file 'combiner/HLS/combiner/simulation/tb_io.h' ... 
+@I [HLS-10] Analyzing design file 'combiner/HLS/combiner/source/combiner_top.cpp' ... 
+@I [HLS-10] Importing test bench file 'HLS/combiner/simulation/combiner_tb.cpp' ... 
+@W [HLS-40] Cannot find test bench file 'HLS/combiner/simulation/combiner_tb.cpp'
+@I [HLS-10] Importing test bench file '../test_data/data_points.mat' ... 
+@W [HLS-40] Cannot find test bench file '../test_data/data_points.mat'
+@I [HLS-10] Importing test bench file '../test_data/data_points_N128_K4_D3_s0.75.mat' ... 
+@W [HLS-40] Cannot find test bench file '../test_data/data_points_N128_K4_D3_s0.75.mat'
+@I [HLS-10] Importing test bench file '../test_data/intermediate.mat' ... 
+@W [HLS-40] Cannot find test bench file '../test_data/intermediate.mat'
+@I [HLS-10] Importing test bench file 'HLS/combiner/simulation/tb_io.cpp' ... 
+@W [HLS-40] Cannot find test bench file 'HLS/combiner/simulation/tb_io.cpp'
+@I [HLS-10] Importing test bench file 'HLS/combiner/simulation/tb_io.h' ... 
+@W [HLS-40] Cannot find test bench file 'HLS/combiner/simulation/tb_io.h'
+@W [HLS-40] Cannot find source file HLS/combiner/source/combiner_top.cpp; skipping it.
+@W [HLS-40] Cannot find source file HLS/combiner/source/combiner_top.h; skipping it.
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Starting code transformations ...
+@I [HLS-10] Checking synthesizability ...
+@I [XFORM-502] Unrolling all sub-loops inside loop 'init_loop' (combiner/HLS/combiner/source/combiner_top.cpp:56) in function 'combiner_top' for pipelining.
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Loop-2.3' (combiner/HLS/combiner/source/combiner_top.cpp:80) in function 'combiner_top' for pipelining.
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Loop-3' (combiner/HLS/combiner/source/combiner_top.cpp:118) in function 'combiner_top' for pipelining.
+@I [XFORM-501] Unrolling loop 'Loop-1.1' (combiner/HLS/combiner/source/combiner_top.cpp:60) in function 'combiner_top' completely.
+@I [XFORM-501] Unrolling loop 'Loop-2.3.1' (combiner/HLS/combiner/source/combiner_top.cpp:87) in function 'combiner_top' completely.
+@I [XFORM-501] Unrolling loop 'Loop-2.3.2' (combiner/HLS/combiner/source/combiner_top.cpp:97) in function 'combiner_top' completely.
+@I [XFORM-501] Unrolling loop 'Loop-2.3.3' (combiner/HLS/combiner/source/combiner_top.cpp:105) in function 'combiner_top' completely.
+@I [XFORM-501] Unrolling loop 'Loop-3.1' (combiner/HLS/combiner/source/combiner_top.cpp:127) in function 'combiner_top' completely.
+@I [XFORM-102] Partitioning array 'centre_buffer.wgtCent.value' (combiner/HLS/combiner/source/combiner_top.cpp:54) in dimension 2 automatically.
+@I [XFORM-102] Partitioning array 'u.value' (combiner/HLS/combiner/source/combiner_top.cpp:86) automatically.
+@I [XFORM-102] Partitioning array 'prev_point.value' (combiner/HLS/combiner/source/combiner_top.cpp:95) automatically.
+@I [HLS-111] Elapsed time: 3.77 seconds; current memory usage: 53 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'combiner_top' ...
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'combiner_top' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'init_loop'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 1.
+@I [SCHED-61] Pipelining loop 'block_loop.1'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 8.
+@I [SCHED-61] Pipelining loop 'block_loop.2'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 8.
+@I [SCHED-61] Pipelining loop 'block_loop.3'.
+@I [SCHED-61] Pipelining result: Target II: 4, Final II: 3, Depth: 3.
+@I [SCHED-61] Pipelining loop 'Loop 3'.
+@W [SCHED-69] Unable to schedule 'store' operation (combiner/HLS/combiner/source/combiner_top.cpp:133) of variable 'div_result_2' on array 'c_buffer' due to limited memory ports.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 2, Depth: 38.
+@I [SCHED-61] Pipelining loop 'Loop 4'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 3.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.25 seconds; current memory usage: 53.9 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'combiner_top' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.07 seconds; current memory usage: 55 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'combiner_top' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/master_portA' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/data_points_in_addr' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/kernel_info_in_addr' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/centres_out_addr' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/distortion_out' to 'ap_none' (register).
+@W [RTGEN-101] Port 'distortion_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/n' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/k' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on function 'combiner_top' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Generating core module 'combiner_top_sdiv_32ns_32ns_32_35': 3 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'combiner_top'.
+@I [HLS-111] Elapsed time: 0.15 seconds; current memory usage: 56.5 MB.
+@I [RTMG-282] Generating pipelined core: 'combiner_top_sdiv_32ns_32ns_32_35_div'
+@I [RTMG-278] Implementing memory 'combiner_top_centre_buffer_0_wgtCent_value_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'combiner_top_i_buffer_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'combiner_top_p_buffer_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'combiner_top_c_buffer_ram' using block RAMs.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'combiner_top'.
+@I [WVHDL-304] Generating RTL VHDL for 'combiner_top'.
+@I [WVLOG-307] Generating RTL Verilog for 'combiner_top'.
+@I [IMPL-8] Exporting RTL as an IP in IP-XACT.
+@I [IMPL-8] Starting RTL evaluation using Vivado ...
+@I [HLS-112] Total elapsed time: 332.548 seconds; peak memory usage: 56.5 MB.
 @I [LIC-101] Checked in feature [HLS]

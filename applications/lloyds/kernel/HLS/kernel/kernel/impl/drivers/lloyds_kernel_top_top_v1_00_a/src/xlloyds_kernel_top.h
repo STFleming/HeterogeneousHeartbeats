@@ -95,6 +95,8 @@ void XLloyds_kernel_top_SetCentres_in_addr(XLloyds_kernel_top *InstancePtr, u32 
 u32 XLloyds_kernel_top_GetCentres_in_addr(XLloyds_kernel_top *InstancePtr);
 void XLloyds_kernel_top_SetOutput_addr(XLloyds_kernel_top *InstancePtr, u32 Data);
 u32 XLloyds_kernel_top_GetOutput_addr(XLloyds_kernel_top *InstancePtr);
+void XLloyds_kernel_top_SetUpdate_points(XLloyds_kernel_top *InstancePtr, u32 Data);
+u32 XLloyds_kernel_top_GetUpdate_points(XLloyds_kernel_top *InstancePtr);
 void XLloyds_kernel_top_SetN(XLloyds_kernel_top *InstancePtr, u32 Data);
 u32 XLloyds_kernel_top_GetN(XLloyds_kernel_top *InstancePtr);
 void XLloyds_kernel_top_SetK(XLloyds_kernel_top *InstancePtr, u32 Data);

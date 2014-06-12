@@ -6,7 +6,7 @@
 // ==============================================================
 
 `timescale 1 ns / 1 ps
-module lloyds_kernel_top_data_points_buffer_0_value_ram (addr0, ce0, d0, we0, q0,  clk);
+module lloyds_kernel_top_data_points_buffer_0_value_ram (addr0, ce0, d0, we0,  clk);
 
 parameter DWIDTH = 32;
 parameter AWIDTH = 4;
@@ -16,7 +16,6 @@ input[AWIDTH-1:0] addr0;
 input ce0;
 input[DWIDTH-1:0] d0;
 input we0;
-output reg[DWIDTH-1:0] q0;
 input clk;
 
 (* ram_style = "block" *)reg [DWIDTH-1:0] ram[MEM_SIZE-1:0];
@@ -31,10 +30,7 @@ begin
         if (we0) 
         begin 
             ram[addr0] <= d0; 
-            q0 <= d0;
         end 
-        else 
-            q0 <= ram[addr0];
     end
 end
 
@@ -49,8 +45,7 @@ module lloyds_kernel_top_data_points_buffer_0_value(
     address0,
     ce0,
     we0,
-    d0,
-    q0);
+    d0);
 
 parameter DataWidth = 32'd32;
 parameter AddressRange = 32'd16;
@@ -61,7 +56,6 @@ input[AddressWidth - 1:0] address0;
 input ce0;
 input we0;
 input[DataWidth - 1:0] d0;
-output[DataWidth - 1:0] q0;
 
 
 
@@ -71,8 +65,7 @@ lloyds_kernel_top_data_points_buffer_0_value_ram lloyds_kernel_top_data_points_b
     .addr0( address0 ),
     .ce0( ce0 ),
     .d0( d0 ),
-    .we0( we0 ),
-    .q0( q0 ));
+    .we0( we0 ));
 
 endmodule
 

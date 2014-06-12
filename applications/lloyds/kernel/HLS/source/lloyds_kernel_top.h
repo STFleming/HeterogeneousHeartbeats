@@ -60,7 +60,7 @@ typedef ap_int<MUL_INTEGER_BITS+MUL_FRACTIONAL_BITS> mul_input_type;
 
 void lloyds_kernel_top(  uint block_address,
 						 volatile bus_type *master_portA,
-						 volatile bus_type *master_portB,
+//						 volatile bus_type *master_portB,
 						 uint data_points_addr,
                          uint centres_in_addr,
                          uint output_addr,

@@ -5,6 +5,220 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 
 ==============================================================
 
-@I [HLS-10] Setting target device to 'xc7z020clg484-1'
 @I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-10] Setting target device to 'xc7z020clg484-1'
+@I [HLS-10] Importing test bench file 'kernel/HLS/simulation/tb_io.h' ... 
+@I [HLS-10] Importing test bench file 'kernel/HLS/simulation/tb_io.cpp' ... 
+@I [HLS-10] Importing test bench file 'kernel/HLS/simulation/lloyds_kernel_tb.cpp' ... 
+@I [HLS-10] Importing test bench file 'kernel/HLS/intermediate.mat' ... 
+@W [HLS-40] Cannot find test bench file 'kernel/HLS/intermediate.mat'
+@I [HLS-10] Importing test bench file 'test_data/data_points_N128_K4_D3_s0.75.mat' ... 
+@I [HLS-10] Importing test bench file 'test_data/data_points.mat' ... 
+@I [HLS-10] Analyzing design file 'kernel/HLS/source/lloyds_util.cpp' ... 
+@I [HLS-10] Analyzing design file 'kernel/HLS/source/lloyds_kernel_top.cpp' ... 
+@I [HLS-10] Importing test bench file 'simulation/data_points_N128_K4_D3_s0.75.mat' ... 
+@W [HLS-40] Cannot find test bench file 'simulation/data_points_N128_K4_D3_s0.75.mat'
+@I [HLS-10] Importing test bench file 'simulation/data_points_N16384_K128_D3_s0.20.mat' ... 
+@W [HLS-40] Cannot find test bench file 'simulation/data_points_N16384_K128_D3_s0.20.mat'
+@I [HLS-10] Importing test bench file 'simulation/initial_centres_N128_K4_D3_s0.75_1.mat' ... 
+@W [HLS-40] Cannot find test bench file 'simulation/initial_centres_N128_K4_D3_s0.75_1.mat'
+@I [HLS-10] Importing test bench file 'simulation/initial_centres_N16384_K128_D3_s0.20_1.mat' ... 
+@W [HLS-40] Cannot find test bench file 'simulation/initial_centres_N16384_K128_D3_s0.20_1.mat'
+@I [HLS-10] Importing test bench file 'simulation/lloyds_kernel_tb.cpp' ... 
+@W [HLS-40] Cannot find test bench file 'simulation/lloyds_kernel_tb.cpp'
+@I [HLS-10] Importing test bench file 'simulation/tb_io.cpp' ... 
+@W [HLS-40] Cannot find test bench file 'simulation/tb_io.cpp'
+@I [HLS-10] Importing test bench file 'simulation/tb_io.h' ... 
+@W [HLS-40] Cannot find test bench file 'simulation/tb_io.h'
+@W [HLS-40] Cannot find source file source/lloyds_kernel_top.cpp; skipping it.
+@W [HLS-40] Cannot find source file source/lloyds_kernel_top.h; skipping it.
+@W [HLS-40] Cannot find source file source/lloyds_util.cpp; skipping it.
+@W [HLS-40] Cannot find source file source/lloyds_util.h; skipping it.
+@I [HLS-10] Validating synthesis directives ...
+@W [HLS-40] Directive 'RESOURCE' for core 'AddSubnS' cannot be applied: Variable 'tmp3' has no assigment in 'tree_adder'.
+@W [HLS-40] Directive 'RESOURCE' for core 'AddSubnS' cannot be applied: Variable 'tmp3' has no assigment in 'tree_adder'.
+@I [HLS-10] Starting code transformations ...
+@I [XFORM-603] Inlining function 'saturate_mul_input' into 'fi_mul' (kernel/HLS/source/lloyds_util.cpp:184).
+@I [XFORM-603] Inlining function 'saturate_mul_input' into 'fi_mul' (kernel/HLS/source/lloyds_util.cpp:183).
+@I [XFORM-603] Inlining function 'fi_mul' into 'compute_distance' (kernel/HLS/source/lloyds_util.cpp:253).
+@I [XFORM-603] Inlining function 'tree_adder' into 'compute_distance' (kernel/HLS/source/lloyds_util.cpp:265).
+@I [XFORM-603] Inlining function 'compute_distance' into 'lloyds_kernel_top' (kernel/HLS/source/lloyds_kernel_top.cpp:182).
+@I [HLS-10] Checking synthesizability ...
+@I [XFORM-502] Unrolling all sub-loops inside loop 'minsearch_loop' (kernel/HLS/source/lloyds_util.cpp:173) in function 'lloyds_kernel_top' for pipelining.
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Loop-1' (kernel/HLS/source/lloyds_kernel_top.cpp:75) in function 'store_output_points_buffer' for pipelining.
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Loop-2' (kernel/HLS/source/lloyds_kernel_top.cpp:40) in function 'load_centres_buffer' for pipelining.
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Loop-2' (kernel/HLS/source/lloyds_kernel_top.cpp:23) in function 'load_points_buffer' for pipelining.
+@I [XFORM-501] Unrolling loop 'Loop-1.1.1' (kernel/HLS/source/lloyds_util.cpp:188) in function 'lloyds_kernel_top' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.1.2' (kernel/HLS/source/lloyds_util.cpp:204) in function 'lloyds_kernel_top' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.1.2.1' (kernel/HLS/source/lloyds_util.cpp:209) in function 'lloyds_kernel_top' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.1' (kernel/HLS/source/lloyds_kernel_top.cpp:79) in function 'store_output_points_buffer' completely.
+@I [XFORM-501] Unrolling loop 'Loop-2.1' (kernel/HLS/source/lloyds_kernel_top.cpp:43) in function 'load_centres_buffer' completely.
+@I [XFORM-501] Unrolling loop 'Loop-2.1' (kernel/HLS/source/lloyds_kernel_top.cpp:26) in function 'load_points_buffer' completely.
+@I [XFORM-102] Partitioning array 'tmp_p1.value' (kernel/HLS/source/lloyds_util.cpp:242) automatically.
+@I [XFORM-102] Partitioning array 'tmp_p2.value' (kernel/HLS/source/lloyds_util.cpp:243) automatically.
+@I [XFORM-102] Partitioning array 'tmp_mul_res' (kernel/HLS/source/lloyds_util.cpp:244) automatically.
+@I [XFORM-102] Partitioning array 'data_points_buffer.value' (kernel/HLS/source/lloyds_kernel_top.cpp:137) in dimension 2 automatically.
+@I [XFORM-102] Partitioning array 'centres_buffer.value' (kernel/HLS/source/lloyds_kernel_top.cpp:138) in dimension 2 automatically.
+@I [XFORM-102] Partitioning array 'output_points_buffer.value' (kernel/HLS/source/lloyds_kernel_top.cpp:140) in dimension 2 automatically.
+@I [XFORM-102] Partitioning array 'closest_centre.value' (kernel/HLS/source/lloyds_kernel_top.cpp:170) automatically.
+@I [HLS-111] Elapsed time: 17.49 seconds; current memory usage: 528 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'lloyds_kernel_top' ...
+@W [RTGEN-101] Legalizing port name 'load_points_buffer/bus' to 'load_points_buffer/bus_r'.
+@W [RTGEN-101] Legalizing port name 'load_centres_buffer/bus' to 'load_centres_buffer/bus_r'.
+@W [RTGEN-101] Legalizing port name 'store_output_points_buffer/bus' to 'store_output_points_buffer/bus_r'.
+@W [RTGEN-101] Legalizing port name 'store_output_buffer/bus' to 'store_output_buffer/bus_r'.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'load_points_buffer' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'Loop 1'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 8.
+@I [SCHED-61] Pipelining loop 'Loop 2'.
+@W [SCHED-69] Unable to schedule 'load' operation ('int_buffer_load_2', kernel/HLS/source/lloyds_kernel_top.cpp:28) on array 'int_buffer' due to limited memory ports.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 2, Depth: 3.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.11 seconds; current memory usage: 528 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'load_points_buffer' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.03 seconds; current memory usage: 528 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'load_centres_buffer' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'Loop 1'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 8.
+@I [SCHED-61] Pipelining loop 'Loop 2'.
+@W [SCHED-69] Unable to schedule 'load' operation ('int_buffer_load_2', kernel/HLS/source/lloyds_kernel_top.cpp:45) on array 'int_buffer' due to limited memory ports.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 2, Depth: 3.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.13 seconds; current memory usage: 528 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'load_centres_buffer' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.03 seconds; current memory usage: 529 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'store_output_points_buffer' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'Loop 1'.
+@W [SCHED-69] Unable to schedule 'store' operation (kernel/HLS/source/lloyds_kernel_top.cpp:81) of variable 'buffer_2_value_load' on array 'int_buffer' due to limited memory ports.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 2, Depth: 3.
+@I [SCHED-61] Pipelining loop 'Loop 2'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 3.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.09 seconds; current memory usage: 529 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'store_output_points_buffer' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.03 seconds; current memory usage: 529 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'store_output_buffer' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'Loop 1'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 2.
+@I [SCHED-61] Pipelining loop 'Loop 2'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 3.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.09 seconds; current memory usage: 529 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'store_output_buffer' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.03 seconds; current memory usage: 529 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'lloyds_kernel_top' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'minsearch_loop'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 9.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.2 seconds; current memory usage: 530 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'lloyds_kernel_top' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.09 seconds; current memory usage: 531 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'load_points_buffer' 
+@I [HLS-10] ----------------------------------------------------------------
+@W [RTGEN-101] Setting dangling out port 'load_points_buffer/bus_r_dataout' to 0.
+@I [RTGEN-100] Finished creating RTL model for 'load_points_buffer'.
+@I [HLS-111] Elapsed time: 0.14 seconds; current memory usage: 531 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'load_centres_buffer' 
+@I [HLS-10] ----------------------------------------------------------------
+@W [RTGEN-101] Setting dangling out port 'load_centres_buffer/bus_r_dataout' to 0.
+@I [RTGEN-100] Finished creating RTL model for 'load_centres_buffer'.
+@I [HLS-111] Elapsed time: 0.1 seconds; current memory usage: 533 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'store_output_points_buffer' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-100] Finished creating RTL model for 'store_output_points_buffer'.
+@I [HLS-111] Elapsed time: 0.12 seconds; current memory usage: 534 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'store_output_buffer' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-100] Finished creating RTL model for 'store_output_buffer'.
+@I [HLS-111] Elapsed time: 0.09 seconds; current memory usage: 535 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'lloyds_kernel_top' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'lloyds_kernel_top/block_address' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'lloyds_kernel_top/master_portA' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'lloyds_kernel_top/data_points_addr' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'lloyds_kernel_top/centres_in_addr' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'lloyds_kernel_top/output_addr' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'lloyds_kernel_top/update_points' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'lloyds_kernel_top/n' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'lloyds_kernel_top/k' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'lloyds_kernel_top/debug' to 'ap_none' (register).
+@W [RTGEN-101] Port 'debug' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+@I [RTGEN-500] Setting interface mode on function 'lloyds_kernel_top' to 'ap_ctrl_hs'.
+@W [RTGEN-101] Port 'lloyds_kernel_top/n' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@I [RTGEN-100] Generating core module 'lloyds_kernel_top_add_32ns_32ns_32_1': 2 instance(s).
+@I [RTGEN-100] Generating core module 'lloyds_kernel_top_mul_32s_32s_64_6': 3 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'lloyds_kernel_top'.
+@I [HLS-111] Elapsed time: 0.17 seconds; current memory usage: 537 MB.
+@I [RTMG-278] Implementing memory 'load_points_buffer_int_buffer_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'load_centres_buffer_int_buffer_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'store_output_points_buffer_int_buffer_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'store_output_buffer_int_buffer_ram' using block RAMs.
+@I [RTMG-282] Generating pipelined core: 'lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0'
+@I [RTMG-278] Implementing memory 'lloyds_kernel_top_data_points_buffer_0_value_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'lloyds_kernel_top_centres_buffer_0_value_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'lloyds_kernel_top_output_buffer_min_idx_V_ram' using block RAMs.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'lloyds_kernel_top'.
+@I [WVHDL-304] Generating RTL VHDL for 'lloyds_kernel_top'.
+@I [WVLOG-307] Generating RTL Verilog for 'lloyds_kernel_top'.
+@I [IMPL-8] Exporting RTL as an IP in IP-XACT.
+@I [IMPL-8] Starting RTL evaluation using Vivado ...
+@I [HLS-112] Total elapsed time: 264.856 seconds; peak memory usage: 537 MB.
 @I [LIC-101] Checked in feature [HLS]

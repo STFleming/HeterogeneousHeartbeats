@@ -118,14 +118,14 @@ architecture behav of load_points_buffer is
     signal int_buffer_q1 : STD_LOGIC_VECTOR (31 downto 0);
     signal indvar_phi_fu_192_p4 : STD_LOGIC_VECTOR (5 downto 0);
     signal i_phi_fu_204_p4 : STD_LOGIC_VECTOR (4 downto 0);
-    signal tmp_s_fu_257_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_4_fu_257_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal tmp_9_fu_304_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal tmp_9_1_fu_319_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal tmp_9_2_fu_339_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal tmp_3_cast_fu_229_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal tmp_1_fu_213_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal tmp_3_fu_219_p4 : STD_LOGIC_VECTOR (29 downto 0);
-    signal tmp_24_fu_278_p1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal tmp_7_fu_278_p1 : STD_LOGIC_VECTOR (3 downto 0);
     signal p_shl_fu_282_p3 : STD_LOGIC_VECTOR (5 downto 0);
     signal p_shl_cast_fu_290_p1 : STD_LOGIC_VECTOR (6 downto 0);
     signal i_cast1_fu_274_p1 : STD_LOGIC_VECTOR (6 downto 0);
@@ -705,10 +705,10 @@ begin
 
 
     -- int_buffer_address0 assign process. --
-    int_buffer_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp0_it7, ap_reg_ppiten_pp1_it0, tmp_s_fu_257_p1, tmp_9_fu_304_p1)
+    int_buffer_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp0_it7, ap_reg_ppiten_pp1_it0, tmp_4_fu_257_p1, tmp_9_fu_304_p1)
     begin
         if (((ap_ST_pp0_stg0_fsm_1 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it7))) then 
-            int_buffer_address0 <= tmp_s_fu_257_p1(6 - 1 downto 0);
+            int_buffer_address0 <= tmp_4_fu_257_p1(6 - 1 downto 0);
         elsif (((ap_ST_pp1_stg0_fsm_2 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it0))) then 
             int_buffer_address0 <= tmp_9_fu_304_p1(6 - 1 downto 0);
         else 
@@ -769,13 +769,14 @@ begin
 
     isIter0_fu_251_p2 <= "1" when (indvar_phi_fu_192_p4 = ap_const_lv6_0) else "0";
     p_shl_cast_fu_290_p1 <= std_logic_vector(resize(unsigned(p_shl_fu_282_p3),7));
-    p_shl_fu_282_p3 <= (tmp_24_fu_278_p1 & ap_const_lv2_0);
+    p_shl_fu_282_p3 <= (tmp_7_fu_278_p1 & ap_const_lv2_0);
     tmp_1_fu_213_p2 <= std_logic_vector(unsigned(address) + unsigned(offset));
-    tmp_24_fu_278_p1 <= i_phi_fu_204_p4(4 - 1 downto 0);
     tmp_3_cast_fu_229_p1 <= std_logic_vector(resize(unsigned(tmp_3_fu_219_p4),64));
     tmp_3_fu_219_p4 <= tmp_1_fu_213_p2(31 downto 2);
+    tmp_4_fu_257_p1 <= std_logic_vector(resize(unsigned(ap_reg_ppstg_indvar_reg_188_pp0_it6),64));
     tmp_5_fu_294_p2 <= std_logic_vector(unsigned(p_shl_cast_fu_290_p1) - unsigned(i_cast1_fu_274_p1));
     tmp_6_fu_324_p1 <= std_logic_vector(resize(unsigned(i_reg_200),64));
+    tmp_7_fu_278_p1 <= i_phi_fu_204_p4(4 - 1 downto 0);
     tmp_8_1_fu_309_p2 <= std_logic_vector(unsigned(tmp_5_fu_294_p2) + unsigned(ap_const_lv7_1));
     tmp_8_2_fu_330_p2 <= std_logic_vector(unsigned(tmp_5_reg_377) + unsigned(ap_const_lv7_2));
     
@@ -793,5 +794,4 @@ begin
     tmp_9_fu_304_p0 <= std_logic_vector(resize(tmp_5_fu_294_p2_temp,32));
 
     tmp_9_fu_304_p1 <= std_logic_vector(resize(unsigned(tmp_9_fu_304_p0),64));
-    tmp_s_fu_257_p1 <= std_logic_vector(resize(unsigned(ap_reg_ppstg_indvar_reg_188_pp0_it6),64));
 end behav;

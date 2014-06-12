@@ -1,0 +1,153 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'store_output_buffer'" level="0">
+<item name = "Date">Thu Jun 12 14:16:45 2014
+</item>
+<item name = "Version">2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)</item>
+<item name = "Project">kernel</item>
+<item name = "Solution">kernel</item>
+<item name = "Product family">zynq zynq_fpv6 </item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="default">10.00, 8.75, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">53, 53, 53, 53, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">16, 16, 2, 1, 1, 16, yes</column>
+<column name="- Loop 2">33, 33, 3, 1, 1, 32, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="Expression">-, -, 0, 63</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, -, -</column>
+<column name="Memory">1, -, 0, 0</column>
+<column name="Multiplexer">-, -, -, 16</column>
+<column name="Register">-, -, 94, -</column>
+<column name="ShiftMemory">-, -, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, ~0, ~0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="7">Memory, Module, BRAM_18K, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="int_buffer_U">store_output_buffer_int_buffer, 1, 32, 32, 1, 1024</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Shift register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_2_fu_186_p2">+, 0, 0, 5, 5, 1</column>
+<column name="indvar_next_fu_259_p2">+, 0, 0, 6, 6, 1</column>
+<column name="tmp_fu_229_p2">+, 0, 0, 32, 32, 32</column>
+<column name="ap_sig_bdd_95">and, 0, 0, 1, 1, 1</column>
+<column name="exitcond5_fu_253_p2">icmp, 0, 0, 7, 6, 7</column>
+<column name="exitcond_fu_180_p2">icmp, 0, 0, 6, 5, 6</column>
+<column name="isIter0_fu_270_p2">icmp, 0, 0, 6, 6, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="i_reg_157">5, 2, 5, 10</column>
+<column name="indvar_reg_168">6, 2, 6, 12</column>
+<column name="int_buffer_address0">5, 3, 5, 15</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="4">Name, FF, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">3, 3, 0</column>
+<column name="ap_reg_ppiten_pp0_it0">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it1">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp1_it0">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp1_it1">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp1_it2">1, 1, 0</column>
+<column name="ap_reg_ppstg_exitcond5_reg_320_pp1_it1">1, 1, 0</column>
+<column name="ap_reg_ppstg_isIter0_reg_334_pp1_it1">1, 1, 0</column>
+<column name="bus_addr_reg_315">30, 32, 2</column>
+<column name="exitcond5_reg_320">1, 1, 0</column>
+<column name="exitcond_reg_286">1, 1, 0</column>
+<column name="i_reg_157">5, 5, 0</column>
+<column name="indvar_reg_168">6, 6, 0</column>
+<column name="int_buffer_load_reg_338">32, 32, 0</column>
+<column name="isIter0_reg_334">1, 1, 0</column>
+<column name="tmp_22_reg_300">4, 4, 0</column>
+<column name="tmp_23_reg_305">4, 5, 1</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, store_output_buffer, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, store_output_buffer, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, store_output_buffer, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, store_output_buffer, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, store_output_buffer, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, store_output_buffer, return value</column>
+<column name="offset">in, 32, ap_none, offset, scalar</column>
+<column name="buffer_min_idx_V_address0">out, 4, ap_memory, buffer_min_idx_V, array</column>
+<column name="buffer_min_idx_V_ce0">out, 1, ap_memory, buffer_min_idx_V, array</column>
+<column name="buffer_min_idx_V_q0">in, 8, ap_memory, buffer_min_idx_V, array</column>
+<column name="buffer_sum_sq_address0">out, 4, ap_memory, buffer_sum_sq, array</column>
+<column name="buffer_sum_sq_ce0">out, 1, ap_memory, buffer_sum_sq, array</column>
+<column name="buffer_sum_sq_q0">in, 32, ap_memory, buffer_sum_sq, array</column>
+<column name="address">in, 32, ap_none, address, scalar</column>
+<column name="bus_r_req_din">out, 1, ap_bus, bus_r, pointer</column>
+<column name="bus_r_req_full_n">in, 1, ap_bus, bus_r, pointer</column>
+<column name="bus_r_req_write">out, 1, ap_bus, bus_r, pointer</column>
+<column name="bus_r_rsp_empty_n">in, 1, ap_bus, bus_r, pointer</column>
+<column name="bus_r_rsp_read">out, 1, ap_bus, bus_r, pointer</column>
+<column name="bus_r_address">out, 32, ap_bus, bus_r, pointer</column>
+<column name="bus_r_datain">in, 32, ap_bus, bus_r, pointer</column>
+<column name="bus_r_dataout">out, 32, ap_bus, bus_r, pointer</column>
+<column name="bus_r_size">out, 32, ap_bus, bus_r, pointer</column>
+</table>
+</item>
+</section>
+</profile>

@@ -144,6 +144,23 @@ u32 XLloyds_kernel_top_GetOutput_addr(XLloyds_kernel_top *InstancePtr) {
     return Data;
 }
 
+void XLloyds_kernel_top_SetUpdate_points(XLloyds_kernel_top *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XLloyds_kernel_top_WriteReg(InstancePtr->Config_bus_BaseAddress, XLLOYDS_KERNEL_TOP_CONFIG_BUS_ADDR_UPDATE_POINTS_DATA, Data);
+}
+
+u32 XLloyds_kernel_top_GetUpdate_points(XLloyds_kernel_top *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XLloyds_kernel_top_ReadReg(InstancePtr->Config_bus_BaseAddress, XLLOYDS_KERNEL_TOP_CONFIG_BUS_ADDR_UPDATE_POINTS_DATA);
+    return Data;
+}
+
 void XLloyds_kernel_top_SetN(XLloyds_kernel_top *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);

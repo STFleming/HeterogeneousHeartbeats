@@ -14,7 +14,7 @@
 
 // top-level function of the design
 void combiner_top( volatile bus_type *master_portA,
-                   volatile bus_type *master_portB,
+                   //volatile bus_type *master_portB,
                    uint data_points_in_addr,
 				   uint kernel_info_in_addr,
 				   uint centres_out_addr,
@@ -28,8 +28,8 @@ void combiner_top( volatile bus_type *master_portA,
 	#pragma HLS INTERFACE ap_bus port=master_portA depth=0x200000
 	#pragma HLS resource core=AXI4M variable=master_portA
 
-	#pragma HLS INTERFACE ap_bus port=master_portB depth=0x200000
-	#pragma HLS resource core=AXI4M variable=master_portB
+	//#pragma HLS INTERFACE ap_bus port=master_portB depth=0x200000
+	//#pragma HLS resource core=AXI4M variable=master_portB
 
     #pragma HLS INTERFACE ap_none register port=data_points_in_addr
     #pragma HLS RESOURCE core=AXI4LiteS variable=data_points_in_addr metadata="-bus_bundle CONFIG_BUS"
@@ -73,9 +73,9 @@ void combiner_top( volatile bus_type *master_portA,
 		bus_type i_buffer[B*2];
 		bus_type p_buffer[B*D];
 
-		memcpy(p_buffer, (const bus_type *)(master_portA + (data_points_in_addr/sizeof(bus_type) + b2)), B*D*sizeof(bus_type));
+		//memcpy(p_buffer, (const bus_type *)(master_portA + (data_points_in_addr/sizeof(bus_type) + b2)), B*D*sizeof(bus_type));
 		b2 += B*D;
-		memcpy(i_buffer, (const bus_type *)(master_portA + (kernel_info_in_addr/sizeof(bus_type) + b)), B*2*sizeof(bus_type));
+		//memcpy(i_buffer, (const bus_type *)(master_portA + (kernel_info_in_addr/sizeof(bus_type) + b)), B*2*sizeof(bus_type));
 
 		for (uint i=0; i<B; i++) {
 			#pragma HLS pipeline II=4
@@ -142,7 +142,7 @@ void combiner_top( volatile bus_type *master_portA,
 	}
 
 
-	memcpy((bus_type *)(master_portB + (centres_out_addr)/sizeof(bus_type)), c_buffer, (k+1)*D*sizeof(bus_type));
+	//memcpy((bus_type *)(master_portA + (centres_out_addr)/sizeof(bus_type)), c_buffer, (k+1)*D*sizeof(bus_type));
 
 	*distortion_out = total_distortion;
 

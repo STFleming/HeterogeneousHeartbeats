@@ -90,7 +90,7 @@ void store_output_points_buffer(uint offset, data_type *buffer, uint address, vo
 // top-level function of the design
 void lloyds_kernel_top(  uint block_address,
 						 volatile bus_type *master_portA,
-						 volatile bus_type *master_portB,
+						 //volatile bus_type *master_portB,
 						 uint data_points_addr,
                          uint centres_in_addr,
                          uint output_addr,
@@ -105,8 +105,8 @@ void lloyds_kernel_top(  uint block_address,
 	#pragma HLS INTERFACE ap_bus port=master_portA depth=0x200000
 	#pragma HLS resource core=AXI4M variable=master_portA
 
-	#pragma HLS INTERFACE ap_bus port=master_portB depth=0x002000
-	#pragma HLS resource core=AXI4M variable=master_portB
+	//#pragma HLS INTERFACE ap_bus port=master_portB depth=0x002000
+	//#pragma HLS resource core=AXI4M variable=master_portB
 
 	#pragma HLS INTERFACE ap_none register port=data_points_addr
 	#pragma HLS RESOURCE core=AXI4LiteS variable=data_points_addr metadata="-bus_bundle CONFIG_BUS"
@@ -147,7 +147,7 @@ void lloyds_kernel_top(  uint block_address,
 	uint kernel_info_block_address = 2*block_address;
 
 	load_points_buffer(data_points_addr, data_points_block_address, master_portA, data_points_buffer);
-	load_centres_buffer(centres_in_addr, 0, master_portB, k, centres_buffer);
+	load_centres_buffer(centres_in_addr, 0, master_portA, k, centres_buffer);
 	*debug = data_points_buffer[0].value[0];
 
 	/*

@@ -14,8 +14,8 @@ entity combiner_top_i_buffer_ram is
     generic(
             mem_type    : string := "block"; 
             dwidth     : integer := 32; 
-            awidth     : integer := 3; 
-            mem_size    : integer := 8
+            awidth     : integer := 5; 
+            mem_size    : integer := 32
     ); 
     port (
           addr0     : in std_logic_vector(awidth-1 downto 0); 
@@ -77,8 +77,8 @@ use IEEE.std_logic_1164.all;
 entity combiner_top_i_buffer is
     generic (
         DataWidth : INTEGER := 32;
-        AddressRange : INTEGER := 8;
-        AddressWidth : INTEGER := 3);
+        AddressRange : INTEGER := 32;
+        AddressWidth : INTEGER := 5);
     port (
         reset : IN STD_LOGIC;
         clk : IN STD_LOGIC;

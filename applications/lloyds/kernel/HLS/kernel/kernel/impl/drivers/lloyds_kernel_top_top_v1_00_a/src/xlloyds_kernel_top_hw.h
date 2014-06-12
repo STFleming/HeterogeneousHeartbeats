@@ -37,10 +37,13 @@
 // 0x2c : Data signal of output_addr
 //        bit 31~0 - output_addr[31:0] (Read/Write)
 // 0x30 : reserved
-// 0x34 : Data signal of n
-//        bit 31~0 - n[31:0] (Read/Write)
+// 0x34 : Data signal of update_points
+//        bit 31~0 - update_points[31:0] (Read/Write)
 // 0x38 : reserved
-// 0x3c : Data signal of k
+// 0x3c : Data signal of n
+//        bit 31~0 - n[31:0] (Read/Write)
+// 0x40 : reserved
+// 0x44 : Data signal of k
 //        bit 31~0 - k[31:0] (Read/Write)
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
@@ -56,8 +59,10 @@
 #define XLLOYDS_KERNEL_TOP_CONFIG_BUS_BITS_CENTRES_IN_ADDR_DATA  32
 #define XLLOYDS_KERNEL_TOP_CONFIG_BUS_ADDR_OUTPUT_ADDR_DATA      0x2c
 #define XLLOYDS_KERNEL_TOP_CONFIG_BUS_BITS_OUTPUT_ADDR_DATA      32
-#define XLLOYDS_KERNEL_TOP_CONFIG_BUS_ADDR_N_DATA                0x34
+#define XLLOYDS_KERNEL_TOP_CONFIG_BUS_ADDR_UPDATE_POINTS_DATA    0x34
+#define XLLOYDS_KERNEL_TOP_CONFIG_BUS_BITS_UPDATE_POINTS_DATA    32
+#define XLLOYDS_KERNEL_TOP_CONFIG_BUS_ADDR_N_DATA                0x3c
 #define XLLOYDS_KERNEL_TOP_CONFIG_BUS_BITS_N_DATA                32
-#define XLLOYDS_KERNEL_TOP_CONFIG_BUS_ADDR_K_DATA                0x3c
+#define XLLOYDS_KERNEL_TOP_CONFIG_BUS_ADDR_K_DATA                0x44
 #define XLLOYDS_KERNEL_TOP_CONFIG_BUS_BITS_K_DATA                32
 

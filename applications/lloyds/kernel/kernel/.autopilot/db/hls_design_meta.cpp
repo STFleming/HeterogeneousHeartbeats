@@ -1,0 +1,27 @@
+#include "hls_design_meta.h"
+const Port_Property HLS_Design_Meta::port_props[]={
+	Port_Property("ap_clk", 1, hls_in, -1, "", "", 1),
+	Port_Property("ap_rst", 1, hls_in, -1, "", "", 1),
+	Port_Property("ap_start", 1, hls_in, -1, "", "", 1),
+	Port_Property("ap_done", 1, hls_out, -1, "", "", 1),
+	Port_Property("ap_idle", 1, hls_out, -1, "", "", 1),
+	Port_Property("ap_ready", 1, hls_out, -1, "", "", 1),
+	Port_Property("block_address", 32, hls_in, 0, "ap_none", "in_data", 1),
+	Port_Property("master_portA_req_din", 1, hls_out, 1, "ap_bus", "fifo_data", 1),
+	Port_Property("master_portA_req_full_n", 1, hls_in, 1, "ap_bus", "fifo_status", 1),
+	Port_Property("master_portA_req_write", 1, hls_out, 1, "ap_bus", "fifo_update", 1),
+	Port_Property("master_portA_rsp_empty_n", 1, hls_in, 1, "ap_bus", "fifo_status", 1),
+	Port_Property("master_portA_rsp_read", 1, hls_out, 1, "ap_bus", "fifo_update", 1),
+	Port_Property("master_portA_address", 32, hls_out, 1, "ap_bus", "unknown", 1),
+	Port_Property("master_portA_datain", 32, hls_in, 1, "ap_bus", "unknown", 1),
+	Port_Property("master_portA_dataout", 32, hls_out, 1, "ap_bus", "unknown", 1),
+	Port_Property("master_portA_size", 32, hls_out, 1, "ap_bus", "unknown", 1),
+	Port_Property("data_points_addr", 32, hls_in, 2, "ap_none", "in_data", 1),
+	Port_Property("centres_in_addr", 32, hls_in, 3, "ap_none", "in_data", 1),
+	Port_Property("output_addr", 32, hls_in, 4, "ap_none", "in_data", 1),
+	Port_Property("update_points", 32, hls_in, 5, "ap_none", "in_data", 1),
+	Port_Property("n", 32, hls_in, 6, "ap_none", "in_data", 1),
+	Port_Property("k", 32, hls_in, 7, "ap_none", "in_data", 1),
+	Port_Property("debug", 32, hls_out, 8, "ap_none", "out_data", 1),
+};
+const char* HLS_Design_Meta::dut_name = "lloyds_kernel_top";

@@ -71,25 +71,26 @@ architecture behav of combiner_top is
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_lv9_0 : STD_LOGIC_VECTOR (8 downto 0) := "000000000";
-    constant ap_const_lv4_0 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
-    constant ap_const_lv3_0 : STD_LOGIC_VECTOR (2 downto 0) := "000";
+    constant ap_const_lv6_0 : STD_LOGIC_VECTOR (5 downto 0) := "000000";
+    constant ap_const_lv5_0 : STD_LOGIC_VECTOR (4 downto 0) := "00000";
     constant ap_const_lv30_0 : STD_LOGIC_VECTOR (29 downto 0) := "000000000000000000000000000000";
-    constant ap_const_lv32_C : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001100";
-    constant ap_const_lv32_8 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001000";
+    constant ap_const_lv32_30 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000110000";
+    constant ap_const_lv32_20 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000100000";
     constant ap_const_lv9_100 : STD_LOGIC_VECTOR (8 downto 0) := "100000000";
     constant ap_const_lv9_1 : STD_LOGIC_VECTOR (8 downto 0) := "000000001";
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
     constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
     constant ap_const_lv32_1F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011111";
-    constant ap_const_lv4_C : STD_LOGIC_VECTOR (3 downto 0) := "1100";
-    constant ap_const_lv4_1 : STD_LOGIC_VECTOR (3 downto 0) := "0001";
-    constant ap_const_lv4_8 : STD_LOGIC_VECTOR (3 downto 0) := "1000";
-    constant ap_const_lv3_4 : STD_LOGIC_VECTOR (2 downto 0) := "100";
-    constant ap_const_lv3_1 : STD_LOGIC_VECTOR (2 downto 0) := "001";
-    constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
+    constant ap_const_lv6_30 : STD_LOGIC_VECTOR (5 downto 0) := "110000";
+    constant ap_const_lv6_1 : STD_LOGIC_VECTOR (5 downto 0) := "000001";
+    constant ap_const_lv6_20 : STD_LOGIC_VECTOR (5 downto 0) := "100000";
+    constant ap_const_lv5_10 : STD_LOGIC_VECTOR (4 downto 0) := "10000";
     constant ap_const_lv5_1 : STD_LOGIC_VECTOR (4 downto 0) := "00001";
+    constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
+    constant ap_const_lv7_1 : STD_LOGIC_VECTOR (6 downto 0) := "0000001";
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
-    constant ap_const_lv5_2 : STD_LOGIC_VECTOR (4 downto 0) := "00010";
+    constant ap_const_lv7_2 : STD_LOGIC_VECTOR (6 downto 0) := "0000010";
+    constant ap_const_lv32_C : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001100";
     constant ap_const_lv30_1 : STD_LOGIC_VECTOR (29 downto 0) := "000000000000000000000000000001";
 
     signal ap_CS_fsm : STD_LOGIC_VECTOR (4 downto 0) := "00000";
@@ -112,48 +113,49 @@ architecture behav of combiner_top is
     signal k0data_reg : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     signal k0vld_reg : STD_LOGIC := '0';
     signal k0ack_out : STD_LOGIC;
-    signal indvar_reg_526 : STD_LOGIC_VECTOR (3 downto 0);
-    signal ap_reg_ppstg_indvar_reg_526_pp1_it1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal indvar_reg_522 : STD_LOGIC_VECTOR (5 downto 0);
+    signal ap_reg_ppstg_indvar_reg_522_pp1_it1 : STD_LOGIC_VECTOR (5 downto 0);
     signal ap_reg_ppiten_pp1_it0 : STD_LOGIC := '0';
     signal ap_reg_ppiten_pp1_it1 : STD_LOGIC := '0';
     signal ap_reg_ppiten_pp1_it2 : STD_LOGIC := '0';
     signal ap_reg_ppiten_pp1_it3 : STD_LOGIC := '0';
     signal ap_reg_ppiten_pp1_it4 : STD_LOGIC := '0';
     signal ap_reg_ppiten_pp1_it5 : STD_LOGIC := '0';
-    signal exitcond_reg_1115 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond_reg_1115_pp1_it5 : STD_LOGIC_VECTOR (0 downto 0);
+    signal exitcond8_reg_1149 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_exitcond8_reg_1149_pp1_it5 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_sig_bdd_230 : BOOLEAN;
     signal ap_reg_ppiten_pp1_it6 : STD_LOGIC := '0';
     signal ap_reg_ppiten_pp1_it7 : STD_LOGIC := '0';
-    signal ap_reg_ppstg_indvar_reg_526_pp1_it2 : STD_LOGIC_VECTOR (3 downto 0);
-    signal ap_reg_ppstg_indvar_reg_526_pp1_it3 : STD_LOGIC_VECTOR (3 downto 0);
-    signal ap_reg_ppstg_indvar_reg_526_pp1_it4 : STD_LOGIC_VECTOR (3 downto 0);
-    signal ap_reg_ppstg_indvar_reg_526_pp1_it5 : STD_LOGIC_VECTOR (3 downto 0);
-    signal ap_reg_ppstg_indvar_reg_526_pp1_it6 : STD_LOGIC_VECTOR (3 downto 0);
-    signal indvar2_reg_538 : STD_LOGIC_VECTOR (3 downto 0);
-    signal ap_reg_ppstg_indvar2_reg_538_pp2_it1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal ap_reg_ppstg_indvar_reg_522_pp1_it2 : STD_LOGIC_VECTOR (5 downto 0);
+    signal ap_reg_ppstg_indvar_reg_522_pp1_it3 : STD_LOGIC_VECTOR (5 downto 0);
+    signal ap_reg_ppstg_indvar_reg_522_pp1_it4 : STD_LOGIC_VECTOR (5 downto 0);
+    signal ap_reg_ppstg_indvar_reg_522_pp1_it5 : STD_LOGIC_VECTOR (5 downto 0);
+    signal ap_reg_ppstg_indvar_reg_522_pp1_it6 : STD_LOGIC_VECTOR (5 downto 0);
+    signal indvar2_reg_534 : STD_LOGIC_VECTOR (5 downto 0);
+    signal ap_reg_ppstg_indvar2_reg_534_pp2_it1 : STD_LOGIC_VECTOR (5 downto 0);
     signal ap_reg_ppiten_pp2_it0 : STD_LOGIC := '0';
     signal ap_reg_ppiten_pp2_it1 : STD_LOGIC := '0';
     signal ap_reg_ppiten_pp2_it2 : STD_LOGIC := '0';
     signal ap_reg_ppiten_pp2_it3 : STD_LOGIC := '0';
     signal ap_reg_ppiten_pp2_it4 : STD_LOGIC := '0';
     signal ap_reg_ppiten_pp2_it5 : STD_LOGIC := '0';
-    signal exitcond2_reg_1144 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond2_reg_1144_pp2_it5 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_sig_bdd_264 : BOOLEAN;
+    signal exitcond1_reg_1173 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_exitcond1_reg_1173_pp2_it5 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_sig_bdd_263 : BOOLEAN;
     signal ap_reg_ppiten_pp2_it6 : STD_LOGIC := '0';
     signal ap_reg_ppiten_pp2_it7 : STD_LOGIC := '0';
-    signal ap_reg_ppstg_indvar2_reg_538_pp2_it2 : STD_LOGIC_VECTOR (3 downto 0);
-    signal ap_reg_ppstg_indvar2_reg_538_pp2_it3 : STD_LOGIC_VECTOR (3 downto 0);
-    signal ap_reg_ppstg_indvar2_reg_538_pp2_it4 : STD_LOGIC_VECTOR (3 downto 0);
-    signal ap_reg_ppstg_indvar2_reg_538_pp2_it5 : STD_LOGIC_VECTOR (3 downto 0);
-    signal ap_reg_ppstg_indvar2_reg_538_pp2_it6 : STD_LOGIC_VECTOR (3 downto 0);
-    signal total_distortion_reg_561 : STD_LOGIC_VECTOR (31 downto 0);
-    signal i5_reg_574 : STD_LOGIC_VECTOR (31 downto 0);
-    signal indvar1_reg_585 : STD_LOGIC_VECTOR (29 downto 0);
+    signal ap_reg_ppstg_indvar2_reg_534_pp2_it2 : STD_LOGIC_VECTOR (5 downto 0);
+    signal ap_reg_ppstg_indvar2_reg_534_pp2_it3 : STD_LOGIC_VECTOR (5 downto 0);
+    signal ap_reg_ppstg_indvar2_reg_534_pp2_it4 : STD_LOGIC_VECTOR (5 downto 0);
+    signal ap_reg_ppstg_indvar2_reg_534_pp2_it5 : STD_LOGIC_VECTOR (5 downto 0);
+    signal ap_reg_ppstg_indvar2_reg_534_pp2_it6 : STD_LOGIC_VECTOR (5 downto 0);
+    signal total_distortion_reg_557 : STD_LOGIC_VECTOR (31 downto 0);
+    signal i5_reg_569 : STD_LOGIC_VECTOR (31 downto 0);
+    signal indvar1_reg_592 : STD_LOGIC_VECTOR (29 downto 0);
+    signal reg_604 : STD_LOGIC_VECTOR (31 downto 0);
     signal centre_buffer_2_wgtCent_value_q0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal reg_597 : STD_LOGIC_VECTOR (31 downto 0);
-    signal exitcond4_reg_1162 : STD_LOGIC_VECTOR (0 downto 0);
+    signal reg_610 : STD_LOGIC_VECTOR (31 downto 0);
+    signal exitcond5_reg_1186 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_reg_ppiten_pp4_it0 : STD_LOGIC := '0';
     signal ap_reg_ppiten_pp4_it1 : STD_LOGIC := '0';
     signal ap_reg_ppiten_pp4_it2 : STD_LOGIC := '0';
@@ -173,120 +175,122 @@ architecture behav of combiner_top is
     signal ap_reg_ppiten_pp4_it16 : STD_LOGIC := '0';
     signal ap_reg_ppiten_pp4_it17 : STD_LOGIC := '0';
     signal ap_reg_ppiten_pp4_it18 : STD_LOGIC := '0';
-    signal exitcond7_reg_1241 : STD_LOGIC_VECTOR (0 downto 0);
-    signal i_1_fu_607_p2 : STD_LOGIC_VECTOR (8 downto 0);
-    signal lim_fu_622_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal lim_reg_1096 : STD_LOGIC_VECTOR (31 downto 0);
-    signal master_portA_addr_reg_1104 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_3_fu_627_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_1_fu_657_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_1_reg_1110 : STD_LOGIC_VECTOR (31 downto 0);
-    signal exitcond_fu_662_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond_reg_1115_pp1_it1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond_reg_1115_pp1_it2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond_reg_1115_pp1_it3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond_reg_1115_pp1_it4 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond_reg_1115_pp1_it6 : STD_LOGIC_VECTOR (0 downto 0);
-    signal indvar_next_fu_668_p2 : STD_LOGIC_VECTOR (3 downto 0);
-    signal indvar_next_reg_1119 : STD_LOGIC_VECTOR (3 downto 0);
-    signal isIter0_fu_674_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal isIter0_reg_1124 : STD_LOGIC_VECTOR (0 downto 0);
-    signal master_portA_addr_read_reg_1128 : STD_LOGIC_VECTOR (31 downto 0);
-    signal b2_1_fu_685_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal b2_1_reg_1133 : STD_LOGIC_VECTOR (31 downto 0);
-    signal master_portB_addr_reg_1138 : STD_LOGIC_VECTOR (31 downto 0);
-    signal exitcond2_fu_716_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond2_reg_1144_pp2_it1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond2_reg_1144_pp2_it2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond2_reg_1144_pp2_it3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond2_reg_1144_pp2_it4 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond2_reg_1144_pp2_it6 : STD_LOGIC_VECTOR (0 downto 0);
-    signal indvar_next2_fu_722_p2 : STD_LOGIC_VECTOR (3 downto 0);
-    signal indvar_next2_reg_1148 : STD_LOGIC_VECTOR (3 downto 0);
-    signal isIter1_fu_728_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal isIter1_reg_1153 : STD_LOGIC_VECTOR (0 downto 0);
-    signal master_portB_addr_read_reg_1157 : STD_LOGIC_VECTOR (31 downto 0);
-    signal exitcond4_fu_739_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal i_3_fu_745_p2 : STD_LOGIC_VECTOR (2 downto 0);
-    signal i_3_reg_1166 : STD_LOGIC_VECTOR (2 downto 0);
-    signal tmp_38_fu_755_p1 : STD_LOGIC_VECTOR (1 downto 0);
-    signal tmp_38_reg_1171 : STD_LOGIC_VECTOR (1 downto 0);
-    signal tmp_27_fu_782_p2 : STD_LOGIC_VECTOR (4 downto 0);
-    signal tmp_27_reg_1181 : STD_LOGIC_VECTOR (4 downto 0);
-    signal tmp_32_fu_845_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_32_reg_1221 : STD_LOGIC_VECTOR (63 downto 0);
-    signal centre_buffer_count_addr_2_reg_1226 : STD_LOGIC_VECTOR (7 downto 0);
-    signal centre_buffer_sum_sq_addr_2_reg_1231 : STD_LOGIC_VECTOR (7 downto 0);
-    signal b_1_fu_888_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal exitcond7_fu_894_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it4 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it5 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it6 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it7 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it8 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it9 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it10 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it11 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it12 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it13 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it14 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it15 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it16 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it17 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_exitcond7_reg_1241_pp4_it18 : STD_LOGIC_VECTOR (0 downto 0);
-    signal i_2_fu_899_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal i_2_reg_1245 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_18_fu_905_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_18_reg_1250 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_19_fu_916_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_19_reg_1263 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it4 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it5 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it6 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it7 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it8 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it9 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it10 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it11 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it12 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it13 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it14 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it15 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it16 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it17 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_19_reg_1263_pp4_it18 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_s_reg_1265 : STD_LOGIC_VECTOR (0 downto 0);
+    signal i_1_fu_620_p2 : STD_LOGIC_VECTOR (8 downto 0);
+    signal lim_fu_635_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal lim_reg_1125 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_5_cast_fu_649_p1 : STD_LOGIC_VECTOR (32 downto 0);
+    signal tmp_5_cast_reg_1130 : STD_LOGIC_VECTOR (32 downto 0);
+    signal tmp_9_cast_fu_662_p1 : STD_LOGIC_VECTOR (32 downto 0);
+    signal tmp_9_cast_reg_1135 : STD_LOGIC_VECTOR (32 downto 0);
+    signal master_portA_addr_reg_1143 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_3_fu_666_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal exitcond8_fu_690_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_exitcond8_reg_1149_pp1_it1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_exitcond8_reg_1149_pp1_it2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_exitcond8_reg_1149_pp1_it3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_exitcond8_reg_1149_pp1_it4 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_exitcond8_reg_1149_pp1_it6 : STD_LOGIC_VECTOR (0 downto 0);
+    signal indvar_next_fu_696_p2 : STD_LOGIC_VECTOR (5 downto 0);
+    signal indvar_next_reg_1153 : STD_LOGIC_VECTOR (5 downto 0);
+    signal isIter0_fu_702_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal isIter0_reg_1158 : STD_LOGIC_VECTOR (0 downto 0);
+    signal b2_1_fu_713_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal b2_1_reg_1162 : STD_LOGIC_VECTOR (31 downto 0);
+    signal master_portA_addr_1_reg_1167 : STD_LOGIC_VECTOR (31 downto 0);
+    signal exitcond1_fu_738_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_exitcond1_reg_1173_pp2_it1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_exitcond1_reg_1173_pp2_it2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_exitcond1_reg_1173_pp2_it3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_exitcond1_reg_1173_pp2_it4 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_exitcond1_reg_1173_pp2_it6 : STD_LOGIC_VECTOR (0 downto 0);
+    signal indvar_next2_fu_744_p2 : STD_LOGIC_VECTOR (5 downto 0);
+    signal indvar_next2_reg_1177 : STD_LOGIC_VECTOR (5 downto 0);
+    signal isIter1_fu_750_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal isIter1_reg_1182 : STD_LOGIC_VECTOR (0 downto 0);
+    signal exitcond5_fu_761_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal i_3_fu_767_p2 : STD_LOGIC_VECTOR (4 downto 0);
+    signal i_3_reg_1190 : STD_LOGIC_VECTOR (4 downto 0);
+    signal tmp_35_fu_777_p1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal tmp_35_reg_1195 : STD_LOGIC_VECTOR (3 downto 0);
+    signal tmp_22_fu_804_p2 : STD_LOGIC_VECTOR (6 downto 0);
+    signal tmp_22_reg_1205 : STD_LOGIC_VECTOR (6 downto 0);
+    signal tmp_27_fu_867_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_27_reg_1245 : STD_LOGIC_VECTOR (63 downto 0);
+    signal centre_buffer_count_addr_2_reg_1250 : STD_LOGIC_VECTOR (7 downto 0);
+    signal centre_buffer_sum_sq_addr_2_reg_1255 : STD_LOGIC_VECTOR (7 downto 0);
+    signal b_1_fu_910_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_s_fu_916_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it4 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it5 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it6 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it7 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it8 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it9 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it10 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it11 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it12 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it13 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it14 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it15 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it16 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it17 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_tmp_s_reg_1265_pp4_it18 : STD_LOGIC_VECTOR (0 downto 0);
+    signal i_2_fu_921_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal i_2_reg_1269 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_6_fu_927_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_6_reg_1274 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_10_fu_939_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_10_reg_1286 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it4 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it5 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it6 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it7 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it8 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it9 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it10 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it11 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it12 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it13 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it14 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it15 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it16 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it17 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_reg_ppstg_tmp_10_reg_1286_pp4_it18 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_13_fu_945_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_13_reg_1298 : STD_LOGIC_VECTOR (0 downto 0);
     signal centre_buffer_count_q0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal centre_buffer_count_load_reg_1275 : STD_LOGIC_VECTOR (31 downto 0);
+    signal count_reg_1302 : STD_LOGIC_VECTOR (31 downto 0);
+    signal total_distortion_2_fu_950_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal total_distortion_2_reg_1323 : STD_LOGIC_VECTOR (31 downto 0);
+    signal p_s_fu_961_p3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal p_s_reg_1329 : STD_LOGIC_VECTOR (31 downto 0);
     signal centre_buffer_0_wgtCent_value_q0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal p_s_fu_927_p3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal p_s_reg_1301 : STD_LOGIC_VECTOR (31 downto 0);
     signal centre_buffer_1_wgtCent_value_q0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal total_distortion_1_fu_948_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal total_distortion_1_reg_1313 : STD_LOGIC_VECTOR (31 downto 0);
-    signal master_portA_addr_1_reg_1318 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_20_add_i32_shr_fu_1025_p4 : STD_LOGIC_VECTOR (29 downto 0);
-    signal tmp_20_add_i32_shr_reg_1323 : STD_LOGIC_VECTOR (29 downto 0);
-    signal tmp_16_fu_1035_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_16_reg_1328 : STD_LOGIC_VECTOR (31 downto 0);
-    signal exitcond1_fu_1039_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal exitcond1_reg_1333 : STD_LOGIC_VECTOR (0 downto 0);
+    signal master_portB_addr_reg_1346 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_39_add_i32_shr_fu_1053_p4 : STD_LOGIC_VECTOR (29 downto 0);
+    signal tmp_39_add_i32_shr_reg_1351 : STD_LOGIC_VECTOR (29 downto 0);
+    signal tmp_24_fu_1063_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_24_reg_1356 : STD_LOGIC_VECTOR (31 downto 0);
+    signal exitcond_fu_1067_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal exitcond_reg_1361 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_reg_ppiten_pp5_it0 : STD_LOGIC := '0';
     signal ap_reg_ppiten_pp5_it1 : STD_LOGIC := '0';
-    signal ap_reg_ppstg_exitcond1_reg_1333_pp5_it1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_sig_bdd_610 : BOOLEAN;
+    signal ap_reg_ppstg_exitcond_reg_1361_pp5_it1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_sig_bdd_629 : BOOLEAN;
     signal ap_reg_ppiten_pp5_it2 : STD_LOGIC := '0';
-    signal indvar_next1_fu_1044_p2 : STD_LOGIC_VECTOR (29 downto 0);
-    signal isIter_fu_1055_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal isIter_reg_1347 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_isIter_reg_1347_pp5_it1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal indvar_next1_fu_1072_p2 : STD_LOGIC_VECTOR (29 downto 0);
+    signal isIter_fu_1083_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal isIter_reg_1375 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_isIter_reg_1375_pp5_it1 : STD_LOGIC_VECTOR (0 downto 0);
     signal c_buffer_q1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal c_buffer_load_reg_1351 : STD_LOGIC_VECTOR (31 downto 0);
+    signal c_buffer_load_reg_1379 : STD_LOGIC_VECTOR (31 downto 0);
     signal centre_buffer_0_wgtCent_value_address0 : STD_LOGIC_VECTOR (7 downto 0);
     signal centre_buffer_0_wgtCent_value_ce0 : STD_LOGIC;
     signal centre_buffer_0_wgtCent_value_we0 : STD_LOGIC;
@@ -308,17 +312,17 @@ architecture behav of combiner_top is
     signal centre_buffer_count_ce0 : STD_LOGIC;
     signal centre_buffer_count_we0 : STD_LOGIC;
     signal centre_buffer_count_d0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal i_buffer_address0 : STD_LOGIC_VECTOR (2 downto 0);
+    signal i_buffer_address0 : STD_LOGIC_VECTOR (4 downto 0);
     signal i_buffer_ce0 : STD_LOGIC;
     signal i_buffer_we0 : STD_LOGIC;
     signal i_buffer_d0 : STD_LOGIC_VECTOR (31 downto 0);
     signal i_buffer_q0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal p_buffer_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal p_buffer_address0 : STD_LOGIC_VECTOR (5 downto 0);
     signal p_buffer_ce0 : STD_LOGIC;
     signal p_buffer_we0 : STD_LOGIC;
     signal p_buffer_d0 : STD_LOGIC_VECTOR (31 downto 0);
     signal p_buffer_q0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal p_buffer_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal p_buffer_address1 : STD_LOGIC_VECTOR (5 downto 0);
     signal p_buffer_ce1 : STD_LOGIC;
     signal p_buffer_q1 : STD_LOGIC_VECTOR (31 downto 0);
     signal c_buffer_address0 : STD_LOGIC_VECTOR (9 downto 0);
@@ -329,77 +333,82 @@ architecture behav of combiner_top is
     signal c_buffer_ce1 : STD_LOGIC;
     signal c_buffer_we1 : STD_LOGIC;
     signal c_buffer_d1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal i_reg_491 : STD_LOGIC_VECTOR (8 downto 0);
-    signal exitcond6_fu_601_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal b_reg_502 : STD_LOGIC_VECTOR (31 downto 0);
-    signal b2_reg_514 : STD_LOGIC_VECTOR (31 downto 0);
-    signal indvar_phi_fu_530_p4 : STD_LOGIC_VECTOR (3 downto 0);
-    signal indvar2_phi_fu_542_p4 : STD_LOGIC_VECTOR (3 downto 0);
-    signal i1_reg_550 : STD_LOGIC_VECTOR (2 downto 0);
-    signal total_distortion_phi_fu_566_p4 : STD_LOGIC_VECTOR (31 downto 0);
-    signal i5_phi_fu_578_p4 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_2_fu_613_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_28_fu_680_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_37_fu_734_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_24_fu_765_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_31_fu_792_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_36_1_fu_807_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_33_fu_812_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_26_fu_826_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_36_2_fu_840_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_22_fu_960_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_32_1_fu_969_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_32_2_fu_979_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_29_fu_1050_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_6_fu_647_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_8_fu_706_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_11_fu_993_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_34_fu_867_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_35_fu_874_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_36_fu_853_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_42_1_fu_860_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_42_2_fu_881_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_934_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_954_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_941_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_4_fu_632_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_5_fu_637_p4 : STD_LOGIC_VECTOR (29 downto 0);
-    signal tmp_9_fu_691_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_s_fu_696_p4 : STD_LOGIC_VECTOR (29 downto 0);
-    signal tmp_39_fu_759_p2 : STD_LOGIC_VECTOR (2 downto 0);
-    signal p_shl_fu_770_p3 : STD_LOGIC_VECTOR (3 downto 0);
-    signal p_shl_cast_fu_778_p1 : STD_LOGIC_VECTOR (4 downto 0);
-    signal i1_cast2_fu_751_p1 : STD_LOGIC_VECTOR (4 downto 0);
-    signal tmp_31_fu_792_p0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_27_fu_782_p2_temp: signed (5-1 downto 0);
-    signal tmp_35_1_fu_797_p2 : STD_LOGIC_VECTOR (4 downto 0);
-    signal tmp_36_1_fu_807_p0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_35_1_fu_797_p2_temp: signed (5-1 downto 0);
-    signal tmp_25_fu_819_p3 : STD_LOGIC_VECTOR (2 downto 0);
-    signal tmp_35_2_fu_831_p2 : STD_LOGIC_VECTOR (4 downto 0);
-    signal tmp_36_2_fu_840_p0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_35_2_fu_831_p2_temp: signed (5-1 downto 0);
-    signal tmp_23_fu_910_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_20_fu_922_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_fu_934_p0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_934_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_941_p0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_941_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_954_p0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_954_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_31_1_fu_964_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_31_2_fu_974_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_10_fu_984_p4 : STD_LOGIC_VECTOR (29 downto 0);
-    signal tmp_14_fu_1003_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_12_fu_1008_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_15_fu_1013_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_13_fu_1019_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_934_ce : STD_LOGIC;
-    signal grp_fu_941_ce : STD_LOGIC;
-    signal grp_fu_954_ce : STD_LOGIC;
+    signal i_reg_487 : STD_LOGIC_VECTOR (8 downto 0);
+    signal exitcond7_fu_614_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal b_reg_498 : STD_LOGIC_VECTOR (31 downto 0);
+    signal b2_reg_510 : STD_LOGIC_VECTOR (31 downto 0);
+    signal indvar_phi_fu_526_p4 : STD_LOGIC_VECTOR (5 downto 0);
+    signal indvar2_phi_fu_538_p4 : STD_LOGIC_VECTOR (5 downto 0);
+    signal i1_reg_546 : STD_LOGIC_VECTOR (4 downto 0);
+    signal total_distortion_phi_fu_561_p4 : STD_LOGIC_VECTOR (31 downto 0);
+    signal i5_phi_fu_573_p4 : STD_LOGIC_VECTOR (31 downto 0);
+    signal total_distortion_1_reg_580 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_2_fu_626_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_25_fu_708_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_34_fu_756_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_19_fu_787_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_30_fu_814_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_30_1_fu_829_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_28_fu_834_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_21_fu_848_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_30_2_fu_862_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_12_fu_988_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_26_1_fu_997_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_26_2_fu_1007_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_26_fu_1078_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_7_cast_fu_680_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_11_cast_fu_728_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_29_cast_fu_1021_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_31_fu_889_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_32_fu_896_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_33_fu_875_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_44_1_fu_882_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_44_2_fu_903_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_968_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_982_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_975_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_5_fu_640_p4 : STD_LOGIC_VECTOR (29 downto 0);
+    signal tmp_9_fu_653_p4 : STD_LOGIC_VECTOR (29 downto 0);
+    signal tmp_6_cast_fu_671_p1 : STD_LOGIC_VECTOR (32 downto 0);
+    signal tmp_7_fu_675_p2 : STD_LOGIC_VECTOR (32 downto 0);
+    signal tmp_10_cast_fu_719_p1 : STD_LOGIC_VECTOR (32 downto 0);
+    signal tmp_11_fu_723_p2 : STD_LOGIC_VECTOR (32 downto 0);
+    signal tmp_36_fu_781_p2 : STD_LOGIC_VECTOR (4 downto 0);
+    signal p_shl_fu_792_p3 : STD_LOGIC_VECTOR (5 downto 0);
+    signal p_shl_cast_fu_800_p1 : STD_LOGIC_VECTOR (6 downto 0);
+    signal i1_cast2_fu_773_p1 : STD_LOGIC_VECTOR (6 downto 0);
+    signal tmp_30_fu_814_p0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_22_fu_804_p2_temp: signed (7-1 downto 0);
+    signal tmp_29_1_fu_819_p2 : STD_LOGIC_VECTOR (6 downto 0);
+    signal tmp_30_1_fu_829_p0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_29_1_fu_819_p2_temp: signed (7-1 downto 0);
+    signal tmp_20_fu_841_p3 : STD_LOGIC_VECTOR (4 downto 0);
+    signal tmp_29_2_fu_853_p2 : STD_LOGIC_VECTOR (6 downto 0);
+    signal tmp_30_2_fu_862_p0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_29_2_fu_853_p2_temp: signed (7-1 downto 0);
+    signal tmp_17_fu_933_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_8_fu_956_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_fu_968_p0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_968_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_975_p0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_975_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_982_p0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_982_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_25_1_fu_992_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_25_2_fu_1002_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_14_fu_1012_p4 : STD_LOGIC_VECTOR (29 downto 0);
+    signal tmp_18_fu_1031_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_15_fu_1036_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_23_fu_1041_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_16_fu_1047_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_fu_968_ce : STD_LOGIC;
+    signal grp_fu_975_ce : STD_LOGIC;
+    signal grp_fu_982_ce : STD_LOGIC;
     signal ap_NS_fsm : STD_LOGIC_VECTOR (4 downto 0);
+    signal ap_sig_bdd_1247 : BOOLEAN;
+    signal ap_sig_bdd_1250 : BOOLEAN;
 
-    component combiner_top_udiv_32ns_32ns_32_35 IS
+    component combiner_top_sdiv_32ns_32ns_32_35 IS
     generic (
         ID : INTEGER;
         NUM_STAGE : INTEGER;
@@ -440,7 +449,7 @@ architecture behav of combiner_top is
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
-        address0 : IN STD_LOGIC_VECTOR (2 downto 0);
+        address0 : IN STD_LOGIC_VECTOR (4 downto 0);
         ce0 : IN STD_LOGIC;
         we0 : IN STD_LOGIC;
         d0 : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -456,12 +465,12 @@ architecture behav of combiner_top is
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
-        address0 : IN STD_LOGIC_VECTOR (3 downto 0);
+        address0 : IN STD_LOGIC_VECTOR (5 downto 0);
         ce0 : IN STD_LOGIC;
         we0 : IN STD_LOGIC;
         d0 : IN STD_LOGIC_VECTOR (31 downto 0);
         q0 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        address1 : IN STD_LOGIC_VECTOR (3 downto 0);
+        address1 : IN STD_LOGIC_VECTOR (5 downto 0);
         ce1 : IN STD_LOGIC;
         q1 : OUT STD_LOGIC_VECTOR (31 downto 0) );
     end component;
@@ -562,8 +571,8 @@ begin
     i_buffer_U : component combiner_top_i_buffer
     generic map (
         DataWidth => 32,
-        AddressRange => 8,
-        AddressWidth => 3)
+        AddressRange => 32,
+        AddressWidth => 5)
     port map (
         clk => ap_clk,
         reset => ap_rst,
@@ -576,8 +585,8 @@ begin
     p_buffer_U : component combiner_top_p_buffer
     generic map (
         DataWidth => 32,
-        AddressRange => 12,
-        AddressWidth => 4)
+        AddressRange => 48,
+        AddressWidth => 6)
     port map (
         clk => ap_clk,
         reset => ap_rst,
@@ -608,7 +617,7 @@ begin
         d1 => c_buffer_d1,
         q1 => c_buffer_q1);
 
-    combiner_top_udiv_32ns_32ns_32_35_U1 : component combiner_top_udiv_32ns_32ns_32_35
+    combiner_top_sdiv_32ns_32ns_32_35_U1 : component combiner_top_sdiv_32ns_32ns_32_35
     generic map (
         ID => 1,
         NUM_STAGE => 35,
@@ -618,12 +627,12 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        din0 => grp_fu_934_p0,
-        din1 => grp_fu_934_p1,
-        ce => grp_fu_934_ce,
-        dout => grp_fu_934_p2);
+        din0 => grp_fu_968_p0,
+        din1 => grp_fu_968_p1,
+        ce => grp_fu_968_ce,
+        dout => grp_fu_968_p2);
 
-    combiner_top_udiv_32ns_32ns_32_35_U2 : component combiner_top_udiv_32ns_32ns_32_35
+    combiner_top_sdiv_32ns_32ns_32_35_U2 : component combiner_top_sdiv_32ns_32ns_32_35
     generic map (
         ID => 2,
         NUM_STAGE => 35,
@@ -633,12 +642,12 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        din0 => grp_fu_941_p0,
-        din1 => grp_fu_941_p1,
-        ce => grp_fu_941_ce,
-        dout => grp_fu_941_p2);
+        din0 => grp_fu_975_p0,
+        din1 => grp_fu_975_p1,
+        ce => grp_fu_975_ce,
+        dout => grp_fu_975_p2);
 
-    combiner_top_udiv_32ns_32ns_32_35_U3 : component combiner_top_udiv_32ns_32ns_32_35
+    combiner_top_sdiv_32ns_32ns_32_35_U3 : component combiner_top_sdiv_32ns_32ns_32_35
     generic map (
         ID => 3,
         NUM_STAGE => 35,
@@ -648,10 +657,10 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        din0 => grp_fu_954_p0,
-        din1 => grp_fu_954_p1,
-        ce => grp_fu_954_ce,
-        dout => grp_fu_954_p2);
+        din0 => grp_fu_982_p0,
+        din1 => grp_fu_982_p1,
+        ce => grp_fu_982_ce,
+        dout => grp_fu_982_p2);
 
 
 
@@ -677,9 +686,9 @@ begin
             if (ap_rst = '1') then
                 ap_reg_ppiten_pp1_it0 <= ap_const_logic_0;
             else
-                if (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and not((ap_const_lv1_0 = exitcond_fu_662_p2)))) then 
+                if (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and not((ap_const_lv1_0 = exitcond8_fu_690_p2)))) then 
                     ap_reg_ppiten_pp1_it0 <= ap_const_logic_0;
-                elsif (((ap_ST_st5_fsm_4 = ap_CS_fsm) and (ap_const_lv1_0 = tmp_3_fu_627_p2))) then 
+                elsif (((ap_ST_st5_fsm_4 = ap_CS_fsm) and (ap_const_lv1_0 = tmp_3_fu_666_p2))) then 
                     ap_reg_ppiten_pp1_it0 <= ap_const_logic_1;
                 end if; 
             end if;
@@ -694,9 +703,9 @@ begin
             if (ap_rst = '1') then
                 ap_reg_ppiten_pp1_it1 <= ap_const_logic_0;
             else
-                if (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and (ap_const_lv1_0 = exitcond_fu_662_p2))) then 
+                if (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and (ap_const_lv1_0 = exitcond8_fu_690_p2))) then 
                     ap_reg_ppiten_pp1_it1 <= ap_const_logic_1;
-                elsif ((((ap_ST_st5_fsm_4 = ap_CS_fsm) and (ap_const_lv1_0 = tmp_3_fu_627_p2)) or ((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and not((ap_const_lv1_0 = exitcond_fu_662_p2))))) then 
+                elsif ((((ap_ST_st5_fsm_4 = ap_CS_fsm) and (ap_const_lv1_0 = tmp_3_fu_666_p2)) or ((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and not((ap_const_lv1_0 = exitcond8_fu_690_p2))))) then 
                     ap_reg_ppiten_pp1_it1 <= ap_const_logic_0;
                 end if; 
             end if;
@@ -788,7 +797,7 @@ begin
             else
                 if (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))))) then 
                     ap_reg_ppiten_pp1_it7 <= ap_reg_ppiten_pp1_it6;
-                elsif (((ap_ST_st5_fsm_4 = ap_CS_fsm) and (ap_const_lv1_0 = tmp_3_fu_627_p2))) then 
+                elsif (((ap_ST_st5_fsm_4 = ap_CS_fsm) and (ap_const_lv1_0 = tmp_3_fu_666_p2))) then 
                     ap_reg_ppiten_pp1_it7 <= ap_const_logic_0;
                 end if; 
             end if;
@@ -803,7 +812,7 @@ begin
             if (ap_rst = '1') then
                 ap_reg_ppiten_pp2_it0 <= ap_const_logic_0;
             else
-                if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and not((ap_const_lv1_0 = exitcond2_fu_716_p2)))) then 
+                if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and not((ap_const_lv1_0 = exitcond1_fu_738_p2)))) then 
                     ap_reg_ppiten_pp2_it0 <= ap_const_logic_0;
                 elsif ((ap_ST_st14_fsm_6 = ap_CS_fsm)) then 
                     ap_reg_ppiten_pp2_it0 <= ap_const_logic_1;
@@ -820,9 +829,9 @@ begin
             if (ap_rst = '1') then
                 ap_reg_ppiten_pp2_it1 <= ap_const_logic_0;
             else
-                if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and (ap_const_lv1_0 = exitcond2_fu_716_p2))) then 
+                if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and (ap_const_lv1_0 = exitcond1_fu_738_p2))) then 
                     ap_reg_ppiten_pp2_it1 <= ap_const_logic_1;
-                elsif (((ap_ST_st14_fsm_6 = ap_CS_fsm) or ((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and not((ap_const_lv1_0 = exitcond2_fu_716_p2))))) then 
+                elsif (((ap_ST_st14_fsm_6 = ap_CS_fsm) or ((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and not((ap_const_lv1_0 = exitcond1_fu_738_p2))))) then 
                     ap_reg_ppiten_pp2_it1 <= ap_const_logic_0;
                 end if; 
             end if;
@@ -837,7 +846,7 @@ begin
             if (ap_rst = '1') then
                 ap_reg_ppiten_pp2_it2 <= ap_const_logic_0;
             else
-                if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then 
+                if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then 
                     ap_reg_ppiten_pp2_it2 <= ap_reg_ppiten_pp2_it1;
                 end if; 
             end if;
@@ -852,7 +861,7 @@ begin
             if (ap_rst = '1') then
                 ap_reg_ppiten_pp2_it3 <= ap_const_logic_0;
             else
-                if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then 
+                if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then 
                     ap_reg_ppiten_pp2_it3 <= ap_reg_ppiten_pp2_it2;
                 end if; 
             end if;
@@ -867,7 +876,7 @@ begin
             if (ap_rst = '1') then
                 ap_reg_ppiten_pp2_it4 <= ap_const_logic_0;
             else
-                if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then 
+                if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then 
                     ap_reg_ppiten_pp2_it4 <= ap_reg_ppiten_pp2_it3;
                 end if; 
             end if;
@@ -882,7 +891,7 @@ begin
             if (ap_rst = '1') then
                 ap_reg_ppiten_pp2_it5 <= ap_const_logic_0;
             else
-                if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then 
+                if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then 
                     ap_reg_ppiten_pp2_it5 <= ap_reg_ppiten_pp2_it4;
                 end if; 
             end if;
@@ -897,7 +906,7 @@ begin
             if (ap_rst = '1') then
                 ap_reg_ppiten_pp2_it6 <= ap_const_logic_0;
             else
-                if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then 
+                if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then 
                     ap_reg_ppiten_pp2_it6 <= ap_reg_ppiten_pp2_it5;
                 end if; 
             end if;
@@ -912,7 +921,7 @@ begin
             if (ap_rst = '1') then
                 ap_reg_ppiten_pp2_it7 <= ap_const_logic_0;
             else
-                if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then 
+                if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then 
                     ap_reg_ppiten_pp2_it7 <= ap_reg_ppiten_pp2_it6;
                 elsif ((ap_ST_st14_fsm_6 = ap_CS_fsm)) then 
                     ap_reg_ppiten_pp2_it7 <= ap_const_logic_0;
@@ -929,9 +938,9 @@ begin
             if (ap_rst = '1') then
                 ap_reg_ppiten_pp4_it0 <= ap_const_logic_0;
             else
-                if (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and not((ap_const_lv1_0 = exitcond7_fu_894_p2)))) then 
+                if (((ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm) and (not((ap_const_lv1_0 = tmp_s_reg_1265)) or ((ap_const_lv1_0 = tmp_s_reg_1265) and not((ap_const_lv1_0 = tmp_13_reg_1298)))))) then 
                     ap_reg_ppiten_pp4_it0 <= ap_const_logic_0;
-                elsif (((ap_ST_st5_fsm_4 = ap_CS_fsm) and not((ap_const_lv1_0 = tmp_3_fu_627_p2)))) then 
+                elsif (((ap_ST_st5_fsm_4 = ap_CS_fsm) and not((ap_const_lv1_0 = tmp_3_fu_666_p2)))) then 
                     ap_reg_ppiten_pp4_it0 <= ap_const_logic_1;
                 end if; 
             end if;
@@ -946,9 +955,9 @@ begin
             if (ap_rst = '1') then
                 ap_reg_ppiten_pp4_it1 <= ap_const_logic_0;
             else
-                if (((ap_const_lv1_0 = exitcond7_reg_1241) and (ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm))) then 
-                    ap_reg_ppiten_pp4_it1 <= ap_const_logic_1;
-                elsif ((((ap_ST_st5_fsm_4 = ap_CS_fsm) and not((ap_const_lv1_0 = tmp_3_fu_627_p2))) or ((ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm) and not((ap_const_lv1_0 = exitcond7_reg_1241))))) then 
+                if ((ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm)) then 
+                    ap_reg_ppiten_pp4_it1 <= ap_reg_ppiten_pp4_it0;
+                elsif (((ap_ST_st5_fsm_4 = ap_CS_fsm) and not((ap_const_lv1_0 = tmp_3_fu_666_p2)))) then 
                     ap_reg_ppiten_pp4_it1 <= ap_const_logic_0;
                 end if; 
             end if;
@@ -1085,7 +1094,7 @@ begin
             else
                 if ((ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm)) then 
                     ap_reg_ppiten_pp4_it18 <= ap_reg_ppiten_pp4_it17;
-                elsif (((ap_ST_st5_fsm_4 = ap_CS_fsm) and not((ap_const_lv1_0 = tmp_3_fu_627_p2)))) then 
+                elsif (((ap_ST_st5_fsm_4 = ap_CS_fsm) and not((ap_const_lv1_0 = tmp_3_fu_666_p2)))) then 
                     ap_reg_ppiten_pp4_it18 <= ap_const_logic_0;
                 end if; 
             end if;
@@ -1220,7 +1229,7 @@ begin
             if (ap_rst = '1') then
                 ap_reg_ppiten_pp5_it0 <= ap_const_logic_0;
             else
-                if (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_lv1_0 = exitcond1_fu_1039_p2)))) then 
+                if (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_lv1_0 = exitcond_fu_1067_p2)))) then 
                     ap_reg_ppiten_pp5_it0 <= ap_const_logic_0;
                 elsif ((ap_ST_st65_fsm_14 = ap_CS_fsm)) then 
                     ap_reg_ppiten_pp5_it0 <= ap_const_logic_1;
@@ -1237,9 +1246,9 @@ begin
             if (ap_rst = '1') then
                 ap_reg_ppiten_pp5_it1 <= ap_const_logic_0;
             else
-                if (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and (ap_const_lv1_0 = exitcond1_fu_1039_p2))) then 
+                if (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and (ap_const_lv1_0 = exitcond_fu_1067_p2))) then 
                     ap_reg_ppiten_pp5_it1 <= ap_const_logic_1;
-                elsif (((ap_ST_st65_fsm_14 = ap_CS_fsm) or ((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_lv1_0 = exitcond1_fu_1039_p2))))) then 
+                elsif (((ap_ST_st65_fsm_14 = ap_CS_fsm) or ((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_lv1_0 = exitcond_fu_1067_p2))))) then 
                     ap_reg_ppiten_pp5_it1 <= ap_const_logic_0;
                 end if; 
             end if;
@@ -1254,7 +1263,7 @@ begin
             if (ap_rst = '1') then
                 ap_reg_ppiten_pp5_it2 <= ap_const_logic_0;
             else
-                if (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))))) then 
+                if (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))))) then 
                     ap_reg_ppiten_pp5_it2 <= ap_reg_ppiten_pp5_it1;
                 elsif ((ap_ST_st65_fsm_14 = ap_CS_fsm)) then 
                     ap_reg_ppiten_pp5_it2 <= ap_const_logic_0;
@@ -1326,7 +1335,7 @@ begin
                 distortion_out1data_reg <= ap_const_lv32_0;
             else
                 if (((not((not((ap_const_logic_1 = ap_start)) and (ap_ST_st1_fsm_0 = ap_CS_fsm))) and (ap_const_logic_1 = distortion_out1vld_in) and (ap_const_logic_0 = distortion_out1vld_reg)) or (not((not((ap_const_logic_1 = ap_start)) and (ap_ST_st1_fsm_0 = ap_CS_fsm))) and (ap_const_logic_1 = distortion_out1vld_in) and (ap_const_logic_1 = distortion_out1vld_reg) and (ap_const_logic_1 = ap_const_logic_1)))) then 
-                    distortion_out1data_reg <= total_distortion_reg_561;
+                    distortion_out1data_reg <= total_distortion_1_reg_580;
                 end if; 
             end if;
         end if;
@@ -1426,110 +1435,124 @@ begin
     end process;
 
 
-    -- b2_reg_514 assign process. --
-    b2_reg_514_assign_proc : process (ap_clk)
+    -- b2_reg_510 assign process. --
+    b2_reg_510_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_ST_st26_fsm_11 = ap_CS_fsm)) then 
-                b2_reg_514 <= b2_1_reg_1133;
+                b2_reg_510 <= b2_1_reg_1162;
             elsif ((ap_ST_st4_fsm_3 = ap_CS_fsm)) then 
-                b2_reg_514 <= ap_const_lv32_0;
+                b2_reg_510 <= ap_const_lv32_0;
             end if; 
         end if;
     end process;
 
-    -- b_reg_502 assign process. --
-    b_reg_502_assign_proc : process (ap_clk)
+    -- b_reg_498 assign process. --
+    b_reg_498_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_ST_st26_fsm_11 = ap_CS_fsm)) then 
-                b_reg_502 <= b_1_fu_888_p2;
+                b_reg_498 <= b_1_fu_910_p2;
             elsif ((ap_ST_st4_fsm_3 = ap_CS_fsm)) then 
-                b_reg_502 <= ap_const_lv32_0;
+                b_reg_498 <= ap_const_lv32_0;
             end if; 
         end if;
     end process;
 
-    -- i1_reg_550 assign process. --
-    i1_reg_550_assign_proc : process (ap_clk)
+    -- i1_reg_546 assign process. --
+    i1_reg_546_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it0) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and not((ap_const_lv1_0 = exitcond2_fu_716_p2)))) then 
-                i1_reg_550 <= ap_const_lv3_0;
-            elsif (((ap_const_lv1_0 = exitcond4_reg_1162) and (ap_ST_st25_fsm_10 = ap_CS_fsm))) then 
-                i1_reg_550 <= i_3_reg_1166;
+            if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it0) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and not((ap_const_lv1_0 = exitcond1_fu_738_p2)))) then 
+                i1_reg_546 <= ap_const_lv5_0;
+            elsif (((ap_const_lv1_0 = exitcond5_reg_1186) and (ap_ST_st25_fsm_10 = ap_CS_fsm))) then 
+                i1_reg_546 <= i_3_reg_1190;
             end if; 
         end if;
     end process;
 
-    -- i5_reg_574 assign process. --
-    i5_reg_574_assign_proc : process (ap_clk)
+    -- i5_reg_569 assign process. --
+    i5_reg_569_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_st5_fsm_4 = ap_CS_fsm) and not((ap_const_lv1_0 = tmp_3_fu_627_p2)))) then 
-                i5_reg_574 <= ap_const_lv32_0;
-            elsif (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it1) and (ap_const_lv1_0 = exitcond7_reg_1241))) then 
-                i5_reg_574 <= i_2_reg_1245;
+            if (((ap_ST_st5_fsm_4 = ap_CS_fsm) and not((ap_const_lv1_0 = tmp_3_fu_666_p2)))) then 
+                i5_reg_569 <= ap_const_lv32_0;
+            elsif (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it1) and (ap_const_lv1_0 = tmp_s_reg_1265) and (ap_const_lv1_0 = tmp_13_reg_1298))) then 
+                i5_reg_569 <= i_2_reg_1269;
             end if; 
         end if;
     end process;
 
-    -- i_reg_491 assign process. --
-    i_reg_491_assign_proc : process (ap_clk)
+    -- i_reg_487 assign process. --
+    i_reg_487_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_st3_fsm_2 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond6_fu_601_p2))) then 
-                i_reg_491 <= i_1_fu_607_p2;
+            if (((ap_ST_st3_fsm_2 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond7_fu_614_p2))) then 
+                i_reg_487 <= i_1_fu_620_p2;
             elsif ((ap_ST_st2_fsm_1 = ap_CS_fsm)) then 
-                i_reg_491 <= ap_const_lv9_0;
+                i_reg_487 <= ap_const_lv9_0;
             end if; 
         end if;
     end process;
 
-    -- indvar1_reg_585 assign process. --
-    indvar1_reg_585_assign_proc : process (ap_clk)
+    -- indvar1_reg_592 assign process. --
+    indvar1_reg_592_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_ST_st65_fsm_14 = ap_CS_fsm)) then 
-                indvar1_reg_585 <= ap_const_lv30_0;
-            elsif (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it0) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and (ap_const_lv1_0 = exitcond1_fu_1039_p2))) then 
-                indvar1_reg_585 <= indvar_next1_fu_1044_p2;
+                indvar1_reg_592 <= ap_const_lv30_0;
+            elsif (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it0) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and (ap_const_lv1_0 = exitcond_fu_1067_p2))) then 
+                indvar1_reg_592 <= indvar_next1_fu_1072_p2;
             end if; 
         end if;
     end process;
 
-    -- indvar2_reg_538 assign process. --
-    indvar2_reg_538_assign_proc : process (ap_clk)
+    -- indvar2_reg_534 assign process. --
+    indvar2_reg_534_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_ST_st14_fsm_6 = ap_CS_fsm)) then 
-                indvar2_reg_538 <= ap_const_lv4_0;
-            elsif (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it1) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and (ap_const_lv1_0 = exitcond2_reg_1144))) then 
-                indvar2_reg_538 <= indvar_next2_reg_1148;
+                indvar2_reg_534 <= ap_const_lv6_0;
+            elsif (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it1) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and (ap_const_lv1_0 = exitcond1_reg_1173))) then 
+                indvar2_reg_534 <= indvar_next2_reg_1177;
             end if; 
         end if;
     end process;
 
-    -- indvar_reg_526 assign process. --
-    indvar_reg_526_assign_proc : process (ap_clk)
+    -- indvar_reg_522 assign process. --
+    indvar_reg_522_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_st5_fsm_4 = ap_CS_fsm) and (ap_const_lv1_0 = tmp_3_fu_627_p2))) then 
-                indvar_reg_526 <= ap_const_lv4_0;
-            elsif (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it1) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and (exitcond_reg_1115 = ap_const_lv1_0))) then 
-                indvar_reg_526 <= indvar_next_reg_1119;
+            if (((ap_ST_st5_fsm_4 = ap_CS_fsm) and (ap_const_lv1_0 = tmp_3_fu_666_p2))) then 
+                indvar_reg_522 <= ap_const_lv6_0;
+            elsif (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it1) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and (exitcond8_reg_1149 = ap_const_lv1_0))) then 
+                indvar_reg_522 <= indvar_next_reg_1153;
             end if; 
         end if;
     end process;
 
-    -- total_distortion_reg_561 assign process. --
-    total_distortion_reg_561_assign_proc : process (ap_clk)
+    -- total_distortion_1_reg_580 assign process. --
+    total_distortion_1_reg_580_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_st5_fsm_4 = ap_CS_fsm) and not((ap_const_lv1_0 = tmp_3_fu_627_p2)))) then 
-                total_distortion_reg_561 <= ap_const_lv32_0;
-            elsif (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it2) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond7_reg_1241_pp4_it1))) then 
-                total_distortion_reg_561 <= total_distortion_1_reg_1313;
+            if ((ap_const_logic_1 = ap_reg_ppiten_pp4_it0)) then
+                if (ap_sig_bdd_1250) then 
+                    total_distortion_1_reg_580 <= total_distortion_2_fu_950_p2;
+                elsif (ap_sig_bdd_1247) then 
+                    total_distortion_1_reg_580 <= total_distortion_phi_fu_561_p4;
+                end if;
+            end if; 
+        end if;
+    end process;
+
+    -- total_distortion_reg_557 assign process. --
+    total_distortion_reg_557_assign_proc : process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if (((ap_ST_st5_fsm_4 = ap_CS_fsm) and not((ap_const_lv1_0 = tmp_3_fu_666_p2)))) then 
+                total_distortion_reg_557 <= ap_const_lv32_0;
+            elsif (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it1) and (ap_const_lv1_0 = tmp_s_reg_1265) and (ap_const_lv1_0 = tmp_13_reg_1298))) then 
+                total_distortion_reg_557 <= total_distortion_2_reg_1323;
             end if; 
         end if;
     end process;
@@ -1538,75 +1561,19 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))))) then
-                ap_reg_ppstg_exitcond1_reg_1333_pp5_it1 <= exitcond1_reg_1333;
-                ap_reg_ppstg_isIter_reg_1347_pp5_it1 <= isIter_reg_1347;
-            end if;
-        end if;
-    end process;
-
-    -- assign process. --
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then
-                ap_reg_ppstg_exitcond2_reg_1144_pp2_it1 <= exitcond2_reg_1144;
-                ap_reg_ppstg_exitcond2_reg_1144_pp2_it2 <= ap_reg_ppstg_exitcond2_reg_1144_pp2_it1;
-                ap_reg_ppstg_exitcond2_reg_1144_pp2_it3 <= ap_reg_ppstg_exitcond2_reg_1144_pp2_it2;
-                ap_reg_ppstg_exitcond2_reg_1144_pp2_it4 <= ap_reg_ppstg_exitcond2_reg_1144_pp2_it3;
-                ap_reg_ppstg_exitcond2_reg_1144_pp2_it5 <= ap_reg_ppstg_exitcond2_reg_1144_pp2_it4;
-                ap_reg_ppstg_exitcond2_reg_1144_pp2_it6 <= ap_reg_ppstg_exitcond2_reg_1144_pp2_it5;
-                ap_reg_ppstg_indvar2_reg_538_pp2_it1 <= indvar2_reg_538;
-                ap_reg_ppstg_indvar2_reg_538_pp2_it2 <= ap_reg_ppstg_indvar2_reg_538_pp2_it1;
-                ap_reg_ppstg_indvar2_reg_538_pp2_it3 <= ap_reg_ppstg_indvar2_reg_538_pp2_it2;
-                ap_reg_ppstg_indvar2_reg_538_pp2_it4 <= ap_reg_ppstg_indvar2_reg_538_pp2_it3;
-                ap_reg_ppstg_indvar2_reg_538_pp2_it5 <= ap_reg_ppstg_indvar2_reg_538_pp2_it4;
-                ap_reg_ppstg_indvar2_reg_538_pp2_it6 <= ap_reg_ppstg_indvar2_reg_538_pp2_it5;
-            end if;
-        end if;
-    end process;
-
-    -- assign process. --
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if ((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm)) then
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it1 <= exitcond7_reg_1241;
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it10 <= ap_reg_ppstg_exitcond7_reg_1241_pp4_it9;
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it11 <= ap_reg_ppstg_exitcond7_reg_1241_pp4_it10;
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it12 <= ap_reg_ppstg_exitcond7_reg_1241_pp4_it11;
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it13 <= ap_reg_ppstg_exitcond7_reg_1241_pp4_it12;
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it14 <= ap_reg_ppstg_exitcond7_reg_1241_pp4_it13;
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it15 <= ap_reg_ppstg_exitcond7_reg_1241_pp4_it14;
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it16 <= ap_reg_ppstg_exitcond7_reg_1241_pp4_it15;
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it17 <= ap_reg_ppstg_exitcond7_reg_1241_pp4_it16;
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it18 <= ap_reg_ppstg_exitcond7_reg_1241_pp4_it17;
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it2 <= ap_reg_ppstg_exitcond7_reg_1241_pp4_it1;
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it3 <= ap_reg_ppstg_exitcond7_reg_1241_pp4_it2;
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it4 <= ap_reg_ppstg_exitcond7_reg_1241_pp4_it3;
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it5 <= ap_reg_ppstg_exitcond7_reg_1241_pp4_it4;
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it6 <= ap_reg_ppstg_exitcond7_reg_1241_pp4_it5;
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it7 <= ap_reg_ppstg_exitcond7_reg_1241_pp4_it6;
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it8 <= ap_reg_ppstg_exitcond7_reg_1241_pp4_it7;
-                ap_reg_ppstg_exitcond7_reg_1241_pp4_it9 <= ap_reg_ppstg_exitcond7_reg_1241_pp4_it8;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it1 <= tmp_19_reg_1263;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it10 <= ap_reg_ppstg_tmp_19_reg_1263_pp4_it9;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it11 <= ap_reg_ppstg_tmp_19_reg_1263_pp4_it10;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it12 <= ap_reg_ppstg_tmp_19_reg_1263_pp4_it11;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it13 <= ap_reg_ppstg_tmp_19_reg_1263_pp4_it12;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it14 <= ap_reg_ppstg_tmp_19_reg_1263_pp4_it13;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it15 <= ap_reg_ppstg_tmp_19_reg_1263_pp4_it14;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it16 <= ap_reg_ppstg_tmp_19_reg_1263_pp4_it15;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it17 <= ap_reg_ppstg_tmp_19_reg_1263_pp4_it16;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it18 <= ap_reg_ppstg_tmp_19_reg_1263_pp4_it17;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it2 <= ap_reg_ppstg_tmp_19_reg_1263_pp4_it1;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it3 <= ap_reg_ppstg_tmp_19_reg_1263_pp4_it2;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it4 <= ap_reg_ppstg_tmp_19_reg_1263_pp4_it3;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it5 <= ap_reg_ppstg_tmp_19_reg_1263_pp4_it4;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it6 <= ap_reg_ppstg_tmp_19_reg_1263_pp4_it5;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it7 <= ap_reg_ppstg_tmp_19_reg_1263_pp4_it6;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it8 <= ap_reg_ppstg_tmp_19_reg_1263_pp4_it7;
-                ap_reg_ppstg_tmp_19_reg_1263_pp4_it9 <= ap_reg_ppstg_tmp_19_reg_1263_pp4_it8;
+            if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then
+                ap_reg_ppstg_exitcond1_reg_1173_pp2_it1 <= exitcond1_reg_1173;
+                ap_reg_ppstg_exitcond1_reg_1173_pp2_it2 <= ap_reg_ppstg_exitcond1_reg_1173_pp2_it1;
+                ap_reg_ppstg_exitcond1_reg_1173_pp2_it3 <= ap_reg_ppstg_exitcond1_reg_1173_pp2_it2;
+                ap_reg_ppstg_exitcond1_reg_1173_pp2_it4 <= ap_reg_ppstg_exitcond1_reg_1173_pp2_it3;
+                ap_reg_ppstg_exitcond1_reg_1173_pp2_it5 <= ap_reg_ppstg_exitcond1_reg_1173_pp2_it4;
+                ap_reg_ppstg_exitcond1_reg_1173_pp2_it6 <= ap_reg_ppstg_exitcond1_reg_1173_pp2_it5;
+                ap_reg_ppstg_indvar2_reg_534_pp2_it1 <= indvar2_reg_534;
+                ap_reg_ppstg_indvar2_reg_534_pp2_it2 <= ap_reg_ppstg_indvar2_reg_534_pp2_it1;
+                ap_reg_ppstg_indvar2_reg_534_pp2_it3 <= ap_reg_ppstg_indvar2_reg_534_pp2_it2;
+                ap_reg_ppstg_indvar2_reg_534_pp2_it4 <= ap_reg_ppstg_indvar2_reg_534_pp2_it3;
+                ap_reg_ppstg_indvar2_reg_534_pp2_it5 <= ap_reg_ppstg_indvar2_reg_534_pp2_it4;
+                ap_reg_ppstg_indvar2_reg_534_pp2_it6 <= ap_reg_ppstg_indvar2_reg_534_pp2_it5;
             end if;
         end if;
     end process;
@@ -1616,18 +1583,74 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))))) then
-                ap_reg_ppstg_exitcond_reg_1115_pp1_it1 <= exitcond_reg_1115;
-                ap_reg_ppstg_exitcond_reg_1115_pp1_it2 <= ap_reg_ppstg_exitcond_reg_1115_pp1_it1;
-                ap_reg_ppstg_exitcond_reg_1115_pp1_it3 <= ap_reg_ppstg_exitcond_reg_1115_pp1_it2;
-                ap_reg_ppstg_exitcond_reg_1115_pp1_it4 <= ap_reg_ppstg_exitcond_reg_1115_pp1_it3;
-                ap_reg_ppstg_exitcond_reg_1115_pp1_it5 <= ap_reg_ppstg_exitcond_reg_1115_pp1_it4;
-                ap_reg_ppstg_exitcond_reg_1115_pp1_it6 <= ap_reg_ppstg_exitcond_reg_1115_pp1_it5;
-                ap_reg_ppstg_indvar_reg_526_pp1_it1 <= indvar_reg_526;
-                ap_reg_ppstg_indvar_reg_526_pp1_it2 <= ap_reg_ppstg_indvar_reg_526_pp1_it1;
-                ap_reg_ppstg_indvar_reg_526_pp1_it3 <= ap_reg_ppstg_indvar_reg_526_pp1_it2;
-                ap_reg_ppstg_indvar_reg_526_pp1_it4 <= ap_reg_ppstg_indvar_reg_526_pp1_it3;
-                ap_reg_ppstg_indvar_reg_526_pp1_it5 <= ap_reg_ppstg_indvar_reg_526_pp1_it4;
-                ap_reg_ppstg_indvar_reg_526_pp1_it6 <= ap_reg_ppstg_indvar_reg_526_pp1_it5;
+                ap_reg_ppstg_exitcond8_reg_1149_pp1_it1 <= exitcond8_reg_1149;
+                ap_reg_ppstg_exitcond8_reg_1149_pp1_it2 <= ap_reg_ppstg_exitcond8_reg_1149_pp1_it1;
+                ap_reg_ppstg_exitcond8_reg_1149_pp1_it3 <= ap_reg_ppstg_exitcond8_reg_1149_pp1_it2;
+                ap_reg_ppstg_exitcond8_reg_1149_pp1_it4 <= ap_reg_ppstg_exitcond8_reg_1149_pp1_it3;
+                ap_reg_ppstg_exitcond8_reg_1149_pp1_it5 <= ap_reg_ppstg_exitcond8_reg_1149_pp1_it4;
+                ap_reg_ppstg_exitcond8_reg_1149_pp1_it6 <= ap_reg_ppstg_exitcond8_reg_1149_pp1_it5;
+                ap_reg_ppstg_indvar_reg_522_pp1_it1 <= indvar_reg_522;
+                ap_reg_ppstg_indvar_reg_522_pp1_it2 <= ap_reg_ppstg_indvar_reg_522_pp1_it1;
+                ap_reg_ppstg_indvar_reg_522_pp1_it3 <= ap_reg_ppstg_indvar_reg_522_pp1_it2;
+                ap_reg_ppstg_indvar_reg_522_pp1_it4 <= ap_reg_ppstg_indvar_reg_522_pp1_it3;
+                ap_reg_ppstg_indvar_reg_522_pp1_it5 <= ap_reg_ppstg_indvar_reg_522_pp1_it4;
+                ap_reg_ppstg_indvar_reg_522_pp1_it6 <= ap_reg_ppstg_indvar_reg_522_pp1_it5;
+            end if;
+        end if;
+    end process;
+
+    -- assign process. --
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))))) then
+                ap_reg_ppstg_exitcond_reg_1361_pp5_it1 <= exitcond_reg_1361;
+                ap_reg_ppstg_isIter_reg_1375_pp5_it1 <= isIter_reg_1375;
+            end if;
+        end if;
+    end process;
+
+    -- assign process. --
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if ((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm)) then
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it1 <= tmp_10_reg_1286;
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it10 <= ap_reg_ppstg_tmp_10_reg_1286_pp4_it9;
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it11 <= ap_reg_ppstg_tmp_10_reg_1286_pp4_it10;
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it12 <= ap_reg_ppstg_tmp_10_reg_1286_pp4_it11;
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it13 <= ap_reg_ppstg_tmp_10_reg_1286_pp4_it12;
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it14 <= ap_reg_ppstg_tmp_10_reg_1286_pp4_it13;
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it15 <= ap_reg_ppstg_tmp_10_reg_1286_pp4_it14;
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it16 <= ap_reg_ppstg_tmp_10_reg_1286_pp4_it15;
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it17 <= ap_reg_ppstg_tmp_10_reg_1286_pp4_it16;
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it18 <= ap_reg_ppstg_tmp_10_reg_1286_pp4_it17;
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it2 <= ap_reg_ppstg_tmp_10_reg_1286_pp4_it1;
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it3 <= ap_reg_ppstg_tmp_10_reg_1286_pp4_it2;
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it4 <= ap_reg_ppstg_tmp_10_reg_1286_pp4_it3;
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it5 <= ap_reg_ppstg_tmp_10_reg_1286_pp4_it4;
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it6 <= ap_reg_ppstg_tmp_10_reg_1286_pp4_it5;
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it7 <= ap_reg_ppstg_tmp_10_reg_1286_pp4_it6;
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it8 <= ap_reg_ppstg_tmp_10_reg_1286_pp4_it7;
+                ap_reg_ppstg_tmp_10_reg_1286_pp4_it9 <= ap_reg_ppstg_tmp_10_reg_1286_pp4_it8;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it1 <= tmp_s_reg_1265;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it10 <= ap_reg_ppstg_tmp_s_reg_1265_pp4_it9;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it11 <= ap_reg_ppstg_tmp_s_reg_1265_pp4_it10;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it12 <= ap_reg_ppstg_tmp_s_reg_1265_pp4_it11;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it13 <= ap_reg_ppstg_tmp_s_reg_1265_pp4_it12;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it14 <= ap_reg_ppstg_tmp_s_reg_1265_pp4_it13;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it15 <= ap_reg_ppstg_tmp_s_reg_1265_pp4_it14;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it16 <= ap_reg_ppstg_tmp_s_reg_1265_pp4_it15;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it17 <= ap_reg_ppstg_tmp_s_reg_1265_pp4_it16;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it18 <= ap_reg_ppstg_tmp_s_reg_1265_pp4_it17;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it2 <= ap_reg_ppstg_tmp_s_reg_1265_pp4_it1;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it3 <= ap_reg_ppstg_tmp_s_reg_1265_pp4_it2;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it4 <= ap_reg_ppstg_tmp_s_reg_1265_pp4_it3;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it5 <= ap_reg_ppstg_tmp_s_reg_1265_pp4_it4;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it6 <= ap_reg_ppstg_tmp_s_reg_1265_pp4_it5;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it7 <= ap_reg_ppstg_tmp_s_reg_1265_pp4_it6;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it8 <= ap_reg_ppstg_tmp_s_reg_1265_pp4_it7;
+                ap_reg_ppstg_tmp_s_reg_1265_pp4_it9 <= ap_reg_ppstg_tmp_s_reg_1265_pp4_it8;
             end if;
         end if;
     end process;
@@ -1637,37 +1660,8 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_ST_st14_fsm_6 = ap_CS_fsm)) then
-                b2_1_reg_1133 <= b2_1_fu_685_p2;
-                master_portB_addr_reg_1138(0) <= tmp_8_fu_706_p1(32 - 1 downto 0)(0);
-    master_portB_addr_reg_1138(1) <= tmp_8_fu_706_p1(32 - 1 downto 0)(1);
-    master_portB_addr_reg_1138(2) <= tmp_8_fu_706_p1(32 - 1 downto 0)(2);
-    master_portB_addr_reg_1138(3) <= tmp_8_fu_706_p1(32 - 1 downto 0)(3);
-    master_portB_addr_reg_1138(4) <= tmp_8_fu_706_p1(32 - 1 downto 0)(4);
-    master_portB_addr_reg_1138(5) <= tmp_8_fu_706_p1(32 - 1 downto 0)(5);
-    master_portB_addr_reg_1138(6) <= tmp_8_fu_706_p1(32 - 1 downto 0)(6);
-    master_portB_addr_reg_1138(7) <= tmp_8_fu_706_p1(32 - 1 downto 0)(7);
-    master_portB_addr_reg_1138(8) <= tmp_8_fu_706_p1(32 - 1 downto 0)(8);
-    master_portB_addr_reg_1138(9) <= tmp_8_fu_706_p1(32 - 1 downto 0)(9);
-    master_portB_addr_reg_1138(10) <= tmp_8_fu_706_p1(32 - 1 downto 0)(10);
-    master_portB_addr_reg_1138(11) <= tmp_8_fu_706_p1(32 - 1 downto 0)(11);
-    master_portB_addr_reg_1138(12) <= tmp_8_fu_706_p1(32 - 1 downto 0)(12);
-    master_portB_addr_reg_1138(13) <= tmp_8_fu_706_p1(32 - 1 downto 0)(13);
-    master_portB_addr_reg_1138(14) <= tmp_8_fu_706_p1(32 - 1 downto 0)(14);
-    master_portB_addr_reg_1138(15) <= tmp_8_fu_706_p1(32 - 1 downto 0)(15);
-    master_portB_addr_reg_1138(16) <= tmp_8_fu_706_p1(32 - 1 downto 0)(16);
-    master_portB_addr_reg_1138(17) <= tmp_8_fu_706_p1(32 - 1 downto 0)(17);
-    master_portB_addr_reg_1138(18) <= tmp_8_fu_706_p1(32 - 1 downto 0)(18);
-    master_portB_addr_reg_1138(19) <= tmp_8_fu_706_p1(32 - 1 downto 0)(19);
-    master_portB_addr_reg_1138(20) <= tmp_8_fu_706_p1(32 - 1 downto 0)(20);
-    master_portB_addr_reg_1138(21) <= tmp_8_fu_706_p1(32 - 1 downto 0)(21);
-    master_portB_addr_reg_1138(22) <= tmp_8_fu_706_p1(32 - 1 downto 0)(22);
-    master_portB_addr_reg_1138(23) <= tmp_8_fu_706_p1(32 - 1 downto 0)(23);
-    master_portB_addr_reg_1138(24) <= tmp_8_fu_706_p1(32 - 1 downto 0)(24);
-    master_portB_addr_reg_1138(25) <= tmp_8_fu_706_p1(32 - 1 downto 0)(25);
-    master_portB_addr_reg_1138(26) <= tmp_8_fu_706_p1(32 - 1 downto 0)(26);
-    master_portB_addr_reg_1138(27) <= tmp_8_fu_706_p1(32 - 1 downto 0)(27);
-    master_portB_addr_reg_1138(28) <= tmp_8_fu_706_p1(32 - 1 downto 0)(28);
-    master_portB_addr_reg_1138(29) <= tmp_8_fu_706_p1(32 - 1 downto 0)(29);
+                b2_1_reg_1162 <= b2_1_fu_713_p2;
+                master_portA_addr_1_reg_1167 <= tmp_11_cast_fu_728_p1(32 - 1 downto 0);
             end if;
         end if;
     end process;
@@ -1676,8 +1670,8 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it1) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and (ap_const_lv1_0 = exitcond1_reg_1333))) then
-                c_buffer_load_reg_1351 <= c_buffer_q1;
+            if (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it1) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and (ap_const_lv1_0 = exitcond_reg_1361))) then
+                c_buffer_load_reg_1379 <= c_buffer_q1;
             end if;
         end if;
     end process;
@@ -1686,41 +1680,41 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_st24_fsm_9 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond4_reg_1162))) then
-                centre_buffer_count_addr_2_reg_1226 <= tmp_32_fu_845_p1(8 - 1 downto 0);
-                centre_buffer_sum_sq_addr_2_reg_1231 <= tmp_32_fu_845_p1(8 - 1 downto 0);
-                tmp_32_reg_1221(0) <= tmp_32_fu_845_p1(0);
-    tmp_32_reg_1221(1) <= tmp_32_fu_845_p1(1);
-    tmp_32_reg_1221(2) <= tmp_32_fu_845_p1(2);
-    tmp_32_reg_1221(3) <= tmp_32_fu_845_p1(3);
-    tmp_32_reg_1221(4) <= tmp_32_fu_845_p1(4);
-    tmp_32_reg_1221(5) <= tmp_32_fu_845_p1(5);
-    tmp_32_reg_1221(6) <= tmp_32_fu_845_p1(6);
-    tmp_32_reg_1221(7) <= tmp_32_fu_845_p1(7);
-    tmp_32_reg_1221(8) <= tmp_32_fu_845_p1(8);
-    tmp_32_reg_1221(9) <= tmp_32_fu_845_p1(9);
-    tmp_32_reg_1221(10) <= tmp_32_fu_845_p1(10);
-    tmp_32_reg_1221(11) <= tmp_32_fu_845_p1(11);
-    tmp_32_reg_1221(12) <= tmp_32_fu_845_p1(12);
-    tmp_32_reg_1221(13) <= tmp_32_fu_845_p1(13);
-    tmp_32_reg_1221(14) <= tmp_32_fu_845_p1(14);
-    tmp_32_reg_1221(15) <= tmp_32_fu_845_p1(15);
-    tmp_32_reg_1221(16) <= tmp_32_fu_845_p1(16);
-    tmp_32_reg_1221(17) <= tmp_32_fu_845_p1(17);
-    tmp_32_reg_1221(18) <= tmp_32_fu_845_p1(18);
-    tmp_32_reg_1221(19) <= tmp_32_fu_845_p1(19);
-    tmp_32_reg_1221(20) <= tmp_32_fu_845_p1(20);
-    tmp_32_reg_1221(21) <= tmp_32_fu_845_p1(21);
-    tmp_32_reg_1221(22) <= tmp_32_fu_845_p1(22);
-    tmp_32_reg_1221(23) <= tmp_32_fu_845_p1(23);
-    tmp_32_reg_1221(24) <= tmp_32_fu_845_p1(24);
-    tmp_32_reg_1221(25) <= tmp_32_fu_845_p1(25);
-    tmp_32_reg_1221(26) <= tmp_32_fu_845_p1(26);
-    tmp_32_reg_1221(27) <= tmp_32_fu_845_p1(27);
-    tmp_32_reg_1221(28) <= tmp_32_fu_845_p1(28);
-    tmp_32_reg_1221(29) <= tmp_32_fu_845_p1(29);
-    tmp_32_reg_1221(30) <= tmp_32_fu_845_p1(30);
-    tmp_32_reg_1221(31) <= tmp_32_fu_845_p1(31);
+            if (((ap_ST_st24_fsm_9 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond5_reg_1186))) then
+                centre_buffer_count_addr_2_reg_1250 <= tmp_27_fu_867_p1(8 - 1 downto 0);
+                centre_buffer_sum_sq_addr_2_reg_1255 <= tmp_27_fu_867_p1(8 - 1 downto 0);
+                tmp_27_reg_1245(0) <= tmp_27_fu_867_p1(0);
+    tmp_27_reg_1245(1) <= tmp_27_fu_867_p1(1);
+    tmp_27_reg_1245(2) <= tmp_27_fu_867_p1(2);
+    tmp_27_reg_1245(3) <= tmp_27_fu_867_p1(3);
+    tmp_27_reg_1245(4) <= tmp_27_fu_867_p1(4);
+    tmp_27_reg_1245(5) <= tmp_27_fu_867_p1(5);
+    tmp_27_reg_1245(6) <= tmp_27_fu_867_p1(6);
+    tmp_27_reg_1245(7) <= tmp_27_fu_867_p1(7);
+    tmp_27_reg_1245(8) <= tmp_27_fu_867_p1(8);
+    tmp_27_reg_1245(9) <= tmp_27_fu_867_p1(9);
+    tmp_27_reg_1245(10) <= tmp_27_fu_867_p1(10);
+    tmp_27_reg_1245(11) <= tmp_27_fu_867_p1(11);
+    tmp_27_reg_1245(12) <= tmp_27_fu_867_p1(12);
+    tmp_27_reg_1245(13) <= tmp_27_fu_867_p1(13);
+    tmp_27_reg_1245(14) <= tmp_27_fu_867_p1(14);
+    tmp_27_reg_1245(15) <= tmp_27_fu_867_p1(15);
+    tmp_27_reg_1245(16) <= tmp_27_fu_867_p1(16);
+    tmp_27_reg_1245(17) <= tmp_27_fu_867_p1(17);
+    tmp_27_reg_1245(18) <= tmp_27_fu_867_p1(18);
+    tmp_27_reg_1245(19) <= tmp_27_fu_867_p1(19);
+    tmp_27_reg_1245(20) <= tmp_27_fu_867_p1(20);
+    tmp_27_reg_1245(21) <= tmp_27_fu_867_p1(21);
+    tmp_27_reg_1245(22) <= tmp_27_fu_867_p1(22);
+    tmp_27_reg_1245(23) <= tmp_27_fu_867_p1(23);
+    tmp_27_reg_1245(24) <= tmp_27_fu_867_p1(24);
+    tmp_27_reg_1245(25) <= tmp_27_fu_867_p1(25);
+    tmp_27_reg_1245(26) <= tmp_27_fu_867_p1(26);
+    tmp_27_reg_1245(27) <= tmp_27_fu_867_p1(27);
+    tmp_27_reg_1245(28) <= tmp_27_fu_867_p1(28);
+    tmp_27_reg_1245(29) <= tmp_27_fu_867_p1(29);
+    tmp_27_reg_1245(30) <= tmp_27_fu_867_p1(30);
+    tmp_27_reg_1245(31) <= tmp_27_fu_867_p1(31);
             end if;
         end if;
     end process;
@@ -1729,8 +1723,9 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_reg_ppiten_pp4_it0) and (ap_const_lv1_0 = exitcond7_reg_1241) and (ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm))) then
-                centre_buffer_count_load_reg_1275 <= centre_buffer_count_q0;
+            if (((ap_const_logic_1 = ap_reg_ppiten_pp4_it0) and (ap_const_lv1_0 = tmp_s_reg_1265) and (ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm))) then
+                count_reg_1302 <= centre_buffer_count_q0;
+                total_distortion_2_reg_1323 <= total_distortion_2_fu_950_p2;
             end if;
         end if;
     end process;
@@ -1739,19 +1734,9 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it0) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))))) then
-                exitcond1_reg_1333 <= exitcond1_fu_1039_p2;
-            end if;
-        end if;
-    end process;
-
-    -- assign process. --
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it0) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then
-                exitcond2_reg_1144 <= exitcond2_fu_716_p2;
-                indvar_next2_reg_1148 <= indvar_next2_fu_722_p2;
+            if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it0) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then
+                exitcond1_reg_1173 <= exitcond1_fu_738_p2;
+                indvar_next2_reg_1177 <= indvar_next2_fu_744_p2;
             end if;
         end if;
     end process;
@@ -1761,19 +1746,8 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_ST_st23_fsm_8 = ap_CS_fsm)) then
-                exitcond4_reg_1162 <= exitcond4_fu_739_p2;
-                i_3_reg_1166 <= i_3_fu_745_p2;
-            end if;
-        end if;
-    end process;
-
-    -- assign process. --
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it0))) then
-                exitcond7_reg_1241 <= exitcond7_fu_894_p2;
-                i_2_reg_1245 <= i_2_fu_899_p2;
+                exitcond5_reg_1186 <= exitcond5_fu_761_p2;
+                i_3_reg_1190 <= i_3_fu_767_p2;
             end if;
         end if;
     end process;
@@ -1783,8 +1757,8 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it0) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))))) then
-                exitcond_reg_1115 <= exitcond_fu_662_p2;
-                indvar_next_reg_1119 <= indvar_next_fu_668_p2;
+                exitcond8_reg_1149 <= exitcond8_fu_690_p2;
+                indvar_next_reg_1153 <= indvar_next_fu_696_p2;
             end if;
         end if;
     end process;
@@ -1793,8 +1767,8 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it0) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and (ap_const_lv1_0 = exitcond_fu_662_p2))) then
-                isIter0_reg_1124 <= isIter0_fu_674_p2;
+            if (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it0) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))))) then
+                exitcond_reg_1361 <= exitcond_fu_1067_p2;
             end if;
         end if;
     end process;
@@ -1803,8 +1777,9 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it0) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and (ap_const_lv1_0 = exitcond2_fu_716_p2))) then
-                isIter1_reg_1153 <= isIter1_fu_728_p2;
+            if (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it0))) then
+                i_2_reg_1269 <= i_2_fu_921_p2;
+                tmp_s_reg_1265 <= tmp_s_fu_916_p2;
             end if;
         end if;
     end process;
@@ -1813,8 +1788,28 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it0) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and (ap_const_lv1_0 = exitcond1_fu_1039_p2))) then
-                isIter_reg_1347 <= isIter_fu_1055_p2;
+            if (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it0) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and (ap_const_lv1_0 = exitcond8_fu_690_p2))) then
+                isIter0_reg_1158 <= isIter0_fu_702_p2;
+            end if;
+        end if;
+    end process;
+
+    -- assign process. --
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it0) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and (ap_const_lv1_0 = exitcond1_fu_738_p2))) then
+                isIter1_reg_1182 <= isIter1_fu_750_p2;
+            end if;
+        end if;
+    end process;
+
+    -- assign process. --
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it0) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and (ap_const_lv1_0 = exitcond_fu_1067_p2))) then
+                isIter_reg_1375 <= isIter_fu_1083_p2;
             end if;
         end if;
     end process;
@@ -1824,37 +1819,107 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_ST_st4_fsm_3 = ap_CS_fsm)) then
-                lim_reg_1096(1) <= lim_fu_622_p2(1);
-    lim_reg_1096(2) <= lim_fu_622_p2(2);
-    lim_reg_1096(3) <= lim_fu_622_p2(3);
-    lim_reg_1096(4) <= lim_fu_622_p2(4);
-    lim_reg_1096(5) <= lim_fu_622_p2(5);
-    lim_reg_1096(6) <= lim_fu_622_p2(6);
-    lim_reg_1096(7) <= lim_fu_622_p2(7);
-    lim_reg_1096(8) <= lim_fu_622_p2(8);
-    lim_reg_1096(9) <= lim_fu_622_p2(9);
-    lim_reg_1096(10) <= lim_fu_622_p2(10);
-    lim_reg_1096(11) <= lim_fu_622_p2(11);
-    lim_reg_1096(12) <= lim_fu_622_p2(12);
-    lim_reg_1096(13) <= lim_fu_622_p2(13);
-    lim_reg_1096(14) <= lim_fu_622_p2(14);
-    lim_reg_1096(15) <= lim_fu_622_p2(15);
-    lim_reg_1096(16) <= lim_fu_622_p2(16);
-    lim_reg_1096(17) <= lim_fu_622_p2(17);
-    lim_reg_1096(18) <= lim_fu_622_p2(18);
-    lim_reg_1096(19) <= lim_fu_622_p2(19);
-    lim_reg_1096(20) <= lim_fu_622_p2(20);
-    lim_reg_1096(21) <= lim_fu_622_p2(21);
-    lim_reg_1096(22) <= lim_fu_622_p2(22);
-    lim_reg_1096(23) <= lim_fu_622_p2(23);
-    lim_reg_1096(24) <= lim_fu_622_p2(24);
-    lim_reg_1096(25) <= lim_fu_622_p2(25);
-    lim_reg_1096(26) <= lim_fu_622_p2(26);
-    lim_reg_1096(27) <= lim_fu_622_p2(27);
-    lim_reg_1096(28) <= lim_fu_622_p2(28);
-    lim_reg_1096(29) <= lim_fu_622_p2(29);
-    lim_reg_1096(30) <= lim_fu_622_p2(30);
-    lim_reg_1096(31) <= lim_fu_622_p2(31);
+                lim_reg_1125(1) <= lim_fu_635_p2(1);
+    lim_reg_1125(2) <= lim_fu_635_p2(2);
+    lim_reg_1125(3) <= lim_fu_635_p2(3);
+    lim_reg_1125(4) <= lim_fu_635_p2(4);
+    lim_reg_1125(5) <= lim_fu_635_p2(5);
+    lim_reg_1125(6) <= lim_fu_635_p2(6);
+    lim_reg_1125(7) <= lim_fu_635_p2(7);
+    lim_reg_1125(8) <= lim_fu_635_p2(8);
+    lim_reg_1125(9) <= lim_fu_635_p2(9);
+    lim_reg_1125(10) <= lim_fu_635_p2(10);
+    lim_reg_1125(11) <= lim_fu_635_p2(11);
+    lim_reg_1125(12) <= lim_fu_635_p2(12);
+    lim_reg_1125(13) <= lim_fu_635_p2(13);
+    lim_reg_1125(14) <= lim_fu_635_p2(14);
+    lim_reg_1125(15) <= lim_fu_635_p2(15);
+    lim_reg_1125(16) <= lim_fu_635_p2(16);
+    lim_reg_1125(17) <= lim_fu_635_p2(17);
+    lim_reg_1125(18) <= lim_fu_635_p2(18);
+    lim_reg_1125(19) <= lim_fu_635_p2(19);
+    lim_reg_1125(20) <= lim_fu_635_p2(20);
+    lim_reg_1125(21) <= lim_fu_635_p2(21);
+    lim_reg_1125(22) <= lim_fu_635_p2(22);
+    lim_reg_1125(23) <= lim_fu_635_p2(23);
+    lim_reg_1125(24) <= lim_fu_635_p2(24);
+    lim_reg_1125(25) <= lim_fu_635_p2(25);
+    lim_reg_1125(26) <= lim_fu_635_p2(26);
+    lim_reg_1125(27) <= lim_fu_635_p2(27);
+    lim_reg_1125(28) <= lim_fu_635_p2(28);
+    lim_reg_1125(29) <= lim_fu_635_p2(29);
+    lim_reg_1125(30) <= lim_fu_635_p2(30);
+    lim_reg_1125(31) <= lim_fu_635_p2(31);
+                tmp_5_cast_reg_1130(0) <= tmp_5_cast_fu_649_p1(0);
+    tmp_5_cast_reg_1130(1) <= tmp_5_cast_fu_649_p1(1);
+    tmp_5_cast_reg_1130(2) <= tmp_5_cast_fu_649_p1(2);
+    tmp_5_cast_reg_1130(3) <= tmp_5_cast_fu_649_p1(3);
+    tmp_5_cast_reg_1130(4) <= tmp_5_cast_fu_649_p1(4);
+    tmp_5_cast_reg_1130(5) <= tmp_5_cast_fu_649_p1(5);
+    tmp_5_cast_reg_1130(6) <= tmp_5_cast_fu_649_p1(6);
+    tmp_5_cast_reg_1130(7) <= tmp_5_cast_fu_649_p1(7);
+    tmp_5_cast_reg_1130(8) <= tmp_5_cast_fu_649_p1(8);
+    tmp_5_cast_reg_1130(9) <= tmp_5_cast_fu_649_p1(9);
+    tmp_5_cast_reg_1130(10) <= tmp_5_cast_fu_649_p1(10);
+    tmp_5_cast_reg_1130(11) <= tmp_5_cast_fu_649_p1(11);
+    tmp_5_cast_reg_1130(12) <= tmp_5_cast_fu_649_p1(12);
+    tmp_5_cast_reg_1130(13) <= tmp_5_cast_fu_649_p1(13);
+    tmp_5_cast_reg_1130(14) <= tmp_5_cast_fu_649_p1(14);
+    tmp_5_cast_reg_1130(15) <= tmp_5_cast_fu_649_p1(15);
+    tmp_5_cast_reg_1130(16) <= tmp_5_cast_fu_649_p1(16);
+    tmp_5_cast_reg_1130(17) <= tmp_5_cast_fu_649_p1(17);
+    tmp_5_cast_reg_1130(18) <= tmp_5_cast_fu_649_p1(18);
+    tmp_5_cast_reg_1130(19) <= tmp_5_cast_fu_649_p1(19);
+    tmp_5_cast_reg_1130(20) <= tmp_5_cast_fu_649_p1(20);
+    tmp_5_cast_reg_1130(21) <= tmp_5_cast_fu_649_p1(21);
+    tmp_5_cast_reg_1130(22) <= tmp_5_cast_fu_649_p1(22);
+    tmp_5_cast_reg_1130(23) <= tmp_5_cast_fu_649_p1(23);
+    tmp_5_cast_reg_1130(24) <= tmp_5_cast_fu_649_p1(24);
+    tmp_5_cast_reg_1130(25) <= tmp_5_cast_fu_649_p1(25);
+    tmp_5_cast_reg_1130(26) <= tmp_5_cast_fu_649_p1(26);
+    tmp_5_cast_reg_1130(27) <= tmp_5_cast_fu_649_p1(27);
+    tmp_5_cast_reg_1130(28) <= tmp_5_cast_fu_649_p1(28);
+    tmp_5_cast_reg_1130(29) <= tmp_5_cast_fu_649_p1(29);
+                tmp_9_cast_reg_1135(0) <= tmp_9_cast_fu_662_p1(0);
+    tmp_9_cast_reg_1135(1) <= tmp_9_cast_fu_662_p1(1);
+    tmp_9_cast_reg_1135(2) <= tmp_9_cast_fu_662_p1(2);
+    tmp_9_cast_reg_1135(3) <= tmp_9_cast_fu_662_p1(3);
+    tmp_9_cast_reg_1135(4) <= tmp_9_cast_fu_662_p1(4);
+    tmp_9_cast_reg_1135(5) <= tmp_9_cast_fu_662_p1(5);
+    tmp_9_cast_reg_1135(6) <= tmp_9_cast_fu_662_p1(6);
+    tmp_9_cast_reg_1135(7) <= tmp_9_cast_fu_662_p1(7);
+    tmp_9_cast_reg_1135(8) <= tmp_9_cast_fu_662_p1(8);
+    tmp_9_cast_reg_1135(9) <= tmp_9_cast_fu_662_p1(9);
+    tmp_9_cast_reg_1135(10) <= tmp_9_cast_fu_662_p1(10);
+    tmp_9_cast_reg_1135(11) <= tmp_9_cast_fu_662_p1(11);
+    tmp_9_cast_reg_1135(12) <= tmp_9_cast_fu_662_p1(12);
+    tmp_9_cast_reg_1135(13) <= tmp_9_cast_fu_662_p1(13);
+    tmp_9_cast_reg_1135(14) <= tmp_9_cast_fu_662_p1(14);
+    tmp_9_cast_reg_1135(15) <= tmp_9_cast_fu_662_p1(15);
+    tmp_9_cast_reg_1135(16) <= tmp_9_cast_fu_662_p1(16);
+    tmp_9_cast_reg_1135(17) <= tmp_9_cast_fu_662_p1(17);
+    tmp_9_cast_reg_1135(18) <= tmp_9_cast_fu_662_p1(18);
+    tmp_9_cast_reg_1135(19) <= tmp_9_cast_fu_662_p1(19);
+    tmp_9_cast_reg_1135(20) <= tmp_9_cast_fu_662_p1(20);
+    tmp_9_cast_reg_1135(21) <= tmp_9_cast_fu_662_p1(21);
+    tmp_9_cast_reg_1135(22) <= tmp_9_cast_fu_662_p1(22);
+    tmp_9_cast_reg_1135(23) <= tmp_9_cast_fu_662_p1(23);
+    tmp_9_cast_reg_1135(24) <= tmp_9_cast_fu_662_p1(24);
+    tmp_9_cast_reg_1135(25) <= tmp_9_cast_fu_662_p1(25);
+    tmp_9_cast_reg_1135(26) <= tmp_9_cast_fu_662_p1(26);
+    tmp_9_cast_reg_1135(27) <= tmp_9_cast_fu_662_p1(27);
+    tmp_9_cast_reg_1135(28) <= tmp_9_cast_fu_662_p1(28);
+    tmp_9_cast_reg_1135(29) <= tmp_9_cast_fu_662_p1(29);
+            end if;
+        end if;
+    end process;
+
+    -- assign process. --
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if (((ap_ST_st5_fsm_4 = ap_CS_fsm) and (ap_const_lv1_0 = tmp_3_fu_666_p2))) then
+                master_portA_addr_reg_1143 <= tmp_7_cast_fu_680_p1(32 - 1 downto 0);
             end if;
         end if;
     end process;
@@ -1864,67 +1929,67 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_ST_st65_fsm_14 = ap_CS_fsm)) then
-                master_portA_addr_1_reg_1318(0) <= tmp_11_fu_993_p1(32 - 1 downto 0)(0);
-    master_portA_addr_1_reg_1318(1) <= tmp_11_fu_993_p1(32 - 1 downto 0)(1);
-    master_portA_addr_1_reg_1318(2) <= tmp_11_fu_993_p1(32 - 1 downto 0)(2);
-    master_portA_addr_1_reg_1318(3) <= tmp_11_fu_993_p1(32 - 1 downto 0)(3);
-    master_portA_addr_1_reg_1318(4) <= tmp_11_fu_993_p1(32 - 1 downto 0)(4);
-    master_portA_addr_1_reg_1318(5) <= tmp_11_fu_993_p1(32 - 1 downto 0)(5);
-    master_portA_addr_1_reg_1318(6) <= tmp_11_fu_993_p1(32 - 1 downto 0)(6);
-    master_portA_addr_1_reg_1318(7) <= tmp_11_fu_993_p1(32 - 1 downto 0)(7);
-    master_portA_addr_1_reg_1318(8) <= tmp_11_fu_993_p1(32 - 1 downto 0)(8);
-    master_portA_addr_1_reg_1318(9) <= tmp_11_fu_993_p1(32 - 1 downto 0)(9);
-    master_portA_addr_1_reg_1318(10) <= tmp_11_fu_993_p1(32 - 1 downto 0)(10);
-    master_portA_addr_1_reg_1318(11) <= tmp_11_fu_993_p1(32 - 1 downto 0)(11);
-    master_portA_addr_1_reg_1318(12) <= tmp_11_fu_993_p1(32 - 1 downto 0)(12);
-    master_portA_addr_1_reg_1318(13) <= tmp_11_fu_993_p1(32 - 1 downto 0)(13);
-    master_portA_addr_1_reg_1318(14) <= tmp_11_fu_993_p1(32 - 1 downto 0)(14);
-    master_portA_addr_1_reg_1318(15) <= tmp_11_fu_993_p1(32 - 1 downto 0)(15);
-    master_portA_addr_1_reg_1318(16) <= tmp_11_fu_993_p1(32 - 1 downto 0)(16);
-    master_portA_addr_1_reg_1318(17) <= tmp_11_fu_993_p1(32 - 1 downto 0)(17);
-    master_portA_addr_1_reg_1318(18) <= tmp_11_fu_993_p1(32 - 1 downto 0)(18);
-    master_portA_addr_1_reg_1318(19) <= tmp_11_fu_993_p1(32 - 1 downto 0)(19);
-    master_portA_addr_1_reg_1318(20) <= tmp_11_fu_993_p1(32 - 1 downto 0)(20);
-    master_portA_addr_1_reg_1318(21) <= tmp_11_fu_993_p1(32 - 1 downto 0)(21);
-    master_portA_addr_1_reg_1318(22) <= tmp_11_fu_993_p1(32 - 1 downto 0)(22);
-    master_portA_addr_1_reg_1318(23) <= tmp_11_fu_993_p1(32 - 1 downto 0)(23);
-    master_portA_addr_1_reg_1318(24) <= tmp_11_fu_993_p1(32 - 1 downto 0)(24);
-    master_portA_addr_1_reg_1318(25) <= tmp_11_fu_993_p1(32 - 1 downto 0)(25);
-    master_portA_addr_1_reg_1318(26) <= tmp_11_fu_993_p1(32 - 1 downto 0)(26);
-    master_portA_addr_1_reg_1318(27) <= tmp_11_fu_993_p1(32 - 1 downto 0)(27);
-    master_portA_addr_1_reg_1318(28) <= tmp_11_fu_993_p1(32 - 1 downto 0)(28);
-    master_portA_addr_1_reg_1318(29) <= tmp_11_fu_993_p1(32 - 1 downto 0)(29);
-                tmp_16_reg_1328(0) <= tmp_16_fu_1035_p1(0);
-    tmp_16_reg_1328(1) <= tmp_16_fu_1035_p1(1);
-    tmp_16_reg_1328(2) <= tmp_16_fu_1035_p1(2);
-    tmp_16_reg_1328(3) <= tmp_16_fu_1035_p1(3);
-    tmp_16_reg_1328(4) <= tmp_16_fu_1035_p1(4);
-    tmp_16_reg_1328(5) <= tmp_16_fu_1035_p1(5);
-    tmp_16_reg_1328(6) <= tmp_16_fu_1035_p1(6);
-    tmp_16_reg_1328(7) <= tmp_16_fu_1035_p1(7);
-    tmp_16_reg_1328(8) <= tmp_16_fu_1035_p1(8);
-    tmp_16_reg_1328(9) <= tmp_16_fu_1035_p1(9);
-    tmp_16_reg_1328(10) <= tmp_16_fu_1035_p1(10);
-    tmp_16_reg_1328(11) <= tmp_16_fu_1035_p1(11);
-    tmp_16_reg_1328(12) <= tmp_16_fu_1035_p1(12);
-    tmp_16_reg_1328(13) <= tmp_16_fu_1035_p1(13);
-    tmp_16_reg_1328(14) <= tmp_16_fu_1035_p1(14);
-    tmp_16_reg_1328(15) <= tmp_16_fu_1035_p1(15);
-    tmp_16_reg_1328(16) <= tmp_16_fu_1035_p1(16);
-    tmp_16_reg_1328(17) <= tmp_16_fu_1035_p1(17);
-    tmp_16_reg_1328(18) <= tmp_16_fu_1035_p1(18);
-    tmp_16_reg_1328(19) <= tmp_16_fu_1035_p1(19);
-    tmp_16_reg_1328(20) <= tmp_16_fu_1035_p1(20);
-    tmp_16_reg_1328(21) <= tmp_16_fu_1035_p1(21);
-    tmp_16_reg_1328(22) <= tmp_16_fu_1035_p1(22);
-    tmp_16_reg_1328(23) <= tmp_16_fu_1035_p1(23);
-    tmp_16_reg_1328(24) <= tmp_16_fu_1035_p1(24);
-    tmp_16_reg_1328(25) <= tmp_16_fu_1035_p1(25);
-    tmp_16_reg_1328(26) <= tmp_16_fu_1035_p1(26);
-    tmp_16_reg_1328(27) <= tmp_16_fu_1035_p1(27);
-    tmp_16_reg_1328(28) <= tmp_16_fu_1035_p1(28);
-    tmp_16_reg_1328(29) <= tmp_16_fu_1035_p1(29);
-                tmp_20_add_i32_shr_reg_1323 <= tmp_13_fu_1019_p2(31 downto 2);
+                master_portB_addr_reg_1346(0) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(0);
+    master_portB_addr_reg_1346(1) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(1);
+    master_portB_addr_reg_1346(2) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(2);
+    master_portB_addr_reg_1346(3) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(3);
+    master_portB_addr_reg_1346(4) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(4);
+    master_portB_addr_reg_1346(5) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(5);
+    master_portB_addr_reg_1346(6) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(6);
+    master_portB_addr_reg_1346(7) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(7);
+    master_portB_addr_reg_1346(8) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(8);
+    master_portB_addr_reg_1346(9) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(9);
+    master_portB_addr_reg_1346(10) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(10);
+    master_portB_addr_reg_1346(11) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(11);
+    master_portB_addr_reg_1346(12) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(12);
+    master_portB_addr_reg_1346(13) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(13);
+    master_portB_addr_reg_1346(14) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(14);
+    master_portB_addr_reg_1346(15) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(15);
+    master_portB_addr_reg_1346(16) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(16);
+    master_portB_addr_reg_1346(17) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(17);
+    master_portB_addr_reg_1346(18) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(18);
+    master_portB_addr_reg_1346(19) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(19);
+    master_portB_addr_reg_1346(20) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(20);
+    master_portB_addr_reg_1346(21) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(21);
+    master_portB_addr_reg_1346(22) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(22);
+    master_portB_addr_reg_1346(23) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(23);
+    master_portB_addr_reg_1346(24) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(24);
+    master_portB_addr_reg_1346(25) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(25);
+    master_portB_addr_reg_1346(26) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(26);
+    master_portB_addr_reg_1346(27) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(27);
+    master_portB_addr_reg_1346(28) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(28);
+    master_portB_addr_reg_1346(29) <= tmp_29_cast_fu_1021_p1(32 - 1 downto 0)(29);
+                tmp_24_reg_1356(0) <= tmp_24_fu_1063_p1(0);
+    tmp_24_reg_1356(1) <= tmp_24_fu_1063_p1(1);
+    tmp_24_reg_1356(2) <= tmp_24_fu_1063_p1(2);
+    tmp_24_reg_1356(3) <= tmp_24_fu_1063_p1(3);
+    tmp_24_reg_1356(4) <= tmp_24_fu_1063_p1(4);
+    tmp_24_reg_1356(5) <= tmp_24_fu_1063_p1(5);
+    tmp_24_reg_1356(6) <= tmp_24_fu_1063_p1(6);
+    tmp_24_reg_1356(7) <= tmp_24_fu_1063_p1(7);
+    tmp_24_reg_1356(8) <= tmp_24_fu_1063_p1(8);
+    tmp_24_reg_1356(9) <= tmp_24_fu_1063_p1(9);
+    tmp_24_reg_1356(10) <= tmp_24_fu_1063_p1(10);
+    tmp_24_reg_1356(11) <= tmp_24_fu_1063_p1(11);
+    tmp_24_reg_1356(12) <= tmp_24_fu_1063_p1(12);
+    tmp_24_reg_1356(13) <= tmp_24_fu_1063_p1(13);
+    tmp_24_reg_1356(14) <= tmp_24_fu_1063_p1(14);
+    tmp_24_reg_1356(15) <= tmp_24_fu_1063_p1(15);
+    tmp_24_reg_1356(16) <= tmp_24_fu_1063_p1(16);
+    tmp_24_reg_1356(17) <= tmp_24_fu_1063_p1(17);
+    tmp_24_reg_1356(18) <= tmp_24_fu_1063_p1(18);
+    tmp_24_reg_1356(19) <= tmp_24_fu_1063_p1(19);
+    tmp_24_reg_1356(20) <= tmp_24_fu_1063_p1(20);
+    tmp_24_reg_1356(21) <= tmp_24_fu_1063_p1(21);
+    tmp_24_reg_1356(22) <= tmp_24_fu_1063_p1(22);
+    tmp_24_reg_1356(23) <= tmp_24_fu_1063_p1(23);
+    tmp_24_reg_1356(24) <= tmp_24_fu_1063_p1(24);
+    tmp_24_reg_1356(25) <= tmp_24_fu_1063_p1(25);
+    tmp_24_reg_1356(26) <= tmp_24_fu_1063_p1(26);
+    tmp_24_reg_1356(27) <= tmp_24_fu_1063_p1(27);
+    tmp_24_reg_1356(28) <= tmp_24_fu_1063_p1(28);
+    tmp_24_reg_1356(29) <= tmp_24_fu_1063_p1(29);
+                tmp_39_add_i32_shr_reg_1351 <= tmp_16_fu_1047_p2(31 downto 2);
             end if;
         end if;
     end process;
@@ -1933,8 +1998,8 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_reg_ppstg_exitcond_reg_1115_pp1_it5 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))))) then
-                master_portA_addr_read_reg_1128 <= master_portA_datain;
+            if (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it1) and (ap_const_lv1_0 = tmp_s_reg_1265))) then
+                p_s_reg_1329 <= p_s_fu_961_p3;
             end if;
         end if;
     end process;
@@ -1943,37 +2008,8 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_st5_fsm_4 = ap_CS_fsm) and (ap_const_lv1_0 = tmp_3_fu_627_p2))) then
-                master_portA_addr_reg_1104(0) <= tmp_6_fu_647_p1(32 - 1 downto 0)(0);
-    master_portA_addr_reg_1104(1) <= tmp_6_fu_647_p1(32 - 1 downto 0)(1);
-    master_portA_addr_reg_1104(2) <= tmp_6_fu_647_p1(32 - 1 downto 0)(2);
-    master_portA_addr_reg_1104(3) <= tmp_6_fu_647_p1(32 - 1 downto 0)(3);
-    master_portA_addr_reg_1104(4) <= tmp_6_fu_647_p1(32 - 1 downto 0)(4);
-    master_portA_addr_reg_1104(5) <= tmp_6_fu_647_p1(32 - 1 downto 0)(5);
-    master_portA_addr_reg_1104(6) <= tmp_6_fu_647_p1(32 - 1 downto 0)(6);
-    master_portA_addr_reg_1104(7) <= tmp_6_fu_647_p1(32 - 1 downto 0)(7);
-    master_portA_addr_reg_1104(8) <= tmp_6_fu_647_p1(32 - 1 downto 0)(8);
-    master_portA_addr_reg_1104(9) <= tmp_6_fu_647_p1(32 - 1 downto 0)(9);
-    master_portA_addr_reg_1104(10) <= tmp_6_fu_647_p1(32 - 1 downto 0)(10);
-    master_portA_addr_reg_1104(11) <= tmp_6_fu_647_p1(32 - 1 downto 0)(11);
-    master_portA_addr_reg_1104(12) <= tmp_6_fu_647_p1(32 - 1 downto 0)(12);
-    master_portA_addr_reg_1104(13) <= tmp_6_fu_647_p1(32 - 1 downto 0)(13);
-    master_portA_addr_reg_1104(14) <= tmp_6_fu_647_p1(32 - 1 downto 0)(14);
-    master_portA_addr_reg_1104(15) <= tmp_6_fu_647_p1(32 - 1 downto 0)(15);
-    master_portA_addr_reg_1104(16) <= tmp_6_fu_647_p1(32 - 1 downto 0)(16);
-    master_portA_addr_reg_1104(17) <= tmp_6_fu_647_p1(32 - 1 downto 0)(17);
-    master_portA_addr_reg_1104(18) <= tmp_6_fu_647_p1(32 - 1 downto 0)(18);
-    master_portA_addr_reg_1104(19) <= tmp_6_fu_647_p1(32 - 1 downto 0)(19);
-    master_portA_addr_reg_1104(20) <= tmp_6_fu_647_p1(32 - 1 downto 0)(20);
-    master_portA_addr_reg_1104(21) <= tmp_6_fu_647_p1(32 - 1 downto 0)(21);
-    master_portA_addr_reg_1104(22) <= tmp_6_fu_647_p1(32 - 1 downto 0)(22);
-    master_portA_addr_reg_1104(23) <= tmp_6_fu_647_p1(32 - 1 downto 0)(23);
-    master_portA_addr_reg_1104(24) <= tmp_6_fu_647_p1(32 - 1 downto 0)(24);
-    master_portA_addr_reg_1104(25) <= tmp_6_fu_647_p1(32 - 1 downto 0)(25);
-    master_portA_addr_reg_1104(26) <= tmp_6_fu_647_p1(32 - 1 downto 0)(26);
-    master_portA_addr_reg_1104(27) <= tmp_6_fu_647_p1(32 - 1 downto 0)(27);
-    master_portA_addr_reg_1104(28) <= tmp_6_fu_647_p1(32 - 1 downto 0)(28);
-    master_portA_addr_reg_1104(29) <= tmp_6_fu_647_p1(32 - 1 downto 0)(29);
+            if ((((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_reg_ppstg_exitcond8_reg_1149_pp1_it5 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6)))) or ((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond1_reg_1173_pp2_it5) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6)))))) then
+                reg_604 <= master_portA_datain;
             end if;
         end if;
     end process;
@@ -1982,8 +2018,8 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond2_reg_1144_pp2_it5) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then
-                master_portB_addr_read_reg_1157 <= master_portB_datain;
+            if ((((ap_ST_st24_fsm_9 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond5_reg_1186)) or ((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it1) and (ap_const_lv1_0 = tmp_s_reg_1265)))) then
+                reg_610 <= centre_buffer_2_wgtCent_value_q0;
             end if;
         end if;
     end process;
@@ -1992,9 +2028,41 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it1) and (ap_const_lv1_0 = exitcond7_reg_1241))) then
-                p_s_reg_1301 <= p_s_fu_927_p3;
-                total_distortion_1_reg_1313 <= total_distortion_1_fu_948_p2;
+            if (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it0) and (ap_const_lv1_0 = tmp_s_fu_916_p2))) then
+                tmp_10_reg_1286 <= tmp_10_fu_939_p2;
+                tmp_13_reg_1298 <= tmp_13_fu_945_p2;
+                tmp_6_reg_1274(0) <= tmp_6_fu_927_p1(0);
+    tmp_6_reg_1274(1) <= tmp_6_fu_927_p1(1);
+    tmp_6_reg_1274(2) <= tmp_6_fu_927_p1(2);
+    tmp_6_reg_1274(3) <= tmp_6_fu_927_p1(3);
+    tmp_6_reg_1274(4) <= tmp_6_fu_927_p1(4);
+    tmp_6_reg_1274(5) <= tmp_6_fu_927_p1(5);
+    tmp_6_reg_1274(6) <= tmp_6_fu_927_p1(6);
+    tmp_6_reg_1274(7) <= tmp_6_fu_927_p1(7);
+    tmp_6_reg_1274(8) <= tmp_6_fu_927_p1(8);
+    tmp_6_reg_1274(9) <= tmp_6_fu_927_p1(9);
+    tmp_6_reg_1274(10) <= tmp_6_fu_927_p1(10);
+    tmp_6_reg_1274(11) <= tmp_6_fu_927_p1(11);
+    tmp_6_reg_1274(12) <= tmp_6_fu_927_p1(12);
+    tmp_6_reg_1274(13) <= tmp_6_fu_927_p1(13);
+    tmp_6_reg_1274(14) <= tmp_6_fu_927_p1(14);
+    tmp_6_reg_1274(15) <= tmp_6_fu_927_p1(15);
+    tmp_6_reg_1274(16) <= tmp_6_fu_927_p1(16);
+    tmp_6_reg_1274(17) <= tmp_6_fu_927_p1(17);
+    tmp_6_reg_1274(18) <= tmp_6_fu_927_p1(18);
+    tmp_6_reg_1274(19) <= tmp_6_fu_927_p1(19);
+    tmp_6_reg_1274(20) <= tmp_6_fu_927_p1(20);
+    tmp_6_reg_1274(21) <= tmp_6_fu_927_p1(21);
+    tmp_6_reg_1274(22) <= tmp_6_fu_927_p1(22);
+    tmp_6_reg_1274(23) <= tmp_6_fu_927_p1(23);
+    tmp_6_reg_1274(24) <= tmp_6_fu_927_p1(24);
+    tmp_6_reg_1274(25) <= tmp_6_fu_927_p1(25);
+    tmp_6_reg_1274(26) <= tmp_6_fu_927_p1(26);
+    tmp_6_reg_1274(27) <= tmp_6_fu_927_p1(27);
+    tmp_6_reg_1274(28) <= tmp_6_fu_927_p1(28);
+    tmp_6_reg_1274(29) <= tmp_6_fu_927_p1(29);
+    tmp_6_reg_1274(30) <= tmp_6_fu_927_p1(30);
+    tmp_6_reg_1274(31) <= tmp_6_fu_927_p1(31);
             end if;
         end if;
     end process;
@@ -2003,71 +2071,9 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if ((((ap_ST_st24_fsm_9 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond4_reg_1162)) or ((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it1) and (ap_const_lv1_0 = exitcond7_reg_1241)))) then
-                reg_597 <= centre_buffer_2_wgtCent_value_q0;
-            end if;
-        end if;
-    end process;
-
-    -- assign process. --
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it0) and (ap_const_lv1_0 = exitcond7_fu_894_p2))) then
-                tmp_18_reg_1250(0) <= tmp_18_fu_905_p1(0);
-    tmp_18_reg_1250(1) <= tmp_18_fu_905_p1(1);
-    tmp_18_reg_1250(2) <= tmp_18_fu_905_p1(2);
-    tmp_18_reg_1250(3) <= tmp_18_fu_905_p1(3);
-    tmp_18_reg_1250(4) <= tmp_18_fu_905_p1(4);
-    tmp_18_reg_1250(5) <= tmp_18_fu_905_p1(5);
-    tmp_18_reg_1250(6) <= tmp_18_fu_905_p1(6);
-    tmp_18_reg_1250(7) <= tmp_18_fu_905_p1(7);
-    tmp_18_reg_1250(8) <= tmp_18_fu_905_p1(8);
-    tmp_18_reg_1250(9) <= tmp_18_fu_905_p1(9);
-    tmp_18_reg_1250(10) <= tmp_18_fu_905_p1(10);
-    tmp_18_reg_1250(11) <= tmp_18_fu_905_p1(11);
-    tmp_18_reg_1250(12) <= tmp_18_fu_905_p1(12);
-    tmp_18_reg_1250(13) <= tmp_18_fu_905_p1(13);
-    tmp_18_reg_1250(14) <= tmp_18_fu_905_p1(14);
-    tmp_18_reg_1250(15) <= tmp_18_fu_905_p1(15);
-    tmp_18_reg_1250(16) <= tmp_18_fu_905_p1(16);
-    tmp_18_reg_1250(17) <= tmp_18_fu_905_p1(17);
-    tmp_18_reg_1250(18) <= tmp_18_fu_905_p1(18);
-    tmp_18_reg_1250(19) <= tmp_18_fu_905_p1(19);
-    tmp_18_reg_1250(20) <= tmp_18_fu_905_p1(20);
-    tmp_18_reg_1250(21) <= tmp_18_fu_905_p1(21);
-    tmp_18_reg_1250(22) <= tmp_18_fu_905_p1(22);
-    tmp_18_reg_1250(23) <= tmp_18_fu_905_p1(23);
-    tmp_18_reg_1250(24) <= tmp_18_fu_905_p1(24);
-    tmp_18_reg_1250(25) <= tmp_18_fu_905_p1(25);
-    tmp_18_reg_1250(26) <= tmp_18_fu_905_p1(26);
-    tmp_18_reg_1250(27) <= tmp_18_fu_905_p1(27);
-    tmp_18_reg_1250(28) <= tmp_18_fu_905_p1(28);
-    tmp_18_reg_1250(29) <= tmp_18_fu_905_p1(29);
-    tmp_18_reg_1250(30) <= tmp_18_fu_905_p1(30);
-    tmp_18_reg_1250(31) <= tmp_18_fu_905_p1(31);
-                tmp_19_reg_1263 <= tmp_19_fu_916_p2;
-            end if;
-        end if;
-    end process;
-
-    -- assign process. --
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_st5_fsm_4 = ap_CS_fsm) and not((ap_const_lv1_0 = tmp_3_fu_627_p2)))) then
-                tmp_1_reg_1110 <= tmp_1_fu_657_p2;
-            end if;
-        end if;
-    end process;
-
-    -- assign process. --
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_st23_fsm_8 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond4_fu_739_p2))) then
-                tmp_27_reg_1181 <= tmp_27_fu_782_p2;
-                tmp_38_reg_1171 <= tmp_38_fu_755_p1;
+            if (((ap_ST_st23_fsm_8 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond5_fu_761_p2))) then
+                tmp_22_reg_1205 <= tmp_22_fu_804_p2;
+                tmp_35_reg_1195 <= tmp_35_fu_777_p1;
             end if;
         end if;
     end process;
@@ -2077,16 +2083,16 @@ begin
     distortion_out1vld_reg <= '0';
     n0vld_reg <= '0';
     k0vld_reg <= '0';
-    lim_reg_1096(0) <= '0';
-    master_portA_addr_reg_1104(31 downto 30) <= "00";
-    master_portB_addr_reg_1138(31 downto 30) <= "00";
-    tmp_32_reg_1221(63 downto 32) <= "00000000000000000000000000000000";
-    tmp_18_reg_1250(63 downto 32) <= "00000000000000000000000000000000";
-    master_portA_addr_1_reg_1318(31 downto 30) <= "00";
-    tmp_16_reg_1328(31 downto 30) <= "00";
+    lim_reg_1125(0) <= '0';
+    tmp_5_cast_reg_1130(32 downto 30) <= "000";
+    tmp_9_cast_reg_1135(32 downto 30) <= "000";
+    tmp_27_reg_1245(63 downto 32) <= "00000000000000000000000000000000";
+    tmp_6_reg_1274(63 downto 32) <= "00000000000000000000000000000000";
+    master_portB_addr_reg_1346(31 downto 30) <= "00";
+    tmp_24_reg_1356(31 downto 30) <= "00";
 
     -- the next state (ap_NS_fsm) of the state machine. --
-    ap_NS_fsm_assign_proc : process (ap_start , ap_CS_fsm , distortion_out1ack_in , ap_reg_ppiten_pp1_it0 , ap_reg_ppiten_pp1_it1 , ap_sig_bdd_230 , ap_reg_ppiten_pp1_it6 , ap_reg_ppiten_pp1_it7 , ap_reg_ppiten_pp2_it0 , ap_reg_ppiten_pp2_it1 , ap_sig_bdd_264 , ap_reg_ppiten_pp2_it6 , ap_reg_ppiten_pp2_it7 , ap_reg_ppiten_pp4_it0 , ap_reg_ppiten_pp4_it1 , ap_reg_ppiten_pp4_it17 , ap_reg_ppiten_pp4_it18 , tmp_3_fu_627_p2 , exitcond_fu_662_p2 , exitcond2_fu_716_p2 , exitcond4_fu_739_p2 , exitcond7_fu_894_p2 , exitcond1_fu_1039_p2 , ap_reg_ppiten_pp5_it0 , ap_reg_ppiten_pp5_it1 , ap_sig_bdd_610 , ap_reg_ppiten_pp5_it2 , exitcond6_fu_601_p2)
+    ap_NS_fsm_assign_proc : process (ap_start , ap_CS_fsm , distortion_out1ack_in , ap_reg_ppiten_pp1_it0 , ap_reg_ppiten_pp1_it1 , ap_sig_bdd_230 , ap_reg_ppiten_pp1_it6 , ap_reg_ppiten_pp1_it7 , ap_reg_ppiten_pp2_it0 , ap_reg_ppiten_pp2_it1 , ap_sig_bdd_263 , ap_reg_ppiten_pp2_it6 , ap_reg_ppiten_pp2_it7 , ap_reg_ppiten_pp4_it17 , ap_reg_ppiten_pp4_it18 , tmp_3_fu_666_p2 , exitcond8_fu_690_p2 , exitcond1_fu_738_p2 , exitcond5_fu_761_p2 , exitcond_fu_1067_p2 , ap_reg_ppiten_pp5_it0 , ap_reg_ppiten_pp5_it1 , ap_sig_bdd_629 , ap_reg_ppiten_pp5_it2 , exitcond7_fu_614_p2)
     begin
         case ap_CS_fsm is
             when ap_ST_st1_fsm_0 => 
@@ -2098,7 +2104,7 @@ begin
             when ap_ST_st2_fsm_1 => 
                 ap_NS_fsm <= ap_ST_st3_fsm_2;
             when ap_ST_st3_fsm_2 => 
-                if ((ap_const_lv1_0 = exitcond6_fu_601_p2)) then
+                if ((ap_const_lv1_0 = exitcond7_fu_614_p2)) then
                     ap_NS_fsm <= ap_ST_st3_fsm_2;
                 else
                     ap_NS_fsm <= ap_ST_st4_fsm_3;
@@ -2106,15 +2112,15 @@ begin
             when ap_ST_st4_fsm_3 => 
                 ap_NS_fsm <= ap_ST_st5_fsm_4;
             when ap_ST_st5_fsm_4 => 
-                if (not((ap_const_lv1_0 = tmp_3_fu_627_p2))) then
-                    ap_NS_fsm <= ap_ST_pp4_stg0_fsm_12;
-                else
+                if ((ap_const_lv1_0 = tmp_3_fu_666_p2)) then
                     ap_NS_fsm <= ap_ST_pp1_stg0_fsm_5;
+                else
+                    ap_NS_fsm <= ap_ST_pp4_stg0_fsm_12;
                 end if;
             when ap_ST_pp1_stg0_fsm_5 => 
-                if ((not(((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it7) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and not((ap_const_logic_1 = ap_reg_ppiten_pp1_it6)))) and not(((ap_const_logic_1 = ap_reg_ppiten_pp1_it0) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and not((ap_const_lv1_0 = exitcond_fu_662_p2)) and not((ap_const_logic_1 = ap_reg_ppiten_pp1_it1)))))) then
+                if ((not(((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it7) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and not((ap_const_logic_1 = ap_reg_ppiten_pp1_it6)))) and not(((ap_const_logic_1 = ap_reg_ppiten_pp1_it0) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and not((ap_const_lv1_0 = exitcond8_fu_690_p2)) and not((ap_const_logic_1 = ap_reg_ppiten_pp1_it1)))))) then
                     ap_NS_fsm <= ap_ST_pp1_stg0_fsm_5;
-                elsif ((((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it7) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and not((ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) or ((ap_const_logic_1 = ap_reg_ppiten_pp1_it0) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and not((ap_const_lv1_0 = exitcond_fu_662_p2)) and not((ap_const_logic_1 = ap_reg_ppiten_pp1_it1))))) then
+                elsif ((((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it7) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and not((ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) or ((ap_const_logic_1 = ap_reg_ppiten_pp1_it0) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and not((ap_const_lv1_0 = exitcond8_fu_690_p2)) and not((ap_const_logic_1 = ap_reg_ppiten_pp1_it1))))) then
                     ap_NS_fsm <= ap_ST_st14_fsm_6;
                 else
                     ap_NS_fsm <= ap_ST_pp1_stg0_fsm_5;
@@ -2122,15 +2128,15 @@ begin
             when ap_ST_st14_fsm_6 => 
                 ap_NS_fsm <= ap_ST_pp2_stg0_fsm_7;
             when ap_ST_pp2_stg0_fsm_7 => 
-                if ((not(((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it7) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and not((ap_const_logic_1 = ap_reg_ppiten_pp2_it6)))) and not(((ap_const_logic_1 = ap_reg_ppiten_pp2_it0) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and not((ap_const_lv1_0 = exitcond2_fu_716_p2)) and not((ap_const_logic_1 = ap_reg_ppiten_pp2_it1)))))) then
+                if ((not(((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it7) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and not((ap_const_logic_1 = ap_reg_ppiten_pp2_it6)))) and not(((ap_const_logic_1 = ap_reg_ppiten_pp2_it0) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and not((ap_const_lv1_0 = exitcond1_fu_738_p2)) and not((ap_const_logic_1 = ap_reg_ppiten_pp2_it1)))))) then
                     ap_NS_fsm <= ap_ST_pp2_stg0_fsm_7;
-                elsif ((((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it7) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and not((ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) or ((ap_const_logic_1 = ap_reg_ppiten_pp2_it0) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and not((ap_const_lv1_0 = exitcond2_fu_716_p2)) and not((ap_const_logic_1 = ap_reg_ppiten_pp2_it1))))) then
+                elsif ((((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it7) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and not((ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) or ((ap_const_logic_1 = ap_reg_ppiten_pp2_it0) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and not((ap_const_lv1_0 = exitcond1_fu_738_p2)) and not((ap_const_logic_1 = ap_reg_ppiten_pp2_it1))))) then
                     ap_NS_fsm <= ap_ST_st23_fsm_8;
                 else
                     ap_NS_fsm <= ap_ST_pp2_stg0_fsm_7;
                 end if;
             when ap_ST_st23_fsm_8 => 
-                if ((ap_const_lv1_0 = exitcond4_fu_739_p2)) then
+                if ((ap_const_lv1_0 = exitcond5_fu_761_p2)) then
                     ap_NS_fsm <= ap_ST_st24_fsm_9;
                 else
                     ap_NS_fsm <= ap_ST_st26_fsm_11;
@@ -2142,11 +2148,7 @@ begin
             when ap_ST_st26_fsm_11 => 
                 ap_NS_fsm <= ap_ST_st5_fsm_4;
             when ap_ST_pp4_stg0_fsm_12 => 
-                if (not(((ap_const_logic_1 = ap_reg_ppiten_pp4_it0) and not((ap_const_lv1_0 = exitcond7_fu_894_p2)) and not((ap_const_logic_1 = ap_reg_ppiten_pp4_it1))))) then
-                    ap_NS_fsm <= ap_ST_pp4_stg1_fsm_13;
-                else
-                    ap_NS_fsm <= ap_ST_st65_fsm_14;
-                end if;
+                ap_NS_fsm <= ap_ST_pp4_stg1_fsm_13;
             when ap_ST_pp4_stg1_fsm_13 => 
                 if (not(((ap_const_logic_1 = ap_reg_ppiten_pp4_it18) and (ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm) and not((ap_const_logic_1 = ap_reg_ppiten_pp4_it17))))) then
                     ap_NS_fsm <= ap_ST_pp4_stg0_fsm_12;
@@ -2156,9 +2158,9 @@ begin
             when ap_ST_st65_fsm_14 => 
                 ap_NS_fsm <= ap_ST_pp5_stg0_fsm_15;
             when ap_ST_pp5_stg0_fsm_15 => 
-                if ((not(((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_logic_1 = ap_reg_ppiten_pp5_it1)))) and not(((ap_const_logic_1 = ap_reg_ppiten_pp5_it0) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_lv1_0 = exitcond1_fu_1039_p2)) and not((ap_const_logic_1 = ap_reg_ppiten_pp5_it1)))))) then
+                if ((not(((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_logic_1 = ap_reg_ppiten_pp5_it1)))) and not(((ap_const_logic_1 = ap_reg_ppiten_pp5_it0) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_lv1_0 = exitcond_fu_1067_p2)) and not((ap_const_logic_1 = ap_reg_ppiten_pp5_it1)))))) then
                     ap_NS_fsm <= ap_ST_pp5_stg0_fsm_15;
-                elsif ((((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_logic_1 = ap_reg_ppiten_pp5_it1))) or ((ap_const_logic_1 = ap_reg_ppiten_pp5_it0) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_lv1_0 = exitcond1_fu_1039_p2)) and not((ap_const_logic_1 = ap_reg_ppiten_pp5_it1))))) then
+                elsif ((((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_logic_1 = ap_reg_ppiten_pp5_it1))) or ((ap_const_logic_1 = ap_reg_ppiten_pp5_it0) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_lv1_0 = exitcond_fu_1067_p2)) and not((ap_const_logic_1 = ap_reg_ppiten_pp5_it1))))) then
                     ap_NS_fsm <= ap_ST_st69_fsm_16;
                 else
                     ap_NS_fsm <= ap_ST_pp5_stg0_fsm_15;
@@ -2209,37 +2211,51 @@ begin
     end process;
 
 
+    -- ap_sig_bdd_1247 assign process. --
+    ap_sig_bdd_1247_assign_proc : process(ap_CS_fsm, tmp_s_fu_916_p2)
+    begin
+                ap_sig_bdd_1247 <= ((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and not((ap_const_lv1_0 = tmp_s_fu_916_p2)));
+    end process;
+
+
+    -- ap_sig_bdd_1250 assign process. --
+    ap_sig_bdd_1250_assign_proc : process(ap_CS_fsm, tmp_s_reg_1265, tmp_13_reg_1298)
+    begin
+                ap_sig_bdd_1250 <= ((ap_const_lv1_0 = tmp_s_reg_1265) and (ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm) and not((ap_const_lv1_0 = tmp_13_reg_1298)));
+    end process;
+
+
     -- ap_sig_bdd_230 assign process. --
-    ap_sig_bdd_230_assign_proc : process(master_portA_rsp_empty_n, ap_reg_ppstg_exitcond_reg_1115_pp1_it5)
+    ap_sig_bdd_230_assign_proc : process(master_portA_rsp_empty_n, ap_reg_ppstg_exitcond8_reg_1149_pp1_it5)
     begin
-                ap_sig_bdd_230 <= ((master_portA_rsp_empty_n = ap_const_logic_0) and (ap_reg_ppstg_exitcond_reg_1115_pp1_it5 = ap_const_lv1_0));
+                ap_sig_bdd_230 <= ((master_portA_rsp_empty_n = ap_const_logic_0) and (ap_reg_ppstg_exitcond8_reg_1149_pp1_it5 = ap_const_lv1_0));
     end process;
 
 
-    -- ap_sig_bdd_264 assign process. --
-    ap_sig_bdd_264_assign_proc : process(master_portB_rsp_empty_n, ap_reg_ppstg_exitcond2_reg_1144_pp2_it5)
+    -- ap_sig_bdd_263 assign process. --
+    ap_sig_bdd_263_assign_proc : process(master_portA_rsp_empty_n, ap_reg_ppstg_exitcond1_reg_1173_pp2_it5)
     begin
-                ap_sig_bdd_264 <= ((master_portB_rsp_empty_n = ap_const_logic_0) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond2_reg_1144_pp2_it5));
+                ap_sig_bdd_263 <= ((master_portA_rsp_empty_n = ap_const_logic_0) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond1_reg_1173_pp2_it5));
     end process;
 
 
-    -- ap_sig_bdd_610 assign process. --
-    ap_sig_bdd_610_assign_proc : process(master_portA_req_full_n, ap_reg_ppstg_exitcond1_reg_1333_pp5_it1)
+    -- ap_sig_bdd_629 assign process. --
+    ap_sig_bdd_629_assign_proc : process(master_portB_req_full_n, ap_reg_ppstg_exitcond_reg_1361_pp5_it1)
     begin
-                ap_sig_bdd_610 <= ((master_portA_req_full_n = ap_const_logic_0) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond1_reg_1333_pp5_it1));
+                ap_sig_bdd_629 <= ((master_portB_req_full_n = ap_const_logic_0) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond_reg_1361_pp5_it1));
     end process;
 
-    b2_1_fu_685_p2 <= std_logic_vector(unsigned(b2_reg_514) + unsigned(ap_const_lv32_C));
-    b_1_fu_888_p2 <= std_logic_vector(unsigned(b_reg_502) + unsigned(ap_const_lv32_8));
+    b2_1_fu_713_p2 <= std_logic_vector(unsigned(b2_reg_510) + unsigned(ap_const_lv32_30));
+    b_1_fu_910_p2 <= std_logic_vector(unsigned(b_reg_498) + unsigned(ap_const_lv32_20));
 
     -- c_buffer_address0 assign process. --
-    c_buffer_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it18, tmp_22_fu_960_p1, tmp_32_2_fu_979_p1)
+    c_buffer_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it18, tmp_12_fu_988_p1, tmp_26_2_fu_1007_p1)
     begin
         if ((ap_const_logic_1 = ap_reg_ppiten_pp4_it18)) then
             if ((ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm)) then 
-                c_buffer_address0 <= tmp_32_2_fu_979_p1(10 - 1 downto 0);
+                c_buffer_address0 <= tmp_26_2_fu_1007_p1(10 - 1 downto 0);
             elsif ((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm)) then 
-                c_buffer_address0 <= tmp_22_fu_960_p1(10 - 1 downto 0);
+                c_buffer_address0 <= tmp_12_fu_988_p1(10 - 1 downto 0);
             else 
                 c_buffer_address0 <= "XXXXXXXXXX";
             end if;
@@ -2250,12 +2266,12 @@ begin
 
 
     -- c_buffer_address1 assign process. --
-    c_buffer_address1_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it18, ap_reg_ppiten_pp5_it0, tmp_32_1_fu_969_p1, tmp_29_fu_1050_p1)
+    c_buffer_address1_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it18, ap_reg_ppiten_pp5_it0, tmp_26_1_fu_997_p1, tmp_26_fu_1078_p1)
     begin
         if (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it18))) then 
-            c_buffer_address1 <= tmp_32_1_fu_969_p1(10 - 1 downto 0);
+            c_buffer_address1 <= tmp_26_1_fu_997_p1(10 - 1 downto 0);
         elsif (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it0))) then 
-            c_buffer_address1 <= tmp_29_fu_1050_p1(10 - 1 downto 0);
+            c_buffer_address1 <= tmp_26_fu_1078_p1(10 - 1 downto 0);
         else 
             c_buffer_address1 <= "XXXXXXXXXX";
         end if; 
@@ -2274,9 +2290,9 @@ begin
 
 
     -- c_buffer_ce1 assign process. --
-    c_buffer_ce1_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it18, ap_reg_ppiten_pp5_it0, ap_sig_bdd_610, ap_reg_ppiten_pp5_it2)
+    c_buffer_ce1_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it18, ap_reg_ppiten_pp5_it0, ap_sig_bdd_629, ap_reg_ppiten_pp5_it2)
     begin
-        if ((((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it0) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2)))) or ((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it18)))) then 
+        if ((((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it0) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2)))) or ((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it18)))) then 
             c_buffer_ce1 <= ap_const_logic_1;
         else 
             c_buffer_ce1 <= ap_const_logic_0;
@@ -2285,13 +2301,13 @@ begin
 
 
     -- c_buffer_d0 assign process. --
-    c_buffer_d0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it18, grp_fu_934_p2, grp_fu_954_p2)
+    c_buffer_d0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it18, grp_fu_968_p2, grp_fu_982_p2)
     begin
         if ((ap_const_logic_1 = ap_reg_ppiten_pp4_it18)) then
             if ((ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm)) then 
-                c_buffer_d0 <= grp_fu_954_p2;
+                c_buffer_d0 <= grp_fu_982_p2;
             elsif ((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm)) then 
-                c_buffer_d0 <= grp_fu_934_p2;
+                c_buffer_d0 <= grp_fu_968_p2;
             else 
                 c_buffer_d0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
             end if;
@@ -2300,12 +2316,12 @@ begin
         end if; 
     end process;
 
-    c_buffer_d1 <= grp_fu_941_p2;
+    c_buffer_d1 <= grp_fu_975_p2;
 
     -- c_buffer_we0 assign process. --
-    c_buffer_we0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it18, ap_reg_ppstg_exitcond7_reg_1241_pp4_it17, ap_reg_ppstg_exitcond7_reg_1241_pp4_it18)
+    c_buffer_we0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it18, ap_reg_ppstg_tmp_s_reg_1265_pp4_it17, ap_reg_ppstg_tmp_s_reg_1265_pp4_it18)
     begin
-        if ((((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it18) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond7_reg_1241_pp4_it17)) or ((ap_const_logic_1 = ap_reg_ppiten_pp4_it18) and (ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond7_reg_1241_pp4_it18)))) then 
+        if ((((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it18) and (ap_const_lv1_0 = ap_reg_ppstg_tmp_s_reg_1265_pp4_it17)) or ((ap_const_logic_1 = ap_reg_ppiten_pp4_it18) and (ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm) and (ap_const_lv1_0 = ap_reg_ppstg_tmp_s_reg_1265_pp4_it18)))) then 
             c_buffer_we0 <= ap_const_logic_1;
         else 
             c_buffer_we0 <= ap_const_logic_0;
@@ -2314,9 +2330,9 @@ begin
 
 
     -- c_buffer_we1 assign process. --
-    c_buffer_we1_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it18, ap_reg_ppstg_exitcond7_reg_1241_pp4_it17)
+    c_buffer_we1_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it18, ap_reg_ppstg_tmp_s_reg_1265_pp4_it17)
     begin
-        if ((((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it18) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond7_reg_1241_pp4_it17)))) then 
+        if ((((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it18) and (ap_const_lv1_0 = ap_reg_ppstg_tmp_s_reg_1265_pp4_it17)))) then 
             c_buffer_we1 <= ap_const_logic_1;
         else 
             c_buffer_we1 <= ap_const_logic_0;
@@ -2325,16 +2341,16 @@ begin
 
 
     -- centre_buffer_0_wgtCent_value_address0 assign process. --
-    centre_buffer_0_wgtCent_value_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it0, tmp_32_fu_845_p1, tmp_18_reg_1250, tmp_2_fu_613_p1, tmp_33_fu_812_p1)
+    centre_buffer_0_wgtCent_value_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it0, tmp_27_fu_867_p1, tmp_6_reg_1274, tmp_2_fu_626_p1, tmp_28_fu_834_p1)
     begin
         if ((ap_ST_st24_fsm_9 = ap_CS_fsm)) then 
-            centre_buffer_0_wgtCent_value_address0 <= tmp_32_fu_845_p1(8 - 1 downto 0);
+            centre_buffer_0_wgtCent_value_address0 <= tmp_27_fu_867_p1(8 - 1 downto 0);
         elsif ((ap_ST_st3_fsm_2 = ap_CS_fsm)) then 
-            centre_buffer_0_wgtCent_value_address0 <= tmp_2_fu_613_p1(8 - 1 downto 0);
+            centre_buffer_0_wgtCent_value_address0 <= tmp_2_fu_626_p1(8 - 1 downto 0);
         elsif (((ap_const_logic_1 = ap_reg_ppiten_pp4_it0) and (ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm))) then 
-            centre_buffer_0_wgtCent_value_address0 <= tmp_18_reg_1250(8 - 1 downto 0);
+            centre_buffer_0_wgtCent_value_address0 <= tmp_6_reg_1274(8 - 1 downto 0);
         elsif ((ap_ST_st23_fsm_8 = ap_CS_fsm)) then 
-            centre_buffer_0_wgtCent_value_address0 <= tmp_33_fu_812_p1(8 - 1 downto 0);
+            centre_buffer_0_wgtCent_value_address0 <= tmp_28_fu_834_p1(8 - 1 downto 0);
         else 
             centre_buffer_0_wgtCent_value_address0 <= "XXXXXXXX";
         end if; 
@@ -2353,10 +2369,10 @@ begin
 
 
     -- centre_buffer_0_wgtCent_value_d0 assign process. --
-    centre_buffer_0_wgtCent_value_d0_assign_proc : process(ap_CS_fsm, tmp_36_fu_853_p2)
+    centre_buffer_0_wgtCent_value_d0_assign_proc : process(ap_CS_fsm, tmp_33_fu_875_p2)
     begin
         if ((ap_ST_st24_fsm_9 = ap_CS_fsm)) then 
-            centre_buffer_0_wgtCent_value_d0 <= tmp_36_fu_853_p2;
+            centre_buffer_0_wgtCent_value_d0 <= tmp_33_fu_875_p2;
         elsif ((ap_ST_st3_fsm_2 = ap_CS_fsm)) then 
             centre_buffer_0_wgtCent_value_d0 <= ap_const_lv32_0;
         else 
@@ -2366,9 +2382,9 @@ begin
 
 
     -- centre_buffer_0_wgtCent_value_we0 assign process. --
-    centre_buffer_0_wgtCent_value_we0_assign_proc : process(ap_CS_fsm, exitcond4_reg_1162, exitcond6_fu_601_p2)
+    centre_buffer_0_wgtCent_value_we0_assign_proc : process(ap_CS_fsm, exitcond5_reg_1186, exitcond7_fu_614_p2)
     begin
-        if ((((ap_ST_st24_fsm_9 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond4_reg_1162)) or ((ap_ST_st3_fsm_2 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond6_fu_601_p2)))) then 
+        if ((((ap_ST_st24_fsm_9 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond5_reg_1186)) or ((ap_ST_st3_fsm_2 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond7_fu_614_p2)))) then 
             centre_buffer_0_wgtCent_value_we0 <= ap_const_logic_1;
         else 
             centre_buffer_0_wgtCent_value_we0 <= ap_const_logic_0;
@@ -2377,16 +2393,16 @@ begin
 
 
     -- centre_buffer_1_wgtCent_value_address0 assign process. --
-    centre_buffer_1_wgtCent_value_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it0, tmp_32_fu_845_p1, tmp_18_reg_1250, tmp_2_fu_613_p1, tmp_33_fu_812_p1)
+    centre_buffer_1_wgtCent_value_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it0, tmp_27_fu_867_p1, tmp_6_reg_1274, tmp_2_fu_626_p1, tmp_28_fu_834_p1)
     begin
         if ((ap_ST_st24_fsm_9 = ap_CS_fsm)) then 
-            centre_buffer_1_wgtCent_value_address0 <= tmp_32_fu_845_p1(8 - 1 downto 0);
+            centre_buffer_1_wgtCent_value_address0 <= tmp_27_fu_867_p1(8 - 1 downto 0);
         elsif ((ap_ST_st3_fsm_2 = ap_CS_fsm)) then 
-            centre_buffer_1_wgtCent_value_address0 <= tmp_2_fu_613_p1(8 - 1 downto 0);
+            centre_buffer_1_wgtCent_value_address0 <= tmp_2_fu_626_p1(8 - 1 downto 0);
         elsif (((ap_const_logic_1 = ap_reg_ppiten_pp4_it0) and (ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm))) then 
-            centre_buffer_1_wgtCent_value_address0 <= tmp_18_reg_1250(8 - 1 downto 0);
+            centre_buffer_1_wgtCent_value_address0 <= tmp_6_reg_1274(8 - 1 downto 0);
         elsif ((ap_ST_st23_fsm_8 = ap_CS_fsm)) then 
-            centre_buffer_1_wgtCent_value_address0 <= tmp_33_fu_812_p1(8 - 1 downto 0);
+            centre_buffer_1_wgtCent_value_address0 <= tmp_28_fu_834_p1(8 - 1 downto 0);
         else 
             centre_buffer_1_wgtCent_value_address0 <= "XXXXXXXX";
         end if; 
@@ -2405,10 +2421,10 @@ begin
 
 
     -- centre_buffer_1_wgtCent_value_d0 assign process. --
-    centre_buffer_1_wgtCent_value_d0_assign_proc : process(ap_CS_fsm, tmp_42_1_fu_860_p2)
+    centre_buffer_1_wgtCent_value_d0_assign_proc : process(ap_CS_fsm, tmp_44_1_fu_882_p2)
     begin
         if ((ap_ST_st24_fsm_9 = ap_CS_fsm)) then 
-            centre_buffer_1_wgtCent_value_d0 <= tmp_42_1_fu_860_p2;
+            centre_buffer_1_wgtCent_value_d0 <= tmp_44_1_fu_882_p2;
         elsif ((ap_ST_st3_fsm_2 = ap_CS_fsm)) then 
             centre_buffer_1_wgtCent_value_d0 <= ap_const_lv32_0;
         else 
@@ -2418,9 +2434,9 @@ begin
 
 
     -- centre_buffer_1_wgtCent_value_we0 assign process. --
-    centre_buffer_1_wgtCent_value_we0_assign_proc : process(ap_CS_fsm, exitcond4_reg_1162, exitcond6_fu_601_p2)
+    centre_buffer_1_wgtCent_value_we0_assign_proc : process(ap_CS_fsm, exitcond5_reg_1186, exitcond7_fu_614_p2)
     begin
-        if ((((ap_ST_st24_fsm_9 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond4_reg_1162)) or ((ap_ST_st3_fsm_2 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond6_fu_601_p2)))) then 
+        if ((((ap_ST_st24_fsm_9 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond5_reg_1186)) or ((ap_ST_st3_fsm_2 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond7_fu_614_p2)))) then 
             centre_buffer_1_wgtCent_value_we0 <= ap_const_logic_1;
         else 
             centre_buffer_1_wgtCent_value_we0 <= ap_const_logic_0;
@@ -2429,16 +2445,16 @@ begin
 
 
     -- centre_buffer_2_wgtCent_value_address0 assign process. --
-    centre_buffer_2_wgtCent_value_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it0, tmp_32_reg_1221, tmp_18_reg_1250, tmp_2_fu_613_p1, tmp_33_fu_812_p1)
+    centre_buffer_2_wgtCent_value_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it0, tmp_27_reg_1245, tmp_6_reg_1274, tmp_2_fu_626_p1, tmp_28_fu_834_p1)
     begin
         if ((ap_ST_st25_fsm_10 = ap_CS_fsm)) then 
-            centre_buffer_2_wgtCent_value_address0 <= tmp_32_reg_1221(8 - 1 downto 0);
+            centre_buffer_2_wgtCent_value_address0 <= tmp_27_reg_1245(8 - 1 downto 0);
         elsif ((ap_ST_st3_fsm_2 = ap_CS_fsm)) then 
-            centre_buffer_2_wgtCent_value_address0 <= tmp_2_fu_613_p1(8 - 1 downto 0);
+            centre_buffer_2_wgtCent_value_address0 <= tmp_2_fu_626_p1(8 - 1 downto 0);
         elsif (((ap_const_logic_1 = ap_reg_ppiten_pp4_it0) and (ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm))) then 
-            centre_buffer_2_wgtCent_value_address0 <= tmp_18_reg_1250(8 - 1 downto 0);
+            centre_buffer_2_wgtCent_value_address0 <= tmp_6_reg_1274(8 - 1 downto 0);
         elsif ((ap_ST_st23_fsm_8 = ap_CS_fsm)) then 
-            centre_buffer_2_wgtCent_value_address0 <= tmp_33_fu_812_p1(8 - 1 downto 0);
+            centre_buffer_2_wgtCent_value_address0 <= tmp_28_fu_834_p1(8 - 1 downto 0);
         else 
             centre_buffer_2_wgtCent_value_address0 <= "XXXXXXXX";
         end if; 
@@ -2457,10 +2473,10 @@ begin
 
 
     -- centre_buffer_2_wgtCent_value_d0 assign process. --
-    centre_buffer_2_wgtCent_value_d0_assign_proc : process(ap_CS_fsm, tmp_42_2_fu_881_p2)
+    centre_buffer_2_wgtCent_value_d0_assign_proc : process(ap_CS_fsm, tmp_44_2_fu_903_p2)
     begin
         if ((ap_ST_st25_fsm_10 = ap_CS_fsm)) then 
-            centre_buffer_2_wgtCent_value_d0 <= tmp_42_2_fu_881_p2;
+            centre_buffer_2_wgtCent_value_d0 <= tmp_44_2_fu_903_p2;
         elsif ((ap_ST_st3_fsm_2 = ap_CS_fsm)) then 
             centre_buffer_2_wgtCent_value_d0 <= ap_const_lv32_0;
         else 
@@ -2470,9 +2486,9 @@ begin
 
 
     -- centre_buffer_2_wgtCent_value_we0 assign process. --
-    centre_buffer_2_wgtCent_value_we0_assign_proc : process(ap_CS_fsm, exitcond4_reg_1162, exitcond6_fu_601_p2)
+    centre_buffer_2_wgtCent_value_we0_assign_proc : process(ap_CS_fsm, exitcond5_reg_1186, exitcond7_fu_614_p2)
     begin
-        if ((((ap_ST_st3_fsm_2 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond6_fu_601_p2)) or ((ap_const_lv1_0 = exitcond4_reg_1162) and (ap_ST_st25_fsm_10 = ap_CS_fsm)))) then 
+        if ((((ap_ST_st3_fsm_2 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond7_fu_614_p2)) or ((ap_const_lv1_0 = exitcond5_reg_1186) and (ap_ST_st25_fsm_10 = ap_CS_fsm)))) then 
             centre_buffer_2_wgtCent_value_we0 <= ap_const_logic_1;
         else 
             centre_buffer_2_wgtCent_value_we0 <= ap_const_logic_0;
@@ -2481,16 +2497,16 @@ begin
 
 
     -- centre_buffer_count_address0 assign process. --
-    centre_buffer_count_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it0, tmp_32_fu_845_p1, centre_buffer_count_addr_2_reg_1226, tmp_18_fu_905_p1, tmp_2_fu_613_p1)
+    centre_buffer_count_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it0, tmp_27_fu_867_p1, centre_buffer_count_addr_2_reg_1250, tmp_6_fu_927_p1, tmp_2_fu_626_p1)
     begin
         if ((ap_ST_st25_fsm_10 = ap_CS_fsm)) then 
-            centre_buffer_count_address0 <= centre_buffer_count_addr_2_reg_1226;
+            centre_buffer_count_address0 <= centre_buffer_count_addr_2_reg_1250;
         elsif ((ap_ST_st3_fsm_2 = ap_CS_fsm)) then 
-            centre_buffer_count_address0 <= tmp_2_fu_613_p1(8 - 1 downto 0);
+            centre_buffer_count_address0 <= tmp_2_fu_626_p1(8 - 1 downto 0);
         elsif (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it0))) then 
-            centre_buffer_count_address0 <= tmp_18_fu_905_p1(8 - 1 downto 0);
+            centre_buffer_count_address0 <= tmp_6_fu_927_p1(8 - 1 downto 0);
         elsif ((ap_ST_st24_fsm_9 = ap_CS_fsm)) then 
-            centre_buffer_count_address0 <= tmp_32_fu_845_p1(8 - 1 downto 0);
+            centre_buffer_count_address0 <= tmp_27_fu_867_p1(8 - 1 downto 0);
         else 
             centre_buffer_count_address0 <= "XXXXXXXX";
         end if; 
@@ -2509,10 +2525,10 @@ begin
 
 
     -- centre_buffer_count_d0 assign process. --
-    centre_buffer_count_d0_assign_proc : process(ap_CS_fsm, tmp_34_fu_867_p2)
+    centre_buffer_count_d0_assign_proc : process(ap_CS_fsm, tmp_31_fu_889_p2)
     begin
         if ((ap_ST_st25_fsm_10 = ap_CS_fsm)) then 
-            centre_buffer_count_d0 <= tmp_34_fu_867_p2;
+            centre_buffer_count_d0 <= tmp_31_fu_889_p2;
         elsif ((ap_ST_st3_fsm_2 = ap_CS_fsm)) then 
             centre_buffer_count_d0 <= ap_const_lv32_0;
         else 
@@ -2522,9 +2538,9 @@ begin
 
 
     -- centre_buffer_count_we0 assign process. --
-    centre_buffer_count_we0_assign_proc : process(ap_CS_fsm, exitcond4_reg_1162, exitcond6_fu_601_p2)
+    centre_buffer_count_we0_assign_proc : process(ap_CS_fsm, exitcond5_reg_1186, exitcond7_fu_614_p2)
     begin
-        if ((((ap_ST_st3_fsm_2 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond6_fu_601_p2)) or ((ap_const_lv1_0 = exitcond4_reg_1162) and (ap_ST_st25_fsm_10 = ap_CS_fsm)))) then 
+        if ((((ap_ST_st3_fsm_2 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond7_fu_614_p2)) or ((ap_const_lv1_0 = exitcond5_reg_1186) and (ap_ST_st25_fsm_10 = ap_CS_fsm)))) then 
             centre_buffer_count_we0 <= ap_const_logic_1;
         else 
             centre_buffer_count_we0 <= ap_const_logic_0;
@@ -2533,16 +2549,16 @@ begin
 
 
     -- centre_buffer_sum_sq_address0 assign process. --
-    centre_buffer_sum_sq_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it0, tmp_32_fu_845_p1, centre_buffer_sum_sq_addr_2_reg_1231, tmp_18_reg_1250, tmp_2_fu_613_p1)
+    centre_buffer_sum_sq_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it0, tmp_27_fu_867_p1, centre_buffer_sum_sq_addr_2_reg_1255, tmp_6_fu_927_p1, tmp_2_fu_626_p1)
     begin
         if ((ap_ST_st25_fsm_10 = ap_CS_fsm)) then 
-            centre_buffer_sum_sq_address0 <= centre_buffer_sum_sq_addr_2_reg_1231;
+            centre_buffer_sum_sq_address0 <= centre_buffer_sum_sq_addr_2_reg_1255;
         elsif ((ap_ST_st3_fsm_2 = ap_CS_fsm)) then 
-            centre_buffer_sum_sq_address0 <= tmp_2_fu_613_p1(8 - 1 downto 0);
-        elsif (((ap_const_logic_1 = ap_reg_ppiten_pp4_it0) and (ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm))) then 
-            centre_buffer_sum_sq_address0 <= tmp_18_reg_1250(8 - 1 downto 0);
+            centre_buffer_sum_sq_address0 <= tmp_2_fu_626_p1(8 - 1 downto 0);
+        elsif (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it0))) then 
+            centre_buffer_sum_sq_address0 <= tmp_6_fu_927_p1(8 - 1 downto 0);
         elsif ((ap_ST_st24_fsm_9 = ap_CS_fsm)) then 
-            centre_buffer_sum_sq_address0 <= tmp_32_fu_845_p1(8 - 1 downto 0);
+            centre_buffer_sum_sq_address0 <= tmp_27_fu_867_p1(8 - 1 downto 0);
         else 
             centre_buffer_sum_sq_address0 <= "XXXXXXXX";
         end if; 
@@ -2552,7 +2568,7 @@ begin
     -- centre_buffer_sum_sq_ce0 assign process. --
     centre_buffer_sum_sq_ce0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp4_it0)
     begin
-        if (((ap_ST_st24_fsm_9 = ap_CS_fsm) or (ap_ST_st3_fsm_2 = ap_CS_fsm) or ((ap_const_logic_1 = ap_reg_ppiten_pp4_it0) and (ap_ST_pp4_stg1_fsm_13 = ap_CS_fsm)) or (ap_ST_st25_fsm_10 = ap_CS_fsm))) then 
+        if (((ap_ST_st24_fsm_9 = ap_CS_fsm) or (ap_ST_st3_fsm_2 = ap_CS_fsm) or ((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it0)) or (ap_ST_st25_fsm_10 = ap_CS_fsm))) then 
             centre_buffer_sum_sq_ce0 <= ap_const_logic_1;
         else 
             centre_buffer_sum_sq_ce0 <= ap_const_logic_0;
@@ -2561,10 +2577,10 @@ begin
 
 
     -- centre_buffer_sum_sq_d0 assign process. --
-    centre_buffer_sum_sq_d0_assign_proc : process(ap_CS_fsm, tmp_35_fu_874_p2)
+    centre_buffer_sum_sq_d0_assign_proc : process(ap_CS_fsm, tmp_32_fu_896_p2)
     begin
         if ((ap_ST_st25_fsm_10 = ap_CS_fsm)) then 
-            centre_buffer_sum_sq_d0 <= tmp_35_fu_874_p2;
+            centre_buffer_sum_sq_d0 <= tmp_32_fu_896_p2;
         elsif ((ap_ST_st3_fsm_2 = ap_CS_fsm)) then 
             centre_buffer_sum_sq_d0 <= ap_const_lv32_0;
         else 
@@ -2574,9 +2590,9 @@ begin
 
 
     -- centre_buffer_sum_sq_we0 assign process. --
-    centre_buffer_sum_sq_we0_assign_proc : process(ap_CS_fsm, exitcond4_reg_1162, exitcond6_fu_601_p2)
+    centre_buffer_sum_sq_we0_assign_proc : process(ap_CS_fsm, exitcond5_reg_1186, exitcond7_fu_614_p2)
     begin
-        if ((((ap_ST_st3_fsm_2 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond6_fu_601_p2)) or ((ap_const_lv1_0 = exitcond4_reg_1162) and (ap_ST_st25_fsm_10 = ap_CS_fsm)))) then 
+        if ((((ap_ST_st3_fsm_2 = ap_CS_fsm) and (ap_const_lv1_0 = exitcond7_fu_614_p2)) or ((ap_const_lv1_0 = exitcond5_reg_1186) and (ap_ST_st25_fsm_10 = ap_CS_fsm)))) then 
             centre_buffer_sum_sq_we0 <= ap_const_logic_1;
         else 
             centre_buffer_sum_sq_we0 <= ap_const_logic_0;
@@ -2628,68 +2644,67 @@ begin
         end if; 
     end process;
 
-    exitcond1_fu_1039_p2 <= "1" when (indvar1_reg_585 = tmp_20_add_i32_shr_reg_1323) else "0";
-    exitcond2_fu_716_p2 <= "1" when (indvar2_phi_fu_542_p4 = ap_const_lv4_8) else "0";
-    exitcond4_fu_739_p2 <= "1" when (i1_reg_550 = ap_const_lv3_4) else "0";
-    exitcond6_fu_601_p2 <= "1" when (i_reg_491 = ap_const_lv9_100) else "0";
-    exitcond7_fu_894_p2 <= "1" when (i5_phi_fu_578_p4 = tmp_1_reg_1110) else "0";
-    exitcond_fu_662_p2 <= "1" when (indvar_phi_fu_530_p4 = ap_const_lv4_C) else "0";
-    grp_fu_934_ce <= ap_const_logic_1;
-    grp_fu_934_p0 <= centre_buffer_0_wgtCent_value_q0;
-    grp_fu_934_p1 <= p_s_fu_927_p3;
-    grp_fu_941_ce <= ap_const_logic_1;
-    grp_fu_941_p0 <= centre_buffer_1_wgtCent_value_q0;
-    grp_fu_941_p1 <= p_s_fu_927_p3;
-    grp_fu_954_ce <= ap_const_logic_1;
-    grp_fu_954_p0 <= reg_597;
-    grp_fu_954_p1 <= p_s_reg_1301;
-    i1_cast2_fu_751_p1 <= std_logic_vector(resize(unsigned(i1_reg_550),5));
+    exitcond1_fu_738_p2 <= "1" when (indvar2_phi_fu_538_p4 = ap_const_lv6_20) else "0";
+    exitcond5_fu_761_p2 <= "1" when (i1_reg_546 = ap_const_lv5_10) else "0";
+    exitcond7_fu_614_p2 <= "1" when (i_reg_487 = ap_const_lv9_100) else "0";
+    exitcond8_fu_690_p2 <= "1" when (indvar_phi_fu_526_p4 = ap_const_lv6_30) else "0";
+    exitcond_fu_1067_p2 <= "1" when (indvar1_reg_592 = tmp_39_add_i32_shr_reg_1351) else "0";
+    grp_fu_968_ce <= ap_const_logic_1;
+    grp_fu_968_p0 <= centre_buffer_0_wgtCent_value_q0;
+    grp_fu_968_p1 <= p_s_fu_961_p3;
+    grp_fu_975_ce <= ap_const_logic_1;
+    grp_fu_975_p0 <= centre_buffer_1_wgtCent_value_q0;
+    grp_fu_975_p1 <= p_s_fu_961_p3;
+    grp_fu_982_ce <= ap_const_logic_1;
+    grp_fu_982_p0 <= reg_610;
+    grp_fu_982_p1 <= p_s_reg_1329;
+    i1_cast2_fu_773_p1 <= std_logic_vector(resize(unsigned(i1_reg_546),7));
 
-    -- i5_phi_fu_578_p4 assign process. --
-    i5_phi_fu_578_p4_assign_proc : process(ap_CS_fsm, i5_reg_574, ap_reg_ppiten_pp4_it1, exitcond7_reg_1241, i_2_reg_1245)
+    -- i5_phi_fu_573_p4 assign process. --
+    i5_phi_fu_573_p4_assign_proc : process(ap_CS_fsm, i5_reg_569, ap_reg_ppiten_pp4_it1, tmp_s_reg_1265, i_2_reg_1269, tmp_13_reg_1298)
     begin
-        if (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it1) and (ap_const_lv1_0 = exitcond7_reg_1241))) then 
-            i5_phi_fu_578_p4 <= i_2_reg_1245;
+        if (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it1) and (ap_const_lv1_0 = tmp_s_reg_1265) and (ap_const_lv1_0 = tmp_13_reg_1298))) then 
+            i5_phi_fu_573_p4 <= i_2_reg_1269;
         else 
-            i5_phi_fu_578_p4 <= i5_reg_574;
+            i5_phi_fu_573_p4 <= i5_reg_569;
         end if; 
     end process;
 
-    i_1_fu_607_p2 <= std_logic_vector(unsigned(i_reg_491) + unsigned(ap_const_lv9_1));
-    i_2_fu_899_p2 <= std_logic_vector(unsigned(i5_phi_fu_578_p4) + unsigned(ap_const_lv32_1));
-    i_3_fu_745_p2 <= std_logic_vector(unsigned(i1_reg_550) + unsigned(ap_const_lv3_1));
+    i_1_fu_620_p2 <= std_logic_vector(unsigned(i_reg_487) + unsigned(ap_const_lv9_1));
+    i_2_fu_921_p2 <= std_logic_vector(unsigned(i5_phi_fu_573_p4) + unsigned(ap_const_lv32_1));
+    i_3_fu_767_p2 <= std_logic_vector(unsigned(i1_reg_546) + unsigned(ap_const_lv5_1));
 
     -- i_buffer_address0 assign process. --
-    i_buffer_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp2_it7, tmp_37_fu_734_p1, tmp_24_fu_765_p1, tmp_26_fu_826_p1)
+    i_buffer_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp2_it7, tmp_34_fu_756_p1, tmp_19_fu_787_p1, tmp_21_fu_848_p1)
     begin
         if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it7))) then 
-            i_buffer_address0 <= tmp_37_fu_734_p1(3 - 1 downto 0);
+            i_buffer_address0 <= tmp_34_fu_756_p1(5 - 1 downto 0);
         elsif ((ap_ST_st24_fsm_9 = ap_CS_fsm)) then 
-            i_buffer_address0 <= tmp_26_fu_826_p1(3 - 1 downto 0);
+            i_buffer_address0 <= tmp_21_fu_848_p1(5 - 1 downto 0);
         elsif ((ap_ST_st23_fsm_8 = ap_CS_fsm)) then 
-            i_buffer_address0 <= tmp_24_fu_765_p1(3 - 1 downto 0);
+            i_buffer_address0 <= tmp_19_fu_787_p1(5 - 1 downto 0);
         else 
-            i_buffer_address0 <= "XXX";
+            i_buffer_address0 <= "XXXXX";
         end if; 
     end process;
 
 
     -- i_buffer_ce0 assign process. --
-    i_buffer_ce0_assign_proc : process(ap_CS_fsm, ap_sig_bdd_264, ap_reg_ppiten_pp2_it6, ap_reg_ppiten_pp2_it7)
+    i_buffer_ce0_assign_proc : process(ap_CS_fsm, ap_sig_bdd_263, ap_reg_ppiten_pp2_it6, ap_reg_ppiten_pp2_it7)
     begin
-        if (((ap_ST_st24_fsm_9 = ap_CS_fsm) or (ap_ST_st23_fsm_8 = ap_CS_fsm) or ((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it7) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6)))))) then 
+        if (((ap_ST_st24_fsm_9 = ap_CS_fsm) or (ap_ST_st23_fsm_8 = ap_CS_fsm) or ((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it7) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6)))))) then 
             i_buffer_ce0 <= ap_const_logic_1;
         else 
             i_buffer_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
-    i_buffer_d0 <= master_portB_addr_read_reg_1157;
+    i_buffer_d0 <= reg_604;
 
     -- i_buffer_we0 assign process. --
-    i_buffer_we0_assign_proc : process(ap_CS_fsm, ap_sig_bdd_264, ap_reg_ppiten_pp2_it6, ap_reg_ppiten_pp2_it7, ap_reg_ppstg_exitcond2_reg_1144_pp2_it6)
+    i_buffer_we0_assign_proc : process(ap_CS_fsm, ap_sig_bdd_263, ap_reg_ppiten_pp2_it6, ap_reg_ppiten_pp2_it7, ap_reg_ppstg_exitcond1_reg_1173_pp2_it6)
     begin
-        if ((((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it7) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond2_reg_1144_pp2_it6)))) then 
+        if ((((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it7) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond1_reg_1173_pp2_it6)))) then 
             i_buffer_we0 <= ap_const_logic_1;
         else 
             i_buffer_we0 <= ap_const_logic_0;
@@ -2697,33 +2712,33 @@ begin
     end process;
 
 
-    -- indvar2_phi_fu_542_p4 assign process. --
-    indvar2_phi_fu_542_p4_assign_proc : process(ap_CS_fsm, indvar2_reg_538, ap_reg_ppiten_pp2_it1, exitcond2_reg_1144, indvar_next2_reg_1148)
+    -- indvar2_phi_fu_538_p4 assign process. --
+    indvar2_phi_fu_538_p4_assign_proc : process(ap_CS_fsm, indvar2_reg_534, ap_reg_ppiten_pp2_it1, exitcond1_reg_1173, indvar_next2_reg_1177)
     begin
-        if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it1) and (ap_const_lv1_0 = exitcond2_reg_1144))) then 
-            indvar2_phi_fu_542_p4 <= indvar_next2_reg_1148;
+        if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it1) and (ap_const_lv1_0 = exitcond1_reg_1173))) then 
+            indvar2_phi_fu_538_p4 <= indvar_next2_reg_1177;
         else 
-            indvar2_phi_fu_542_p4 <= indvar2_reg_538;
+            indvar2_phi_fu_538_p4 <= indvar2_reg_534;
         end if; 
     end process;
 
-    indvar_next1_fu_1044_p2 <= std_logic_vector(unsigned(indvar1_reg_585) + unsigned(ap_const_lv30_1));
-    indvar_next2_fu_722_p2 <= std_logic_vector(unsigned(indvar2_phi_fu_542_p4) + unsigned(ap_const_lv4_1));
-    indvar_next_fu_668_p2 <= std_logic_vector(unsigned(indvar_phi_fu_530_p4) + unsigned(ap_const_lv4_1));
+    indvar_next1_fu_1072_p2 <= std_logic_vector(unsigned(indvar1_reg_592) + unsigned(ap_const_lv30_1));
+    indvar_next2_fu_744_p2 <= std_logic_vector(unsigned(indvar2_phi_fu_538_p4) + unsigned(ap_const_lv6_1));
+    indvar_next_fu_696_p2 <= std_logic_vector(unsigned(indvar_phi_fu_526_p4) + unsigned(ap_const_lv6_1));
 
-    -- indvar_phi_fu_530_p4 assign process. --
-    indvar_phi_fu_530_p4_assign_proc : process(ap_CS_fsm, indvar_reg_526, ap_reg_ppiten_pp1_it1, exitcond_reg_1115, indvar_next_reg_1119)
+    -- indvar_phi_fu_526_p4 assign process. --
+    indvar_phi_fu_526_p4_assign_proc : process(ap_CS_fsm, indvar_reg_522, ap_reg_ppiten_pp1_it1, exitcond8_reg_1149, indvar_next_reg_1153)
     begin
-        if (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it1) and (exitcond_reg_1115 = ap_const_lv1_0))) then 
-            indvar_phi_fu_530_p4 <= indvar_next_reg_1119;
+        if (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it1) and (exitcond8_reg_1149 = ap_const_lv1_0))) then 
+            indvar_phi_fu_526_p4 <= indvar_next_reg_1153;
         else 
-            indvar_phi_fu_530_p4 <= indvar_reg_526;
+            indvar_phi_fu_526_p4 <= indvar_reg_522;
         end if; 
     end process;
 
-    isIter0_fu_674_p2 <= "1" when (indvar_phi_fu_530_p4 = ap_const_lv4_0) else "0";
-    isIter1_fu_728_p2 <= "1" when (indvar2_phi_fu_542_p4 = ap_const_lv4_0) else "0";
-    isIter_fu_1055_p2 <= "1" when (indvar1_reg_585 = ap_const_lv30_0) else "0";
+    isIter0_fu_702_p2 <= "1" when (indvar_phi_fu_526_p4 = ap_const_lv6_0) else "0";
+    isIter1_fu_750_p2 <= "1" when (indvar2_phi_fu_538_p4 = ap_const_lv6_0) else "0";
+    isIter_fu_1083_p2 <= "1" when (indvar1_reg_592 = ap_const_lv30_0) else "0";
 
     -- k0ack_out assign process. --
     k0ack_out_assign_proc : process(ap_CS_fsm, distortion_out1ack_in)
@@ -2746,39 +2761,27 @@ begin
         end if; 
     end process;
 
-    lim_fu_622_p2 <= std_logic_vector(shift_left(unsigned(n0data_reg),to_integer(unsigned('0' & ap_const_lv32_1(31-1 downto 0)))));
+    lim_fu_635_p2 <= std_logic_vector(shift_left(unsigned(n0data_reg),to_integer(unsigned('0' & ap_const_lv32_1(31-1 downto 0)))));
 
     -- master_portA_address assign process. --
-    master_portA_address_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp1_it1, exitcond_reg_1115, ap_sig_bdd_230, ap_reg_ppiten_pp1_it6, master_portA_addr_reg_1104, isIter0_reg_1124, master_portA_addr_1_reg_1318, ap_reg_ppstg_exitcond1_reg_1333_pp5_it1, ap_sig_bdd_610, ap_reg_ppiten_pp5_it2, ap_reg_ppstg_isIter_reg_1347_pp5_it1)
+    master_portA_address_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp1_it1, exitcond8_reg_1149, ap_sig_bdd_230, ap_reg_ppiten_pp1_it6, ap_reg_ppiten_pp2_it1, exitcond1_reg_1173, ap_sig_bdd_263, ap_reg_ppiten_pp2_it6, master_portA_addr_reg_1143, isIter0_reg_1158, master_portA_addr_1_reg_1167, isIter1_reg_1182)
     begin
-        if (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond1_reg_1333_pp5_it1) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_lv1_0 = ap_reg_ppstg_isIter_reg_1347_pp5_it1)))) then 
-            master_portA_address <= master_portA_addr_1_reg_1318;
-        elsif (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it1) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and (exitcond_reg_1115 = ap_const_lv1_0) and not((ap_const_lv1_0 = isIter0_reg_1124)))) then 
-            master_portA_address <= master_portA_addr_reg_1104;
+        if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it1) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and (ap_const_lv1_0 = exitcond1_reg_1173) and not((ap_const_lv1_0 = isIter1_reg_1182)))) then 
+            master_portA_address <= master_portA_addr_1_reg_1167;
+        elsif (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it1) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and (exitcond8_reg_1149 = ap_const_lv1_0) and not((ap_const_lv1_0 = isIter0_reg_1158)))) then 
+            master_portA_address <= master_portA_addr_reg_1143;
         else 
             master_portA_address <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
-    master_portA_dataout <= c_buffer_load_reg_1351;
-
-    -- master_portA_req_din assign process. --
-    master_portA_req_din_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp1_it1, exitcond_reg_1115, ap_sig_bdd_230, ap_reg_ppiten_pp1_it6, isIter0_reg_1124, ap_reg_ppstg_exitcond1_reg_1333_pp5_it1, ap_sig_bdd_610, ap_reg_ppiten_pp5_it2, ap_reg_ppstg_isIter_reg_1347_pp5_it1)
-    begin
-        if ((((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond1_reg_1333_pp5_it1) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_lv1_0 = ap_reg_ppstg_isIter_reg_1347_pp5_it1))) or ((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond1_reg_1333_pp5_it1) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2)))))) then 
-            master_portA_req_din <= ap_const_logic_1;
-        elsif (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it1) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and (exitcond_reg_1115 = ap_const_lv1_0) and not((ap_const_lv1_0 = isIter0_reg_1124)))) then 
-            master_portA_req_din <= ap_const_logic_0;
-        else 
-            master_portA_req_din <= ap_const_logic_0;
-        end if; 
-    end process;
-
+    master_portA_dataout <= ap_const_lv32_0;
+    master_portA_req_din <= ap_const_logic_0;
 
     -- master_portA_req_write assign process. --
-    master_portA_req_write_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp1_it1, exitcond_reg_1115, ap_sig_bdd_230, ap_reg_ppiten_pp1_it6, isIter0_reg_1124, ap_reg_ppstg_exitcond1_reg_1333_pp5_it1, ap_sig_bdd_610, ap_reg_ppiten_pp5_it2, ap_reg_ppstg_isIter_reg_1347_pp5_it1)
+    master_portA_req_write_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp1_it1, exitcond8_reg_1149, ap_sig_bdd_230, ap_reg_ppiten_pp1_it6, ap_reg_ppiten_pp2_it1, exitcond1_reg_1173, ap_sig_bdd_263, ap_reg_ppiten_pp2_it6, isIter0_reg_1158, isIter1_reg_1182)
     begin
-        if ((((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it1) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and (exitcond_reg_1115 = ap_const_lv1_0) and not((ap_const_lv1_0 = isIter0_reg_1124))) or ((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond1_reg_1333_pp5_it1) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_lv1_0 = ap_reg_ppstg_isIter_reg_1347_pp5_it1))) or ((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond1_reg_1333_pp5_it1) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2)))))) then 
+        if ((((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it1) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and (exitcond8_reg_1149 = ap_const_lv1_0) and not((ap_const_lv1_0 = isIter0_reg_1158))) or ((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it1) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and (ap_const_lv1_0 = exitcond1_reg_1173) and not((ap_const_lv1_0 = isIter1_reg_1182))))) then 
             master_portA_req_write <= ap_const_logic_1;
         else 
             master_portA_req_write <= ap_const_logic_0;
@@ -2787,9 +2790,9 @@ begin
 
 
     -- master_portA_rsp_read assign process. --
-    master_portA_rsp_read_assign_proc : process(ap_CS_fsm, ap_reg_ppstg_exitcond_reg_1115_pp1_it5, ap_sig_bdd_230, ap_reg_ppiten_pp1_it6)
+    master_portA_rsp_read_assign_proc : process(ap_CS_fsm, ap_reg_ppstg_exitcond8_reg_1149_pp1_it5, ap_sig_bdd_230, ap_reg_ppiten_pp1_it6, ap_reg_ppstg_exitcond1_reg_1173_pp2_it5, ap_sig_bdd_263, ap_reg_ppiten_pp2_it6)
     begin
-        if (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_reg_ppstg_exitcond_reg_1115_pp1_it5 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))))) then 
+        if ((((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_reg_ppstg_exitcond8_reg_1149_pp1_it5 = ap_const_lv1_0) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6)))) or ((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond1_reg_1173_pp2_it5) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6)))))) then 
             master_portA_rsp_read <= ap_const_logic_1;
         else 
             master_portA_rsp_read <= ap_const_logic_0;
@@ -2798,43 +2801,43 @@ begin
 
 
     -- master_portA_size assign process. --
-    master_portA_size_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp1_it1, exitcond_reg_1115, ap_sig_bdd_230, ap_reg_ppiten_pp1_it6, isIter0_reg_1124, tmp_16_reg_1328, ap_reg_ppstg_exitcond1_reg_1333_pp5_it1, ap_sig_bdd_610, ap_reg_ppiten_pp5_it2, ap_reg_ppstg_isIter_reg_1347_pp5_it1)
+    master_portA_size_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp1_it1, exitcond8_reg_1149, ap_sig_bdd_230, ap_reg_ppiten_pp1_it6, ap_reg_ppiten_pp2_it1, exitcond1_reg_1173, ap_sig_bdd_263, ap_reg_ppiten_pp2_it6, isIter0_reg_1158, isIter1_reg_1182)
     begin
-        if (((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond1_reg_1333_pp5_it1) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2) and not((ap_sig_bdd_610 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_lv1_0 = ap_reg_ppstg_isIter_reg_1347_pp5_it1)))) then 
-            master_portA_size <= tmp_16_reg_1328;
-        elsif (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it1) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and (exitcond_reg_1115 = ap_const_lv1_0) and not((ap_const_lv1_0 = isIter0_reg_1124)))) then 
-            master_portA_size <= ap_const_lv32_C;
+        if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it1) and not((ap_sig_bdd_263 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and (ap_const_lv1_0 = exitcond1_reg_1173) and not((ap_const_lv1_0 = isIter1_reg_1182)))) then 
+            master_portA_size <= ap_const_lv32_20;
+        elsif (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it1) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and (exitcond8_reg_1149 = ap_const_lv1_0) and not((ap_const_lv1_0 = isIter0_reg_1158)))) then 
+            master_portA_size <= ap_const_lv32_30;
         else 
             master_portA_size <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
-    master_portB_address <= master_portB_addr_reg_1138;
-    master_portB_dataout <= ap_const_lv32_0;
-    master_portB_req_din <= ap_const_logic_0;
+    master_portB_address <= master_portB_addr_reg_1346;
+    master_portB_dataout <= c_buffer_load_reg_1379;
+
+    -- master_portB_req_din assign process. --
+    master_portB_req_din_assign_proc : process(ap_CS_fsm, ap_reg_ppstg_exitcond_reg_1361_pp5_it1, ap_sig_bdd_629, ap_reg_ppiten_pp5_it2, ap_reg_ppstg_isIter_reg_1375_pp5_it1)
+    begin
+        if ((((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond_reg_1361_pp5_it1) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_lv1_0 = ap_reg_ppstg_isIter_reg_1375_pp5_it1))) or ((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond_reg_1361_pp5_it1) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2)))))) then 
+            master_portB_req_din <= ap_const_logic_1;
+        else 
+            master_portB_req_din <= ap_const_logic_0;
+        end if; 
+    end process;
+
 
     -- master_portB_req_write assign process. --
-    master_portB_req_write_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp2_it1, exitcond2_reg_1144, ap_sig_bdd_264, ap_reg_ppiten_pp2_it6, isIter1_reg_1153)
+    master_portB_req_write_assign_proc : process(ap_CS_fsm, ap_reg_ppstg_exitcond_reg_1361_pp5_it1, ap_sig_bdd_629, ap_reg_ppiten_pp5_it2, ap_reg_ppstg_isIter_reg_1375_pp5_it1)
     begin
-        if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it1) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))) and (ap_const_lv1_0 = exitcond2_reg_1144) and not((ap_const_lv1_0 = isIter1_reg_1153)))) then 
+        if ((((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond_reg_1361_pp5_it1) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2))) and not((ap_const_lv1_0 = ap_reg_ppstg_isIter_reg_1375_pp5_it1))) or ((ap_ST_pp5_stg0_fsm_15 = ap_CS_fsm) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond_reg_1361_pp5_it1) and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2) and not((ap_sig_bdd_629 and (ap_const_logic_1 = ap_reg_ppiten_pp5_it2)))))) then 
             master_portB_req_write <= ap_const_logic_1;
         else 
             master_portB_req_write <= ap_const_logic_0;
         end if; 
     end process;
 
-
-    -- master_portB_rsp_read assign process. --
-    master_portB_rsp_read_assign_proc : process(ap_CS_fsm, ap_reg_ppstg_exitcond2_reg_1144_pp2_it5, ap_sig_bdd_264, ap_reg_ppiten_pp2_it6)
-    begin
-        if (((ap_ST_pp2_stg0_fsm_7 = ap_CS_fsm) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond2_reg_1144_pp2_it5) and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6) and not((ap_sig_bdd_264 and (ap_const_logic_1 = ap_reg_ppiten_pp2_it6))))) then 
-            master_portB_rsp_read <= ap_const_logic_1;
-        else 
-            master_portB_rsp_read <= ap_const_logic_0;
-        end if; 
-    end process;
-
-    master_portB_size <= ap_const_lv32_8;
+    master_portB_rsp_read <= ap_const_logic_0;
+    master_portB_size <= tmp_24_reg_1356;
 
     -- n0ack_out assign process. --
     n0ack_out_assign_proc : process(ap_CS_fsm, distortion_out1ack_in)
@@ -2848,27 +2851,27 @@ begin
 
 
     -- p_buffer_address0 assign process. --
-    p_buffer_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp1_it7, tmp_28_fu_680_p1, tmp_31_fu_792_p1)
+    p_buffer_address0_assign_proc : process(ap_CS_fsm, ap_reg_ppiten_pp1_it7, tmp_25_fu_708_p1, tmp_30_fu_814_p1)
     begin
         if (((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it7))) then 
-            p_buffer_address0 <= tmp_28_fu_680_p1(4 - 1 downto 0);
+            p_buffer_address0 <= tmp_25_fu_708_p1(6 - 1 downto 0);
         elsif ((ap_ST_st23_fsm_8 = ap_CS_fsm)) then 
-            p_buffer_address0 <= tmp_31_fu_792_p1(4 - 1 downto 0);
+            p_buffer_address0 <= tmp_30_fu_814_p1(6 - 1 downto 0);
         else 
-            p_buffer_address0 <= "XXXX";
+            p_buffer_address0 <= "XXXXXX";
         end if; 
     end process;
 
 
     -- p_buffer_address1 assign process. --
-    p_buffer_address1_assign_proc : process(ap_CS_fsm, tmp_36_1_fu_807_p1, tmp_36_2_fu_840_p1)
+    p_buffer_address1_assign_proc : process(ap_CS_fsm, tmp_30_1_fu_829_p1, tmp_30_2_fu_862_p1)
     begin
         if ((ap_ST_st24_fsm_9 = ap_CS_fsm)) then 
-            p_buffer_address1 <= tmp_36_2_fu_840_p1(4 - 1 downto 0);
+            p_buffer_address1 <= tmp_30_2_fu_862_p1(6 - 1 downto 0);
         elsif ((ap_ST_st23_fsm_8 = ap_CS_fsm)) then 
-            p_buffer_address1 <= tmp_36_1_fu_807_p1(4 - 1 downto 0);
+            p_buffer_address1 <= tmp_30_1_fu_829_p1(6 - 1 downto 0);
         else 
-            p_buffer_address1 <= "XXXX";
+            p_buffer_address1 <= "XXXXXX";
         end if; 
     end process;
 
@@ -2894,91 +2897,96 @@ begin
         end if; 
     end process;
 
-    p_buffer_d0 <= master_portA_addr_read_reg_1128;
+    p_buffer_d0 <= reg_604;
 
     -- p_buffer_we0 assign process. --
-    p_buffer_we0_assign_proc : process(ap_CS_fsm, ap_sig_bdd_230, ap_reg_ppiten_pp1_it6, ap_reg_ppiten_pp1_it7, ap_reg_ppstg_exitcond_reg_1115_pp1_it6)
+    p_buffer_we0_assign_proc : process(ap_CS_fsm, ap_sig_bdd_230, ap_reg_ppiten_pp1_it6, ap_reg_ppiten_pp1_it7, ap_reg_ppstg_exitcond8_reg_1149_pp1_it6)
     begin
-        if ((((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it7) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond_reg_1115_pp1_it6)))) then 
+        if ((((ap_ST_pp1_stg0_fsm_5 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp1_it7) and not((ap_sig_bdd_230 and (ap_const_logic_1 = ap_reg_ppiten_pp1_it6))) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond8_reg_1149_pp1_it6)))) then 
             p_buffer_we0 <= ap_const_logic_1;
         else 
             p_buffer_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
-    p_s_fu_927_p3 <= 
-        ap_const_lv32_1 when (tmp_20_fu_922_p2(0) = '1') else 
-        centre_buffer_count_load_reg_1275;
-    p_shl_cast_fu_778_p1 <= std_logic_vector(resize(unsigned(p_shl_fu_770_p3),5));
-    p_shl_fu_770_p3 <= (tmp_38_fu_755_p1 & ap_const_lv2_0);
-    tmp_10_fu_984_p4 <= centres_out_addr0data_reg(31 downto 2);
-    tmp_11_fu_993_p1 <= std_logic_vector(resize(unsigned(tmp_10_fu_984_p4),64));
-    tmp_12_fu_1008_p2 <= std_logic_vector(unsigned(tmp_14_fu_1003_p2) - unsigned(k0data_reg));
-    tmp_13_fu_1019_p2 <= std_logic_vector(unsigned(tmp_15_fu_1013_p2) + unsigned(ap_const_lv32_C));
-    tmp_14_fu_1003_p2 <= std_logic_vector(shift_left(unsigned(k0data_reg),to_integer(unsigned('0' & ap_const_lv32_2(31-1 downto 0)))));
-    tmp_15_fu_1013_p2 <= std_logic_vector(shift_left(unsigned(tmp_12_fu_1008_p2),to_integer(unsigned('0' & ap_const_lv32_2(31-1 downto 0)))));
-    tmp_16_fu_1035_p1 <= std_logic_vector(resize(unsigned(tmp_20_add_i32_shr_fu_1025_p4),32));
-    tmp_18_fu_905_p1 <= std_logic_vector(resize(unsigned(i5_phi_fu_578_p4),64));
-    tmp_19_fu_916_p2 <= std_logic_vector(unsigned(tmp_23_fu_910_p2) - unsigned(i5_phi_fu_578_p4));
-    tmp_1_fu_657_p2 <= std_logic_vector(unsigned(k0data_reg) + unsigned(ap_const_lv32_1));
-    tmp_20_add_i32_shr_fu_1025_p4 <= tmp_13_fu_1019_p2(31 downto 2);
-    tmp_20_fu_922_p2 <= "1" when (centre_buffer_count_load_reg_1275 = ap_const_lv32_0) else "0";
-    tmp_22_fu_960_p1 <= std_logic_vector(resize(unsigned(ap_reg_ppstg_tmp_19_reg_1263_pp4_it17),64));
-    tmp_23_fu_910_p2 <= std_logic_vector(shift_left(unsigned(i5_phi_fu_578_p4),to_integer(unsigned('0' & ap_const_lv32_2(31-1 downto 0)))));
-    tmp_24_fu_765_p1 <= std_logic_vector(resize(unsigned(tmp_39_fu_759_p2),64));
-    tmp_25_fu_819_p3 <= (tmp_38_reg_1171 & ap_const_lv1_1);
-    tmp_26_fu_826_p1 <= std_logic_vector(resize(unsigned(tmp_25_fu_819_p3),64));
-    tmp_27_fu_782_p2 <= std_logic_vector(unsigned(p_shl_cast_fu_778_p1) - unsigned(i1_cast2_fu_751_p1));
-    tmp_28_fu_680_p1 <= std_logic_vector(resize(unsigned(ap_reg_ppstg_indvar_reg_526_pp1_it6),64));
-    tmp_29_fu_1050_p1 <= std_logic_vector(resize(unsigned(indvar1_reg_585),64));
-    tmp_2_fu_613_p1 <= std_logic_vector(resize(unsigned(i_reg_491),64));
-    tmp_31_1_fu_964_p2 <= std_logic_vector(unsigned(ap_reg_ppstg_tmp_19_reg_1263_pp4_it17) + unsigned(ap_const_lv32_1));
-    tmp_31_2_fu_974_p2 <= std_logic_vector(unsigned(ap_reg_ppstg_tmp_19_reg_1263_pp4_it18) + unsigned(ap_const_lv32_2));
+    p_s_fu_961_p3 <= 
+        ap_const_lv32_1 when (tmp_8_fu_956_p2(0) = '1') else 
+        count_reg_1302;
+    p_shl_cast_fu_800_p1 <= std_logic_vector(resize(unsigned(p_shl_fu_792_p3),7));
+    p_shl_fu_792_p3 <= (tmp_35_fu_777_p1 & ap_const_lv2_0);
+    tmp_10_cast_fu_719_p1 <= std_logic_vector(resize(unsigned(b_reg_498),33));
+    tmp_10_fu_939_p2 <= std_logic_vector(unsigned(tmp_17_fu_933_p2) - unsigned(i5_phi_fu_573_p4));
+    tmp_11_cast_fu_728_p1 <= std_logic_vector(resize(unsigned(tmp_11_fu_723_p2),64));
+    tmp_11_fu_723_p2 <= std_logic_vector(unsigned(tmp_9_cast_reg_1135) + unsigned(tmp_10_cast_fu_719_p1));
+    tmp_12_fu_988_p1 <= std_logic_vector(resize(unsigned(ap_reg_ppstg_tmp_10_reg_1286_pp4_it17),64));
+    tmp_13_fu_945_p2 <= "1" when (i5_phi_fu_573_p4 = k0data_reg) else "0";
+    tmp_14_fu_1012_p4 <= centres_out_addr0data_reg(31 downto 2);
+    tmp_15_fu_1036_p2 <= std_logic_vector(unsigned(tmp_18_fu_1031_p2) - unsigned(k0data_reg));
+    tmp_16_fu_1047_p2 <= std_logic_vector(unsigned(tmp_23_fu_1041_p2) + unsigned(ap_const_lv32_C));
+    tmp_17_fu_933_p2 <= std_logic_vector(shift_left(unsigned(i5_phi_fu_573_p4),to_integer(unsigned('0' & ap_const_lv32_2(31-1 downto 0)))));
+    tmp_18_fu_1031_p2 <= std_logic_vector(shift_left(unsigned(k0data_reg),to_integer(unsigned('0' & ap_const_lv32_2(31-1 downto 0)))));
+    tmp_19_fu_787_p1 <= std_logic_vector(resize(unsigned(tmp_36_fu_781_p2),64));
+    tmp_20_fu_841_p3 <= (tmp_35_reg_1195 & ap_const_lv1_1);
+    tmp_21_fu_848_p1 <= std_logic_vector(resize(unsigned(tmp_20_fu_841_p3),64));
+    tmp_22_fu_804_p2 <= std_logic_vector(unsigned(p_shl_cast_fu_800_p1) - unsigned(i1_cast2_fu_773_p1));
+    tmp_23_fu_1041_p2 <= std_logic_vector(shift_left(unsigned(tmp_15_fu_1036_p2),to_integer(unsigned('0' & ap_const_lv32_2(31-1 downto 0)))));
+    tmp_24_fu_1063_p1 <= std_logic_vector(resize(unsigned(tmp_39_add_i32_shr_fu_1053_p4),32));
+    tmp_25_1_fu_992_p2 <= std_logic_vector(unsigned(ap_reg_ppstg_tmp_10_reg_1286_pp4_it17) + unsigned(ap_const_lv32_1));
+    tmp_25_2_fu_1002_p2 <= std_logic_vector(unsigned(ap_reg_ppstg_tmp_10_reg_1286_pp4_it18) + unsigned(ap_const_lv32_2));
+    tmp_25_fu_708_p1 <= std_logic_vector(resize(unsigned(ap_reg_ppstg_indvar_reg_522_pp1_it6),64));
+    tmp_26_1_fu_997_p1 <= std_logic_vector(resize(unsigned(tmp_25_1_fu_992_p2),64));
+    tmp_26_2_fu_1007_p1 <= std_logic_vector(resize(unsigned(tmp_25_2_fu_1002_p2),64));
+    tmp_26_fu_1078_p1 <= std_logic_vector(resize(unsigned(indvar1_reg_592),64));
+    tmp_27_fu_867_p1 <= std_logic_vector(resize(unsigned(i_buffer_q0),64));
+    tmp_28_fu_834_p1 <= std_logic_vector(resize(unsigned(i1_reg_546),64));
+    tmp_29_1_fu_819_p2 <= std_logic_vector(unsigned(tmp_22_fu_804_p2) + unsigned(ap_const_lv7_1));
+    tmp_29_2_fu_853_p2 <= std_logic_vector(unsigned(tmp_22_reg_1205) + unsigned(ap_const_lv7_2));
+    tmp_29_cast_fu_1021_p1 <= std_logic_vector(resize(unsigned(tmp_14_fu_1012_p4),64));
+    tmp_2_fu_626_p1 <= std_logic_vector(resize(unsigned(i_reg_487),64));
     
-    tmp_27_fu_782_p2_temp <= signed(tmp_27_fu_782_p2);
-    tmp_31_fu_792_p0 <= std_logic_vector(resize(tmp_27_fu_782_p2_temp,32));
+    tmp_29_1_fu_819_p2_temp <= signed(tmp_29_1_fu_819_p2);
+    tmp_30_1_fu_829_p0 <= std_logic_vector(resize(tmp_29_1_fu_819_p2_temp,32));
 
-    tmp_31_fu_792_p1 <= std_logic_vector(resize(unsigned(tmp_31_fu_792_p0),64));
-    tmp_32_1_fu_969_p1 <= std_logic_vector(resize(unsigned(tmp_31_1_fu_964_p2),64));
-    tmp_32_2_fu_979_p1 <= std_logic_vector(resize(unsigned(tmp_31_2_fu_974_p2),64));
-    tmp_32_fu_845_p1 <= std_logic_vector(resize(unsigned(i_buffer_q0),64));
-    tmp_33_fu_812_p1 <= std_logic_vector(resize(unsigned(i1_reg_550),64));
-    tmp_34_fu_867_p2 <= std_logic_vector(unsigned(centre_buffer_count_q0) + unsigned(ap_const_lv32_1));
-    tmp_35_1_fu_797_p2 <= std_logic_vector(unsigned(tmp_27_fu_782_p2) + unsigned(ap_const_lv5_1));
-    tmp_35_2_fu_831_p2 <= std_logic_vector(unsigned(tmp_27_reg_1181) + unsigned(ap_const_lv5_2));
-    tmp_35_fu_874_p2 <= std_logic_vector(unsigned(centre_buffer_sum_sq_q0) + unsigned(i_buffer_q0));
+    tmp_30_1_fu_829_p1 <= std_logic_vector(resize(unsigned(tmp_30_1_fu_829_p0),64));
     
-    tmp_35_1_fu_797_p2_temp <= signed(tmp_35_1_fu_797_p2);
-    tmp_36_1_fu_807_p0 <= std_logic_vector(resize(tmp_35_1_fu_797_p2_temp,32));
+    tmp_29_2_fu_853_p2_temp <= signed(tmp_29_2_fu_853_p2);
+    tmp_30_2_fu_862_p0 <= std_logic_vector(resize(tmp_29_2_fu_853_p2_temp,32));
 
-    tmp_36_1_fu_807_p1 <= std_logic_vector(resize(unsigned(tmp_36_1_fu_807_p0),64));
+    tmp_30_2_fu_862_p1 <= std_logic_vector(resize(unsigned(tmp_30_2_fu_862_p0),64));
     
-    tmp_35_2_fu_831_p2_temp <= signed(tmp_35_2_fu_831_p2);
-    tmp_36_2_fu_840_p0 <= std_logic_vector(resize(tmp_35_2_fu_831_p2_temp,32));
+    tmp_22_fu_804_p2_temp <= signed(tmp_22_fu_804_p2);
+    tmp_30_fu_814_p0 <= std_logic_vector(resize(tmp_22_fu_804_p2_temp,32));
 
-    tmp_36_2_fu_840_p1 <= std_logic_vector(resize(unsigned(tmp_36_2_fu_840_p0),64));
-    tmp_36_fu_853_p2 <= std_logic_vector(unsigned(p_buffer_q0) + unsigned(centre_buffer_0_wgtCent_value_q0));
-    tmp_37_fu_734_p1 <= std_logic_vector(resize(unsigned(ap_reg_ppstg_indvar2_reg_538_pp2_it6),64));
-    tmp_38_fu_755_p1 <= i1_reg_550(2 - 1 downto 0);
-    tmp_39_fu_759_p2 <= std_logic_vector(shift_left(unsigned(i1_reg_550),to_integer(unsigned('0' & ap_const_lv3_1(3-1 downto 0)))));
-    tmp_3_fu_627_p2 <= "1" when (unsigned(b_reg_502) > unsigned(lim_reg_1096)) else "0";
-    tmp_42_1_fu_860_p2 <= std_logic_vector(unsigned(p_buffer_q1) + unsigned(centre_buffer_1_wgtCent_value_q0));
-    tmp_42_2_fu_881_p2 <= std_logic_vector(unsigned(p_buffer_q1) + unsigned(reg_597));
-    tmp_4_fu_632_p2 <= std_logic_vector(unsigned(b2_reg_514) + unsigned(data_points_in_addr0data_reg));
-    tmp_5_fu_637_p4 <= tmp_4_fu_632_p2(31 downto 2);
-    tmp_6_fu_647_p1 <= std_logic_vector(resize(unsigned(tmp_5_fu_637_p4),64));
-    tmp_8_fu_706_p1 <= std_logic_vector(resize(unsigned(tmp_s_fu_696_p4),64));
-    tmp_9_fu_691_p2 <= std_logic_vector(unsigned(b_reg_502) + unsigned(kernel_info_in_addr0data_reg));
-    tmp_s_fu_696_p4 <= tmp_9_fu_691_p2(31 downto 2);
-    total_distortion_1_fu_948_p2 <= std_logic_vector(unsigned(centre_buffer_sum_sq_q0) + unsigned(total_distortion_phi_fu_566_p4));
+    tmp_30_fu_814_p1 <= std_logic_vector(resize(unsigned(tmp_30_fu_814_p0),64));
+    tmp_31_fu_889_p2 <= std_logic_vector(unsigned(centre_buffer_count_q0) + unsigned(ap_const_lv32_1));
+    tmp_32_fu_896_p2 <= std_logic_vector(unsigned(centre_buffer_sum_sq_q0) + unsigned(i_buffer_q0));
+    tmp_33_fu_875_p2 <= std_logic_vector(unsigned(p_buffer_q0) + unsigned(centre_buffer_0_wgtCent_value_q0));
+    tmp_34_fu_756_p1 <= std_logic_vector(resize(unsigned(ap_reg_ppstg_indvar2_reg_534_pp2_it6),64));
+    tmp_35_fu_777_p1 <= i1_reg_546(4 - 1 downto 0);
+    tmp_36_fu_781_p2 <= std_logic_vector(shift_left(unsigned(i1_reg_546),to_integer(unsigned('0' & ap_const_lv5_1(5-1 downto 0)))));
+    tmp_39_add_i32_shr_fu_1053_p4 <= tmp_16_fu_1047_p2(31 downto 2);
+    tmp_3_fu_666_p2 <= "1" when (unsigned(b_reg_498) > unsigned(lim_reg_1125)) else "0";
+    tmp_44_1_fu_882_p2 <= std_logic_vector(unsigned(p_buffer_q1) + unsigned(centre_buffer_1_wgtCent_value_q0));
+    tmp_44_2_fu_903_p2 <= std_logic_vector(unsigned(p_buffer_q1) + unsigned(reg_610));
+    tmp_5_cast_fu_649_p1 <= std_logic_vector(resize(unsigned(tmp_5_fu_640_p4),33));
+    tmp_5_fu_640_p4 <= data_points_in_addr0data_reg(31 downto 2);
+    tmp_6_cast_fu_671_p1 <= std_logic_vector(resize(unsigned(b2_reg_510),33));
+    tmp_6_fu_927_p1 <= std_logic_vector(resize(unsigned(i5_phi_fu_573_p4),64));
+    tmp_7_cast_fu_680_p1 <= std_logic_vector(resize(unsigned(tmp_7_fu_675_p2),64));
+    tmp_7_fu_675_p2 <= std_logic_vector(unsigned(tmp_5_cast_reg_1130) + unsigned(tmp_6_cast_fu_671_p1));
+    tmp_8_fu_956_p2 <= "1" when (count_reg_1302 = ap_const_lv32_0) else "0";
+    tmp_9_cast_fu_662_p1 <= std_logic_vector(resize(unsigned(tmp_9_fu_653_p4),33));
+    tmp_9_fu_653_p4 <= kernel_info_in_addr0data_reg(31 downto 2);
+    tmp_s_fu_916_p2 <= "1" when (unsigned(i5_phi_fu_573_p4) > unsigned(k0data_reg)) else "0";
+    total_distortion_2_fu_950_p2 <= std_logic_vector(unsigned(centre_buffer_sum_sq_q0) + unsigned(total_distortion_reg_557));
 
-    -- total_distortion_phi_fu_566_p4 assign process. --
-    total_distortion_phi_fu_566_p4_assign_proc : process(ap_CS_fsm, total_distortion_reg_561, ap_reg_ppiten_pp4_it2, ap_reg_ppstg_exitcond7_reg_1241_pp4_it1, total_distortion_1_reg_1313)
+    -- total_distortion_phi_fu_561_p4 assign process. --
+    total_distortion_phi_fu_561_p4_assign_proc : process(ap_CS_fsm, total_distortion_reg_557, ap_reg_ppiten_pp4_it1, tmp_s_reg_1265, tmp_13_reg_1298, total_distortion_2_reg_1323)
     begin
-        if (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it2) and (ap_const_lv1_0 = ap_reg_ppstg_exitcond7_reg_1241_pp4_it1))) then 
-            total_distortion_phi_fu_566_p4 <= total_distortion_1_reg_1313;
+        if (((ap_ST_pp4_stg0_fsm_12 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp4_it1) and (ap_const_lv1_0 = tmp_s_reg_1265) and (ap_const_lv1_0 = tmp_13_reg_1298))) then 
+            total_distortion_phi_fu_561_p4 <= total_distortion_2_reg_1323;
         else 
-            total_distortion_phi_fu_566_p4 <= total_distortion_reg_561;
+            total_distortion_phi_fu_561_p4 <= total_distortion_reg_557;
         end if; 
     end process;
 

@@ -9,8 +9,8 @@
 module combiner_top_i_buffer_ram (addr0, ce0, d0, we0, q0,  clk);
 
 parameter DWIDTH = 32;
-parameter AWIDTH = 3;
-parameter MEM_SIZE = 8;
+parameter AWIDTH = 5;
+parameter MEM_SIZE = 32;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -53,8 +53,8 @@ module combiner_top_i_buffer(
     q0);
 
 parameter DataWidth = 32'd32;
-parameter AddressRange = 32'd8;
-parameter AddressWidth = 32'd3;
+parameter AddressRange = 32'd32;
+parameter AddressWidth = 32'd5;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;

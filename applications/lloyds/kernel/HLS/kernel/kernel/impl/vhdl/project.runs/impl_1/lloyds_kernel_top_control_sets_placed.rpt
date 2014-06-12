@@ -1,0 +1,67 @@
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
+| Date         : Tue Jun 10 14:58:58 2014
+| Host         : ee-boxer0 running 64-bit Ubuntu 10.04.4 LTS
+| Command      : report_control_sets -verbose -file lloyds_kernel_top_control_sets_placed.rpt
+| Design       : lloyds_kernel_top
+| Device       : xc7z020
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    14 |
+| Minimum Number of register sites lost to control set restrictions |    32 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              45 |           29 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              21 |           11 |
+| Yes          | No                    | No                     |              80 |           24 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             118 |           29 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+--------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
+| Clock Signal |                      Enable Signal                     |                      Set/Reset Signal                      | Slice Load Count | Bel Load Count |
++--------------+--------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
+|  ap_clk      | grp_load_points_buffer_fu_87/p_16_in                   |                                                            |                2 |              2 |
+|  ap_clk      |                                                        | grp_load_points_buffer_fu_87/n_2_i_reg_200[4]_i_1          |                2 |              5 |
+|  ap_clk      | grp_load_points_buffer_fu_87/n_2_i_1_reg_372[4]_i_1    |                                                            |                2 |              5 |
+|  ap_clk      | grp_load_points_buffer_fu_87/p_16_in                   | ap_rst                                                     |                2 |              5 |
+|  ap_clk      | grp_store_output_points_buffer_fu_99/i_reg_1430        | grp_store_output_points_buffer_fu_99/i_reg_143             |                1 |              5 |
+|  ap_clk      | grp_load_points_buffer_fu_87/p_10_in                   |                                                            |                3 |              6 |
+|  ap_clk      | grp_store_output_points_buffer_fu_99/indvar_reg_1540   | grp_store_output_points_buffer_fu_99/ap_reg_ppiten_pp1_it0 |                2 |              6 |
+|  ap_clk      | grp_store_output_points_buffer_fu_99/exitcond1_reg_303 |                                                            |                2 |              6 |
+|  ap_clk      | grp_load_points_buffer_fu_87/E[0]                      | grp_load_points_buffer_fu_87/ap_reg_ppiten_pp0_it00        |                3 |              6 |
+|  ap_clk      |                                                        | ap_rst                                                     |                9 |             16 |
+|  ap_clk      | grp_load_points_buffer_fu_87/ap_reg_ppiten_pp0_it00    |                                                            |                8 |             30 |
+|  ap_clk      | grp_load_points_buffer_fu_87_ap_start_ap_start_reg     |                                                            |                8 |             32 |
+|  ap_clk      |                                                        |                                                            |               29 |             45 |
+|  ap_clk      | n_2_data_points_addr0data_reg[31]_i_1                  | ap_rst                                                     |               21 |             96 |
++--------------+--------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
+
+

@@ -139,7 +139,7 @@ parameter C_M_AXI_MASTER_PORTB_TARGET_ADDR = 32'h00000000;
 parameter C_M_AXI_MASTER_PORTB_USER_VALUE = 1'b0;
 parameter C_M_AXI_MASTER_PORTB_PROT_VALUE = 3'b010;
 parameter C_M_AXI_MASTER_PORTB_CACHE_VALUE = 4'b0000;
-parameter C_S_AXI_CONFIG_BUS_ADDR_WIDTH = 6;
+parameter C_S_AXI_CONFIG_BUS_ADDR_WIDTH = 7;
 parameter C_S_AXI_CONFIG_BUS_DATA_WIDTH = 32;
 parameter RESET_ACTIVE_LOW = 1;
 
@@ -389,6 +389,7 @@ wire [32 - 1:0] sig_lloyds_kernel_top_block_address;
 wire [32 - 1:0] sig_lloyds_kernel_top_data_points_addr;
 wire [32 - 1:0] sig_lloyds_kernel_top_centres_in_addr;
 wire [32 - 1:0] sig_lloyds_kernel_top_output_addr;
+wire [32 - 1:0] sig_lloyds_kernel_top_update_points;
 wire [32 - 1:0] sig_lloyds_kernel_top_n;
 wire [32 - 1:0] sig_lloyds_kernel_top_k;
 wire sig_lloyds_kernel_top_ap_start;
@@ -423,6 +424,7 @@ lloyds_kernel_top lloyds_kernel_top_U(
     .data_points_addr(sig_lloyds_kernel_top_data_points_addr),
     .centres_in_addr(sig_lloyds_kernel_top_centres_in_addr),
     .output_addr(sig_lloyds_kernel_top_output_addr),
+    .update_points(sig_lloyds_kernel_top_update_points),
     .n(sig_lloyds_kernel_top_n),
     .k(sig_lloyds_kernel_top_k),
     .ap_start(sig_lloyds_kernel_top_ap_start),
@@ -581,6 +583,7 @@ lloyds_kernel_top_CONFIG_BUS_if_U(
     .I_data_points_addr(sig_lloyds_kernel_top_data_points_addr),
     .I_centres_in_addr(sig_lloyds_kernel_top_centres_in_addr),
     .I_output_addr(sig_lloyds_kernel_top_output_addr),
+    .I_update_points(sig_lloyds_kernel_top_update_points),
     .I_n(sig_lloyds_kernel_top_n),
     .I_k(sig_lloyds_kernel_top_k),
     .I_ap_start(sig_lloyds_kernel_top_ap_start),

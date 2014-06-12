@@ -5,7 +5,7 @@
 // 
 // ==============================================================
 
-// Port list: {  2 3  }
+// Port list: {  0 3  }
 
 
 #ifndef _lloyds_kernel_top_data_points_buffer_0_value_H_
@@ -186,7 +186,6 @@ SC_MODULE( lloyds_kernel_top_data_points_buffer_0_value )
 
     sc_core::sc_in<sc_dt::sc_lv<AddressWidth> > address0;
     sc_core::sc_in<sc_dt::sc_logic> ce0;
-    sc_core::sc_out<sc_dt::sc_lv<DataWidth> > q0;
     sc_core::sc_in<sc_dt::sc_logic> we0;
     sc_core::sc_in<sc_dt::sc_lv<DataWidth> > d0;
 
@@ -207,14 +206,8 @@ SC_MODULE( lloyds_kernel_top_data_points_buffer_0_value )
         meminst->reset(reset);
         meminst->clk(clk);
 
-        SC_METHOD(proc_mem_q);
-        sensitive << mem_q;
-
-        SC_METHOD(proc_mem_ra);
-        sensitive << address0;
-
-        SC_METHOD(proc_mem_ce);
-        sensitive << ce0;
+        mem_ra.write(0);
+        mem_ce.write(0);
 
         SC_METHOD(proc_mem_wa);
         sensitive << address0;
@@ -231,9 +224,6 @@ SC_MODULE( lloyds_kernel_top_data_points_buffer_0_value )
         delete meminst;
     }
 
-    void proc_mem_q();
-    void proc_mem_ra();
-    void proc_mem_ce();
     void proc_mem_wa();
     void proc_mem_we();
     void proc_mem_d();

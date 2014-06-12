@@ -1,326 +1,972 @@
-@I [HLS-0] Workspace /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner opened at Mon Jun 02 23:29:22 BST 2014
+@I [HLS-0] Workspace /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner opened at Thu Jun 12 14:10:01 BST 2014
 @I [HLS-100] Command "config_clock -quiet -name default -period 10 -default=false "
 @I [SYN-201] Setting up clock 'default' with a period of 10ns.
-@I [HLS-100] Command 'config_clock' returned 0; elapsed 0Total elapsed time: 0.486 sec.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 0Total elapsed time: 0.973 sec.
 @I [HLS-100] Command "open_platform DefaultPlatform "
-@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 0.487 sec.
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 0.974 sec.
 @I [HLS-100] Command "import_lib /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.lib "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/xilinx_interface.lib "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.491 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.979 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.491 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.980 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.492 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.492 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.980 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.981 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.493 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.981 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.494 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.983 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.495 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.496 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.984 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.987 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_old.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.499 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.990 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_vivado.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.500 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.991 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.hlp "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/target_info.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.503 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.996 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.504 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.505 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.997 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.998 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/dsp48e1.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.505 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.998 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.505 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.999 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.506 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.999 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed medium "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.506 sec.
-@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.01Total elapsed time: 0.507 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.999 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.01Total elapsed time: 1.1 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq.gen "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.510 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.5 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.511 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.6 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.514 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.9 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.521 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.20 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.529 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.31 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.11Total elapsed time: 0.647 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.13Total elapsed time: 1.162 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.648 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.163 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.gen "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/tps/tcl/tcllib1.11.1/struct/list.tcl "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.663 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.663 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.185 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.186 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/tps/tcl/tcllib1.11.1/math/bignum.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.668 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02Total elapsed time: 0.674 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.15Total elapsed time: 0.674 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.193 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.03Total elapsed time: 1.202 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.2Total elapsed time: 1.202 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.675 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 0.676 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 0.676 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.204 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.2Total elapsed time: 1.204 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.2Total elapsed time: 1.204 sec.
 @I [HLS-100] Command "open_platform DefaultPlatform "
-@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 0.676 sec.
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.205 sec.
 @I [HLS-100] Command "import_lib /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq_fpv6 "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv7.lib "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.679 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.680 sec.
-@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.01Total elapsed time: 0.690 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.209 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.211 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.02Total elapsed time: 1.226 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.692 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.692 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.229 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.229 sec.
 @I [HLS-100] Command "set_part xc7z020clg484-1 "
 @I [HLS-100] Command "add_library xilinx/zynq/zynq:xc7z020:clg484:-1 "
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.694 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.232 sec.
 @I [HLS-100] Command "license_exists VIVADO_HLS "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 0.695 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.232 sec.
 @I [HLS-100] Command "license_exists AUTOESL_NI "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 0.695 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.233 sec.
 @I [HLS-100] Command "license_exists HLS "
-@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 0.695 sec.
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.233 sec.
 @I [HLS-100] Command "open_platform DefaultPlatform "
-@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 0.695 sec.
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.233 sec.
 @I [HLS-100] Command "import_lib /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.lib "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/xilinx_interface.lib "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.697 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.236 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.698 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.237 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.699 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.699 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.238 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.238 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.699 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.238 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.700 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.239 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.700 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.702 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.240 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.242 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_old.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.704 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.244 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_vivado.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.704 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.245 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.hlp "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/target_info.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.707 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.249 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.708 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.708 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.251 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.251 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/dsp48e1.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.709 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.252 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.709 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.252 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.709 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.252 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed medium "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.709 sec.
-@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.01Total elapsed time: 0.710 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.252 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.02Total elapsed time: 1.254 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq.gen "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.713 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.257 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.714 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.258 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.716 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.261 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.723 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.271 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.731 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.282 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.12Total elapsed time: 0.846 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.12Total elapsed time: 1.412 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.847 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.412 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.868 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.15Total elapsed time: 0.868 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.03Total elapsed time: 1.445 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.18Total elapsed time: 1.445 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.870 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 0.870 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 0.870 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.447 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.18Total elapsed time: 1.447 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.18Total elapsed time: 1.447 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.870 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.448 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.870 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.448 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed slow "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.870 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0.17Total elapsed time: 0.871 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.448 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.21Total elapsed time: 1.448 sec.
 @I [HLS-100] Command "add_library xilinx/zynq/zynq_fpv6 "
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.871 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.449 sec.
 @I [HLS-100] Command "license_exists VIVADO_HLS "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 0.871 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.449 sec.
 @I [HLS-100] Command "license_exists AUTOESL_NI "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 0.871 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.449 sec.
 @I [HLS-100] Command "license_exists HLS "
-@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 0.871 sec.
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.449 sec.
 @I [HLS-100] Command "open_platform DefaultPlatform "
-@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 0.871 sec.
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.450 sec.
 @I [HLS-100] Command "import_lib /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq_fpv6 "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv7.lib "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.874 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.875 sec.
-@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.01Total elapsed time: 0.885 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.453 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.454 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.01Total elapsed time: 1.469 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.887 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.887 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0.01Total elapsed time: 0.887 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.471 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.471 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.01Total elapsed time: 1.472 sec.
 @I [HLS-10] Setting target device to 'xc7z020clg484-1'
-@I [HLS-100] Command 'set_part' returned 0; elapsed 0.18Total elapsed time: 0.887 sec.
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.22Total elapsed time: 1.472 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.887 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.472 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.887 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.472 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed slow "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.887 sec.
-@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.37Total elapsed time: 0.888 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.472 sec.
+@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.47Total elapsed time: 1.473 sec.
 @I [HLS-100] Command "set_part xc7z020clg484-1 "
 @I [HLS-100] Command "add_library xilinx/zynq/zynq:xc7z020:clg484:-1 "
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.888 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.474 sec.
 @I [HLS-100] Command "license_exists VIVADO_HLS "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 0.889 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.474 sec.
 @I [HLS-100] Command "license_exists AUTOESL_NI "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 0.889 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.474 sec.
 @I [HLS-100] Command "license_exists HLS "
-@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 0.889 sec.
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.474 sec.
 @I [HLS-100] Command "open_platform DefaultPlatform "
-@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 0.889 sec.
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.474 sec.
 @I [HLS-100] Command "import_lib /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.lib "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/xilinx_interface.lib "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.891 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.477 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.892 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.478 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.893 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.893 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.478 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.478 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.893 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.479 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.894 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.480 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.894 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.896 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.481 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.483 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_old.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.898 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.486 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_vivado.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.898 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.486 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.hlp "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/target_info.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.901 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.491 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.902 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.902 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.492 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.492 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/dsp48e1.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.903 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.493 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.903 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.493 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.903 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.493 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed medium "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.903 sec.
-@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.01Total elapsed time: 0.904 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.493 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.01Total elapsed time: 1.496 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq.gen "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.907 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.499 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.908 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.500 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.910 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.503 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.916 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.513 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.924 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.523 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.11Total elapsed time: 1.40 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.14Total elapsed time: 1.662 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.40 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.663 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.62 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.15Total elapsed time: 1.62 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.03Total elapsed time: 1.696 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.2Total elapsed time: 1.696 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.63 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 1.63 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 1.63 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.698 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.2Total elapsed time: 1.699 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.2Total elapsed time: 1.699 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.64 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.699 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.64 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.699 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed slow "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.64 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0.17Total elapsed time: 1.64 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.699 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.21Total elapsed time: 1.700 sec.
 @I [HLS-100] Command "add_library xilinx/zynq/zynq_fpv6 "
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.65 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.700 sec.
 @I [HLS-100] Command "license_exists VIVADO_HLS "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.65 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.701 sec.
 @I [HLS-100] Command "license_exists AUTOESL_NI "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.65 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.701 sec.
 @I [HLS-100] Command "license_exists HLS "
-@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.65 sec.
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.701 sec.
 @I [HLS-100] Command "open_platform DefaultPlatform "
-@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.65 sec.
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.701 sec.
 @I [HLS-100] Command "import_lib /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq_fpv6 "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv7.lib "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.68 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.69 sec.
-@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.01Total elapsed time: 1.78 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.704 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.706 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.02Total elapsed time: 1.722 sec.
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
 @I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.80 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.80 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0.01Total elapsed time: 1.81 sec.
-@I [HLS-100] Command 'set_part' returned 0; elapsed 0.18Total elapsed time: 1.81 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.724 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.724 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.02Total elapsed time: 1.725 sec.
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.23Total elapsed time: 1.725 sec.
 @I [HLS-100] Command "create_clock -period 10 -name default "
-@I [HLS-100] Command 'create_clock' returned 0; elapsed 0Total elapsed time: 1.81 sec.
-@I [HLS-100] Command "source ./combiner/HLS/combiner/combiner/directives.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.81 sec.
+@I [HLS-100] Command 'create_clock' returned 0; elapsed 0Total elapsed time: 1.726 sec.
 @I [HLS-100] Command "csynth_design "
 @I [HLS-100] Command "elaborate -effort=medium -skip_syncheck=0 -lm=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 "
-@I [HLS-10] Importing test bench file 'combiner/simulation/combiner_tb.cpp' ... 
-@0 [HLS-0] Importing test bench file 'combiner/simulation/combiner_tb.cpp' ... 
-@W [HLS-40] Cannot find test bench file 'combiner/simulation/combiner_tb.cpp'
-@I [HLS-10] Importing test bench file 'combiner/simulation/data_points_N128_K4_D3_s0.75.mat' ... 
-@0 [HLS-0] Importing test bench file 'combiner/simulation/data_points_N128_K4_D3_s0.75.mat' ... 
-@W [HLS-40] Cannot find test bench file 'combiner/simulation/data_points_N128_K4_D3_s0.75.mat'
-@I [HLS-10] Importing test bench file 'combiner/simulation/data_points_N16384_K128_D3_s0.20.mat' ... 
-@0 [HLS-0] Importing test bench file 'combiner/simulation/data_points_N16384_K128_D3_s0.20.mat' ... 
-@W [HLS-40] Cannot find test bench file 'combiner/simulation/data_points_N16384_K128_D3_s0.20.mat'
-@I [HLS-10] Importing test bench file 'combiner/simulation/tb_io.cpp' ... 
-@0 [HLS-0] Importing test bench file 'combiner/simulation/tb_io.cpp' ... 
-@W [HLS-40] Cannot find test bench file 'combiner/simulation/tb_io.cpp'
-@I [HLS-10] Importing test bench file 'combiner/simulation/tb_io.h' ... 
-@0 [HLS-0] Importing test bench file 'combiner/simulation/tb_io.h' ... 
-@W [HLS-40] Cannot find test bench file 'combiner/simulation/tb_io.h'
-@W [HLS-40] Cannot find source file combiner/source/combiner_top.cpp; skipping it.
-@W [HLS-40] Cannot find source file combiner/source/combiner_top.h; skipping it.
+@I [HLS-10] Importing test bench file 'combiner/HLS/combiner/simulation/combiner_tb.cpp' ... 
+@0 [HLS-0] Importing test bench file 'combiner/HLS/combiner/simulation/combiner_tb.cpp' ... 
+@I [HLS-10] Importing test bench file 'test_data/data_points.mat' ... 
+@0 [HLS-0] Importing test bench file 'test_data/data_points.mat' ... 
+@I [HLS-10] Importing test bench file 'test_data/data_points_N128_K4_D3_s0.75.mat' ... 
+@0 [HLS-0] Importing test bench file 'test_data/data_points_N128_K4_D3_s0.75.mat' ... 
+@I [HLS-10] Importing test bench file 'test_data/intermediate.mat' ... 
+@0 [HLS-0] Importing test bench file 'test_data/intermediate.mat' ... 
+@I [HLS-10] Importing test bench file 'combiner/HLS/combiner/simulation/tb_io.cpp' ... 
+@0 [HLS-0] Importing test bench file 'combiner/HLS/combiner/simulation/tb_io.cpp' ... 
+@I [HLS-10] Importing test bench file 'combiner/HLS/combiner/simulation/tb_io.h' ... 
+@0 [HLS-0] Importing test bench file 'combiner/HLS/combiner/simulation/tb_io.h' ... 
+@I [HLS-10] Analyzing design file 'combiner/HLS/combiner/source/combiner_top.cpp' ... 
+@0 [HLS-0] Analyzing design file 'combiner/HLS/combiner/source/combiner_top.cpp' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec clang -gcc-toolchain "/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/gcc" -hls    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit   -I "/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/systemc/include" -I "/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/include" -I "/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/include/ap_sysc" -fexceptions "combiner/HLS/combiner/source/combiner_top.cpp"  -o "/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.pp.00.o"
+
+@I [HLS-0] Syntax Checker time: 1 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/gcc" -hls -fno-exceptions  -D__llvm__  -CC -E "combiner/HLS/combiner/source/combiner_top.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.pp.0.cpp"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-100] Command "list_core -type functional_unit "
+@I [HLS-100] Command 'list_core' returned 0; elapsed 0Total elapsed time: 2.921 sec.
+@I [HLS-0] Marker-Pragma convertor: /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.pp.0.cpp /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.pp.0.cpp.ap-line.cpp /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.pp.0.cpp.ap-line.cpp.CXX 1
+@I [HLS-0] 
+Source processor: exec /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/tps/lnx64/jre/bin/java -Xmx512m -classpath   "/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lib/classes/autopilot.sourceprocessor.jar:/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lib/classes/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar:/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lib/classes/org.eclipse.core.runtime_3.7.0.v20110110.jar:/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lib/classes/org.eclipse.equinox.common_3.6.0.v20110523.jar:/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lib/classes/com.ibm.icu_4.4.2.v20110208.jar:/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lib/classes/jargs.jar:/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar:/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar:/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar:/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar:/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.pp.0.cpp.ap-line.cpp"  -m "combiner_top" -o "/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.pp.0.cpp.ap-cdt.cpp" --ad --pc --pp --directive /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/combiner.directive --source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/HLS/combiner/source/combiner_top.cpp --error /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db --funcunit "AddSub AddSubnS Mul MulnS Mul2S Mul3S Mul4S Mul5S Mul6S DivnS AddSub_DSP FDiv FSqrt DDiv DSqrt DRecip DRSqrt FAddSub_nodsp FAddSub_fulldsp FMul_nodsp FMul_meddsp FMul_fulldsp FMul_maxdsp FRSqrt_nodsp FRSqrt_fulldsp FRecip_nodsp FRecip_fulldsp FLog_nodsp FLog_meddsp FLog_fulldsp FExp_nodsp FExp_meddsp FExp_fulldsp DAddSub_nodsp DAddSub_fulldsp DMul_nodsp DMul_meddsp DMul_fulldsp DMul_maxdsp DLog_nodsp DLog_meddsp DLog_fulldsp DExp_nodsp DExp_meddsp DExp_fulldsp" --ce --tcl /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db --ve --vetcl /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db --lp --ca --es --gf --nk --df --pd --p2d /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db --sd --scff /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Error:Syntax error in source:for (__decltype(__n + 0) __niter = __n;
+Error:Missing ; in source:t
+Error:Syntax error in source:)
+ *__first = __value;
+Error:Syntax error in source:for (__decltype(__n + 0) __niter = __n;
+Error:Missing ; in source:t
+Error:Syntax error in source:)
+ *__first = __tmp;
+@I [HLS-0] Marker-Pragma convertor: /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.pp.0.cpp.ap-cdt.cpp /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.pragma.0.cpp /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.pragma.0.cpp.ap-line.CXX 0
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 19.123 sec.
+@I [HLS-0] CDT processor time: 16 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/gcc" -hls -fno-exceptions  -D__llvm__  -CC -E "/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.pragma.1.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.pragma.2.cpp"
+
+@I [HLS-0] exec clang -gcc-toolchain /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/gcc -hls -fno-exceptions  -D__llvm__  -w  "/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.pragma.2.cpp"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.g.bc"
+@I [HLS-10] Importing test bench file 'HLS/combiner/simulation/combiner_tb.cpp' ... 
+@0 [HLS-0] Importing test bench file 'HLS/combiner/simulation/combiner_tb.cpp' ... 
+@W [HLS-40] Cannot find test bench file 'HLS/combiner/simulation/combiner_tb.cpp'
+@I [HLS-10] Importing test bench file '../test_data/data_points.mat' ... 
+@0 [HLS-0] Importing test bench file '../test_data/data_points.mat' ... 
+@W [HLS-40] Cannot find test bench file '../test_data/data_points.mat'
+@I [HLS-10] Importing test bench file '../test_data/data_points_N128_K4_D3_s0.75.mat' ... 
+@0 [HLS-0] Importing test bench file '../test_data/data_points_N128_K4_D3_s0.75.mat' ... 
+@W [HLS-40] Cannot find test bench file '../test_data/data_points_N128_K4_D3_s0.75.mat'
+@I [HLS-10] Importing test bench file '../test_data/intermediate.mat' ... 
+@0 [HLS-0] Importing test bench file '../test_data/intermediate.mat' ... 
+@W [HLS-40] Cannot find test bench file '../test_data/intermediate.mat'
+@I [HLS-10] Importing test bench file 'HLS/combiner/simulation/tb_io.cpp' ... 
+@0 [HLS-0] Importing test bench file 'HLS/combiner/simulation/tb_io.cpp' ... 
+@W [HLS-40] Cannot find test bench file 'HLS/combiner/simulation/tb_io.cpp'
+@I [HLS-10] Importing test bench file 'HLS/combiner/simulation/tb_io.h' ... 
+@0 [HLS-0] Importing test bench file 'HLS/combiner/simulation/tb_io.h' ... 
+@W [HLS-40] Cannot find test bench file 'HLS/combiner/simulation/tb_io.h'
+@W [HLS-40] Cannot find source file HLS/combiner/source/combiner_top.cpp; skipping it.
+@W [HLS-40] Cannot find source file HLS/combiner/source/combiner_top.h; skipping it.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/ve_warning.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 20.443 sec.
+@I [HLS-10] Validating synthesis directives ...
+@0 [HLS-0] Validating synthesis directives ...
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 20.444 sec.
 @I [HLS-0] Linking all ...
-@E [HLS-70] Cannot find any design unit to elaborate.
-@E [HLS-0] Cannot find any design unit to elaborate.
-@I [HLS-100] Command 'elaborate' returned 2; elapsed 0.01Total elapsed time: 1.85 sec.
-@I [HLS-100] Command 'csynth_design' returned 2; elapsed 0.01Total elapsed time: 1.85 sec.
+@I [HLS-0] exec llvm-ld  "/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.bc"  -disable-opt  -L/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/lib -lm_basic -o "/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.o.pre"
+@I [HLS-0] Link time: 0 seconds per iteration
+@I [HLS-0] Linking all ...
+@I [HLS-0] exec llvm-ld  "/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.g.bc"  -disable-opt  -L/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/lib -lm_basic -o "/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.g.pre"
+@I [HLS-0] Link time: 0 seconds per iteration
+@I [HLS-100] Command "opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 "
+@I [HLS-100] Command "cleanup_all_models "
+@I [HLS-100] Command 'cleanup_all_models' returned 0; elapsed 0Total elapsed time: 20.543 sec.
+@I [HLS-10] Starting code transformations ...
+@0 [HLS-0] Starting code transformations ...
+@I [HLS-0] std xform: transform -hls -share-std-xform -always-inline -promote-dbg-pointer  -interface-preproc  -scalarrepl -mem2reg -keep-read-access -instcombine -dce  -promote-dbg-pointer  -bitop-raise  -indvars -loop-simplify -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -basicaa  -simplifycfg -mem2reg -globalopt  -global-constprop -deadargelim -instcombine -simplifycfg  -prune-eh -simplifycfg  -scalarrepl -instcombine -reassociate -licm  -simplifycfg -loop-simplify -indvars -instcombine  -simplifycfg -mem2reg -loop-simplify -indvars -instcombine  -gvn -gvn -instcombine -adce  -break-crit-edges  -simplifycfg -loop-delete  -global-array-opt -dce -dse -adce  -find-syn-modules -top combiner_top  -deadargelim  -mem2reg -instcombine -dce  -presyn-prepare -auto-rom-infer  -syn-check -check-rec-only  -find-region -simplifycfg -func-extr -function-inline  -mem2reg -instcombine -dce   -gvn -adce -adse  -constprop -instcombine -bit-constprop  -instcombine -dce -simplifycfg -bitop-raise  -simplifycfg -dce -loop-delete  -globalopt -global-privatize -mem2reg -dce  -global-constprop -pointer-simplify -constprop -dce  -promote-dbg-pointer  -norm-name   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.g.0.bc -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.g.1.bc -f  -phase std-opt
+@I [HLS-0] Std xform time: 0 seconds per iteration
+@I [HLS-10] Checking synthesizability ...
+@0 [HLS-0] Checking synthesizability ...
+@I [HLS-0] syn check 1/2: transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce  -mem2reg -instcombine  -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce  -array-normalize -instcombine -dce  -array-seg-normalize -instcombine -dce  -array-flatten -instcombine -dce  -array-burst -dce  -deadargelim -promote-global-argument  -doublePtrSimplify -doublePtrElim -dce  -doublePtrSimplify -promote-dbg-pointer  -dce -scalarrepl -dse -adse -instcombine  -ptrLegalization  -simplifycfg -dce -instcombine  -pointer-simplify -ptrArgReplace -dce -instcombine   -disaggr -scalarrepl -norm-name -dce  -mem2reg -instcombine -ptrLegalization   -simplifycfg  -instcombine -dce -inst-simplify  -directive-preproc -mem2reg -dse -dce  -globaldce    /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.g.1.bc -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.g.2.prechk.bc -f
+@I [HLS-0] Syn check 1/2 time: 0 seconds per iteration
+@I [HLS-0] syn check 2/2: transform -syn-check   -interface-gen -constprop -dse -dce  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.g.2.prechk.bc -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.g.2.bc -f  -phase syn-check
+@I [HLS-0] Syn check 2/2 time: 0 seconds per iteration
+@I [HLS-0] Compiler optimizing ...
+@I [HLS-0] Share syncheck's 1.bc for syn flow: copy /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.g.1.bc to /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.o.1.bc
+@I [HLS-0] presyn 1: transform -hls  -directive-preproc -mem2reg -dse -dce  -disaggr -scalarrepl -norm-name -deadargelim  -mem2reg -instcombine -dce -auto-rom-infer -dce  -directive-preproc -mem2reg -dse -dce  -func-buffer -dce -array-normalize  -func-legal -instcombine -gvn -constprop -dce   -ptrArgReplace -mem2reg -instcombine -dce  -array-seg-normalize -deadargelim  -instcombine -dce  -pointer-simplify -dce  -port-alignment -dce  -data-pack -instcombine -dce   -loop-simplify -indvars -instcombine  -gvn -loop-simplify -mem2reg -dce -simplifycfg  -find-region -instcombine  -array-burst -dce  -inst-simplify  -interface-preproc  -indvars -auto-loop-unroll -loop-simplify -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -gvn -disable-agg-range -inst-simplify  -constprop -simplifycfg -dce  -pointer-simplify -dce  -array-transform-check  -globalopt -constprop -dce  -array-promote -constprop -instcombine -dce -auto-par -array-partition -instcombine -dce  -ptrArgReplace -global-constprop -deadargelim -mem2reg  -func-legal -instcombine -dce  -array-reshape -instcombine -simplifycfg -dce   -mem-intrinsic-preproc -dce  -global-privatize  -mem2reg -globaldce  -promote-global-argument  -ptrArgReplace -mem2reg -instcombine -dce  -globalopt -mergereturn -simplify-global-access -mem2reg -dce  -pointer-simplify -dce  -functionattrs  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -inst-simplify -dce -norm-name  -function-inline  -func-inst -constprop -instcombine -simplifycfg -dce  -func-legal -dce   -directive-preproc -mem2reg -dse -dce  -loop-bound  -arraycheck -bitwidthmin -on-by-dataflow  -instcombine -simplifycfg -dce -loop-simplify -simplifycfg -loop-stream -instcombine -simplifycfg -dce -globaldce  -funstream-prep -function-stream -dce -globaldce  -array-streaming -instcombine -simplifycfg -dce      -group-axi-access  -simplifycfg -dce -loop-delete  -norm-name  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.o.1.bc -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.o.1.tmp.bc -f
+@I [XFORM-502] Unrolling all sub-loops inside loop 'init_loop' (combiner/HLS/combiner/source/combiner_top.cpp:56) in function 'combiner_top' for pipelining.
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Loop-2.3' (combiner/HLS/combiner/source/combiner_top.cpp:80) in function 'combiner_top' for pipelining.
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Loop-3' (combiner/HLS/combiner/source/combiner_top.cpp:118) in function 'combiner_top' for pipelining.
+@I [XFORM-501] Unrolling loop 'Loop-1.1' (combiner/HLS/combiner/source/combiner_top.cpp:60) in function 'combiner_top' completely.
+@I [XFORM-501] Unrolling loop 'Loop-2.3.1' (combiner/HLS/combiner/source/combiner_top.cpp:87) in function 'combiner_top' completely.
+@I [XFORM-501] Unrolling loop 'Loop-2.3.2' (combiner/HLS/combiner/source/combiner_top.cpp:97) in function 'combiner_top' completely.
+@I [XFORM-501] Unrolling loop 'Loop-2.3.3' (combiner/HLS/combiner/source/combiner_top.cpp:105) in function 'combiner_top' completely.
+@I [XFORM-501] Unrolling loop 'Loop-3.1' (combiner/HLS/combiner/source/combiner_top.cpp:127) in function 'combiner_top' completely.
+@I [XFORM-102] Partitioning array 'centre_buffer.wgtCent.value' (combiner/HLS/combiner/source/combiner_top.cpp:54) in dimension 2 automatically.
+@I [XFORM-102] Partitioning array 'u.value' (combiner/HLS/combiner/source/combiner_top.cpp:86) automatically.
+@I [XFORM-102] Partitioning array 'prev_point.value' (combiner/HLS/combiner/source/combiner_top.cpp:95) automatically.
+@I [HLS-0] Presyn 1 time: 0 seconds per iteration
+@I [HLS-0] presyn 2: transform -hls -keep-callgraph -scalarrepl -mem2reg  -indvars -loop-bound  -instcombine -dce  -merge-array-access -mem2reg -dce  -clean-region -mergereturn -if-conv  -instcombine -dce -constprop  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -scalarrepl -mem2reg  -global-constprop -deadargelim -deadargelim  -instcombine -dce -simplifycfg    -ptrArgReplace -mem2reg -function-inline  -mem2reg -instcombine -dce -expr-balance  -instcombine -dce  -bitwidthmin  -directive-preproc  -inst-rectify -instcombine -dce  -functionattrs  -constprop -instcombine -bit-constprop  -globalopt -globaldce  -inst-simplify -instcombine -elimdeaddata -dce  -loop-delete -simplifycfg   -norm-name /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.o.1.tmp.bc -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.o.2.bc -f  -phase presyn
+@I [HLS-0] Presyn 2 time: 0 seconds per iteration
+@I [HLS-0] build ssdm: transform -hls -function-uniquify -auto-function-inline  -loop-simplify -indvars -licm -loop-dep  -loop-bound -licm -loop-simplify -flattenloopnest  -array-flatten -gvn -instcombine -dce  -promote-global-argument  -array-map -dce -func-legal  -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify   -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce  -inst-simplify -dce  -globaldce -array-streaming -instcombine  -dce   -deadargelim -doublePtrSimplify -doublePtrElim  -dce -doublePtrSimplify -promote-dbg-pointer -dce  -scalarrepl -mem2reg -disaggr -norm-name -mem2reg  -instcombine  -dse -adse -adce -ptrLegalization -dce -instcombine  -loop-rot -constprop -cfgopt -simplifycfg -indvars -pointer-simplify -dce -loop-bound  -loop-simplify -loop-preproc  -constprop -gvn -mem2reg -instcombine -dce  -loop-merge -dce  -bitwidthmin  -directive-preproc -inst-simplify -dce  -interface-gen -gvn -mem2reg -instcombine -dce -adse  -loop-bound  -instcombine -cfgopt -simplifycfg -loop-simplify  -clean-region -io-protocol  -find-region -mem2reg  -loop-simplify -phi-opt -bitop-raise  -inst-simplify -inst-rectify -instcombine -adce  -cfgopt -simplifycfg -strip-dead-prototypes  -interface-lower -bitop-lower -intrinsic-lower  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa  -inst-simplify -simplifycfg   -mergereturn -inst-simplify -inst-rectify  -dce -bitop-lower  -loop-rewind -pointer-simplify -dce -cfgopt  -norm-name -legalize -read-loop-dep -dce -bitwidth   -cdfg-build  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.o.2.bc -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.o.3.bc -f  -phase build-ssdm
+@I [HLS-0] Build ssdm time: 0 seconds per iteration
+@I [HLS-0] Finish building internal data model.
+@I [HLS-100] Command 'opt_and_import_c' returned 0; elapsed 1.36Total elapsed time: 21.969 sec.
+@I [HLS-111] Elapsed time: 3.77 seconds; current memory usage: 53 MB.
+@I [HLS-100] Command 'elaborate' returned 0; elapsed 2.7Total elapsed time: 21.970 sec.
+@I [HLS-100] Command "autosyn "
+@I [HLS-10] Starting hardware synthesis ...
+@0 [HLS-0] Starting hardware synthesis ...
+@I [HLS-0] Synthesizing C/C++ design ...
+@I [HLS-10] Synthesizing 'combiner_top' ...
+@0 [HLS-0] Synthesizing 'combiner_top' ...
+@I [HLS-100] Command "ap_set_top_model combiner_top "
+@I [HLS-100] Command 'ap_set_top_model' returned 0; elapsed 0Total elapsed time: 21.970 sec.
+@I [HLS-100] Command "get_model_list combiner_top -filter all-wo-channel -topdown "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 21.971 sec.
+@I [HLS-100] Command "preproc_iomode -model combiner_top "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 21.971 sec.
+@I [HLS-100] Command "get_model_list combiner_top -filter all-wo-channel "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 21.971 sec.
+@I [HLS-0] Model list for configure: combiner_top
+@I [HLS-0] Configuring Module : combiner_top ...
+@I [HLS-100] Command "set_default_model combiner_top "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 21.971 sec.
+@I [HLS-100] Command "apply_spec_resource_limit combiner_top "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 21.971 sec.
+@I [HLS-0] Model list for preprocess: combiner_top
+@I [HLS-0] Preprocessing Module: combiner_top ...
+@I [HLS-100] Command "set_default_model combiner_top "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 21.972 sec.
+@I [HLS-100] Command "cdfg_preprocess -model combiner_top "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0Total elapsed time: 21.974 sec.
+@I [HLS-100] Command "rtl_gen_preprocess combiner_top "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 21.974 sec.
+@I [HLS-0] Model list for synthesis: combiner_top
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'combiner_top' 
+@0 [HLS-0] -- Scheduling module 'combiner_top' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model combiner_top "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 21.975 sec.
+@I [HLS-100] Command "schedule -model combiner_top "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'init_loop'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 1.
+@I [SCHED-61] Pipelining loop 'block_loop.1'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 8.
+@I [SCHED-61] Pipelining loop 'block_loop.2'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 8.
+@I [SCHED-61] Pipelining loop 'block_loop.3'.
+@I [SCHED-61] Pipelining result: Target II: 4, Final II: 3, Depth: 3.
+@I [SCHED-61] Pipelining loop 'Loop 3'.
+@W [SCHED-69] Unable to schedule 'store' operation (combiner/HLS/combiner/source/combiner_top.cpp:133) of variable 'div_result_2' on array 'c_buffer' due to limited memory ports.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 2, Depth: 38.
+@I [SCHED-61] Pipelining loop 'Loop 4'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 3.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.25Total elapsed time: 22.227 sec.
+@I [HLS-111] Elapsed time: 0.25 seconds; current memory usage: 53.9 MB.
+@I [HLS-100] Command "report -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.02Total elapsed time: 22.243 sec.
+@I [HLS-100] Command "db_write -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.02Total elapsed time: 22.266 sec.
+@I [HLS-0] Finish scheduling combiner_top.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'combiner_top' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'combiner_top' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model combiner_top "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 22.267 sec.
+@I [HLS-100] Command "bind -model combiner_top "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=combiner_top
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.03Total elapsed time: 22.295 sec.
+@I [HLS-111] Elapsed time: 0.07 seconds; current memory usage: 55 MB.
+@I [HLS-100] Command "report -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.04Total elapsed time: 22.343 sec.
+@I [HLS-100] Command "db_write -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.03Total elapsed time: 22.370 sec.
+@I [HLS-0] Finish binding combiner_top.
+@I [HLS-100] Command "get_model_list combiner_top -filter all-wo-channel "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 22.371 sec.
+@I [HLS-0] Preprocessing for RTLGen ...
+@I [HLS-100] Command "rtl_gen_preprocess combiner_top "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 22.371 sec.
+@I [HLS-0] Model list for RTL generation: combiner_top
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'combiner_top' 
+@0 [HLS-0] -- Generating RTL for module 'combiner_top' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model combiner_top -vendor xilinx -mg_file /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.compgen.tcl "
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/master_portA' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/data_points_in_addr' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/kernel_info_in_addr' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/centres_out_addr' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/distortion_out' to 'ap_none' (register).
+@W [RTGEN-101] Port 'distortion_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/n' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'combiner_top/k' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on function 'combiner_top' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Generating core module 'combiner_top_sdiv_32ns_32ns_32_35': 3 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'combiner_top'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.08Total elapsed time: 22.452 sec.
+@I [HLS-111] Elapsed time: 0.15 seconds; current memory usage: 56.5 MB.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 22.453 sec.
+@I [HLS-100] Command "gen_rtl combiner_top -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/syn/systemc/combiner_top -synmodules combiner_top "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 22.460 sec.
+@I [HLS-100] Command "gen_rtl combiner_top -istop -style xilinx -f -lang vhdl -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/syn/vhdl/combiner_top "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.02Total elapsed time: 22.480 sec.
+@I [HLS-100] Command "gen_rtl combiner_top -istop -style xilinx -f -lang vlog -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/syn/verilog/combiner_top "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.02Total elapsed time: 22.500 sec.
+@I [HLS-100] Command "export_constraint_db -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.constraint.tcl -f -tool general "
+@I [HLS-100] Command 'export_constraint_db' returned 0; elapsed 0Total elapsed time: 22.500 sec.
+@I [HLS-100] Command "report -model combiner_top -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.design.xml -verbose -f -dv "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.03Total elapsed time: 22.529 sec.
+@I [HLS-100] Command "gen_tb_info combiner_top -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top -p /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0Total elapsed time: 22.530 sec.
+@I [HLS-100] Command "report -model combiner_top -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/syn/report/combiner_top_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.02Total elapsed time: 22.550 sec.
+@I [HLS-100] Command "report -model combiner_top -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/syn/report/combiner_top_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.02Total elapsed time: 22.565 sec.
+@I [HLS-100] Command "report -model combiner_top -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.07Total elapsed time: 22.634 sec.
+@I [HLS-100] Command "db_write -model combiner_top -o /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.04Total elapsed time: 22.680 sec.
+@I [HLS-100] Command "sc_get_clocks combiner_top "
+@I [HLS-100] Command 'sc_get_clocks' returned 0; elapsed 0Total elapsed time: 22.730 sec.
+@I [HLS-100] Command "sc_get_portdomain combiner_top "
+@I [HLS-100] Command 'sc_get_portdomain' returned 0; elapsed 0Total elapsed time: 22.730 sec.
+@I [HLS-0] Model list for RTL component generation: combiner_top
+@I [HLS-0] Handling components in module [combiner_top] ... 
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.compgen.tcl "
+@I [HLS-0] Found component combiner_top_sdiv_32ns_32ns_32_35.
+@I [HLS-0] Append model combiner_top_sdiv_32ns_32ns_32_35
+@I [HLS-0] Found component combiner_top_centre_buffer_0_wgtCent_value.
+@I [HLS-0] Append model combiner_top_centre_buffer_0_wgtCent_value
+@I [HLS-0] Found component combiner_top_i_buffer.
+@I [HLS-0] Append model combiner_top_i_buffer
+@I [HLS-0] Found component combiner_top_p_buffer.
+@I [HLS-0] Append model combiner_top_p_buffer
+@I [HLS-0] Found component combiner_top_c_buffer.
+@I [HLS-0] Append model combiner_top_c_buffer
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.731 sec.
+@I [HLS-0] Append model combiner_top
+@I [HLS-0] Generating RTL model list ...
+@I [HLS-0] All models in this session: combiner_top_sdiv_32ns_32ns_32_35 combiner_top_centre_buffer_0_wgtCent_value combiner_top_i_buffer combiner_top_p_buffer combiner_top_c_buffer combiner_top
+@I [HLS-0] To file: write model combiner_top_sdiv_32ns_32ns_32_35
+@I [HLS-0] To file: write model combiner_top_centre_buffer_0_wgtCent_value
+@I [HLS-0] To file: write model combiner_top_i_buffer
+@I [HLS-0] To file: write model combiner_top_p_buffer
+@I [HLS-0] To file: write model combiner_top_c_buffer
+@I [HLS-0] To file: write model combiner_top
+@I [HLS-0] Finished generating RTL model list.
+
+
+@I [HLS-0] RTL Generation done.
+@I [HLS-0] CAS Generation done.
+@I [HLS-0] CBC Generation done.
+@I [HLS-100] Command "export_ssdm /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.export.ll "
+@I [HLS-100] Command 'export_ssdm' returned 0; elapsed 0Total elapsed time: 22.733 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.735 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.738 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.738 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.739 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.741 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.742 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.742 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.745 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.746 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.749 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 22.756 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 22.765 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.12Total elapsed time: 22.887 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.887 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02Total elapsed time: 22.911 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 22.911 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.913 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 22.913 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 22.913 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 22.916 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 22.916 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.917 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.917 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.compgen.tcl "
+@I [RTMG-282] Generating pipelined core: 'combiner_top_sdiv_32ns_32ns_32_35_div'
+@I [RTMG-278] Implementing memory 'combiner_top_centre_buffer_0_wgtCent_value_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'combiner_top_i_buffer_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'combiner_top_p_buffer_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'combiner_top_c_buffer_ram' using block RAMs.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.03Total elapsed time: 22.957 sec.
+@I [HLS-10] Finished generating all RTL models.
+@0 [HLS-0] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'combiner_top'.
+@I [WVHDL-304] Generating RTL VHDL for 'combiner_top'.
+@I [WVLOG-307] Generating RTL Verilog for 'combiner_top'.
+@I [HLS-100] Command 'autosyn' returned 0; elapsed 0.98Total elapsed time: 22.965 sec.
+@I [HLS-100] Command 'csynth_design' returned 0; elapsed 3.68Total elapsed time: 22.965 sec.
+@I [HLS-100] Command "export_design -evaluate vhdl -format ip_catalog -description An IP generated by Vivado HLS -vendor xilinx.com -library hls -version 1.0 "
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.969 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.972 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 22.972 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.973 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.974 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.975 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.975 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.978 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.979 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.982 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 22.989 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 22.998 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.12Total elapsed time: 23.120 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.120 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02Total elapsed time: 23.144 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 23.144 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 23.146 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.17Total elapsed time: 23.146 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.17Total elapsed time: 23.146 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.148 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.148 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.148 sec.
+@I [IMPL-8] Exporting RTL as an IP in IP-XACT.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.149 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.151 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.153 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.153 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.154 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.155 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.156 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.156 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.159 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.160 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.162 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.169 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 23.178 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.12Total elapsed time: 23.299 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.300 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.03Total elapsed time: 23.323 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 23.324 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.325 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.17Total elapsed time: 23.325 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.17Total elapsed time: 23.325 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.327 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.327 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.328 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.compgen.tcl "
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 23.333 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.334 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.335 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.335 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.04Total elapsed time: 23.365 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.380 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/impl/.pcores/verilog/CONFIG_BUS.slave.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.391 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/impl/.pcores/verilog/CONFIG_BUS.slave.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.395 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.420 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.constraint.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.421 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.434 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.435 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.436 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.436 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.460 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.469 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.constraint.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.469 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.constraint.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.470 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.474 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 23.474 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 23.475 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.477 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.477 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.477 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.481 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.482 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.485 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.492 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 23.502 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.12Total elapsed time: 23.624 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.625 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02Total elapsed time: 23.649 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 23.649 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.651 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 23.651 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 23.651 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.653 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 23.653 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.51 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.54 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.55 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.56 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 31.57 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.58 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.58 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.61 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.62 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.65 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.73 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 31.82 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.12Total elapsed time: 31.204 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.205 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02Total elapsed time: 31.230 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 31.230 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 31.232 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.17Total elapsed time: 31.232 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.17Total elapsed time: 31.232 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.234 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.234 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.234 sec.
+@I [IMPL-8] Starting RTL evaluation using Vivado ...
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.235 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.236 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.238 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.239 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.240 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.241 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.241 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.242 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.245 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.246 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.248 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 31.256 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 31.264 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.12Total elapsed time: 31.386 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.386 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02Total elapsed time: 31.410 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 31.410 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 31.412 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.17Total elapsed time: 31.412 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.17Total elapsed time: 31.412 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.415 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.415 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.415 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.427 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.constraint.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.427 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.429 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.430 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.431 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.432 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 31.432 sec.
+@I [HLS-100] Command "source /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.433 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.436 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.437 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.439 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.446 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 31.455 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.12Total elapsed time: 31.577 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 31.578 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 31.602 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.15Total elapsed time: 31.602 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 31.603 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 31.604 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 31.604 sec.
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source /mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.606 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.606 sec.
+@I [HLS-100] Command 'export_design' returned 0; elapsed 1.22Total elapsed time: 332.537 sec.
 @I [HLS-100] Command "cleanup_all "
-@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0Total elapsed time: 1.85 sec.
+@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0.01Total elapsed time: 332.547 sec.

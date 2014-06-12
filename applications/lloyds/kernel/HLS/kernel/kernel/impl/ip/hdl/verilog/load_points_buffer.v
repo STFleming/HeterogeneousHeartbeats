@@ -132,14 +132,14 @@ reg    int_buffer_ce1;
 wire   [31:0] int_buffer_q1;
 reg   [5:0] indvar_phi_fu_192_p4;
 reg   [4:0] i_phi_fu_204_p4;
-wire   [63:0] tmp_s_fu_257_p1;
+wire   [63:0] tmp_4_fu_257_p1;
 wire   [63:0] tmp_9_fu_304_p1;
 wire   [63:0] tmp_9_1_fu_319_p1;
 wire   [63:0] tmp_9_2_fu_339_p1;
-wire   [63:0] tmp_3_fu_229_p1;
+wire   [63:0] tmp_3_cast_fu_229_p1;
 wire   [31:0] tmp_1_fu_213_p2;
-wire   [29:0] tmp_2_fu_219_p4;
-wire   [3:0] tmp_22_fu_278_p1;
+wire   [29:0] tmp_3_fu_219_p4;
+wire   [3:0] tmp_7_fu_278_p1;
 wire   [5:0] p_shl_fu_282_p3;
 wire   [6:0] p_shl_cast_fu_290_p1;
 wire   [6:0] i_cast1_fu_274_p1;
@@ -383,36 +383,36 @@ end
 always @(posedge ap_clk)
 begin
     if (((ap_ST_st1_fsm_0 == ap_CS_fsm) & ~(ap_start == ap_const_logic_0))) begin
-        bus_addr_reg_344[0] <= tmp_3_fu_229_p1[0];
-bus_addr_reg_344[1] <= tmp_3_fu_229_p1[1];
-bus_addr_reg_344[2] <= tmp_3_fu_229_p1[2];
-bus_addr_reg_344[3] <= tmp_3_fu_229_p1[3];
-bus_addr_reg_344[4] <= tmp_3_fu_229_p1[4];
-bus_addr_reg_344[5] <= tmp_3_fu_229_p1[5];
-bus_addr_reg_344[6] <= tmp_3_fu_229_p1[6];
-bus_addr_reg_344[7] <= tmp_3_fu_229_p1[7];
-bus_addr_reg_344[8] <= tmp_3_fu_229_p1[8];
-bus_addr_reg_344[9] <= tmp_3_fu_229_p1[9];
-bus_addr_reg_344[10] <= tmp_3_fu_229_p1[10];
-bus_addr_reg_344[11] <= tmp_3_fu_229_p1[11];
-bus_addr_reg_344[12] <= tmp_3_fu_229_p1[12];
-bus_addr_reg_344[13] <= tmp_3_fu_229_p1[13];
-bus_addr_reg_344[14] <= tmp_3_fu_229_p1[14];
-bus_addr_reg_344[15] <= tmp_3_fu_229_p1[15];
-bus_addr_reg_344[16] <= tmp_3_fu_229_p1[16];
-bus_addr_reg_344[17] <= tmp_3_fu_229_p1[17];
-bus_addr_reg_344[18] <= tmp_3_fu_229_p1[18];
-bus_addr_reg_344[19] <= tmp_3_fu_229_p1[19];
-bus_addr_reg_344[20] <= tmp_3_fu_229_p1[20];
-bus_addr_reg_344[21] <= tmp_3_fu_229_p1[21];
-bus_addr_reg_344[22] <= tmp_3_fu_229_p1[22];
-bus_addr_reg_344[23] <= tmp_3_fu_229_p1[23];
-bus_addr_reg_344[24] <= tmp_3_fu_229_p1[24];
-bus_addr_reg_344[25] <= tmp_3_fu_229_p1[25];
-bus_addr_reg_344[26] <= tmp_3_fu_229_p1[26];
-bus_addr_reg_344[27] <= tmp_3_fu_229_p1[27];
-bus_addr_reg_344[28] <= tmp_3_fu_229_p1[28];
-bus_addr_reg_344[29] <= tmp_3_fu_229_p1[29];
+        bus_addr_reg_344[0] <= tmp_3_cast_fu_229_p1[0];
+bus_addr_reg_344[1] <= tmp_3_cast_fu_229_p1[1];
+bus_addr_reg_344[2] <= tmp_3_cast_fu_229_p1[2];
+bus_addr_reg_344[3] <= tmp_3_cast_fu_229_p1[3];
+bus_addr_reg_344[4] <= tmp_3_cast_fu_229_p1[4];
+bus_addr_reg_344[5] <= tmp_3_cast_fu_229_p1[5];
+bus_addr_reg_344[6] <= tmp_3_cast_fu_229_p1[6];
+bus_addr_reg_344[7] <= tmp_3_cast_fu_229_p1[7];
+bus_addr_reg_344[8] <= tmp_3_cast_fu_229_p1[8];
+bus_addr_reg_344[9] <= tmp_3_cast_fu_229_p1[9];
+bus_addr_reg_344[10] <= tmp_3_cast_fu_229_p1[10];
+bus_addr_reg_344[11] <= tmp_3_cast_fu_229_p1[11];
+bus_addr_reg_344[12] <= tmp_3_cast_fu_229_p1[12];
+bus_addr_reg_344[13] <= tmp_3_cast_fu_229_p1[13];
+bus_addr_reg_344[14] <= tmp_3_cast_fu_229_p1[14];
+bus_addr_reg_344[15] <= tmp_3_cast_fu_229_p1[15];
+bus_addr_reg_344[16] <= tmp_3_cast_fu_229_p1[16];
+bus_addr_reg_344[17] <= tmp_3_cast_fu_229_p1[17];
+bus_addr_reg_344[18] <= tmp_3_cast_fu_229_p1[18];
+bus_addr_reg_344[19] <= tmp_3_cast_fu_229_p1[19];
+bus_addr_reg_344[20] <= tmp_3_cast_fu_229_p1[20];
+bus_addr_reg_344[21] <= tmp_3_cast_fu_229_p1[21];
+bus_addr_reg_344[22] <= tmp_3_cast_fu_229_p1[22];
+bus_addr_reg_344[23] <= tmp_3_cast_fu_229_p1[23];
+bus_addr_reg_344[24] <= tmp_3_cast_fu_229_p1[24];
+bus_addr_reg_344[25] <= tmp_3_cast_fu_229_p1[25];
+bus_addr_reg_344[26] <= tmp_3_cast_fu_229_p1[26];
+bus_addr_reg_344[27] <= tmp_3_cast_fu_229_p1[27];
+bus_addr_reg_344[28] <= tmp_3_cast_fu_229_p1[28];
+bus_addr_reg_344[29] <= tmp_3_cast_fu_229_p1[29];
     end
 end
 
@@ -593,10 +593,10 @@ begin
 end
 
 /// int_buffer_address0 assign process. ///
-always @ (ap_CS_fsm or ap_reg_ppiten_pp0_it7 or ap_reg_ppiten_pp1_it0 or tmp_s_fu_257_p1 or tmp_9_fu_304_p1)
+always @ (ap_CS_fsm or ap_reg_ppiten_pp0_it7 or ap_reg_ppiten_pp1_it0 or tmp_4_fu_257_p1 or tmp_9_fu_304_p1)
 begin
     if (((ap_ST_pp0_stg0_fsm_1 == ap_CS_fsm) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it7))) begin
-        int_buffer_address0 = tmp_s_fu_257_p1;
+        int_buffer_address0 = tmp_4_fu_257_p1;
     end else if (((ap_ST_pp1_stg0_fsm_2 == ap_CS_fsm) & (ap_const_logic_1 == ap_reg_ppiten_pp1_it0))) begin
         int_buffer_address0 = tmp_9_fu_304_p1;
     end else begin
@@ -704,13 +704,14 @@ assign indvar_next_fu_245_p2 = (indvar_phi_fu_192_p4 + ap_const_lv6_1);
 assign int_buffer_d0 = bus_addr_read_reg_363;
 assign isIter0_fu_251_p2 = (indvar_phi_fu_192_p4 == ap_const_lv6_0? 1'b1: 1'b0);
 assign p_shl_cast_fu_290_p1 = $unsigned(p_shl_fu_282_p3);
-assign p_shl_fu_282_p3 = {{tmp_22_fu_278_p1}, {ap_const_lv2_0}};
+assign p_shl_fu_282_p3 = {{tmp_7_fu_278_p1}, {ap_const_lv2_0}};
 assign tmp_1_fu_213_p2 = (address + offset);
-assign tmp_22_fu_278_p1 = i_phi_fu_204_p4[3:0];
-assign tmp_2_fu_219_p4 = {{tmp_1_fu_213_p2[ap_const_lv32_1F : ap_const_lv32_2]}};
-assign tmp_3_fu_229_p1 = $unsigned(tmp_2_fu_219_p4);
+assign tmp_3_cast_fu_229_p1 = $unsigned(tmp_3_fu_219_p4);
+assign tmp_3_fu_219_p4 = {{tmp_1_fu_213_p2[ap_const_lv32_1F : ap_const_lv32_2]}};
+assign tmp_4_fu_257_p1 = $unsigned(ap_reg_ppstg_indvar_reg_188_pp0_it6);
 assign tmp_5_fu_294_p2 = (p_shl_cast_fu_290_p1 - i_cast1_fu_274_p1);
 assign tmp_6_fu_324_p1 = $unsigned(i_reg_200);
+assign tmp_7_fu_278_p1 = i_phi_fu_204_p4[3:0];
 assign tmp_8_1_fu_309_p2 = (tmp_5_fu_294_p2 + ap_const_lv7_1);
 assign tmp_8_2_fu_330_p2 = (tmp_5_reg_377 + ap_const_lv7_2);
 assign tmp_9_1_fu_319_p0 = $signed(tmp_8_1_fu_309_p2);
@@ -719,7 +720,6 @@ assign tmp_9_2_fu_339_p0 = $signed(tmp_8_2_fu_330_p2);
 assign tmp_9_2_fu_339_p1 = $unsigned(tmp_9_2_fu_339_p0);
 assign tmp_9_fu_304_p0 = $signed(tmp_5_fu_294_p2);
 assign tmp_9_fu_304_p1 = $unsigned(tmp_9_fu_304_p0);
-assign tmp_s_fu_257_p1 = $unsigned(ap_reg_ppstg_indvar_reg_188_pp0_it6);
 always @ (posedge ap_clk)
 begin
     bus_addr_reg_344[31:30] <= 2'b00;

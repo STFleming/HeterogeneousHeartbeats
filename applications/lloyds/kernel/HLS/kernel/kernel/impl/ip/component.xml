@@ -943,7 +943,7 @@
 				<spirit:parameter>
 					<spirit:name>ADDR_WIDTH</spirit:name>
 					<spirit:value spirit:resolve="immediate"
-							spirit:id="BUSIFPARAM_VALUE.S_AXI_CONFIG_BUS.ADDR_WIDTH">6</spirit:value>
+							spirit:id="BUSIFPARAM_VALUE.S_AXI_CONFIG_BUS.ADDR_WIDTH">7</spirit:value>
 				</spirit:parameter>
 				<spirit:parameter>
 					<spirit:name>DATA_WIDTH</spirit:name>
@@ -2607,7 +2607,7 @@
 					<spirit:direction>in</spirit:direction>
 					<spirit:vector>
 						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_CONFIG_BUS_ADDR_WIDTH&apos;)) - 1)">5</spirit:left>
+								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_CONFIG_BUS_ADDR_WIDTH&apos;)) - 1)">6</spirit:left>
 						<spirit:right>0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -2756,7 +2756,7 @@
 					<spirit:direction>in</spirit:direction>
 					<spirit:vector>
 						<spirit:left spirit:resolve="dependent"
-								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_CONFIG_BUS_ADDR_WIDTH&apos;)) - 1)">5</spirit:left>
+								spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_CONFIG_BUS_ADDR_WIDTH&apos;)) - 1)">6</spirit:left>
 						<spirit:right>0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -3149,7 +3149,7 @@
 				<spirit:name>C_S_AXI_CONFIG_BUS_ADDR_WIDTH</spirit:name>
 				<spirit:value spirit:format="long"
 						spirit:resolve="generated"
-						spirit:id="MODELPARAM_VALUE.C_S_AXI_CONFIG_BUS_ADDR_WIDTH">6</spirit:value>
+						spirit:id="MODELPARAM_VALUE.C_S_AXI_CONFIG_BUS_ADDR_WIDTH">7</spirit:value>
 			</spirit:modelParameter>
 			<spirit:modelParameter spirit:dataType="integer">
 				<spirit:name>C_S_AXI_CONFIG_BUS_DATA_WIDTH</spirit:name>
@@ -3183,7 +3183,7 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/store_output_buffer_int_buffer.v</spirit:name>
+				<spirit:name>hdl/verilog/store_output_points_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3195,11 +3195,7 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/load_centres_buffer.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_centres_buffer_0_value.v</spirit:name>
+				<spirit:name>hdl/verilog/store_output_points_buffer_int_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3207,23 +3203,11 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/store_output_buffer.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
 				<spirit:name>hdl/verilog/lloyds_kernel_top_ap_rst_if.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_mul_32s_32s_64_6.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
 				<spirit:name>hdl/verilog/load_points_buffer.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_output_buffer_min_idx_V.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3236,14 +3220,6 @@
 			</spirit:file>
 			<spirit:file>
 				<spirit:name>hdl/verilog/load_points_buffer_int_buffer.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_add_32ns_32ns_32_1.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/load_centres_buffer_int_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3261,7 +3237,7 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/store_output_buffer_int_buffer.v</spirit:name>
+				<spirit:name>hdl/verilog/store_output_points_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3273,11 +3249,7 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/load_centres_buffer.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_centres_buffer_0_value.v</spirit:name>
+				<spirit:name>hdl/verilog/store_output_points_buffer_int_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3285,23 +3257,11 @@
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/store_output_buffer.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
 				<spirit:name>hdl/verilog/lloyds_kernel_top_ap_rst_if.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_mul_32s_32s_64_6.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
 				<spirit:name>hdl/verilog/load_points_buffer.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_output_buffer_min_idx_V.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -3314,14 +3274,6 @@
 			</spirit:file>
 			<spirit:file>
 				<spirit:name>hdl/verilog/load_points_buffer_int_buffer.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/lloyds_kernel_top_add_32ns_32ns_32_1.v</spirit:name>
-				<spirit:fileType>verilogSource</spirit:fileType>
-			</spirit:file>
-			<spirit:file>
-				<spirit:name>hdl/verilog/load_centres_buffer_int_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 		</spirit:fileSet>
@@ -3759,8 +3711,8 @@
 					spirit:id="PARAM_VALUE.C_S_AXI_CONFIG_BUS_ADDR_WIDTH"
 					spirit:order="26"
 					spirit:configGroups="1 S_AXI_CONFIG_BUS (AXI4Lite Slave Interface)"
-					spirit:minimum="6"
-					spirit:maximum="32">6</spirit:value>
+					spirit:minimum="7"
+					spirit:maximum="32">7</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
 			<spirit:name>Component_Name</spirit:name>
@@ -3778,8 +3730,8 @@
 				<xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
 			</xilinx:taxonomies>
 			<xilinx:displayName>Lloyds_kernel_top</xilinx:displayName>
-			<xilinx:coreRevision>1406030954</xilinx:coreRevision>
-			<xilinx:coreCreationDateTime>2014-06-03T08:54:24Z</xilinx:coreCreationDateTime>
+			<xilinx:coreRevision>1406101456</xilinx:coreRevision>
+			<xilinx:coreCreationDateTime>2014-06-10T13:57:05Z</xilinx:coreCreationDateTime>
 		</xilinx:coreExtensions>
 		<xilinx:packagingInfo>
 			<xilinx:xilinxVersion>2013.4</xilinx:xilinxVersion>

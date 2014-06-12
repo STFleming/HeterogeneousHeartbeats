@@ -1,0 +1,234 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="overflow_adjust" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="quantization_adjust" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ap_fixed_base" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ap_fixed_base" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="to_double" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="to_float" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &lt;&lt;" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &lt;&lt;" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &gt;&gt;" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &gt;&gt;" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &lt;&lt;=" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &lt;&lt;=" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &gt;&gt;=" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &gt;&gt;=" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="load_points_buffer" label="">
+<pragma name="LOOP_FLATTEN"/>
+</directive>
+<directive functionLabel="" functionName="load_points_buffer" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="load_centres_buffer" label="">
+<pragma name="LOOP_FLATTEN"/>
+</directive>
+<directive functionLabel="" functionName="load_centres_buffer" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="store_output_buffer" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="store_output_points_buffer" label="">
+<pragma name="LOOP_FLATTEN"/>
+</directive>
+<directive functionLabel="" functionName="store_output_points_buffer" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="INTERFACE">
+<option name="ap_bus" positionalBoolean="mode" value=""/>
+<option name="depth" value="0x200000"/>
+<option name="port" positionalBoolean="4" value="master_portA"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="master_portA"/>
+<option name="core" value="AXI4M"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="INTERFACE">
+<option name="ap_bus" positionalBoolean="mode" value=""/>
+<option name="depth" value="0x002000"/>
+<option name="port" positionalBoolean="4" value="master_portB"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="master_portB"/>
+<option name="core" value="AXI4M"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="data_points_addr"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="data_points_addr"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle CONFIG_BUS&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="centres_in_addr"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="centres_in_addr"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle CONFIG_BUS&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="output_addr"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="output_addr"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle CONFIG_BUS&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="n"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="n"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle CONFIG_BUS&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="k"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="k"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle CONFIG_BUS&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="update_points"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="update_points"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle CONFIG_BUS&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="block_address"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="block_address"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle CONFIG_BUS&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="lloyds_kernel_top" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="return"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle CONFIG_BUS&quot;"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

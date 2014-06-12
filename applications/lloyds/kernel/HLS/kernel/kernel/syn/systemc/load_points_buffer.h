@@ -109,14 +109,14 @@ struct load_points_buffer : public sc_module {
     sc_signal< sc_lv<32> > int_buffer_q1;
     sc_signal< sc_lv<6> > indvar_phi_fu_192_p4;
     sc_signal< sc_lv<5> > i_phi_fu_204_p4;
-    sc_signal< sc_lv<64> > tmp_s_fu_257_p1;
+    sc_signal< sc_lv<64> > tmp_4_fu_257_p1;
     sc_signal< sc_lv<64> > tmp_9_fu_304_p1;
     sc_signal< sc_lv<64> > tmp_9_1_fu_319_p1;
     sc_signal< sc_lv<64> > tmp_9_2_fu_339_p1;
     sc_signal< sc_lv<64> > tmp_3_cast_fu_229_p1;
     sc_signal< sc_lv<32> > tmp_1_fu_213_p2;
     sc_signal< sc_lv<30> > tmp_3_fu_219_p4;
-    sc_signal< sc_lv<4> > tmp_24_fu_278_p1;
+    sc_signal< sc_lv<4> > tmp_7_fu_278_p1;
     sc_signal< sc_lv<6> > p_shl_fu_282_p3;
     sc_signal< sc_lv<7> > p_shl_cast_fu_290_p1;
     sc_signal< sc_lv<7> > i_cast1_fu_274_p1;
@@ -188,11 +188,12 @@ struct load_points_buffer : public sc_module {
     void thread_p_shl_cast_fu_290_p1();
     void thread_p_shl_fu_282_p3();
     void thread_tmp_1_fu_213_p2();
-    void thread_tmp_24_fu_278_p1();
     void thread_tmp_3_cast_fu_229_p1();
     void thread_tmp_3_fu_219_p4();
+    void thread_tmp_4_fu_257_p1();
     void thread_tmp_5_fu_294_p2();
     void thread_tmp_6_fu_324_p1();
+    void thread_tmp_7_fu_278_p1();
     void thread_tmp_8_1_fu_309_p2();
     void thread_tmp_8_2_fu_330_p2();
     void thread_tmp_9_1_fu_319_p0();
@@ -201,7 +202,6 @@ struct load_points_buffer : public sc_module {
     void thread_tmp_9_2_fu_339_p1();
     void thread_tmp_9_fu_304_p0();
     void thread_tmp_9_fu_304_p1();
-    void thread_tmp_s_fu_257_p1();
     void thread_ap_NS_fsm();
 };
 

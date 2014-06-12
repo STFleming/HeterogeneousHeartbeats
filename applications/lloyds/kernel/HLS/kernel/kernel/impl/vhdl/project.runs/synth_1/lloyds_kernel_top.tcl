@@ -8,17 +8,11 @@ create_project -in_memory -part xc7z020clg484-1
 set_property target_language VHDL [current_project]
 set_param project.compositeFile.enableAutoGeneration 0
 read_vhdl {
-  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel/impl/vhdl/store_output_buffer_int_buffer.vhd
+  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel/impl/vhdl/store_output_points_buffer_int_buffer.vhd
   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel/impl/vhdl/load_points_buffer_int_buffer.vhd
-  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel/impl/vhdl/load_centres_buffer_int_buffer.vhd
-  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel/impl/vhdl/store_output_buffer.vhd
+  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel/impl/vhdl/store_output_points_buffer.vhd
   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel/impl/vhdl/load_points_buffer.vhd
-  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel/impl/vhdl/load_centres_buffer.vhd
-  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel/impl/vhdl/lloyds_kernel_top_output_buffer_min_idx_V.vhd
-  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel/impl/vhdl/lloyds_kernel_top_mul_32s_32s_64_6.vhd
   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel/impl/vhdl/lloyds_kernel_top_data_points_buffer_0_value.vhd
-  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel/impl/vhdl/lloyds_kernel_top_centres_buffer_0_value.vhd
-  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel/impl/vhdl/lloyds_kernel_top_add_32ns_32ns_32_1.vhd
   /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel/impl/vhdl/lloyds_kernel_top.vhd
 }
 read_xdc /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/HLS/kernel/kernel/impl/vhdl/lloyds_kernel_top.xdc

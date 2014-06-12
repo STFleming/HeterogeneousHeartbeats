@@ -8,7 +8,7 @@
 `timescale 1ns/1ps
 module lloyds_kernel_top_CONFIG_BUS_if
 #(parameter
-    C_ADDR_WIDTH = 6,
+    C_ADDR_WIDTH = 7,
     C_DATA_WIDTH = 32
 )(
     // axi4 lite slave signals
@@ -37,6 +37,7 @@ module lloyds_kernel_top_CONFIG_BUS_if
     output wire [31:0]               I_data_points_addr,
     output wire [31:0]               I_centres_in_addr,
     output wire [31:0]               I_output_addr,
+    output wire [31:0]               I_update_points,
     output wire [31:0]               I_n,
     output wire [31:0]               I_k,
     output wire                      I_ap_start,
@@ -76,36 +77,41 @@ module lloyds_kernel_top_CONFIG_BUS_if
 // 0x2c : Data signal of output_addr
 //        bit 31~0 - output_addr[31:0] (Read/Write)
 // 0x30 : reserved
-// 0x34 : Data signal of n
-//        bit 31~0 - n[31:0] (Read/Write)
+// 0x34 : Data signal of update_points
+//        bit 31~0 - update_points[31:0] (Read/Write)
 // 0x38 : reserved
-// 0x3c : Data signal of k
+// 0x3c : Data signal of n
+//        bit 31~0 - n[31:0] (Read/Write)
+// 0x40 : reserved
+// 0x44 : Data signal of k
 //        bit 31~0 - k[31:0] (Read/Write)
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
 // address bits
 localparam
-    ADDR_BITS = 6;
+    ADDR_BITS = 7;
 
 // address
 localparam
-    ADDR_AP_CTRL                 = 6'h00,
-    ADDR_GIE                     = 6'h04,
-    ADDR_IER                     = 6'h08,
-    ADDR_ISR                     = 6'h0c,
-    ADDR_BLOCK_ADDRESS_CTRL      = 6'h10,
-    ADDR_BLOCK_ADDRESS_DATA_0    = 6'h14,
-    ADDR_DATA_POINTS_ADDR_CTRL   = 6'h18,
-    ADDR_DATA_POINTS_ADDR_DATA_0 = 6'h1c,
-    ADDR_CENTRES_IN_ADDR_CTRL    = 6'h20,
-    ADDR_CENTRES_IN_ADDR_DATA_0  = 6'h24,
-    ADDR_OUTPUT_ADDR_CTRL        = 6'h28,
-    ADDR_OUTPUT_ADDR_DATA_0      = 6'h2c,
-    ADDR_N_CTRL                  = 6'h30,
-    ADDR_N_DATA_0                = 6'h34,
-    ADDR_K_CTRL                  = 6'h38,
-    ADDR_K_DATA_0                = 6'h3c;
+    ADDR_AP_CTRL                 = 7'h00,
+    ADDR_GIE                     = 7'h04,
+    ADDR_IER                     = 7'h08,
+    ADDR_ISR                     = 7'h0c,
+    ADDR_BLOCK_ADDRESS_CTRL      = 7'h10,
+    ADDR_BLOCK_ADDRESS_DATA_0    = 7'h14,
+    ADDR_DATA_POINTS_ADDR_CTRL   = 7'h18,
+    ADDR_DATA_POINTS_ADDR_DATA_0 = 7'h1c,
+    ADDR_CENTRES_IN_ADDR_CTRL    = 7'h20,
+    ADDR_CENTRES_IN_ADDR_DATA_0  = 7'h24,
+    ADDR_OUTPUT_ADDR_CTRL        = 7'h28,
+    ADDR_OUTPUT_ADDR_DATA_0      = 7'h2c,
+    ADDR_UPDATE_POINTS_CTRL      = 7'h30,
+    ADDR_UPDATE_POINTS_DATA_0    = 7'h34,
+    ADDR_N_CTRL                  = 7'h38,
+    ADDR_N_DATA_0                = 7'h3c,
+    ADDR_K_CTRL                  = 7'h40,
+    ADDR_K_DATA_0                = 7'h44;
 
 // axi write fsm
 localparam
@@ -145,6 +151,7 @@ reg  [31:0]          _block_address;
 reg  [31:0]          _data_points_addr;
 reg  [31:0]          _centres_in_addr;
 reg  [31:0]          _output_addr;
+reg  [31:0]          _update_points;
 reg  [31:0]          _n;
 reg  [31:0]          _k;
 
@@ -263,6 +270,9 @@ always @(posedge ACLK) begin
             ADDR_OUTPUT_ADDR_DATA_0: begin
                 rdata <= _output_addr[31:0];
             end
+            ADDR_UPDATE_POINTS_DATA_0: begin
+                rdata <= _update_points[31:0];
+            end
             ADDR_N_DATA_0: begin
                 rdata <= _n[31:0];
             end
@@ -283,6 +293,7 @@ assign I_block_address    = _block_address;
 assign I_data_points_addr = _data_points_addr;
 assign I_centres_in_addr  = _centres_in_addr;
 assign I_output_addr      = _output_addr;
+assign I_update_points    = _update_points;
 assign I_n                = _n;
 assign I_k                = _k;
 
@@ -372,6 +383,12 @@ end
 always @(posedge ACLK) begin
     if (w_hs && waddr == ADDR_OUTPUT_ADDR_DATA_0)
         _output_addr[31:0] <= (WDATA[31:0] & wmask) | (_output_addr[31:0] & ~wmask);
+end
+
+// _update_points[31:0]
+always @(posedge ACLK) begin
+    if (w_hs && waddr == ADDR_UPDATE_POINTS_DATA_0)
+        _update_points[31:0] <= (WDATA[31:0] & wmask) | (_update_points[31:0] & ~wmask);
 end
 
 // _n[31:0]
