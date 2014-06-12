@@ -148,7 +148,7 @@ void lloyds_kernel_top(  uint block_address,
 
 	load_points_buffer(data_points_addr, data_points_block_address, master_portA, data_points_buffer);
 	load_centres_buffer(centres_in_addr, 0, master_portB, k, centres_buffer);
-	debug = data_points_buffer[0];
+	debug = data_points_buffer[0].value[0];
 
 	/*
 	for (uint i=0; i<B; i++) {
