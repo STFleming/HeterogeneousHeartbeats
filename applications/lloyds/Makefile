@@ -28,12 +28,19 @@ kernel:
 
 system:
 	$(VIVADO_SYS_CMD) -source $(SYSTEM_DIR)/ipi_build.tcl
-	cp k_means_zynq.runs/impl_1/zynq_system_wrapper.bit ../output_bitstream/k_means_system.bit
+	cp $(SYSTEM_DIR)/k_means_zynq.runs/impl_1/zynq_system_wrapper.bit ../output_bitstream/k_means_system.bit
 	rm *.log *.jou
 
 	echo "--------------------------------------------"
 	echo "Built the entire system"
 	echo "--------------------------------------------" 
+
+bitstream:
+	cp $(SYSTEM_DIR)/k_means_zynq.runs/impl_1/zynq_system_wrapper.bit ../output_bitstream/k_means_system.bit
+	../output_bitstream/promgen_script ../output_bitstream/k_means_system.bit
+	rm ../output_bitstream/*.prm
+	rm ../output_bitstream/*.cfi
+	scp ../output_bitstream/k_means_system.bit.bin root@ee-europa.ee.ic.ac.uk:~/temp/
 
 clean:
 	rm ../output_bitstream/k_means_system.bit
