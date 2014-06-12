@@ -44,8 +44,6 @@ int main()
 	cv::Mat default_output(cv::Size(IMG_SIZE,IMG_SIZE),CV_32SC3, cv::Scalar(255,255,255));
 	cv::Mat hw_outputFrame(cv::Size(IMG_SIZE,IMG_SIZE),CV_32SC3); //Setup the output image contained and give it a size
 	hw_outputFrame.data = (uchar *) setup_reserved_mem(KERNEL_INTERMEDIATE_ADDR);	//Point the container to the reserved RAM
-	default_output.copyTo(hw_outputFrame);
-
 
 	int *centres_pointer = (int *) setup_reserved_mem(CLUSTER_CENTER_ADDR); //get a virtual address for the cluster centres for initialisation.
 	int *kernel_info_pointer = (int *) setup_reserved_mem(KERNEL_INTERMEDIATE_ADDR); //get a virtual address for the cluster centres for initialisation.

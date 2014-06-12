@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'lloyds_kernel_top'
 ================================================================
-* Date:           Thu Jun 12 14:16:45 2014
+* Date:           Thu Jun 12 16:46:31 2014
 
 * Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
 * Project:        kernel
@@ -1003,15 +1003,15 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 1
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ block_address]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x71607d0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ master_portA]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=4; mode=0x7219000; pingpong=0; private_global=0; IO mode=ap_bus:ce=0
-Port [ data_points_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x715f9b0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ centres_in_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x7219ce0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ output_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x1693ce40; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ update_points]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x71618a0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ n]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0; dir=0; type=0; mode=0x7161310; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ k]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x71623c0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ debug]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x7160240; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ block_address]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x1535cf80; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ master_portA]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=4; mode=0x153613b0; pingpong=0; private_global=0; IO mode=ap_bus:ce=0
+Port [ data_points_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x15361980; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ centres_in_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x71a5360; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ output_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x71a6490; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ update_points]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x71a8280; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ n]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0; dir=0; type=0; mode=0x71aa1e0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ k]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x71a5910; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ debug]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x71a7cd0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------

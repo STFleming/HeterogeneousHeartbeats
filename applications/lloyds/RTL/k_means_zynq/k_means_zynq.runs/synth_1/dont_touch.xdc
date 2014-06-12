@@ -37,21 +37,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_aut
 # IP: bd/zynq_system/ip/zynq_system_auto_pc_40_0/zynq_system_auto_pc_40.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_40 || ORIG_REF_NAME==zynq_system_auto_pc_40}]
 
-# IP: bd/zynq_system/ip/zynq_system_axi_mem_intercon_1_4/zynq_system_axi_mem_intercon_1_4.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_axi_mem_intercon_1_4 || ORIG_REF_NAME==zynq_system_axi_mem_intercon_1_4}]
-
-# IP: bd/zynq_system/ip/zynq_system_auto_pc_10/zynq_system_auto_pc_10.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_10 || ORIG_REF_NAME==zynq_system_auto_pc_10}]
-
-# IP: bd/zynq_system/ip/zynq_system_auto_us_11/zynq_system_auto_us_11.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_us_11 || ORIG_REF_NAME==zynq_system_auto_us_11}]
-
-# IP: bd/zynq_system/ip/zynq_system_auto_pc_17/zynq_system_auto_pc_17.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_17 || ORIG_REF_NAME==zynq_system_auto_pc_17}]
-
-# IP: bd/zynq_system/ip/zynq_system_auto_pc_19/zynq_system_auto_pc_19.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_19 || ORIG_REF_NAME==zynq_system_auto_pc_19}]
-
 # IP: bd/zynq_system/ip/zynq_system_combiner_top_0_6/zynq_system_combiner_top_0_6.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_combiner_top_0_6 || ORIG_REF_NAME==zynq_system_combiner_top_0_6}]
 
@@ -73,28 +58,23 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_xba
 # IP: bd/zynq_system/ip/zynq_system_axi_mem_intercon_1_2/zynq_system_axi_mem_intercon_1_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_axi_mem_intercon_1_2 || ORIG_REF_NAME==zynq_system_axi_mem_intercon_1_2}]
 
-# IP: bd/zynq_system/ip/zynq_system_auto_pc_0/zynq_system_auto_pc_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_0 || ORIG_REF_NAME==zynq_system_auto_pc_0}]
+# IP: bd/zynq_system/ip/zynq_system_auto_pc_7/zynq_system_auto_pc_7.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_7 || ORIG_REF_NAME==zynq_system_auto_pc_7}]
 
-# IP: bd/zynq_system/ip/zynq_system_auto_pc_1/zynq_system_auto_pc_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_1 || ORIG_REF_NAME==zynq_system_auto_pc_1}]
+# IP: bd/zynq_system/ip/zynq_system_auto_pc_10/zynq_system_auto_pc_10.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_10 || ORIG_REF_NAME==zynq_system_auto_pc_10}]
 
-# IP: bd/zynq_system/ip/zynq_system_auto_pc_2/zynq_system_auto_pc_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_2 || ORIG_REF_NAME==zynq_system_auto_pc_2}]
+# IP: bd/zynq_system/ip/zynq_system_auto_pc_15/zynq_system_auto_pc_15.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_15 || ORIG_REF_NAME==zynq_system_auto_pc_15}]
+
+# IP: bd/zynq_system/ip/zynq_system_auto_pc_16/zynq_system_auto_pc_16.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_16 || ORIG_REF_NAME==zynq_system_auto_pc_16}]
+
+# IP: bd/zynq_system/ip/zynq_system_auto_pc_17/zynq_system_auto_pc_17.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_17 || ORIG_REF_NAME==zynq_system_auto_pc_17}]
 
 # XDC: bd/zynq_system/ip/zynq_system_processing_system7_0_0/zynq_system_processing_system7_0_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zynq_system_processing_system7_0_0 || ORIG_REF_NAME==zynq_system_processing_system7_0_0}] {/U0 }]/U0 ]]
-
-# XDC: bd/zynq_system/ip/zynq_system_auto_pc_10/zynq_system_auto_pc_10_ooc.xdc
-
-# XDC: bd/zynq_system/ip/zynq_system_auto_us_11/zynq_system_auto_us_11_ooc.xdc
-
-# XDC: bd/zynq_system/ip/zynq_system_auto_us_11/zynq_system_auto_us_11_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==zynq_system_auto_us_11 || ORIG_REF_NAME==zynq_system_auto_us_11}] {/inst }]/inst ]]
-
-# XDC: bd/zynq_system/ip/zynq_system_auto_pc_17/zynq_system_auto_pc_17_ooc.xdc
-
-# XDC: bd/zynq_system/ip/zynq_system_auto_pc_19/zynq_system_auto_pc_19_ooc.xdc
 
 # XDC: bd/zynq_system/ip/zynq_system_combiner_top_0_6/constraints/combiner_top_ooc.xdc
 
@@ -110,10 +90,10 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/zynq_system/ip/zynq_system_xbar_2/zynq_system_xbar_2_ooc.xdc
 
-# XDC: bd/zynq_system/ip/zynq_system_auto_pc_0/zynq_system_auto_pc_0_ooc.xdc
+# XDC: bd/zynq_system/ip/zynq_system_auto_pc_15/zynq_system_auto_pc_15_ooc.xdc
 
-# XDC: bd/zynq_system/ip/zynq_system_auto_pc_1/zynq_system_auto_pc_1_ooc.xdc
+# XDC: bd/zynq_system/ip/zynq_system_auto_pc_16/zynq_system_auto_pc_16_ooc.xdc
 
-# XDC: bd/zynq_system/ip/zynq_system_auto_pc_2/zynq_system_auto_pc_2_ooc.xdc
+# XDC: bd/zynq_system/ip/zynq_system_auto_pc_17/zynq_system_auto_pc_17_ooc.xdc
 
 # XDC: bd/zynq_system/zynq_system_ooc.xdc

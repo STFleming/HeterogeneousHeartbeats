@@ -36,7 +36,6 @@ void load_centres_buffer(uint offset, uint address, volatile bus_type *bus, cent
 
 	memcpy(int_buffer, (const bus_type *)(bus + (offset + address)/sizeof(bus_type)), (k+1)*D*sizeof(bus_type));
 
-
 	for (centre_index_type i=0; i<=k; i++) {
 		#pragma HLS loop_flatten
 		#pragma HLS pipeline II=1
@@ -64,7 +63,6 @@ void store_output_buffer(uint offset, output_type *buffer, uint address, volatil
 	}
 
 	memcpy((bus_type *)(bus + (offset + address)/sizeof(bus_type) ), int_buffer, B*2*sizeof(bus_type));
-
 }
 
 

@@ -41259,7 +41259,6 @@ void load_centres_buffer(uint offset, uint address, volatile bus_type *bus, cent
 
  memcpy(int_buffer, (const bus_type *)(bus + (offset + address)/sizeof(bus_type)), (k+1)*3 /* data dimensionality*/*sizeof(bus_type));
 
-
  for (centre_index_type i=0; i<=k; i++) {_ssdm_RegionBegin("hls_label_1");
 #pragma HLS loop_flatten
 #pragma HLS pipeline II=1
@@ -41287,7 +41286,6 @@ void store_output_buffer(uint offset, output_type *buffer, uint address, volatil
  _ssdm_RegionEnd("hls_label_2");}
 
  memcpy((bus_type *)(bus + (offset + address)/sizeof(bus_type) ), int_buffer, 16 /* burst length (in data points)*/*2*sizeof(bus_type));
-
 }
 
 
@@ -41373,7 +41371,7 @@ void lloyds_kernel_top( uint block_address,
  load_centres_buffer(centres_in_addr, 0, master_portA, k, centres_buffer);
  *debug = data_points_buffer[0].value[0];
 #pragma HLS RESOURCE core=AXI4LiteS variable=debug metadata="-bus_bundle CONFIG_BUS"
-#151 "kernel/HLS/source/lloyds_kernel_top.cpp"
+#149 "kernel/HLS/source/lloyds_kernel_top.cpp"
 
 
  /*

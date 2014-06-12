@@ -59,13 +59,6 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>combiner_top_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="hls" spirit:name="combiner_top" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">zynq_system_combiner_top_0_6</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>processing_system7_0_axi_periph</spirit:instanceName>
         <spirit:componentRef spirit:library="BlockDiagram/zynq_system_imp" spirit:name="processing_system7_0_axi_periph" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
         <spirit:configurableElementValues>
@@ -91,6 +84,15 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
+        <spirit:instanceName>axi_mem_intercon_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="BlockDiagram/zynq_system_imp" spirit:name="axi_mem_intercon_1" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">zynq_system_axi_mem_intercon_1_2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="appcore">xilinx.com:ip:axi_interconnect:2.1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
         <spirit:instanceName>lloyds_kernel_top_0</spirit:instanceName>
         <spirit:componentRef spirit:library="hls" spirit:name="lloyds_kernel_top" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
@@ -98,12 +100,10 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>axi_mem_intercon_1</spirit:instanceName>
-        <spirit:componentRef spirit:library="BlockDiagram/zynq_system_imp" spirit:name="axi_mem_intercon_1" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        <spirit:instanceName>combiner_top_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="hls" spirit:name="combiner_top" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">zynq_system_axi_mem_intercon_1_2</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="appcore">xilinx.com:ip:axi_interconnect:2.1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">zynq_system_combiner_top_0_6</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -153,17 +153,17 @@
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="rst_processing_system7_0_50M" spirit:portRef="slowest_sync_clk"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="combiner_top_0" spirit:portRef="aclk"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M00_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="lloyds_kernel_top_0" spirit:portRef="aclk"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M01_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon_1" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon_1" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="S_AXI_GP1_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon_1" spirit:portRef="M00_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="lloyds_kernel_top_0" spirit:portRef="aclk"/>
+        <spirit:internalPortReference spirit:componentRef="combiner_top_0" spirit:portRef="aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_RESET0_N</spirit:name>
@@ -174,14 +174,14 @@
         <spirit:name>rst_processing_system7_0_50M_peripheral_aresetn</spirit:name>
         <spirit:internalPortReference spirit:componentRef="rst_processing_system7_0_50M" spirit:portRef="peripheral_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="S00_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="combiner_top_0" spirit:portRef="aresetn"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M00_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="lloyds_kernel_top_0" spirit:portRef="aresetn"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="M01_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon_1" spirit:portRef="S00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon_1" spirit:portRef="M00_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="lloyds_kernel_top_0" spirit:portRef="aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="combiner_top_0" spirit:portRef="aresetn"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>rst_processing_system7_0_50M_interconnect_aresetn</spirit:name>
@@ -619,7 +619,7 @@
         <spirit:instanceName>auto_pc</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="axi_protocol_converter" spirit:vendor="xilinx.com" spirit:version="2.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">zynq_system_auto_pc_2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">zynq_system_auto_pc_17</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SI_PROTOCOL">AXI4</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MI_PROTOCOL">AXI3</spirit:configurableElementValue>
         </spirit:configurableElementValues>
@@ -1066,7 +1066,7 @@
         <spirit:instanceName>auto_pc</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="axi_protocol_converter" spirit:vendor="xilinx.com" spirit:version="2.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">zynq_system_auto_pc_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">zynq_system_auto_pc_16</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SI_PROTOCOL">AXI4</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MI_PROTOCOL">AXI3</spirit:configurableElementValue>
         </spirit:configurableElementValues>
@@ -1982,7 +1982,7 @@
         <spirit:instanceName>auto_pc</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="axi_protocol_converter" spirit:vendor="xilinx.com" spirit:version="2.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">zynq_system_auto_pc_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">zynq_system_auto_pc_15</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SI_PROTOCOL">AXI3</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MI_PROTOCOL">AXI4LITE</spirit:configurableElementValue>
         </spirit:configurableElementValues>
@@ -2023,50 +2023,16 @@
         <spirit:width>32</spirit:width>
         <spirit:segments>
           <spirit:segment>
-            <spirit:name>SEG_combiner_top_0_Reg</spirit:name>
-            <spirit:displayName>/combiner_top_0/S_AXI_CONFIG_BUS/Reg</spirit:displayName>
-            <spirit:addressOffset>0x43C00000</spirit:addressOffset>
-            <spirit:range>64K</spirit:range>
-          </spirit:segment>
-          <spirit:segment>
             <spirit:name>SEG_lloyds_kernel_top_0_Reg</spirit:name>
             <spirit:displayName>/lloyds_kernel_top_0/S_AXI_CONFIG_BUS/Reg</spirit:displayName>
             <spirit:addressOffset>0x43C10000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>
-        </spirit:segments>
-      </spirit:addressSpace>
-    </spirit:addressSpaces>
-  </spirit:component>
-
-  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
-    <spirit:vendor>xilinx.com</spirit:vendor>
-    <spirit:library>Addressing/combiner_top_0</spirit:library>
-    <spirit:name>combiner_top</spirit:name>
-    <spirit:version>1.0</spirit:version>
-    <spirit:addressSpaces>
-      <spirit:addressSpace>
-        <spirit:name>Data</spirit:name>
-        <spirit:range>4G</spirit:range>
-        <spirit:width>32</spirit:width>
-        <spirit:segments>
           <spirit:segment>
-            <spirit:name>SEG_processing_system7_0_GP0_DDR_LOWOCM</spirit:name>
-            <spirit:displayName>/processing_system7_0/S_AXI_GP0/GP0_DDR_LOWOCM</spirit:displayName>
-            <spirit:addressOffset>0x00000000</spirit:addressOffset>
-            <spirit:range>1G</spirit:range>
-          </spirit:segment>
-          <spirit:segment>
-            <spirit:name>SEG_processing_system7_0_GP0_QSPI_LINEAR</spirit:name>
-            <spirit:displayName>/processing_system7_0/S_AXI_GP0/GP0_QSPI_LINEAR</spirit:displayName>
-            <spirit:addressOffset>0xFC000000</spirit:addressOffset>
-            <spirit:range>16M</spirit:range>
-          </spirit:segment>
-          <spirit:segment>
-            <spirit:name>SEG_processing_system7_0_GP0_IOP</spirit:name>
-            <spirit:displayName>/processing_system7_0/S_AXI_GP0/GP0_IOP</spirit:displayName>
-            <spirit:addressOffset>0xE0000000</spirit:addressOffset>
-            <spirit:range>4M</spirit:range>
+            <spirit:name>SEG_combiner_top_0_Reg</spirit:name>
+            <spirit:displayName>/combiner_top_0/S_AXI_CONFIG_BUS/Reg</spirit:displayName>
+            <spirit:addressOffset>0x43C00000</spirit:addressOffset>
+            <spirit:range>64K</spirit:range>
           </spirit:segment>
         </spirit:segments>
       </spirit:addressSpace>
@@ -2099,6 +2065,40 @@
           <spirit:segment>
             <spirit:name>SEG_processing_system7_0_GP1_IOP</spirit:name>
             <spirit:displayName>/processing_system7_0/S_AXI_GP1/GP1_IOP</spirit:displayName>
+            <spirit:addressOffset>0xE0000000</spirit:addressOffset>
+            <spirit:range>4M</spirit:range>
+          </spirit:segment>
+        </spirit:segments>
+      </spirit:addressSpace>
+    </spirit:addressSpaces>
+  </spirit:component>
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>Addressing/combiner_top_0</spirit:library>
+    <spirit:name>combiner_top</spirit:name>
+    <spirit:version>1.0</spirit:version>
+    <spirit:addressSpaces>
+      <spirit:addressSpace>
+        <spirit:name>Data</spirit:name>
+        <spirit:range>4G</spirit:range>
+        <spirit:width>32</spirit:width>
+        <spirit:segments>
+          <spirit:segment>
+            <spirit:name>SEG_processing_system7_0_GP0_DDR_LOWOCM</spirit:name>
+            <spirit:displayName>/processing_system7_0/S_AXI_GP0/GP0_DDR_LOWOCM</spirit:displayName>
+            <spirit:addressOffset>0x00000000</spirit:addressOffset>
+            <spirit:range>1G</spirit:range>
+          </spirit:segment>
+          <spirit:segment>
+            <spirit:name>SEG_processing_system7_0_GP0_QSPI_LINEAR</spirit:name>
+            <spirit:displayName>/processing_system7_0/S_AXI_GP0/GP0_QSPI_LINEAR</spirit:displayName>
+            <spirit:addressOffset>0xFC000000</spirit:addressOffset>
+            <spirit:range>16M</spirit:range>
+          </spirit:segment>
+          <spirit:segment>
+            <spirit:name>SEG_processing_system7_0_GP0_IOP</spirit:name>
+            <spirit:displayName>/processing_system7_0/S_AXI_GP0/GP0_IOP</spirit:displayName>
             <spirit:addressOffset>0xE0000000</spirit:addressOffset>
             <spirit:range>4M</spirit:range>
           </spirit:segment>

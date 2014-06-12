@@ -1287,7 +1287,7 @@
 						<name>tmp_7</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1302,7 +1302,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>40</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1329,7 +1329,7 @@
 						<name>i_V</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1344,7 +1344,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>40</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1371,7 +1371,7 @@
 						<name></name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1386,7 +1386,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>40</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -1414,7 +1414,7 @@
 						<name>tmp_8</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1429,7 +1429,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1455,7 +1455,7 @@
 						<name>tmp_8_cast1</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1470,7 +1470,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1496,7 +1496,7 @@
 						<name>p_shl2</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1511,7 +1511,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1539,7 +1539,7 @@
 						<name>p_shl2_cast</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1554,7 +1554,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1580,7 +1580,7 @@
 						<name>tmp_9</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1595,7 +1595,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1622,7 +1622,7 @@
 						<name>tmp_9_cast</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1637,7 +1637,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1663,7 +1663,7 @@
 						<name>int_buffer_addr</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1678,7 +1678,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1706,7 +1706,7 @@
 						<name>int_buffer_load</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1721,7 +1721,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1747,7 +1747,7 @@
 						<name>buffer_0_value_addr</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1762,7 +1762,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1790,7 +1790,7 @@
 						<name></name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1805,7 +1805,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1832,7 +1832,7 @@
 						<name>tmp_12_1</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1847,7 +1847,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1874,7 +1874,7 @@
 						<name>tmp_12_1_cast</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1889,7 +1889,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1915,7 +1915,7 @@
 						<name>int_buffer_addr_1</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1930,7 +1930,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1958,7 +1958,7 @@
 						<name>int_buffer_load_1</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1973,7 +1973,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1999,7 +1999,7 @@
 						<name>buffer_1_value_addr</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2014,7 +2014,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -2042,7 +2042,7 @@
 						<name></name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2057,7 +2057,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -2084,7 +2084,7 @@
 						<name>tmp_12_2</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2099,7 +2099,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -2126,7 +2126,7 @@
 						<name>tmp_12_2_cast</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2141,7 +2141,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -2167,7 +2167,7 @@
 						<name>int_buffer_addr_2</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2182,7 +2182,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -2210,7 +2210,7 @@
 						<name>int_buffer_load_2</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2225,7 +2225,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -2251,7 +2251,7 @@
 						<name>buffer_2_value_addr</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2266,7 +2266,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -2294,7 +2294,7 @@
 						<name></name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>45</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2309,7 +2309,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>45</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -2336,7 +2336,7 @@
 						<name>tmp_10</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2351,7 +2351,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>47</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2378,7 +2378,7 @@
 						<name></name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2393,7 +2393,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>47</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2421,7 +2421,7 @@
 						<name></name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>39</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2436,7 +2436,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>40</second>
+										<second>39</second>
 									</item>
 								</second>
 							</item>
@@ -2462,7 +2462,7 @@
 						<name></name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
 						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
-						<lineNumber>50</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>load_centres_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2477,7 +2477,7 @@
 											<first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
 											<second>load_centres_buffer</second>
 										</first>
-										<second>50</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -4478,6 +4478,24 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item class_id="35" tracking_level="1" version="0" object_id="_218">
+			<region_name>Loop 2</region_name>
+			<basic_blocks>
+				<count>3</count>
+				<item_version>0</item_version>
+				<item>52</item>
+				<item>80</item>
+				<item>83</item>
+			</basic_blocks>
+			<nodes>
+				<count>0</count>
+				<item_version>0</item_version>
+			</nodes>
+			<anchor_node>-1</anchor_node>
+			<region_type>8</region_type>
+			<interval>2</interval>
+			<pipe_depth>3</pipe_depth>
+		</item>
+		<item class_id_reference="35" object_id="_219">
 			<region_name>Loop 1</region_name>
 			<basic_blocks>
 				<count>4</count>
@@ -4495,24 +4513,6 @@
 			<region_type>8</region_type>
 			<interval>1</interval>
 			<pipe_depth>8</pipe_depth>
-		</item>
-		<item class_id_reference="35" object_id="_219">
-			<region_name>Loop 2</region_name>
-			<basic_blocks>
-				<count>3</count>
-				<item_version>0</item_version>
-				<item>52</item>
-				<item>80</item>
-				<item>83</item>
-			</basic_blocks>
-			<nodes>
-				<count>0</count>
-				<item_version>0</item_version>
-			</nodes>
-			<anchor_node>-1</anchor_node>
-			<region_type>8</region_type>
-			<interval>2</interval>
-			<pipe_depth>3</pipe_depth>
 		</item>
 	</regions>
 	<dp_fu_nodes class_id="36" tracking_level="0" version="0">

@@ -67,7 +67,7 @@ Starting synthesis...
 xc7z0202default:defaultZ17-349
 ú
 %s*synth2å
-xStarting RTL Elaboration : Time (s): cpu = 00:01:40 ; elapsed = 00:01:45 . Memory (MB): peak = 851.035 ; gain = 227.781
+xStarting RTL Elaboration : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 839.039 ; gain = 215.781
 2default:default
 §
 synthesizing module '%s'638*oasys2'
@@ -116,24 +116,24 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 GND2default:default2£
 å/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd2default:default2
 8392default:default8@Z8-113
-¯
-Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2)
-zynq_system_auto_pc_12default:default2ƒ
-Ø/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_1/synth/zynq_system_auto_pc_1.v2default:default2
+¸
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2*
+zynq_system_auto_pc_162default:default2∆
+±/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_16/synth/zynq_system_auto_pc_16.v2default:default2
 572default:default2
-auto_pc2default:default2)
-zynq_system_auto_pc_12default:default2£
+auto_pc2default:default2*
+zynq_system_auto_pc_162default:default2£
 å/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd2default:default2
 8432default:default8@Z8-3491
-¡
-synthesizing module '%s'638*oasys2)
-zynq_system_auto_pc_12default:default2∆
-Ø/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_1/synth/zynq_system_auto_pc_1.v2default:default2
+ƒ
+synthesizing module '%s'638*oasys2*
+zynq_system_auto_pc_162default:default2»
+±/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_16/synth/zynq_system_auto_pc_16.v2default:default2
 572default:default8@Z8-638
 û
 synthesizing module '%s'638*oasys2F
 2axi_protocol_converter_v2_1_axi_protocol_converter2default:default2Ü
-Ô/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
+Ô/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
 622default:default8@Z8-638
 V
 %s*synth2G
@@ -238,7 +238,7 @@ X
 Ñ
 synthesizing module '%s'638*oasys29
 %axi_protocol_converter_v2_1_axi3_conv2default:default2˘
-‚/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v2default:default2
+‚/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v2default:default2
 692default:default8@Z8-638
 V
 %s*synth2G
@@ -303,7 +303,7 @@ _
 à
 synthesizing module '%s'638*oasys2;
 'axi_protocol_converter_v2_1_a_axi3_conv2default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
+‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
 622default:default8@Z8-638
 V
 %s*synth2G
@@ -365,10 +365,10 @@ r
 %s*synth2c
 O	Parameter C_SIZE_MASK bound to: 40'b1111111111111111111111111111111100000000 
 2default:default
-È
+Â
 synthesizing module '%s'638*oasys20
-axi_data_fifo_v2_1_axic_fifo2default:default2Á
-–/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
+axi_data_fifo_v2_1_axic_fifo2default:default2„
+Ã/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
 642default:default8@Z8-638
 V
 %s*synth2G
@@ -386,10 +386,10 @@ X
 %s*synth2I
 5	Parameter C_FIFO_TYPE bound to: lut - type: string 
 2default:default
-Á
+„
 synthesizing module '%s'638*oasys2/
-axi_data_fifo_v2_1_fifo_gen2default:default2Ê
-œ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
+axi_data_fifo_v2_1_fifo_gen2default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
 602default:default8@Z8-638
 V
 %s*synth2G
@@ -423,10 +423,10 @@ a
 %s*synth2R
 >	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
 2default:default
-“
+Ê
 synthesizing module '%s'638*oasys2(
-fifo_generator_v11_02default:default2◊
-¿/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_v11_0.vhd2default:default2
+fifo_generator_v11_02default:default2Î
+‘/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0.vhd2default:default2
 6612default:default8@Z8-638
 Z
 %s*synth2K
@@ -1220,10 +1220,10 @@ a
 %s*synth2R
 >	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
 2default:default
-ﬁ
+Ú
 synthesizing module '%s'638*oasys2.
-fifo_generator_v11_0_synth2default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd2default:default2
+fifo_generator_v11_0_synth2default:default2Ò
+⁄/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd2default:default2
 6782default:default8@Z8-638
 Z
 %s*synth2K
@@ -2017,10 +2017,10 @@ a
 %s*synth2R
 >	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
 2default:default
-Œ
+‚
 synthesizing module '%s'638*oasys2&
-fifo_generator_top2default:default2’
-æ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
+fifo_generator_top2default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
 2712default:default8@Z8-638
 V
 %s*synth2G
@@ -2294,10 +2294,10 @@ a
 %s*synth2R
 >	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
 2default:default
-ﬁ
+Ú
 synthesizing module '%s'638*oasys2*
-fifo_generator_ramfifo2default:default2·
- /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
+fifo_generator_ramfifo2default:default2ı
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
 3082default:default8@Z8-638
 V
 %s*synth2G
@@ -2511,10 +2511,10 @@ V
 %s*synth2G
 3	Parameter C_AXI_TYPE bound to: 0 - type: integer 
 2default:default
-‘
+Ë
 synthesizing module '%s'638*oasys2%
-reset_blk_ramfifo2default:default2‹
-≈/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+reset_blk_ramfifo2default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
 2222default:default8@Z8-638
 V
 %s*synth2G
@@ -2556,53 +2556,53 @@ W
 %s*synth2Q
 =	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
 2default:default
-ˆ
+ä
 &Detected and applied attribute %s = %s3620*oasys2
 	async_reg2default:default2
-true2default:default2‹
-≈/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+true2default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
 2282default:default8@Z8-4472
-ˆ
+ä
 &Detected and applied attribute %s = %s3620*oasys2
 	async_reg2default:default2
-true2default:default2‹
-≈/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+true2default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
 2292default:default8@Z8-4472
-ˆ
+ä
 &Detected and applied attribute %s = %s3620*oasys2
 	async_reg2default:default2
-true2default:default2‹
-≈/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+true2default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
 2312default:default8@Z8-4472
-ˆ
+ä
 &Detected and applied attribute %s = %s3620*oasys2
 	async_reg2default:default2
-true2default:default2‹
-≈/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+true2default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
 2322default:default8@Z8-4472
-ˆ
+ä
 &Detected and applied attribute %s = %s3620*oasys2
 	async_reg2default:default2
-true2default:default2‹
-≈/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+true2default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
 2342default:default8@Z8-4472
-ˆ
+ä
 &Detected and applied attribute %s = %s3620*oasys2
 	async_reg2default:default2
-true2default:default2‹
-≈/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+true2default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
 2352default:default8@Z8-4472
-è
+£
 %done synthesizing module '%s' (%s#%s)256*oasys2%
 reset_blk_ramfifo2default:default2
 12default:default2
-12default:default2‹
-≈/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
+12default:default2
+Ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd2default:default2
 2222default:default8@Z8-256
-√
+◊
 synthesizing module '%s'638*oasys2
-	input_blk2default:default2”
-º/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/common/input_blk.vhd2default:default2
+	input_blk2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
 2782default:default8@Z8-638
 Z
 %s*synth2K
@@ -2676,17 +2676,17 @@ Z
 %s*synth2K
 7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
 2default:default
-˛
+í
 %done synthesizing module '%s' (%s#%s)256*oasys2
 	input_blk2default:default2
 22default:default2
-12default:default2”
-º/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/common/input_blk.vhd2default:default2
+12default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
 2782default:default8@Z8-256
-æ
+“
 synthesizing module '%s'638*oasys2
-memory2default:default2—
-∫/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
+memory2default:default2Â
+Œ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
 2152default:default8@Z8-638
 V
 %s*synth2G
@@ -2780,10 +2780,10 @@ W
 %s*synth2H
 4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
 2default:default
-∫
+Œ
 synthesizing module '%s'638*oasys2
-dmem2default:default2œ
-∏/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+dmem2default:default2„
+Ã/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
 1652default:default8@Z8-638
 U
 %s*synth2F
@@ -2837,30 +2837,30 @@ W
 %s*synth2H
 4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
 2default:default
-
+Ñ
 &Detected and applied attribute %s = %s3620*oasys2
 	ram_style2default:default2
-distributed2default:default2œ
-∏/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+distributed2default:default2„
+Ã/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
 1792default:default8@Z8-4472
-ı
+â
 %done synthesizing module '%s' (%s#%s)256*oasys2
 dmem2default:default2
 32default:default2
-12default:default2œ
-∏/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+12default:default2„
+Ã/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
 1652default:default8@Z8-256
-˘
+ç
 %done synthesizing module '%s' (%s#%s)256*oasys2
 memory2default:default2
 42default:default2
-12default:default2—
-∫/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
+12default:default2Â
+Œ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
 2152default:default8@Z8-256
-¬
+÷
 synthesizing module '%s'638*oasys2
-rd_logic2default:default2”
-º/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_logic.vhd2default:default2
+rd_logic2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_logic.vhd2default:default2
 2392default:default8@Z8-638
 Z
 %s*synth2K
@@ -2950,10 +2950,10 @@ W
 %s*synth2H
 4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
 2default:default
-»
+‹
 synthesizing module '%s'638*oasys2
-rd_bin_cntr2default:default2÷
-ø/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_bin_cntr.vhd2default:default2
+rd_bin_cntr2default:default2Í
+”/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_bin_cntr.vhd2default:default2
 1512default:default8@Z8-638
 U
 %s*synth2F
@@ -2971,17 +2971,17 @@ X
 %s*synth2I
 5	Parameter C_PNTR_WIDTH bound to: 5 - type: integer 
 2default:default
-É
+ó
 %done synthesizing module '%s' (%s#%s)256*oasys2
 rd_bin_cntr2default:default2
 52default:default2
-12default:default2÷
-ø/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_bin_cntr.vhd2default:default2
+12default:default2Í
+”/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_bin_cntr.vhd2default:default2
 1512default:default8@Z8-256
-÷
+Í
 synthesizing module '%s'638*oasys2&
-rd_status_flags_ss2default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_status_flags_ss.vhd2default:default2
+rd_status_flags_ss2default:default2Ò
+⁄/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_status_flags_ss.vhd2default:default2
 1742default:default8@Z8-638
 U
 %s*synth2F
@@ -3003,33 +3003,33 @@ V
 %s*synth2O
 ;	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
 2default:default
-¿
+‘
 synthesizing module '%s'638*oasys2
-compare2default:default2“
-ª/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/compare.vhd2default:default2
+compare2default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/compare.vhd2default:default2
 1382default:default8@Z8-638
 S
 %s*synth2D
 0	Parameter C_WIDTH bound to: 5 - type: integer 
 2default:default
-˚
+è
 %done synthesizing module '%s' (%s#%s)256*oasys2
 compare2default:default2
 62default:default2
-12default:default2“
-ª/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/compare.vhd2default:default2
+12default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/compare.vhd2default:default2
 1382default:default8@Z8-256
-ë
+•
 %done synthesizing module '%s' (%s#%s)256*oasys2&
 rd_status_flags_ss2default:default2
 72default:default2
-12default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_status_flags_ss.vhd2default:default2
+12default:default2Ò
+⁄/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_status_flags_ss.vhd2default:default2
 1742default:default8@Z8-256
-¿
+‘
 synthesizing module '%s'638*oasys2
-rd_fwft2default:default2“
-ª/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
+rd_fwft2default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
 1542default:default8@Z8-638
 U
 %s*synth2F
@@ -3047,36 +3047,36 @@ W
 %s*synth2H
 4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
 2default:default
-¶
-default block is never used226*oasys2“
-ª/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
+∫
+default block is never used226*oasys2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
 2552default:default8@Z8-226
-¶
-default block is never used226*oasys2“
-ª/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
+∫
+default block is never used226*oasys2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
 5792default:default8@Z8-226
-¶
-default block is never used226*oasys2“
-ª/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
+∫
+default block is never used226*oasys2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
 6642default:default8@Z8-226
-˚
+è
 %done synthesizing module '%s' (%s#%s)256*oasys2
 rd_fwft2default:default2
 82default:default2
-12default:default2“
-ª/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
+12default:default2Ê
+œ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd2default:default2
 1542default:default8@Z8-256
-˝
+ë
 %done synthesizing module '%s' (%s#%s)256*oasys2
 rd_logic2default:default2
 92default:default2
-12default:default2”
-º/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_logic.vhd2default:default2
+12default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_logic.vhd2default:default2
 2392default:default8@Z8-256
-¬
+÷
 synthesizing module '%s'638*oasys2
-wr_logic2default:default2”
-º/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/wr_logic.vhd2default:default2
+wr_logic2default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_logic.vhd2default:default2
 2312default:default8@Z8-638
 Z
 %s*synth2K
@@ -3162,10 +3162,10 @@ G	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 30 - type: integer
 %s*synth2Q
 =	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
 2default:default
-»
+‹
 synthesizing module '%s'638*oasys2
-wr_bin_cntr2default:default2÷
-ø/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/wr_bin_cntr.vhd2default:default2
+wr_bin_cntr2default:default2Í
+”/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_bin_cntr.vhd2default:default2
 1552default:default8@Z8-638
 U
 %s*synth2F
@@ -3195,17 +3195,17 @@ Z
 %s*synth2K
 7	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 2default:default
-Ñ
+ò
 %done synthesizing module '%s' (%s#%s)256*oasys2
 wr_bin_cntr2default:default2
 102default:default2
-12default:default2÷
-ø/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/wr_bin_cntr.vhd2default:default2
+12default:default2Í
+”/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_bin_cntr.vhd2default:default2
 1552default:default8@Z8-256
-÷
+Í
 synthesizing module '%s'638*oasys2&
-wr_status_flags_ss2default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/wr_status_flags_ss.vhd2default:default2
+wr_status_flags_ss2default:default2Ò
+⁄/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_status_flags_ss.vhd2default:default2
 1802default:default8@Z8-638
 [
 %s*synth2L
@@ -3239,25 +3239,25 @@ V
 %s*synth2Q
 =	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
 2default:default
-í
+¶
 %done synthesizing module '%s' (%s#%s)256*oasys2&
 wr_status_flags_ss2default:default2
 112default:default2
-12default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/wr_status_flags_ss.vhd2default:default2
+12default:default2Ò
+⁄/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_status_flags_ss.vhd2default:default2
 1802default:default8@Z8-256
-˛
+í
 %done synthesizing module '%s' (%s#%s)256*oasys2
 wr_logic2default:default2
 122default:default2
-12default:default2”
-º/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/wr_logic.vhd2default:default2
+12default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_logic.vhd2default:default2
 2312default:default8@Z8-256
-≈
+Ÿ
 synthesizing module '%s'638*oasys2
 
-output_blk2default:default2‘
-Ω/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/common/output_blk.vhd2default:default2
+output_blk2default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
 2682default:default8@Z8-638
 Z
 %s*synth2K
@@ -3359,75 +3359,75 @@ W
 %s*synth2N
 :	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
 2default:default
-Å
+ï
 %done synthesizing module '%s' (%s#%s)256*oasys2
 
 output_blk2default:default2
 132default:default2
-12default:default2‘
-Ω/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/common/output_blk.vhd2default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
 2682default:default8@Z8-256
-ö
+Æ
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 fifo_generator_ramfifo2default:default2
 142default:default2
-12default:default2·
- /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
+12default:default2ı
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
 3082default:default8@Z8-256
-ä
+û
 %done synthesizing module '%s' (%s#%s)256*oasys2&
 fifo_generator_top2default:default2
 152default:default2
-12default:default2’
-æ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
+12default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
 2712default:default8@Z8-256
-ö
+Æ
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 fifo_generator_v11_0_synth2default:default2
 162default:default2
-12default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd2default:default2
+12default:default2Ò
+⁄/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd2default:default2
 6782default:default8@Z8-256
-é
+¢
 %done synthesizing module '%s' (%s#%s)256*oasys2(
 fifo_generator_v11_02default:default2
 172default:default2
-12default:default2◊
-¿/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_v11_0.vhd2default:default2
+12default:default2Î
+‘/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0.vhd2default:default2
 6612default:default8@Z8-256
-Â
+·
 Ginstance '%s' of module '%s' requires %s connections, but only %s given350*oasys2!
 fifo_gen_inst2default:default2(
 fifo_generator_v11_02default:default2
 2302default:default2
-2282default:default2Ê
-œ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
+2282default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
 2922default:default8@Z8-350
-£
+ü
 %done synthesizing module '%s' (%s#%s)256*oasys2/
 axi_data_fifo_v2_1_fifo_gen2default:default2
 182default:default2
-12default:default2Ê
-œ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
+12default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
 602default:default8@Z8-256
-•
+°
 %done synthesizing module '%s' (%s#%s)256*oasys20
 axi_data_fifo_v2_1_axic_fifo2default:default2
 192default:default2
-12default:default2Á
-–/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
+12default:default2„
+Ã/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
 642default:default8@Z8-256
 ƒ
 %done synthesizing module '%s' (%s#%s)256*oasys2;
 'axi_protocol_converter_v2_1_a_axi3_conv2default:default2
 202default:default2
 12default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
+‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
 622default:default8@Z8-256
 à
 synthesizing module '%s'638*oasys2;
 'axi_protocol_converter_v2_1_w_axi3_conv2default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v2default:default2
+‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v2default:default2
 612default:default8@Z8-638
 V
 %s*synth2G
@@ -3466,12 +3466,12 @@ _
 'axi_protocol_converter_v2_1_w_axi3_conv2default:default2
 212default:default2
 12default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v2default:default2
+‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v2default:default2
 612default:default8@Z8-256
 à
 synthesizing module '%s'638*oasys2;
 'axi_protocol_converter_v2_1_b_downsizer2default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v2default:default2
+‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v2default:default2
 652default:default8@Z8-638
 V
 %s*synth2G
@@ -3510,12 +3510,12 @@ M
 'axi_protocol_converter_v2_1_b_downsizer2default:default2
 222default:default2
 12default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v2default:default2
+‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v2default:default2
 652default:default8@Z8-256
 ò
 synthesizing module '%s'638*oasys2K
 7axi_protocol_converter_v2_1_a_axi3_conv__parameterized02default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
+‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
 622default:default8@Z8-638
 V
 %s*synth2G
@@ -3577,10 +3577,10 @@ r
 %s*synth2c
 O	Parameter C_SIZE_MASK bound to: 40'b1111111111111111111111111111111100000000 
 2default:default
-˘
+ı
 synthesizing module '%s'638*oasys2@
-,axi_data_fifo_v2_1_axic_fifo__parameterized02default:default2Á
-–/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
+,axi_data_fifo_v2_1_axic_fifo__parameterized02default:default2„
+Ã/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
 642default:default8@Z8-638
 V
 %s*synth2G
@@ -3598,10 +3598,10 @@ X
 %s*synth2I
 5	Parameter C_FIFO_TYPE bound to: lut - type: string 
 2default:default
-˜
+Û
 synthesizing module '%s'638*oasys2?
-+axi_data_fifo_v2_1_fifo_gen__parameterized02default:default2Ê
-œ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
++axi_data_fifo_v2_1_fifo_gen__parameterized02default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
 602default:default8@Z8-638
 V
 %s*synth2G
@@ -3635,10 +3635,10 @@ a
 %s*synth2R
 >	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
 2default:default
-‚
+ˆ
 synthesizing module '%s'638*oasys28
-$fifo_generator_v11_0__parameterized02default:default2◊
-¿/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_v11_0.vhd2default:default2
+$fifo_generator_v11_0__parameterized02default:default2Î
+‘/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0.vhd2default:default2
 6612default:default8@Z8-638
 Z
 %s*synth2K
@@ -4432,10 +4432,10 @@ a
 %s*synth2R
 >	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
 2default:default
-Ó
+Ç
 synthesizing module '%s'638*oasys2>
-*fifo_generator_v11_0_synth__parameterized02default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd2default:default2
+*fifo_generator_v11_0_synth__parameterized02default:default2Ò
+⁄/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd2default:default2
 6782default:default8@Z8-638
 Z
 %s*synth2K
@@ -5229,10 +5229,10 @@ a
 %s*synth2R
 >	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
 2default:default
-ﬁ
+Ú
 synthesizing module '%s'638*oasys26
-"fifo_generator_top__parameterized02default:default2’
-æ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
+"fifo_generator_top__parameterized02default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
 2712default:default8@Z8-638
 V
 %s*synth2G
@@ -5506,10 +5506,10 @@ a
 %s*synth2R
 >	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
 2default:default
-Ó
+Ç
 synthesizing module '%s'638*oasys2:
-&fifo_generator_ramfifo__parameterized02default:default2·
- /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
+&fifo_generator_ramfifo__parameterized02default:default2ı
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
 3082default:default8@Z8-638
 V
 %s*synth2G
@@ -5723,10 +5723,10 @@ V
 %s*synth2G
 3	Parameter C_AXI_TYPE bound to: 0 - type: integer 
 2default:default
-”
+Á
 synthesizing module '%s'638*oasys2-
-input_blk__parameterized02default:default2”
-º/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/common/input_blk.vhd2default:default2
+input_blk__parameterized02default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
 2782default:default8@Z8-638
 Z
 %s*synth2K
@@ -5800,17 +5800,17 @@ Z
 %s*synth2K
 7	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
 2default:default
-è
+£
 %done synthesizing module '%s' (%s#%s)256*oasys2-
 input_blk__parameterized02default:default2
 222default:default2
-12default:default2”
-º/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/common/input_blk.vhd2default:default2
+12default:default2Á
+–/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd2default:default2
 2782default:default8@Z8-256
-Œ
+‚
 synthesizing module '%s'638*oasys2*
-memory__parameterized02default:default2—
-∫/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
+memory__parameterized02default:default2Â
+Œ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
 2152default:default8@Z8-638
 V
 %s*synth2G
@@ -5904,10 +5904,10 @@ W
 %s*synth2H
 4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
 2default:default
- 
+ﬁ
 synthesizing module '%s'638*oasys2(
-dmem__parameterized02default:default2œ
-∏/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+dmem__parameterized02default:default2„
+Ã/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
 1652default:default8@Z8-638
 U
 %s*synth2F
@@ -5961,24 +5961,24 @@ W
 %s*synth2H
 4	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
 2default:default
-Ü
+ö
 %done synthesizing module '%s' (%s#%s)256*oasys2(
 dmem__parameterized02default:default2
 222default:default2
-12default:default2œ
-∏/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
+12default:default2„
+Ã/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd2default:default2
 1652default:default8@Z8-256
-ä
+û
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 memory__parameterized02default:default2
 222default:default2
-12default:default2—
-∫/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
+12default:default2Â
+Œ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd2default:default2
 2152default:default8@Z8-256
-’
+È
 synthesizing module '%s'638*oasys2.
-output_blk__parameterized02default:default2‘
-Ω/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/common/output_blk.vhd2default:default2
+output_blk__parameterized02default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
 2682default:default8@Z8-638
 Z
 %s*synth2K
@@ -6080,74 +6080,74 @@ W
 %s*synth2N
 :	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
 2default:default
-ë
+•
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 output_blk__parameterized02default:default2
 222default:default2
-12default:default2‘
-Ω/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/common/output_blk.vhd2default:default2
+12default:default2Ë
+—/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd2default:default2
 2682default:default8@Z8-256
-™
+æ
 %done synthesizing module '%s' (%s#%s)256*oasys2:
 &fifo_generator_ramfifo__parameterized02default:default2
 222default:default2
-12default:default2·
- /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
+12default:default2ı
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd2default:default2
 3082default:default8@Z8-256
-ö
+Æ
 %done synthesizing module '%s' (%s#%s)256*oasys26
 "fifo_generator_top__parameterized02default:default2
 222default:default2
-12default:default2’
-æ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
+12default:default2È
+“/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd2default:default2
 2712default:default8@Z8-256
-™
+æ
 %done synthesizing module '%s' (%s#%s)256*oasys2>
 *fifo_generator_v11_0_synth__parameterized02default:default2
 222default:default2
-12default:default2›
-∆/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd2default:default2
+12default:default2Ò
+⁄/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd2default:default2
 6782default:default8@Z8-256
-û
+≤
 %done synthesizing module '%s' (%s#%s)256*oasys28
 $fifo_generator_v11_0__parameterized02default:default2
 222default:default2
-12default:default2◊
-¿/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_v11_0.vhd2default:default2
+12default:default2Î
+‘/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0.vhd2default:default2
 6612default:default8@Z8-256
-Â
+·
 Ginstance '%s' of module '%s' requires %s connections, but only %s given350*oasys2!
 fifo_gen_inst2default:default2(
 fifo_generator_v11_02default:default2
 2302default:default2
-2282default:default2Ê
-œ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
+2282default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
 2922default:default8@Z8-350
-≥
+Ø
 %done synthesizing module '%s' (%s#%s)256*oasys2?
 +axi_data_fifo_v2_1_fifo_gen__parameterized02default:default2
 222default:default2
-12default:default2Ê
-œ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
+12default:default2‚
+À/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v2default:default2
 602default:default8@Z8-256
-µ
+±
 %done synthesizing module '%s' (%s#%s)256*oasys2@
 ,axi_data_fifo_v2_1_axic_fifo__parameterized02default:default2
 222default:default2
-12default:default2Á
-–/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
+12default:default2„
+Ã/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v2default:default2
 642default:default8@Z8-256
 ‘
 %done synthesizing module '%s' (%s#%s)256*oasys2K
 7axi_protocol_converter_v2_1_a_axi3_conv__parameterized02default:default2
 222default:default2
 12default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
+‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v2default:default2
 622default:default8@Z8-256
 à
 synthesizing module '%s'638*oasys2;
 'axi_protocol_converter_v2_1_r_axi3_conv2default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v2default:default2
+‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v2default:default2
 612default:default8@Z8-638
 V
 %s*synth2G
@@ -6202,28 +6202,28 @@ M
 'axi_protocol_converter_v2_1_r_axi3_conv2default:default2
 232default:default2
 12default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v2default:default2
+‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v2default:default2
 612default:default8@Z8-256
 ¿
 %done synthesizing module '%s' (%s#%s)256*oasys29
 %axi_protocol_converter_v2_1_axi3_conv2default:default2
 242default:default2
 12default:default2˘
-‚/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v2default:default2
+‚/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v2default:default2
 692default:default8@Z8-256
 ⁄
 %done synthesizing module '%s' (%s#%s)256*oasys2F
 2axi_protocol_converter_v2_1_axi_protocol_converter2default:default2
 252default:default2
 12default:default2Ü
-Ô/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
+Ô/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
 622default:default8@Z8-256
-˝
-%done synthesizing module '%s' (%s#%s)256*oasys2)
-zynq_system_auto_pc_12default:default2
+Ä
+%done synthesizing module '%s' (%s#%s)256*oasys2*
+zynq_system_auto_pc_162default:default2
 262default:default2
-12default:default2∆
-Ø/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_1/synth/zynq_system_auto_pc_1.v2default:default2
+12default:default2»
+±/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_16/synth/zynq_system_auto_pc_16.v2default:default2
 572default:default8@Z8-256
 ›
 %done synthesizing module '%s' (%s#%s)256*oasys2+
@@ -6255,26 +6255,26 @@ M
 GND2default:default2£
 å/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd2default:default2
 12582default:default8@Z8-113
-˘
-Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2)
-zynq_system_auto_pc_22default:default2ƒ
-Ø/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/synth/zynq_system_auto_pc_2.v2default:default2
+˝
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2*
+zynq_system_auto_pc_172default:default2∆
+±/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_17/synth/zynq_system_auto_pc_17.v2default:default2
 572default:default2
-auto_pc2default:default2)
-zynq_system_auto_pc_22default:default2£
+auto_pc2default:default2*
+zynq_system_auto_pc_172default:default2£
 å/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd2default:default2
 12622default:default8@Z8-3491
-¡
-synthesizing module '%s'638*oasys2)
-zynq_system_auto_pc_22default:default2∆
-Ø/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/synth/zynq_system_auto_pc_2.v2default:default2
+ƒ
+synthesizing module '%s'638*oasys2*
+zynq_system_auto_pc_172default:default2»
+±/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_17/synth/zynq_system_auto_pc_17.v2default:default2
 572default:default8@Z8-638
-˝
-%done synthesizing module '%s' (%s#%s)256*oasys2)
-zynq_system_auto_pc_22default:default2
+Ä
+%done synthesizing module '%s' (%s#%s)256*oasys2*
+zynq_system_auto_pc_172default:default2
 292default:default2
-12default:default2∆
-Ø/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/synth/zynq_system_auto_pc_2.v2default:default2
+12default:default2»
+±/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_17/synth/zynq_system_auto_pc_17.v2default:default2
 572default:default8@Z8-256
 ﬁ
 %done synthesizing module '%s' (%s#%s)256*oasys2+
@@ -10277,24 +10277,24 @@ L/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2
 s00_couplers_imp_156Q4UY2default:default2£
 å/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd2default:default2
 2672default:default8@Z8-638
-¯
-Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2)
-zynq_system_auto_pc_02default:default2ƒ
-Ø/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_0/synth/zynq_system_auto_pc_0.v2default:default2
+¸
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2*
+zynq_system_auto_pc_152default:default2∆
+±/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/synth/zynq_system_auto_pc_15.v2default:default2
 572default:default2
-auto_pc2default:default2)
-zynq_system_auto_pc_02default:default2£
+auto_pc2default:default2*
+zynq_system_auto_pc_152default:default2£
 å/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd2default:default2
 4502default:default8@Z8-3491
-¡
-synthesizing module '%s'638*oasys2)
-zynq_system_auto_pc_02default:default2∆
-Ø/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_0/synth/zynq_system_auto_pc_0.v2default:default2
+ƒ
+synthesizing module '%s'638*oasys2*
+zynq_system_auto_pc_152default:default2»
+±/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/synth/zynq_system_auto_pc_15.v2default:default2
 572default:default8@Z8-638
 Æ
 synthesizing module '%s'638*oasys2V
 Baxi_protocol_converter_v2_1_axi_protocol_converter__parameterized02default:default2Ü
-Ô/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
+Ô/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
 622default:default8@Z8-638
 V
 %s*synth2G
@@ -10399,7 +10399,7 @@ X
 ¯
 synthesizing module '%s'638*oasys23
 axi_protocol_converter_v2_1_b2s2default:default2Û
-‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v2default:default2
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v2default:default2
 392default:default8@Z8-638
 \
 %s*synth2M
@@ -10425,10 +10425,10 @@ _
 %s*synth2P
 <	Parameter C_AXI_SUPPORTS_READ bound to: 1 - type: integer 
 2default:default
-ä
+Ü
 synthesizing module '%s'638*oasys2>
-*axi_register_slice_v2_1_axi_register_slice2default:default2˙
-„/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
+*axi_register_slice_v2_1_axi_register_slice2default:default2ˆ
+ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
 642default:default8@Z8-638
 Y
 %s*synth2J
@@ -10798,10 +10798,10 @@ a
 %s*synth2R
 >	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
 2default:default
-˙
+ˆ
 synthesizing module '%s'638*oasys26
-"axi_infrastructure_v1_1_axi2vector2default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
+"axi_infrastructure_v1_1_axi2vector2default:default2Ó
+◊/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
 602default:default8@Z8-638
 Z
 %s*synth2K
@@ -11167,17 +11167,17 @@ a
 %s*synth2R
 >	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
 2default:default
-∂
+≤
 %done synthesizing module '%s' (%s#%s)256*oasys26
 "axi_infrastructure_v1_1_axi2vector2default:default2
 962default:default2
-12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
+12default:default2Ó
+◊/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
 602default:default8@Z8-256
-å
+à
 synthesizing module '%s'638*oasys2?
-+axi_register_slice_v2_1_axic_register_slice2default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
++axi_register_slice_v2_1_axic_register_slice2default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
 %s*synth2J
@@ -11191,17 +11191,17 @@ X
 %s*synth2I
 5	Parameter C_REG_CONFIG bound to: 1 - type: integer 
 2default:default
-»
+ƒ
 %done synthesizing module '%s' (%s#%s)256*oasys2?
 +axi_register_slice_v2_1_axic_register_slice2default:default2
 972default:default2
-12default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+12default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
-ú
+ò
 synthesizing module '%s'638*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized02default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+;axi_register_slice_v2_1_axic_register_slice__parameterized02default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
 %s*synth2J
@@ -11215,17 +11215,17 @@ X
 %s*synth2I
 5	Parameter C_REG_CONFIG bound to: 0 - type: integer 
 2default:default
-ÿ
+‘
 %done synthesizing module '%s' (%s#%s)256*oasys2O
 ;axi_register_slice_v2_1_axic_register_slice__parameterized02default:default2
 972default:default2
-12default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+12default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
-ú
+ò
 synthesizing module '%s'638*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized12default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+;axi_register_slice_v2_1_axic_register_slice__parameterized12default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
 %s*synth2J
@@ -11239,17 +11239,17 @@ X
 %s*synth2I
 5	Parameter C_REG_CONFIG bound to: 1 - type: integer 
 2default:default
-ÿ
+‘
 %done synthesizing module '%s' (%s#%s)256*oasys2O
 ;axi_register_slice_v2_1_axic_register_slice__parameterized12default:default2
 972default:default2
-12default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+12default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
-ú
+ò
 synthesizing module '%s'638*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized22default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+;axi_register_slice_v2_1_axic_register_slice__parameterized22default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
 %s*synth2J
@@ -11263,17 +11263,17 @@ X
 %s*synth2I
 5	Parameter C_REG_CONFIG bound to: 1 - type: integer 
 2default:default
-ÿ
+‘
 %done synthesizing module '%s' (%s#%s)256*oasys2O
 ;axi_register_slice_v2_1_axic_register_slice__parameterized22default:default2
 972default:default2
-12default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+12default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
-˙
+ˆ
 synthesizing module '%s'638*oasys26
-"axi_infrastructure_v1_1_vector2axi2default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
+"axi_infrastructure_v1_1_vector2axi2default:default2Ó
+◊/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
 602default:default8@Z8-638
 Z
 %s*synth2K
@@ -11639,24 +11639,24 @@ a
 %s*synth2R
 >	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
 2default:default
-∂
+≤
 %done synthesizing module '%s' (%s#%s)256*oasys26
 "axi_infrastructure_v1_1_vector2axi2default:default2
 982default:default2
-12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
+12default:default2Ó
+◊/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
 602default:default8@Z8-256
-∆
+¬
 %done synthesizing module '%s' (%s#%s)256*oasys2>
 *axi_register_slice_v2_1_axi_register_slice2default:default2
 992default:default2
-12default:default2˙
-„/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
+12default:default2ˆ
+ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
 642default:default8@Z8-256
 ç
 synthesizing module '%s'638*oasys2>
 *axi_protocol_converter_v2_1_b2s_aw_channel2default:default2˛
-Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v2default:default2
+Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v2default:default2
 52default:default8@Z8-638
 W
 %s*synth2H
@@ -11669,7 +11669,7 @@ W
 ñ
 synthesizing module '%s'638*oasys2B
 .axi_protocol_converter_v2_1_b2s_cmd_translator2default:default2Ç
-Î/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v2default:default2
+Î/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v2default:default2
 172default:default8@Z8-638
 ]
 %s*synth2N
@@ -11690,7 +11690,7 @@ N
 ä
 synthesizing module '%s'638*oasys2<
 (axi_protocol_converter_v2_1_b2s_incr_cmd2default:default2¸
-Â/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v2default:default2
+Â/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v2default:default2
 112default:default8@Z8-638
 ]
 %s*synth2N
@@ -11705,12 +11705,12 @@ _
 (axi_protocol_converter_v2_1_b2s_incr_cmd2default:default2
 1002default:default2
 12default:default2¸
-Â/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v2default:default2
+Â/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v2default:default2
 112default:default8@Z8-256
 ä
 synthesizing module '%s'638*oasys2<
 (axi_protocol_converter_v2_1_b2s_wrap_cmd2default:default2¸
-Â/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v2default:default2
+Â/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v2default:default2
 112default:default8@Z8-638
 ]
 %s*synth2N
@@ -11725,19 +11725,19 @@ _
 (axi_protocol_converter_v2_1_b2s_wrap_cmd2default:default2
 1012default:default2
 12default:default2¸
-Â/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v2default:default2
+Â/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v2default:default2
 112default:default8@Z8-256
 ”
 %done synthesizing module '%s' (%s#%s)256*oasys2B
 .axi_protocol_converter_v2_1_b2s_cmd_translator2default:default2
 1022default:default2
 12default:default2Ç
-Î/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v2default:default2
+Î/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v2default:default2
 172default:default8@Z8-256
 é
 synthesizing module '%s'638*oasys2>
 *axi_protocol_converter_v2_1_b2s_wr_cmd_fsm2default:default2˛
-Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v2default:default2
+Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v2default:default2
 102default:default8@Z8-638
 G
 %s*synth28
@@ -11757,26 +11757,26 @@ L
 2default:default
 —
 default block is never used226*oasys2˛
-Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v2default:default2
+Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v2default:default2
 642default:default8@Z8-226
 À
 %done synthesizing module '%s' (%s#%s)256*oasys2>
 *axi_protocol_converter_v2_1_b2s_wr_cmd_fsm2default:default2
 1032default:default2
 12default:default2˛
-Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v2default:default2
+Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v2default:default2
 102default:default8@Z8-256
  
 %done synthesizing module '%s' (%s#%s)256*oasys2>
 *axi_protocol_converter_v2_1_b2s_aw_channel2default:default2
 1042default:default2
 12default:default2˛
-Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v2default:default2
+Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v2default:default2
 52default:default8@Z8-256
 å
 synthesizing module '%s'638*oasys2=
 )axi_protocol_converter_v2_1_b2s_b_channel2default:default2˝
-Ê/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v2default:default2
+Ê/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v2default:default2
 102default:default8@Z8-638
 W
 %s*synth2H
@@ -11825,7 +11825,7 @@ U
 è
 synthesizing module '%s'638*oasys2?
 +axi_protocol_converter_v2_1_b2s_simple_fifo2default:default2ˇ
-Ë/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
+Ë/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-638
 T
 %s*synth2E
@@ -11860,12 +11860,12 @@ J
 +axi_protocol_converter_v2_1_b2s_simple_fifo2default:default2
 1052default:default2
 12default:default2ˇ
-Ë/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
+Ë/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-256
 ü
 synthesizing module '%s'638*oasys2O
 ;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized02default:default2ˇ
-Ë/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
+Ë/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-638
 S
 %s*synth2D
@@ -11900,19 +11900,19 @@ J
 ;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized02default:default2
 1052default:default2
 12default:default2ˇ
-Ë/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
+Ë/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-256
 …
 %done synthesizing module '%s' (%s#%s)256*oasys2=
 )axi_protocol_converter_v2_1_b2s_b_channel2default:default2
 1062default:default2
 12default:default2˝
-Ê/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v2default:default2
+Ê/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v2default:default2
 102default:default8@Z8-256
 ç
 synthesizing module '%s'638*oasys2>
 *axi_protocol_converter_v2_1_b2s_ar_channel2default:default2˛
-Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v2default:default2
+Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v2default:default2
 52default:default8@Z8-638
 W
 %s*synth2H
@@ -11925,7 +11925,7 @@ W
 é
 synthesizing module '%s'638*oasys2>
 *axi_protocol_converter_v2_1_b2s_rd_cmd_fsm2default:default2˛
-Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v2default:default2
+Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v2default:default2
 102default:default8@Z8-638
 G
 %s*synth28
@@ -11945,26 +11945,26 @@ $	Parameter SM_DONE bound to: 2'b11
 2default:default
 —
 default block is never used226*oasys2˛
-Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v2default:default2
+Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v2default:default2
 722default:default8@Z8-226
 À
 %done synthesizing module '%s' (%s#%s)256*oasys2>
 *axi_protocol_converter_v2_1_b2s_rd_cmd_fsm2default:default2
 1072default:default2
 12default:default2˛
-Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v2default:default2
+Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v2default:default2
 102default:default8@Z8-256
  
 %done synthesizing module '%s' (%s#%s)256*oasys2>
 *axi_protocol_converter_v2_1_b2s_ar_channel2default:default2
 1082default:default2
 12default:default2˛
-Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v2default:default2
+Á/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v2default:default2
 52default:default8@Z8-256
 å
 synthesizing module '%s'638*oasys2=
 )axi_protocol_converter_v2_1_b2s_r_channel2default:default2˝
-Ê/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v2default:default2
+Ê/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v2default:default2
 212default:default8@Z8-638
 W
 %s*synth2H
@@ -12001,7 +12001,7 @@ V
 ü
 synthesizing module '%s'638*oasys2O
 ;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized12default:default2ˇ
-Ë/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
+Ë/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-638
 T
 %s*synth2E
@@ -12036,12 +12036,12 @@ M
 ;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized12default:default2
 1082default:default2
 12default:default2ˇ
-Ë/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
+Ë/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-256
 ü
 synthesizing module '%s'638*oasys2O
 ;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized22default:default2ˇ
-Ë/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
+Ë/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-638
 T
 %s*synth2E
@@ -12076,19 +12076,19 @@ M
 ;axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized22default:default2
 1082default:default2
 12default:default2ˇ
-Ë/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
+Ë/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v2default:default2
 92default:default8@Z8-256
 …
 %done synthesizing module '%s' (%s#%s)256*oasys2=
 )axi_protocol_converter_v2_1_b2s_r_channel2default:default2
 1092default:default2
 12default:default2˝
-Ê/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v2default:default2
+Ê/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v2default:default2
 212default:default8@Z8-256
-ö
+ñ
 synthesizing module '%s'638*oasys2N
-:axi_register_slice_v2_1_axi_register_slice__parameterized02default:default2˙
-„/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
+:axi_register_slice_v2_1_axi_register_slice__parameterized02default:default2ˆ
+ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
 642default:default8@Z8-638
 Y
 %s*synth2J
@@ -12458,10 +12458,10 @@ a
 %s*synth2R
 >	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
 2default:default
-ä
+Ü
 synthesizing module '%s'638*oasys2F
-2axi_infrastructure_v1_1_axi2vector__parameterized02default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
+2axi_infrastructure_v1_1_axi2vector__parameterized02default:default2Ó
+◊/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
 602default:default8@Z8-638
 Z
 %s*synth2K
@@ -12827,17 +12827,17 @@ a
 %s*synth2R
 >	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
 2default:default
-«
+√
 %done synthesizing module '%s' (%s#%s)256*oasys2F
 2axi_infrastructure_v1_1_axi2vector__parameterized02default:default2
 1092default:default2
-12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
+12default:default2Ó
+◊/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v2default:default2
 602default:default8@Z8-256
-ú
+ò
 synthesizing module '%s'638*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized32default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+;axi_register_slice_v2_1_axic_register_slice__parameterized32default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
 %s*synth2J
@@ -12851,17 +12851,17 @@ X
 %s*synth2I
 5	Parameter C_REG_CONFIG bound to: 0 - type: integer 
 2default:default
-Ÿ
+’
 %done synthesizing module '%s' (%s#%s)256*oasys2O
 ;axi_register_slice_v2_1_axic_register_slice__parameterized32default:default2
 1092default:default2
-12default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+12default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
-ú
+ò
 synthesizing module '%s'638*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized42default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+;axi_register_slice_v2_1_axic_register_slice__parameterized42default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
 %s*synth2J
@@ -12875,17 +12875,17 @@ X
 %s*synth2I
 5	Parameter C_REG_CONFIG bound to: 0 - type: integer 
 2default:default
-Ÿ
+’
 %done synthesizing module '%s' (%s#%s)256*oasys2O
 ;axi_register_slice_v2_1_axic_register_slice__parameterized42default:default2
 1092default:default2
-12default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+12default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
-ú
+ò
 synthesizing module '%s'638*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized52default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+;axi_register_slice_v2_1_axic_register_slice__parameterized52default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
 %s*synth2J
@@ -12899,17 +12899,17 @@ X
 %s*synth2I
 5	Parameter C_REG_CONFIG bound to: 0 - type: integer 
 2default:default
-Ÿ
+’
 %done synthesizing module '%s' (%s#%s)256*oasys2O
 ;axi_register_slice_v2_1_axic_register_slice__parameterized52default:default2
 1092default:default2
-12default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+12default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
-ú
+ò
 synthesizing module '%s'638*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized62default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+;axi_register_slice_v2_1_axic_register_slice__parameterized62default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 Y
 %s*synth2J
@@ -12923,17 +12923,17 @@ X
 %s*synth2I
 5	Parameter C_REG_CONFIG bound to: 0 - type: integer 
 2default:default
-Ÿ
+’
 %done synthesizing module '%s' (%s#%s)256*oasys2O
 ;axi_register_slice_v2_1_axic_register_slice__parameterized62default:default2
 1092default:default2
-12default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+12default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
-ä
+Ü
 synthesizing module '%s'638*oasys2F
-2axi_infrastructure_v1_1_vector2axi__parameterized02default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
+2axi_infrastructure_v1_1_vector2axi__parameterized02default:default2Ó
+◊/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
 602default:default8@Z8-638
 Z
 %s*synth2K
@@ -13299,40 +13299,40 @@ a
 %s*synth2R
 >	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
 2default:default
-«
+√
 %done synthesizing module '%s' (%s#%s)256*oasys2F
 2axi_infrastructure_v1_1_vector2axi__parameterized02default:default2
 1092default:default2
-12default:default2Ú
-€/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
+12default:default2Ó
+◊/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v2default:default2
 602default:default8@Z8-256
-◊
+”
 %done synthesizing module '%s' (%s#%s)256*oasys2N
 :axi_register_slice_v2_1_axi_register_slice__parameterized02default:default2
 1092default:default2
-12default:default2˙
-„/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
+12default:default2ˆ
+ﬂ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v2default:default2
 642default:default8@Z8-256
 µ
 %done synthesizing module '%s' (%s#%s)256*oasys23
 axi_protocol_converter_v2_1_b2s2default:default2
 1102default:default2
 12default:default2Û
-‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v2default:default2
+‹/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v2default:default2
 392default:default8@Z8-256
 Î
 %done synthesizing module '%s' (%s#%s)256*oasys2V
 Baxi_protocol_converter_v2_1_axi_protocol_converter__parameterized02default:default2
 1102default:default2
 12default:default2Ü
-Ô/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
+Ô/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v2default:default2
 622default:default8@Z8-256
-˛
-%done synthesizing module '%s' (%s#%s)256*oasys2)
-zynq_system_auto_pc_02default:default2
+Å
+%done synthesizing module '%s' (%s#%s)256*oasys2*
+zynq_system_auto_pc_152default:default2
 1112default:default2
-12default:default2∆
-Ø/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_0/synth/zynq_system_auto_pc_0.v2default:default2
+12default:default2»
+±/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/synth/zynq_system_auto_pc_15.v2default:default2
 572default:default8@Z8-256
 ﬂ
 %done synthesizing module '%s' (%s#%s)256*oasys2,
@@ -13858,10 +13858,10 @@ b
 %s*synth2S
 ?	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
 2default:default
-à
+Ñ
 synthesizing module '%s'638*oasys2=
-)generic_baseblocks_v2_1_comparator_static2default:default2˘
-‚/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
+)generic_baseblocks_v2_1_comparator_static2default:default2ı
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
 612default:default8@Z8-638
 U
 %s*synth2F
@@ -13887,33 +13887,33 @@ U
 %s*synth2N
 :	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
 2default:default
-¯
+Ù
 synthesizing module '%s'638*oasys25
-!generic_baseblocks_v2_1_carry_and2default:default2Ò
-⁄/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v2default:default2
+!generic_baseblocks_v2_1_carry_and2default:default2Ì
+÷/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v2default:default2
 622default:default8@Z8-638
 U
 %s*synth2F
 2	Parameter C_FAMILY bound to: rtl - type: string 
 2default:default
-µ
+±
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !generic_baseblocks_v2_1_carry_and2default:default2
 1142default:default2
-12default:default2Ò
-⁄/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v2default:default2
+12default:default2Ì
+÷/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v2default:default2
 622default:default8@Z8-256
-≈
+¡
 %done synthesizing module '%s' (%s#%s)256*oasys2=
 )generic_baseblocks_v2_1_comparator_static2default:default2
 1152default:default2
-12default:default2˘
-‚/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
+12default:default2ı
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
 612default:default8@Z8-256
-ò
+î
 synthesizing module '%s'638*oasys2M
-9generic_baseblocks_v2_1_comparator_static__parameterized02default:default2˘
-‚/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
+9generic_baseblocks_v2_1_comparator_static__parameterized02default:default2ı
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
 612default:default8@Z8-638
 U
 %s*synth2F
@@ -13939,12 +13939,12 @@ U
 %s*synth2N
 :	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
 2default:default
-’
+—
 %done synthesizing module '%s' (%s#%s)256*oasys2M
 9generic_baseblocks_v2_1_comparator_static__parameterized02default:default2
 1152default:default2
-12default:default2˘
-‚/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
+12default:default2ı
+ﬁ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v2default:default2
 612default:default8@Z8-256
 •
 %done synthesizing module '%s' (%s#%s)256*oasys22
@@ -13985,10 +13985,10 @@ S
 12default:default2‡
 …/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_splitter.v2default:default2
 722default:default8@Z8-256
-Ù
+
 synthesizing module '%s'638*oasys23
-generic_baseblocks_v2_1_mux_enc2default:default2Ô
-ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+generic_baseblocks_v2_1_mux_enc2default:default2Î
+‘/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
 632default:default8@Z8-638
 U
 %s*synth2F
@@ -14006,17 +14006,17 @@ X
 %s*synth2I
 5	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
 2default:default
-±
+≠
 %done synthesizing module '%s' (%s#%s)256*oasys23
 generic_baseblocks_v2_1_mux_enc2default:default2
 1182default:default2
-12default:default2Ô
-ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+12default:default2Î
+‘/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
 632default:default8@Z8-256
-Ñ
+Ä
 synthesizing module '%s'638*oasys2C
-/generic_baseblocks_v2_1_mux_enc__parameterized02default:default2Ô
-ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+/generic_baseblocks_v2_1_mux_enc__parameterized02default:default2Î
+‘/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
 632default:default8@Z8-638
 U
 %s*synth2F
@@ -14034,17 +14034,17 @@ X
 %s*synth2I
 5	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
 2default:default
-¡
+Ω
 %done synthesizing module '%s' (%s#%s)256*oasys2C
 /generic_baseblocks_v2_1_mux_enc__parameterized02default:default2
 1182default:default2
-12default:default2Ô
-ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+12default:default2Î
+‘/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
 632default:default8@Z8-256
-Ñ
+Ä
 synthesizing module '%s'638*oasys2C
-/generic_baseblocks_v2_1_mux_enc__parameterized12default:default2Ô
-ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+/generic_baseblocks_v2_1_mux_enc__parameterized12default:default2Î
+‘/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
 632default:default8@Z8-638
 U
 %s*synth2F
@@ -14062,17 +14062,17 @@ Y
 %s*synth2J
 6	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
 2default:default
-¡
+Ω
 %done synthesizing module '%s' (%s#%s)256*oasys2C
 /generic_baseblocks_v2_1_mux_enc__parameterized12default:default2
 1182default:default2
-12default:default2Ô
-ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+12default:default2Î
+‘/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
 632default:default8@Z8-256
-ú
+ò
 synthesizing module '%s'638*oasys2O
-;axi_register_slice_v2_1_axic_register_slice__parameterized72default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+;axi_register_slice_v2_1_axic_register_slice__parameterized72default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-638
 V
 %s*synth2G
@@ -14086,17 +14086,17 @@ X
 %s*synth2I
 5	Parameter C_REG_CONFIG bound to: 1 - type: integer 
 2default:default
-Ÿ
+’
 %done synthesizing module '%s' (%s#%s)256*oasys2O
 ;axi_register_slice_v2_1_axic_register_slice__parameterized72default:default2
 1182default:default2
-12default:default2˚
-‰/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
+12default:default2˜
+‡/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v2default:default2
 622default:default8@Z8-256
-Ñ
+Ä
 synthesizing module '%s'638*oasys2C
-/generic_baseblocks_v2_1_mux_enc__parameterized22default:default2Ô
-ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+/generic_baseblocks_v2_1_mux_enc__parameterized22default:default2Î
+‘/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
 632default:default8@Z8-638
 U
 %s*synth2F
@@ -14114,12 +14114,12 @@ X
 %s*synth2I
 5	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
 2default:default
-¡
+Ω
 %done synthesizing module '%s' (%s#%s)256*oasys2C
 /generic_baseblocks_v2_1_mux_enc__parameterized22default:default2
 1182default:default2
-12default:default2Ô
-ÿ/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
+12default:default2Î
+‘/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v2default:default2
 632default:default8@Z8-256
 Ë
 synthesizing module '%s'638*oasys22
@@ -14464,7 +14464,7 @@ R
 292default:default8@Z8-256
 ú
 %s*synth2å
-xFinished RTL Elaboration : Time (s): cpu = 00:02:07 ; elapsed = 00:02:12 . Memory (MB): peak = 985.855 ; gain = 362.602
+xFinished RTL Elaboration : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 962.859 ; gain = 339.602
 2default:default
 ;
 %s*synth2,
@@ -14896,78 +14896,30 @@ v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k
 set_property2default:default2å
 v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc2default:default2
 382default:default8@Z17-55
-Ó
+◊
 No cells matched '%s'.
-180*	planAhead2ã
-wget_cells -hier -filter {REF_NAME==zynq_system_axi_mem_intercon_1_4 || ORIG_REF_NAME==zynq_system_axi_mem_intercon_1_4}2default:default2å
+180*	planAhead2u
+aget_cells -hier -filter {REF_NAME==zynq_system_auto_pc_7 || ORIG_REF_NAME==zynq_system_auto_pc_7}2default:default2å
 v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc2default:default2
-412default:default8@Z12-180
+622default:default8@Z12-180
 à
 "'%s' expects at least one object.
 55*common2 
 set_property2default:default2å
 v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc2default:default2
-412default:default8@Z17-55
+622default:default8@Z17-55
 Ÿ
 No cells matched '%s'.
 180*	planAhead2w
 cget_cells -hier -filter {REF_NAME==zynq_system_auto_pc_10 || ORIG_REF_NAME==zynq_system_auto_pc_10}2default:default2å
 v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc2default:default2
-442default:default8@Z12-180
+652default:default8@Z12-180
 à
 "'%s' expects at least one object.
 55*common2 
 set_property2default:default2å
 v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc2default:default2
-442default:default8@Z17-55
-Ÿ
-No cells matched '%s'.
-180*	planAhead2w
-cget_cells -hier -filter {REF_NAME==zynq_system_auto_us_11 || ORIG_REF_NAME==zynq_system_auto_us_11}2default:default2å
-v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc2default:default2
-472default:default8@Z12-180
-à
-"'%s' expects at least one object.
-55*common2 
-set_property2default:default2å
-v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc2default:default2
-472default:default8@Z17-55
-Ÿ
-No cells matched '%s'.
-180*	planAhead2w
-cget_cells -hier -filter {REF_NAME==zynq_system_auto_pc_17 || ORIG_REF_NAME==zynq_system_auto_pc_17}2default:default2å
-v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc2default:default2
-502default:default8@Z12-180
-à
-"'%s' expects at least one object.
-55*common2 
-set_property2default:default2å
-v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc2default:default2
-502default:default8@Z17-55
-Ÿ
-No cells matched '%s'.
-180*	planAhead2w
-cget_cells -hier -filter {REF_NAME==zynq_system_auto_pc_19 || ORIG_REF_NAME==zynq_system_auto_pc_19}2default:default2å
-v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc2default:default2
-532default:default8@Z12-180
-à
-"'%s' expects at least one object.
-55*common2 
-set_property2default:default2å
-v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc2default:default2
-532default:default8@Z17-55
-Ÿ
-No cells matched '%s'.
-180*	planAhead2w
-cget_cells -hier -filter {REF_NAME==zynq_system_auto_us_11 || ORIG_REF_NAME==zynq_system_auto_us_11}2default:default2å
-v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc2default:default2
-932default:default8@Z12-180
-˚
-No cells matched '%s'.
-180*	planAhead2
-/inst2default:default2å
-v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc2default:default2
-932default:default8@Z12-180
+652default:default8@Z17-55
  
 Finished Parsing XDC File [%s]
 178*designutils2ä
@@ -14977,11 +14929,6 @@ v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k
 233*project2ä
 v/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc2default:default2¢
 ç/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/.Xil/zynq_system_wrapper_propImpl.xdc2default:defaultZ1-236
-Ú
-ZCould not find module '%s'. The XDC file %s will not be read for any cell of this module.
-1082*designutils2*
-zynq_system_auto_us_112default:default2…
-¥/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_us_11/zynq_system_auto_us_11_clocks.xdc2default:defaultZ20-1280
 ?
 &Completed Processing XDC Constraints
 
@@ -14997,11 +14944,11 @@ J  A total of 1 instances were transformed.
 2default:defaultZ1-111
 ∂
 %s*synth2¶
-ëFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:33 ; elapsed = 00:02:38 . Memory (MB): peak = 1318.930 ; gain = 695.676
+ëFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:50 ; elapsed = 00:01:53 . Memory (MB): peak = 1309.934 ; gain = 686.676
 2default:default
 û
 %s*synth2é
-zFinished RTL Optimization : Time (s): cpu = 00:02:33 ; elapsed = 00:02:38 . Memory (MB): peak = 1318.930 ; gain = 695.676
+zFinished RTL Optimization : Time (s): cpu = 00:01:50 ; elapsed = 00:01:53 . Memory (MB): peak = 1309.934 ; gain = 686.676
 2default:default
 é
 merging register '%s' into '%s'3619*oasys2)
@@ -16086,7 +16033,7 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 2default:default
 ≤
 %s*synth2¢
-çFinished Loading Part and Timing Information : Time (s): cpu = 00:02:47 ; elapsed = 00:02:52 . Memory (MB): peak = 1319.926 ; gain = 696.672
+çFinished Loading Part and Timing Information : Time (s): cpu = 00:02:04 ; elapsed = 00:02:07 . Memory (MB): peak = 1310.930 ; gain = 687.672
 2default:default
 B
 %s*synth23
@@ -16102,11 +16049,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit       Adders := 19    
+.	   3 Input     32 Bit       Adders := 106   
 2default:default
 Q
 %s*synth2B
-.	   3 Input     32 Bit       Adders := 106   
+.	   2 Input     32 Bit       Adders := 19    
 2default:default
 Q
 %s*synth2B
@@ -16374,19 +16321,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  11 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   3 Input     32 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	   2 Input     32 Bit        Muxes := 64    
 2default:default
 Q
 %s*synth2B
+.	  11 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	  13 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   3 Input     32 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -16414,11 +16361,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  11 Input     12 Bit        Muxes := 1     
+.	   2 Input     12 Bit        Muxes := 10    
 2default:default
 Q
 %s*synth2B
-.	   2 Input     12 Bit        Muxes := 10    
+.	  11 Input     12 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16430,11 +16377,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      8 Bit        Muxes := 20    
+.	   3 Input      8 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   3 Input      8 Bit        Muxes := 1     
+.	   2 Input      8 Bit        Muxes := 20    
 2default:default
 Q
 %s*synth2B
@@ -16446,15 +16393,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      6 Bit        Muxes := 33    
-2default:default
-Q
-%s*synth2B
 .	   5 Input      6 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
-.	   4 Input      5 Bit        Muxes := 2     
+.	   2 Input      6 Bit        Muxes := 33    
+2default:default
+Q
+%s*synth2B
+.	  19 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16462,7 +16409,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  19 Input      5 Bit        Muxes := 1     
+.	   4 Input      5 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -16490,10 +16437,6 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input      3 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
 .	   7 Input      3 Bit        Muxes := 1     
 2default:default
 Q
@@ -16502,11 +16445,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 79    
+.	   6 Input      3 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
 .	   4 Input      2 Bit        Muxes := 14    
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 79    
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 12    
 2default:default
 Q
 %s*synth2B
@@ -16515,10 +16466,6 @@ Q
 Q
 %s*synth2B
 .	   2 Input      1 Bit        Muxes := 316   
-2default:default
-Q
-%s*synth2B
-.	   4 Input      1 Bit        Muxes := 12    
 2default:default
 F
 %s*synth27
@@ -18872,9 +18819,9 @@ B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
-A
-%s*synth22
-Module zynq_system_auto_pc_1 
+B
+%s*synth23
+Module zynq_system_auto_pc_16 
 2default:default
 B
 %s*synth23
@@ -20124,9 +20071,9 @@ B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
-A
-%s*synth22
-Module zynq_system_auto_pc_2 
+B
+%s*synth23
+Module zynq_system_auto_pc_17 
 2default:default
 B
 %s*synth23
@@ -22552,9 +22499,9 @@ B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
-A
-%s*synth22
-Module zynq_system_auto_pc_0 
+B
+%s*synth23
+Module zynq_system_auto_pc_15 
 2default:default
 B
 %s*synth23
@@ -23775,7 +23722,7 @@ RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bi
 2default:default
 ™
 %s*synth2ö
-ÖFinished Cross Boundary Optimization : Time (s): cpu = 00:02:51 ; elapsed = 00:02:56 . Memory (MB): peak = 1319.926 ; gain = 696.672
+ÖFinished Cross Boundary Optimization : Time (s): cpu = 00:02:09 ; elapsed = 00:02:11 . Memory (MB): peak = 1310.930 ; gain = 687.672
 2default:default
 ¢
 %s*synth2í
@@ -23857,45 +23804,45 @@ Block RAM:
 ≥Note: Mutiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the hierarchical modules names of the RAM and only part of it is displayed.
 Distributed RAM: 
 2default:default
-ˆ
-%s*synth2Ê
-—+----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+----------------------------------------------------------------+
+¯
+%s*synth2Ë
+”+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+-----------------------------------------------------------------+
 2default:default
-˜
-%s*synth2Á
-“|Module Name           | RTL Object                                                                                                                                                                              | Inference Criteria | Size (depth X width) | Primitives     | Hierarchical Name                                              | 
+˘
+%s*synth2È
+‘|Module Name            | RTL Object                                                                                                                                                                              | Inference Criteria | Size (depth X width) | Primitives     | Hierarchical Name                                               | 
 2default:default
-ˆ
-%s*synth2Ê
-—+----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+----------------------------------------------------------------+
+¯
+%s*synth2Ë
+”+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+-----------------------------------------------------------------+
 2default:default
-˜
-%s*synth2Á
-“|zynq_system_auto_pc_1 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg              | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_1/ram__12   | 
+˘
+%s*synth2È
+‘|zynq_system_auto_pc_16 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg              | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_16/ram__12   | 
 2default:default
-˜
-%s*synth2Á
-“|zynq_system_auto_pc_1 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg         | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_1/ram__14   | 
+˘
+%s*synth2È
+‘|zynq_system_auto_pc_16 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg         | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_16/ram__14   | 
 2default:default
-˜
-%s*synth2Á
-“|zynq_system_auto_pc_1 | inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg | User Attribute     | 32 X 1               | RAM32X1D x 1   | zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_1/ram__16   | 
+˘
+%s*synth2È
+‘|zynq_system_auto_pc_16 | inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg | User Attribute     | 32 X 1               | RAM32X1D x 1   | zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_16/ram__16   | 
 2default:default
-˜
-%s*synth2Á
-“|zynq_system_auto_pc_2 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg              | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_axi_mem_intercon_1_2/zynq_system_auto_pc_2/ram__18 | 
+˘
+%s*synth2È
+‘|zynq_system_auto_pc_17 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg              | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_axi_mem_intercon_1_2/zynq_system_auto_pc_17/ram__18 | 
 2default:default
-˜
-%s*synth2Á
-“|zynq_system_auto_pc_2 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg         | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_axi_mem_intercon_1_2/zynq_system_auto_pc_2/ram__20 | 
+˘
+%s*synth2È
+‘|zynq_system_auto_pc_17 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg         | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_axi_mem_intercon_1_2/zynq_system_auto_pc_17/ram__20 | 
 2default:default
-˜
-%s*synth2Á
-“|zynq_system_auto_pc_2 | inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg | User Attribute     | 32 X 1               | RAM32X1D x 1   | zynq_system_axi_mem_intercon_1_2/zynq_system_auto_pc_2/ram__22 | 
+˘
+%s*synth2È
+‘|zynq_system_auto_pc_17 | inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg | User Attribute     | 32 X 1               | RAM32X1D x 1   | zynq_system_axi_mem_intercon_1_2/zynq_system_auto_pc_17/ram__22 | 
 2default:default
-˜
-%s*synth2Á
-“+----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+----------------------------------------------------------------+
+˘
+%s*synth2È
+‘+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+-----------------------------------------------------------------+
 
 2default:default
 À
@@ -24027,7 +23974,7 @@ Wzynq_system_i/combiner_top_0/combiner_top_Ui_4_0/\master_portA_addr_2_reg_1339_
 Pzynq_system_i/combiner_top_0/combiner_top_Ui_4_0/data_points_in_addr0vld_reg_reg2default:defaultZ8-3333
 ü
 %s*synth2è
-{Finished Area Optimization : Time (s): cpu = 00:03:05 ; elapsed = 00:03:10 . Memory (MB): peak = 1376.207 ; gain = 752.953
+{Finished Area Optimization : Time (s): cpu = 00:02:22 ; elapsed = 00:02:25 . Memory (MB): peak = 1368.211 ; gain = 744.953
 2default:default
 {
 %s*synth2l
@@ -24035,7 +23982,7 @@ XINFO: Moved 1 constraints on hierarchical pins to their respective driving/load
 2default:default
 Æ
 %s*synth2û
-âFinished Applying XDC Timing Constraints : Time (s): cpu = 00:03:10 ; elapsed = 00:03:16 . Memory (MB): peak = 1561.207 ; gain = 937.953
+âFinished Applying XDC Timing Constraints : Time (s): cpu = 00:02:28 ; elapsed = 00:02:31 . Memory (MB): peak = 1553.211 ; gain = 929.953
 2default:default
 ¥
 øThe signal %s was recognized as a RAM template for dedicated block RAM(s) but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (%s address bits)* is shallow.
@@ -24044,7 +23991,7 @@ XINFO: Moved 1 constraints on hierarchical pins to their respective driving/load
 62default:defaultZ8-3969
 °
 %s*synth2ë
-}Finished Timing Optimization : Time (s): cpu = 00:03:16 ; elapsed = 00:03:22 . Memory (MB): peak = 1588.215 ; gain = 964.961
+}Finished Timing Optimization : Time (s): cpu = 00:02:34 ; elapsed = 00:02:37 . Memory (MB): peak = 1580.219 ; gain = 956.961
 2default:default
 ˆ
 ◊The timing for the instance %s (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
@@ -24146,13 +24093,13 @@ q\inst/lloyds_kernel_top_U/grp_load_points_buffer_fu_544/int_buffer_U/load_point
 ◊The timing for the instance %s (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 3630*oasys2Ö
 q\inst/lloyds_kernel_top_U/grp_load_points_buffer_fu_544/int_buffer_U/load_points_buffer_int_buffer_ram_U/ram_reg 2default:defaultZ8-4480
-°
-%s*synth2ë
-}Finished Technology Mapping : Time (s): cpu = 00:03:36 ; elapsed = 00:03:42 . Memory (MB): peak = 1624.262 ; gain = 1001.008
+†
+%s*synth2ê
+|Finished Technology Mapping : Time (s): cpu = 00:02:54 ; elapsed = 00:02:57 . Memory (MB): peak = 1616.266 ; gain = 993.008
 2default:default
-p
-%s*synth2a
-Mdesign zynq_system_auto_pc_0 has 4 max_fanout violations cannot be satisfied
+q
+%s*synth2b
+Ndesign zynq_system_auto_pc_15 has 4 max_fanout violations cannot be satisfied
 2default:default
 D
 %s*synth25
@@ -24308,9 +24255,9 @@ D
 3295*oasys2(
 processing_system7_02default:default2$
 S_AXI_GP1_WID[1]2default:defaultZ8-3295
-õ
-%s*synth2ã
-wFinished IO Insertion : Time (s): cpu = 00:03:39 ; elapsed = 00:03:45 . Memory (MB): peak = 1624.262 ; gain = 1001.008
+ö
+%s*synth2ä
+vFinished IO Insertion : Time (s): cpu = 00:02:58 ; elapsed = 00:03:01 . Memory (MB): peak = 1616.266 ; gain = 993.008
 2default:default
 ;
 %s*synth2,
@@ -24337,13 +24284,13 @@ l
 %s*synth2]
 I+------+------------------+-------+---------+-------+------------------+
 2default:default
-¨
-%s*synth2ú
-áFinished Renaming Generated Instances : Time (s): cpu = 00:03:40 ; elapsed = 00:03:46 . Memory (MB): peak = 1624.262 ; gain = 1001.008
+´
+%s*synth2õ
+ÜFinished Renaming Generated Instances : Time (s): cpu = 00:02:58 ; elapsed = 00:03:01 . Memory (MB): peak = 1616.266 ; gain = 993.008
 2default:default
-©
-%s*synth2ô
-ÑFinished Rebuilding User Hierarchy : Time (s): cpu = 00:03:42 ; elapsed = 00:03:48 . Memory (MB): peak = 1624.262 ; gain = 1001.008
+®
+%s*synth2ò
+ÉFinished Rebuilding User Hierarchy : Time (s): cpu = 00:03:00 ; elapsed = 00:03:04 . Memory (MB): peak = 1616.266 ; gain = 993.008
 2default:default
 ¢
 %s*synth2í
@@ -25092,7 +25039,7 @@ q|4     |    axi_mem_intercon                |zynq_system_axi_mem_intercon_1    
 2default:default
 ï
 %s*synth2Ö
-q|5     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_1                                      |   947|
+q|5     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_16                                     |   947|
 2default:default
 ï
 %s*synth2Ö
@@ -25100,7 +25047,7 @@ q|6     |    axi_mem_intercon_1              |zynq_system_axi_mem_intercon_1_2  
 2default:default
 ï
 %s*synth2Ö
-q|7     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_2                                      |   947|
+q|7     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_17                                     |   947|
 2default:default
 ï
 %s*synth2Ö
@@ -25120,7 +25067,7 @@ q|11    |    processing_system7_0_axi_periph |zynq_system_processing_system7_0_a
 2default:default
 ï
 %s*synth2Ö
-q|12    |      \s00_couplers/auto_pc         |zynq_system_auto_pc_0                                      |  1276|
+q|12    |      \s00_couplers/auto_pc         |zynq_system_auto_pc_15                                     |  1276|
 2default:default
 ï
 %s*synth2Ö
@@ -25138,17 +25085,17 @@ q|15    |      U0                            |proc_sys_reset__parameterized0    
 %s*synth2Ö
 q+------+------------------------------------+-----------------------------------------------------------+------+
 2default:default
-®
-%s*synth2ò
-ÉFinished Writing Synthesis Report : Time (s): cpu = 00:03:43 ; elapsed = 00:03:49 . Memory (MB): peak = 1624.262 ; gain = 1001.008
+ß
+%s*synth2ó
+ÇFinished Writing Synthesis Report : Time (s): cpu = 00:03:01 ; elapsed = 00:03:05 . Memory (MB): peak = 1616.266 ; gain = 993.008
 2default:default
 l
 %s*synth2]
 ISynthesis finished with 0 errors, 0 critical warnings and 1948 warnings.
 2default:default
-¶
-%s*synth2ñ
-ÅSynthesis Optimization Complete : Time (s): cpu = 00:03:43 ; elapsed = 00:03:49 . Memory (MB): peak = 1624.262 ; gain = 1001.008
+•
+%s*synth2ï
+ÄSynthesis Optimization Complete : Time (s): cpu = 00:03:01 ; elapsed = 00:03:05 . Memory (MB): peak = 1616.266 ; gain = 993.008
 2default:default
 ]
 -Analyzing %s Unisim elements for replacement
@@ -25187,8 +25134,8 @@ L
 G%s Infos, %s Warnings, %s Critical Warnings and %s Errors encountered.
 28*	vivadotcl2
 4882default:default2
-4292default:default2
-162default:default2
+4242default:default2
+122default:default2
 02default:defaultZ4-41
 U
 %s completed successfully
@@ -25198,18 +25145,18 @@ U
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
-00:03:542default:default2
-00:04:002default:default2
-1930.7462default:default2
-1148.7072default:defaultZ17-268
+00:03:142default:default2
+00:03:172default:default2
+1922.7502default:default2
+1147.7072default:defaultZ17-268
 <
 %Done setting XDC timing constraints.
 35*timingZ38-35
 Ç
-vreport_utilization: Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.90 . Memory (MB): peak = 1930.750 ; gain = 0.000
+vreport_utilization: Time (s): cpu = 00:00:00.84 ; elapsed = 00:00:00.94 . Memory (MB): peak = 1922.754 ; gain = 0.000
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Thu Jun 12 14:40:09 20142default:defaultZ17-206
+Thu Jun 12 16:53:54 20142default:defaultZ17-206

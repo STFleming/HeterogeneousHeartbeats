@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'combiner_top'
 ================================================================
-* Date:           Thu Jun 12 14:10:22 2014
+* Date:           Thu Jun 12 16:40:42 2014
 
 * Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
 * Project:        combiner
@@ -1842,13 +1842,13 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 1
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ master_portA]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=4; mode=0x4b262b0; pingpong=0; private_global=0; IO mode=ap_bus:ce=0
-Port [ data_points_in_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x4b8cfb0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ kernel_info_in_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x481ff30; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ centres_out_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x4878820; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ distortion_out]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x4c10650; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ n]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x4a13780; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ k]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x4c36db0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ master_portA]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=4; mode=0x3cabee0; pingpong=0; private_global=0; IO mode=ap_bus:ce=0
+Port [ data_points_in_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x3c23970; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ kernel_info_in_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x3ca7610; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ centres_out_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x3ca9fd0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ distortion_out]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x3ceb3c0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ n]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x3cddbb0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ k]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x38d16c0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------

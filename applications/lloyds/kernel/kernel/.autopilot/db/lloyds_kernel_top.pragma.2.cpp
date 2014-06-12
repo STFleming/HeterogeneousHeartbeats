@@ -41250,7 +41250,6 @@ void load_centres_buffer(uint offset, uint address, volatile bus_type *bus, cent
 
  memcpy(int_buffer, (const bus_type *)(bus + (offset + address)/sizeof(bus_type)), (k+1)*3 /* data dimensionality*/*sizeof(bus_type));
 
-
  for (centre_index_type i=0; i<=k; i++) {_ssdm_RegionBegin("hls_label_1");
 _ssdm_SpecLoopFlatten(0, "");
 _ssdm_op_SpecPipeline(1, 1, 1, "");
@@ -41278,7 +41277,6 @@ _ssdm_op_SpecPipeline(1, 1, 1, "");
  _ssdm_RegionEnd("hls_label_2");}
 
  memcpy((bus_type *)(bus + (offset + address)/sizeof(bus_type) ), int_buffer, 16 /* burst length (in data points)*/*2*sizeof(bus_type));
-
 }
 
 
@@ -41364,7 +41362,7 @@ _ssdm_op_SpecResource(0, "", "AXI4LiteS", "", "", "", "-bus_bundle CONFIG_BUS");
  load_centres_buffer(centres_in_addr, 0, master_portA, k, centres_buffer);
  *debug = data_points_buffer[0].value[0];
 _ssdm_op_SpecResource(debug, "", "AXI4LiteS", "", "", "", "-bus_bundle CONFIG_BUS");
-# 151 "kernel/HLS/source/lloyds_kernel_top.cpp"
+# 149 "kernel/HLS/source/lloyds_kernel_top.cpp"
 
 
  /*

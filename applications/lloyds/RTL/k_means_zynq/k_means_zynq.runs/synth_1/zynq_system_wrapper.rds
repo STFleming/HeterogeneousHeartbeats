@@ -2,8 +2,8 @@
 # Vivado v2013.4 (64-bit)
 # SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
 # IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
-# Start of session at: Thu Jun 12 14:35:54 2014
-# Process ID: 16605
+# Start of session at: Thu Jun 12 16:50:23 2014
+# Process ID: 29678
 # Log file: /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/zynq_system_wrapper.rds
 # Journal file: /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
@@ -31,20 +31,15 @@ WARNING: [IP_Flow 19-3191] Found a duplicate IP definition for 'xilinx.com:hls:l
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/cas_nfs/applications/Xilinx/Vivado/2013.4/data/ip'.
 # set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_processing_system7_0_0/zynq_system_processing_system7_0_0.xdc]
-# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/zynq_system_auto_pc_10_ooc.xdc]
-# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_us_11/zynq_system_auto_us_11_ooc.xdc]
-# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_us_11/zynq_system_auto_us_11_clocks.xdc]
-# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_17/zynq_system_auto_pc_17_ooc.xdc]
-# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_19/zynq_system_auto_pc_19_ooc.xdc]
 # set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_combiner_top_0_6/constraints/combiner_top_ooc.xdc]
 # set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/zynq_system_rst_processing_system7_0_50M_0.xdc]
 # set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/zynq_system_rst_processing_system7_0_50M_0_ooc.xdc]
 # set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/zynq_system_rst_processing_system7_0_50M_0_board.xdc]
 # set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_lloyds_kernel_top_0_0/constraints/lloyds_kernel_top_ooc.xdc]
 # set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/zynq_system_xbar_2_ooc.xdc]
-# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_0/zynq_system_auto_pc_0_ooc.xdc]
-# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_1/zynq_system_auto_pc_1_ooc.xdc]
-# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/zynq_system_auto_pc_2_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/zynq_system_auto_pc_15_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_16/zynq_system_auto_pc_16_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_17/zynq_system_auto_pc_17_ooc.xdc]
 # set_property used_in_implementation false [get_files -all /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/zynq_system_ooc.xdc]
 # set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
 # set_property is_locked true [get_files /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/zynq_system.bd]
@@ -62,7 +57,7 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:01:40 ; elapsed = 00:01:45 . Memory (MB): peak = 851.035 ; gain = 227.781
+Starting RTL Elaboration : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 839.039 ; gain = 215.781
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'zynq_system_wrapper' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system_wrapper.vhd:29]
 INFO: [Synth 8-3491] module 'zynq_system' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:2570' bound to instance 'zynq_system_i' of component 'zynq_system' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system_wrapper.vhd:56]
@@ -72,9 +67,9 @@ INFO: [Synth 8-113] binding component instance 'VCC' to cell 'VCC' [/home/ee/s/s
 INFO: [Synth 8-638] synthesizing module 'zynq_system_axi_mem_intercon_1' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:1439]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_5VZGPS' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:599]
 INFO: [Synth 8-113] binding component instance 'GND' to cell 'GND' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:839]
-INFO: [Synth 8-3491] module 'zynq_system_auto_pc_1' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_1/synth/zynq_system_auto_pc_1.v:57' bound to instance 'auto_pc' of component 'zynq_system_auto_pc_1' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:843]
-INFO: [Synth 8-638] synthesizing module 'zynq_system_auto_pc_1' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_1/synth/zynq_system_auto_pc_1.v:57]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
+INFO: [Synth 8-3491] module 'zynq_system_auto_pc_16' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_16/synth/zynq_system_auto_pc_16.v:57' bound to instance 'auto_pc' of component 'zynq_system_auto_pc_16' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:843]
+INFO: [Synth 8-638] synthesizing module 'zynq_system_auto_pc_16' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_16/synth/zynq_system_auto_pc_16.v:57]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_M_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_S_AXI_PROTOCOL bound to: 0 - type: integer 
@@ -100,7 +95,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_axi_protoco
 	Parameter P_SLVERR bound to: 2'b10 
 	Parameter P_PROTECTION bound to: 1 - type: integer 
 	Parameter P_CONVERSION bound to: 2 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_axi3_conv' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v:69]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_axi3_conv' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v:69]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -116,7 +111,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_axi3_conv' 
 	Parameter C_SUPPORT_SPLITTING bound to: 1 - type: integer 
 	Parameter C_SUPPORT_BURSTS bound to: 1 - type: integer 
 	Parameter C_SINGLE_THREAD bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_a_axi3_conv' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_a_axi3_conv' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v:62]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -132,12 +127,12 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_a_axi3_conv
 	Parameter C_WRAP_BURST bound to: 2'b10 
 	Parameter C_FIFO_DEPTH_LOG bound to: 5 - type: integer 
 	Parameter C_SIZE_MASK bound to: 40'b1111111111111111111111111111111100000000 
-INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_axic_fifo' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_axic_fifo' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v:64]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_FIFO_DEPTH_LOG bound to: 5 - type: integer 
 	Parameter C_FIFO_WIDTH bound to: 5 - type: integer 
 	Parameter C_FIFO_TYPE bound to: lut - type: string 
-INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_fifo_gen' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_fifo_gen' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v:60]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
@@ -146,7 +141,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_fifo_gen' [/home/ee/
 	Parameter C_FIFO_TYPE bound to: lut - type: string 
 	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
 	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'fifo_generator_v11_0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_v11_0.vhd:661]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_v11_0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0.vhd:661]
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
 	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
@@ -345,7 +340,7 @@ INFO: [Synth 8-638] synthesizing module 'fifo_generator_v11_0' [/home/ee/s/sf306
 	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'fifo_generator_v11_0_synth' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd:678]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_v11_0_synth' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd:678]
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
 	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
@@ -544,7 +539,7 @@ INFO: [Synth 8-638] synthesizing module 'fifo_generator_v11_0_synth' [/home/ee/s
 	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'fifo_generator_top' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_top.vhd:271]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_top' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd:271]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
@@ -613,7 +608,7 @@ INFO: [Synth 8-638] synthesizing module 'fifo_generator_top' [/home/ee/s/sf306/H
 	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
 	Parameter C_WR_FREQ bound to: 1 - type: integer 
 	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'fifo_generator_ramfifo' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd:308]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_ramfifo' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd:308]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
@@ -667,7 +662,7 @@ INFO: [Synth 8-638] synthesizing module 'fifo_generator_ramfifo' [/home/ee/s/sf3
 	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
 	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
 	Parameter C_AXI_TYPE bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'reset_blk_ramfifo' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:222]
+INFO: [Synth 8-638] synthesizing module 'reset_blk_ramfifo' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:222]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
@@ -678,14 +673,14 @@ INFO: [Synth 8-638] synthesizing module 'reset_blk_ramfifo' [/home/ee/s/sf306/He
 	Parameter C_MSGON_VAL bound to: 1 - type: integer 
 	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
 	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
-INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:228]
-INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:229]
-INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:231]
-INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:232]
-INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:234]
-INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:235]
-INFO: [Synth 8-256] done synthesizing module 'reset_blk_ramfifo' (1#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:222]
-INFO: [Synth 8-638] synthesizing module 'input_blk' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/common/input_blk.vhd:278]
+INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:228]
+INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:229]
+INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:231]
+INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:232]
+INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:234]
+INFO: [Synth 8-4472] Detected and applied attribute async_reg = true [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:235]
+INFO: [Synth 8-256] done synthesizing module 'reset_blk_ramfifo' (1#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/reset_blk_ramfifo.vhd:222]
+INFO: [Synth 8-638] synthesizing module 'input_blk' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd:278]
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
 	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
@@ -704,8 +699,8 @@ INFO: [Synth 8-638] synthesizing module 'input_blk' [/home/ee/s/sf306/Heterogene
 	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
 	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
 	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'input_blk' (2#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/common/input_blk.vhd:278]
-INFO: [Synth 8-638] synthesizing module 'memory' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/memory.vhd:215]
+INFO: [Synth 8-256] done synthesizing module 'input_blk' (2#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd:278]
+INFO: [Synth 8-638] synthesizing module 'memory' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd:215]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_HAS_RST bound to: 1 - type: integer 
@@ -729,7 +724,7 @@ INFO: [Synth 8-638] synthesizing module 'memory' [/home/ee/s/sf306/Heterogeneous
 	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
 	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
 	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'dmem' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/dmem.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'dmem' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd:165]
 	Parameter C_HAS_RST bound to: 1 - type: integer 
 	Parameter C_HAS_SRST bound to: 0 - type: integer 
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
@@ -743,10 +738,10 @@ INFO: [Synth 8-638] synthesizing module 'dmem' [/home/ee/s/sf306/HeterogeneousHe
 	Parameter C_SMALLER_DATA_WIDTH bound to: 5 - type: integer 
 	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
 	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
-INFO: [Synth 8-4472] Detected and applied attribute ram_style = distributed [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/dmem.vhd:179]
-INFO: [Synth 8-256] done synthesizing module 'dmem' (3#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/dmem.vhd:165]
-INFO: [Synth 8-256] done synthesizing module 'memory' (4#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/memory.vhd:215]
-INFO: [Synth 8-638] synthesizing module 'rd_logic' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_logic.vhd:239]
+INFO: [Synth 8-4472] Detected and applied attribute ram_style = distributed [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd:179]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (3#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd:165]
+INFO: [Synth 8-256] done synthesizing module 'memory' (4#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd:215]
+INFO: [Synth 8-638] synthesizing module 'rd_logic' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_logic.vhd:239]
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
 	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
@@ -769,33 +764,33 @@ INFO: [Synth 8-638] synthesizing module 'rd_logic' [/home/ee/s/sf306/Heterogeneo
 	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
 	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
 	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'rd_bin_cntr' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_bin_cntr.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'rd_bin_cntr' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_bin_cntr.vhd:151]
 	Parameter C_HAS_RST bound to: 1 - type: integer 
 	Parameter C_HAS_SRST bound to: 0 - type: integer 
 	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
 	Parameter C_PNTR_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'rd_bin_cntr' (5#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_bin_cntr.vhd:151]
-INFO: [Synth 8-638] synthesizing module 'rd_status_flags_ss' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_status_flags_ss.vhd:174]
+INFO: [Synth 8-256] done synthesizing module 'rd_bin_cntr' (5#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_bin_cntr.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'rd_status_flags_ss' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_status_flags_ss.vhd:174]
 	Parameter C_HAS_RST bound to: 1 - type: integer 
 	Parameter C_HAS_SRST bound to: 0 - type: integer 
 	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
 	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
 	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'compare' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/compare.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'compare' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/compare.vhd:138]
 	Parameter C_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'compare' (6#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/compare.vhd:138]
-INFO: [Synth 8-256] done synthesizing module 'rd_status_flags_ss' (7#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_status_flags_ss.vhd:174]
-INFO: [Synth 8-638] synthesizing module 'rd_fwft' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_fwft.vhd:154]
+INFO: [Synth 8-256] done synthesizing module 'compare' (6#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/compare.vhd:138]
+INFO: [Synth 8-256] done synthesizing module 'rd_status_flags_ss' (7#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_status_flags_ss.vhd:174]
+INFO: [Synth 8-638] synthesizing module 'rd_fwft' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd:154]
 	Parameter C_HAS_RST bound to: 1 - type: integer 
 	Parameter C_HAS_SRST bound to: 0 - type: integer 
 	Parameter C_VALID_LOW bound to: 0 - type: integer 
 	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
-INFO: [Synth 8-226] default block is never used [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_fwft.vhd:255]
-INFO: [Synth 8-226] default block is never used [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_fwft.vhd:579]
-INFO: [Synth 8-226] default block is never used [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_fwft.vhd:664]
-INFO: [Synth 8-256] done synthesizing module 'rd_fwft' (8#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_fwft.vhd:154]
-INFO: [Synth 8-256] done synthesizing module 'rd_logic' (9#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/rd_logic.vhd:239]
-INFO: [Synth 8-638] synthesizing module 'wr_logic' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/wr_logic.vhd:231]
+INFO: [Synth 8-226] default block is never used [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd:255]
+INFO: [Synth 8-226] default block is never used [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd:579]
+INFO: [Synth 8-226] default block is never used [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd:664]
+INFO: [Synth 8-256] done synthesizing module 'rd_fwft' (8#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_fwft.vhd:154]
+INFO: [Synth 8-256] done synthesizing module 'rd_logic' (9#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/rd_logic.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'wr_logic' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_logic.vhd:231]
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
 	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
@@ -817,7 +812,7 @@ INFO: [Synth 8-638] synthesizing module 'wr_logic' [/home/ee/s/sf306/Heterogeneo
 	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 31 - type: integer 
 	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 30 - type: integer 
 	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'wr_bin_cntr' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/wr_bin_cntr.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'wr_bin_cntr' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_bin_cntr.vhd:155]
 	Parameter C_HAS_RST bound to: 1 - type: integer 
 	Parameter C_HAS_SRST bound to: 0 - type: integer 
 	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
@@ -825,8 +820,8 @@ INFO: [Synth 8-638] synthesizing module 'wr_bin_cntr' [/home/ee/s/sf306/Heteroge
 	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
 	Parameter C_PNTR_WIDTH bound to: 5 - type: integer 
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'wr_bin_cntr' (10#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/wr_bin_cntr.vhd:155]
-INFO: [Synth 8-638] synthesizing module 'wr_status_flags_ss' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/wr_status_flags_ss.vhd:180]
+INFO: [Synth 8-256] done synthesizing module 'wr_bin_cntr' (10#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_bin_cntr.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'wr_status_flags_ss' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_status_flags_ss.vhd:180]
 	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
 	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
 	Parameter C_HAS_RST bound to: 1 - type: integer 
@@ -835,9 +830,9 @@ INFO: [Synth 8-638] synthesizing module 'wr_status_flags_ss' [/home/ee/s/sf306/H
 	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
 	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
 	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'wr_status_flags_ss' (11#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/wr_status_flags_ss.vhd:180]
-INFO: [Synth 8-256] done synthesizing module 'wr_logic' (12#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/wr_logic.vhd:231]
-INFO: [Synth 8-638] synthesizing module 'output_blk' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/common/output_blk.vhd:268]
+INFO: [Synth 8-256] done synthesizing module 'wr_status_flags_ss' (11#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_status_flags_ss.vhd:180]
+INFO: [Synth 8-256] done synthesizing module 'wr_logic' (12#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/wr_logic.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'output_blk' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd:268]
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
 	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
@@ -863,16 +858,16 @@ INFO: [Synth 8-638] synthesizing module 'output_blk' [/home/ee/s/sf306/Heterogen
 	Parameter C_USE_ECC bound to: 0 - type: integer 
 	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
 	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'output_blk' (13#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/common/output_blk.vhd:268]
-INFO: [Synth 8-256] done synthesizing module 'fifo_generator_ramfifo' (14#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd:308]
-INFO: [Synth 8-256] done synthesizing module 'fifo_generator_top' (15#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_top.vhd:271]
-INFO: [Synth 8-256] done synthesizing module 'fifo_generator_v11_0_synth' (16#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd:678]
-INFO: [Synth 8-256] done synthesizing module 'fifo_generator_v11_0' (17#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_v11_0.vhd:661]
-WARNING: [Synth 8-350] instance 'fifo_gen_inst' of module 'fifo_generator_v11_0' requires 230 connections, but only 228 given [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v:292]
-INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_fifo_gen' (18#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v:60]
-INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_axic_fifo' (19#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v:64]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_a_axi3_conv' (20#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_w_axi3_conv' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v:61]
+INFO: [Synth 8-256] done synthesizing module 'output_blk' (13#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd:268]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_ramfifo' (14#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd:308]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_top' (15#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd:271]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_v11_0_synth' (16#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd:678]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_v11_0' (17#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0.vhd:661]
+WARNING: [Synth 8-350] instance 'fifo_gen_inst' of module 'fifo_generator_v11_0' requires 230 connections, but only 228 given [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v:292]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_fifo_gen' (18#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_axic_fifo' (19#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v:64]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_a_axi3_conv' (20#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_w_axi3_conv' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v:61]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -881,8 +876,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_w_axi3_conv
 	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_SUPPORT_SPLITTING bound to: 1 - type: integer 
 	Parameter C_SUPPORT_BURSTS bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_w_axi3_conv' (21#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v:61]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b_downsizer' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v:65]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_w_axi3_conv' (21#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v:61]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b_downsizer' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v:65]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -891,8 +886,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b_downsizer
 	Parameter C_RESP_EXOKAY bound to: 2'b01 
 	Parameter C_RESP_SLVERROR bound to: 2'b10 
 	Parameter C_RESP_DECERR bound to: 2'b11 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b_downsizer' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v:65]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_a_axi3_conv__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b_downsizer' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v:65]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_a_axi3_conv__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v:62]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -908,12 +903,12 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_a_axi3_conv
 	Parameter C_WRAP_BURST bound to: 2'b10 
 	Parameter C_FIFO_DEPTH_LOG bound to: 5 - type: integer 
 	Parameter C_SIZE_MASK bound to: 40'b1111111111111111111111111111111100000000 
-INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_axic_fifo__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_axic_fifo__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v:64]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_FIFO_DEPTH_LOG bound to: 5 - type: integer 
 	Parameter C_FIFO_WIDTH bound to: 1 - type: integer 
 	Parameter C_FIFO_TYPE bound to: lut - type: string 
-INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_fifo_gen__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_fifo_gen__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v:60]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_SYNCHRONIZER_STAGE bound to: 3 - type: integer 
@@ -922,7 +917,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_fifo_gen__parameteri
 	Parameter C_FIFO_TYPE bound to: lut - type: string 
 	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
 	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'fifo_generator_v11_0__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_v11_0.vhd:661]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_v11_0__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0.vhd:661]
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
 	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
@@ -1121,7 +1116,7 @@ INFO: [Synth 8-638] synthesizing module 'fifo_generator_v11_0__parameterized0' [
 	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'fifo_generator_v11_0_synth__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd:678]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_v11_0_synth__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd:678]
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
 	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
@@ -1320,7 +1315,7 @@ INFO: [Synth 8-638] synthesizing module 'fifo_generator_v11_0_synth__parameteriz
 	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
 	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'fifo_generator_top__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_top.vhd:271]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_top__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd:271]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
@@ -1389,7 +1384,7 @@ INFO: [Synth 8-638] synthesizing module 'fifo_generator_top__parameterized0' [/h
 	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
 	Parameter C_WR_FREQ bound to: 1 - type: integer 
 	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'fifo_generator_ramfifo__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd:308]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_ramfifo__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd:308]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
@@ -1443,7 +1438,7 @@ INFO: [Synth 8-638] synthesizing module 'fifo_generator_ramfifo__parameterized0'
 	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
 	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
 	Parameter C_AXI_TYPE bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'input_blk__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/common/input_blk.vhd:278]
+INFO: [Synth 8-638] synthesizing module 'input_blk__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd:278]
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
 	Parameter C_DIN_WIDTH bound to: 1 - type: integer 
@@ -1462,8 +1457,8 @@ INFO: [Synth 8-638] synthesizing module 'input_blk__parameterized0' [/home/ee/s/
 	Parameter C_USE_INPUT_CE bound to: 0 - type: integer 
 	Parameter C_USE_OUTPUT_CE bound to: 0 - type: integer 
 	Parameter C_USE_SYNC_CLK bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'input_blk__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/common/input_blk.vhd:278]
-INFO: [Synth 8-638] synthesizing module 'memory__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/memory.vhd:215]
+INFO: [Synth 8-256] done synthesizing module 'input_blk__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/input_blk.vhd:278]
+INFO: [Synth 8-638] synthesizing module 'memory__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd:215]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_HAS_RST bound to: 1 - type: integer 
@@ -1487,7 +1482,7 @@ INFO: [Synth 8-638] synthesizing module 'memory__parameterized0' [/home/ee/s/sf3
 	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
 	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
 	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'dmem__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/dmem.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'dmem__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd:165]
 	Parameter C_HAS_RST bound to: 1 - type: integer 
 	Parameter C_HAS_SRST bound to: 0 - type: integer 
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
@@ -1501,9 +1496,9 @@ INFO: [Synth 8-638] synthesizing module 'dmem__parameterized0' [/home/ee/s/sf306
 	Parameter C_SMALLER_DATA_WIDTH bound to: 1 - type: integer 
 	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
 	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'dmem__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/dmem.vhd:165]
-INFO: [Synth 8-256] done synthesizing module 'memory__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/memory.vhd:215]
-INFO: [Synth 8-638] synthesizing module 'output_blk__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/common/output_blk.vhd:268]
+INFO: [Synth 8-256] done synthesizing module 'dmem__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/dmem.vhd:165]
+INFO: [Synth 8-256] done synthesizing module 'memory__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/memory.vhd:215]
+INFO: [Synth 8-638] synthesizing module 'output_blk__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd:268]
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
 	Parameter C_DIN_WIDTH bound to: 1 - type: integer 
@@ -1529,16 +1524,16 @@ INFO: [Synth 8-638] synthesizing module 'output_blk__parameterized0' [/home/ee/s
 	Parameter C_USE_ECC bound to: 0 - type: integer 
 	Parameter C_FIFO_TYPE bound to: 0 - type: integer 
 	Parameter C_BYTE_STRB_WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'output_blk__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/common/output_blk.vhd:268]
-INFO: [Synth 8-256] done synthesizing module 'fifo_generator_ramfifo__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd:308]
-INFO: [Synth 8-256] done synthesizing module 'fifo_generator_top__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_top.vhd:271]
-INFO: [Synth 8-256] done synthesizing module 'fifo_generator_v11_0_synth__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd:678]
-INFO: [Synth 8-256] done synthesizing module 'fifo_generator_v11_0__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/fifo_generator_v11_0/fifo_generator_v11_0.vhd:661]
-WARNING: [Synth 8-350] instance 'fifo_gen_inst' of module 'fifo_generator_v11_0' requires 230 connections, but only 228 given [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v:292]
-INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_fifo_gen__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v:60]
-INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_axic_fifo__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v:64]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_a_axi3_conv__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_r_axi3_conv' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v:61]
+INFO: [Synth 8-256] done synthesizing module 'output_blk__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/common/output_blk.vhd:268]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_ramfifo__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/ramfifo/fifo_generator_ramfifo.vhd:308]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_top__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_top.vhd:271]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_v11_0_synth__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0_synth.vhd:678]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_v11_0__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_rst_processing_system7_0_50M_0/fifo_generator_v11_0/fifo_generator_v11_0.vhd:661]
+WARNING: [Synth 8-350] instance 'fifo_gen_inst' of module 'fifo_generator_v11_0' requires 230 connections, but only 228 given [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v:292]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_fifo_gen__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_axic_fifo__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v:64]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_a_axi3_conv__parameterized0' (22#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_r_axi3_conv' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v:61]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -1551,18 +1546,18 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_r_axi3_conv
 	Parameter C_RESP_EXOKAY bound to: 2'b01 
 	Parameter C_RESP_SLVERROR bound to: 2'b10 
 	Parameter C_RESP_DECERR bound to: 2'b11 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_r_axi3_conv' (23#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v:61]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_axi3_conv' (24#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v:69]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter' (25#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
-INFO: [Synth 8-256] done synthesizing module 'zynq_system_auto_pc_1' (26#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_1/synth/zynq_system_auto_pc_1.v:57]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_r_axi3_conv' (23#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v:61]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_axi3_conv' (24#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v:69]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter' (25#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
+INFO: [Synth 8-256] done synthesizing module 'zynq_system_auto_pc_16' (26#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_16/synth/zynq_system_auto_pc_16.v:57]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_5VZGPS' (27#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:599]
 INFO: [Synth 8-256] done synthesizing module 'zynq_system_axi_mem_intercon_1' (28#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:1439]
 INFO: [Synth 8-638] synthesizing module 'zynq_system_axi_mem_intercon_1_2' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:1770]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_R0HIN2' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:1018]
 INFO: [Synth 8-113] binding component instance 'GND' to cell 'GND' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:1258]
-INFO: [Synth 8-3491] module 'zynq_system_auto_pc_2' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/synth/zynq_system_auto_pc_2.v:57' bound to instance 'auto_pc' of component 'zynq_system_auto_pc_2' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:1262]
-INFO: [Synth 8-638] synthesizing module 'zynq_system_auto_pc_2' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/synth/zynq_system_auto_pc_2.v:57]
-INFO: [Synth 8-256] done synthesizing module 'zynq_system_auto_pc_2' (29#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_2/synth/zynq_system_auto_pc_2.v:57]
+INFO: [Synth 8-3491] module 'zynq_system_auto_pc_17' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_17/synth/zynq_system_auto_pc_17.v:57' bound to instance 'auto_pc' of component 'zynq_system_auto_pc_17' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:1262]
+INFO: [Synth 8-638] synthesizing module 'zynq_system_auto_pc_17' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_17/synth/zynq_system_auto_pc_17.v:57]
+INFO: [Synth 8-256] done synthesizing module 'zynq_system_auto_pc_17' (29#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_17/synth/zynq_system_auto_pc_17.v:57]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_R0HIN2' (30#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:1018]
 INFO: [Synth 8-256] done synthesizing module 'zynq_system_axi_mem_intercon_1_2' (31#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:1770]
 INFO: [Synth 8-3491] module 'zynq_system_combiner_top_0_6' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_combiner_top_0_6/synth/zynq_system_combiner_top_0_6.v:57' bound to instance 'combiner_top_0' of component 'zynq_system_combiner_top_0_6' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:3330]
@@ -2464,9 +2459,9 @@ INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_VG7ZLK' (94#1) [/
 INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_180AW1Y' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:145]
 INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_180AW1Y' (95#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:145]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_156Q4UY' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:267]
-INFO: [Synth 8-3491] module 'zynq_system_auto_pc_0' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_0/synth/zynq_system_auto_pc_0.v:57' bound to instance 'auto_pc' of component 'zynq_system_auto_pc_0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:450]
-INFO: [Synth 8-638] synthesizing module 'zynq_system_auto_pc_0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_0/synth/zynq_system_auto_pc_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
+INFO: [Synth 8-3491] module 'zynq_system_auto_pc_15' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/synth/zynq_system_auto_pc_15.v:57' bound to instance 'auto_pc' of component 'zynq_system_auto_pc_15' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:450]
+INFO: [Synth 8-638] synthesizing module 'zynq_system_auto_pc_15' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/synth/zynq_system_auto_pc_15.v:57]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_M_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_S_AXI_PROTOCOL bound to: 1 - type: integer 
@@ -2492,14 +2487,14 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_axi_protoco
 	Parameter P_SLVERR bound to: 2'b10 
 	Parameter P_PROTECTION bound to: 1 - type: integer 
 	Parameter P_CONVERSION bound to: 2 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v:39]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v:39]
 	Parameter C_S_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_SUPPORTS_WRITE bound to: 1 - type: integer 
 	Parameter C_AXI_SUPPORTS_READ bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axi_register_slice' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axi_register_slice' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
@@ -2592,7 +2587,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axi_register_sl
 	Parameter G_AXI_RUSER_INDEX bound to: 47 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_axi2vector' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_axi2vector' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -2684,28 +2679,28 @@ INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_axi2vector' [/h
 	Parameter G_AXI_RUSER_INDEX bound to: 47 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_axi2vector' (96#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_axi2vector' (96#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 66 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice' (97#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice' (97#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 49 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized0' (97#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized1' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized0' (97#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized1' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 14 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized1' (97#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized2' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized1' (97#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized2' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 47 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized2' (97#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_vector2axi' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized2' (97#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_vector2axi' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -2797,34 +2792,34 @@ INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_vector2axi' [/h
 	Parameter G_AXI_RUSER_INDEX bound to: 47 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_vector2axi' (98#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axi_register_slice' (99#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_aw_channel' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v:5]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_vector2axi' (98#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axi_register_slice' (99#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_aw_channel' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v:5]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_cmd_translator' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v:17]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_cmd_translator' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v:17]
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter P_AXBURST_FIXED bound to: 2'b00 
 	Parameter P_AXBURST_INCR bound to: 2'b01 
 	Parameter P_AXBURST_WRAP bound to: 2'b10 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_incr_cmd' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v:11]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_incr_cmd' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v:11]
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter L_AXI_ADDR_LOW_BIT bound to: 12 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_incr_cmd' (100#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v:11]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_wrap_cmd' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v:11]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_incr_cmd' (100#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v:11]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_wrap_cmd' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v:11]
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter L_AXI_ADDR_LOW_BIT bound to: 12 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_wrap_cmd' (101#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v:11]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_cmd_translator' (102#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v:17]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_wr_cmd_fsm' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v:10]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_wrap_cmd' (101#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v:11]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_cmd_translator' (102#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v:17]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_wr_cmd_fsm' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v:10]
 	Parameter SM_IDLE bound to: 2'b00 
 	Parameter SM_CMD_EN bound to: 2'b01 
 	Parameter SM_CMD_ACCEPTED bound to: 2'b10 
 	Parameter SM_DONE_WAIT bound to: 2'b11 
-INFO: [Synth 8-226] default block is never used [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v:64]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_wr_cmd_fsm' (103#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v:10]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_aw_channel' (104#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v:5]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_b_channel' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v:10]
+INFO: [Synth 8-226] default block is never used [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v:64]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_wr_cmd_fsm' (103#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v:10]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_aw_channel' (104#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v:5]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_b_channel' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v:10]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter LP_RESP_OKAY bound to: 2'b00 
 	Parameter LP_RESP_EXOKAY bound to: 2'b01 
@@ -2836,7 +2831,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_b_chann
 	Parameter P_RWIDTH bound to: 2 - type: integer 
 	Parameter P_RDEPTH bound to: 4 - type: integer 
 	Parameter P_RAWIDTH bound to: 2 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
 	Parameter C_WIDTH bound to: 20 - type: integer 
 	Parameter C_AWIDTH bound to: 2 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
@@ -2844,8 +2839,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_
 	Parameter C_EMPTY_PRE bound to: 2'b00 
 	Parameter C_FULL bound to: 2'b10 
 	Parameter C_FULL_PRE bound to: 2'b01 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo' (105#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo' (105#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
 	Parameter C_WIDTH bound to: 2 - type: integer 
 	Parameter C_AWIDTH bound to: 2 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
@@ -2853,20 +2848,20 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_
 	Parameter C_EMPTY_PRE bound to: 2'b00 
 	Parameter C_FULL bound to: 2'b10 
 	Parameter C_FULL_PRE bound to: 2'b01 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized0' (105#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_b_channel' (106#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v:10]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_ar_channel' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v:5]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized0' (105#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_b_channel' (106#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v:10]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_ar_channel' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v:5]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_rd_cmd_fsm' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v:10]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_rd_cmd_fsm' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v:10]
 	Parameter SM_IDLE bound to: 2'b00 
 	Parameter SM_CMD_EN bound to: 2'b01 
 	Parameter SM_CMD_ACCEPTED bound to: 2'b10 
 	Parameter SM_DONE bound to: 2'b11 
-INFO: [Synth 8-226] default block is never used [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v:72]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_rd_cmd_fsm' (107#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v:10]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_ar_channel' (108#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v:5]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_r_channel' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v:21]
+INFO: [Synth 8-226] default block is never used [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v:72]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_rd_cmd_fsm' (107#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v:10]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_ar_channel' (108#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v:5]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_r_channel' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v:21]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter P_WIDTH bound to: 13 - type: integer 
@@ -2875,7 +2870,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_r_chann
 	Parameter P_D_WIDTH bound to: 34 - type: integer 
 	Parameter P_D_DEPTH bound to: 32 - type: integer 
 	Parameter P_D_AWIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized1' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized1' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
 	Parameter C_WIDTH bound to: 34 - type: integer 
 	Parameter C_AWIDTH bound to: 5 - type: integer 
 	Parameter C_DEPTH bound to: 32 - type: integer 
@@ -2883,8 +2878,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_
 	Parameter C_EMPTY_PRE bound to: 5'b00000 
 	Parameter C_FULL bound to: 5'b11110 
 	Parameter C_FULL_PRE bound to: 5'b11010 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized1' (108#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized2' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized1' (108#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized2' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
 	Parameter C_WIDTH bound to: 13 - type: integer 
 	Parameter C_AWIDTH bound to: 5 - type: integer 
 	Parameter C_DEPTH bound to: 32 - type: integer 
@@ -2892,9 +2887,9 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_
 	Parameter C_EMPTY_PRE bound to: 5'b00000 
 	Parameter C_FULL bound to: 5'b11110 
 	Parameter C_FULL_PRE bound to: 5'b11010 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized2' (108#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_r_channel' (109#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v:21]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axi_register_slice__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_simple_fifo__parameterized2' (108#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s_r_channel' (109#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v:21]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axi_register_slice__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -2987,7 +2982,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axi_register_sl
 	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_axi2vector__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_axi2vector__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -3079,28 +3074,28 @@ INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_axi2vector__par
 	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_axi2vector__parameterized0' (109#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized3' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_axi2vector__parameterized0' (109#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized3' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 35 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized3' (109#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized4' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized3' (109#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized4' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized4' (109#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized5' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized4' (109#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized5' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 2 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized5' (109#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized6' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized5' (109#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized6' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 34 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized6' (109#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_vector2axi__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized6' (109#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_vector2axi__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -3192,11 +3187,11 @@ INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_vector2axi__par
 	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_vector2axi__parameterized0' (109#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axi_register_slice__parameterized0' (109#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s' (110#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v:39]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter__parameterized0' (110#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
-INFO: [Synth 8-256] done synthesizing module 'zynq_system_auto_pc_0' (111#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_0/synth/zynq_system_auto_pc_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_vector2axi__parameterized0' (109#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axi_register_slice__parameterized0' (109#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s' (110#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v:39]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter__parameterized0' (110#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
+INFO: [Synth 8-256] done synthesizing module 'zynq_system_auto_pc_15' (111#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_15/synth/zynq_system_auto_pc_15.v:57]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_156Q4UY' (112#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:267]
 INFO: [Synth 8-3491] module 'zynq_system_xbar_2' declared at '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/synth/zynq_system_xbar_2.v:57' bound to instance 'xbar' of component 'zynq_system_xbar_2' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:2507]
 INFO: [Synth 8-638] synthesizing module 'zynq_system_xbar_2' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/synth/zynq_system_xbar_2.v:57]
@@ -3324,25 +3319,25 @@ INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_addr_decoder' [/home/
 	Parameter C_TARGET_QUAL bound to: 3'b011 
 	Parameter C_RESOLUTION bound to: 2 - type: integer 
 	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_comparator_static' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v:61]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_comparator_static' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v:61]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 30'b010000111100000000000000000000 
 	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_carry_and' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v:62]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_carry_and' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v:62]
 	Parameter C_FAMILY bound to: rtl - type: string 
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_carry_and' (114#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v:62]
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_comparator_static' (115#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v:61]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_comparator_static__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v:61]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_carry_and' (114#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_comparator_static' (115#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v:61]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_comparator_static__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v:61]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 30'b010000111100000100000000000000 
 	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_comparator_static__parameterized0' (115#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v:61]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_comparator_static__parameterized0' (115#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v:61]
 INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_addr_decoder' (116#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_decoder.v:69]
 INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_splitter' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_splitter.v:72]
 	Parameter C_NUM_M bound to: 3 - type: integer 
@@ -3350,35 +3345,35 @@ INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_splitter' (117#1
 INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_splitter__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_splitter.v:72]
 	Parameter C_NUM_M bound to: 2 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_splitter__parameterized0' (117#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_splitter.v:72]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_mux_enc' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_mux_enc' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 3 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_mux_enc' (118#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_mux_enc__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_mux_enc' (118#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_mux_enc__parameterized0' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 1 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_mux_enc__parameterized0' (118#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_mux_enc__parameterized1' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_mux_enc__parameterized0' (118#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_mux_enc__parameterized1' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 3 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_mux_enc__parameterized1' (118#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized7' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_mux_enc__parameterized1' (118#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized7' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized7' (118#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_mux_enc__parameterized2' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axic_register_slice__parameterized7' (118#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_mux_enc__parameterized2' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 3 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_mux_enc__parameterized2' (118#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_10/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_mux_enc__parameterized2' (118#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63]
 INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_decerr_slave' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_xbar_2/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v:64]
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -3447,7 +3442,7 @@ WARNING: [Synth 8-3848] Net NLW_processing_system7_0_S_AXI_GP1_WID_UNCONNECTED i
 INFO: [Synth 8-256] done synthesizing module 'zynq_system' (130#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system.vhd:2598]
 INFO: [Synth 8-256] done synthesizing module 'zynq_system_wrapper' (131#1) [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/hdl/zynq_system_wrapper.vhd:29]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:02:07 ; elapsed = 00:02:12 . Memory (MB): peak = 985.855 ; gain = 362.602
+Finished RTL Elaboration : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 962.859 ; gain = 339.602
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -3529,22 +3524,13 @@ WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==zy
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:35]
 WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_40 || ORIG_REF_NAME==zynq_system_auto_pc_40}'. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:38]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:38]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==zynq_system_axi_mem_intercon_1_4 || ORIG_REF_NAME==zynq_system_axi_mem_intercon_1_4}'. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:41]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:41]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_10 || ORIG_REF_NAME==zynq_system_auto_pc_10}'. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:44]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:44]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==zynq_system_auto_us_11 || ORIG_REF_NAME==zynq_system_auto_us_11}'. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:47]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:47]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_17 || ORIG_REF_NAME==zynq_system_auto_pc_17}'. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:50]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:50]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_19 || ORIG_REF_NAME==zynq_system_auto_pc_19}'. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:53]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:53]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==zynq_system_auto_us_11 || ORIG_REF_NAME==zynq_system_auto_us_11}'. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:93]
-WARNING: [Vivado 12-180] No cells matched '/inst'. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:93]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_7 || ORIG_REF_NAME==zynq_system_auto_pc_7}'. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:62]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_10 || ORIG_REF_NAME==zynq_system_auto_pc_10}'. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc:65]
 Finished Parsing XDC File [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/.Xil/zynq_system_wrapper_propImpl.xdc].
 Resolution: To avoid this message, exclude constraints listed in [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/.Xil/zynq_system_wrapper_propImpl.xdc] from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-CRITICAL WARNING: [Designutils 20-1280] Could not find module 'zynq_system_auto_us_11'. The XDC file /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_us_11/zynq_system_auto_us_11_clocks.xdc will not be read for any cell of this module.
 Completed Processing XDC Constraints
 
 INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: 
@@ -3562,24 +3548,24 @@ Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 5).
 Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 8).
+Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 41).
+Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 44).
+Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 47).
+Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 50).
+Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 53).
 Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 56).
 Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 59).
-Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 62).
-Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 65).
 Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 68).
 Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 71).
 Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 74).
 Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 77).
-Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 80).
-Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 83).
-Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 86).
-Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 102).
+Applied set_property DONT_TOUCH = true. (constraint file  /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.runs/synth_1/dont_touch.xdc, line 82).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:33 ; elapsed = 00:02:38 . Memory (MB): peak = 1318.930 ; gain = 695.676
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:50 ; elapsed = 00:01:53 . Memory (MB): peak = 1309.934 ; gain = 686.676
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:02:33 ; elapsed = 00:02:38 . Memory (MB): peak = 1318.930 ; gain = 695.676
+Finished RTL Optimization : Time (s): cpu = 00:01:50 ; elapsed = 00:01:53 . Memory (MB): peak = 1309.934 ; gain = 686.676
 ---------------------------------------------------------------------------------
 
 INFO: [Synth 8-4471] merging register 'quot_tmp_reg[0][30:0]' into 'remd_tmp_reg[0][30:0]' [/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/RTL/k_means_zynq/k_means_zynq.srcs/sources_1/bd/zynq_system/ip/zynq_system_combiner_top_0_6/hdl/verilog/combiner_top_sdiv_32ns_32ns_32_35.v:39]
@@ -3765,7 +3751,7 @@ Part Resources:
 DSPs: 220 (col length:60)
 BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:02:47 ; elapsed = 00:02:52 . Memory (MB): peak = 1319.926 ; gain = 696.672
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:04 ; elapsed = 00:02:07 . Memory (MB): peak = 1310.930 ; gain = 687.672
 ---------------------------------------------------------------------------------
 
 
@@ -3775,8 +3761,8 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     34 Bit       Adders := 4     
-	   2 Input     32 Bit       Adders := 19    
 	   3 Input     32 Bit       Adders := 106   
+	   2 Input     32 Bit       Adders := 19    
 	   2 Input     31 Bit       Adders := 6     
 	   2 Input     16 Bit       Adders := 4     
 	   3 Input     13 Bit       Adders := 1     
@@ -3843,43 +3829,43 @@ Detailed RTL Component Info :
 	   2 Input     47 Bit        Muxes := 1     
 	   2 Input     36 Bit        Muxes := 1     
 	   2 Input     34 Bit        Muxes := 12    
-	  11 Input     32 Bit        Muxes := 1     
-	   3 Input     32 Bit        Muxes := 2     
 	   2 Input     32 Bit        Muxes := 64    
+	  11 Input     32 Bit        Muxes := 1     
 	  13 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 2     
 	   2 Input     31 Bit        Muxes := 15    
 	   2 Input     30 Bit        Muxes := 91    
 	   2 Input     19 Bit        Muxes := 12    
 	  18 Input     19 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 12    
 	   2 Input     14 Bit        Muxes := 1     
-	  11 Input     12 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 10    
+	  11 Input     12 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 4     
 	   2 Input      9 Bit        Muxes := 14    
-	   2 Input      8 Bit        Muxes := 20    
 	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 20    
 	   6 Input      7 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 4     
-	   2 Input      6 Bit        Muxes := 33    
 	   5 Input      6 Bit        Muxes := 5     
-	   4 Input      5 Bit        Muxes := 2     
-	   2 Input      5 Bit        Muxes := 17    
+	   2 Input      6 Bit        Muxes := 33    
 	  19 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 17    
+	   4 Input      5 Bit        Muxes := 2     
 	   2 Input      4 Bit        Muxes := 21    
 	   3 Input      4 Bit        Muxes := 1     
 	   6 Input      4 Bit        Muxes := 2     
 	  12 Input      4 Bit        Muxes := 1     
 	   5 Input      4 Bit        Muxes := 2     
 	  13 Input      4 Bit        Muxes := 1     
-	   6 Input      3 Bit        Muxes := 3     
 	   7 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 79    
+	   6 Input      3 Bit        Muxes := 3     
 	   4 Input      2 Bit        Muxes := 14    
+	   2 Input      2 Bit        Muxes := 79    
+	   4 Input      1 Bit        Muxes := 12    
 	   3 Input      1 Bit        Muxes := 13    
 	   2 Input      1 Bit        Muxes := 316   
-	   4 Input      1 Bit        Muxes := 12    
 
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -4476,7 +4462,7 @@ Module axi_protocol_converter_v2_1_axi3_conv
 Detailed RTL Component Info : 
 Module axi_protocol_converter_v2_1_axi_protocol_converter 
 Detailed RTL Component Info : 
-Module zynq_system_auto_pc_1 
+Module zynq_system_auto_pc_16 
 Detailed RTL Component Info : 
 Module s00_couplers_imp_5VZGPS 
 Detailed RTL Component Info : 
@@ -4789,7 +4775,7 @@ Module axi_protocol_converter_v2_1_axi3_conv__1
 Detailed RTL Component Info : 
 Module axi_protocol_converter_v2_1_axi_protocol_converter__1 
 Detailed RTL Component Info : 
-Module zynq_system_auto_pc_2 
+Module zynq_system_auto_pc_17 
 Detailed RTL Component Info : 
 Module s00_couplers_imp_R0HIN2 
 Detailed RTL Component Info : 
@@ -5396,7 +5382,7 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 Module axi_protocol_converter_v2_1_axi_protocol_converter__parameterized0 
 Detailed RTL Component Info : 
-Module zynq_system_auto_pc_0 
+Module zynq_system_auto_pc_15 
 Detailed RTL Component Info : 
 Module s00_couplers_imp_156Q4UY 
 Detailed RTL Component Info : 
@@ -5709,7 +5695,7 @@ DSP Report: register lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mu
 DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
 DSP Report: operator lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/tmp_product is absorbed into DSP lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:02:51 ; elapsed = 00:02:56 . Memory (MB): peak = 1319.926 ; gain = 696.672
+Finished Cross Boundary Optimization : Time (s): cpu = 00:02:09 ; elapsed = 00:02:11 . Memory (MB): peak = 1310.930 ; gain = 687.672
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -5735,16 +5721,16 @@ Block RAM:
 
 Note: Mutiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the hierarchical modules names of the RAM and only part of it is displayed.
 Distributed RAM: 
-+----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+----------------------------------------------------------------+
-|Module Name           | RTL Object                                                                                                                                                                              | Inference Criteria | Size (depth X width) | Primitives     | Hierarchical Name                                              | 
-+----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+----------------------------------------------------------------+
-|zynq_system_auto_pc_1 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg              | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_1/ram__12   | 
-|zynq_system_auto_pc_1 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg         | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_1/ram__14   | 
-|zynq_system_auto_pc_1 | inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg | User Attribute     | 32 X 1               | RAM32X1D x 1   | zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_1/ram__16   | 
-|zynq_system_auto_pc_2 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg              | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_axi_mem_intercon_1_2/zynq_system_auto_pc_2/ram__18 | 
-|zynq_system_auto_pc_2 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg         | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_axi_mem_intercon_1_2/zynq_system_auto_pc_2/ram__20 | 
-|zynq_system_auto_pc_2 | inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg | User Attribute     | 32 X 1               | RAM32X1D x 1   | zynq_system_axi_mem_intercon_1_2/zynq_system_auto_pc_2/ram__22 | 
-+----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+----------------------------------------------------------------+
++-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+-----------------------------------------------------------------+
+|Module Name            | RTL Object                                                                                                                                                                              | Inference Criteria | Size (depth X width) | Primitives     | Hierarchical Name                                               | 
++-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+-----------------------------------------------------------------+
+|zynq_system_auto_pc_16 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg              | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_16/ram__12   | 
+|zynq_system_auto_pc_16 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg         | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_16/ram__14   | 
+|zynq_system_auto_pc_16 | inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg | User Attribute     | 32 X 1               | RAM32X1D x 1   | zynq_system_axi_mem_intercon_1/zynq_system_auto_pc_16/ram__16   | 
+|zynq_system_auto_pc_17 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg              | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_axi_mem_intercon_1_2/zynq_system_auto_pc_17/ram__18 | 
+|zynq_system_auto_pc_17 | inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg         | User Attribute     | 32 X 5               | RAM32M x 1     | zynq_system_axi_mem_intercon_1_2/zynq_system_auto_pc_17/ram__20 | 
+|zynq_system_auto_pc_17 | inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RAM_reg | User Attribute     | 32 X 1               | RAM32X1D x 1   | zynq_system_axi_mem_intercon_1_2/zynq_system_auto_pc_17/ram__22 | 
++-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+----------------------+----------------+-----------------------------------------------------------------+
 
 Note: Mutiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the hierarchical modules names of the RAM and only part of it is displayed.
 DSP:
@@ -5785,7 +5771,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (zynq_syst
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (zynq_system_i/combiner_top_0/combiner_top_Ui_4_0/\master_portA_addr_2_reg_1339_reg[31] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (zynq_system_i/combiner_top_0/combiner_top_Ui_4_0/data_points_in_addr0vld_reg_reg)
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:03:05 ; elapsed = 00:03:10 . Memory (MB): peak = 1376.207 ; gain = 752.953
+Finished Area Optimization : Time (s): cpu = 00:02:22 ; elapsed = 00:02:25 . Memory (MB): peak = 1368.211 ; gain = 744.953
 ---------------------------------------------------------------------------------
 
 
@@ -5798,12 +5784,12 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:10 ; elapsed = 00:03:16 . Memory (MB): peak = 1561.207 ; gain = 937.953
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:28 ; elapsed = 00:02:31 . Memory (MB): peak = 1553.211 ; gain = 929.953
 ---------------------------------------------------------------------------------
 
 INFO: [Synth 8-3969] The signal p_buffer_U/combiner_top_p_buffer_ram_U/ram_reg was recognized as a RAM template for dedicated block RAM(s) but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (6 address bits)* is shallow.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:16 ; elapsed = 00:03:22 . Memory (MB): peak = 1588.215 ; gain = 964.961
+Finished Timing Optimization : Time (s): cpu = 00:02:34 ; elapsed = 00:02:37 . Memory (MB): peak = 1580.219 ; gain = 956.961
 ---------------------------------------------------------------------------------
 
 
@@ -5836,7 +5822,7 @@ INFO: [Synth 8-4480] The timing for the instance \inst/lloyds_kernel_top_U/grp_l
 INFO: [Synth 8-4480] The timing for the instance \inst/lloyds_kernel_top_U/grp_load_points_buffer_fu_544/int_buffer_U/load_points_buffer_int_buffer_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance \inst/lloyds_kernel_top_U/grp_load_points_buffer_fu_544/int_buffer_U/load_points_buffer_int_buffer_ram_U/ram_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:36 ; elapsed = 00:03:42 . Memory (MB): peak = 1624.262 ; gain = 1001.008
+Finished Technology Mapping : Time (s): cpu = 00:02:54 ; elapsed = 00:02:57 . Memory (MB): peak = 1616.266 ; gain = 993.008
 ---------------------------------------------------------------------------------
 
 
@@ -5855,7 +5841,7 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-design zynq_system_auto_pc_0 has 4 max_fanout violations cannot be satisfied
+design zynq_system_auto_pc_15 has 4 max_fanout violations cannot be satisfied
 
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
@@ -5892,7 +5878,7 @@ WARNING: [Synth 8-3295] tying undriven pin processing_system7_0:S_AXI_GP1_WID[3]
 WARNING: [Synth 8-3295] tying undriven pin processing_system7_0:S_AXI_GP1_WID[2] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin processing_system7_0:S_AXI_GP1_WID[1] to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:39 ; elapsed = 00:03:45 . Memory (MB): peak = 1624.262 ; gain = 1001.008
+Finished IO Insertion : Time (s): cpu = 00:02:58 ; elapsed = 00:03:01 . Memory (MB): peak = 1616.266 ; gain = 993.008
 ---------------------------------------------------------------------------------
 
 
@@ -5907,7 +5893,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:40 ; elapsed = 00:03:46 . Memory (MB): peak = 1624.262 ; gain = 1001.008
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:58 ; elapsed = 00:03:01 . Memory (MB): peak = 1616.266 ; gain = 993.008
 ---------------------------------------------------------------------------------
 
 
@@ -5915,7 +5901,7 @@ Finished Renaming Generated Instances : Time (s): cpu = 00:03:40 ; elapsed = 00:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:42 ; elapsed = 00:03:48 . Memory (MB): peak = 1624.262 ; gain = 1001.008
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:00 ; elapsed = 00:03:04 . Memory (MB): peak = 1616.266 ; gain = 993.008
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -6115,24 +6101,24 @@ Report Instance Areas:
 |2     |  zynq_system_i                     |zynq_system                                                | 26443|
 |3     |    combiner_top_0                  |zynq_system_combiner_top_0_6                               | 17478|
 |4     |    axi_mem_intercon                |zynq_system_axi_mem_intercon_1                             |   948|
-|5     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_1                                      |   947|
+|5     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_16                                     |   947|
 |6     |    axi_mem_intercon_1              |zynq_system_axi_mem_intercon_1_2                           |   948|
-|7     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_2                                      |   947|
+|7     |      \s00_couplers/auto_pc         |zynq_system_auto_pc_17                                     |   947|
 |8     |    lloyds_kernel_top_0             |zynq_system_lloyds_kernel_top_0_0                          |  5201|
 |9     |    processing_system7_0            |zynq_system_processing_system7_0_0                         |   221|
 |10    |      U0                            |processing_system7_v5_3_processing_system7__parameterized0 |   221|
 |11    |    processing_system7_0_axi_periph |zynq_system_processing_system7_0_axi_periph_0              |  1582|
-|12    |      \s00_couplers/auto_pc         |zynq_system_auto_pc_0                                      |  1276|
+|12    |      \s00_couplers/auto_pc         |zynq_system_auto_pc_15                                     |  1276|
 |13    |      xbar                          |zynq_system_xbar_2                                         |   306|
 |14    |    rst_processing_system7_0_50M    |zynq_system_rst_processing_system7_0_50M_0                 |    65|
 |15    |      U0                            |proc_sys_reset__parameterized0                             |    65|
 +------+------------------------------------+-----------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:43 ; elapsed = 00:03:49 . Memory (MB): peak = 1624.262 ; gain = 1001.008
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:01 ; elapsed = 00:03:05 . Memory (MB): peak = 1616.266 ; gain = 993.008
 ---------------------------------------------------------------------------------
 
 Synthesis finished with 0 errors, 0 critical warnings and 1948 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:03:43 ; elapsed = 00:03:49 . Memory (MB): peak = 1624.262 ; gain = 1001.008
+Synthesis Optimization Complete : Time (s): cpu = 00:03:01 ; elapsed = 00:03:05 . Memory (MB): peak = 1616.266 ; gain = 993.008
 INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
@@ -6146,11 +6132,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-488 Infos, 429 Warnings, 16 Critical Warnings and 0 Errors encountered.
+488 Infos, 424 Warnings, 12 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:54 ; elapsed = 00:04:00 . Memory (MB): peak = 1930.746 ; gain = 1148.707
+synth_design: Time (s): cpu = 00:03:14 ; elapsed = 00:03:17 . Memory (MB): peak = 1922.750 ; gain = 1147.707
 # write_checkpoint zynq_system_wrapper.dcp
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 # report_utilization -file zynq_system_wrapper_utilization_synth.rpt -pb zynq_system_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.90 . Memory (MB): peak = 1930.750 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Jun 12 14:40:09 2014...
+report_utilization: Time (s): cpu = 00:00:00.84 ; elapsed = 00:00:00.94 . Memory (MB): peak = 1922.754 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 12 16:53:54 2014...
