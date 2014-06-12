@@ -2,8 +2,9 @@
 #zynq system
 
 set current_dir [pwd]
-set project_location "${current_dir}/k_means_zynq.xpr"
-set bd_location "${current_dir}/k_means_zynq.srcs/sources_1/bd/zynq_system/zynq_system.bd"
+set project_dir "${current_dir}/RTL/k_means_zynq"
+set project_location "${project_dir}/k_means_zynq.xpr"
+set bd_location "${project_dir}/k_means_zynq.srcs/sources_1/bd/zynq_system/zynq_system.bd"
 
 puts stdout $project_location
 #cd ipi_prj
@@ -21,10 +22,8 @@ upgrade_bd_cells [get_bd_cells [list /combiner_top_0 ] ]
 #reset_target all [get_ips zynq_system_vivado_activity_thread_*]
 #generate_target all [get_ips zynq_system_vivado_activity_thread_*] -force    
 
-
-
-reset_target all [get_files  $current_dir/ipi_prj/ipi_prj.srcs/sources_1/bd/zynq_system/zynq_system.bd]
-generate_target all [get_files  $current_dir/ipi_prj/ipi_prj.srcs/sources_1/bd/zynq_system/zynq_system.bd]
+reset_target all [get_files  $project_dir/ipi_prj/ipi_prj.srcs/sources_1/bd/zynq_system/zynq_system.bd]
+generate_target all [get_files  $project_dir/ipi_prj/ipi_prj.srcs/sources_1/bd/zynq_system/zynq_system.bd]
 
 reset_run synth_1
 reset_run impl_1
