@@ -41,9 +41,9 @@ int main()
 	printf("----------------------------\nTesting the reserved memory\n----------------------------\n\n");
 
 	//Define the Hardware output container
-	cv::Mat default_output(cv::Size(IMG_SIZE,IMG_SIZE),CV_32SC3, cv::Scalar(255,255,255));
+	cv::Mat default_output(cv::Size(IMG_SIZE,IMG_SIZE),CV_32SC3, cv::Scalar(0,0,0));
 	cv::Mat hw_outputFrame(cv::Size(IMG_SIZE,IMG_SIZE),CV_32SC3); //Setup the output image contained and give it a size
-	hw_outputFrame.data = (uchar *) setup_reserved_mem(OUTPUT_FRAME_ADDR);	//Point the container to the reserved RAM
+	hw_outputFrame.data = (uchar *) setup_reserved_mem(KERNEL_INTERMEDIATE_ADDR);	//Point the container to the reserved RAM
 	default_output.copyTo(hw_outputFrame);
 
 
@@ -131,7 +131,7 @@ int main()
 	XLloyds_kernel_top_SetUpdate_points(&kernel_dev, 0); // setting this to 1 will write a new image frame at KERNEL_INTERMEDIATE_ADDR
 	XLloyds_kernel_top_SetN(&kernel_dev, (IMG_SIZE*IMG_SIZE)-1);
 	XLloyds_kernel_top_SetK(&kernel_dev, K-1);
-
+/*
 	//Setting the parameters of the combiner 	
 	XCombiner_top combiner_dev = setup_XCombiner_top();
 	XCombiner_top_SetData_points_in_addr(&combiner_dev, INPUT_FRAME_ADDR);
@@ -139,6 +139,7 @@ int main()
 	XCombiner_top_SetCentres_out_addr(&combiner_dev,CLUSTER_CENTER_ADDR);
 	XCombiner_top_SetN(&combiner_dev, (IMG_SIZE*IMG_SIZE)-1);
 	XCombiner_top_SetK(&combiner_dev, K-1);	
+*/
 //------------------------------------------------------------------------------------
 	printf("Cores have been fully initialised.\n");
 
@@ -151,7 +152,7 @@ int main()
 		XLloyds_kernel_top_SetBlock_address(&kernel_dev, block_address*sizeof(int)); //Reassign the kernel modules block address
 		XLloyds_kernel_top_Start(&kernel_dev); //Kick the Kernel block
 		while(XLloyds_kernel_top_IsDone(&kernel_dev) != 1) { } //block for the first hardware stage
-		printf(".");
+		printf("block: %d/%d\r", block_address, IMG_SIZE*IMG_SIZE);
 	}
 
 
@@ -166,8 +167,8 @@ int main()
 
 	
 	printf("\nKernel core completed,\nStarting the combiner core.\n");
-	XCombiner_top_Start(&combiner_dev); //now that the kernel block has finished, kick the combiner
-	while(XCombiner_top_IsDone(&combiner_dev) != 1) {printf("."); } //block for the second hardware stage
+	//XCombiner_top_Start(&combiner_dev); //now that the kernel block has finished, kick the combiner
+	//while(XCombiner_top_IsDone(&combiner_dev) != 1) {printf("."); } //block for the second hardware stage
 	//One shot operation is now completed, attempting to print result
 	printf("\n");	
 
@@ -186,7 +187,7 @@ int main()
         }
 
 
-	printf("KERNEL DEBUG PORT: %d\n", XLloyds_kernel_top_GetDebug(&kernel_dev));
+	//printf("KERNEL DEBUG PORT: %d\n", XLloyds_kernel_top_GetDebug(&kernel_dev));
 
 	printf("Displaying output frame\n");
 
