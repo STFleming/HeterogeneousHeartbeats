@@ -45,6 +45,9 @@
 // 0x40 : reserved
 // 0x44 : Data signal of k
 //        bit 31~0 - k[31:0] (Read/Write)
+// 0x48 : reserved
+// 0x4c : Data signal of debug
+//        bit 31~0 - debug[31:0] (Read)
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 #define XLLOYDS_KERNEL_TOP_CONFIG_BUS_ADDR_AP_CTRL               0x00
@@ -65,4 +68,6 @@
 #define XLLOYDS_KERNEL_TOP_CONFIG_BUS_BITS_N_DATA                32
 #define XLLOYDS_KERNEL_TOP_CONFIG_BUS_ADDR_K_DATA                0x44
 #define XLLOYDS_KERNEL_TOP_CONFIG_BUS_BITS_K_DATA                32
+#define XLLOYDS_KERNEL_TOP_CONFIG_BUS_ADDR_DEBUG_DATA            0x4c
+#define XLLOYDS_KERNEL_TOP_CONFIG_BUS_BITS_DEBUG_DATA            32
 

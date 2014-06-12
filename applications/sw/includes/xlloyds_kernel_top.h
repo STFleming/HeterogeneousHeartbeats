@@ -106,6 +106,7 @@ void XLloyds_kernel_top_SetN(XLloyds_kernel_top *InstancePtr, u32 Data);
 u32 XLloyds_kernel_top_GetN(XLloyds_kernel_top *InstancePtr);
 void XLloyds_kernel_top_SetK(XLloyds_kernel_top *InstancePtr, u32 Data);
 u32 XLloyds_kernel_top_GetK(XLloyds_kernel_top *InstancePtr);
+u32 XLloyds_kernel_top_GetDebug(XLloyds_kernel_top *InstancePtr);
 
 void XLloyds_kernel_top_InterruptGlobalEnable(XLloyds_kernel_top *InstancePtr);
 void XLloyds_kernel_top_InterruptGlobalDisable(XLloyds_kernel_top *InstancePtr);
