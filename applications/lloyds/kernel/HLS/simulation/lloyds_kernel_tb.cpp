@@ -26,17 +26,20 @@ int main()
     const uint n = 128*128;
     const uint k = 4;
 
-    bus_type *mem_a = new bus_type[D*N+D*N];
-    bus_type *mem_b = new bus_type[D*K];
+    bus_type *mem_a = new bus_type[D*N+D*N+D*K];
+
+	uint data_points_addr = 0;
+	uint centres_in_addr = D*N;
+	uint output_addr = D*N+D*K;
 
     // read data points from file
-    if (read_data_points(n,"data_points.mat",mem_a) == false)
+    if (read_data_points(n,"data_points.mat",&mem_a[data_points_addr]) == false)
         return 1;
 
     for (uint i=0; i<k; i++) {
     	uint idx = rand() % n;
     	for (uint d=0; d<D; d++) {
-    		mem_b[i*D+d]	= mem_a[idx*D+d];
+    		mem_a[centres_in_addr+i*D+d]	= mem_a[data_points_addr+idx*D+d];
     	}
     }
 
@@ -45,17 +48,15 @@ int main()
     for (uint i=0; i<k; i++) {
         printf("%d: ",i);
         for (uint d=0; d<D-1; d++) {
-            printf("%d ",mem_b[i*D+d]);
+            printf("%d ",mem_a[centres_in_addr+i*D+d]);
         }
-        printf("%d\n",mem_b[i*D+D-1]);
+        printf("%d\n",mem_a[centres_in_addr+i*D+D-1]);
     }
 
 
-	uint data_points_addr = 0;
-	uint centres_in_addr = 0;
-	uint output_addr = D*N;
-
     uint block_address = 0;
+
+    uint debug;
 
     uint update_points = 0; // turn on in last clustering iteration
 
@@ -63,13 +64,13 @@ int main()
 
 		lloyds_kernel_top(	 block_address*sizeof(bus_type),
 							 mem_a,
-							 mem_b,
 							 data_points_addr*sizeof(bus_type),
 							 centres_in_addr*sizeof(bus_type),
 							 output_addr*sizeof(bus_type),
 							 update_points,
 							 n-1,
-							 k-1
+							 k-1,
+							 &debug
 						);
 
 		/*
@@ -111,7 +112,6 @@ int main()
     }
 
     delete mem_a;
-    delete mem_b;
 
     return 0;
 }

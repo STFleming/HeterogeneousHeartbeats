@@ -73,9 +73,9 @@ void combiner_top( volatile bus_type *master_portA,
 		bus_type i_buffer[B*2];
 		bus_type p_buffer[B*D];
 
-		memcpy(p_buffer, (const bus_type *)(master_portA + (data_points_in_addr/4) + b2, B*D*sizeof(bus_type));
+		memcpy(p_buffer, (const bus_type *)(master_portA + (data_points_in_addr/4) + b2), B*D*sizeof(bus_type));
 		b2 += B*D;
-		memcpy(i_buffer, (const bus_type *)(master_portA + (kernel_info_in_addr)/4 + b, B*2*sizeof(bus_type));
+		memcpy(i_buffer, (const bus_type *)(master_portA + (kernel_info_in_addr)/4 + b), B*2*sizeof(bus_type));
 
 		for (uint i=0; i<B; i++) {
 			#pragma HLS pipeline II=4

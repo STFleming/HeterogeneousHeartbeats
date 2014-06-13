@@ -145,7 +145,7 @@ void lloyds_kernel_top(  uint block_address,
 	uint kernel_info_block_address = 2*block_address;
 
 	load_points_buffer(data_points_addr, data_points_block_address, master_portA, data_points_buffer);
-	load_centres_buffer(centres_in_addr, 0, master_portA, k, centres_buffer);
+	//load_centres_buffer(centres_in_addr, 0, master_portA, k, centres_buffer);
 	*debug = data_points_buffer[0].value[0];
 
 	/*
@@ -154,6 +154,7 @@ void lloyds_kernel_top(  uint block_address,
 		printf("%d %d %d\n", u.value[0], u.value[1], u.value[2]);
 	}
 	*/
+
 
 
     // iterate over all data points
@@ -166,7 +167,7 @@ void lloyds_kernel_top(  uint block_address,
         coord_type min_dist = MAX_FIXED_POINT_VAL_EXT;
 
         data_type closest_centre;
-
+/*
         // iterate over all centres
         minsearch_loop: for (centre_index_type ii=0; ii<=k; ii++) {
            #pragma HLS pipeline II=1
@@ -193,9 +194,9 @@ void lloyds_kernel_top(  uint block_address,
 				break;
 			}
 		}
-
-        output_buffer[i].min_idx = final_centre_index;
-        output_buffer[i].sum_sq = sum_sq_out;
+*/
+        output_buffer[i].min_idx = (centre_index_type)i;//final_centre_index;
+        output_buffer[i].sum_sq = 0;//sum_sq_out;
 
         output_points_buffer[i] = closest_centre;
 
@@ -211,6 +212,7 @@ void lloyds_kernel_top(  uint block_address,
     } else {
     	store_output_points_buffer(output_addr, output_points_buffer, data_points_block_address, master_portA);
     }
+
 
 
 
