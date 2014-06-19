@@ -23,7 +23,7 @@
 int main()
 {
     // these parameters must match the input data files
-    const uint n = 128*128;
+    const uint n = 128;
     const uint k = 4;
 
     bus_type *mem_a = new bus_type[D*N+D*N+D*K];
@@ -33,7 +33,7 @@ int main()
 	uint output_addr = D*N+D*K;
 
     // read data points from file
-    if (read_data_points(n,"data_points.mat",&mem_a[data_points_addr]) == false)
+    if (read_data_points(n,"data_points_N128_K4_D3_s0.75.mat",&mem_a[data_points_addr]) == false)
         return 1;
 
     for (uint i=0; i<k; i++) {
@@ -92,8 +92,8 @@ int main()
 		fp=fopen("intermediate.mat", "w");
 
 		for (uint i=0; i<n; i++) {
-			//printf("%d: ",i);
-			//printf("%d %d\n",mem_a[output_addr+i*2+0], mem_a[output_addr+i*2+1]);
+			printf("%d: ",i);
+			printf("%d %d\n",mem_a[output_addr+i*2+0], mem_a[output_addr+i*2+1]);
 			fprintf(fp,"%d\n%d\n",mem_a[output_addr+i*2+0], mem_a[output_addr+i*2+1]);
 		}
 		fclose(fp);

@@ -28,8 +28,7 @@ int main()
     const uint n = 128;
     const uint k = 4;
 
-    bus_type *mem_a = new bus_type[N*D+N*2];
-    bus_type *mem_b = new bus_type[K*D];
+    bus_type *mem_a = new bus_type[N*D+N*D+K*D];
 
     // read data points from file
     if (read_data_points(n,"data_points_N128_K4_D3_s0.75.mat",&mem_a[0]) == false)
@@ -40,15 +39,21 @@ int main()
     	return 1;
 
 
+    // print intermediate
+    printf("intermediate results\n");
+    for (uint i=0; i<n; i++) {
+        printf("%d: ",i);
+        printf("%d %d\n",mem_a[D*N+i*2+0], mem_a[D*N+i*2+1]);
+    }
+
     uint distortion_out;
 
     uint data_points_in_addr = 0;
     uint kernel_info_in_addr = D*N;
-    uint centres_out_addr = 0;
+    uint centres_out_addr = D*N+D*N;
 
 
     combiner_top( mem_a,
-                  mem_b,
                   data_points_in_addr*sizeof(bus_type),
     			  kernel_info_in_addr*sizeof(bus_type),
     			  centres_out_addr*sizeof(bus_type),
@@ -65,15 +70,14 @@ int main()
     for (uint i=0; i<k; i++) {
         printf("%d: ",i);
         for (uint d=0; d<D-1; d++) {
-            printf("%d ",mem_b[i*D+d]);
+            printf("%d ",mem_a[D*N+D*N+i*D+d]);
         }
-        printf("%d\n",mem_b[i*D+D-1]);
+        printf("%d\n",mem_a[D*N+D*N+i*D+D-1]);
     }
 
     printf("distortion: %d\n",distortion_out);
 
     delete mem_a;
-    delete mem_b;
 
     return 0;
 }

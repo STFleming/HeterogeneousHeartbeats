@@ -162,6 +162,15 @@ void lloyds_kernel_top(  uint block_address,
 
     	data_type u = data_points_buffer[i];
 
+    	/*
+		#ifndef __SYNTHESIS
+			for (uint d=0; d<D; d++) {
+				printf("%d ", u.value[d]);
+			}
+			printf("\n");
+		#endif
+		*/
+
         centre_index_type final_centre_index = 0;
         coord_type sum_sq_out = MAX_FIXED_POINT_VAL_EXT;
         coord_type min_dist = MAX_FIXED_POINT_VAL_EXT;
@@ -194,6 +203,10 @@ void lloyds_kernel_top(  uint block_address,
 				break;
 			}
 		}
+
+		#ifndef __SYNTHESIS__
+        	printf("%d %d\n",final_centre_index.VAL, sum_sq_out);
+		#endif
 
         output_buffer[i].min_idx = final_centre_index;
         output_buffer[i].sum_sq = sum_sq_out;
