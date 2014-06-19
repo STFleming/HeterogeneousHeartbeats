@@ -33,7 +33,7 @@ extern "C" {
 #include "xcombiner_top_hw.h"
 
 
-#define COMBINER_ADDR 0x43C10000
+#define COMBINER_ADDR 0x43C00000
 
 /**************************** Type Definitions ******************************/
 #ifdef __linux__
