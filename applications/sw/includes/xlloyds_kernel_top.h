@@ -33,7 +33,7 @@ extern "C" {
 #include "xlloyds_kernel_top_hw.h"
 
 
-#define LLOYDS_KERNEL_ADDR 0x43C00000
+#define LLOYDS_KERNEL_ADDR 0x43C10000
 
 
 /**************************** Type Definitions ******************************/
