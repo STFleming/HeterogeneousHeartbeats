@@ -203,10 +203,11 @@ void lloyds_kernel_top(  uint block_address,
 				break;
 			}
 		}
-
+        /*
 		#ifndef __SYNTHESIS__
         	printf("%d %d\n",final_centre_index.VAL, sum_sq_out);
 		#endif
+		*/
 
         output_buffer[i].min_idx = final_centre_index;
         output_buffer[i].sum_sq = sum_sq_out;

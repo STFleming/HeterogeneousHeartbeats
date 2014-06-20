@@ -23,9 +23,8 @@
 #define B 16		// burst length (in data points)
 //#define BURST_SIZE 2
 
-#define COORD_BITWIDTH 16
+
 #define COORD_BITWITDH_EXT 32
-#define NODE_POINTER_BITWIDTH 15    // log2(N)
 #define CNTR_INDEX_BITWIDTH 8       // log2(K)
 
 
