@@ -51,8 +51,8 @@ struct output_type {
 
 
 //bit width definitions for multiplications
-#define MUL_INTEGER_BITS 28
-#define MUL_FRACTIONAL_BITS 4
+#define MUL_INTEGER_BITS 26
+#define MUL_FRACTIONAL_BITS 6
 #define MUL_MAX_VAL (1<<(MUL_INTEGER_BITS+MUL_FRACTIONAL_BITS-1))-1
 #define MUL_MIN_VAL -1*(1<<(MUL_INTEGER_BITS+MUL_FRACTIONAL_BITS-1))
 typedef ap_int<MUL_INTEGER_BITS+MUL_FRACTIONAL_BITS> mul_input_type;
