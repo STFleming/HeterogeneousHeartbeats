@@ -1,5 +1,10 @@
-<AutoPilot:project xmlns:AutoPilot="com.autoesl.autopilot.project" projectType="C/C++" name="kernel" top="lloyds_kernel_top">
-    <files>
+<project xmlns="com.autoesl.autopilot.project" name="kernel" top="lloyds_kernel_top">
+    <includePaths/>
+    <libraryPaths/>
+    <Simulation>
+        <SimFlow name="csim" csimMode="0" lastCsimMode="0"/>
+    </Simulation>
+    <files xmlns="">
         <file name="../HLS/simulation/tb_io.h" sc="0" tb="1" cflags=" "/>
         <file name="../HLS/simulation/tb_io.cpp" sc="0" tb="1" cflags=" "/>
         <file name="../HLS/simulation/lloyds_kernel_tb.cpp" sc="0" tb="1" cflags=" "/>
@@ -10,20 +15,10 @@
         <file name="kernel/HLS/source/lloyds_util.cpp" sc="0" tb="false" cflags=""/>
         <file name="kernel/HLS/source/lloyds_kernel_top.h" sc="0" tb="false" cflags=""/>
         <file name="kernel/HLS/source/lloyds_kernel_top.cpp" sc="0" tb="false" cflags=""/>
-        <file name="../../simulation/data_points_N128_K4_D3_s0.75.mat" sc="0" tb="1" cflags=" "/>
-        <file name="../../simulation/data_points_N16384_K128_D3_s0.20.mat" sc="0" tb="1" cflags=" "/>
-        <file name="../../simulation/initial_centres_N128_K4_D3_s0.75_1.mat" sc="0" tb="1" cflags=" "/>
-        <file name="../../simulation/initial_centres_N16384_K128_D3_s0.20_1.mat" sc="0" tb="1" cflags=" "/>
-        <file name="../../simulation/lloyds_kernel_tb.cpp" sc="0" tb="1" cflags=" "/>
-        <file name="../../simulation/tb_io.cpp" sc="0" tb="1" cflags=" "/>
-        <file name="../../simulation/tb_io.h" sc="0" tb="1" cflags=" "/>
-        <file name="source/lloyds_kernel_top.cpp" sc="0" tb="false" cflags=""/>
-        <file name="source/lloyds_kernel_top.h" sc="0" tb="false" cflags=""/>
-        <file name="source/lloyds_util.cpp" sc="0" tb="false" cflags=""/>
-        <file name="source/lloyds_util.h" sc="0" tb="false" cflags=""/>
+        <file name="../../test_data/intermediate.mat" sc="0" tb="1" cflags=""/>
     </files>
-    <solutions>
-        <solution name="kernel" status=""/>
+    <solutions xmlns="">
+        <solution name="kernel" status="active"/>
     </solutions>
-</AutoPilot:project>
+</project>
 

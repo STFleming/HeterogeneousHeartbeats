@@ -17,13 +17,18 @@
 #include "../source/lloyds_util.h"
 #include "tb_io.h"
 
-#define N 128*128     // max. number of data points
+#define N 256*256     // max. number of data points
 
+struct centre_type {
+	data_type wgtCent; 	// sum of all points assigned to this centre
+	uint sum_sq; 		// sum of norm of all points assigned to this centre
+	uint count;  		// number of all points assigned to this centre
+};
 
 int main()
 {
     // these parameters must match the input data files
-    const uint n = 128;
+    const uint n = N;
     const uint k = 4;
 
     bus_type *mem_a = new bus_type[D*N+D*N+D*K];
@@ -33,7 +38,7 @@ int main()
 	uint output_addr = D*N+D*K;
 
     // read data points from file
-    if (read_data_points(n,"data_points_N128_K4_D3_s0.75.mat",&mem_a[data_points_addr]) == false)
+    if (read_data_points(n,"data_points.mat",&mem_a[data_points_addr]) == false)
         return 1;
 
     for (uint i=0; i<k; i++) {
@@ -91,12 +96,57 @@ int main()
 		FILE *fp;
 		fp=fopen("intermediate.mat", "w");
 
+
 		for (uint i=0; i<n; i++) {
-			printf("%d: ",i);
-			printf("%d %d\n",mem_a[output_addr+i*2+0], mem_a[output_addr+i*2+1]);
+			//printf("%d: ",i);
+			//printf("%d %d\n",mem_a[output_addr+i*2+0], mem_a[output_addr+i*2+1]);
 			fprintf(fp,"%d\n%d\n",mem_a[output_addr+i*2+0], mem_a[output_addr+i*2+1]);
 		}
 		fclose(fp);
+
+		/********************* Debug *************************/
+
+		printf("New centres (debug mode):\n");
+
+		centre_type centre_buffer[K];
+
+		for (uint i=0; i<K; i++) {
+
+			centre_buffer[i].count=0;
+			centre_buffer[i].sum_sq=0;
+
+			for (uint d=0; d<D; d++) {
+				centre_buffer[i].wgtCent.value[d] = 0;
+			}
+		}
+
+		for (uint i=0; i<n; i++) {
+
+			uint min_index = mem_a[output_addr+i*2+0];
+			uint sum_sq = mem_a[output_addr+i*2+1];
+
+			data_type u;
+
+			for (uint d=0; d<D; d++) {
+				u.value[d] = mem_a[data_points_addr+i*D+d];
+			}
+
+			centre_buffer[min_index].count++;
+
+			for (uint d=0; d<D; d++) {
+				centre_buffer[min_index].wgtCent.value[d] += u.value[d];
+			}
+
+		}
+
+		for (uint i=0; i<k; i++) {
+
+			for (uint d=0; d<D; d++) {
+				printf("%d ", centre_buffer[i].wgtCent.value[d] / centre_buffer[i].count);
+			}
+			printf("\n");
+		}
+
 
     } else {
     	/*
