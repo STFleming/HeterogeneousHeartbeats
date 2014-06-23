@@ -661,7 +661,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>3468087420</spirit:value>
+            <spirit:value>755967848</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -669,7 +669,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jun 12 15:50:19 UTC 2014</spirit:value>
+            <spirit:value>Sat Jun 21 10:41:39 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -1946,8 +1946,8 @@
         <xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>Lloyds_kernel_top</xilinx:displayName>
-      <xilinx:coreRevision>1406121646</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2014-06-12T15:46:39Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1406211137</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2014-06-21T10:38:05Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2013.4</xilinx:xilinxVersion>

@@ -311,7 +311,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 set ID 7
 set MemName combiner_top_c_buffer
 set CoreName ap_simcore_mem
-set PortList { 0 2 }
+set PortList { 2 3 }
 set DataWd 32
 set AddrRange 768
 set AddrWd 10

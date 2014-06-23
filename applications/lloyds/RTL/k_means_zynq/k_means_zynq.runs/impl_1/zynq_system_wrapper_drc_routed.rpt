@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
-| Date         : Thu Jun 12 16:57:34 2014
+| Date         : Sat Jun 21 12:48:19 2014
 | Host         : ee-boxer0 running 64-bit Ubuntu 10.04.4 LTS
 | Command      : report_drc
 -----------------------------------------------------------------------------------
@@ -119,7 +119,7 @@ REPORT SUMMARY
                      Delay constraint missing on IO port
                      PS7 block required
            Max violations: <unlimited>
-         Violations found: 166
+         Violations found: 178
 
 2. REPORT DETAILS
 -----------------
@@ -138,17 +138,32 @@ Related violations: <none>
 
 DPOP-1#1 Warning
 DSP output pipelining  
-DSP zynq_system_i/lloyds_kernel_top_0/lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+DSP zynq_system_i/lloyds_kernel_top_0/inst/lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
 DPOP-1#2 Warning
 DSP output pipelining  
-DSP zynq_system_i/lloyds_kernel_top_0/lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+DSP zynq_system_i/lloyds_kernel_top_0/inst/lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
 DPOP-1#3 Warning
 DSP output pipelining  
-DSP zynq_system_i/lloyds_kernel_top_0/lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+DSP zynq_system_i/lloyds_kernel_top_0/inst/lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#4 Warning
+DSP output pipelining  
+DSP zynq_system_i/lloyds_kernel_top_1/inst/lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#5 Warning
+DSP output pipelining  
+DSP zynq_system_i/lloyds_kernel_top_1/inst/lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+Related violations: <none>
+
+DPOP-1#6 Warning
+DSP output pipelining  
+DSP zynq_system_i/lloyds_kernel_top_1/inst/lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
 PLIO-7#1 Warning
@@ -913,52 +928,97 @@ Related violations: <none>
 
 AVAL-4#1 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
-zynq_system_i/lloyds_kernel_top_0/lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+zynq_system_i/lloyds_kernel_top_0/inst/lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
 Related violations: <none>
 
 AVAL-4#2 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
-zynq_system_i/lloyds_kernel_top_0/lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+zynq_system_i/lloyds_kernel_top_0/inst/lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
 Related violations: <none>
 
 AVAL-4#3 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
-zynq_system_i/lloyds_kernel_top_0/lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+zynq_system_i/lloyds_kernel_top_0/inst/lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
 Related violations: <none>
 
 AVAL-4#4 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
-zynq_system_i/lloyds_kernel_top_0/lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+zynq_system_i/lloyds_kernel_top_0/inst/lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
 Related violations: <none>
 
 AVAL-4#5 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
-zynq_system_i/lloyds_kernel_top_0/lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+zynq_system_i/lloyds_kernel_top_0/inst/lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
 Related violations: <none>
 
 AVAL-4#6 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
-zynq_system_i/lloyds_kernel_top_0/lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+zynq_system_i/lloyds_kernel_top_0/inst/lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
 Related violations: <none>
 
 AVAL-4#7 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
-zynq_system_i/lloyds_kernel_top_0/lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+zynq_system_i/lloyds_kernel_top_0/inst/lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
 Related violations: <none>
 
 AVAL-4#8 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
-zynq_system_i/lloyds_kernel_top_0/lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+zynq_system_i/lloyds_kernel_top_0/inst/lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
 Related violations: <none>
 
 AVAL-4#9 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
-zynq_system_i/lloyds_kernel_top_0/lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+zynq_system_i/lloyds_kernel_top_0/inst/lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+Related violations: <none>
+
+AVAL-4#10 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
+zynq_system_i/lloyds_kernel_top_1/inst/lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+Related violations: <none>
+
+AVAL-4#11 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
+zynq_system_i/lloyds_kernel_top_1/inst/lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+Related violations: <none>
+
+AVAL-4#12 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
+zynq_system_i/lloyds_kernel_top_1/inst/lloyds_kernel_top_mul_32s_32s_64_6_U28/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+Related violations: <none>
+
+AVAL-4#13 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
+zynq_system_i/lloyds_kernel_top_1/inst/lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+Related violations: <none>
+
+AVAL-4#14 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
+zynq_system_i/lloyds_kernel_top_1/inst/lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+Related violations: <none>
+
+AVAL-4#15 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
+zynq_system_i/lloyds_kernel_top_1/inst/lloyds_kernel_top_mul_32s_32s_64_6_U29/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+Related violations: <none>
+
+AVAL-4#16 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
+zynq_system_i/lloyds_kernel_top_1/inst/lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff0_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+Related violations: <none>
+
+AVAL-4#17 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
+zynq_system_i/lloyds_kernel_top_1/inst/lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff1_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+Related violations: <none>
+
+AVAL-4#18 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
+zynq_system_i/lloyds_kernel_top_1/inst/lloyds_kernel_top_mul_32s_32s_64_6_U30/lloyds_kernel_top_mul_32s_32s_64_6_MulnS_0_U/buff2_reg: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
 Related violations: <none>
 
 RTSTAT-10#1 Advisory
 No routable loads  
-93 net(s) have no routable loads. The problem net(s) are zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARADDR[8], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARADDR[9], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARADDR[10], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARADDR[11], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARADDR[12], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARADDR[13], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARADDR[14], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARADDR[15], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARCACHE[0], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARCACHE[1], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARCACHE[2], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARCACHE[3], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARLOCK[0], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARLOCK[1], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARPROT[0] (the first 15 of 93 listed).
+81 net(s) have no routable loads. The problem net(s) are zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARADDR[8], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARADDR[9], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARADDR[10], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARADDR[11], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARADDR[12], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARADDR[13], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARADDR[14], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARADDR[15], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARCACHE[0], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARCACHE[1], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARCACHE[2], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARCACHE[3], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARLOCK[0], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARLOCK[1], zynq_system_i/processing_system7_0/U0/M_AXI_GP0_ARPROT[0] (the first 15 of 81 listed).
 Related violations: <none>
 
 

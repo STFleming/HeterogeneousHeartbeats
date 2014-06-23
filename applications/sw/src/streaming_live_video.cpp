@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <sys/mman.h>
+#include <time.h>
 
 #include <iostream>
 #include "opencv2/core/core.hpp"
@@ -16,46 +17,60 @@
 //#include "opencv2/highgui.hpp"
 #include "opencv2/highgui/highgui_c.h"
 
+//File inclusion for power monitoring
+#include "power_monitor.h"
 
 //Drivers for our core
 #include "xcombiner_top.h"
 #include "xlloyds_kernel_top.h"
 
 #define INPUT_FRAME_ADDR 0x38400000
-#define CLUSTER_CENTER_ADDR 0x39000000
-#define KERNEL_INTERMEDIATE_ADDR 0x39000C00
-#define OUTPUT_FRAME_ADDR 0x39800C00
+#define CLUSTER_CENTER_ADDR_1 0x39000000
+#define CLUSTER_CENTER_ADDR_2 0x39000C00
+#define KERNEL_INTERMEDIATE_ADDR_1 0x39001800
+#define KERNEL_INTERMEDIATE_ADDR_2 0x39C01800
+
+#define LLOYDS_KERNEL_ADDR_1 0x43C10000
+#define LLOYDS_KERNEL_ADDR_2 0x43C20000
+
+#define COMBINER_ADDR_1 0x43C00000
+#define COMBINER_ADDR_2 0x43C30000
 
 #define IMG_SIZE 256
 #define K 16
 #define D 3
-#define L 10
+#define LMAX 30 //max number of iterations
 
 #define MAP_SIZE 40960000UL
 #define MAP_MASK (MAP_SIZE - 1)
 
 void *setup_reserved_mem(uint input_address);
+int cmp_mem_segment(int *address_1, int *address_2, int block_size);
 void flush_caches();
+void setup_kmeans_hardware(XLloyds_kernel_top *kernel_dev_1, XLloyds_kernel_top *kernel_dev_2, XCombiner_top* combiner_dev_1, XCombiner_top* combiner_dev_2);
+
 
 
 int main()
 {
-	printf("----------------------------\nTesting the reserved memory\n----------------------------\n\n");
+	printf("----------------------------\nProcessing Live Video\n----------------------------\n\n");
 
 	//Define the Hardware output container
-	cv::Mat default_output(cv::Size(IMG_SIZE,IMG_SIZE),CV_32SC3, cv::Scalar(60,60,60));
-	cv::Mat hw_outputFrame(cv::Size(IMG_SIZE,IMG_SIZE),CV_32SC3); //Setup the output image contained and give it a size
-	hw_outputFrame.data = (uchar *) setup_reserved_mem(KERNEL_INTERMEDIATE_ADDR);	//Point the container to the reserved RAM
-	default_output.copyTo(hw_outputFrame);
+	cv::Mat hw_outputFrame1(cv::Size(IMG_SIZE,IMG_SIZE),CV_32SC3); //Setup the output image contained and give it a size
+	hw_outputFrame1.data = (uchar *) setup_reserved_mem(KERNEL_INTERMEDIATE_ADDR_1);
+	cv::Mat hw_outputFrame2(cv::Size(IMG_SIZE,IMG_SIZE),CV_32SC3);
+	hw_outputFrame2.data = (uchar *) setup_reserved_mem(KERNEL_INTERMEDIATE_ADDR_2);
 
-	//Create a named window for the output
-	//cv::namedWindow("OUTPUT", cv::WINDOW_AUTOSIZE);
+	int *centres_pointer1 = (int *) setup_reserved_mem(CLUSTER_CENTER_ADDR_1);
+	int *centres_pointer2 = (int *) setup_reserved_mem(CLUSTER_CENTER_ADDR_2);
 
-	int *centres_pointer = (int *) setup_reserved_mem(CLUSTER_CENTER_ADDR); //get a virtual address for the cluster centres for initialisation.
-	int *kernel_info_pointer = (int *) setup_reserved_mem(KERNEL_INTERMEDIATE_ADDR); //get a virtual address for the cluster centres for initialisation.
-        int *input_frame_pointer = (int *) setup_reserved_mem(INPUT_FRAME_ADDR);
+	int *output_frame1 = (int *) setup_reserved_mem(KERNEL_INTERMEDIATE_ADDR_1);
+	int *output_frame2 = (int *) setup_reserved_mem(KERNEL_INTERMEDIATE_ADDR_2);
+
 	//Input container
 	cv::Mat inFrame; //Temporary input container
+
+	FILE * log_file = fopen("time_log.csv", "w");
 
 	cv::VideoCapture cap("http://ee-ganymede.ee.ic.ac.uk:8080"); 
 	if (!cap.isOpened())  // if not success, exit program
@@ -66,38 +81,53 @@ int main()
 	int img_height = IMG_SIZE;//cap.get(CV_CAP_PROP_FRAME_HEIGHT);
 	int img_width = IMG_SIZE;//cap.get(CV_CAP_PROP_FRAME_WIDTH);
 
-	//HARDWARE SETUP-----------------------------------------------------------------------
-	//sets up the two IP cores, this needs to be turned into a function
-	//Setup the kernel core parameters
-	XLloyds_kernel_top kernel_dev = setup_XLloyds_kernel_top();
-	XLloyds_kernel_top_SetBlock_address(&kernel_dev, 0);
-	XLloyds_kernel_top_SetData_points_addr(&kernel_dev, INPUT_FRAME_ADDR);
-	XLloyds_kernel_top_SetCentres_in_addr(&kernel_dev, CLUSTER_CENTER_ADDR);
-	XLloyds_kernel_top_SetOutput_addr(&kernel_dev, KERNEL_INTERMEDIATE_ADDR);
-	XLloyds_kernel_top_SetUpdate_points(&kernel_dev, 0); // setting this to 1 will write a new image frame at KERNEL_INTERMEDIATE_ADDR
-	XLloyds_kernel_top_SetN(&kernel_dev, (IMG_SIZE*IMG_SIZE)-1);
-	XLloyds_kernel_top_SetK(&kernel_dev, K-1);
+	XLloyds_kernel_top kernel_dev_1 = setup_XLloyds_kernel_top(LLOYDS_KERNEL_ADDR_1);
+	XLloyds_kernel_top kernel_dev_2 = setup_XLloyds_kernel_top(LLOYDS_KERNEL_ADDR_2);
+	XCombiner_top combiner_dev_1 = setup_XCombiner_top(COMBINER_ADDR_1);
+	XCombiner_top combiner_dev_2 = setup_XCombiner_top(COMBINER_ADDR_2);
 
-	//Setting the parameters of the combiner 	
-	
-	XCombiner_top combiner_dev = setup_XCombiner_top();
-	XCombiner_top_SetData_points_in_addr(&combiner_dev, INPUT_FRAME_ADDR);
-	XCombiner_top_SetKernel_info_in_addr(&combiner_dev, KERNEL_INTERMEDIATE_ADDR);
-	XCombiner_top_SetCentres_out_addr(&combiner_dev,CLUSTER_CENTER_ADDR);
-	XCombiner_top_SetN(&combiner_dev, (img_height*img_width)-1);
-	XCombiner_top_SetK(&combiner_dev, K-1);	
-	
-	//------------------------------------------------------------------------------------
+	setup_kmeans_hardware(&kernel_dev_1, &kernel_dev_2, &combiner_dev_1, &combiner_dev_2);
+
 	cv::Size size(img_height,img_width);
-	cv::Mat hw_inputFrame(cv::Size(IMG_SIZE, IMG_SIZE), CV_32SC3, cv::Scalar(60,60,60));
+	cv::Mat hw_inputFrame(cv::Size(IMG_SIZE, IMG_SIZE), CV_32SC3, cv::Scalar(0,0,0));
 	hw_inputFrame.data =(uchar *) setup_reserved_mem(INPUT_FRAME_ADDR); //Point the input container to the reserved RAM
 
 	uint frame_counter = 0;
 
+	//Code for timing the operation
+	clock_t begin, end;
+	double time_spent;
+
+//----------------------------------Power Monitoring-----------------------------------
+        float voltage;
+        double current;
+        double power;
+        double maxpower;
+        int i, j,k;
+        int count = 5;
+        int iic_fd;
+
+
+        double totalPower = 0;
+
+        iic_fd = open("/dev/i2c-9", O_RDWR);
+        if (iic_fd < 0) {
+                printf("ERROR: Unable to open /dev/i2c-9 for PMBus access: %d\n", iic_fd);
+                exit(1);
+        }
+
+        j = sizeof(zc702_rails) / sizeof(struct voltage_rail);
+
+        totalPower = 0.0f;
+        power = 0.0f;
+        for(i = 0; i < j; i++) {
+                zc702_rails[i].average_power = 0;
+                zc702_rails[i].average_current=0;
+        }
+//---------------------------------------------------------------------------------------
+
 	while(1)
 	{
-
-		printf("Frame %u\n",frame_counter);
 
 		bool bSuccess = cap.read(inFrame);
 		if(!bSuccess)
@@ -105,119 +135,204 @@ int main()
 			printf("Error reading Frame\n");
 		}
 
-		//Attempting some resizing
+		//Resizing the input image
 		cv::resize(inFrame, inFrame, size); //Changing the image to size so that it complies with the HW modules
 		inFrame.convertTo(inFrame, CV_32SC3); //Convert the inFrame to the format that is recognised by the hardware
 		inFrame.copyTo(hw_inputFrame);			
 
-	        // sample the initial clustering centers
-		printf("Initial centres\n");
+		//Initialise the centres
         	int c_counter = 0;
 	        for (uint i=0; i<K; i++) {
         	        uint idx = rand() % img_height;
 	                for (uint d=0; d<D; d++) {
          	        	int coord = hw_inputFrame.at<cv::Vec3b>(idx,idx)[d];
-  	                       	*(centres_pointer+c_counter) = coord;	                      
+  	                       	*(centres_pointer1+c_counter) = coord;
+				*(centres_pointer2+c_counter) = coord;	                      
                         	c_counter++;
-				//printf("%d ", *(centres_pointer+c_counter));
                 	}        	        
-			//printf("\n");
 	        }
 
-        	/*
-        	printf("100 pixels from somewhere in the input frame:\n");
-	        int p_counter = 0;
-        	for (uint i=0; i<100; i++) {                
-
-                	for (uint d=0; d<D; d++) {                        
-                        	printf("%d ",*(input_frame_pointer+16384+p_counter) );
-	                        p_counter++;
-        	        }
-                	printf("\n");
-	        }
-        	*/
-	
-
-		/*
-		for(int block_address=0; block_address<img_height*img_width; block_address+=16)
-		{
-			XLloyds_kernel_top_SetBlock_address(&kernel_dev, block_address*sizeof(int)); //Reassign the kernel modules block address
-			XLloyds_kernel_top_Start(&kernel_dev); //Kick the Kernel block
-			while(XLloyds_kernel_top_IsDone(&kernel_dev) != 1) { } //block for the first hardware stage
-			printf("block: %d/%d \t%d\r", block_address, img_height*img_width, XLloyds_kernel_top_GetDebug(&kernel_dev));
-		}
-
-		printf("\n");
-		XCombiner_top_Start(&combiner_dev); //now that the kernel block has finished, kick the combiner	
-		while(XCombiner_top_IsDone(&combiner_dev) != 1) { } //block for the second hardware stage
-		*/
 
 	        uint distortion = UINT_MAX;
+		uint new_distortion;
+		uint clustering_iteration;
+		int error_count = 0;
 
-		XLloyds_kernel_top_SetUpdate_points(&kernel_dev, 0); // setting this to 1 will write a new image frame at KERNEL_INTERMEDIATE_ADDR
+		XLloyds_kernel_top_SetUpdate_points(&kernel_dev_1, 0);
+		XLloyds_kernel_top_SetUpdate_points(&kernel_dev_2, 0);	
 
-	        for (uint clustering_iteration=0; clustering_iteration<L; clustering_iteration++) {        	        
+		//Start the timer HERE		
+	 	begin = clock();	
+	        for (clustering_iteration=0; clustering_iteration<LMAX; clustering_iteration++) {        	        
 
 	                for(int block_address=0; block_address<img_height*img_width; block_address+=16)
         	        {
-                	        XLloyds_kernel_top_SetBlock_address(&kernel_dev, block_address*sizeof(int)); //Reassign the kernel modules block address
-                        	XLloyds_kernel_top_Start(&kernel_dev); //Kick the Kernel block
-	                        while(XLloyds_kernel_top_IsDone(&kernel_dev) != 1) { } //block for the first hardware stage        	                
+                	        XLloyds_kernel_top_SetBlock_address(&kernel_dev_1, block_address*sizeof(int));
+				XLloyds_kernel_top_SetBlock_address(&kernel_dev_2, block_address*sizeof(int));  
+                        	XLloyds_kernel_top_Start(&kernel_dev_1); //Kick the Kernel blocks
+				XLloyds_kernel_top_Start(&kernel_dev_2);
+	                        while(!((XLloyds_kernel_top_IsIdle(&kernel_dev_1) == 1) 
+					&& (XLloyds_kernel_top_IsIdle(&kernel_dev_2) == 1))) { }
+			                           
+				//Naive detection and recovery (No task migration strategy		
+				error_count = cmp_mem_segment( (output_frame1 + block_address), (output_frame2+block_address), 16);
+                                if(error_count > 0) {
+					printf("%d FAULTS DETECTED @ block %x\n", error_count, block_address);
+					system("cat ./k_means_system.bit.bin > /dev/xdevcfg");
+					setup_kmeans_hardware(&kernel_dev_1, &kernel_dev_2, &combiner_dev_1, &combiner_dev_2);
+				}
+				block_address-=16; //go back to the start of the block
     			}
 	               
-	                XCombiner_top_Start(&combiner_dev); //now that the kernel block has finished, kick the combiner
-        	        while(XCombiner_top_IsDone(&combiner_dev) != 1) { } //block for the second hardware stage
+	                XCombiner_top_Start(&combiner_dev_1); //now that the kernel block has finished, kick the combiner
+			XCombiner_top_Start(&combiner_dev_2); 
+        	        while(!((XCombiner_top_IsIdle(&combiner_dev_1) == 1) && (XCombiner_top_IsIdle(&combiner_dev_2) == 1)))
+			{ } 
+			//while(XCombiner_top_IsDone(&combiner_dev_1) != 1) {}
 
-	                uint new_distortion = XCombiner_top_GetDistortion_out(&combiner_dev);
+	                new_distortion = XCombiner_top_GetDistortion_out(&combiner_dev_1);
 
 			if (distortion == 0)
 				distortion = 1;
 
-	                printf("Distortion: %u, relative improvement: %.2f\%\n", new_distortion, ((double)distortion-(double)new_distortion)/((double)distortion)*100);
+			double rel_improvement =  ((double)distortion-(double)new_distortion)/((double)distortion)*100;
+			if ( (rel_improvement > 0) && (rel_improvement < 1) )
+				break; 
+
+	                //printf("Distortion: %u, relative improvement: %.2f\%\n", new_distortion, ((double)distortion-(double)new_distortion)/((double)distortion)*100);
         	        distortion = new_distortion;                
         	}
 
-		/*
-                // sample the initial clustering centers
-                printf("New centres\n");
-                c_counter = 0;
-                for (uint i=0; i<K; i++) {                        
-                        for (uint d=0; d<D; d++) {                                
-                                printf("%d ", *(centres_pointer+c_counter));
-				c_counter++;
-                        }
-                        printf("\n");
-                }
-		*/
-
 
 	        //start the kernel for final output
-        	XLloyds_kernel_top_SetUpdate_points(&kernel_dev, 1); // setting this to 1 will write a new image frame at KERNEL_INTERMEDIATE_ADDR
+        	XLloyds_kernel_top_SetUpdate_points(&kernel_dev_1, 1); 
+		XLloyds_kernel_top_SetUpdate_points(&kernel_dev_2, 1);
 	              
 	        for(int block_address=0; block_address<img_height*img_width; block_address+=16)
         	{
-                	XLloyds_kernel_top_SetBlock_address(&kernel_dev, block_address*sizeof(int)); //Reassign the kernel modules block address
-	                XLloyds_kernel_top_Start(&kernel_dev); //Kick the Kernel block
-        	        while(XLloyds_kernel_top_IsDone(&kernel_dev) != 1) { } //block for the first hardware stage               
+			        XLloyds_kernel_top_SetBlock_address(&kernel_dev_1, block_address*sizeof(int));
+                                XLloyds_kernel_top_SetBlock_address(&kernel_dev_2, block_address*sizeof(int));
+                                XLloyds_kernel_top_Start(&kernel_dev_1); //Kick the Kernel blocks
+                                XLloyds_kernel_top_Start(&kernel_dev_2);
+	                        while(!((XLloyds_kernel_top_IsIdle(&kernel_dev_1) == 1) 
+					&& (XLloyds_kernel_top_IsIdle(&kernel_dev_2) == 1))) { }
+
+				//Naive detection and recovery (No task migration strategy		
+				error_count = cmp_mem_segment( (output_frame1 + block_address), (output_frame2+block_address), 16);
+                                if(error_count > 0) 
+					{ printf("%d FAULTS DETECTED @ block %x\n", error_count, block_address);
+					  system("cat ./k_means_system.bit.bin > /dev/xdevcfg");
+					  setup_kmeans_hardware(&kernel_dev_1, &kernel_dev_2, &combiner_dev_1, &combiner_dev_2);
+					}
+				block_address-=16; //go back to the start of the block
+
         	}        
 
-		cv::Mat outFrame;
-		hw_outputFrame.copyTo(outFrame);
-		outFrame.convertTo(outFrame, CV_8UC3); //Convert into the right output format
+
+		//End the timer here - and output to log file
+		end = clock();
+		time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+		fprintf(log_file, "%d, %f, ", frame_counter, time_spent);
+
+		//Power for the Processing System
+        	voltage = readVoltage(iic_fd, zc702_rails[0].device, zc702_rails[0].page);
+        	current = readCurrent(iic_fd, zc702_rails[0].device, zc702_rails[0].page);
+        	power = voltage * current * 1000;
+		fprintf(log_file, "%f, ", power);
+
+		//Power to the programmable logic
+                voltage = readVoltage(iic_fd, zc702_rails[1].device, zc702_rails[1].page);
+                current = readCurrent(iic_fd, zc702_rails[1].device, zc702_rails[1].page);
+                power = voltage * current * 1000;
+                fprintf(log_file, "%f\n", power);
+
+		cv::Mat outFrame1;
+		hw_outputFrame1.copyTo(outFrame1);
+	
+		cv::Mat outFrame2;
+		hw_outputFrame2.copyTo(outFrame2);
+
+		outFrame1.convertTo(outFrame1, CV_8UC3); //Convert into the right output format
+		outFrame2.convertTo(outFrame2, CV_8UC3);
+
+		cv::imshow("OUTPUT1", outFrame1); //displaying the output frame
+		cv::imshow("OUTPUT2", outFrame2); 
+
 
 		cv::Mat displayFrame;
 		inFrame.convertTo(displayFrame, CV_8UC3);
-
-		cv::imshow("OUTPUT", outFrame); //displaying the output frame
+		cv::imshow("INPUT", displayFrame);
 
 		frame_counter++;
-
 
 		if( cv::waitKey(1) >= 0) break;	
 	}
 
 
 	return 0;
+}
+
+int cmp_mem_segment(int *address_1, int *address_2, int block_size)
+{
+	//Compares two memory segments, returns the number of segments that differ
+	//			      
+	int i;
+	int *addr1;
+	addr1 = address_1;
+	int *addr2;
+	addr2 = address_2;
+	int count = 0;
+	for(i=0;i<block_size; i++)
+	{
+		if(*addr1 != *addr2)
+		{ count++; }
+		addr1++;
+		addr2++;
+	}
+
+	return count;
+}
+
+ void setup_kmeans_hardware(XLloyds_kernel_top *kernel_dev_1, XLloyds_kernel_top *kernel_dev_2, XCombiner_top* combiner_dev_1, XCombiner_top* combiner_dev_2)
+{
+	//HARDWARE SETUP-----------------------------------------------------------------------
+	//sets up the two IP cores, this needs to be turned into a function
+
+	//Setup the kernel core parameters
+	//Device 1
+	XLloyds_kernel_top_SetBlock_address(kernel_dev_1, 0);
+	XLloyds_kernel_top_SetData_points_addr(kernel_dev_1, INPUT_FRAME_ADDR);
+	XLloyds_kernel_top_SetCentres_in_addr(kernel_dev_1, CLUSTER_CENTER_ADDR_1);
+	XLloyds_kernel_top_SetOutput_addr(kernel_dev_1, KERNEL_INTERMEDIATE_ADDR_1);
+	XLloyds_kernel_top_SetUpdate_points(kernel_dev_1, 0); 
+	XLloyds_kernel_top_SetN(kernel_dev_1, (IMG_SIZE*IMG_SIZE)-1);
+	XLloyds_kernel_top_SetK(kernel_dev_1, K-1);
+
+	//Device 2
+        XLloyds_kernel_top_SetBlock_address(kernel_dev_2, 0);
+        XLloyds_kernel_top_SetData_points_addr(kernel_dev_2, INPUT_FRAME_ADDR);
+        XLloyds_kernel_top_SetCentres_in_addr(kernel_dev_2, CLUSTER_CENTER_ADDR_2);
+        XLloyds_kernel_top_SetOutput_addr(kernel_dev_2, KERNEL_INTERMEDIATE_ADDR_2);
+        XLloyds_kernel_top_SetUpdate_points(kernel_dev_2, 0);
+        XLloyds_kernel_top_SetN(kernel_dev_2, (IMG_SIZE*IMG_SIZE)-1);
+        XLloyds_kernel_top_SetK(kernel_dev_2, K-1);
+
+	//Setting the parameters of the combiner
+	//Device 1 	
+	XCombiner_top_SetData_points_in_addr(combiner_dev_1, INPUT_FRAME_ADDR);
+	XCombiner_top_SetKernel_info_in_addr(combiner_dev_1, KERNEL_INTERMEDIATE_ADDR_1);
+	XCombiner_top_SetCentres_out_addr(combiner_dev_1,CLUSTER_CENTER_ADDR_1);
+	XCombiner_top_SetN(combiner_dev_1, (IMG_SIZE*IMG_SIZE)-1);
+	XCombiner_top_SetK(combiner_dev_1, K-1);	
+
+	//Device 2
+        XCombiner_top_SetData_points_in_addr(combiner_dev_2, INPUT_FRAME_ADDR);
+        XCombiner_top_SetKernel_info_in_addr(combiner_dev_2, KERNEL_INTERMEDIATE_ADDR_2);
+        XCombiner_top_SetCentres_out_addr(combiner_dev_2,CLUSTER_CENTER_ADDR_2);
+        XCombiner_top_SetN(combiner_dev_2, (IMG_SIZE*IMG_SIZE)-1);
+        XCombiner_top_SetK(combiner_dev_2, K-1);
+	//------------------------------------------------------------------------------------
+
 }
 
 

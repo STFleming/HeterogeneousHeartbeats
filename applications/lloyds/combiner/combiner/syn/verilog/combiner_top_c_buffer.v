@@ -6,7 +6,7 @@
 // ==============================================================
 
 `timescale 1 ns / 1 ps
-module combiner_top_c_buffer_ram (addr0, ce0, d0, we0, addr1, ce1, d1, we1, q1,  clk);
+module combiner_top_c_buffer_ram (addr0, ce0, d0, we0, q0,  clk);
 
 parameter DWIDTH = 32;
 parameter AWIDTH = 10;
@@ -16,11 +16,7 @@ input[AWIDTH-1:0] addr0;
 input ce0;
 input[DWIDTH-1:0] d0;
 input we0;
-input[AWIDTH-1:0] addr1;
-input ce1;
-input[DWIDTH-1:0] d1;
-input we1;
-output reg[DWIDTH-1:0] q1;
+output reg[DWIDTH-1:0] q0;
 input clk;
 
 (* ram_style = "block" *)reg [DWIDTH-1:0] ram[MEM_SIZE-1:0];
@@ -35,22 +31,10 @@ begin
         if (we0) 
         begin 
             ram[addr0] <= d0; 
-        end 
-    end
-end
-
-
-always @(posedge clk)  
-begin 
-    if (ce1) 
-    begin
-        if (we1) 
-        begin 
-            ram[addr1] <= d1; 
-            q1 <= d1;
+            q0 <= d0;
         end 
         else 
-            q1 <= ram[addr1];
+            q0 <= ram[addr0];
     end
 end
 
@@ -66,11 +50,7 @@ module combiner_top_c_buffer(
     ce0,
     we0,
     d0,
-    address1,
-    ce1,
-    we1,
-    d1,
-    q1);
+    q0);
 
 parameter DataWidth = 32'd32;
 parameter AddressRange = 32'd768;
@@ -81,11 +61,7 @@ input[AddressWidth - 1:0] address0;
 input ce0;
 input we0;
 input[DataWidth - 1:0] d0;
-input[AddressWidth - 1:0] address1;
-input ce1;
-input we1;
-input[DataWidth - 1:0] d1;
-output[DataWidth - 1:0] q1;
+output[DataWidth - 1:0] q0;
 
 
 
@@ -96,11 +72,7 @@ combiner_top_c_buffer_ram combiner_top_c_buffer_ram_U(
     .ce0( ce0 ),
     .d0( d0 ),
     .we0( we0 ),
-    .addr1( address1 ),
-    .ce1( ce1 ),
-    .d1( d1 ),
-    .we1( we1 ),
-    .q1( q1 ));
+    .q0( q0 ));
 
 endmodule
 

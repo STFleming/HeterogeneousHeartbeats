@@ -283,6 +283,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_aut
 set_property src_info {type:XDC file:2 line:38 export:INPUT save:INPUT read:READ} [current_design]
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_40 || ORIG_REF_NAME==zynq_system_auto_pc_40}]
 set_property src_info {type:XDC file:2 line:62 export:INPUT save:INPUT read:READ} [current_design]
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_7 || ORIG_REF_NAME==zynq_system_auto_pc_7}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_22 || ORIG_REF_NAME==zynq_system_auto_pc_22}]
 set_property src_info {type:XDC file:2 line:65 export:INPUT save:INPUT read:READ} [current_design]
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_10 || ORIG_REF_NAME==zynq_system_auto_pc_10}]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_25 || ORIG_REF_NAME==zynq_system_auto_pc_25}]

@@ -32,10 +32,6 @@ extern "C" {
 #endif
 #include "xlloyds_kernel_top_hw.h"
 
-
-#define LLOYDS_KERNEL_ADDR 0x43C10000
-
-
 /**************************** Type Definitions ******************************/
 #ifdef __linux__
 typedef uint8_t u8;
@@ -84,7 +80,7 @@ int XLloyds_kernel_top_Initialize(XLloyds_kernel_top *InstancePtr, const char* I
 int XLloyds_kernel_top_Release(XLloyds_kernel_top *InstancePtr);
 #endif
 
-XLloyds_kernel_top setup_XLloyds_kernel_top(void);
+XLloyds_kernel_top setup_XLloyds_kernel_top(int phys_addr);
 
 void XLloyds_kernel_top_SetUpdate_points(XLloyds_kernel_top *InstancePtr, u32 Data);
 void XLloyds_kernel_top_Start(XLloyds_kernel_top *InstancePtr);

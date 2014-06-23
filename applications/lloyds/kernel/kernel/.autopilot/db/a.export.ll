@@ -149,21 +149,21 @@ define void @lloyds_kernel_top(i32 %block_address, i32* %master_portA, i32 %data
   %lhs_V = sext i32 %tmp_9 to i64
   %r_V = mul nsw i64 %lhs_V, %lhs_V
   call void (...)* @_ssdm_op_SpecFUCore(i64 %r_V, [1 x i8]* @p_str, [6 x i8]* @p_str2, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
-  %result = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %r_V, i32 4, i32 35)
+  %result = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %r_V, i32 6, i32 37)
   %empty_30 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str7, i32 %tmp_6) nounwind
   %tmp_7 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str7) nounwind
   %tmp_2_1 = sub nsw i32 %closest_centre_value_1, %data_points_buffer_1_value_load
   %lhs_V_1 = sext i32 %tmp_2_1 to i64
   %r_V_1 = mul nsw i64 %lhs_V_1, %lhs_V_1
   call void (...)* @_ssdm_op_SpecFUCore(i64 %r_V_1, [1 x i8]* @p_str, [6 x i8]* @p_str2, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
-  %result_1 = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %r_V_1, i32 4, i32 35)
+  %result_1 = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %r_V_1, i32 6, i32 37)
   %empty_31 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str7, i32 %tmp_7) nounwind
   %tmp_8 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str7) nounwind
   %tmp_2_2 = sub nsw i32 %closest_centre_value_2, %data_points_buffer_2_value_load
   %lhs_V_2 = sext i32 %tmp_2_2 to i64
   %r_V_2 = mul nsw i64 %lhs_V_2, %lhs_V_2
   call void (...)* @_ssdm_op_SpecFUCore(i64 %r_V_2, [1 x i8]* @p_str, [6 x i8]* @p_str2, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
-  %result_2 = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %r_V_2, i32 4, i32 35)
+  %result_2 = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %r_V_2, i32 6, i32 37)
   %empty_32 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str7, i32 %tmp_8) nounwind
   %tmp_10 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str4) nounwind
   %tmp3 = add nsw i32 %result_1, %result

@@ -1,6 +1,6 @@
 CC=gcc
 CPP=g++
-CFLAGS=-I$(INC_DIR) -lm -lrt
+CFLAGS=-I$(INC_DIR) -lm -lrt -O0
 
 LIBS=-lm -lrt
 
@@ -16,11 +16,16 @@ OPENCV_ARGS=$(shell pkg-config --cflags --libs opencv)
 $(BIN_DIR)/%.o: $(INC_DIR)/%.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-all: sw_access_test
+all: sw_access_test streaming_live_video
 
 sw_access_test: $(OBJS)
 	$(CPP) $(SRC_DIR)/$@.cpp -o $(BIN_DIR)/$@ $^ $(CFLAGS) $(OPENCV_ARGS)
 
+streaming_live_video: $(OBJS)
+	$(CPP) $(SRC_DIR)/$@.cpp -o $(BIN_DIR)/$@ $^ $(CFLAGS) $(OPENCV_ARGS)
+
+error_injection: $(OBJS)
+	$(CPP) $(SRC_DIR)/$@.cpp -o $(BIN_DIR)/$@ $^ $(CFLAGS)
 
 clean:
 	rm $(BIN_DIR)/*

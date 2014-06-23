@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'combiner_top'" level="0">
-<item name = "Date">Thu Jun 12 16:40:42 2014
+<item name = "Date">Sat Jun 21 11:32:30 2014
 </item>
 <item name = "Version">2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)</item>
 <item name = "Project">combiner</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">304, ?, 305, ?, none</column>
+<column name="">306, ?, 307, ?, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -40,7 +40,7 @@
 <column name=" + block_loop.1">54, 54, 8, 1, 1, 48, yes</column>
 <column name=" + block_loop.2">38, 38, 8, 1, 1, 32, yes</column>
 <column name=" + block_loop.3">48, 48, 3, 3, 4, 16, yes</column>
-<column name="- Loop 3">39, ?, 38, 2, 1, 1 ~ ?, yes</column>
+<column name="- Loop 3">41, ?, 39, 3, 3, 1 ~ ?, yes</column>
 <column name="- Loop 4">0, 1073741824, 3, 1, 1, 0 ~ 1073741823, yes</column>
 </table>
 </item>

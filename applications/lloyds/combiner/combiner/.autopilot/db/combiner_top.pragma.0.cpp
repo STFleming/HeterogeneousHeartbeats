@@ -41231,19 +41231,15 @@ void combiner_top( volatile bus_type *master_portA,
   _ssdm_RegionEnd("hls_label_0");}
  _ssdm_RegionEnd("init_loop");}
 
-
- uint lim = n*2;
- uint b2 = 0;
-
  // fetching n/B blocks
- block_loop: for (uint b=0; b<=lim; b+=16 /* burst length (in data points)*/*2) {_ssdm_op_SpecLoopName("block_loop");_ssdm_RegionBegin("block_loop");
+ block_loop: for (uint b=0; b<=n; b+=16 /* burst length (in data points)*/) {_ssdm_op_SpecLoopName("block_loop");_ssdm_RegionBegin("block_loop");
 
   bus_type i_buffer[16 /* burst length (in data points)*/*2];
   bus_type p_buffer[16 /* burst length (in data points)*/*3 /* data dimensionality*/];
 
-  memcpy(p_buffer, (const bus_type *)(master_portA + (data_points_in_addr/sizeof(bus_type) + b2)), 16 /* burst length (in data points)*/*3 /* data dimensionality*/*sizeof(bus_type));
-  b2 += 16 /* burst length (in data points)*/*3 /* data dimensionality*/;
-  memcpy(i_buffer, (const bus_type *)(master_portA + (kernel_info_in_addr/sizeof(bus_type) + b)), 16 /* burst length (in data points)*/*2*sizeof(bus_type));
+  memcpy(p_buffer, (const bus_type *)(master_portA + (data_points_in_addr/sizeof(bus_type)) + b*3 /* data dimensionality*/), 16 /* burst length (in data points)*/*3 /* data dimensionality*/*sizeof(bus_type));
+
+  memcpy(i_buffer, (const bus_type *)(master_portA + (kernel_info_in_addr/sizeof(bus_type)) + b*2), 16 /* burst length (in data points)*/*2*sizeof(bus_type));
 
   for (uint i=0; i<16 /* burst length (in data points)*/; i++) {_ssdm_RegionBegin("hls_label_1");
 #pragma HLS pipeline II=4
@@ -41251,11 +41247,15 @@ void combiner_top( volatile bus_type *master_portA,
    uint min_index = i_buffer[2*i+0];
    uint sum_sq = i_buffer[2*i+1];
 
+   //printf("%d %d\n",min_index, sum_sq);
+
    data_type u;
    for (uint d=0; d<3 /* data dimensionality*/; d++) {_ssdm_RegionBegin("hls_label_2");
 #pragma HLS unroll
  u.value[d] = p_buffer[3 /* data dimensionality*/*i+d];
+    //printf("%d ",u.value[d]);
    _ssdm_RegionEnd("hls_label_2");}
+   //printf("\n");
 
    uint prev_count = centre_buffer[min_index].count;
    uint prev_sum_sq = centre_buffer[min_index].sum_sq;
@@ -41264,7 +41264,7 @@ void combiner_top( volatile bus_type *master_portA,
 
    for (uint d=0; d<3 /* data dimensionality*/; d++) {_ssdm_RegionBegin("hls_label_3");
 #pragma HLS unroll
- prev_point.value[d] = centre_buffer[i].wgtCent.value[d];
+ prev_point.value[d] = centre_buffer[min_index].wgtCent.value[d];
    _ssdm_RegionEnd("hls_label_3");}
 
    centre_buffer[min_index].count = prev_count+1;
@@ -41284,7 +41284,7 @@ void combiner_top( volatile bus_type *master_portA,
  uint total_distortion = 0;
 
  for (uint i=0; i<=k; i++) {_ssdm_RegionBegin("hls_label_5");
-#pragma HLS pipeline II=1
+#pragma HLS pipeline II=3
 
   uint count = centre_buffer[i].count;
   if (count == 0)
@@ -41296,9 +41296,11 @@ void combiner_top( volatile bus_type *master_portA,
    coord_type coord = centre_buffer[i].wgtCent.value[d];
    //printf("%d ", coord);
 
-   bus_type div_result = coord / (bus_type)count;
+   coord_type i_count = (coord_type)count;
 
-   c_buffer[i*3 /* data dimensionality*/+d] = div_result;
+   coord_type div_result = coord / i_count;
+
+   c_buffer[i*3 /* data dimensionality*/+d] = (bus_type)div_result;
   }
   //printf("\n");
 
@@ -41310,11 +41312,11 @@ void combiner_top( volatile bus_type *master_portA,
  _ssdm_RegionEnd("hls_label_5");}
 
 
- memcpy((bus_type *)(master_portA + (centres_out_addr)/sizeof(bus_type)), c_buffer, (k+1)*3 /* data dimensionality*/*sizeof(bus_type));
+ memcpy((bus_type *)(master_portA + (centres_out_addr)/4), c_buffer, (k+1)*3 /* data dimensionality*/*sizeof(bus_type));
 
  *distortion_out = total_distortion;
 #pragma HLS RESOURCE core=AXI4LiteS variable=distortion_out metadata="-bus_bundle CONFIG_BUS"
-#147 "combiner/HLS/combiner/source/combiner_top.cpp"
+#149 "combiner/HLS/combiner/source/combiner_top.cpp"
 
 
 

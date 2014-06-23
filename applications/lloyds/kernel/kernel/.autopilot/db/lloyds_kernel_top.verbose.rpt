@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'lloyds_kernel_top'
 ================================================================
-* Date:           Thu Jun 12 16:46:31 2014
+* Date:           Sat Jun 21 11:37:57 2014
 
 * Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
 * Project:        kernel
@@ -792,7 +792,7 @@ ST_16: stg_148 [1/1] 0.00ns
 .preheader.i.i.preheader.0:15  call void (...)* @_ssdm_op_SpecFUCore(i64 %r_V, [1 x i8]* @p_str, [6 x i8]* @p_str2, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
 
 ST_16: result [1/1] 0.00ns
-.preheader.i.i.preheader.0:16  %result = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %r_V, i32 4, i32 35)
+.preheader.i.i.preheader.0:16  %result = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %r_V, i32 6, i32 37)
 
 ST_16: r_V_1 [1/6] 6.08ns
 .preheader.i.i.preheader.0:21  %r_V_1 = mul nsw i64 %lhs_V_1, %lhs_V_1
@@ -801,7 +801,7 @@ ST_16: stg_151 [1/1] 0.00ns
 .preheader.i.i.preheader.0:22  call void (...)* @_ssdm_op_SpecFUCore(i64 %r_V_1, [1 x i8]* @p_str, [6 x i8]* @p_str2, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
 
 ST_16: result_1 [1/1] 0.00ns
-.preheader.i.i.preheader.0:23  %result_1 = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %r_V_1, i32 4, i32 35)
+.preheader.i.i.preheader.0:23  %result_1 = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %r_V_1, i32 6, i32 37)
 
 ST_16: r_V_2 [1/6] 6.08ns
 .preheader.i.i.preheader.0:28  %r_V_2 = mul nsw i64 %lhs_V_2, %lhs_V_2
@@ -810,7 +810,7 @@ ST_16: stg_154 [1/1] 0.00ns
 .preheader.i.i.preheader.0:29  call void (...)* @_ssdm_op_SpecFUCore(i64 %r_V_2, [1 x i8]* @p_str, [6 x i8]* @p_str2, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
 
 ST_16: result_2 [1/1] 0.00ns
-.preheader.i.i.preheader.0:30  %result_2 = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %r_V_2, i32 4, i32 35)
+.preheader.i.i.preheader.0:30  %result_2 = call i32 @_ssdm_op_PartSelect.i32.i64.i32.i32(i64 %r_V_2, i32 6, i32 37)
 
 ST_16: tmp3 [1/1] 2.49ns
 .preheader.i.i.preheader.0:33  %tmp3 = add nsw i32 %result_1, %result
@@ -1003,15 +1003,15 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 1
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ block_address]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x1535cf80; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ master_portA]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=4; mode=0x153613b0; pingpong=0; private_global=0; IO mode=ap_bus:ce=0
-Port [ data_points_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x15361980; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ centres_in_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x71a5360; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ output_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x71a6490; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ update_points]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x71a8280; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ n]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0; dir=0; type=0; mode=0x71aa1e0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ k]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x71a5910; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ debug]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x71a7cd0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ block_address]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x1682c2c0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ master_portA]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=4; mode=0x1682c870; pingpong=0; private_global=0; IO mode=ap_bus:ce=0
+Port [ data_points_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x1682ce20; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ centres_in_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x1682d3d0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ output_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x1682d980; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ update_points]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x1682df30; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ n]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0; dir=0; type=0; mode=0x1682e4e0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ k]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x1682ea90; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ debug]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x1682f040; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------

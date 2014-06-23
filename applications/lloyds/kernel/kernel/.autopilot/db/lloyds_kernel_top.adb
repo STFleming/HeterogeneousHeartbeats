@@ -1284,7 +1284,7 @@
               <name/>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>160</lineNumber>
+              <lineNumber>161</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1299,7 +1299,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>160</second>
+                      <second>161</second>
                     </item>
                   </second>
                 </item>
@@ -1325,7 +1325,7 @@
               <name>closest_centre_value_2_s</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1340,7 +1340,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -1369,7 +1369,7 @@
               <name>closest_centre_value_1_s</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1384,7 +1384,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -1413,7 +1413,7 @@
               <name>closest_centre_value_0_s</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1428,7 +1428,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -1487,7 +1487,7 @@
               <name>exitcond</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>160</lineNumber>
+              <lineNumber>161</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1502,7 +1502,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>160</second>
+                      <second>161</second>
                     </item>
                   </second>
                 </item>
@@ -1529,7 +1529,7 @@
               <name>i_1</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>160</lineNumber>
+              <lineNumber>161</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1544,7 +1544,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>160</second>
+                      <second>161</second>
                     </item>
                   </second>
                 </item>
@@ -1571,7 +1571,7 @@
               <name/>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>160</lineNumber>
+              <lineNumber>161</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1586,7 +1586,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>160</second>
+                      <second>161</second>
                     </item>
                   </second>
                 </item>
@@ -1614,7 +1614,7 @@
               <name>tmp_1</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>162</lineNumber>
+              <lineNumber>163</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1629,7 +1629,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>162</second>
+                      <second>163</second>
                     </item>
                   </second>
                 </item>
@@ -1655,7 +1655,7 @@
               <name>data_points_buffer_0_value_addr_1</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>162</lineNumber>
+              <lineNumber>163</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1670,7 +1670,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>162</second>
+                      <second>163</second>
                     </item>
                   </second>
                 </item>
@@ -1698,7 +1698,7 @@
               <name>data_points_buffer_0_value_load_1</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>162</lineNumber>
+              <lineNumber>163</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1713,7 +1713,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>162</second>
+                      <second>163</second>
                     </item>
                   </second>
                 </item>
@@ -1739,7 +1739,7 @@
               <name>data_points_buffer_1_value_addr</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>162</lineNumber>
+              <lineNumber>163</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1754,7 +1754,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>162</second>
+                      <second>163</second>
                     </item>
                   </second>
                 </item>
@@ -1782,7 +1782,7 @@
               <name>data_points_buffer_1_value_load</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>162</lineNumber>
+              <lineNumber>163</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1797,7 +1797,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>162</second>
+                      <second>163</second>
                     </item>
                   </second>
                 </item>
@@ -1823,7 +1823,7 @@
               <name>data_points_buffer_2_value_addr</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>162</lineNumber>
+              <lineNumber>163</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1838,7 +1838,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>162</second>
+                      <second>163</second>
                     </item>
                   </second>
                 </item>
@@ -1866,7 +1866,7 @@
               <name>data_points_buffer_2_value_load</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>162</lineNumber>
+              <lineNumber>163</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1881,7 +1881,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>162</second>
+                      <second>163</second>
                     </item>
                   </second>
                 </item>
@@ -1907,7 +1907,7 @@
               <name/>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>171</lineNumber>
+              <lineNumber>181</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1922,7 +1922,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>171</second>
+                      <second>181</second>
                     </item>
                   </second>
                 </item>
@@ -1948,7 +1948,7 @@
               <name>closest_centre_value_2_1</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1963,7 +1963,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -1992,7 +1992,7 @@
               <name>closest_centre_value_1_1</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2007,7 +2007,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -2036,7 +2036,7 @@
               <name>closest_centre_value_0_1</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2051,7 +2051,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -2080,7 +2080,7 @@
               <name>p_s</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2095,7 +2095,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -2154,7 +2154,7 @@
               <name>sum_sq_out</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2169,7 +2169,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -2198,7 +2198,7 @@
               <name>min_dist</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2213,7 +2213,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -2242,7 +2242,7 @@
               <name>tmp_2</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>171</lineNumber>
+              <lineNumber>181</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2257,7 +2257,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>171</second>
+                      <second>181</second>
                     </item>
                   </second>
                 </item>
@@ -2283,7 +2283,7 @@
               <name>tmp_3</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>171</lineNumber>
+              <lineNumber>181</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2298,7 +2298,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>171</second>
+                      <second>181</second>
                     </item>
                   </second>
                 </item>
@@ -2325,7 +2325,7 @@
               <name>ii_V</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>171</lineNumber>
+              <lineNumber>181</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2340,7 +2340,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>171</second>
+                      <second>181</second>
                     </item>
                   </second>
                 </item>
@@ -2367,7 +2367,7 @@
               <name/>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>171</lineNumber>
+              <lineNumber>181</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2382,7 +2382,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>171</second>
+                      <second>181</second>
                     </item>
                   </second>
                 </item>
@@ -2410,7 +2410,7 @@
               <name>tmp_5</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>175</lineNumber>
+              <lineNumber>185</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2425,7 +2425,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>175</second>
+                      <second>185</second>
                     </item>
                   </second>
                 </item>
@@ -2451,7 +2451,7 @@
               <name>centres_buffer_0_value_addr</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>175</lineNumber>
+              <lineNumber>185</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2466,7 +2466,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>175</second>
+                      <second>185</second>
                     </item>
                   </second>
                 </item>
@@ -2494,7 +2494,7 @@
               <name>closest_centre_value_0</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>175</lineNumber>
+              <lineNumber>185</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2509,7 +2509,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>175</second>
+                      <second>185</second>
                     </item>
                   </second>
                 </item>
@@ -2535,7 +2535,7 @@
               <name>centres_buffer_1_value_addr</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>175</lineNumber>
+              <lineNumber>185</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2550,7 +2550,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>175</second>
+                      <second>185</second>
                     </item>
                   </second>
                 </item>
@@ -2578,7 +2578,7 @@
               <name>closest_centre_value_1</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>175</lineNumber>
+              <lineNumber>185</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2593,7 +2593,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>175</second>
+                      <second>185</second>
                     </item>
                   </second>
                 </item>
@@ -2619,7 +2619,7 @@
               <name>centres_buffer_2_value_addr</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>175</lineNumber>
+              <lineNumber>185</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2634,7 +2634,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>175</second>
+                      <second>185</second>
                     </item>
                   </second>
                 </item>
@@ -2662,7 +2662,7 @@
               <name>closest_centre_value_2</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>175</lineNumber>
+              <lineNumber>185</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2677,7 +2677,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>175</second>
+                      <second>185</second>
                     </item>
                   </second>
                 </item>
@@ -2718,7 +2718,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>180</second>
+                      <second>190</second>
                     </item>
                     <item>
                       <first>
@@ -2767,7 +2767,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>180</second>
+                      <second>190</second>
                     </item>
                     <item>
                       <first>
@@ -2822,7 +2822,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>180</second>
+                      <second>190</second>
                     </item>
                     <item>
                       <first>
@@ -2878,7 +2878,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>180</second>
+                      <second>190</second>
                     </item>
                     <item>
                       <first>
@@ -2936,7 +2936,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>180</second>
+                      <second>190</second>
                     </item>
                     <item>
                       <first>
@@ -2985,7 +2985,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>180</second>
+                      <second>190</second>
                     </item>
                     <item>
                       <first>
@@ -3040,7 +3040,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>180</second>
+                      <second>190</second>
                     </item>
                     <item>
                       <first>
@@ -3096,7 +3096,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>180</second>
+                      <second>190</second>
                     </item>
                     <item>
                       <first>
@@ -3154,7 +3154,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>180</second>
+                      <second>190</second>
                     </item>
                     <item>
                       <first>
@@ -3203,7 +3203,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>180</second>
+                      <second>190</second>
                     </item>
                     <item>
                       <first>
@@ -3258,7 +3258,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>180</second>
+                      <second>190</second>
                     </item>
                     <item>
                       <first>
@@ -3314,7 +3314,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>180</second>
+                      <second>190</second>
                     </item>
                     <item>
                       <first>
@@ -3372,7 +3372,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>180</second>
+                      <second>190</second>
                     </item>
                     <item>
                       <first>
@@ -3428,7 +3428,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>180</second>
+                      <second>190</second>
                     </item>
                     <item>
                       <first>
@@ -3469,7 +3469,7 @@
               <name>tmp_13</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3484,7 +3484,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -3511,7 +3511,7 @@
               <name>closest_centre_value_2_closest_centre_value_2_1</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3526,7 +3526,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -3554,7 +3554,7 @@
               <name>closest_centre_value_1_closest_centre_value_1_1</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3569,7 +3569,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -3597,7 +3597,7 @@
               <name>closest_centre_value_0_closest_centre_value_0_1</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3612,7 +3612,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -3640,7 +3640,7 @@
               <name>final_centre_index_V_s</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3655,7 +3655,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -3683,7 +3683,7 @@
               <name>tmp_dist_sum_sq_out</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3698,7 +3698,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -3726,7 +3726,7 @@
               <name>tmp_dist_min_dist</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3741,7 +3741,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -3769,7 +3769,7 @@
               <name>tmp_14</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>192</lineNumber>
+              <lineNumber>202</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3784,7 +3784,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>192</second>
+                      <second>202</second>
                     </item>
                   </second>
                 </item>
@@ -3811,7 +3811,7 @@
               <name/>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>192</lineNumber>
+              <lineNumber>202</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3826,7 +3826,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>192</second>
+                      <second>202</second>
                     </item>
                   </second>
                 </item>
@@ -3854,7 +3854,7 @@
               <name/>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>171</lineNumber>
+              <lineNumber>181</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3869,7 +3869,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>171</second>
+                      <second>181</second>
                     </item>
                   </second>
                 </item>
@@ -3895,7 +3895,7 @@
               <name>closest_centre_value_2_3</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3910,7 +3910,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -3939,7 +3939,7 @@
               <name>closest_centre_value_1_3</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3954,7 +3954,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -3983,7 +3983,7 @@
               <name>closest_centre_value_0_3</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3998,7 +3998,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -4027,7 +4027,7 @@
               <name>p_036_2</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4042,7 +4042,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -4071,7 +4071,7 @@
               <name>sum_sq_out_2</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>195</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4086,7 +4086,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>185</second>
+                      <second>195</second>
                     </item>
                   </second>
                 </item>
@@ -4115,7 +4115,7 @@
               <name>output_buffer_min_idx_V_addr</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>197</lineNumber>
+              <lineNumber>212</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4130,7 +4130,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>197</second>
+                      <second>212</second>
                     </item>
                   </second>
                 </item>
@@ -4158,7 +4158,7 @@
               <name/>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>197</lineNumber>
+              <lineNumber>212</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4173,7 +4173,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>197</second>
+                      <second>212</second>
                     </item>
                   </second>
                 </item>
@@ -4200,7 +4200,7 @@
               <name>output_buffer_sum_sq_addr</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>198</lineNumber>
+              <lineNumber>213</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4215,7 +4215,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>198</second>
+                      <second>213</second>
                     </item>
                   </second>
                 </item>
@@ -4243,7 +4243,7 @@
               <name/>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>198</lineNumber>
+              <lineNumber>213</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4258,7 +4258,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>198</second>
+                      <second>213</second>
                     </item>
                   </second>
                 </item>
@@ -4285,7 +4285,7 @@
               <name>output_points_buffer_0_value_addr</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>200</lineNumber>
+              <lineNumber>215</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4300,7 +4300,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>200</second>
+                      <second>215</second>
                     </item>
                   </second>
                 </item>
@@ -4328,7 +4328,7 @@
               <name/>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>200</lineNumber>
+              <lineNumber>215</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4343,7 +4343,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>200</second>
+                      <second>215</second>
                     </item>
                   </second>
                 </item>
@@ -4370,7 +4370,7 @@
               <name>output_points_buffer_1_value_addr</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>200</lineNumber>
+              <lineNumber>215</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4385,7 +4385,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>200</second>
+                      <second>215</second>
                     </item>
                   </second>
                 </item>
@@ -4413,7 +4413,7 @@
               <name/>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>200</lineNumber>
+              <lineNumber>215</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4428,7 +4428,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>200</second>
+                      <second>215</second>
                     </item>
                   </second>
                 </item>
@@ -4455,7 +4455,7 @@
               <name>output_points_buffer_2_value_addr</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>200</lineNumber>
+              <lineNumber>215</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4470,7 +4470,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>200</second>
+                      <second>215</second>
                     </item>
                   </second>
                 </item>
@@ -4498,7 +4498,7 @@
               <name/>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>200</lineNumber>
+              <lineNumber>215</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4513,7 +4513,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>200</second>
+                      <second>215</second>
                     </item>
                   </second>
                 </item>
@@ -4540,7 +4540,7 @@
               <name/>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>160</lineNumber>
+              <lineNumber>161</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4555,7 +4555,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>160</second>
+                      <second>161</second>
                     </item>
                   </second>
                 </item>
@@ -4581,7 +4581,7 @@
               <name>tmp_s</name>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>209</lineNumber>
+              <lineNumber>224</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4596,7 +4596,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>209</second>
+                      <second>224</second>
                     </item>
                   </second>
                 </item>
@@ -4623,7 +4623,7 @@
               <name/>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>209</lineNumber>
+              <lineNumber>224</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4638,7 +4638,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>209</second>
+                      <second>224</second>
                     </item>
                   </second>
                 </item>
@@ -4666,7 +4666,7 @@
               <name/>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>212</lineNumber>
+              <lineNumber>227</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4681,7 +4681,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>212</second>
+                      <second>227</second>
                     </item>
                   </second>
                 </item>
@@ -4744,7 +4744,7 @@
               <name/>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>210</lineNumber>
+              <lineNumber>225</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4759,7 +4759,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>210</second>
+                      <second>225</second>
                     </item>
                   </second>
                 </item>
@@ -4794,7 +4794,7 @@
               <name/>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>211</lineNumber>
+              <lineNumber>226</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4809,7 +4809,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>211</second>
+                      <second>226</second>
                     </item>
                   </second>
                 </item>
@@ -4835,7 +4835,7 @@
               <name/>
               <fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>217</lineNumber>
+              <lineNumber>233</lineNumber>
               <contextFuncName>lloyds_kernel_top</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -4850,7 +4850,7 @@
                         <first>kernel/HLS/source/lloyds_kernel_top.cpp</first>
                         <second>lloyds_kernel_top</second>
                       </first>
-                      <second>217</second>
+                      <second>233</second>
                     </item>
                   </second>
                 </item>
@@ -5191,7 +5191,7 @@
             <bitwidth>32</bitwidth>
           </Value>
           <const_type>0</const_type>
-          <content>4</content>
+          <content>6</content>
         </item>
         <item class_id_reference="16" object_id="_131">
           <Value>
@@ -5214,7 +5214,7 @@
             <bitwidth>32</bitwidth>
           </Value>
           <const_type>0</const_type>
-          <content>35</content>
+          <content>37</content>
         </item>
         <item class_id_reference="16" object_id="_132">
           <Value>

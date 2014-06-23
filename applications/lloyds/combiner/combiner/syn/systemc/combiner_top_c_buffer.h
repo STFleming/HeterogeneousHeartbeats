@@ -5,7 +5,7 @@
 // 
 // ==============================================================
 
-// Port list: {  0 2  }
+// Port list: {  2 3  }
 
 
 #ifndef _combiner_top_c_buffer_H_
@@ -186,21 +186,17 @@ SC_MODULE( combiner_top_c_buffer )
 
     sc_core::sc_in<sc_dt::sc_lv<AddressWidth> > address0;
     sc_core::sc_in<sc_dt::sc_logic> ce0;
+    sc_core::sc_out<sc_dt::sc_lv<DataWidth> > q0;
     sc_core::sc_in<sc_dt::sc_logic> we0;
     sc_core::sc_in<sc_dt::sc_lv<DataWidth> > d0;
 
-    sc_core::sc_in<sc_dt::sc_lv<AddressWidth> > address1;
-    sc_core::sc_in<sc_dt::sc_logic> ce1;
-    sc_core::sc_out<sc_dt::sc_lv<DataWidth> > q1;
-    sc_core::sc_in<sc_dt::sc_logic> we1;
-    sc_core::sc_in<sc_dt::sc_lv<DataWidth> > d1;
 
     sc_core::sc_in<sc_dt::sc_logic> reset;
     sc_core::sc_in_clk clk;
 
 
     SC_CTOR( combiner_top_c_buffer ) {
-        meminst = new combiner_top_c_buffer_core <1, 2, DataWidth, AddressWidth, AddressRange>("core_inst");
+        meminst = new combiner_top_c_buffer_core <1, 1, DataWidth, AddressWidth, AddressRange>("core_inst");
 
         meminst->d(mem_d);
         meminst->q(mem_q);
@@ -215,28 +211,19 @@ SC_MODULE( combiner_top_c_buffer )
         sensitive << mem_q;
 
         SC_METHOD(proc_mem_ra);
-        sensitive << address1;
+        sensitive << address0;
 
         SC_METHOD(proc_mem_ce);
-        sensitive << ce1;
+        sensitive << ce0;
 
         SC_METHOD(proc_mem_wa);
-        sensitive << address0 << address1;
+        sensitive << address0;
 
         SC_METHOD(proc_mem_we);
-        sensitive << we0 << we1;
+        sensitive << we0;
 
         SC_METHOD(proc_mem_d);
-        sensitive << d0 << d1;
-
-        SC_METHOD(proc_op);
-        sensitive << ce0 << ce1 << we0 << we1;
-
-        SC_METHOD(proc_addr);
-        sensitive << address0 << address1;
-
-        SC_METHOD(proc_check);
-        sensitive << clk.pos();
+        sensitive << d0;
 
     }
 
@@ -250,24 +237,16 @@ SC_MODULE( combiner_top_c_buffer )
     void proc_mem_wa();
     void proc_mem_we();
     void proc_mem_d();
-    void proc_op();
-    void proc_addr();
-    void proc_check();
 
 public:
     sc_core::sc_signal<sc_dt::sc_lv<1 * DataWidth> > mem_q;
-    sc_core::sc_signal<sc_dt::sc_lv<2> > mem_we;
-    sc_core::sc_signal<sc_dt::sc_lv<2 * DataWidth> > mem_d;
-    sc_core::sc_signal<sc_dt::sc_lv<2 * AddressWidth> > mem_wa;
+    sc_core::sc_signal<sc_dt::sc_lv<1> > mem_we;
+    sc_core::sc_signal<sc_dt::sc_lv<1 * DataWidth> > mem_d;
+    sc_core::sc_signal<sc_dt::sc_lv<1 * AddressWidth> > mem_wa;
     sc_core::sc_signal<sc_dt::sc_lv<1 * AddressWidth> > mem_ra;
     sc_core::sc_signal<sc_dt::sc_lv<1> > mem_ce;
 
-    combiner_top_c_buffer_core <1, 2, DataWidth, AddressWidth, AddressRange>* meminst;
-    sc_core::sc_signal<sc_dt::sc_logic> __re__[2];
-    sc_core::sc_signal<sc_dt::sc_logic> __we__[2];
-    sc_core::sc_signal<sc_dt::sc_lv<AddressWidth> > __addr__[2];
-
-
+    combiner_top_c_buffer_core <1, 1, DataWidth, AddressWidth, AddressRange>* meminst;
 };
 
 #endif //_combiner_top_c_buffer_H_

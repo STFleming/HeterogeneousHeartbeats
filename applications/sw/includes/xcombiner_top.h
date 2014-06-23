@@ -33,8 +33,6 @@ extern "C" {
 #include "xcombiner_top_hw.h"
 
 
-#define COMBINER_ADDR 0x43C00000
-
 /**************************** Type Definitions ******************************/
 #ifdef __linux__
 typedef uint8_t u8;
@@ -75,7 +73,7 @@ typedef struct {
 
 /************************** Function Prototypes *****************************/
 
-XCombiner_top setup_XCombiner_top(void);
+XCombiner_top setup_XCombiner_top(int phys_addr);
 
 #ifndef __linux__
 int XCombiner_top_Initialize(XCombiner_top *InstancePtr, u16 DeviceId);

@@ -414,8 +414,8 @@ struct lloyds_kernel_top : public sc_module {
     static const sc_lv<5> ap_const_lv5_10;
     static const sc_lv<5> ap_const_lv5_1;
     static const sc_lv<8> ap_const_lv8_1;
-    static const sc_lv<32> ap_const_lv32_4;
-    static const sc_lv<32> ap_const_lv32_23;
+    static const sc_lv<32> ap_const_lv32_6;
+    static const sc_lv<32> ap_const_lv32_25;
     // Thread declarations
     void thread_ap_clk_no_reset_();
     void thread_ap_done();

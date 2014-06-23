@@ -36,8 +36,8 @@ const sc_lv<32> lloyds_kernel_top::ap_const_lv32_1 = "1";
 const sc_lv<5> lloyds_kernel_top::ap_const_lv5_10 = "10000";
 const sc_lv<5> lloyds_kernel_top::ap_const_lv5_1 = "1";
 const sc_lv<8> lloyds_kernel_top::ap_const_lv8_1 = "1";
-const sc_lv<32> lloyds_kernel_top::ap_const_lv32_4 = "100";
-const sc_lv<32> lloyds_kernel_top::ap_const_lv32_23 = "100011";
+const sc_lv<32> lloyds_kernel_top::ap_const_lv32_6 = "110";
+const sc_lv<32> lloyds_kernel_top::ap_const_lv32_25 = "100101";
 
 lloyds_kernel_top::lloyds_kernel_top(sc_module_name name) : sc_module(name), mVcdFile(0) {
     data_points_buffer_0_value_U = new lloyds_kernel_top_data_points_buffer_0_value("data_points_buffer_0_value_U");
@@ -1805,7 +1805,7 @@ void lloyds_kernel_top::thread_ap_clk_no_reset_() {
         reg_566 = data_points_buffer_0_value_q0.read();
     }
     if ((esl_seteq<1,4,4>(ap_ST_pp0_stg0_fsm_8, ap_CS_fsm.read()) && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it7.read()) && esl_seteq<1,1,1>(ap_const_lv1_0, ap_reg_ppstg_tmp_3_reg_877_pp0_it6.read()))) {
-        result_2_reg_941 = grp_fu_681_p2.read().range(35, 4);
+        result_2_reg_941 = grp_fu_681_p2.read().range(37, 6);
         tmp3_reg_946 = tmp3_fu_717_p2.read();
     }
     if ((esl_seteq<1,4,4>(ap_ST_pp0_stg0_fsm_8, ap_CS_fsm.read()) && esl_seteq<1,1,1>(ap_const_logic_1, ap_reg_ppiten_pp0_it0.read()) && esl_seteq<1,1,1>(ap_const_lv1_0, tmp_3_fu_621_p2.read()))) {
@@ -2743,11 +2743,11 @@ void lloyds_kernel_top::thread_sum_sq_out_3_fu_723_p1() {
 }
 
 void lloyds_kernel_top::thread_tmp3_fu_717_p0() {
-    tmp3_fu_717_p0 = grp_fu_667_p2.read().range(35, 4);
+    tmp3_fu_717_p0 = grp_fu_667_p2.read().range(37, 6);
 }
 
 void lloyds_kernel_top::thread_tmp3_fu_717_p1() {
-    tmp3_fu_717_p1 = grp_fu_653_p2.read().range(35, 4);
+    tmp3_fu_717_p1 = grp_fu_653_p2.read().range(37, 6);
 }
 
 void lloyds_kernel_top::thread_tmp_11_fu_571_p2() {

@@ -2,5 +2,5 @@
 
 
 make
-cat ../output_bitstream/k_means_system.bit.bin > /dev/xdevcfg
+cat ~/temp/k_means_system.bit.bin > /dev/xdevcfg
 ./bin/sw_access_test

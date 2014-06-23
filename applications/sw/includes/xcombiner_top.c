@@ -24,13 +24,13 @@ int XCombiner_top_CfgInitialize(XCombiner_top *InstancePtr, XCombiner_top_Config
 }
 #endif
 
-XCombiner_top setup_XCombiner_top(void)
+XCombiner_top setup_XCombiner_top(int phys_addr)
 {
     void *mapped_base_combiner;
     int memfd_combiner;
 
     void *mapped_dev_base;
-    off_t dev_base = COMBINER_ADDR;
+    off_t dev_base = phys_addr;
 
     memfd_combiner = open("/dev/mem", O_RDWR | O_SYNC); //to open this the program needs to be run as root
         if (memfd_combiner == -1) {
@@ -55,6 +55,7 @@ XCombiner_top setup_XCombiner_top(void)
     device.Config_bus_BaseAddress = mapped_dev_base;
     device.IsReady = XIL_COMPONENT_IS_READY;
 
+    close(memfd_combiner);
     return device;
 
 }

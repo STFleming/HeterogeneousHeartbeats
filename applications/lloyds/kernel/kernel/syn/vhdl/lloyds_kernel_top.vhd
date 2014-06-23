@@ -65,8 +65,8 @@ architecture behav of lloyds_kernel_top is
     constant ap_const_lv5_10 : STD_LOGIC_VECTOR (4 downto 0) := "10000";
     constant ap_const_lv5_1 : STD_LOGIC_VECTOR (4 downto 0) := "00001";
     constant ap_const_lv8_1 : STD_LOGIC_VECTOR (7 downto 0) := "00000001";
-    constant ap_const_lv32_4 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000100";
-    constant ap_const_lv32_23 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000100011";
+    constant ap_const_lv32_6 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000110";
+    constant ap_const_lv32_25 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000100101";
 
     signal ap_CS_fsm : STD_LOGIC_VECTOR (3 downto 0) := "0000";
     signal block_address0data_reg : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
@@ -1683,7 +1683,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_ST_pp0_stg0_fsm_8 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it7) and (ap_const_lv1_0 = ap_reg_ppstg_tmp_3_reg_877_pp0_it6))) then
-                result_2_reg_941 <= grp_fu_681_p2(35 downto 4);
+                result_2_reg_941 <= grp_fu_681_p2(37 downto 6);
                 tmp3_reg_946 <= tmp3_fu_717_p2;
             end if;
         end if;
@@ -2513,8 +2513,8 @@ begin
 
     sum_sq_out_3_fu_723_p0 <= result_2_reg_941;
     sum_sq_out_3_fu_723_p1 <= tmp3_reg_946;
-    tmp3_fu_717_p0 <= grp_fu_667_p2(35 downto 4);
-    tmp3_fu_717_p1 <= grp_fu_653_p2(35 downto 4);
+    tmp3_fu_717_p0 <= grp_fu_667_p2(37 downto 6);
+    tmp3_fu_717_p1 <= grp_fu_653_p2(37 downto 6);
     tmp_11_fu_571_p2 <= std_logic_vector(shift_left(unsigned(block_address0data_reg),to_integer(unsigned('0' & ap_const_lv32_2(31-1 downto 0)))));
     tmp_13_fu_727_p2 <= "1" when (signed(sum_sq_out_3_fu_723_p2) < signed(min_dist_reg_449)) else "0";
     tmp_14_fu_639_p2 <= "1" when (tmp_2_fu_617_p1 = k0data_reg) else "0";

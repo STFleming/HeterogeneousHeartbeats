@@ -41163,7 +41163,6 @@ enum SsdmRegionTypes {
 
 
 
-
 typedef ap_uint<8 /* log2(K)*/> centre_index_type;
 
 // ... used for saturation
@@ -41190,18 +41189,20 @@ struct output_type {
 
 
 
-typedef ap_int<28 +4> mul_input_type;
+typedef ap_int<26 +6> mul_input_type;
+
 
 
 void lloyds_kernel_top( uint block_address,
        volatile bus_type *master_portA,
-//						 volatile bus_type *master_portB,
+       //volatile bus_type *master_portB,
        uint data_points_addr,
                          uint centres_in_addr,
                          uint output_addr,
                          uint update_points,
                          uint n,
-                         uint k
+                         uint k, //changed so that the AXI slave interface can be used.
+       uint *debug
                          );
 # 15 "kernel/HLS/source/lloyds_util.h" 2
 
@@ -41383,10 +41384,10 @@ void tree_cs(coord_type_ext *input_array,centre_index_type *index_array,coord_ty
 mul_input_type saturate_mul_input(coord_type val)
 {
 _ssdm_InlineSelf(0, "");
- if (val > (1<<(28 +4 -1))-1) {
-        val = (1<<(28 +4 -1))-1;
-    } else if (val < -1*(1<<(28 +4 -1))) {
-        val = -1*(1<<(28 +4 -1));
+ if (val > (1<<(26 +6 -1))-1) {
+        val = (1<<(26 +6 -1))-1;
+    } else if (val < -1*(1<<(26 +6 -1))) {
+        val = -1*(1<<(26 +6 -1));
     }
     return (mul_input_type)val;
 }
@@ -41399,13 +41400,13 @@ _ssdm_InlineSelf(0, "");
  mul_input_type tmp_op1 = saturate_mul_input(op1);
     mul_input_type tmp_op2 = saturate_mul_input(op2);
 
-    ap_int<2*(28 +4)> result_unscaled;
-    {_ssdm_RegionBegin("?MulnS_result_unscaled_Region_2536238");
-result_unscaled = tmp_op1*tmp_op2;_ssdm_RegionEnd("?MulnS_result_unscaled_Region_2536238");}
-_ssdm_op_SpecResource(&result_unscaled, "?MulnS_result_unscaled_Region_2536238", "", "MulnS", "", "", "", "");
+    ap_int<2*(26 +6)> result_unscaled;
+    {_ssdm_RegionBegin("?MulnS_result_unscaled_Region_2536313");
+result_unscaled = tmp_op1*tmp_op2;_ssdm_RegionEnd("?MulnS_result_unscaled_Region_2536313");}
+_ssdm_op_SpecResource(&result_unscaled, "?MulnS_result_unscaled_Region_2536313", "", "MulnS", "", "", "", "");
 
-    ap_int<2*(28 +4)> result_scaled;
-    result_scaled = result_unscaled >> 4;
+    ap_int<2*(26 +6)> result_scaled;
+    result_scaled = result_unscaled >> 6;
     coord_type result;
     result = result_scaled;
     return result;

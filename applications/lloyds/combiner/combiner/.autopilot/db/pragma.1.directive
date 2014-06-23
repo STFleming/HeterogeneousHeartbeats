@@ -85,19 +85,6 @@
 </directive>
 <directive functionLabel="" functionName="combiner_top" label="">
 <pragma name="INTERFACE">
-<option name="ap_bus" positionalBoolean="mode" value=""/>
-<option name="depth" value="0x200000"/>
-<option name="port" positionalBoolean="4" value="master_portB"/>
-</pragma>
-</directive>
-<directive functionLabel="" functionName="combiner_top" label="">
-<pragma name="RESOURCE">
-<option name="variable" positionalBoolean="4" value="master_portB"/>
-<option name="core" value="AXI4M"/>
-</pragma>
-</directive>
-<directive functionLabel="" functionName="combiner_top" label="">
-<pragma name="INTERFACE">
 <option name="ap_none" positionalBoolean="mode" value=""/>
 <option name="register" positionalBoolean="register" value=""/>
 <option name="port" positionalBoolean="4" value="data_points_in_addr"/>
@@ -211,7 +198,7 @@
 </directive>
 <directive functionLabel="" functionName="combiner_top" label="">
 <pragma name="PIPELINE">
-<option name="II" value="1"/>
+<option name="II" value="3"/>
 </pragma>
 </directive>
 </sourceFile>

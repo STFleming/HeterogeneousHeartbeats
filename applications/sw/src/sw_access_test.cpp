@@ -26,6 +26,12 @@
 #define KERNEL_INTERMEDIATE_ADDR 0x39000C00
 #define OUTPUT_FRAME_ADDR 0x39800C00
 
+#define LLOYDS_KERNEL_ADDR_1 0x43C10000
+#define LLOYDS_KERNEL_ADDR_2 0x43C20000
+
+#define COMBINER_ADDR_1 0x43C00000
+#define COMBINER_ADDR_2 0x43C30000
+
 #define IMG_SIZE 256
 #define K 4
 #define D 3
@@ -125,24 +131,24 @@ int main()
 	//HARDWAR SETUP-----------------------------------------------------------------------
 	//sets up the two IP cores, this needs to be turned into a function
 	//Setup the kernel core parameters
-	XLloyds_kernel_top kernel_dev = setup_XLloyds_kernel_top();
-	printf("KERNEL DEBUG PORT: %d\n", XLloyds_kernel_top_GetDebug(&kernel_dev));
-	XLloyds_kernel_top_SetBlock_address(&kernel_dev, 0);
-	XLloyds_kernel_top_SetData_points_addr(&kernel_dev, INPUT_FRAME_ADDR);
-	XLloyds_kernel_top_SetCentres_in_addr(&kernel_dev, CLUSTER_CENTER_ADDR);
-	XLloyds_kernel_top_SetOutput_addr(&kernel_dev, KERNEL_INTERMEDIATE_ADDR);
-	XLloyds_kernel_top_SetUpdate_points(&kernel_dev, 0); // setting this to 1 will write a new image frame at KERNEL_INTERMEDIATE_ADDR
-	XLloyds_kernel_top_SetN(&kernel_dev, (IMG_SIZE*IMG_SIZE)-1);
-	XLloyds_kernel_top_SetK(&kernel_dev, K-1);
+	XLloyds_kernel_top kernel_dev_1 = setup_XLloyds_kernel_top(LLOYDS_KERNEL_ADDR_1);
+	printf("KERNEL DEBUG PORT: %d\n", XLloyds_kernel_top_GetDebug(&kernel_dev_1));
+	XLloyds_kernel_top_SetBlock_address(&kernel_dev_1, 0);
+	XLloyds_kernel_top_SetData_points_addr(&kernel_dev_1, INPUT_FRAME_ADDR);
+	XLloyds_kernel_top_SetCentres_in_addr(&kernel_dev_1, CLUSTER_CENTER_ADDR);
+	XLloyds_kernel_top_SetOutput_addr(&kernel_dev_1, KERNEL_INTERMEDIATE_ADDR);
+	XLloyds_kernel_top_SetUpdate_points(&kernel_dev_1, 0); // setting this to 1 will write a new image frame at KERNEL_INTERMEDIATE_ADDR
+	XLloyds_kernel_top_SetN(&kernel_dev_1, (IMG_SIZE*IMG_SIZE)-1);
+	XLloyds_kernel_top_SetK(&kernel_dev_1, K-1);
 
 	//Setting the parameters of the combiner 	
 	
-	XCombiner_top combiner_dev = setup_XCombiner_top();
-	XCombiner_top_SetData_points_in_addr(&combiner_dev, INPUT_FRAME_ADDR);
-	XCombiner_top_SetKernel_info_in_addr(&combiner_dev, KERNEL_INTERMEDIATE_ADDR);
-	XCombiner_top_SetCentres_out_addr(&combiner_dev,CLUSTER_CENTER_ADDR);
-	XCombiner_top_SetN(&combiner_dev, (IMG_SIZE*IMG_SIZE)-1);
-	XCombiner_top_SetK(&combiner_dev, K-1);	
+	XCombiner_top combiner_dev_1 = setup_XCombiner_top(COMBINER_ADDR_1);
+	XCombiner_top_SetData_points_in_addr(&combiner_dev_1, INPUT_FRAME_ADDR);
+	XCombiner_top_SetKernel_info_in_addr(&combiner_dev_1, KERNEL_INTERMEDIATE_ADDR);
+	XCombiner_top_SetCentres_out_addr(&combiner_dev_1,CLUSTER_CENTER_ADDR);
+	XCombiner_top_SetN(&combiner_dev_1, (IMG_SIZE*IMG_SIZE)-1);
+	XCombiner_top_SetK(&combiner_dev_1, K-1);	
 	
 	//------------------------------------------------------------------------------------
 	printf("Cores have been fully initialised.\n");
@@ -156,10 +162,10 @@ int main()
 	
 		for(int block_address=0; block_address<IMG_SIZE*IMG_SIZE; block_address+=16)
 		{
-			XLloyds_kernel_top_SetBlock_address(&kernel_dev, block_address*sizeof(int)); //Reassign the kernel modules block address
-			XLloyds_kernel_top_Start(&kernel_dev); //Kick the Kernel block
-			while(XLloyds_kernel_top_IsDone(&kernel_dev) != 1) { } //block for the first hardware stage
-			printf("block: %d/%d \t%d\r", block_address, IMG_SIZE*IMG_SIZE, XLloyds_kernel_top_GetDebug(&kernel_dev));
+			XLloyds_kernel_top_SetBlock_address(&kernel_dev_1, block_address*sizeof(int)); //Reassign the kernel modules block address
+			XLloyds_kernel_top_Start(&kernel_dev_1); //Kick the Kernel block
+			while(XLloyds_kernel_top_IsDone(&kernel_dev_1) != 1) { } //block for the first hardware stage
+			printf("block: %d/%d \t%d\r", block_address, IMG_SIZE*IMG_SIZE, XLloyds_kernel_top_GetDebug(&kernel_dev_1));
 		}
 
 
@@ -173,11 +179,11 @@ int main()
 		*/
 	
 		printf("\nKernel core completed,\nStarting the combiner core.\n");
-		XCombiner_top_Start(&combiner_dev); //now that the kernel block has finished, kick the combiner
-		while(XCombiner_top_IsDone(&combiner_dev) != 1) { } //block for the second hardware stage
+		XCombiner_top_Start(&combiner_dev_1); //now that the kernel block has finished, kick the combiner
+		while(XCombiner_top_IsDone(&combiner_dev_1) != 1) { } //block for the second hardware stage
 
 		
-		uint new_distortion = XCombiner_top_GetDistortion_out(&combiner_dev);
+		uint new_distortion = XCombiner_top_GetDistortion_out(&combiner_dev_1);
 	
 		//One shot operation is now completed, attempting to print result
 		printf("\n");	
@@ -199,15 +205,15 @@ int main()
 	}
 
         //start the kernel for final output
-	XLloyds_kernel_top_SetUpdate_points(&kernel_dev, 1); // setting this to 1 will write a new image frame at KERNEL_INTERMEDIATE_ADDR
+	XLloyds_kernel_top_SetUpdate_points(&kernel_dev_1, 1); // setting this to 1 will write a new image frame at KERNEL_INTERMEDIATE_ADDR
         printf("Started the kernel core for final output\n");
         //i=0; //incrementor to keep track of the block address
         for(int block_address=0; block_address<IMG_SIZE*IMG_SIZE; block_address+=16)
         {
-                XLloyds_kernel_top_SetBlock_address(&kernel_dev, block_address*sizeof(int)); //Reassign the kernel modules block address
-                XLloyds_kernel_top_Start(&kernel_dev); //Kick the Kernel block
-                while(XLloyds_kernel_top_IsDone(&kernel_dev) != 1) { } //block for the first hardware stage
-                printf("block: %d/%d \t%d\r", block_address, IMG_SIZE*IMG_SIZE, XLloyds_kernel_top_GetDebug(&kernel_dev));
+                XLloyds_kernel_top_SetBlock_address(&kernel_dev_1, block_address*sizeof(int)); //Reassign the kernel modules block address
+                XLloyds_kernel_top_Start(&kernel_dev_1); //Kick the Kernel block
+                while(XLloyds_kernel_top_IsDone(&kernel_dev_1) != 1) { } //block for the first hardware stage
+                printf("block: %d/%d \t%d\r", block_address, IMG_SIZE*IMG_SIZE, XLloyds_kernel_top_GetDebug(&kernel_dev_1));
         }
 
 	printf("Displaying output frame\n");

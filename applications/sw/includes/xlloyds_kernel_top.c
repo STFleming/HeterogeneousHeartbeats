@@ -24,13 +24,13 @@ int XLloyds_kernel_top_CfgInitialize(XLloyds_kernel_top *InstancePtr, XLloyds_ke
 }
 #endif
 
-XLloyds_kernel_top setup_XLloyds_kernel_top(void)
+XLloyds_kernel_top setup_XLloyds_kernel_top(int phys_addr)
 {
     void *mapped_base_lloyds_kernel;
     int memfd_lloyds_kernel;
 
     void *mapped_dev_base;
-    off_t dev_base = LLOYDS_KERNEL_ADDR;
+    off_t dev_base = phys_addr;
 
     memfd_lloyds_kernel = open("/dev/mem", O_RDWR | O_SYNC); //to open this the program needs to be run as root
         if (memfd_lloyds_kernel == -1) {
@@ -55,6 +55,8 @@ XLloyds_kernel_top setup_XLloyds_kernel_top(void)
 
     device.Config_bus_BaseAddress = mapped_dev_base;
     device.IsReady = XIL_COMPONENT_IS_READY;  
+	
+    close(memfd_lloyds_kernel);
   
     return device;
 

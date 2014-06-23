@@ -402,8 +402,8 @@ parameter    ap_const_lv32_1 = 32'b1;
 parameter    ap_const_lv5_10 = 5'b10000;
 parameter    ap_const_lv5_1 = 5'b1;
 parameter    ap_const_lv8_1 = 8'b1;
-parameter    ap_const_lv32_4 = 32'b100;
-parameter    ap_const_lv32_23 = 32'b100011;
+parameter    ap_const_lv32_6 = 32'b110;
+parameter    ap_const_lv32_25 = 32'b100101;
 parameter    ap_true = 1'b1;
 
 
@@ -1306,7 +1306,7 @@ end
 always @(posedge ap_clk)
 begin
     if (((ap_ST_pp0_stg0_fsm_8 == ap_CS_fsm) & (ap_const_logic_1 == ap_reg_ppiten_pp0_it7) & (ap_const_lv1_0 == ap_reg_ppstg_tmp_3_reg_877_pp0_it6))) begin
-        result_2_reg_941 <= {{grp_fu_681_p2[ap_const_lv32_23 : ap_const_lv32_4]}};
+        result_2_reg_941 <= {{grp_fu_681_p2[ap_const_lv32_25 : ap_const_lv32_6]}};
         tmp3_reg_946 <= tmp3_fu_717_p2;
     end
 end
@@ -2059,8 +2059,8 @@ assign output_points_buffer_1_value_d0 = closest_centre_value_1_3_reg_473;
 assign output_points_buffer_2_value_d0 = closest_centre_value_2_3_reg_460;
 assign sum_sq_out_3_fu_723_p0 = result_2_reg_941;
 assign sum_sq_out_3_fu_723_p1 = tmp3_reg_946;
-assign tmp3_fu_717_p0 = {{grp_fu_667_p2[ap_const_lv32_23 : ap_const_lv32_4]}};
-assign tmp3_fu_717_p1 = {{grp_fu_653_p2[ap_const_lv32_23 : ap_const_lv32_4]}};
+assign tmp3_fu_717_p0 = {{grp_fu_667_p2[ap_const_lv32_25 : ap_const_lv32_6]}};
+assign tmp3_fu_717_p1 = {{grp_fu_653_p2[ap_const_lv32_25 : ap_const_lv32_6]}};
 assign tmp_11_fu_571_p2 = block_address0data_reg << ap_const_lv32_2;
 assign tmp_13_fu_727_p2 = ($signed(sum_sq_out_3_fu_723_p2) < $signed(min_dist_reg_449)? 1'b1: 1'b0);
 assign tmp_14_fu_639_p2 = (tmp_2_fu_617_p1 == k0data_reg? 1'b1: 1'b0);

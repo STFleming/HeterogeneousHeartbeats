@@ -41155,7 +41155,6 @@ enum SsdmRegionTypes {
 
 
 
-
 typedef ap_uint<8 /* log2(K)*/> centre_index_type;
 
 // ... used for saturation
@@ -41182,18 +41181,20 @@ struct output_type {
 
 
 
-typedef ap_int<28 +4> mul_input_type;
+typedef ap_int<26 +6> mul_input_type;
+
 
 
 void lloyds_kernel_top( uint block_address,
        volatile bus_type *master_portA,
-//						 volatile bus_type *master_portB,
+       //volatile bus_type *master_portB,
        uint data_points_addr,
                          uint centres_in_addr,
                          uint output_addr,
                          uint update_points,
                          uint n,
-                         uint k
+                         uint k, //changed so that the AXI slave interface can be used.
+       uint *debug
                          );
 #12 "kernel/HLS/source/lloyds_kernel_top.cpp" 2
 #1 "kernel/HLS/source/lloyds_util.h" 1
@@ -41382,10 +41383,20 @@ void lloyds_kernel_top( uint block_address,
 	*/
 
 
+
     // iterate over all data points
     process_data_points_loop: for (uint i=0; i<16 /* burst length (in data points)*/; i++) {_ssdm_op_SpecLoopName("process_data_points_loop");_ssdm_RegionBegin("process_data_points_loop");
 
      data_type u = data_points_buffer[i];
+
+     /*
+		#ifndef __SYNTHESIS
+			for (uint d=0; d<D; d++) {
+				printf("%d ", u.value[d]);
+			}
+			printf("\n");
+		#endif
+		*/
 
         centre_index_type final_centre_index = 0;
         coord_type sum_sq_out = (1<<(32 -1))-1;
@@ -41419,6 +41430,11 @@ void lloyds_kernel_top( uint block_address,
     break;
    }
   _ssdm_RegionEnd("minsearch_loop");}
+        /*
+		#ifndef __SYNTHESIS__
+        	printf("%d %d\n",final_centre_index.VAL, sum_sq_out);
+		#endif
+		*/
 
         output_buffer[i].min_idx = final_centre_index;
         output_buffer[i].sum_sq = sum_sq_out;
@@ -41437,6 +41453,7 @@ void lloyds_kernel_top( uint block_address,
     } else {
      store_output_points_buffer(output_addr, output_points_buffer, data_points_block_address, master_portA);
     }
+
 
 
 

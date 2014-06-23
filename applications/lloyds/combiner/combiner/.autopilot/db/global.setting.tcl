@@ -45,7 +45,7 @@ set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set PlatformFiles {{DefaultPlatform {xilinx/zynq/zynq xilinx/zynq/zynq_fpv6}}}
 set DefaultPlatform "DefaultPlatform"
-set TBTVFileNotFound "../../HLS/combiner/simulation/combiner_tb.cpp ../../../test_data/data_points.mat ../../../test_data/data_points_N128_K4_D3_s0.75.mat ../../../test_data/intermediate.mat ../../HLS/combiner/simulation/tb_io.cpp ../../HLS/combiner/simulation/tb_io.h"
+set TBTVFileNotFound ""
 set AppFile "../vivado_hls.app"
 set ApsFile "combiner.aps"
 set AvePath "../.."
