@@ -55,11 +55,16 @@ int main()
 {
 	printf("----------------------------\nProcessing Live Video\n----------------------------\n\n");
 
+	system("cat ./k_means_system.bit.bin > /dev/xdevcfg"); //Program the FPGA fabric
+
 	//Define the Hardware output container
 	cv::Mat hw_outputFrame1(cv::Size(IMG_SIZE,IMG_SIZE),CV_32SC3); //Setup the output image contained and give it a size
 	hw_outputFrame1.data = (uchar *) setup_reserved_mem(KERNEL_INTERMEDIATE_ADDR_1);
 	cv::Mat hw_outputFrame2(cv::Size(IMG_SIZE,IMG_SIZE),CV_32SC3);
 	hw_outputFrame2.data = (uchar *) setup_reserved_mem(KERNEL_INTERMEDIATE_ADDR_2);
+
+        int *input_frame1 = (int *) setup_reserved_mem(INPUT_FRAME_ADDR);
+        int *input_frame2 = (int *) setup_reserved_mem(INPUT_FRAME_ADDR);
 
 	int *centres_pointer1 = (int *) setup_reserved_mem(CLUSTER_CENTER_ADDR_1);
 	int *centres_pointer2 = (int *) setup_reserved_mem(CLUSTER_CENTER_ADDR_2);
@@ -172,7 +177,7 @@ int main()
                         	XLloyds_kernel_top_Start(&kernel_dev_1); //Kick the Kernel blocks
 				XLloyds_kernel_top_Start(&kernel_dev_2);
 	                        while(!((XLloyds_kernel_top_IsIdle(&kernel_dev_1) == 1) 
-					&& (XLloyds_kernel_top_IsIdle(&kernel_dev_2) == 1))) { }
+					&& (XLloyds_kernel_top_IsIdle(&kernel_dev_2) == 1))) {}
 			                           
 				//Naive detection and recovery (No task migration strategy		
 				error_count = cmp_mem_segment( (output_frame1 + block_address), (output_frame2+block_address), 16);
@@ -180,8 +185,15 @@ int main()
 					printf("%d FAULTS DETECTED @ block %x\n", error_count, block_address);
 					system("cat ./k_means_system.bit.bin > /dev/xdevcfg");
 					setup_kmeans_hardware(&kernel_dev_1, &kernel_dev_2, &combiner_dev_1, &combiner_dev_2);
+					// recalc this block
+	                                XLloyds_kernel_top_SetBlock_address(&kernel_dev_1, block_address*sizeof(int));
+        	                        XLloyds_kernel_top_SetBlock_address(&kernel_dev_2, block_address*sizeof(int));
+                	                XLloyds_kernel_top_Start(&kernel_dev_1); //Kick the Kernel blocks
+                        	        XLloyds_kernel_top_Start(&kernel_dev_2);
+                                	while(!((XLloyds_kernel_top_IsIdle(&kernel_dev_1) == 1)
+                                        	&& (XLloyds_kernel_top_IsIdle(&kernel_dev_2) == 1))) {}
+
 				}
-				block_address-=16; //go back to the start of the block
     			}
 	               
 	                XCombiner_top_Start(&combiner_dev_1); //now that the kernel block has finished, kick the combiner
@@ -217,15 +229,22 @@ int main()
 	                        while(!((XLloyds_kernel_top_IsIdle(&kernel_dev_1) == 1) 
 					&& (XLloyds_kernel_top_IsIdle(&kernel_dev_2) == 1))) { }
 
-				//Naive detection and recovery (No task migration strategy		
-				error_count = cmp_mem_segment( (output_frame1 + block_address), (output_frame2+block_address), 16);
+				/*
+				//Naive detection and recovery (No task migration strategy					
+				error_count = cmp_mem_segment( (input_frame1 + block_address), (input_frame2+block_address), 16);
                                 if(error_count > 0) 
 					{ printf("%d FAULTS DETECTED @ block %x\n", error_count, block_address);
 					  system("cat ./k_means_system.bit.bin > /dev/xdevcfg");
-					  setup_kmeans_hardware(&kernel_dev_1, &kernel_dev_2, &combiner_dev_1, &combiner_dev_2);
+					  setup_kmeans_hardware(&kernel_dev_1, &kernel_dev_2, &combiner_dev_1, &combiner_dev_2);				
+				          // recalc this block
+	                                  XLloyds_kernel_top_SetBlock_address(&kernel_dev_1, block_address*sizeof(int));
+          		                  XLloyds_kernel_top_SetBlock_address(&kernel_dev_2, block_address*sizeof(int));
+                         	          XLloyds_kernel_top_Start(&kernel_dev_1); //Kick the Kernel blocks
+ 	                                  XLloyds_kernel_top_Start(&kernel_dev_2);
+          		                  while(!((XLloyds_kernel_top_IsIdle(&kernel_dev_1) == 1)
+                         	               && (XLloyds_kernel_top_IsIdle(&kernel_dev_2) == 1))) { }
 					}
-				block_address-=16; //go back to the start of the block
-
+				*/
         	}        
 
 

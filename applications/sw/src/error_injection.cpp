@@ -48,7 +48,7 @@ int main()
 		{
 			random_block = (rand() % 255)*(BLOCK_ADDR_RANGE);
 			//Just corrupting one of the output images to start with
-			*(image_one + random_block) = 9999; //assign it a value that is impossible
+			*(image_one + random_block) = 0; //assign it a value that is impossible
 		}	
 	
 
