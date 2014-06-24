@@ -36,7 +36,7 @@
 #define COMBINER_ADDR_1 0x43C00000
 #define COMBINER_ADDR_2 0x43C30000
 
-#define CURRENT_BLOCK 0x3F000000
+#define CURRENT_BLOCK 0x39F00000
 
 #define IMG_SIZE 256
 #define K 16
@@ -433,7 +433,7 @@ void *setup_current_block_notify(uint input_address)
     // get the address of the device in user space which will be an offset from the base 
     // that was mapped as memory is mapped at the start of a page 
 
-    mapped_dev_base = mapped_base_reserved_mem + (dev_base & MAP_MASK);
+    mapped_dev_base = mapped_base_reserved_mem + (dev_base & MAP_MASK_BLOCK);
     return mapped_dev_base;
 }
 
