@@ -16,7 +16,7 @@ OPENCV_ARGS=$(shell pkg-config --cflags --libs opencv)
 $(BIN_DIR)/%.o: $(INC_DIR)/%.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-all: sw_access_test streaming_live_video
+all: sw_access_test streaming_live_video error_injection naive_availability_experiment
 
 sw_access_test: $(OBJS)
 	$(CPP) $(SRC_DIR)/$@.cpp -o $(BIN_DIR)/$@ $^ $(CFLAGS) $(OPENCV_ARGS)
@@ -26,6 +26,9 @@ streaming_live_video: $(OBJS)
 
 error_injection: $(OBJS)
 	$(CPP) $(SRC_DIR)/$@.cpp -o $(BIN_DIR)/$@ $^ $(CFLAGS)
+
+naive_availability_experiment: $(OBJS)
+	$(CPP) $(SRC_DIR)/$@.cpp -o $(BIN_DIR)/$@ $^ $(CFLAGS) $(OPENCV_ARGS)
 
 clean:
 	rm $(BIN_DIR)/*
