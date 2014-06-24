@@ -36,6 +36,8 @@
 #define COMBINER_ADDR_1 0x43C00000
 #define COMBINER_ADDR_2 0x43C30000
 
+#define CURRENT_BLOCK 0x3F000000
+
 #define IMG_SIZE 256
 #define K 16
 #define D 3
@@ -44,11 +46,14 @@
 #define MAP_SIZE 40960000UL
 #define MAP_MASK (MAP_SIZE - 1)
 
+#define MAP_SIZE_BLOCK 4000UL
+#define MAP_MASK_BLOCK (MAP_SIZE_BLOCK - 1)
+
 void *setup_reserved_mem(uint input_address);
 int cmp_mem_segment(int *address_1, int *address_2, int block_size);
 void flush_caches();
 void setup_kmeans_hardware(XLloyds_kernel_top *kernel_dev_1, XLloyds_kernel_top *kernel_dev_2, XCombiner_top* combiner_dev_1, XCombiner_top* combiner_dev_2);
-
+void *setup_current_block_notify(uint input_address);
 
 
 int main()
@@ -103,6 +108,8 @@ int main()
 	//Code for timing the operation
 	clock_t uptime_start, uptime_end, downtime_start, downtime_end;
 	double time_spent_up, time_spent_down, availability;
+	//For signalling to the error injection code what region of the memory that we are operating in
+ 	int * curr_block = (int *)setup_current_block_notify(CURRENT_BLOCK);	
 
 //----------------------------------Power Monitoring-----------------------------------
         float voltage;
@@ -172,6 +179,7 @@ int main()
 
 	                for(int block_address=0; block_address<img_height*img_width; block_address+=16)
         	        {
+				*curr_block = block_address;
                 	        XLloyds_kernel_top_SetBlock_address(&kernel_dev_1, block_address*sizeof(int));
 				XLloyds_kernel_top_SetBlock_address(&kernel_dev_2, block_address*sizeof(int));  
                         	XLloyds_kernel_top_Start(&kernel_dev_1); //Kick the Kernel blocks
@@ -385,6 +393,37 @@ void * setup_reserved_mem(uint input_address) //returns a pointer in userspace t
     // be at the start of the page.
 
     mapped_base_reserved_mem = mmap(0, MAP_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, memfd_reserved_mem, dev_base & ~MAP_MASK);
+        if (mapped_base_reserved_mem == (void *) -1) {
+        printf("Can't map the memory to user space.\n");
+        exit(0);
+    }
+     //printf("Memory mapped at address %p.\n", mapped_base_reserved_mem); 
+
+    // get the address of the device in user space which will be an offset from the base 
+    // that was mapped as memory is mapped at the start of a page 
+
+    mapped_dev_base = mapped_base_reserved_mem + (dev_base & MAP_MASK);
+    return mapped_dev_base;
+}
+
+void *setup_current_block_notify(uint input_address)
+{
+    void *mapped_base_reserved_mem;
+    int memfd_reserved_mem;
+    void *mapped_dev_base;
+    off_t dev_base = input_address;
+
+    memfd_reserved_mem = open("/dev/mem", O_RDWR | O_SYNC); //to open this the program needs to be run as root
+        if (memfd_reserved_mem == -1) {
+        printf("Can't open /dev/mem.\n");
+        exit(0);
+    }
+    //printf("/dev/mem opened.\n"); 
+
+    // Map one page of memory into user space such that the device is in that page, but it may not
+    // be at the start of the page.
+
+    mapped_base_reserved_mem = mmap(0, MAP_SIZE_BLOCK, PROT_READ | PROT_WRITE, MAP_SHARED, memfd_reserved_mem, dev_base & ~MAP_MASK_BLOCK);
         if (mapped_base_reserved_mem == (void *) -1) {
         printf("Can't map the memory to user space.\n");
         exit(0);
