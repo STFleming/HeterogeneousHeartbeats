@@ -29,18 +29,18 @@ using namespace std;
 void *setup_reserved_mem(uint input_address);
 void *setup_current_block_notify(uint input_address);
 
-int main()
+int main(int argc, char *argv[])
 {
 	srand(time(NULL)); //seed the random number generator for determining error location
 	int * image_one = (int*)setup_reserved_mem(KERNEL_INTERMEDIATE_ADDR_1);
 	int * image_two = (int*)setup_reserved_mem(KERNEL_INTERMEDIATE_ADDR_2);
-	string input = " ";
+	string input = argv[1];
 	int error_amount = 0;	
 	int i, block_address;
 
 	int *curr_block = (int *) setup_current_block_notify(CURRENT_BLOCK);
-	cout << "Please enter the rate at which you would like errors to be randomly generated (ms):" << endl;
-	getline(cin, input);
+	//cout << "Please enter the rate at which you would like errors to be randomly generated (ms):" << endl;
+	//getline(cin, input);
 	stringstream conversionStream(input);
 	if(!(conversionStream >> error_amount)) 
 	{cout << "error" <<endl; return -1;}
@@ -80,7 +80,7 @@ int main()
 		
 		usleep(rand() % error_amount);
 		*curr_block = 37707;
-		printf("Error injected.\n"); 		
+	//	printf("Error injected.\n"); 		
 	}
 	
 	
