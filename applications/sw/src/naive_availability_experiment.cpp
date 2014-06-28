@@ -38,6 +38,8 @@
 
 #define CURRENT_BLOCK 0x39F00000
 
+#define HW_TIMER_ADDR 0x43C40000
+
 #define IMG_SIZE 256
 #define K 16
 #define D 3
@@ -50,11 +52,12 @@
 #define MAP_MASK_BLOCK (MAP_SIZE_BLOCK - 1)
 
 void *setup_reserved_mem(uint input_address);
-int cmp_mem_segment(int *address_1, int *address_2, int block_size);
-void flush_caches();
+int cmp_mem_segment(int *address_1, int *address_2, int block_size, int*err_signal);
+void flush_caches(uint phys_addr);
 void setup_kmeans_hardware(XLloyds_kernel_top *kernel_dev_1, XLloyds_kernel_top *kernel_dev_2, XCombiner_top* combiner_dev_1, XCombiner_top* combiner_dev_2);
 void *setup_current_block_notify(uint input_address);
-
+void reset_hw_timer(uint * dev_ptr);
+uint get_hw_time(uint * dev_ptr);
 
 int main()
 {
@@ -106,10 +109,14 @@ int main()
 	uint frame_counter = 0;
 
 	//Code for timing the operation
-	clock_t uptime_start, uptime_end, downtime_start, downtime_end;
-	double time_spent_up, time_spent_down, availability;
+	struct timespec gettime_now;
+	uint *hw_timer_dev = (uint *)setup_current_block_notify(HW_TIMER_ADDR);
+	uint uptime_start, uptime_end, downtime_start, downtime_end;
+	uint time_spent_up = 0, time_spent_down = 0;
+	double availability;
 	//For signalling to the error injection code what region of the memory that we are operating in
  	int * curr_block = (int *)setup_current_block_notify(CURRENT_BLOCK);	
+
 
 //----------------------------------Power Monitoring-----------------------------------
         float voltage;
@@ -147,8 +154,13 @@ int main()
 	 	{
 			printf("Error reading Frame\n");
 		}
+	 	
+		//Reset the hardware timer / to avoid overflow
+		//reset_hw_timer(hw_timer_dev);
 		
-		uptime_start = clock();
+		clock_gettime(CLOCK_MONOTONIC, &gettime_now);
+		uptime_start = gettime_now.tv_nsec;
+
 		//Resizing the input image
 		cv::resize(inFrame, inFrame, size); //Changing the image to size so that it complies with the HW modules
 		inFrame.convertTo(inFrame, CV_32SC3); //Convert the inFrame to the format that is recognised by the hardware
@@ -186,13 +198,14 @@ int main()
 				XLloyds_kernel_top_Start(&kernel_dev_2);
 	                        while(!((XLloyds_kernel_top_IsIdle(&kernel_dev_1) == 1) 
 					&& (XLloyds_kernel_top_IsIdle(&kernel_dev_2) == 1))) {}
-			                           
 				//Naive detection and recovery (No task migration strategy		
-				error_count = cmp_mem_segment( (output_frame1 + block_address), (output_frame2+block_address), 16);
+				error_count = cmp_mem_segment( (output_frame1 + block_address), (output_frame2+block_address), 16, curr_block);
 		
-				downtime_start = clock();		
-                                if(error_count > 0) {
-					printf("%d FAULTS DETECTED @ block %x\n", error_count, block_address);
+                                //while(error_count > 0) { //removed due to error locking bug
+				while(error_count > 0){
+					clock_gettime(CLOCK_MONOTONIC, &gettime_now);
+					downtime_start = gettime_now.tv_nsec;		
+					printf("%d FAULTS DETECTED @ block %x\n", error_count, (block_address));
 					system("cat ./k_means_system.bit.bin > /dev/xdevcfg");
 					setup_kmeans_hardware(&kernel_dev_1, &kernel_dev_2, &combiner_dev_1, &combiner_dev_2);
 					// recalc this block
@@ -202,16 +215,17 @@ int main()
                         	        XLloyds_kernel_top_Start(&kernel_dev_2);
                                 	while(!((XLloyds_kernel_top_IsIdle(&kernel_dev_1) == 1)
                                         	&& (XLloyds_kernel_top_IsIdle(&kernel_dev_2) == 1))) {}
-
+					error_count = cmp_mem_segment( (output_frame1 + block_address), (output_frame2+block_address), 16, curr_block);
+					clock_gettime(CLOCK_MONOTONIC, &gettime_now);
+					downtime_end = gettime_now.tv_nsec;
+					time_spent_down += (downtime_end - downtime_start);
 				}
-				downtime_end = clock();
     			}
-	               
+	              	*curr_block = -1; //Indicate that we are between blocks and that an error should not be injected 
 	                XCombiner_top_Start(&combiner_dev_1); //now that the kernel block has finished, kick the combiner
 			XCombiner_top_Start(&combiner_dev_2); 
         	        while(!((XCombiner_top_IsIdle(&combiner_dev_1) == 1) && (XCombiner_top_IsIdle(&combiner_dev_2) == 1)))
 			{ } 
-			//while(XCombiner_top_IsDone(&combiner_dev_1) != 1) {}
 
 	                new_distortion = XCombiner_top_GetDistortion_out(&combiner_dev_1);
 
@@ -242,20 +256,23 @@ int main()
 
         	}        
 
-		uptime_end = clock();
+		clock_gettime(CLOCK_MONOTONIC, &gettime_now);
+		uptime_end = gettime_now.tv_nsec;
 
 		//PRINTING RESULTS TO LOG FILE------------------------------------------------------
 		log_file = fopen("time_log.csv", "a");
 
 		//End the timer here - and output to log file
-		time_spent_up= (double)(uptime_end - uptime_start) / CLOCKS_PER_SEC;
-		fprintf(log_file, "%d, %f, ", frame_counter, time_spent_up);
+		time_spent_up= ((uptime_end - uptime_start)) - time_spent_down;
+		fprintf(log_file, "%d, %u, ", frame_counter, time_spent_up);
+		printf("%u, \t\t %u \t\t", time_spent_up, time_spent_down);
+		fprintf(log_file, "%u, ", time_spent_down);	
 
-		time_spent_down = (double)(downtime_end - downtime_start) / CLOCKS_PER_SEC;
-		fprintf(log_file, "%f, ", time_spent_down);	
-
-		availability = time_spent_up / (time_spent_up + time_spent_down);
+		availability = static_cast<float>(time_spent_up) / (static_cast<float>(time_spent_up) + static_cast<float>(time_spent_down));
 		fprintf(log_file, "%f, ", availability);
+		printf(" %f\n", availability);
+
+		time_spent_down = 0;
 
 		//Power for the Processing System
         	voltage = readVoltage(iic_fd, zc702_rails[0].device, zc702_rails[0].page);
@@ -278,19 +295,19 @@ int main()
 		cv::Mat outFrame1;
 		hw_outputFrame1.copyTo(outFrame1);
 	
-		//cv::Mat outFrame2;
-		//hw_outputFrame2.copyTo(outFrame2);
+		cv::Mat outFrame2;
+		hw_outputFrame2.copyTo(outFrame2);
 
 		outFrame1.convertTo(outFrame1, CV_8UC3); //Convert into the right output format
-		//outFrame2.convertTo(outFrame2, CV_8UC3);
+		outFrame2.convertTo(outFrame2, CV_8UC3);
 
 		cv::imshow("OUTPUT1", outFrame1); //displaying the output frame
-		//cv::imshow("OUTPUT2", outFrame2); 
+		cv::imshow("OUTPUT2", outFrame2); 
 
 
-		//cv::Mat displayFrame;
-		//inFrame.convertTo(displayFrame, CV_8UC3);
-		//cv::imshow("INPUT", displayFrame);
+		cv::Mat displayFrame;
+		inFrame.convertTo(displayFrame, CV_8UC3);
+		cv::imshow("INPUT", displayFrame);
 
 		frame_counter++;
 
@@ -303,7 +320,7 @@ int main()
 	return 0;
 }
 
-int cmp_mem_segment(int *address_1, int *address_2, int block_size)
+int cmp_mem_segment(int *address_1, int *address_2, int block_size, int* err_signal)
 {
 	//Compares two memory segments, returns the number of segments that differ
 	//			      
@@ -320,7 +337,12 @@ int cmp_mem_segment(int *address_1, int *address_2, int block_size)
 		addr1++;
 		addr2++;
 	}
-
+	
+	if(*err_signal == 37707)
+	{ count++;
+	  *err_signal = 0;
+	}
+	
 	return count;
 }
 
@@ -367,10 +389,10 @@ int cmp_mem_segment(int *address_1, int *address_2, int block_size)
 }
 
 
-void flush_caches()
+void flush_caches(uint phys_addr)
 {
         int cacheflush_fd = open("/dev/cacheflush", O_RDWR); //open the device file
-	int junk = 1;
+	int junk = phys_addr;
         write(cacheflush_fd, &junk, sizeof(unsigned int)); //&phys_addr_state
         close(cacheflush_fd);
 }
@@ -437,4 +459,15 @@ void *setup_current_block_notify(uint input_address)
     return mapped_dev_base;
 }
 
+void reset_hw_timer(uint * dev_ptr)
+{
+	*(dev_ptr + 1) = 1; //Toggle the second register of the device 
+	*(dev_ptr + 1) = 0;
+	return;
+}
+
+uint get_hw_time(uint * dev_ptr)
+{
+	return *(dev_ptr);
+}
 
