@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for DELAY in 1000 900 800 700 600 500 400 300 200 100
+do
+	./bin/error_injection $DELAY & pid=$!
+	./bin/naive_availability_experiment 
+	kill -9 $pid
+	cp time_log.csv experiment_results/naive_recovery_results/${DELAY}.csv
+	
+done
