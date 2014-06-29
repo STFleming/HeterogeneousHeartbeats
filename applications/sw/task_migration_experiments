@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for DELAY in 20000 17000 14000 11000 9000 7000 5000 4000 3000 2000 1000 900 800 700 600 500 400 300 200 100
+do
+	./bin/error_injection $DELAY & pid=$!
+	nice -n -1 ./bin/task_migration_availability_experiment
+	kill -9 $pid
+	cp time_log.csv experiment_results/task_migration_results/${DELAY}.csv
+	
+done

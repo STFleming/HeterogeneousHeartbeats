@@ -1,4 +1,3 @@
-#include <stdio.h>
 
 #include <stdlib.h>
 #include <fcntl.h>
@@ -21,6 +20,7 @@
 
 //File inclusion for power monitoring
 #include "power_monitor.h"
+#include "heartbeat.h"
 
 //Drivers for our core
 #include "xcombiner_top.h"
@@ -89,12 +89,16 @@ XLloyds_kernel_top kernel_dev_2 = setup_XLloyds_kernel_top(LLOYDS_KERNEL_ADDR_2)
 XCombiner_top combiner_dev_1 = setup_XCombiner_top(COMBINER_ADDR_1);
 XCombiner_top combiner_dev_2 = setup_XCombiner_top(COMBINER_ADDR_2);
 
+heartbeat_t heart;
+
 int main()
 {
 	printf("----------------------------\nProcessing Live Video\n----------------------------\n\n");
 
 	system("cat ./k_means_system.bit.bin > /dev/xdevcfg"); //Program the FPGA fabric
 	system("rm time_log.csv");
+
+	heartbeat_init(&heart, 0.1, 10.0, 5, 5, NULL, 1); //Initialise the heartbeat data structure for this device
 
 	//Define the Hardware output container
 	cv::Mat hw_outputFrame1(cv::Size(IMG_SIZE,IMG_SIZE),CV_32SC3); //Setup the output image contained and give it a size
@@ -305,13 +309,15 @@ int main()
 		clock_gettime(CLOCK_MONOTONIC, &gettime_now);
 		uptime_end = gettime_now.tv_nsec;
 
+		heartbeat(&heart, 0, 0); //Register a heartbeat
+
 		//PRINTING RESULTS TO LOG FILE------------------------------------------------------
 		log_file = fopen("time_log.csv", "a");
 
 		//End the timer here - and output to log file
 		time_spent_up= ((uptime_end - uptime_start)) - time_spent_down;
-		fprintf(log_file, "%d, %u, ", frame_counter, time_spent_up);
-		printf("%u, \t\t %u \t\t", time_spent_up, time_spent_down);
+                fprintf(log_file, "%f, %d, %u, ", hb_get_windowed_rate(&heart),frame_counter, time_spent_up);
+                printf("%f, \t\t %u, \t\t %u \t\t", hb_get_windowed_rate(&heart),time_spent_up, time_spent_down);
 		fprintf(log_file, "%u, ", time_spent_down);	
 
 		availability = static_cast<float>(time_spent_up) / (static_cast<float>(time_spent_up) + static_cast<float>(time_spent_down));
@@ -386,7 +392,7 @@ void * RecoveryThreadProcess(void *threadarg)
                       && (XLloyds_kernel_top_IsIdle(&kernel_dev_2) == 1))) {}
                 error_count = cmp_mem_segment( (output_frame1 + block_address), (output_frame2+block_address), 16, my_data->error_sig);
         }
-	printf("Recovery of the hardware has been completed!\n");
+	//printf("Recovery of the hardware has been completed!\n");
 
 	*(my_data->recovery_complete) = 1;	
 
@@ -425,7 +431,7 @@ void * swComputeThreadProcess(void *threadarg)
                                 &debug_sw);
 		
 	   *(my_data->block_address) = *(my_data->block_address) + 16; //Increment the block address counter so that the for loop will not redo computations
-	   printf("Block Computed within the SW thread\n");
+	   //printf("Block Computed within the SW thread\n");
 	}
 
 	pthread_exit(NULL);

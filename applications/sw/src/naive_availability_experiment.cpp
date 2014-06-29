@@ -23,6 +23,7 @@
 //Drivers for our core
 #include "xcombiner_top.h"
 #include "xlloyds_kernel_top.h"
+#include "heartbeat.h"
 
 #define INPUT_FRAME_ADDR 0x38400000
 #define CLUSTER_CENTER_ADDR_1 0x39000000
@@ -59,9 +60,13 @@ void *setup_current_block_notify(uint input_address);
 void reset_hw_timer(uint * dev_ptr);
 uint get_hw_time(uint * dev_ptr);
 
+heartbeat_t heart;
+
 int main()
 {
 	printf("----------------------------\nProcessing Live Video\n----------------------------\n\n");
+
+	heartbeat_init(&heart, 0.1, 10.0, 5, 5, NULL, 1); //Initialise the heartbeat data structure for this device 
 
 	system("cat ./k_means_system.bit.bin > /dev/xdevcfg"); //Program the FPGA fabric
 	system("rm time_log.csv");
@@ -263,13 +268,15 @@ int main()
 		clock_gettime(CLOCK_MONOTONIC, &gettime_now);
 		uptime_end = gettime_now.tv_nsec;
 
+		heartbeat(&heart, 0, 0); //Register a heartbeat
+
 		//PRINTING RESULTS TO LOG FILE------------------------------------------------------
 		log_file = fopen("time_log.csv", "a");
 
 		//End the timer here - and output to log file
 		time_spent_up= ((uptime_end - uptime_start)) - time_spent_down;
-		fprintf(log_file, "%d, %u, ", frame_counter, time_spent_up);
-		printf("%u, \t\t %u \t\t", time_spent_up, time_spent_down);
+		fprintf(log_file, "%f, %d, %u, ", hb_get_windowed_rate(&heart),frame_counter, time_spent_up);
+		printf("%f, \t\t %u, \t\t %u \t\t", hb_get_windowed_rate(&heart),time_spent_up, time_spent_down);
 		fprintf(log_file, "%u, ", time_spent_down);	
 
 		availability = static_cast<float>(time_spent_up) / (static_cast<float>(time_spent_up) + static_cast<float>(time_spent_down));

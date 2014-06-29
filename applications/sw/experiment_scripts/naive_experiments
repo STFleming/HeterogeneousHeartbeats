@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for DELAY in 1000 900 800 700 600 500 400 300 200 100
+for DELAY in 20000 17000 14000 11000 9000 7000 5000 4000 3000 2000 
 do
 	./bin/error_injection $DELAY & pid=$!
 	./bin/naive_availability_experiment 

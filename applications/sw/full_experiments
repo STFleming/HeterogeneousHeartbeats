@@ -1,0 +1,6 @@
+#!/bin/bash
+
+./task_migration_experiments
+echo "Task migration completed..."
+echo "Starting Naive recovery method experiments."
+./naive_experiments  
