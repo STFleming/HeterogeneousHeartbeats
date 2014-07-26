@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'combiner_top'
 ================================================================
-* Date:           Sat Jun 21 11:32:30 2014
+* Date:           Thu Jul 17 18:30:44 2014
 
 * Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
 * Project:        combiner
@@ -1591,13 +1591,13 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 1
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ master_portA]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=4; mode=0x36c8750; pingpong=0; private_global=0; IO mode=ap_bus:ce=0
-Port [ data_points_in_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x35e00f0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ kernel_info_in_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x32b89f0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ centres_out_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x3796590; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ distortion_out]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x36ce600; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ n]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x31588a0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ k]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x347d320; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ master_portA]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=4; mode=0x32fedd0; pingpong=0; private_global=0; IO mode=ap_bus:ce=0
+Port [ data_points_in_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x326c490; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ kernel_info_in_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x3547e50; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ centres_out_addr]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x35c9fd0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ distortion_out]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x3519e40; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ n]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x34f9930; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ k]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x352d040; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
@@ -5966,7 +5966,7 @@ stg_450                              (ret              ) [ 000000000000000000000
 |          |       tmp_24_fu_1000       |    0    |    32   |
 |          |    indvar_next1_fu_1025    |    0    |    30   |
 |----------|----------------------------|---------|---------|
-|          |      exitcond8_fu_571      |    0    |    9    |
+|          |      exitcond8_fu_571      |    0    |    10   |
 |          |        tmp_3_fu_618        |    0    |    40   |
 |          |      exitcond9_fu_654      |    0    |    6    |
 |          |       isIter0_fu_666       |    0    |    6    |
@@ -6042,7 +6042,7 @@ stg_450                              (ret              ) [ 000000000000000000000
 |   sext   |    tmp_28_1_cast_fu_789    |    0    |    0    |
 |          |    tmp_28_2_cast_fu_815    |    0    |    0    |
 |----------|----------------------------|---------|---------|
-|   Total  |                            |   6720  |   6894  |
+|   Total  |                            |   6720  |   6895  |
 |----------|----------------------------|---------|---------|
 
 Memories:
@@ -6176,10 +6176,10 @@ Memories:
 +-----------+--------+--------+--------+--------+
 |           |  BRAM  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |    -   |    -   |  6720  |  6894  |
+|  Function |    -   |    -   |  6720  |  6895  |
 |   Memory  |    9   |    -   |    0   |    0   |
 |Multiplexer|    -   |   41   |    -   |   527  |
 |  Register |    -   |    -   |  1242  |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |    9   |   41   |  7962  |  7421  |
+|   Total   |    9   |   41   |  7962  |  7422  |
 +-----------+--------+--------+--------+--------+

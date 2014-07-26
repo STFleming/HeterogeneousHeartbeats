@@ -217,14 +217,14 @@
 						<id>11</id>
 						<name>int_buffer</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>54</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="11" tracking_level="0" version="0">
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second class_id="12" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -258,14 +258,14 @@
 						<id>12</id>
 						<name></name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>57</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -329,14 +329,14 @@
 						<id>15</id>
 						<name>exitcond</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>57</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -371,14 +371,14 @@
 						<id>16</id>
 						<name>i_2</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>57</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -413,14 +413,14 @@
 						<id>17</id>
 						<name></name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>57</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -456,14 +456,14 @@
 						<id>22</id>
 						<name>tmp_16</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -497,14 +497,14 @@
 						<id>23</id>
 						<name>buffer_min_idx_V_addr</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -540,14 +540,14 @@
 						<id>24</id>
 						<name>buffer_min_idx_V_load</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -581,14 +581,14 @@
 						<id>25</id>
 						<name>tmp_17</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -622,14 +622,14 @@
 						<id>26</id>
 						<name>tmp_22</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>57</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -663,14 +663,14 @@
 						<id>27</id>
 						<name>tmp_23</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -705,14 +705,14 @@
 						<id>28</id>
 						<name>tmp_s</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -746,14 +746,14 @@
 						<id>29</id>
 						<name>int_buffer_addr</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -789,14 +789,14 @@
 						<id>30</id>
 						<name></name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>60</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -831,14 +831,14 @@
 						<id>31</id>
 						<name>buffer_sum_sq_addr</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>61</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -874,14 +874,14 @@
 						<id>32</id>
 						<name>buffer_sum_sq_load</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>61</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -915,14 +915,14 @@
 						<id>33</id>
 						<name>tmp_18</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>61</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -958,14 +958,14 @@
 						<id>34</id>
 						<name>tmp_19</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>61</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -999,14 +999,14 @@
 						<id>35</id>
 						<name>int_buffer_addr_1</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>61</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1042,14 +1042,14 @@
 						<id>36</id>
 						<name></name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>61</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1084,14 +1084,14 @@
 						<id>38</id>
 						<name></name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>57</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1125,14 +1125,14 @@
 						<id>40</id>
 						<name>tmp</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>65</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1167,14 +1167,14 @@
 						<id>41</id>
 						<name>tmp_13</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>65</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1211,14 +1211,14 @@
 						<id>42</id>
 						<name>tmp_13_cast</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>65</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1252,14 +1252,14 @@
 						<id>43</id>
 						<name>bus_addr</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>65</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1576,14 +1576,14 @@
 						<id>60</id>
 						<name>bus_addr_req</name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>65</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1646,14 +1646,14 @@
 						<id>63</id>
 						<name></name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>65</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1717,14 +1717,14 @@
 						<id>67</id>
 						<name></name>
 						<fileName>kernel/HLS/source/lloyds_kernel_top.cpp</fileName>
-						<fileDirectory>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
+						<fileDirectory>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</fileDirectory>
 						<lineNumber>66</lineNumber>
 						<contextFuncName>store_output_buffer</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds</first>
+								<first>/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>

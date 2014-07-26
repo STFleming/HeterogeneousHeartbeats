@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'store_output_buffer'
 ================================================================
-* Date:           Sat Jun 21 11:37:57 2014
+* Date:           Thu Jul 17 18:27:21 2014
 
 * Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
 * Project:        kernel
@@ -429,11 +429,11 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ offset]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x1682f5f0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ buffer_min_idx_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x1682fba0; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
-Port [ buffer_sum_sq]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x16830170; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
-Port [ address]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x16830a20; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ bus_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=4; mode=0x168312b0; pingpong=0; private_global=0; IO mode=ap_bus:ce=0
+Port [ offset]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x16af08b0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ buffer_min_idx_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x1f73c710; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ buffer_sum_sq]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x16af1830; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ address]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x16aef5f0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ bus_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=4; mode=0x16af1f50; pingpong=0; private_global=0; IO mode=ap_bus:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------

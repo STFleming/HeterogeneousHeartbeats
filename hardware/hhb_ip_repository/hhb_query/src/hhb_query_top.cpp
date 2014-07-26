@@ -10,7 +10,18 @@
 #include <string.h>
 
 #define N 1
+#define CACHE_LINES 16 //There are 16 cache lines
 
+typedef struct cache_entry //Defines a signle entry of the application cache.
+{
+    int AppID;
+    int state_addr;
+    int log_addr;
+    int prev_sensor_id;
+    int prev_sensor_value;
+};
+
+cache_entry query_hb_cache(int * hb_cache, int AppID, int sensor_id);
 
 void hhb_query(volatile int *a, unsigned int applist_phys_addr, unsigned int *current_heartbeat, unsigned int *status){
   
@@ -34,20 +45,35 @@ void hhb_query(volatile int *a, unsigned int applist_phys_addr, unsigned int *cu
   int i;
   int buff[N];
   
-  *status=0; //IP running
+  cache_entry hb_cache[CACHE_LINES];
+
+  
 
   //read from DDR
   memcpy(buff,(const int*)(a+applist_phys_addr/4), N*sizeof(int));
   int applist_log = buff[0];
  
  //Initial test, just read the lock data element.
-
  
   *current_heartbeat = buff[0];
-
-  *status=1; //IP stop
 
 
 }
 
+cache_entry query_hb_cache(int * hb_cache, int AppID, int sensor_id)
+{
+    cache_entry temp_cache_entry;
+    temp_cache_entry.AppID = 0;
+
+    int i;
+    for(i=0; i<CACHE_LINES; i++)
+    {
+        if(hb_cache[i].AppID == AppID)
+        {
+            //we have a cache hit we can return the cache_line now
+            temp_cache_entry = hb_cache[i];
+        }
+    }
+    return temp_cache_entry;
+}
   

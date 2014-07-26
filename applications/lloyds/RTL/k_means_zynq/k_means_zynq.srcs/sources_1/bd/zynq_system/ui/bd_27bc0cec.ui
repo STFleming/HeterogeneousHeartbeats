@@ -8,8 +8,8 @@ preplace inst axi_mem_intercon_1 -pg 1 -lvl 4 -y 1190 -defaultsOSRD
 preplace inst rst_processing_system7_0_50M -pg 1 -lvl 3 -y 760 -defaultsOSRD
 preplace inst combiner_top_0 -pg 1 -lvl 2 -y 70 -defaultsOSRD
 preplace inst axi_mem_intercon -pg 1 -lvl 4 -y 570 -defaultsOSRD
-preplace inst combiner_top_1 -pg 1 -lvl 1 -y 250 -defaultsOSRD
 preplace inst lloyds_kernel_top_0 -pg 1 -lvl 2 -y 200 -defaultsOSRD
+preplace inst combiner_top_1 -pg 1 -lvl 1 -y 250 -defaultsOSRD
 preplace inst processing_system7_0_axi_periph -pg 1 -lvl 4 -y 880 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 2 -y 500 -defaultsOSRD
 preplace netloc processing_system7_0_DDR 1 2 3 1140 370 NJ 370 NJ

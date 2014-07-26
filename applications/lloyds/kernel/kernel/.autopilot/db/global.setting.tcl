@@ -36,7 +36,7 @@ set SCTraceOption "all"
 set TargetInfo "xc7z020:clg484:-1"
 set SourceFiles {sc {} c {../HLS/source/lloyds_util.cpp ../HLS/source/lloyds_kernel_top.cpp}}
 set SourceFlags {sc {} c {{} {}}}
-set DirectiveFile {/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/kernel.directive}
+set DirectiveFile {/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/kernel.directive}
 set TBFiles {verilog {../HLS/simulation/tb_io.h ../HLS/simulation/tb_io.cpp ../HLS/simulation/lloyds_kernel_tb.cpp ../../test_data/data_points_N128_K4_D3_s0.75.mat ../../test_data/data_points.mat ../../test_data/intermediate.mat} bc {../HLS/simulation/tb_io.h ../HLS/simulation/tb_io.cpp ../HLS/simulation/lloyds_kernel_tb.cpp ../../test_data/data_points_N128_K4_D3_s0.75.mat ../../test_data/data_points.mat ../../test_data/intermediate.mat} vhdl {../HLS/simulation/tb_io.h ../HLS/simulation/tb_io.cpp ../HLS/simulation/lloyds_kernel_tb.cpp ../../test_data/data_points_N128_K4_D3_s0.75.mat ../../test_data/data_points.mat ../../test_data/intermediate.mat} sc {../HLS/simulation/tb_io.h ../HLS/simulation/tb_io.cpp ../HLS/simulation/lloyds_kernel_tb.cpp ../../test_data/data_points_N128_K4_D3_s0.75.mat ../../test_data/data_points.mat ../../test_data/intermediate.mat} cas {../HLS/simulation/tb_io.h ../HLS/simulation/tb_io.cpp ../HLS/simulation/lloyds_kernel_tb.cpp ../../test_data/data_points_N128_K4_D3_s0.75.mat ../../test_data/data_points.mat ../../test_data/intermediate.mat} c {}}
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

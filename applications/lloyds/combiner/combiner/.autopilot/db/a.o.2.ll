@@ -1,4 +1,4 @@
-; ModuleID = '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.o.2.bc'
+; ModuleID = '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.o.2.bc'
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
@@ -457,12 +457,12 @@ declare i32 @_ssdm_op_SpecLoopTripCount(...)
 !llvm.dbg.cu = !{!0}
 !llvm.map.gv = !{!903}
 
-!0 = metadata !{i32 786449, i32 0, i32 4, metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.pragma.2.cpp", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", metadata !"clang version 3.1 ", i1 true, i1 false, metadata !"", i32 0, metadata !1, metadata !828, metadata !830, metadata !842} ; [ DW_TAG_compile_unit ]
+!0 = metadata !{i32 786449, i32 0, i32 4, metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/combiner_top.pragma.2.cpp", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", metadata !"clang version 3.1 ", i1 true, i1 false, metadata !"", i32 0, metadata !1, metadata !828, metadata !830, metadata !842} ; [ DW_TAG_compile_unit ]
 !1 = metadata !{metadata !2}
 !2 = metadata !{metadata !3, metadata !26, metadata !33, metadata !42, metadata !48}
 !3 = metadata !{i32 786436, metadata !4, metadata !"_Ios_Fmtflags", metadata !5, i32 52, i64 17, i64 32, i32 0, i32 0, null, metadata !6, i32 0, i32 0} ; [ DW_TAG_enumeration_type ]
 !4 = metadata !{i32 786489, null, metadata !"std", metadata !5, i32 44} ; [ DW_TAG_namespace ]
-!5 = metadata !{i32 786473, metadata !"/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/ios_base.h", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!5 = metadata !{i32 786473, metadata !"/opt/Xilinx/2013.4/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/ios_base.h", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !6 = metadata !{metadata !7, metadata !8, metadata !9, metadata !10, metadata !11, metadata !12, metadata !13, metadata !14, metadata !15, metadata !16, metadata !17, metadata !18, metadata !19, metadata !20, metadata !21, metadata !22, metadata !23, metadata !24, metadata !25}
 !7 = metadata !{i32 786472, metadata !"_S_boolalpha", i64 1} ; [ DW_TAG_enumerator ]
 !8 = metadata !{i32 786472, metadata !"_S_dec", i64 2} ; [ DW_TAG_enumerator ]
@@ -517,10 +517,10 @@ declare i32 @_ssdm_op_SpecLoopTripCount(...)
 !57 = metadata !{i32 786445, metadata !49, metadata !"_M_precision", metadata !5, i32 453, i64 64, i64 64, i64 64, i32 2, metadata !58} ; [ DW_TAG_member ]
 !58 = metadata !{i32 786454, metadata !59, metadata !"streamsize", metadata !5, i32 99, i64 0, i64 0, i64 0, i32 0, metadata !61} ; [ DW_TAG_typedef ]
 !59 = metadata !{i32 786489, null, metadata !"std", metadata !60, i32 69} ; [ DW_TAG_namespace ]
-!60 = metadata !{i32 786473, metadata !"/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/postypes.h", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!60 = metadata !{i32 786473, metadata !"/opt/Xilinx/2013.4/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/postypes.h", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !61 = metadata !{i32 786454, metadata !62, metadata !"ptrdiff_t", metadata !5, i32 156, i64 0, i64 0, i64 0, i32 0, metadata !64} ; [ DW_TAG_typedef ]
 !62 = metadata !{i32 786489, null, metadata !"std", metadata !63, i32 153} ; [ DW_TAG_namespace ]
-!63 = metadata !{i32 786473, metadata !"/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/c++config.h", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!63 = metadata !{i32 786473, metadata !"/opt/Xilinx/2013.4/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/c++config.h", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !64 = metadata !{i32 786468, null, metadata !"long int", null, i32 0, i64 64, i64 64, i64 0, i32 0, i32 5} ; [ DW_TAG_base_type ]
 !65 = metadata !{i32 786445, metadata !49, metadata !"_M_width", metadata !5, i32 454, i64 64, i64 64, i64 128, i32 2, metadata !58} ; [ DW_TAG_member ]
 !66 = metadata !{i32 786445, metadata !49, metadata !"_M_flags", metadata !5, i32 455, i64 17, i64 32, i64 192, i32 2, metadata !67} ; [ DW_TAG_member ]
@@ -553,7 +553,7 @@ declare i32 @_ssdm_op_SpecLoopTripCount(...)
 !93 = metadata !{i32 786445, metadata !49, metadata !"_M_ios_locale", metadata !5, i32 523, i64 64, i64 64, i64 1664, i32 2, metadata !94} ; [ DW_TAG_member ]
 !94 = metadata !{i32 786434, metadata !95, metadata !"locale", metadata !96, i32 63, i64 64, i64 64, i32 0, i32 0, null, metadata !97, i32 0, null, null} ; [ DW_TAG_class_type ]
 !95 = metadata !{i32 786489, null, metadata !"std", metadata !96, i32 44} ; [ DW_TAG_namespace ]
-!96 = metadata !{i32 786473, metadata !"/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_classes.h", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!96 = metadata !{i32 786473, metadata !"/opt/Xilinx/2013.4/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/locale_classes.h", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !97 = metadata !{metadata !98, metadata !261, metadata !265, metadata !270, metadata !273, metadata !276, metadata !279, metadata !280, metadata !283, metadata !730, metadata !733, metadata !734, metadata !737, metadata !740, metadata !743, metadata !744, metadata !745, metadata !748, metadata !749, metadata !750}
 !98 = metadata !{i32 786445, metadata !94, metadata !"_M_impl", metadata !96, i32 280, i64 64, i64 64, i64 0, i32 1, metadata !99} ; [ DW_TAG_member ]
 !99 = metadata !{i32 786447, null, metadata !"", null, i32 0, i64 64, i64 64, i64 0, i32 0, metadata !100} ; [ DW_TAG_pointer_type ]
@@ -577,7 +577,7 @@ declare i32 @_ssdm_op_SpecLoopTripCount(...)
 !117 = metadata !{null, metadata !118, metadata !119}
 !118 = metadata !{i32 786447, i32 0, metadata !"", i32 0, i32 0, i64 64, i64 64, i64 0, i32 64, metadata !108} ; [ DW_TAG_pointer_type ]
 !119 = metadata !{i32 786454, metadata !62, metadata !"size_t", metadata !120, i32 155, i64 0, i64 0, i64 0, i32 0, metadata !121} ; [ DW_TAG_typedef ]
-!120 = metadata !{i32 786473, metadata !"/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_string.h", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!120 = metadata !{i32 786473, metadata !"/opt/Xilinx/2013.4/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_string.h", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !121 = metadata !{i32 786468, null, metadata !"long unsigned int", null, i32 0, i64 64, i64 64, i64 0, i32 0, i32 7} ; [ DW_TAG_base_type ]
 !122 = metadata !{i32 786478, i32 0, metadata !108, metadata !"~facet", metadata !"~facet", metadata !"", metadata !96, i32 375, metadata !123, i1 false, i1 false, i32 1, i32 0, metadata !108, i32 258, i1 false, null, null, i32 0, metadata !84, i32 375} ; [ DW_TAG_subprogram ]
 !123 = metadata !{i32 786453, i32 0, metadata !"", i32 0, i32 0, i64 0, i64 0, i64 0, i32 0, null, metadata !124, i32 0, i32 0} ; [ DW_TAG_subroutine_type ]
@@ -588,16 +588,16 @@ declare i32 @_ssdm_op_SpecLoopTripCount(...)
 !128 = metadata !{i32 786448, null, null, null, i32 0, i64 0, i64 0, i64 0, i32 0, metadata !129} ; [ DW_TAG_reference_type ]
 !129 = metadata !{i32 786454, metadata !130, metadata !"__c_locale", metadata !96, i32 62, i64 0, i64 0, i64 0, i32 0, metadata !132} ; [ DW_TAG_typedef ]
 !130 = metadata !{i32 786489, null, metadata !"std", metadata !131, i32 58} ; [ DW_TAG_namespace ]
-!131 = metadata !{i32 786473, metadata !"/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/c++locale.h", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!131 = metadata !{i32 786473, metadata !"/opt/Xilinx/2013.4/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/c++locale.h", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !132 = metadata !{i32 786454, null, metadata !"__locale_t", metadata !96, i32 40, i64 0, i64 0, i64 0, i32 0, metadata !133} ; [ DW_TAG_typedef ]
 !133 = metadata !{i32 786447, null, metadata !"", null, i32 0, i64 64, i64 64, i64 0, i32 0, metadata !134} ; [ DW_TAG_pointer_type ]
 !134 = metadata !{i32 786434, null, metadata !"__locale_struct", metadata !135, i32 28, i64 1856, i64 64, i32 0, i32 0, null, metadata !136, i32 0, null, null} ; [ DW_TAG_class_type ]
-!135 = metadata !{i32 786473, metadata !"/usr/include/xlocale.h", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!135 = metadata !{i32 786473, metadata !"/usr/include/xlocale.h", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !136 = metadata !{metadata !137, metadata !143, metadata !147, metadata !150, metadata !151, metadata !156}
 !137 = metadata !{i32 786445, metadata !134, metadata !"__locales", metadata !135, i32 31, i64 832, i64 64, i64 0, i32 0, metadata !138} ; [ DW_TAG_member ]
 !138 = metadata !{i32 786433, null, metadata !"", null, i32 0, i64 832, i64 64, i32 0, i32 0, metadata !139, metadata !141, i32 0, i32 0} ; [ DW_TAG_array_type ]
 !139 = metadata !{i32 786447, null, metadata !"", null, i32 0, i64 64, i64 64, i64 0, i32 0, metadata !140} ; [ DW_TAG_pointer_type ]
-!140 = metadata !{i32 786434, null, metadata !"locale_data", metadata !135, i32 31, i32 0, i32 0, i32 0, i32 4, null, null, i32 0} ; [ DW_TAG_class_type ]
+!140 = metadata !{i32 786434, null, metadata !"__locale_data", metadata !135, i32 31, i32 0, i32 0, i32 0, i32 4, null, null, i32 0} ; [ DW_TAG_class_type ]
 !141 = metadata !{metadata !142}
 !142 = metadata !{i32 786465, i64 0, i64 12}      ; [ DW_TAG_subrange_type ]
 !143 = metadata !{i32 786445, metadata !134, metadata !"__ctype_b", metadata !135, i32 34, i64 64, i64 64, i64 832, i32 0, metadata !144} ; [ DW_TAG_member ]
@@ -745,21 +745,21 @@ declare i32 @_ssdm_op_SpecLoopTripCount(...)
 !285 = metadata !{metadata !286, metadata !729}
 !286 = metadata !{i32 786454, metadata !287, metadata !"string", metadata !96, i32 64, i64 0, i64 0, i64 0, i32 0, metadata !289} ; [ DW_TAG_typedef ]
 !287 = metadata !{i32 786489, null, metadata !"std", metadata !288, i32 42} ; [ DW_TAG_namespace ]
-!288 = metadata !{i32 786473, metadata !"/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/stringfwd.h", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!288 = metadata !{i32 786473, metadata !"/opt/Xilinx/2013.4/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/stringfwd.h", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !289 = metadata !{i32 786434, metadata !287, metadata !"basic_string<char>", metadata !290, i32 1133, i64 64, i64 64, i32 0, i32 0, null, metadata !291, i32 0, null, metadata !673} ; [ DW_TAG_class_type ]
-!290 = metadata !{i32 786473, metadata !"/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_string.tcc", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!290 = metadata !{i32 786473, metadata !"/opt/Xilinx/2013.4/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/basic_string.tcc", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !291 = metadata !{metadata !292, metadata !364, metadata !369, metadata !373, metadata !378, metadata !384, metadata !385, metadata !388, metadata !393, metadata !396, metadata !399, metadata !402, metadata !405, metadata !406, metadata !409, metadata !412, metadata !417, metadata !420, metadata !421, metadata !424, metadata !427, metadata !428, metadata !432, metadata !433, metadata !436, metadata !440, metadata !443, metadata !446, metadata !449, metadata !452, metadata !455, metadata !456, metadata !460, metadata !463, metadata !466, metadata !469, metadata !472, metadata !473, metadata !474, metadata !479, metadata !484, metadata !485, metadata !486, metadata !489, metadata !490, metadata !491, metadata !494, metadata !497, metadata !498, metadata !499, metadata !500, metadata !503, metadata !508, metadata !513, metadata !514, metadata !515, metadata !516, metadata !517, metadata !518, metadata !519, metadata !522, metadata !525, metadata !526, metadata !529, metadata !532, metadata !533, metadata !534, metadata !535, metadata !536, metadata !537, metadata !540, metadata !543, metadata !546, metadata !549, metadata !552, metadata !555, metadata !558, metadata !561, metadata !564, metadata !567, metadata !570, metadata !573, metadata !576, metadata !579, metadata !582, metadata !585, metadata !588, metadata !591, metadata !594, metadata !597, metadata !598, metadata !601, metadata !604, metadata !605, metadata !606, metadata !609, metadata !610, metadata !613, metadata !616, metadata !617, metadata !618, metadata !622, metadata !623, metadata !626, metadata !629, metadata !632, metadata !633, metadata !634, metadata !635, metadata !636, metadata !637, metadata !638, metadata !639, metadata !640, metadata !641, metadata !642, metadata !643, metadata !644, metadata !645, metadata !646, metadata !647, metadata !648, metadata !649, metadata !650, metadata !651, metadata !652, metadata !655, metadata !658, metadata !661, metadata !664, metadata !667, metadata !670}
 !292 = metadata !{i32 786445, metadata !289, metadata !"_M_dataplus", metadata !120, i32 283, i64 64, i64 64, i64 0, i32 1, metadata !293} ; [ DW_TAG_member ]
 !293 = metadata !{i32 786434, metadata !289, metadata !"_Alloc_hider", metadata !120, i32 266, i64 64, i64 64, i32 0, i32 0, null, metadata !294, i32 0, null, null} ; [ DW_TAG_class_type ]
 !294 = metadata !{metadata !295, metadata !358, metadata !359}
 !295 = metadata !{i32 786460, metadata !293, null, metadata !120, i32 0, i64 0, i64 0, i64 0, i32 0, metadata !296} ; [ DW_TAG_inheritance ]
 !296 = metadata !{i32 786434, metadata !287, metadata !"allocator<char>", metadata !297, i32 143, i64 8, i64 8, i32 0, i32 0, null, metadata !298, i32 0, null, metadata !356} ; [ DW_TAG_class_type ]
-!297 = metadata !{i32 786473, metadata !"/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/allocator.h", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!297 = metadata !{i32 786473, metadata !"/opt/Xilinx/2013.4/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/allocator.h", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !298 = metadata !{metadata !299, metadata !346, metadata !350, metadata !355}
 !299 = metadata !{i32 786460, metadata !296, null, metadata !297, i32 0, i64 0, i64 0, i64 0, i32 0, metadata !300} ; [ DW_TAG_inheritance ]
 !300 = metadata !{i32 786434, metadata !301, metadata !"new_allocator<char>", metadata !302, i32 54, i64 8, i64 8, i32 0, i32 0, null, metadata !303, i32 0, null, metadata !344} ; [ DW_TAG_class_type ]
 !301 = metadata !{i32 786489, null, metadata !"__gnu_cxx", metadata !302, i32 38} ; [ DW_TAG_namespace ]
-!302 = metadata !{i32 786473, metadata !"/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ext/new_allocator.h", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!302 = metadata !{i32 786473, metadata !"/opt/Xilinx/2013.4/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ext/new_allocator.h", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !303 = metadata !{metadata !304, metadata !308, metadata !313, metadata !314, metadata !321, metadata !326, metadata !332, metadata !335, metadata !338, metadata !341}
 !304 = metadata !{i32 786478, i32 0, metadata !300, metadata !"new_allocator", metadata !"new_allocator", metadata !"", metadata !302, i32 69, metadata !305, i1 false, i1 false, i32 0, i32 0, null, i32 256, i1 false, null, null, i32 0, metadata !84, i32 69} ; [ DW_TAG_subprogram ]
 !305 = metadata !{i32 786453, i32 0, metadata !"", i32 0, i32 0, i64 0, i64 0, i64 0, i32 0, null, metadata !306, i32 0, i32 0} ; [ DW_TAG_subroutine_type ]
@@ -840,7 +840,7 @@ declare i32 @_ssdm_op_SpecLoopTripCount(...)
 !380 = metadata !{metadata !381, metadata !367}
 !381 = metadata !{i32 786454, metadata !289, metadata !"iterator", metadata !290, i32 121, i64 0, i64 0, i64 0, i32 0, metadata !382} ; [ DW_TAG_typedef ]
 !382 = metadata !{i32 786434, null, metadata !"__normal_iterator<char *, std::basic_string<char> >", metadata !383, i32 702, i32 0, i32 0, i32 0, i32 4, null, null, i32 0} ; [ DW_TAG_class_type ]
-!383 = metadata !{i32 786473, metadata !"/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/stl_iterator.h", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!383 = metadata !{i32 786473, metadata !"/opt/Xilinx/2013.4/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/stl_iterator.h", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !384 = metadata !{i32 786478, i32 0, metadata !289, metadata !"_M_iend", metadata !"_M_iend", metadata !"_ZNKSs7_M_iendEv", metadata !120, i32 304, metadata !379, i1 false, i1 false, i32 0, i32 0, null, i32 257, i1 false, null, null, i32 0, metadata !84, i32 304} ; [ DW_TAG_subprogram ]
 !385 = metadata !{i32 786478, i32 0, metadata !289, metadata !"_M_leak", metadata !"_M_leak", metadata !"_ZNSs7_M_leakEv", metadata !120, i32 308, metadata !386, i1 false, i1 false, i32 0, i32 0, null, i32 257, i1 false, null, null, i32 0, metadata !84, i32 308} ; [ DW_TAG_subprogram ]
 !386 = metadata !{i32 786453, i32 0, metadata !"", i32 0, i32 0, i64 0, i64 0, i64 0, i32 0, null, metadata !387, i32 0, i32 0} ; [ DW_TAG_subroutine_type ]
@@ -1135,7 +1135,7 @@ declare i32 @_ssdm_op_SpecLoopTripCount(...)
 !675 = metadata !{i32 786479, null, metadata !"_Traits", metadata !676, null, i32 0, i32 0} ; [ DW_TAG_template_type_parameter ]
 !676 = metadata !{i32 786434, metadata !677, metadata !"char_traits<char>", metadata !678, i32 234, i64 8, i64 8, i32 0, i32 0, null, metadata !679, i32 0, null, metadata !727} ; [ DW_TAG_class_type ]
 !677 = metadata !{i32 786489, null, metadata !"std", metadata !678, i32 210} ; [ DW_TAG_namespace ]
-!678 = metadata !{i32 786473, metadata !"/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/char_traits.h", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!678 = metadata !{i32 786473, metadata !"/opt/Xilinx/2013.4/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/char_traits.h", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !679 = metadata !{metadata !680, metadata !687, metadata !690, metadata !691, metadata !695, metadata !698, metadata !701, metadata !705, metadata !706, metadata !709, metadata !715, metadata !718, metadata !721, metadata !724}
 !680 = metadata !{i32 786478, i32 0, metadata !676, metadata !"assign", metadata !"assign", metadata !"_ZNSt11char_traitsIcE6assignERcRKc", metadata !678, i32 243, metadata !681, i1 false, i1 false, i32 0, i32 0, null, i32 256, i1 false, null, null, i32 0, metadata !84, i32 243} ; [ DW_TAG_subprogram ]
 !681 = metadata !{i32 786453, i32 0, metadata !"", i32 0, i32 0, i64 0, i64 0, i64 0, i32 0, null, metadata !682, i32 0, i32 0} ; [ DW_TAG_subroutine_type ]
@@ -1290,7 +1290,7 @@ declare i32 @_ssdm_op_SpecLoopTripCount(...)
 !830 = metadata !{metadata !831}
 !831 = metadata !{metadata !832}
 !832 = metadata !{i32 786478, i32 0, metadata !833, metadata !"combiner_top", metadata !"combiner_top", metadata !"_Z12combiner_topPVijjjPjjj", metadata !833, i32 16, metadata !834, i1 false, i1 true, i32 0, i32 0, null, i32 256, i1 false, void (i32*, i32, i32, i32, i32*, i32, i32)* @combiner_top, null, null, metadata !84, i32 25} ; [ DW_TAG_subprogram ]
-!833 = metadata !{i32 786473, metadata !"combiner/HLS/combiner/source/combiner_top.cpp", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!833 = metadata !{i32 786473, metadata !"combiner/HLS/combiner/source/combiner_top.cpp", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !834 = metadata !{i32 786453, i32 0, metadata !"", i32 0, i32 0, i64 0, i64 0, i64 0, i32 0, null, metadata !835, i32 0, i32 0} ; [ DW_TAG_subroutine_type ]
 !835 = metadata !{null, metadata !836, metadata !839, metadata !839, metadata !839, metadata !841, metadata !839, metadata !839}
 !836 = metadata !{i32 786447, null, metadata !"", null, i32 0, i64 64, i64 64, i64 0, i32 0, metadata !837} ; [ DW_TAG_pointer_type ]
@@ -1351,7 +1351,7 @@ declare i32 @_ssdm_op_SpecLoopTripCount(...)
 !891 = metadata !{i32 786470, null, metadata !"", null, i32 0, i64 0, i64 0, i64 0, i32 0, metadata !391} ; [ DW_TAG_const_type ]
 !892 = metadata !{i32 786484, i32 0, metadata !893, metadata !"__ioinit", metadata !"__ioinit", metadata !"_ZStL8__ioinit", metadata !894, i32 74, metadata !895, i32 1, i32 1, null} ; [ DW_TAG_variable ]
 !893 = metadata !{i32 786489, null, metadata !"std", metadata !894, i32 42} ; [ DW_TAG_namespace ]
-!894 = metadata !{i32 786473, metadata !"/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/iostream", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!894 = metadata !{i32 786473, metadata !"/opt/Xilinx/2013.4/Vivado_HLS/2013.4/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/iostream", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !895 = metadata !{i32 786434, metadata !49, metadata !"Init", metadata !5, i32 534, i64 8, i64 8, i32 0, i32 0, null, metadata !896, i32 0, null, null} ; [ DW_TAG_class_type ]
 !896 = metadata !{metadata !897, metadata !901, metadata !902}
 !897 = metadata !{i32 786478, i32 0, metadata !895, metadata !"Init", metadata !"Init", metadata !"", metadata !5, i32 538, metadata !898, i1 false, i1 false, i32 0, i32 0, null, i32 256, i1 false, null, null, i32 0, metadata !84, i32 538} ; [ DW_TAG_subprogram ]
@@ -1435,7 +1435,7 @@ declare i32 @_ssdm_op_SpecLoopTripCount(...)
 !975 = metadata !{i32 786688, metadata !941, metadata !"centre_buffer", metadata !833, i32 54, metadata !976, i32 0, i32 0} ; [ DW_TAG_auto_variable ]
 !976 = metadata !{i32 786433, null, metadata !"", null, i32 0, i64 40960, i64 32, i32 0, i32 0, metadata !977, metadata !998, i32 0, i32 0} ; [ DW_TAG_array_type ]
 !977 = metadata !{i32 786434, null, metadata !"centre_type", metadata !978, i32 37, i64 160, i64 32, i32 0, i32 0, null, metadata !979, i32 0, null, null} ; [ DW_TAG_class_type ]
-!978 = metadata !{i32 786473, metadata !"combiner/HLS/combiner/source/combiner_top.h", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!978 = metadata !{i32 786473, metadata !"combiner/HLS/combiner/source/combiner_top.h", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !979 = metadata !{metadata !980, metadata !992, metadata !993, metadata !994}
 !980 = metadata !{i32 786445, metadata !977, metadata !"wgtCent", metadata !978, i32 38, i64 96, i64 32, i64 0, i32 0, metadata !981} ; [ DW_TAG_member ]
 !981 = metadata !{i32 786434, null, metadata !"data_type", metadata !978, i32 33, i64 96, i64 32, i32 0, i32 0, null, metadata !982, i32 0, null, null} ; [ DW_TAG_class_type ]

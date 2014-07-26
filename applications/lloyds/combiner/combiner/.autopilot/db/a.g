@@ -1,4 +1,4 @@
 #!/bin/sh
 lli=${LLVMINTERP-lli}
 exec $lli \
-    /home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.g.bc ${1+"$@"}
+    /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/.autopilot/db/a.g.bc ${1+"$@"}

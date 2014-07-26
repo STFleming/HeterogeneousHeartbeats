@@ -36,7 +36,7 @@ set SCTraceOption "all"
 set TargetInfo "xc7z020:clg484:-1"
 set SourceFiles {sc {} c ../HLS/combiner/source/combiner_top.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile {/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/combiner.directive}
+set DirectiveFile {/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/combiner/combiner/combiner.directive}
 set TBFiles {verilog {../HLS/combiner/simulation/combiner_tb.cpp ../../test_data/data_points.mat ../../test_data/data_points_N128_K4_D3_s0.75.mat ../../test_data/intermediate.mat ../HLS/combiner/simulation/tb_io.cpp ../HLS/combiner/simulation/tb_io.h} bc {../HLS/combiner/simulation/combiner_tb.cpp ../../test_data/data_points.mat ../../test_data/data_points_N128_K4_D3_s0.75.mat ../../test_data/intermediate.mat ../HLS/combiner/simulation/tb_io.cpp ../HLS/combiner/simulation/tb_io.h} sc {../HLS/combiner/simulation/combiner_tb.cpp ../../test_data/data_points.mat ../../test_data/data_points_N128_K4_D3_s0.75.mat ../../test_data/intermediate.mat ../HLS/combiner/simulation/tb_io.cpp ../HLS/combiner/simulation/tb_io.h} vhdl {../HLS/combiner/simulation/combiner_tb.cpp ../../test_data/data_points.mat ../../test_data/data_points_N128_K4_D3_s0.75.mat ../../test_data/intermediate.mat ../HLS/combiner/simulation/tb_io.cpp ../HLS/combiner/simulation/tb_io.h} c {} cas {../HLS/combiner/simulation/combiner_tb.cpp ../../test_data/data_points.mat ../../test_data/data_points_N128_K4_D3_s0.75.mat ../../test_data/intermediate.mat ../HLS/combiner/simulation/tb_io.cpp ../HLS/combiner/simulation/tb_io.h}}
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

@@ -44,7 +44,7 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [XFORM-102] Partitioning array 'centres_buffer.value' (kernel/HLS/source/lloyds_kernel_top.cpp:136) in dimension 2 automatically.
 @I [XFORM-102] Partitioning array 'output_points_buffer.value' (kernel/HLS/source/lloyds_kernel_top.cpp:138) in dimension 2 automatically.
 @I [XFORM-102] Partitioning array 'closest_centre.value' (kernel/HLS/source/lloyds_kernel_top.cpp:178) automatically.
-@I [HLS-111] Elapsed time: 16.21 seconds; current memory usage: 527 MB.
+@I [HLS-111] Elapsed time: 11.82 seconds; current memory usage: 528 MB.
 @I [HLS-10] Starting hardware synthesis ...
 @I [HLS-10] Synthesizing 'lloyds_kernel_top' ...
 @W [RTGEN-101] Legalizing port name 'load_points_buffer/bus' to 'load_points_buffer/bus_r'.
@@ -61,7 +61,7 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @W [SCHED-69] Unable to schedule 'load' operation ('int_buffer_load_2', kernel/HLS/source/lloyds_kernel_top.cpp:28) on array 'int_buffer' due to limited memory ports.
 @I [SCHED-61] Pipelining result: Target II: 1, Final II: 2, Depth: 3.
 @I [SCHED-11] Finished scheduling.
-@I [HLS-111] Elapsed time: 0.09 seconds; current memory usage: 528 MB.
+@I [HLS-111] Elapsed time: 0.07 seconds; current memory usage: 528 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Exploring micro-architecture for module 'load_points_buffer' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -70,7 +70,7 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [BIND-101] Exploring resource sharing.
 @I [BIND-101] Binding ...
 @I [BIND-100] Finished micro-architecture generation.
-@I [HLS-111] Elapsed time: 0.04 seconds; current memory usage: 528 MB.
+@I [HLS-111] Elapsed time: 0.02 seconds; current memory usage: 528 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Scheduling module 'load_centres_buffer' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -81,7 +81,7 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @W [SCHED-69] Unable to schedule 'load' operation ('int_buffer_load_2', kernel/HLS/source/lloyds_kernel_top.cpp:44) on array 'int_buffer' due to limited memory ports.
 @I [SCHED-61] Pipelining result: Target II: 1, Final II: 2, Depth: 3.
 @I [SCHED-11] Finished scheduling.
-@I [HLS-111] Elapsed time: 0.11 seconds; current memory usage: 528 MB.
+@I [HLS-111] Elapsed time: 0.09 seconds; current memory usage: 529 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Exploring micro-architecture for module 'load_centres_buffer' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -90,7 +90,7 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [BIND-101] Exploring resource sharing.
 @I [BIND-101] Binding ...
 @I [BIND-100] Finished micro-architecture generation.
-@I [HLS-111] Elapsed time: 0.04 seconds; current memory usage: 528 MB.
+@I [HLS-111] Elapsed time: 0.03 seconds; current memory usage: 529 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Scheduling module 'store_output_points_buffer' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -101,7 +101,7 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [SCHED-61] Pipelining loop 'Loop 2'.
 @I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 3.
 @I [SCHED-11] Finished scheduling.
-@I [HLS-111] Elapsed time: 0.09 seconds; current memory usage: 529 MB.
+@I [HLS-111] Elapsed time: 0.07 seconds; current memory usage: 529 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Exploring micro-architecture for module 'store_output_points_buffer' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -120,7 +120,7 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [SCHED-61] Pipelining loop 'Loop 2'.
 @I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 3.
 @I [SCHED-11] Finished scheduling.
-@I [HLS-111] Elapsed time: 0.08 seconds; current memory usage: 529 MB.
+@I [HLS-111] Elapsed time: 0.05 seconds; current memory usage: 529 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Exploring micro-architecture for module 'store_output_buffer' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -129,7 +129,7 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [BIND-101] Exploring resource sharing.
 @I [BIND-101] Binding ...
 @I [BIND-100] Finished micro-architecture generation.
-@I [HLS-111] Elapsed time: 0.03 seconds; current memory usage: 529 MB.
+@I [HLS-111] Elapsed time: 0.02 seconds; current memory usage: 530 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Scheduling module 'lloyds_kernel_top' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -137,7 +137,7 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [SCHED-61] Pipelining loop 'minsearch_loop'.
 @I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 9.
 @I [SCHED-11] Finished scheduling.
-@I [HLS-111] Elapsed time: 0.2 seconds; current memory usage: 530 MB.
+@I [HLS-111] Elapsed time: 0.13 seconds; current memory usage: 530 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Exploring micro-architecture for module 'lloyds_kernel_top' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -146,29 +146,29 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [BIND-101] Exploring resource sharing.
 @I [BIND-101] Binding ...
 @I [BIND-100] Finished micro-architecture generation.
-@I [HLS-111] Elapsed time: 0.09 seconds; current memory usage: 530 MB.
+@I [HLS-111] Elapsed time: 0.08 seconds; current memory usage: 531 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Generating RTL for module 'load_points_buffer' 
 @I [HLS-10] ----------------------------------------------------------------
 @W [RTGEN-101] Setting dangling out port 'load_points_buffer/bus_r_dataout' to 0.
 @I [RTGEN-100] Finished creating RTL model for 'load_points_buffer'.
-@I [HLS-111] Elapsed time: 0.13 seconds; current memory usage: 531 MB.
+@I [HLS-111] Elapsed time: 0.1 seconds; current memory usage: 531 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Generating RTL for module 'load_centres_buffer' 
 @I [HLS-10] ----------------------------------------------------------------
 @W [RTGEN-101] Setting dangling out port 'load_centres_buffer/bus_r_dataout' to 0.
 @I [RTGEN-100] Finished creating RTL model for 'load_centres_buffer'.
-@I [HLS-111] Elapsed time: 0.09 seconds; current memory usage: 532 MB.
+@I [HLS-111] Elapsed time: 0.06 seconds; current memory usage: 533 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Generating RTL for module 'store_output_points_buffer' 
 @I [HLS-10] ----------------------------------------------------------------
 @I [RTGEN-100] Finished creating RTL model for 'store_output_points_buffer'.
-@I [HLS-111] Elapsed time: 0.1 seconds; current memory usage: 534 MB.
+@I [HLS-111] Elapsed time: 0.08 seconds; current memory usage: 534 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Generating RTL for module 'store_output_buffer' 
 @I [HLS-10] ----------------------------------------------------------------
 @I [RTGEN-100] Finished creating RTL model for 'store_output_buffer'.
-@I [HLS-111] Elapsed time: 0.08 seconds; current memory usage: 535 MB.
+@I [HLS-111] Elapsed time: 0.06 seconds; current memory usage: 535 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Generating RTL for module 'lloyds_kernel_top' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -188,7 +188,7 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [RTGEN-100] Generating core module 'lloyds_kernel_top_add_32ns_32ns_32_1': 2 instance(s).
 @I [RTGEN-100] Generating core module 'lloyds_kernel_top_mul_32s_32s_64_6': 3 instance(s).
 @I [RTGEN-100] Finished creating RTL model for 'lloyds_kernel_top'.
-@I [HLS-111] Elapsed time: 0.13 seconds; current memory usage: 537 MB.
+@I [HLS-111] Elapsed time: 0.1 seconds; current memory usage: 538 MB.
 @I [RTMG-278] Implementing memory 'load_points_buffer_int_buffer_ram' using block RAMs.
 @I [RTMG-278] Implementing memory 'load_centres_buffer_int_buffer_ram' using block RAMs.
 @I [RTMG-278] Implementing memory 'store_output_points_buffer_int_buffer_ram' using block RAMs.
@@ -203,5 +203,5 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [WVLOG-307] Generating RTL Verilog for 'lloyds_kernel_top'.
 @I [IMPL-8] Exporting RTL as an IP in IP-XACT.
 @I [IMPL-8] Starting RTL evaluation using Vivado ...
-@I [HLS-112] Total elapsed time: 246.3 seconds; peak memory usage: 537 MB.
-@I [LIC-101] Checked in feature [HLS]
+@I [HLS-112] Total elapsed time: 180.199 seconds; peak memory usage: 538 MB.
+@I [LIC-101] Checked in feature [VIVADO_HLS]

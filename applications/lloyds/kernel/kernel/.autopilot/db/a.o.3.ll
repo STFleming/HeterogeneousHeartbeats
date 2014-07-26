@@ -1,4 +1,4 @@
-; ModuleID = '/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/.autopilot/db/a.o.3.bc'
+; ModuleID = '/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds/kernel/kernel/.autopilot/db/a.o.3.bc'
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
@@ -1150,7 +1150,7 @@ declare i10 @llvm.part.set.i10.i8(i10, i8, i32, i32) nounwind readnone
 !51 = metadata !{metadata !"debug", metadata !12, metadata !"unsigned int"}
 !52 = metadata !{i32 786689, metadata !53, metadata !"k", metadata !54, i32 134217825, metadata !57, i32 0, i32 0} ; [ DW_TAG_arg_variable ]
 !53 = metadata !{i32 786478, i32 0, metadata !54, metadata !"lloyds_kernel_top", metadata !"lloyds_kernel_top", metadata !"_Z17lloyds_kernel_topjPVijjjjjjPj", metadata !54, i32 89, metadata !55, i1 false, i1 true, i32 0, i32 0, null, i32 256, i1 false, void (i32, i32*, i32, i32, i32, i32, i32, i32, i32*)* @lloyds_kernel_top, null, null, metadata !64, i32 100} ; [ DW_TAG_subprogram ]
-!54 = metadata !{i32 786473, metadata !"kernel/HLS/source/lloyds_kernel_top.cpp", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!54 = metadata !{i32 786473, metadata !"kernel/HLS/source/lloyds_kernel_top.cpp", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !55 = metadata !{i32 786453, i32 0, metadata !"", i32 0, i32 0, i64 0, i64 0, i64 0, i32 0, null, metadata !56, i32 0, i32 0} ; [ DW_TAG_subroutine_type ]
 !56 = metadata !{null, metadata !57, metadata !59, metadata !57, metadata !57, metadata !57, metadata !57, metadata !57, metadata !57, metadata !63}
 !57 = metadata !{i32 786454, null, metadata !"uint", metadata !54, i32 36, i64 0, i64 0, i64 0, i32 0, metadata !58} ; [ DW_TAG_typedef ]
@@ -1165,7 +1165,7 @@ declare i10 @llvm.part.set.i10.i8(i10, i8, i32, i32) nounwind readnone
 !66 = metadata !{i32 97, i32 31, metadata !53, null}
 !67 = metadata !{i32 786689, metadata !68, metadata !"val", metadata !69, i32 33554637, metadata !58, i32 0, i32 0} ; [ DW_TAG_arg_variable ]
 !68 = metadata !{i32 786478, i32 0, null, metadata !"ap_uint", metadata !"ap_uint", metadata !"_ZN7ap_uintILi8EEC1Ej", metadata !69, i32 205, metadata !70, i1 false, i1 true, i32 0, i32 0, null, i32 256, i1 false, null, null, metadata !356, metadata !64, i32 205} ; [ DW_TAG_subprogram ]
-!69 = metadata !{i32 786473, metadata !"/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_int.h", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!69 = metadata !{i32 786473, metadata !"/opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/autopilot/ap_int.h", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !70 = metadata !{i32 786453, i32 0, metadata !"", i32 0, i32 0, i64 0, i64 0, i64 0, i32 0, null, metadata !71, i32 0, i32 0} ; [ DW_TAG_subroutine_type ]
 !71 = metadata !{null, metadata !72, metadata !58}
 !72 = metadata !{i32 786447, i32 0, metadata !"", i32 0, i32 0, i64 64, i64 64, i64 0, i32 64, metadata !73} ; [ DW_TAG_pointer_type ]
@@ -1173,11 +1173,11 @@ declare i10 @llvm.part.set.i10.i8(i10, i8, i32, i32) nounwind readnone
 !74 = metadata !{metadata !75, metadata !326, metadata !329, metadata !334, metadata !335, metadata !338, metadata !341, metadata !344, metadata !347, metadata !350, metadata !353, metadata !356, metadata !357, metadata !360, metadata !363, metadata !366, metadata !369, metadata !372, metadata !375, metadata !378, metadata !381, metadata !386, metadata !387, metadata !390, metadata !391, metadata !396}
 !75 = metadata !{i32 786460, metadata !73, null, metadata !69, i32 0, i64 0, i64 0, i64 0, i32 0, metadata !76} ; [ DW_TAG_inheritance ]
 !76 = metadata !{i32 786434, null, metadata !"ap_int_base<8, false, true>", metadata !77, i32 1302, i64 8, i64 8, i32 0, i32 0, null, metadata !78, i32 0, null, metadata !324} ; [ DW_TAG_class_type ]
-!77 = metadata !{i32 786473, metadata !"/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_int_syn.h", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!77 = metadata !{i32 786473, metadata !"/opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/autopilot/ap_int_syn.h", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !78 = metadata !{metadata !79, metadata !98, metadata !102, metadata !109, metadata !110, metadata !113, metadata !117, metadata !121, metadata !125, metadata !129, metadata !132, metadata !135, metadata !139, metadata !143, metadata !148, metadata !153, metadata !157, metadata !161, metadata !167, metadata !170, metadata !175, metadata !178, metadata !179, metadata !180, metadata !183, metadata !184, metadata !187, metadata !190, metadata !193, metadata !196, metadata !206, metadata !209, metadata !212, metadata !215, metadata !218, metadata !221, metadata !224, metadata !227, metadata !230, metadata !231, metadata !236, metadata !239, metadata !240, metadata !241, metadata !242, metadata !243, metadata !244, metadata !247, metadata !248, metadata !251, metadata !252, metadata !253, metadata !254, metadata !255, metadata !256, metadata !259, metadata !260, metadata !261, metadata !264, metadata !265, metadata !268, metadata !269, metadata !272, metadata !273, metadata !277, metadata !278, metadata !281, metadata !282, metadata !286, metadata !287, metadata !288, metadata !289, metadata !292, metadata !293, metadata !294, metadata !295, metadata !296, metadata !297, metadata !298, metadata !299, metadata !300, metadata !301, metadata !302, metadata !303, metadata !313, metadata !316, metadata !319, metadata !323}
 !79 = metadata !{i32 786460, metadata !76, null, metadata !77, i32 0, i64 0, i64 0, i64 0, i32 0, metadata !80} ; [ DW_TAG_inheritance ]
 !80 = metadata !{i32 786434, null, metadata !"ssdm_int<8 + 1024 * 0, false>", metadata !81, i32 10, i64 8, i64 8, i32 0, i32 0, null, metadata !82, i32 0, null, metadata !94} ; [ DW_TAG_class_type ]
-!81 = metadata !{i32 786473, metadata !"/mnt/cas_nfs/applications/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/etc/autopilot_dt.def", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!81 = metadata !{i32 786473, metadata !"/opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/autopilot/etc/autopilot_dt.def", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !82 = metadata !{metadata !83, metadata !85, metadata !89}
 !83 = metadata !{i32 786445, metadata !80, metadata !"V", metadata !81, i32 10, i64 8, i64 8, i64 0, i32 0, metadata !84} ; [ DW_TAG_member ]
 !84 = metadata !{i32 786468, null, metadata !"uint8", null, i32 0, i64 8, i64 8, i64 0, i32 0, i32 7} ; [ DW_TAG_base_type ]
@@ -1828,7 +1828,7 @@ declare i10 @llvm.part.set.i10.i8(i10, i8, i32, i32) nounwind readnone
 !729 = metadata !{i32 786688, metadata !400, metadata !"data_points_buffer", metadata !54, i32 135, metadata !730, i32 0, i32 0} ; [ DW_TAG_auto_variable ]
 !730 = metadata !{i32 786433, null, metadata !"", null, i32 0, i64 1536, i64 32, i32 0, i32 0, metadata !731, metadata !753, i32 0, i32 0} ; [ DW_TAG_array_type ]
 !731 = metadata !{i32 786434, null, metadata !"data_type", metadata !732, i32 41, i64 96, i64 32, i32 0, i32 0, null, metadata !733, i32 0, null, null} ; [ DW_TAG_class_type ]
-!732 = metadata !{i32 786473, metadata !"kernel/HLS/source/lloyds_kernel_top.h", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!732 = metadata !{i32 786473, metadata !"kernel/HLS/source/lloyds_kernel_top.h", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !733 = metadata !{metadata !734, metadata !739, metadata !743, metadata !748, metadata !749}
 !734 = metadata !{i32 786445, metadata !731, metadata !"value", metadata !732, i32 42, i64 96, i64 32, i64 0, i32 0, metadata !735} ; [ DW_TAG_member ]
 !735 = metadata !{i32 786433, null, metadata !"", null, i32 0, i64 96, i64 32, i32 0, i32 0, metadata !736, metadata !737, i32 0, i32 0} ; [ DW_TAG_array_type ]
@@ -2159,7 +2159,7 @@ declare i10 @llvm.part.set.i10.i8(i10, i8, i32, i32) nounwind readnone
 !1060 = metadata !{i32 786443, metadata !1061, i32 247, i32 5, metadata !1063, i32 14} ; [ DW_TAG_lexical_block ]
 !1061 = metadata !{i32 786443, metadata !1062, i32 239, i32 1, metadata !1063, i32 13} ; [ DW_TAG_lexical_block ]
 !1062 = metadata !{i32 786478, i32 0, metadata !1063, metadata !"compute_distance", metadata !"compute_distance", metadata !"_Z16compute_distance9data_typeS_Pi", metadata !1063, i32 238, metadata !1064, i1 false, i1 true, i32 0, i32 0, null, i32 256, i1 false, null, null, null, metadata !64, i32 239} ; [ DW_TAG_subprogram ]
-!1063 = metadata !{i32 786473, metadata !"kernel/HLS/source/lloyds_util.cpp", metadata !"/home/ee/s/sf306/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
+!1063 = metadata !{i32 786473, metadata !"kernel/HLS/source/lloyds_util.cpp", metadata !"/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/applications/lloyds", null} ; [ DW_TAG_file_type ]
 !1064 = metadata !{i32 786453, i32 0, metadata !"", i32 0, i32 0, i64 0, i64 0, i64 0, i32 0, null, metadata !1065, i32 0, i32 0} ; [ DW_TAG_subroutine_type ]
 !1065 = metadata !{null, metadata !1066, metadata !1066, metadata !1077}
 !1066 = metadata !{i32 786434, null, metadata !"data_type", metadata !732, i32 41, i64 96, i64 32, i32 0, i32 0, null, metadata !1067, i32 0, null, null} ; [ DW_TAG_class_type ]

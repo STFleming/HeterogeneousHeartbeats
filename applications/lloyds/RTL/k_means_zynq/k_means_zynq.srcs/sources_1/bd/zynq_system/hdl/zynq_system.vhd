@@ -87,7 +87,7 @@ entity m00_couplers_imp_10QZWQK is
 end m00_couplers_imp_10QZWQK;
 
 architecture STRUCTURE of m00_couplers_imp_10QZWQK is
-  component zynq_system_auto_pc_2 is
+  component zynq_system_auto_pc_8 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -169,7 +169,7 @@ architecture STRUCTURE of m00_couplers_imp_10QZWQK is
     m_axi_rvalid : in STD_LOGIC;
     m_axi_rready : out STD_LOGIC
   );
-  end component zynq_system_auto_pc_2;
+  end component zynq_system_auto_pc_8;
   signal S_ACLK_1 : STD_LOGIC;
   signal S_ARESETN_1 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal auto_pc_to_m00_couplers_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -329,7 +329,7 @@ begin
   m00_couplers_to_auto_pc_WLAST <= S_AXI_wlast;
   m00_couplers_to_auto_pc_WSTRB(3 downto 0) <= S_AXI_wstrb(3 downto 0);
   m00_couplers_to_auto_pc_WVALID <= S_AXI_wvalid;
-auto_pc: component zynq_system_auto_pc_2
+auto_pc: component zynq_system_auto_pc_8
     port map (
       aclk => S_ACLK_1,
       aresetn => S_ARESETN_1(0),
@@ -501,7 +501,7 @@ entity m00_couplers_imp_1ULZJWI is
 end m00_couplers_imp_1ULZJWI;
 
 architecture STRUCTURE of m00_couplers_imp_1ULZJWI is
-  component zynq_system_auto_pc_1 is
+  component zynq_system_auto_pc_7 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -583,7 +583,7 @@ architecture STRUCTURE of m00_couplers_imp_1ULZJWI is
     m_axi_rvalid : in STD_LOGIC;
     m_axi_rready : out STD_LOGIC
   );
-  end component zynq_system_auto_pc_1;
+  end component zynq_system_auto_pc_7;
   signal S_ACLK_1 : STD_LOGIC;
   signal S_ARESETN_1 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal auto_pc_to_m00_couplers_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -743,7 +743,7 @@ begin
   m00_couplers_to_auto_pc_WLAST <= S_AXI_wlast;
   m00_couplers_to_auto_pc_WSTRB(3 downto 0) <= S_AXI_wstrb(3 downto 0);
   m00_couplers_to_auto_pc_WVALID <= S_AXI_wvalid;
-auto_pc: component zynq_system_auto_pc_1
+auto_pc: component zynq_system_auto_pc_7
     port map (
       aclk => S_ACLK_1,
       aresetn => S_ARESETN_1(0),
@@ -1291,7 +1291,7 @@ entity s00_couplers_imp_156Q4UY is
 end s00_couplers_imp_156Q4UY;
 
 architecture STRUCTURE of s00_couplers_imp_156Q4UY is
-  component zynq_system_auto_pc_0 is
+  component zynq_system_auto_pc_6 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -1353,7 +1353,7 @@ architecture STRUCTURE of s00_couplers_imp_156Q4UY is
     m_axi_rvalid : in STD_LOGIC;
     m_axi_rready : out STD_LOGIC
   );
-  end component zynq_system_auto_pc_0;
+  end component zynq_system_auto_pc_6;
   signal S_ACLK_1 : STD_LOGIC;
   signal S_ARESETN_1 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal auto_pc_to_s00_couplers_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -1473,7 +1473,7 @@ begin
   s00_couplers_to_auto_pc_WLAST <= S_AXI_wlast;
   s00_couplers_to_auto_pc_WSTRB(3 downto 0) <= S_AXI_wstrb(3 downto 0);
   s00_couplers_to_auto_pc_WVALID <= S_AXI_wvalid;
-auto_pc: component zynq_system_auto_pc_0
+auto_pc: component zynq_system_auto_pc_6
     port map (
       aclk => S_ACLK_1,
       aresetn => S_ARESETN_1(0),
@@ -2460,7 +2460,7 @@ entity zynq_system_axi_mem_intercon_1 is
 end zynq_system_axi_mem_intercon_1;
 
 architecture STRUCTURE of zynq_system_axi_mem_intercon_1 is
-  component zynq_system_xbar_3 is
+  component zynq_system_xbar_6 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -2541,7 +2541,7 @@ architecture STRUCTURE of zynq_system_axi_mem_intercon_1 is
     m_axi_rvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_axi_rready : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  end component zynq_system_xbar_3;
+  end component zynq_system_xbar_6;
   signal M00_ACLK_1 : STD_LOGIC;
   signal M00_ARESETN_1 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal S00_ACLK_1 : STD_LOGIC;
@@ -3144,7 +3144,7 @@ s01_couplers: entity work.s01_couplers_imp_1XMYHY6
       S_AXI_wstrb(3 downto 0) => axi_mem_intercon_to_s01_couplers_WSTRB(3 downto 0),
       S_AXI_wvalid => axi_mem_intercon_to_s01_couplers_WVALID
     );
-xbar: component zynq_system_xbar_3
+xbar: component zynq_system_xbar_6
     port map (
       aclk => axi_mem_intercon_ACLK_net,
       aresetn => axi_mem_intercon_ARESETN_net(0),
@@ -3395,7 +3395,7 @@ entity zynq_system_axi_mem_intercon_1_2 is
 end zynq_system_axi_mem_intercon_1_2;
 
 architecture STRUCTURE of zynq_system_axi_mem_intercon_1_2 is
-  component zynq_system_xbar_4 is
+  component zynq_system_xbar_5 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -3476,7 +3476,7 @@ architecture STRUCTURE of zynq_system_axi_mem_intercon_1_2 is
     m_axi_rvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_axi_rready : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  end component zynq_system_xbar_4;
+  end component zynq_system_xbar_5;
   signal M00_ACLK_1 : STD_LOGIC;
   signal M00_ARESETN_1 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal S00_ACLK_1 : STD_LOGIC;
@@ -4079,7 +4079,7 @@ s01_couplers: entity work.s01_couplers_imp_13KE7XC
       S_AXI_wstrb(3 downto 0) => axi_mem_intercon_1_to_s01_couplers_WSTRB(3 downto 0),
       S_AXI_wvalid => axi_mem_intercon_1_to_s01_couplers_WVALID
     );
-xbar: component zynq_system_xbar_4
+xbar: component zynq_system_xbar_5
     port map (
       aclk => axi_mem_intercon_1_ACLK_net,
       aresetn => axi_mem_intercon_1_ARESETN_net(0),
@@ -5219,6 +5219,128 @@ architecture STRUCTURE of zynq_system is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component zynq_system_rst_processing_system7_0_50M_0;
+  component zynq_system_lloyds_kernel_top_1_2 is
+  port (
+    m_axi_master_portA_AWID : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axi_master_portA_AWADDR : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_master_portA_AWLEN : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    m_axi_master_portA_AWSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axi_master_portA_AWBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_master_portA_AWLOCK : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_master_portA_AWCACHE : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    m_axi_master_portA_AWPROT : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axi_master_portA_AWQOS : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    m_axi_master_portA_AWVALID : out STD_LOGIC;
+    m_axi_master_portA_AWREADY : in STD_LOGIC;
+    m_axi_master_portA_WDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_master_portA_WSTRB : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    m_axi_master_portA_WLAST : out STD_LOGIC;
+    m_axi_master_portA_WVALID : out STD_LOGIC;
+    m_axi_master_portA_WREADY : in STD_LOGIC;
+    m_axi_master_portA_BID : in STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axi_master_portA_BRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_master_portA_BVALID : in STD_LOGIC;
+    m_axi_master_portA_BREADY : out STD_LOGIC;
+    m_axi_master_portA_ARID : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axi_master_portA_ARADDR : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_master_portA_ARLEN : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    m_axi_master_portA_ARSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axi_master_portA_ARBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_master_portA_ARLOCK : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_master_portA_ARCACHE : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    m_axi_master_portA_ARPROT : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axi_master_portA_ARQOS : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    m_axi_master_portA_ARVALID : out STD_LOGIC;
+    m_axi_master_portA_ARREADY : in STD_LOGIC;
+    m_axi_master_portA_RID : in STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axi_master_portA_RDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_master_portA_RRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_master_portA_RLAST : in STD_LOGIC;
+    m_axi_master_portA_RVALID : in STD_LOGIC;
+    m_axi_master_portA_RREADY : out STD_LOGIC;
+    s_axi_CONFIG_BUS_AWADDR : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    s_axi_CONFIG_BUS_AWVALID : in STD_LOGIC;
+    s_axi_CONFIG_BUS_AWREADY : out STD_LOGIC;
+    s_axi_CONFIG_BUS_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_CONFIG_BUS_WSTRB : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s_axi_CONFIG_BUS_WVALID : in STD_LOGIC;
+    s_axi_CONFIG_BUS_WREADY : out STD_LOGIC;
+    s_axi_CONFIG_BUS_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_CONFIG_BUS_BVALID : out STD_LOGIC;
+    s_axi_CONFIG_BUS_BREADY : in STD_LOGIC;
+    s_axi_CONFIG_BUS_ARADDR : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    s_axi_CONFIG_BUS_ARVALID : in STD_LOGIC;
+    s_axi_CONFIG_BUS_ARREADY : out STD_LOGIC;
+    s_axi_CONFIG_BUS_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_CONFIG_BUS_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_CONFIG_BUS_RVALID : out STD_LOGIC;
+    s_axi_CONFIG_BUS_RREADY : in STD_LOGIC;
+    interrupt : out STD_LOGIC;
+    aclk : in STD_LOGIC;
+    aresetn : in STD_LOGIC
+  );
+  end component zynq_system_lloyds_kernel_top_1_2;
+  component zynq_system_combiner_top_1_8 is
+  port (
+    m_axi_master_portA_AWID : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axi_master_portA_AWADDR : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_master_portA_AWLEN : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    m_axi_master_portA_AWSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axi_master_portA_AWBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_master_portA_AWLOCK : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_master_portA_AWCACHE : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    m_axi_master_portA_AWPROT : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axi_master_portA_AWQOS : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    m_axi_master_portA_AWVALID : out STD_LOGIC;
+    m_axi_master_portA_AWREADY : in STD_LOGIC;
+    m_axi_master_portA_WDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_master_portA_WSTRB : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    m_axi_master_portA_WLAST : out STD_LOGIC;
+    m_axi_master_portA_WVALID : out STD_LOGIC;
+    m_axi_master_portA_WREADY : in STD_LOGIC;
+    m_axi_master_portA_BID : in STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axi_master_portA_BRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_master_portA_BVALID : in STD_LOGIC;
+    m_axi_master_portA_BREADY : out STD_LOGIC;
+    m_axi_master_portA_ARID : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axi_master_portA_ARADDR : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_master_portA_ARLEN : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    m_axi_master_portA_ARSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axi_master_portA_ARBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_master_portA_ARLOCK : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_master_portA_ARCACHE : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    m_axi_master_portA_ARPROT : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axi_master_portA_ARQOS : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    m_axi_master_portA_ARVALID : out STD_LOGIC;
+    m_axi_master_portA_ARREADY : in STD_LOGIC;
+    m_axi_master_portA_RID : in STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axi_master_portA_RDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axi_master_portA_RRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axi_master_portA_RLAST : in STD_LOGIC;
+    m_axi_master_portA_RVALID : in STD_LOGIC;
+    m_axi_master_portA_RREADY : out STD_LOGIC;
+    s_axi_CONFIG_BUS_AWADDR : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s_axi_CONFIG_BUS_AWVALID : in STD_LOGIC;
+    s_axi_CONFIG_BUS_AWREADY : out STD_LOGIC;
+    s_axi_CONFIG_BUS_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_CONFIG_BUS_WSTRB : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s_axi_CONFIG_BUS_WVALID : in STD_LOGIC;
+    s_axi_CONFIG_BUS_WREADY : out STD_LOGIC;
+    s_axi_CONFIG_BUS_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_CONFIG_BUS_BVALID : out STD_LOGIC;
+    s_axi_CONFIG_BUS_BREADY : in STD_LOGIC;
+    s_axi_CONFIG_BUS_ARADDR : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s_axi_CONFIG_BUS_ARVALID : in STD_LOGIC;
+    s_axi_CONFIG_BUS_ARREADY : out STD_LOGIC;
+    s_axi_CONFIG_BUS_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_CONFIG_BUS_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_CONFIG_BUS_RVALID : out STD_LOGIC;
+    s_axi_CONFIG_BUS_RREADY : in STD_LOGIC;
+    interrupt : out STD_LOGIC;
+    aclk : in STD_LOGIC;
+    aresetn : in STD_LOGIC
+  );
+  end component zynq_system_combiner_top_1_8;
   component zynq_system_lloyds_kernel_top_0_0 is
   port (
     m_axi_master_portA_AWID : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -5341,128 +5463,6 @@ architecture STRUCTURE of zynq_system is
     aresetn : in STD_LOGIC
   );
   end component zynq_system_combiner_top_0_6;
-  component zynq_system_lloyds_kernel_top_1_1 is
-  port (
-    m_axi_master_portA_AWID : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axi_master_portA_AWADDR : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    m_axi_master_portA_AWLEN : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    m_axi_master_portA_AWSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    m_axi_master_portA_AWBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    m_axi_master_portA_AWLOCK : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    m_axi_master_portA_AWCACHE : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    m_axi_master_portA_AWPROT : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    m_axi_master_portA_AWQOS : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    m_axi_master_portA_AWVALID : out STD_LOGIC;
-    m_axi_master_portA_AWREADY : in STD_LOGIC;
-    m_axi_master_portA_WDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    m_axi_master_portA_WSTRB : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    m_axi_master_portA_WLAST : out STD_LOGIC;
-    m_axi_master_portA_WVALID : out STD_LOGIC;
-    m_axi_master_portA_WREADY : in STD_LOGIC;
-    m_axi_master_portA_BID : in STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axi_master_portA_BRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    m_axi_master_portA_BVALID : in STD_LOGIC;
-    m_axi_master_portA_BREADY : out STD_LOGIC;
-    m_axi_master_portA_ARID : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axi_master_portA_ARADDR : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    m_axi_master_portA_ARLEN : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    m_axi_master_portA_ARSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    m_axi_master_portA_ARBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    m_axi_master_portA_ARLOCK : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    m_axi_master_portA_ARCACHE : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    m_axi_master_portA_ARPROT : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    m_axi_master_portA_ARQOS : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    m_axi_master_portA_ARVALID : out STD_LOGIC;
-    m_axi_master_portA_ARREADY : in STD_LOGIC;
-    m_axi_master_portA_RID : in STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axi_master_portA_RDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    m_axi_master_portA_RRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    m_axi_master_portA_RLAST : in STD_LOGIC;
-    m_axi_master_portA_RVALID : in STD_LOGIC;
-    m_axi_master_portA_RREADY : out STD_LOGIC;
-    s_axi_CONFIG_BUS_AWADDR : in STD_LOGIC_VECTOR ( 6 downto 0 );
-    s_axi_CONFIG_BUS_AWVALID : in STD_LOGIC;
-    s_axi_CONFIG_BUS_AWREADY : out STD_LOGIC;
-    s_axi_CONFIG_BUS_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_CONFIG_BUS_WSTRB : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s_axi_CONFIG_BUS_WVALID : in STD_LOGIC;
-    s_axi_CONFIG_BUS_WREADY : out STD_LOGIC;
-    s_axi_CONFIG_BUS_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_CONFIG_BUS_BVALID : out STD_LOGIC;
-    s_axi_CONFIG_BUS_BREADY : in STD_LOGIC;
-    s_axi_CONFIG_BUS_ARADDR : in STD_LOGIC_VECTOR ( 6 downto 0 );
-    s_axi_CONFIG_BUS_ARVALID : in STD_LOGIC;
-    s_axi_CONFIG_BUS_ARREADY : out STD_LOGIC;
-    s_axi_CONFIG_BUS_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_CONFIG_BUS_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_CONFIG_BUS_RVALID : out STD_LOGIC;
-    s_axi_CONFIG_BUS_RREADY : in STD_LOGIC;
-    interrupt : out STD_LOGIC;
-    aclk : in STD_LOGIC;
-    aresetn : in STD_LOGIC
-  );
-  end component zynq_system_lloyds_kernel_top_1_1;
-  component zynq_system_combiner_top_1_7 is
-  port (
-    m_axi_master_portA_AWID : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axi_master_portA_AWADDR : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    m_axi_master_portA_AWLEN : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    m_axi_master_portA_AWSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    m_axi_master_portA_AWBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    m_axi_master_portA_AWLOCK : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    m_axi_master_portA_AWCACHE : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    m_axi_master_portA_AWPROT : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    m_axi_master_portA_AWQOS : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    m_axi_master_portA_AWVALID : out STD_LOGIC;
-    m_axi_master_portA_AWREADY : in STD_LOGIC;
-    m_axi_master_portA_WDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    m_axi_master_portA_WSTRB : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    m_axi_master_portA_WLAST : out STD_LOGIC;
-    m_axi_master_portA_WVALID : out STD_LOGIC;
-    m_axi_master_portA_WREADY : in STD_LOGIC;
-    m_axi_master_portA_BID : in STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axi_master_portA_BRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    m_axi_master_portA_BVALID : in STD_LOGIC;
-    m_axi_master_portA_BREADY : out STD_LOGIC;
-    m_axi_master_portA_ARID : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axi_master_portA_ARADDR : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    m_axi_master_portA_ARLEN : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    m_axi_master_portA_ARSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    m_axi_master_portA_ARBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    m_axi_master_portA_ARLOCK : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    m_axi_master_portA_ARCACHE : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    m_axi_master_portA_ARPROT : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    m_axi_master_portA_ARQOS : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    m_axi_master_portA_ARVALID : out STD_LOGIC;
-    m_axi_master_portA_ARREADY : in STD_LOGIC;
-    m_axi_master_portA_RID : in STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axi_master_portA_RDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    m_axi_master_portA_RRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    m_axi_master_portA_RLAST : in STD_LOGIC;
-    m_axi_master_portA_RVALID : in STD_LOGIC;
-    m_axi_master_portA_RREADY : out STD_LOGIC;
-    s_axi_CONFIG_BUS_AWADDR : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    s_axi_CONFIG_BUS_AWVALID : in STD_LOGIC;
-    s_axi_CONFIG_BUS_AWREADY : out STD_LOGIC;
-    s_axi_CONFIG_BUS_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_CONFIG_BUS_WSTRB : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s_axi_CONFIG_BUS_WVALID : in STD_LOGIC;
-    s_axi_CONFIG_BUS_WREADY : out STD_LOGIC;
-    s_axi_CONFIG_BUS_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_CONFIG_BUS_BVALID : out STD_LOGIC;
-    s_axi_CONFIG_BUS_BREADY : in STD_LOGIC;
-    s_axi_CONFIG_BUS_ARADDR : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    s_axi_CONFIG_BUS_ARVALID : in STD_LOGIC;
-    s_axi_CONFIG_BUS_ARREADY : out STD_LOGIC;
-    s_axi_CONFIG_BUS_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_CONFIG_BUS_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_CONFIG_BUS_RVALID : out STD_LOGIC;
-    s_axi_CONFIG_BUS_RREADY : in STD_LOGIC;
-    interrupt : out STD_LOGIC;
-    aclk : in STD_LOGIC;
-    aresetn : in STD_LOGIC
-  );
-  end component zynq_system_combiner_top_1_7;
   signal GND_1 : STD_LOGIC;
   signal VCC_1 : STD_LOGIC;
   signal axi_mem_intercon_1_M00_AXI_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -6153,7 +6153,7 @@ combiner_top_0: component zynq_system_combiner_top_0_6
       s_axi_CONFIG_BUS_WSTRB(3 downto 0) => processing_system7_0_axi_periph_M00_AXI_WSTRB(3 downto 0),
       s_axi_CONFIG_BUS_WVALID => processing_system7_0_axi_periph_M00_AXI_WVALID
     );
-combiner_top_1: component zynq_system_combiner_top_1_7
+combiner_top_1: component zynq_system_combiner_top_1_8
     port map (
       aclk => processing_system7_0_FCLK_CLK0,
       aresetn => rst_processing_system7_0_50M_peripheral_aresetn(0),
@@ -6273,7 +6273,7 @@ lloyds_kernel_top_0: component zynq_system_lloyds_kernel_top_0_0
       s_axi_CONFIG_BUS_WSTRB(3 downto 0) => processing_system7_0_axi_periph_M01_AXI_WSTRB(3 downto 0),
       s_axi_CONFIG_BUS_WVALID => processing_system7_0_axi_periph_M01_AXI_WVALID
     );
-lloyds_kernel_top_1: component zynq_system_lloyds_kernel_top_1_1
+lloyds_kernel_top_1: component zynq_system_lloyds_kernel_top_1_2
     port map (
       aclk => processing_system7_0_FCLK_CLK0,
       aresetn => rst_processing_system7_0_50M_peripheral_aresetn(0),
