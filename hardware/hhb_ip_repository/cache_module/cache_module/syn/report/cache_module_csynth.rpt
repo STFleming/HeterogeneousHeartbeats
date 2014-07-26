@@ -1,0 +1,163 @@
+
+
+================================================================
+== Vivado HLS Report for 'cache_module'
+================================================================
+* Date:           Sat Jul 26 18:11:56 2014
+
+* Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
+* Project:        cache_module
+* Solution:       cache_module
+* Product family: zynq zynq_fpv6 
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |  10.00|      6.28|        1.25|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   33|   33|   34|   34|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |   32|   32|         2|          -|          -|    16|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|Expression       |        -|      -|       0|    147|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        4|      -|       0|      0|
+|Multiplexer      |        -|      -|       -|      5|
+|Register         |        -|      -|     108|      -|
+|ShiftMemory      |        -|      -|       -|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        4|      0|     108|    152|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        1|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    +---------------------------+-----------------------------+---------+------+-----+------+-------------+
+    |           Memory          |            Module           | BRAM_18K| Words| Bits| Banks| W*Bits*Banks|
+    +---------------------------+-----------------------------+---------+------+-----+------+-------------+
+    |hb_cache_AppID_U           |cache_module_hb_cache_AppID  |        1|    16|   32|     1|          512|
+    |hb_cache_state_addr_U      |cache_module_hb_cache_AppID  |        1|    16|   32|     1|          512|
+    |hb_cache_log_addr_U        |cache_module_hb_cache_AppID  |        1|    16|   32|     1|          512|
+    |hb_cache_prev_sensor_id_U  |cache_module_hb_cache_AppID  |        1|    16|   32|     1|          512|
+    +---------------------------+-----------------------------+---------+------+-----+------+-------------+
+    |Total                      |                             |        4|    64|  128|     4|         2048|
+    +---------------------------+-----------------------------+---------+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Shift register: 
+    N/A
+
+    * Expression: 
+    +---------------------------------------------+----------+-------+---+----+------------+------------+
+    |                Variable Name                | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------------+----------+-------+---+----+------------+------------+
+    |i_fu_194_p2                                  |     +    |      0|  0|   5|           5|           1|
+    |temp_cache_entry_log_addr_1_fu_221_p3        |  Select  |      0|  0|  32|           1|          32|
+    |temp_cache_entry_prev_sensor_id_1_fu_213_p3  |  Select  |      0|  0|  32|           1|          32|
+    |temp_cache_entry_state_addr_1_fu_229_p3      |  Select  |      0|  0|  32|           1|          32|
+    |exitcond_i_fu_188_p2                         |   icmp   |      0|  0|   6|           5|           6|
+    |tmp_1_i_fu_208_p2                            |   icmp   |      0|  0|  40|          32|          32|
+    +---------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                        |          |      0|  0| 147|          45|         135|
+    +---------------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------+----+-----------+-----+-----------+
+    |     Name    | LUT| Input Size| Bits| Total Bits|
+    +-------------+----+-----------+-----+-----------+
+    |i_i_reg_176  |   5|          2|    5|         10|
+    +-------------+----+-----------+-----+-----------+
+    |Total        |   5|          2|    5|         10|
+    +-------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------+----+-----+-----------+
+    |               Name              | FF | Bits| Const Bits|
+    +---------------------------------+----+-----+-----------+
+    |ap_CS_fsm                        |   2|    2|          0|
+    |i_i_reg_176                      |   5|    5|          0|
+    |i_reg_245                        |   5|    5|          0|
+    |temp_res_log_addr_reg_150        |  32|   32|          0|
+    |temp_res_prev_sensor_id_reg_137  |  32|   32|          0|
+    |temp_res_state_addr_reg_163      |  32|   32|          0|
+    +---------------------------------+----+-----+-----------+
+    |Total                            | 108|  108|          0|
+    +---------------------------------+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+----------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |  Source Object |    C Type    |
++-----------------------+-----+-----+------------+----------------+--------------+
+|ap_clk                 |  in |    1| ap_ctrl_hs |  cache_module  | return value |
+|ap_rst                 |  in |    1| ap_ctrl_hs |  cache_module  | return value |
+|ap_start               |  in |    1| ap_ctrl_hs |  cache_module  | return value |
+|ap_done                | out |    1| ap_ctrl_hs |  cache_module  | return value |
+|ap_idle                | out |    1| ap_ctrl_hs |  cache_module  | return value |
+|ap_ready               | out |    1| ap_ctrl_hs |  cache_module  | return value |
+|a_req_din              | out |    1|   ap_bus   |        a       |    pointer   |
+|a_req_full_n           |  in |    1|   ap_bus   |        a       |    pointer   |
+|a_req_write            | out |    1|   ap_bus   |        a       |    pointer   |
+|a_rsp_empty_n          |  in |    1|   ap_bus   |        a       |    pointer   |
+|a_rsp_read             | out |    1|   ap_bus   |        a       |    pointer   |
+|a_address              | out |   32|   ap_bus   |        a       |    pointer   |
+|a_datain               |  in |   32|   ap_bus   |        a       |    pointer   |
+|a_dataout              | out |   32|   ap_bus   |        a       |    pointer   |
+|a_size                 | out |   32|   ap_bus   |        a       |    pointer   |
+|AppID                  |  in |   32|   ap_none  |      AppID     |    scalar    |
+|sensorID               |  in |   32|   ap_none  |    sensorID    |    scalar    |
+|sensor_value           | out |   32|   ap_vld   |  sensor_value  |    pointer   |
+|sensor_value_ap_vld    | out |    1|   ap_vld   |  sensor_value  |    pointer   |
+|out_log_addr           | out |   32|   ap_vld   |  out_log_addr  |    pointer   |
+|out_log_addr_ap_vld    | out |    1|   ap_vld   |  out_log_addr  |    pointer   |
+|out_state_addr         | out |   32|   ap_vld   | out_state_addr |    pointer   |
+|out_state_addr_ap_vld  | out |    1|   ap_vld   | out_state_addr |    pointer   |
++-----------------------+-----+-----+------------+----------------+--------------+
+

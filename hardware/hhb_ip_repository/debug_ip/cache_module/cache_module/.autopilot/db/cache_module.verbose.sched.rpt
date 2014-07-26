@@ -1,0 +1,297 @@
+
+
+================================================================
+== Vivado HLS Report for 'cache_module'
+================================================================
+* Date:           Sat Jul 26 18:11:56 2014
+
+* Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
+* Project:        cache_module
+* Solution:       cache_module
+* Product family: zynq zynq_fpv6 
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |  10.00|      6.28|        1.25|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   33|   33|   34|   34|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |   32|   32|         2|          -|          -|    16|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|Expression       |        -|      -|       -|      -|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      -|
+|Register         |        -|      -|       -|      -|
+|ShiftMemory      |        -|      -|       -|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|       0|      0|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|       0|      0|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Shift register: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 3
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond_i)
+3 --> 
+	2  / true
+* FSM state operations: 
+
+ <State 1>: 1.26ns
+ST_1: stg_4 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i32* %a) nounwind, !map !0
+
+ST_1: stg_5 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i32 %AppID) nounwind, !map !6
+
+ST_1: stg_6 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i32 %sensorID) nounwind, !map !12
+
+ST_1: stg_7 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecBitsMap(i32* %sensor_value) nounwind, !map !16
+
+ST_1: stg_8 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecBitsMap(i32* %out_log_addr) nounwind, !map !20
+
+ST_1: stg_9 [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecBitsMap(i32* %out_state_addr) nounwind, !map !24
+
+ST_1: stg_10 [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecTopModule([13 x i8]* @str) nounwind
+
+ST_1: AppID_read [1/1] 0.00ns
+:7  %AppID_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %AppID) nounwind
+
+ST_1: hb_cache_AppID [1/1] 0.00ns
+:8  %hb_cache_AppID = alloca [16 x i32], align 4
+
+ST_1: hb_cache_state_addr [1/1] 0.00ns
+:9  %hb_cache_state_addr = alloca [16 x i32], align 4
+
+ST_1: hb_cache_log_addr [1/1] 0.00ns
+:10  %hb_cache_log_addr = alloca [16 x i32], align 4
+
+ST_1: hb_cache_prev_sensor_id [1/1] 0.00ns
+:11  %hb_cache_prev_sensor_id = alloca [16 x i32], align 4
+
+ST_1: stg_16 [1/1] 0.00ns
+:12  call void (...)* @_ssdm_op_SpecBus(i32* %a, [7 x i8]* @p_str, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_17 [1/1] 0.00ns
+:13  call void (...)* @_ssdm_op_SpecIFCore(i32* %a, [1 x i8]* @p_str1, [6 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_18 [1/1] 1.26ns
+:14  br label %1
+
+
+ <State 2>: 2.39ns
+ST_2: temp_res_prev_sensor_id [1/1] 0.00ns
+:0  %temp_res_prev_sensor_id = phi i32 [ undef, %0 ], [ %temp_cache_entry_prev_sensor_id_1, %_ifconv ]
+
+ST_2: temp_res_log_addr [1/1] 0.00ns
+:1  %temp_res_log_addr = phi i32 [ undef, %0 ], [ %temp_cache_entry_log_addr_1, %_ifconv ]
+
+ST_2: temp_res_state_addr [1/1] 0.00ns
+:2  %temp_res_state_addr = phi i32 [ undef, %0 ], [ %temp_cache_entry_state_addr_1, %_ifconv ]
+
+ST_2: i_i [1/1] 0.00ns
+:3  %i_i = phi i5 [ 0, %0 ], [ %i, %_ifconv ]
+
+ST_2: exitcond_i [1/1] 1.91ns
+:4  %exitcond_i = icmp eq i5 %i_i, -16
+
+ST_2: empty [1/1] 0.00ns
+:5  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 16, i64 16, i64 16) nounwind
+
+ST_2: i [1/1] 1.72ns
+:6  %i = add i5 %i_i, 1
+
+ST_2: stg_26 [1/1] 0.00ns
+:7  br i1 %exitcond_i, label %query_hb_cache.exit, label %_ifconv
+
+ST_2: tmp_i [1/1] 0.00ns
+_ifconv:0  %tmp_i = zext i5 %i_i to i64
+
+ST_2: hb_cache_AppID_addr [1/1] 0.00ns
+_ifconv:1  %hb_cache_AppID_addr = getelementptr [16 x i32]* %hb_cache_AppID, i64 0, i64 %tmp_i
+
+ST_2: hb_cache_AppID_load [2/2] 2.39ns
+_ifconv:2  %hb_cache_AppID_load = load i32* %hb_cache_AppID_addr, align 4
+
+ST_2: hb_cache_state_addr_addr [1/1] 0.00ns
+_ifconv:4  %hb_cache_state_addr_addr = getelementptr [16 x i32]* %hb_cache_state_addr, i64 0, i64 %tmp_i
+
+ST_2: temp_cache_entry_state_addr [2/2] 2.39ns
+_ifconv:5  %temp_cache_entry_state_addr = load i32* %hb_cache_state_addr_addr, align 4
+
+ST_2: hb_cache_log_addr_addr [1/1] 0.00ns
+_ifconv:6  %hb_cache_log_addr_addr = getelementptr [16 x i32]* %hb_cache_log_addr, i64 0, i64 %tmp_i
+
+ST_2: temp_cache_entry_log_addr [2/2] 2.39ns
+_ifconv:7  %temp_cache_entry_log_addr = load i32* %hb_cache_log_addr_addr, align 4
+
+ST_2: hb_cache_prev_sensor_id_addr [1/1] 0.00ns
+_ifconv:8  %hb_cache_prev_sensor_id_addr = getelementptr [16 x i32]* %hb_cache_prev_sensor_id, i64 0, i64 %tmp_i
+
+ST_2: temp_cache_entry_prev_sensor_id [2/2] 2.39ns
+_ifconv:9  %temp_cache_entry_prev_sensor_id = load i32* %hb_cache_prev_sensor_id_addr, align 4
+
+ST_2: stg_36 [1/1] 0.00ns
+query_hb_cache.exit:0  call void @_ssdm_op_Write.ap_auto.i32P(i32* %sensor_value, i32 %temp_res_prev_sensor_id) nounwind
+
+ST_2: stg_37 [1/1] 0.00ns
+query_hb_cache.exit:1  call void @_ssdm_op_Write.ap_auto.i32P(i32* %out_log_addr, i32 %temp_res_log_addr) nounwind
+
+ST_2: stg_38 [1/1] 0.00ns
+query_hb_cache.exit:2  call void @_ssdm_op_Write.ap_auto.i32P(i32* %out_state_addr, i32 %temp_res_state_addr) nounwind
+
+ST_2: stg_39 [1/1] 0.00ns
+query_hb_cache.exit:3  ret void
+
+
+ <State 3>: 6.28ns
+ST_3: hb_cache_AppID_load [1/2] 2.39ns
+_ifconv:2  %hb_cache_AppID_load = load i32* %hb_cache_AppID_addr, align 4
+
+ST_3: tmp_1_i [1/1] 2.52ns
+_ifconv:3  %tmp_1_i = icmp eq i32 %hb_cache_AppID_load, %AppID_read
+
+ST_3: temp_cache_entry_state_addr [1/2] 2.39ns
+_ifconv:5  %temp_cache_entry_state_addr = load i32* %hb_cache_state_addr_addr, align 4
+
+ST_3: temp_cache_entry_log_addr [1/2] 2.39ns
+_ifconv:7  %temp_cache_entry_log_addr = load i32* %hb_cache_log_addr_addr, align 4
+
+ST_3: temp_cache_entry_prev_sensor_id [1/2] 2.39ns
+_ifconv:9  %temp_cache_entry_prev_sensor_id = load i32* %hb_cache_prev_sensor_id_addr, align 4
+
+ST_3: temp_cache_entry_prev_sensor_id_1 [1/1] 1.37ns
+_ifconv:10  %temp_cache_entry_prev_sensor_id_1 = select i1 %tmp_1_i, i32 %temp_cache_entry_prev_sensor_id, i32 %temp_res_prev_sensor_id
+
+ST_3: temp_cache_entry_log_addr_1 [1/1] 1.37ns
+_ifconv:11  %temp_cache_entry_log_addr_1 = select i1 %tmp_1_i, i32 %temp_cache_entry_log_addr, i32 %temp_res_log_addr
+
+ST_3: temp_cache_entry_state_addr_1 [1/1] 1.37ns
+_ifconv:12  %temp_cache_entry_state_addr_1 = select i1 %tmp_1_i, i32 %temp_cache_entry_state_addr, i32 %temp_res_state_addr
+
+ST_3: stg_48 [1/1] 0.00ns
+_ifconv:13  br label %1
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

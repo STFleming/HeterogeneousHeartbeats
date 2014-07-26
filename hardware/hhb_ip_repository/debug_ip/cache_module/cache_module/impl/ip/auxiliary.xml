@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xd" xd:functionName="cache_module" xd:componentRef="cache_module" xd:initiationInterval="34" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="*(a)" xd:originalName="a" xd:direction="in" xd:interfaceRef="M_AXI_A" xd:busTypeRef="aximm" xd:dataWidth="32"/>
+  <xd:arg xd:name="AppID" xd:originalName="AppID" xd:direction="in" xd:interfaceRef="AppID" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="sensorID" xd:originalName="sensorID" xd:direction="in" xd:interfaceRef="sensorID" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(sensor_value)" xd:originalName="sensor_value" xd:direction="out" xd:interfaceRef="sensor_value" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(out_log_addr)" xd:originalName="out_log_addr" xd:direction="out" xd:interfaceRef="out_log_addr" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(out_state_addr)" xd:originalName="out_state_addr" xd:direction="out" xd:interfaceRef="out_state_addr" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="33" xd:worst-case="33" xd:average-case="33"/>
+  <xd:resourceEstimates xd:LUT="152" xd:FF="108" xd:BRAM="4" xd:DSP="0"/>
+</xd:acceleratorMap>
