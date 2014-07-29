@@ -13,7 +13,7 @@ DEPS = $(INC_DIR)/heartbeat.h $(INC_DIR)/hhb_query.h $(INC_DIR)/hhb_applist.h $(
 $(BIN_DIR)/%.o: $(INC_DIR)/%.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-all: heartbeat_startup hb_generator app_list_printer applist_test
+all: hhb_startup heartbeat_startup hb_generator app_list_printer applist_test
 
 hw_freq_changer: $(OBJS)
 	$(CC) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@ $^ $(CFLAGS)
@@ -35,6 +35,11 @@ hwfreqscale_tester: $(OBJS)
 
 applist_test: $(OBJS)
 	$(CC) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@ $^ $(CFLAGS)
+
+hhb_startup: $(OBJS)
+	$(CC) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@ $^ $(CFLAGS)
+
+
 
 clean:
 	rm $(BIN_DIR)/*

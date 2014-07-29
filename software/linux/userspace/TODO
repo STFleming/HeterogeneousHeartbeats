@@ -1,0 +1,11 @@
+# TODO list for the HHB framework
+
+
+* First things first, organise the code base a little bit
+
+* Applications are registered onto the application list on startup, (don't worry about removing them from the list for now)
+	The Heatbeaet initialisation function will manage this, it will search through the list and add the application to the end
+* Add pragmas so indicate if the hhb_query module is in use
+* Create an initialisation routine that sets up the application list and also spins up management threads for hardware tasks that are registering heartbeats 
+
+

@@ -1,6 +1,7 @@
 #include "heartbeat.h"
 #include "hhb_applist.h"
 
+#define round(x) ((x)>=0?(int)((x)+0.5):(int)((x)-0.5))
 
 /**
 	Function used to obtain the physical address from a virtual address
@@ -241,7 +242,10 @@ int heartbeat_init(heartbeat_t* hb,
 
   int64_t log_phys_addr = get_physical_addr(pid, hb->log);
   int64_t state_phys_addr = get_physical_addr(pid, hb->state);
-    
+   
+  hb->state->state_paddr = (unsigned int)log_phys_addr;
+  hb->state->log_paddr = (unsigned int)state_phys_addr;
+ 
   applist_entry_t app_info;
   app_info = applist_create_sw_entry(state_phys_addr, log_phys_addr);
   applist_register_app(&app_info); 	
@@ -490,6 +494,11 @@ int64_t heartbeat( heartbeat_t* hb, int tag)
       hb->log[0].window_rate = 0;
       hb->log[0].instant_rate = 0;
       hb->log[0].global_rate = 0;
+      #if (HHB_QUERY==1)
+	hb->log[0].int_window_rate = 0;
+	hb->log[0].int_instant_rate = 0;
+	hb->log[0].int_global_rate = 0;
+      #endif
       hb->state->counter++;
       hb->state->buffer_index++;
       hb->state->valid = 1;
@@ -498,22 +507,29 @@ int64_t heartbeat( heartbeat_t* hb, int tag)
       //printf("In heartbeat - NOT first time stamp - read index = %d\n",hb->state->read_index );
       int index =  hb->state->buffer_index;
       hb->last_timestamp = time;
-      int64_t window_heartrate = hb_window_average(hb, time-old_last_time);
+      double window_heartrate = hb_window_average(hb, time-old_last_time);
       double global_heartrate =
         (((double) hb->state->counter+1) /
          ((double) (time - hb->first_timestamp)))*1000000000.0;
       double instant_heartrate = 1.0 /(((double) (time - old_last_time))) *
         1000000000.0;       
- 
-      int temp_global_heartrate = global_heartrate;
-      //int temp_global_heartrate = amount; //Just for testing the frequency scaling circuit
-
+	#if (HHB_QUERY == 1)
+		int int_window_heartrate = (int)round(window_heartrate);
+		int int_global_heartrate = (int)round(global_heartrate);
+		int int_instant_heartrate = (int)round(instant_heartrate);		
+	#endif
+	
       hb->log[index].beat = hb->state->counter;
       hb->log[index].tag = tag;
       hb->log[index].timestamp = time;
       hb->log[index].window_rate = window_heartrate;
       hb->log[index].instant_rate = instant_heartrate;
-      hb->log[index].global_rate = temp_global_heartrate;
+      hb->log[index].global_rate = global_heartrate;
+	#if (HHB_QUERY == 1)
+		hb->log[index].int_window_rate = int_window_heartrate;
+		hb->log[index].int_instant_rate = int_instant_heartrate;
+		hb->log[index].int_global_rate = int_global_heartrate;
+	#endif
       hb->state->buffer_index++;
       hb->state->counter++;
       hb->state->read_index++;
@@ -537,22 +553,15 @@ int64_t heartbeat( heartbeat_t* hb, int tag)
     //Xil_DCacheFlushRange(phys_addr_state, 72);
     //Xil_DCacheFlush();
    
-    //int address_to_be_flushed;
-    //address_to_be_flushed = phys_addr_state ; //1bdda000 //&(hb->state->custom_sensor) + tag;
-
+    unsigned int address_to_be_flushed;
     
-    //if (flush_rate_counter >= flush_rate) {
-	//	flush_rate_counter = 0;
     	//CACHEFLUSH KERNEL MODULE INTERFACING
-    //	int cacheflush_fd = open("/dev/cacheflush", O_RDWR); //open the device file
-    //	write(cacheflush_fd, &address_to_be_flushed, sizeof(unsigned int)); //&phys_addr_state
-    //	close(cacheflush_fd);
-    //}
-    //else
-    //{
-//	flush_rate_counter++;	
-//    }
+    int cacheflush_fd = open("/dev/cacheflush", O_RDWR); //open the device file
+    address_to_be_flushed = hb->state->state_paddr; //Flush the read index memory location
+    write(cacheflush_fd, &address_to_be_flushed, sizeof(unsigned int)); 
+    address_to_be_flushed = hb->state->log_paddr + (hb->state->read_index * sizeof(heartbeat_record_t)) + 48; //flush the current windowed heartbeat location
+    write(cacheflush_fd, &address_to_be_flushed, sizeof(unsigned int)); 
+    close(cacheflush_fd);
 
     return time;
-
 }

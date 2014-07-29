@@ -49,7 +49,8 @@ typedef struct {
   int64_t buffer_depth;
   int64_t buffer_index;
   char    valid;
-
+  unsigned int state_paddr;
+  unsigned int log_paddr;
 
 } HB_global_state_t;
 

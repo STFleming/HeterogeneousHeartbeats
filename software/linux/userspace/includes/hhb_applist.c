@@ -75,8 +75,6 @@ void applist_initialise_list(void)
         HHB_query applist_test;
         applist_test = setup_hhbquery(); //setup the device
         *((unsigned int *)applist_test.Bus_a_BaseAddress + 5) = (unsigned int)applist_phys_addr;
-        HHB_query_Start(&applist_test);
-        HHB_query_EnableAutoRestart(&applist_test);
 	#endif
 
 	int i;
@@ -117,9 +115,13 @@ void applist_register_app(applist_entry_t * new_app)
 		}
 	} 
 
- 	  unsigned int address_to_be_flushed = app_state->phys_addr + (2 + i*5)*0x04;
+ 	  unsigned int address_to_be_flushed = app_state->phys_addr + (i*sizeof(applist_entry_t));
  	  int cacheflush_fd = open("/dev/cacheflush", O_RDWR); //open the device file
- 	  write(cacheflush_fd, &address_to_be_flushed, sizeof(unsigned int)); //&phys_addr_state
+	  for(i=0; i<sizeof(applist_entry_t); i+=4) //Cycle through the entire applist entry flushing every element
+	  {
+ 	  	write(cacheflush_fd, &address_to_be_flushed, sizeof(unsigned int)); //&phys_addr_state
+		address_to_be_flushed += i;
+	  }
 	  close(cacheflush_fd);
 
 	if(success == 0) 
