@@ -4,3 +4,4 @@
 echo "Task migration completed..."
 echo "Starting Naive recovery method experiments."
 ./naive_experiments  
+./freq_experiments

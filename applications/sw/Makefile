@@ -10,7 +10,7 @@ SRC_DIR=./src
 
 COBJS=$(BIN_DIR)/xcombiner_top.o $(BIN_DIR)/xlloyds_kernel_top.o
 CPPOBJS=$(BIN_DIR)/lloyds_util.o $(BIN_DIR)/lloyds_kernel_top.o
-DEPS = $(INC_DIR)/xcombiner_top.h $(INC_DIR)/xlloyds_kernel_top.h $(INC_DIR)/lloyds_util.h $(INC_DIR)/lloyds_kernel_top.h $(INC_DIR)/heartbeat.h
+DEPS = $(INC_DIR)/xcombiner_top.h $(INC_DIR)/xlloyds_kernel_top.h $(INC_DIR)/lloyds_util.h $(INC_DIR)/lloyds_kernel_top.h $(INC_DIR)/heartbeat.h $(INC_DIR)/sw_freq_changer.h
 
 OPENCV_ARGS=$(shell pkg-config --cflags --libs opencv)
 
@@ -20,7 +20,7 @@ $(BIN_DIR)/%.o: $(INC_DIR)/%.c $(DEPS)
 $(BIN_DIR)/%.o: $(INC_DIR)/%.cpp $(DEPS)
 	$(CPP) -c -o $@ $< $(CFLAGS)
 
-all: sw_access_test streaming_live_video error_injection naive_availability_experiment config_wait_test task_migration_availability_experiment
+all: sw_access_test streaming_live_video error_injection naive_availability_experiment config_wait_test task_migration_availability_experiment freq_scaling_task_migration_experiment
 
 sw_access_test: $(COBJS)
 	$(CPP) $(SRC_DIR)/$@.cpp -o $(BIN_DIR)/$@ $^ $(CFLAGS) $(OPENCV_ARGS)
@@ -39,6 +39,9 @@ task_migration_availability_experiment: $(COBJS) $(CPPOBJS)
 
 config_wait_test: $(COBJS)
 	$(CPP) $(SRC_DIR)/$@.cpp -o $(BIN_DIR)/$@ $^ $(CFLAGS)
+
+freq_scaling_task_migration_experiment: $(COBJS) $(CPPOBJS)
+	$(CPP) $(SRC_DIR)/$@.cpp -o $(BIN_DIR)/$@ $^ $(CFLAGS) $(OPENCV_ARGS)
 
 clean:
 	rm $(BIN_DIR)/*

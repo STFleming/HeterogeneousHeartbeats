@@ -1,9 +1,5 @@
 #include "hhb_applist.h"
 
-#if (HHB_QUERY == 1)
-#include "hhb_query.h"
-#endif
-
 //This function checks to see if a shared memory exists for the application lists.
 //If one does exist then it creates the shared memory.
 //This is used as helper function 
@@ -30,10 +26,36 @@ applist_state_t* applist_fetch_list_state(void)
 	}
 
 	p->state_shmid = shmid;
-	//p->list_head = applist_fetch_list();	
+	p->list_head = applist_fetch_list();	
 
 	return p;
 };
+
+//Helper function used to create or get the list of applications
+applist_entry_t* applist_fetch_list(void)
+{
+	applist_entry_t *p = NULL;
+
+        int shmid;
+        struct shmid_ds buf;
+        
+        if ((shmid = shmget(APPLIST_SHM_KEY, LIST_SIZE*sizeof(applist_entry_t), IPC_CREAT | 0666)) < 0) {
+                perror("cannot allocate shared memory for the applications list");
+                p = NULL;
+        }
+
+          if ((p = (applist_entry_t*) shmat(shmid, NULL, 0)) == (applist_entry_t *) -1) {
+                perror("cannot attach shared memory for the application list to the heartbeat enabled process");
+                p = NULL;
+        }
+
+        if(shmctl(shmid, SHM_LOCK, &buf) < 0)
+        {
+                p = NULL;
+        }
+
+	return p;
+}
 
 //This function is used to create a SW applist entry that can be appended to the shared applist
 applist_entry_t applist_create_sw_entry(int64_t in_app_state_phys_addr, int64_t in_app_log_phys_addr)
@@ -41,8 +63,8 @@ applist_entry_t applist_create_sw_entry(int64_t in_app_state_phys_addr, int64_t 
 	applist_entry_t p;
 	p.AppID = getpid();
 	p.HW_SW = 0; //The application is resident in SW
-	p.app_state_phys_addr = (unsigned int)in_app_state_phys_addr;
-	p.app_log_phys_addr = (unsigned int)in_app_log_phys_addr;
+	p.app_state_phys_addr = in_app_state_phys_addr;
+	p.app_log_phys_addr = in_app_log_phys_addr;
 	p.alive = 1; //Yes the app is currently running
 	
 	return p;
@@ -65,19 +87,14 @@ void applist_initialise_list(void)
 	
 	//fetch the physical address for the app_state virtual address.
 	int pid = getpid();
-	printf("\tPID of application: %d\n", pid);
-	printf("\tVirt address %p\n", state_structure->list_head);
+	printf("PID of application: %d\n", pid);
+	printf("Virt address %p\n", state_structure->list_head);
 	int64_t applist_phys_addr = get_physical_addr(pid, state_structure);
-	printf("\tPhys_address %016llX\n", applist_phys_addr);
-	state_structure->phys_addr = applist_phys_addr;
-
-	#if (HHB_QUERY == 1)
-        HHB_query applist_test;
-        applist_test = setup_hhbquery(); //setup the device
-        *((unsigned int *)applist_test.Bus_a_BaseAddress + 5) = (unsigned int)applist_phys_addr;
-        HHB_query_Start(&applist_test);
-        HHB_query_EnableAutoRestart(&applist_test);
-	#endif
+	printf("Phys_address %016llX\n", applist_phys_addr);
+	//Write that physical address to the hhb_query modules appropriate register.
+	//HHB_query hhb_query_dev;
+	//hhb_query_dev = setup_hhbquery();
+	//HHB_query_SetHeartbeat_record_phys_addr(&hhb_query_dev, applist_phys_addr);
 
 	int i;
 	for(i=0; i<LIST_SIZE;i++)
@@ -99,28 +116,20 @@ void applist_register_app(applist_entry_t * new_app)
 		
 	int i = 0; //This is a counter that is used to iterate through the list
 	int success = 0;	
-	applist_entry_t p;
 
 	for(i=0; i<LIST_SIZE; i++)
 	{
-		p = app_state->list_head[i];
-		if( p.alive != 1) //This means that we have located a free spot
+		if( app_state->list_head[i].alive != 1) //This means that we have located a free spot
 		{
-			p.AppID = new_app->AppID; //Append the data to the application list
-			p.HW_SW = new_app->HW_SW;
-			p.app_state_phys_addr = new_app->app_state_phys_addr;
-			p.app_log_phys_addr = new_app->app_log_phys_addr;
-			p.alive = new_app->alive;
-			app_state->list_head[i] = p;
+			app_state->list_head[i].AppID = new_app->AppID; //Append the data to the application list
+			app_state->list_head[i].HW_SW = new_app->HW_SW;
+			app_state->list_head[i].app_state_phys_addr = new_app->app_state_phys_addr;
+			app_state->list_head[i].app_log_phys_addr = new_app->app_log_phys_addr;
+			app_state->list_head[i].alive = new_app->alive;
 			success = 1;		
 			break; //We can stop searching now and do not want to add the application multiple times.
 		}
 	} 
-
- 	  unsigned int address_to_be_flushed = app_state->phys_addr + (2 + i*5)*0x04;
- 	  int cacheflush_fd = open("/dev/cacheflush", O_RDWR); //open the device file
- 	  write(cacheflush_fd, &address_to_be_flushed, sizeof(unsigned int)); //&phys_addr_state
-	  close(cacheflush_fd);
 
 	if(success == 0) 
 	{

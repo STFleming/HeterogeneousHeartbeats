@@ -24,6 +24,7 @@
 #include "xcombiner_top.h"
 #include "xlloyds_kernel_top.h"
 #include "heartbeat.h"
+#include "sw_freq_changer.h"
 
 #define INPUT_FRAME_ADDR 0x38400000
 #define CLUSTER_CENTER_ADDR_1 0x39000000
@@ -44,13 +45,17 @@
 #define IMG_SIZE 256
 #define K 16
 #define D 3
-#define LMAX 30 //max number of iterations
+#define LMAX 10 //max number of iterations
 
 #define MAP_SIZE 40960000UL
 #define MAP_MASK (MAP_SIZE - 1)
 
 #define MAP_SIZE_BLOCK 4000UL
 #define MAP_MASK_BLOCK (MAP_SIZE_BLOCK - 1)
+
+#define LOW_FDIV 9
+#define HIGH_FDIV 27
+#define FRAME_NUMBER 1000
 
 void *setup_reserved_mem(uint input_address);
 int cmp_mem_segment(int *address_1, int *address_2, int block_size, int*err_signal);
@@ -67,6 +72,11 @@ int main()
 	printf("----------------------------\nProcessing Live Video\n----------------------------\n\n");
 
 	heartbeat_init(&heart, 0.1, 10.0, 5, 5, NULL, 1); //Initialise the heartbeat data structure for this device 
+
+        //Frequency scaling pll setup
+        arm_pll_data freq_scaling_data;
+        setup_arm_pll(&freq_scaling_data);
+        set_fdiv_value(&freq_scaling_data, LOW_FDIV); //Lets set the frequency quite low just to test the system out. 
 
 	system("cat ./k_means_system.bit.bin > /dev/xdevcfg"); //Program the FPGA fabric
 	system("rm time_log.csv");
@@ -155,7 +165,7 @@ int main()
 	double min_availability = 1.0;
 	double average_availability = 0.0; 
 
-	while(frame_counter<250)
+	while(frame_counter<FRAME_NUMBER)
 	{
 
 		bool bSuccess = cap.read(inFrame);
@@ -242,8 +252,8 @@ int main()
 				distortion = 1;
 
 			double rel_improvement =  ((double)distortion-(double)new_distortion)/((double)distortion)*100;
-			if ( (rel_improvement > 0) && (rel_improvement < 1) )
-				break; 
+		//	if ( (rel_improvement > 0) && (rel_improvement < 1) )
+		//		break; 
 
 	                //printf("Distortion: %u, relative improvement: %.2f\%\n", new_distortion, ((double)distortion-(double)new_distortion)/((double)distortion)*100);
         	        distortion = new_distortion;                
