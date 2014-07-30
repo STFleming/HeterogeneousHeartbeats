@@ -19,7 +19,7 @@ set Library     "HHB"
 set IPName      "cache_module"
 set Version     "1.0"
 set DisplayName "Cache_module"
-set Revision    "1407261811"
+set Revision    "1407301102"
 set Description "An IP which is used for hardware tasks to query the heartbeat record of applications"
 set Device      "zynq"
 set Taxonomy    "/HHB"
@@ -41,9 +41,19 @@ set Interfaces {
         port_prefix "m_axi_a"
         param_prefix "C_M_AXI_A"
     }
+    S_AXI_BUS_A {
+        type "axi4lite"
+        mode "slave"
+        port_prefix "s_axi_BUS_A"
+        param_prefix "C_S_AXI_BUS_A"
+        addr_bits "7"
+    }
+    interrupt {
+        type "interrupt"
+    }
     aclk {
         type "clock"
-        buses "M_AXI_A"
+        buses "M_AXI_A S_AXI_BUS_A"
     }
     aresetn {
         type "reset"

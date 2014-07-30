@@ -2,12 +2,12 @@
 
 # Memory (RAM/ROM)  definition:
 set ID 1
-set MemName cache_module_hb_cache_AppID
+set MemName cache_module_buff
 set CoreName ap_simcore_mem
-set PortList { 1 3 }
+set PortList { 2 1 }
 set DataWd 32
-set AddrRange 16
-set AddrWd 4
+set AddrRange 5
+set AddrWd 3
 set impl_style block
 set TrueReset 0
 set HasInitializer 0
@@ -102,7 +102,7 @@ eval "::AESL_LIB_XILADAPTER::axi_master_gen { \
     corename AXI4M \
     op interface \
     metadata {} \
-    latency 1 \
+    latency 4 \
     data_wd ${DataWd} \
 }"
 } else {
@@ -111,94 +111,137 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 }
 
 
-# Direct connection:
+# Adapter definition:
+set corename BUS_A
+set opts {
+    {
+        id 3
+        name applist_base_addr
+        reset_level 1
+        sync_rst true
+        type scalar
+        dir I
+        width 32
+        mode SIG_IN_VLD_OFF:SIG_IN_ACC_OFF
+    }
+    {
+        id 4
+        name outAppID
+        reset_level 1
+        sync_rst true
+        type scalar
+        dir O
+        width 32
+        mode SIG_OUT_VLD_OFF:SIG_OUT_ACC_OFF
+    }
+    {
+        id 5
+        name outHWSW
+        reset_level 1
+        sync_rst true
+        type scalar
+        dir O
+        width 32
+        mode SIG_OUT_VLD_OFF:SIG_OUT_ACC_OFF
+    }
+    {
+        id 6
+        name outStateAddr
+        reset_level 1
+        sync_rst true
+        type scalar
+        dir O
+        width 32
+        mode SIG_OUT_VLD_OFF:SIG_OUT_ACC_OFF
+    }
+    {
+        id 7
+        name outLogAddr
+        reset_level 1
+        sync_rst true
+        type scalar
+        dir O
+        width 32
+        mode SIG_OUT_VLD_OFF:SIG_OUT_ACC_OFF
+    }
+    {
+        id 8
+        name outReadIndex
+        reset_level 1
+        sync_rst true
+        type scalar
+        dir O
+        width 32
+        mode SIG_OUT_VLD_OFF:SIG_OUT_ACC_OFF
+    }
+    {
+        id 9
+        name inAppID
+        reset_level 1
+        sync_rst true
+        type scalar
+        dir I
+        width 32
+        mode SIG_IN_VLD_OFF:SIG_IN_ACC_OFF
+    }
+    {
+        id -1
+        name ap_start
+        reset_level 1
+        sync_rst true
+        type scalar
+        dir I
+        width 1
+        mode ap_ctrl
+    }
+    {
+        id -2
+        name ap_ready
+        reset_level 1
+        sync_rst true
+        type scalar
+        dir O
+        width 1
+        mode ap_ctrl
+    }
+    {
+        id -3
+        name ap_done
+        reset_level 1
+        sync_rst true
+        type scalar
+        dir O
+        width 1
+        mode ap_ctrl
+    }
+    {
+        id -4
+        name ap_idle
+        reset_level 1
+        sync_rst true
+        type scalar
+        dir O
+        width 1
+        mode ap_ctrl
+    }
+}
+set portmap { }
+set metadata { -bus_bundle BUS_A}
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 3 \
-    name AppID \
-    type other \
-    dir I \
+if {[info proc ::AESL_LIB_XILADAPTER::axi_slave_int_gen] == "::AESL_LIB_XILADAPTER::axi_slave_int_gen"} {
+eval "::AESL_LIB_XILADAPTER::axi_slave_int_gen { \
+    corename ${corename} \
     reset_level 1 \
     sync_rst true \
-    corename dc_AppID \
-    op interface \
-    ports { AppID { I 32 vector } } \
-} "
+    opts {${opts}} \
+    portmap {${portmap}} \
+    metadata {${metadata}} \
+}"
+} else {
+puts "@W Can not find gen function '::AESL_LIB_XILADAPTER::axi_slave_int_gen' in the library. Ignored generation of adapter for '${corename}'"
+}
 }
 
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4 \
-    name sensorID \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_sensorID \
-    op interface \
-    ports { sensorID { I 32 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 5 \
-    name sensor_value \
-    type other \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_sensor_value \
-    op interface \
-    ports { sensor_value { O 32 vector } sensor_value_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 6 \
-    name out_log_addr \
-    type other \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_out_log_addr \
-    op interface \
-    ports { out_log_addr { O 32 vector } out_log_addr_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 7 \
-    name out_state_addr \
-    type other \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_out_state_addr \
-    op interface \
-    ports { out_state_addr { O 32 vector } out_state_addr_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id -1 \
-    name ap_ctrl \
-    type ap_ctrl \
-    reset_level 1 \
-    sync_rst true \
-    corename ap_ctrl \
-    op interface \
-    ports { ap_start { I 1 bit } ap_ready { O 1 bit } ap_done { O 1 bit } ap_idle { O 1 bit } } \
-} "
-}
 
 
 # Adapter definition:
@@ -207,7 +250,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_clock] == "cg_default_interface_gen_clock"} {
 eval "cg_default_interface_gen_clock { \
-    id -2 \
+    id -5 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \
@@ -227,7 +270,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_reset] == "cg_default_interface_gen_reset"} {
 eval "cg_default_interface_gen_reset { \
-    id -3 \
+    id -6 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \

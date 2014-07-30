@@ -12,17 +12,57 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [HLS-10] Validating synthesis directives ...
 @I [HLS-10] Starting code transformations ...
 @I [HLS-10] Checking synthesizability ...
-@I [XFORM-602] Inlining function 'query_hb_cache' into 'cache_module' (cache_module/src/cache_module_top.cpp:39) automatically.
-@I [XFORM-401] Performing if-conversion on hyperblock from (cache_module/src/cache_module_top.cpp:58:9) to (cache_module/src/cache_module_top.cpp:56:49) in function 'cache_module'... converting 3 basic blocks.
-@I [HLS-111] Elapsed time: 0.84 seconds; current memory usage: 47.4 MB.
+@I [XFORM-102] Automatically partitioning small array 'hb_cache.AppID' (cache_module/src/cache_module_top.cpp:68) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'hb_cache.state_addr' (cache_module/src/cache_module_top.cpp:68) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'hb_cache.log_addr' (cache_module/src/cache_module_top.cpp:68) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'hb_cache.prev_sensor_id' (cache_module/src/cache_module_top.cpp:68) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'hb_cache.prev_sensor_value' (cache_module/src/cache_module_top.cpp:68) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'hb_cache.lat' (cache_module/src/cache_module_top.cpp:68) completely based on array size.
+@I [XFORM-101] Partitioning array 'hb_cache.AppID' (cache_module/src/cache_module_top.cpp:68) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'hb_cache.state_addr' (cache_module/src/cache_module_top.cpp:68) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'hb_cache.log_addr' (cache_module/src/cache_module_top.cpp:68) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'hb_cache.prev_sensor_id' (cache_module/src/cache_module_top.cpp:68) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'hb_cache.prev_sensor_value' (cache_module/src/cache_module_top.cpp:68) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'hb_cache.lat' (cache_module/src/cache_module_top.cpp:68) in dimension 1 completely.
+@I [XFORM-401] Performing if-conversion on hyperblock from (cache_module/src/cache_module_top.cpp:122:9) in function 'cache_module'... converting 2 basic blocks.
+@W [XFORM-561] Ignored multiple trip count directives for loop 'Loop-4' in function 'cache_module'.
+@I [HLS-111] Elapsed time: 1.49 seconds; current memory usage: 48.8 MB.
 @I [HLS-10] Starting hardware synthesis ...
 @I [HLS-10] Synthesizing 'cache_module' ...
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Scheduling module 'cache_module' 
 @I [HLS-10] ----------------------------------------------------------------
 @I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'Loop 2.1'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 8.
+@I [SCHED-61] Pipelining loop 'Loop 3'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 7.
+@I [SCHED-61] Pipelining loop 'Loop 4'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 7.
+@I [SCHED-61] Pipelining loop 'Loop 5'.
+@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 1, distance = 1)
+   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:161) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:159).
+@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 2, distance = 1)
+   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:161) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:159).
+@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 3, distance = 1)
+   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:161) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:159).
+@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 4, distance = 1)
+   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:161) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:159).
+@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 5, distance = 1)
+   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:161) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:159).
+@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 6, distance = 1)
+   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:161) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:159).
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 7, Depth: 13.
+@W [SCHED-21] Estimated clock period (11.2ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+@W [SCHED-21] The critical path consists of the following:
+	'load' operation ('refresher_read_index_1_load') on local variable 'refresher_read_index' (0 ns)
+	'bitconcatenate' operation ('tmp3', cache_module/src/cache_module_top.cpp:161) (0 ns)
+	'add' operation ('tmp_20', cache_module/src/cache_module_top.cpp:161) (2.44 ns)
+	'partselect' operation ('tmp_21', cache_module/src/cache_module_top.cpp:161) (0 ns)
+	'getelementptr' operation ('a_addr_4', cache_module/src/cache_module_top.cpp:161) (0 ns)
+	bus request on port 'a' (cache_module/src/cache_module_top.cpp:161) (8.75 ns)
 @I [SCHED-11] Finished scheduling.
-@I [HLS-111] Elapsed time: 0.04 seconds; current memory usage: 47.5 MB.
+@I [HLS-111] Elapsed time: 0.12 seconds; current memory usage: 49.3 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Exploring micro-architecture for module 'cache_module' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -31,51 +71,32 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [BIND-101] Exploring resource sharing.
 @I [BIND-101] Binding ...
 @I [BIND-100] Finished micro-architecture generation.
-@I [HLS-111] Elapsed time: 0.02 seconds; current memory usage: 47.7 MB.
+@I [HLS-111] Elapsed time: 0.04 seconds; current memory usage: 50.1 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Generating RTL for module 'cache_module' 
 @I [HLS-10] ----------------------------------------------------------------
 @I [RTGEN-500] Setting interface mode on port 'cache_module/a' to 'ap_bus'.
-@I [RTGEN-500] Setting interface mode on port 'cache_module/AppID' to 'ap_none'.
-@I [RTGEN-500] Setting interface mode on port 'cache_module/sensorID' to 'ap_none'.
-@I [RTGEN-500] Setting interface mode on port 'cache_module/sensor_value' to 'ap_vld'.
-@I [RTGEN-500] Setting interface mode on port 'cache_module/out_log_addr' to 'ap_vld'.
-@I [RTGEN-500] Setting interface mode on port 'cache_module/out_state_addr' to 'ap_vld'.
+@I [RTGEN-500] Setting interface mode on port 'cache_module/applist_base_addr' to 'ap_none' (register).
+@I [RTGEN-500] Setting interface mode on port 'cache_module/outAppID' to 'ap_none' (register).
+@W [RTGEN-101] Port 'outAppID' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+@I [RTGEN-500] Setting interface mode on port 'cache_module/outHWSW' to 'ap_none' (register).
+@W [RTGEN-101] Port 'outHWSW' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+@I [RTGEN-500] Setting interface mode on port 'cache_module/outStateAddr' to 'ap_none' (register).
+@W [RTGEN-101] Port 'outStateAddr' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+@I [RTGEN-500] Setting interface mode on port 'cache_module/outLogAddr' to 'ap_none' (register).
+@W [RTGEN-101] Port 'outLogAddr' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+@I [RTGEN-500] Setting interface mode on port 'cache_module/outReadIndex' to 'ap_none' (register).
+@W [RTGEN-101] Port 'outReadIndex' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+@I [RTGEN-500] Setting interface mode on port 'cache_module/inAppID' to 'ap_none' (register).
 @I [RTGEN-500] Setting interface mode on function 'cache_module' to 'ap_ctrl_hs'.
-@W [RTGEN-101] Port 'cache_module/a_req_din' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
-@W [RTGEN-101] Setting dangling out port 'cache_module/a_req_din' to 0.
-@W [RTGEN-101] Port 'cache_module/a_req_full_n' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
-@W [RTGEN-101] Port 'cache_module/a_req_write' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
-@W [RTGEN-101] Setting dangling out port 'cache_module/a_req_write' to 0.
-@W [RTGEN-101] Port 'cache_module/a_rsp_empty_n' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
-@W [RTGEN-101] Port 'cache_module/a_rsp_read' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
-@W [RTGEN-101] Setting dangling out port 'cache_module/a_rsp_read' to 0.
-@W [RTGEN-101] Port 'cache_module/a_address' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
-@W [RTGEN-101] Setting dangling out port 'cache_module/a_address' to 0.
-@W [RTGEN-101] Port 'cache_module/a_datain' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
-@W [RTGEN-101] Port 'cache_module/a_dataout' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
 @W [RTGEN-101] Setting dangling out port 'cache_module/a_dataout' to 0.
-@W [RTGEN-101] Port 'cache_module/a_size' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
-@W [RTGEN-101] Setting dangling out port 'cache_module/a_size' to 0.
-@W [RTGEN-101] Port 'cache_module/sensorID' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
 @I [RTGEN-100] Finished creating RTL model for 'cache_module'.
-@I [HLS-111] Elapsed time: 0.02 seconds; current memory usage: 48 MB.
-@W [RTMG-274] Memory 'cache_module_hb_cache_AppID' is read-only, switch it to a ROM.
-@I [RTMG-279] Implementing memory 'cache_module_hb_cache_AppID_rom' using block ROMs.
+@I [HLS-111] Elapsed time: 0.08 seconds; current memory usage: 51 MB.
+@I [RTMG-278] Implementing memory 'cache_module_buff_ram' using block RAMs.
 @I [HLS-10] Finished generating all RTL models.
 @I [WSYSC-301] Generating RTL SystemC for 'cache_module'.
 @I [WVHDL-304] Generating RTL VHDL for 'cache_module'.
 @I [WVLOG-307] Generating RTL Verilog for 'cache_module'.
 @I [IMPL-8] Exporting RTL as an IP in IP-XACT.
-@I [HLS-112] Total elapsed time: 17.202 seconds; peak memory usage: 48 MB.
+@I [HLS-112] Total elapsed time: 17.590 seconds; peak memory usage: 51 MB.
 @I [LIC-101] Checked in feature [VIVADO_HLS]

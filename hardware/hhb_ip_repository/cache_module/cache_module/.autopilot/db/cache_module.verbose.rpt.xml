@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'cache_module'" level="0">
-<item name = "Date">Sat Jul 26 18:11:56 2014
+<item name = "Date">Wed Jul 30 11:02:46 2014
 </item>
 <item name = "Version">2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)</item>
 <item name = "Project">cache_module</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="default">10.00, 6.28, 1.25</column>
+<column name="default">10.00, 11.19, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">33, 33, 34, 34, none</column>
+<column name="">43, 366, 44, 367, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,12 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">32, 32, 2, -, -, 16, no</column>
+<column name="- Loop 1">4, 4, 1, -, -, 4, no</column>
+<column name="- Loop 2">300, 303, 15, -, -, 20, no</column>
+<column name=" + Loop 2.1">11, 11, 8, 1, 1, 5, yes</column>
+<column name="- Loop 3">7, 7, 7, 1, 1, 1, yes</column>
+<column name="- Loop 4">7, 7, 7, 1, 1, 1, yes</column>
+<column name="- Loop 5">33, 33, 13, 7, 1, 4, yes</column>
 </table>
 </item>
 </section>
@@ -47,15 +52,15 @@
 <section name = "Utilization Estimates" level="0">
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="Expression">-, -, 0, 147</column>
+<column name="Expression">-, -, 0, 437</column>
 <column name="FIFO">-, -, -, -</column>
 <column name="Instance">-, -, -, -</column>
-<column name="Memory">4, -, 0, 0</column>
-<column name="Multiplexer">-, -, -, 5</column>
-<column name="Register">-, -, 108, -</column>
-<column name="ShiftMemory">-, -, -, -</column>
+<column name="Memory">1, -, 0, 0</column>
+<column name="Multiplexer">-, -, -, 247</column>
+<column name="Register">-, -, 856, -</column>
+<column name="ShiftMemory">-, -, 0, 6</column>
 <specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
-<specialColumn name="Utilization (%)">1, 0, ~0, ~0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, ~0, 1</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -66,10 +71,7 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="7">Memory, Module, BRAM_18K, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="hb_cache_AppID_U">cache_module_hb_cache_AppID, 1, 16, 32, 1, 512</column>
-<column name="hb_cache_state_addr_U">cache_module_hb_cache_AppID, 1, 16, 32, 1, 512</column>
-<column name="hb_cache_log_addr_U">cache_module_hb_cache_AppID, 1, 16, 32, 1, 512</column>
-<column name="hb_cache_prev_sensor_id_U">cache_module_hb_cache_AppID, 1, 16, 32, 1, 512</column>
+<column name="buff_U">cache_module_buff, 1, 5, 32, 1, 160</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -78,31 +80,135 @@
 </item>
 <item name = "Shift register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="exitcond2_reg_799">0, 1, 1, 0</column>
+<column name="indvar1_reg_326">0, 1, 1, 0</column>
+<column name="indvar9_reg_289">0, 1, 1, 0</column>
+<column name="indvar_reg_277">0, 3, 3, 0</column>
 </table>
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="i_fu_194_p2">+, 0, 0, 5, 5, 1</column>
-<column name="temp_cache_entry_log_addr_1_fu_221_p3">Select, 0, 0, 32, 1, 32</column>
-<column name="temp_cache_entry_prev_sensor_id_1_fu_213_p3">Select, 0, 0, 32, 1, 32</column>
-<column name="temp_cache_entry_state_addr_1_fu_229_p3">Select, 0, 0, 32, 1, 32</column>
-<column name="exitcond_i_fu_188_p2">icmp, 0, 0, 6, 5, 6</column>
-<column name="tmp_1_i_fu_208_p2">icmp, 0, 0, 40, 32, 32</column>
+<column name="i_2_fu_504_p2">+, 0, 0, 5, 5, 1</column>
+<column name="i_4_fu_697_p2">+, 0, 0, 3, 3, 1</column>
+<column name="i_fu_483_p2">+, 0, 0, 3, 3, 1</column>
+<column name="indvar_next_fu_571_p2">+, 0, 0, 3, 3, 1</column>
+<column name="tmp1_fu_534_p2">+, 0, 0, 33, 33, 33</column>
+<column name="tmp_12_fu_634_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp_1_fu_539_p2">+, 0, 0, 33, 33, 33</column>
+<column name="tmp_20_fu_723_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp_8_fu_489_p2">+, 0, 0, 32, 32, 4</column>
+<column name="ap_sig_bdd_253">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_285">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_315">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_464">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_584">and, 0, 0, 1, 1, 1</column>
+<column name="exitcond2_fu_565_p2">icmp, 0, 0, 3, 3, 3</column>
+<column name="exitcond_fu_691_p2">icmp, 0, 0, 4, 3, 4</column>
+<column name="isIter0_fu_577_p2">icmp, 0, 0, 3, 3, 1</column>
+<column name="tmp_10_fu_617_p2">icmp, 0, 0, 40, 32, 1</column>
+<column name="tmp_15_fu_659_p2">icmp, 0, 0, 40, 32, 1</column>
+<column name="tmp_16_fu_665_p2">icmp, 0, 0, 40, 32, 1</column>
+<column name="tmp_3_fu_469_p2">icmp, 0, 0, 40, 32, 1</column>
+<column name="tmp_5_fu_588_p2">icmp, 0, 0, 40, 32, 32</column>
+<column name="tmp_6_fu_593_p2">icmp, 0, 0, 40, 32, 1</column>
+<column name="tmp_7_fu_498_p2">icmp, 0, 0, 5, 5, 5</column>
+<column name="ap_sig_bdd_757">or, 0, 0, 1, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="i_i_reg_176">5, 2, 5, 10</column>
+<column name="a_address">32, 6, 32, 192</column>
+<column name="a_size">32, 3, 32, 96</column>
+<column name="buff_address0">3, 5, 3, 15</column>
+<column name="cacheHitLoc_reg_255">3, 2, 3, 6</column>
+<column name="i_1_reg_266">5, 2, 5, 10</column>
+<column name="i_3_phi_fu_450_p8">3, 2, 3, 6</column>
+<column name="i_3_reg_446">3, 2, 3, 6</column>
+<column name="indvar_phi_fu_281_p4">3, 2, 3, 6</column>
+<column name="indvar_reg_277">3, 2, 3, 6</column>
+<column name="temp_outAppID_1_reg_351">32, 2, 32, 64</column>
+<column name="temp_outHWSW_1_reg_406">32, 2, 32, 64</column>
+<column name="temp_outLogAddr_1_reg_387">32, 2, 32, 64</column>
+<column name="temp_outReadIndex_1_reg_427">32, 2, 32, 64</column>
+<column name="temp_outStateAddr_1_reg_368">32, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="4">Name, FF, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">2, 2, 0</column>
-<column name="i_i_reg_176">5, 5, 0</column>
-<column name="i_reg_245">5, 5, 0</column>
-<column name="temp_res_log_addr_reg_150">32, 32, 0</column>
-<column name="temp_res_prev_sensor_id_reg_137">32, 32, 0</column>
-<column name="temp_res_state_addr_reg_163">32, 32, 0</column>
+<column name="a_addr_1_reg_855">30, 32, 2</column>
+<column name="a_addr_2_reg_864">30, 32, 2</column>
+<column name="a_addr_3_reg_884">30, 32, 2</column>
+<column name="a_addr_reg_793">31, 32, 1</column>
+<column name="ap_CS_fsm">5, 5, 0</column>
+<column name="ap_reg_ppiten_pp0_it0">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it1">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it2">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it3">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it4">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it5">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it6">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it7">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp1_it0">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp1_it1">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp1_it2">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp1_it3">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp1_it4">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp1_it5">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp1_it6">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp2_it0">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp2_it1">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp2_it2">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp2_it3">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp2_it4">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp2_it5">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp2_it6">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp3_it0">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp3_it1">1, 1, 0</column>
+<column name="ap_reg_ppstg_exitcond_reg_890_pp3_it1">1, 1, 0</column>
+<column name="applist_base_addr0data_reg">32, 32, 0</column>
+<column name="applist_base_addr0vld_reg">0, 1, 1</column>
+<column name="buff_addr_reg_775">0, 3, 3</column>
+<column name="cacheHitLoc_reg_255">3, 3, 0</column>
+<column name="exitcond2_reg_799">1, 1, 0</column>
+<column name="exitcond_reg_890">1, 1, 0</column>
+<column name="hb_cache_0_log_addr_reg_838">32, 32, 0</column>
+<column name="hb_cache_0_prev_sensor_value2_reg_339">32, 32, 0</column>
+<column name="hb_cache_0_state_addr_reg_820">32, 32, 0</column>
+<column name="i_1_reg_266">5, 5, 0</column>
+<column name="i_2_reg_788">5, 5, 0</column>
+<column name="i_3_reg_446">3, 3, 0</column>
+<column name="i_4_reg_894">3, 3, 0</column>
+<column name="inAppID0data_reg">32, 32, 0</column>
+<column name="inAppID0vld_reg">0, 1, 1</column>
+<column name="indvar1_reg_326">1, 1, 0</column>
+<column name="indvar9_reg_289">1, 1, 0</column>
+<column name="indvar_next_reg_803">3, 3, 0</column>
+<column name="indvar_reg_277">3, 3, 0</column>
+<column name="isIter0_reg_808">1, 1, 0</column>
+<column name="outAppID1data_reg">32, 32, 0</column>
+<column name="outAppID1vld_reg">0, 1, 1</column>
+<column name="outHWSW1data_reg">32, 32, 0</column>
+<column name="outHWSW1vld_reg">0, 1, 1</column>
+<column name="outLogAddr1data_reg">32, 32, 0</column>
+<column name="outLogAddr1vld_reg">0, 1, 1</column>
+<column name="outReadIndex1data_reg">32, 32, 0</column>
+<column name="outReadIndex1vld_reg">0, 1, 1</column>
+<column name="outStateAddr1data_reg">32, 32, 0</column>
+<column name="outStateAddr1vld_reg">0, 1, 1</column>
+<column name="read_index_load4_reg_302">32, 32, 0</column>
+<column name="read_index_load_reg_314">32, 32, 0</column>
+<column name="refresher_read_index_1_fu_146">32, 32, 0</column>
+<column name="reg_462">32, 32, 0</column>
+<column name="temp_outAppID_1_reg_351">32, 32, 0</column>
+<column name="temp_outHWSW_1_reg_406">32, 32, 0</column>
+<column name="temp_outLogAddr_1_reg_387">32, 32, 0</column>
+<column name="temp_outReadIndex_1_reg_427">32, 32, 0</column>
+<column name="temp_outReadIndex_reg_846">32, 32, 0</column>
+<column name="temp_outStateAddr_1_reg_368">32, 32, 0</column>
+<column name="tmp_15_reg_876">1, 1, 0</column>
+<column name="tmp_16_reg_880">1, 1, 0</column>
+<column name="tmp_3_reg_763">1, 1, 0</column>
+<column name="tmp_9_cast_reg_780">32, 33, 1</column>
 </table>
 </item>
 </section>
@@ -127,14 +233,13 @@
 <column name="a_datain">in, 32, ap_bus, a, pointer</column>
 <column name="a_dataout">out, 32, ap_bus, a, pointer</column>
 <column name="a_size">out, 32, ap_bus, a, pointer</column>
-<column name="AppID">in, 32, ap_none, AppID, scalar</column>
-<column name="sensorID">in, 32, ap_none, sensorID, scalar</column>
-<column name="sensor_value">out, 32, ap_vld, sensor_value, pointer</column>
-<column name="sensor_value_ap_vld">out, 1, ap_vld, sensor_value, pointer</column>
-<column name="out_log_addr">out, 32, ap_vld, out_log_addr, pointer</column>
-<column name="out_log_addr_ap_vld">out, 1, ap_vld, out_log_addr, pointer</column>
-<column name="out_state_addr">out, 32, ap_vld, out_state_addr, pointer</column>
-<column name="out_state_addr_ap_vld">out, 1, ap_vld, out_state_addr, pointer</column>
+<column name="applist_base_addr">in, 32, ap_none, applist_base_addr, scalar</column>
+<column name="outAppID">out, 32, ap_none, outAppID, pointer</column>
+<column name="outHWSW">out, 32, ap_none, outHWSW, pointer</column>
+<column name="outStateAddr">out, 32, ap_none, outStateAddr, pointer</column>
+<column name="outLogAddr">out, 32, ap_none, outLogAddr, pointer</column>
+<column name="outReadIndex">out, 32, ap_none, outReadIndex, pointer</column>
+<column name="inAppID">in, 32, ap_none, inAppID, scalar</column>
 </table>
 </item>
 </section>

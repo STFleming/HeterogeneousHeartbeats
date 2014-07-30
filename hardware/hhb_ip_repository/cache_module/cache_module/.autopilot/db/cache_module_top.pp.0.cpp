@@ -2642,10 +2642,7 @@ extern char *basename (__const char *__filename) throw () __attribute__ ((__nonn
 # 646 "/usr/include/string.h" 3 4
 }
 # 11 "cache_module/src/cache_module_top.cpp" 2
-
-
-
-
+# 20 "cache_module/src/cache_module_top.cpp"
 typedef struct //Defines a signle entry of the application cache.
 {
     unsigned int AppID;
@@ -2653,47 +2650,150 @@ typedef struct //Defines a signle entry of the application cache.
     unsigned int log_addr;
     unsigned int prev_sensor_id;
     unsigned int prev_sensor_value;
+    unsigned long lat; //last access time
 } cache_entry;
 
-cache_entry query_hb_cache(cache_entry * hb_cache, int AppID, int sensor_id);
 
-void cache_module(volatile int *a, unsigned int AppID, unsigned int sensorID, unsigned int *sensor_value, unsigned int *out_log_addr, unsigned int *out_state_addr){
+void cache_module(volatile int *a, unsigned int applist_base_addr, unsigned int *outAppID, unsigned int *outHWSW, unsigned int *outStateAddr
+                 , unsigned int *outLogAddr, unsigned int *outReadIndex, unsigned int inAppID){
 
   //ap_bus is the only valid nativeVivado HLSinterface for memory mapped master ports
 #pragma HLS INTERFACE ap_bus port=a depth=N
 
   //Port a is assigned to an AXI4-master interface
 #pragma HLS RESOURCE variable=a core=AXI4M
+#pragma HLS RESOURCE variable=return core=AXI4LiteS metadata="-bus_bundle BUS_A"
 
-//#pragma HLS RESOURCE variable=return core=AXI4LiteS metadata="-bus_bundle BUS_A"
+#pragma HLS INTERFACE ap_none register port=applist_base_addr
+#pragma HLS RESOURCE core=AXI4LiteS variable=applist_base_addr metadata="-bus_bundle BUS_A"
+
+#pragma HLS INTERFACE ap_none register port=outAppID
+#pragma HLS RESOURCE core=AXI4LiteS variable=outAppID metadata="-bus_bundle BUS_A"
+
+#pragma HLS INTERFACE ap_none register port=outHWSW
+#pragma HLS RESOURCE core=AXI4LiteS variable=outHWSW metadata="-bus_bundle BUS_A"
+
+#pragma HLS INTERFACE ap_none register port=outStateAddr
+#pragma HLS RESOURCE core=AXI4LiteS variable=outStateAddr metadata="-bus_bundle BUS_A"
+
+#pragma HLS INTERFACE ap_none register port=outLogAddr
+#pragma HLS RESOURCE core=AXI4LiteS variable=outLogAddr metadata="-bus_bundle BUS_A"
+
+#pragma HLS INTERFACE ap_none register port=outReadIndex
+#pragma HLS RESOURCE core=AXI4LiteS variable=outReadIndex metadata="-bus_bundle BUS_A"
+
+#pragma HLS INTERFACE ap_none register port=inAppID
+#pragma HLS RESOURCE core=AXI4LiteS variable=inAppID metadata="-bus_bundle BUS_A"
+
+  int buff[5];
   int i;
-  int buff[1];
+  int found =0;
+  int appInQuestion;
+  int cacheHit=0;
+  int cacheHitLoc = 0;
+  cache_entry hb_cache[4 /*There are 16 cache lines*/];
 
-  cache_entry hb_cache[16 /*There are 16 cache lines*/];
-  cache_entry temp_res = query_hb_cache(hb_cache, AppID, sensorID);
-  *sensor_value = temp_res.prev_sensor_id;
-  *out_log_addr = temp_res.log_addr;
-  *out_state_addr = temp_res.state_addr;
+  unsigned long time;
+  time++;
 
-  //read from DDR
-  //memcpy(buff,(const int*)(a+applist_phys_addr/4), N*sizeof(int));
-  //int applist_log = buff[0];
+  unsigned int temp_outAppID, temp_outStateAddr, temp_outLogAddr, temp_outHWSW, temp_outReadIndex;
+
+
+  //search the cache here for the application
+  for(i=0; i<4 /*There are 16 cache lines*/; i++)
+  {
+      if(hb_cache[i].AppID == inAppID && (inAppID != 0))
+      {
+        cacheHit=1;
+        cacheHitLoc = i;
+        break;
+      }
+  }
+
+  if(cacheHit == 1)
+  {
+    temp_outAppID = hb_cache[cacheHitLoc].AppID;
+    temp_outStateAddr = hb_cache[cacheHitLoc].state_addr;
+    temp_outLogAddr = hb_cache[cacheHitLoc].log_addr;
+    temp_outHWSW = hb_cache[cacheHitLoc].prev_sensor_value;
+    hb_cache[cacheHitLoc].lat = time; //Update the last access time
+  }
+  else
+  {
+    for(i=0; i<20; i++)
+    {
+        memcpy(buff, (const int*)(a + (applist_base_addr + 8 + (5*sizeof(int)*i))/4), 5*sizeof(int));
+        if(buff[0] == inAppID) { found=1; break; } //We have found the application in the list
+    }
+
+    if(found == 1)
+    {
+        temp_outAppID = buff[0];
+        temp_outStateAddr = buff[2];
+        temp_outLogAddr = buff[3];
+        temp_outReadIndex = buff[4];
+
+        unsigned int state_address = buff[2];
+        unsigned int log_address = buff[3];
+        unsigned int read_index;
+        unsigned int window_rate;
+
+        //So now that I have the application information I am going to try and grab the 
+        //heartbeats information:
+        //FIRST: get the index to the log location
+        if(state_address != 0){
+        memcpy(&read_index, (const int*)(a + (state_address)/4), sizeof(int));}
+        if(log_address != 0){
+        memcpy(&window_rate, (const int*)(a + (log_address + (read_index*64) + 52)/4), sizeof(int));}
+        temp_outHWSW = window_rate;
+
+        //We need to add this value to the cache
+        //first we have to search the cache for the most empty location
+        unsigned long lru = hb_cache[0].lat; //Assign it the first last access time
+        int replace_index = 0;
+        for(i=0; i<4 /*There are 16 cache lines*/; i++)
+        {
+            if(hb_cache[i].lat < lru){ replace_index = i; }
+        }
+        //Replace the cache entry
+        hb_cache[replace_index].AppID = buff[0];
+        hb_cache[replace_index].state_addr = buff[2];
+        hb_cache[replace_index].log_addr = buff[3];
+        hb_cache[replace_index].prev_sensor_id = 52;
+        hb_cache[replace_index].prev_sensor_value = window_rate;
+        hb_cache[replace_index].lat = time;
+    }
+    else
+    {
+        temp_outAppID = 0;
+        temp_outStateAddr = 0;
+        temp_outLogAddr = 0;
+        temp_outReadIndex = 0;
+        temp_outHWSW = 0;
+    }
 
 }
-
-cache_entry query_hb_cache(cache_entry * hb_cache, int AppID, int sensor_id)
+//Refresh Section : this is where all the values in the cache are updated
+//Each sensor value is updated with its most recent value fetched from
+//it's individual heartbeat record
+unsigned int refresher_read_index;
+for(i=0; i<4 /*There are 16 cache lines*/; i++)
 {
-    cache_entry temp_cache_entry;
-    temp_cache_entry.AppID = 0;
-
-    int i;
-    for(i=0; i<16 /*There are 16 cache lines*/; i++)
+    if(hb_cache[i].AppID != 0)
     {
-        if(hb_cache[i].AppID == AppID)
-        {
-            //we have a cache hit we can return the cache_line now
-            temp_cache_entry = hb_cache[i];
-        }
+        if(hb_cache[i].state_addr != 0){
+        memcpy(&refresher_read_index, (const int*)(a + (hb_cache[i].state_addr)/4), sizeof(int));}
+        if(hb_cache[i].log_addr != 0){
+        memcpy(&hb_cache[i].prev_sensor_value, (const int*)(a + (hb_cache[i].log_addr + (refresher_read_index*64) + hb_cache[i].prev_sensor_id)/4), sizeof(int));}
     }
-    return temp_cache_entry;
+}
+//done every value in the cache has been updated
+
+*outAppID = temp_outAppID;
+*outStateAddr = temp_outStateAddr;
+*outLogAddr = temp_outLogAddr;
+*outReadIndex = temp_outReadIndex;
+*outHWSW = temp_outHWSW;
+
+return;
 }

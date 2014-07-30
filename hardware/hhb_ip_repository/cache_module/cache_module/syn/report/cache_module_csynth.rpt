@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'cache_module'
 ================================================================
-* Date:           Sat Jul 26 18:11:56 2014
+* Date:           Wed Jul 30 11:02:46 2014
 
 * Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
 * Project:        cache_module
@@ -20,7 +20,7 @@
     +---------+-------+----------+------------+
     |  Clock  | Target| Estimated| Uncertainty|
     +---------+-------+----------+------------+
-    |default  |  10.00|      6.28|        1.25|
+    |default  |  10.00|     11.19|        1.25|
     +---------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -29,7 +29,7 @@
     |  Latency  |  Interval | Pipeline|
     | min | max | min | max |   Type  |
     +-----+-----+-----+-----+---------+
-    |   33|   33|   34|   34|   none  |
+    |   43|  366|   44|  367|   none  |
     +-----+-----+-----+-----+---------+
 
     + Detail: 
@@ -37,12 +37,17 @@
         N/A
 
         * Loop: 
-        +----------+-----+-----+----------+-----------+-----------+------+----------+
-        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
-        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
-        +----------+-----+-----+----------+-----------+-----------+------+----------+
-        |- Loop 1  |   32|   32|         2|          -|          -|    16|    no    |
-        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |             |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1     |    4|    4|         1|          -|          -|     4|    no    |
+        |- Loop 2     |  300|  303|        15|          -|          -|    20|    no    |
+        | + Loop 2.1  |   11|   11|         8|          1|          1|     5|    yes   |
+        |- Loop 3     |    7|    7|         7|          1|          1|     1|    yes   |
+        |- Loop 4     |    7|    7|         7|          1|          1|     1|    yes   |
+        |- Loop 5     |   33|   33|        13|          7|          1|     4|    yes   |
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
 
 
 
@@ -53,19 +58,19 @@
 +-----------------+---------+-------+--------+-------+
 |       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
 +-----------------+---------+-------+--------+-------+
-|Expression       |        -|      -|       0|    147|
+|Expression       |        -|      -|       0|    437|
 |FIFO             |        -|      -|       -|      -|
 |Instance         |        -|      -|       -|      -|
-|Memory           |        4|      -|       0|      0|
-|Multiplexer      |        -|      -|       -|      5|
-|Register         |        -|      -|     108|      -|
-|ShiftMemory      |        -|      -|       -|      -|
+|Memory           |        1|      -|       0|      0|
+|Multiplexer      |        -|      -|       -|    247|
+|Register         |        -|      -|     856|      -|
+|ShiftMemory      |        -|      -|       0|      6|
 +-----------------+---------+-------+--------+-------+
-|Total            |        4|      0|     108|    152|
+|Total            |        1|      0|     856|    690|
 +-----------------+---------+-------+--------+-------+
 |Available        |      280|    220|  106400|  53200|
 +-----------------+---------+-------+--------+-------+
-|Utilization (%)  |        1|      0|   ~0   |   ~0  |
+|Utilization (%)  |    ~0   |      0|   ~0   |      1|
 +-----------------+---------+-------+--------+-------+
 
 + Detail: 
@@ -73,59 +78,165 @@
     N/A
 
     * Memory: 
-    +---------------------------+-----------------------------+---------+------+-----+------+-------------+
-    |           Memory          |            Module           | BRAM_18K| Words| Bits| Banks| W*Bits*Banks|
-    +---------------------------+-----------------------------+---------+------+-----+------+-------------+
-    |hb_cache_AppID_U           |cache_module_hb_cache_AppID  |        1|    16|   32|     1|          512|
-    |hb_cache_state_addr_U      |cache_module_hb_cache_AppID  |        1|    16|   32|     1|          512|
-    |hb_cache_log_addr_U        |cache_module_hb_cache_AppID  |        1|    16|   32|     1|          512|
-    |hb_cache_prev_sensor_id_U  |cache_module_hb_cache_AppID  |        1|    16|   32|     1|          512|
-    +---------------------------+-----------------------------+---------+------+-----+------+-------------+
-    |Total                      |                             |        4|    64|  128|     4|         2048|
-    +---------------------------+-----------------------------+---------+------+-----+------+-------------+
+    +--------+-------------------+---------+------+-----+------+-------------+
+    | Memory |       Module      | BRAM_18K| Words| Bits| Banks| W*Bits*Banks|
+    +--------+-------------------+---------+------+-----+------+-------------+
+    |buff_U  |cache_module_buff  |        1|     5|   32|     1|          160|
+    +--------+-------------------+---------+------+-----+------+-------------+
+    |Total   |                   |        1|     5|   32|     1|          160|
+    +--------+-------------------+---------+------+-----+------+-------------+
 
     * FIFO: 
     N/A
 
     * Shift register: 
-    N/A
+    +-------------------+---+----+-----+-----------+
+    |        Name       | FF| LUT| Bits| Const Bits|
+    +-------------------+---+----+-----+-----------+
+    |exitcond2_reg_799  |  0|   1|    1|          0|
+    |indvar1_reg_326    |  0|   1|    1|          0|
+    |indvar9_reg_289    |  0|   1|    1|          0|
+    |indvar_reg_277     |  0|   3|    3|          0|
+    +-------------------+---+----+-----+-----------+
+    |Total              |  0|   6|    6|          0|
+    +-------------------+---+----+-----+-----------+
 
     * Expression: 
-    +---------------------------------------------+----------+-------+---+----+------------+------------+
-    |                Variable Name                | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
-    +---------------------------------------------+----------+-------+---+----+------------+------------+
-    |i_fu_194_p2                                  |     +    |      0|  0|   5|           5|           1|
-    |temp_cache_entry_log_addr_1_fu_221_p3        |  Select  |      0|  0|  32|           1|          32|
-    |temp_cache_entry_prev_sensor_id_1_fu_213_p3  |  Select  |      0|  0|  32|           1|          32|
-    |temp_cache_entry_state_addr_1_fu_229_p3      |  Select  |      0|  0|  32|           1|          32|
-    |exitcond_i_fu_188_p2                         |   icmp   |      0|  0|   6|           5|           6|
-    |tmp_1_i_fu_208_p2                            |   icmp   |      0|  0|  40|          32|          32|
-    +---------------------------------------------+----------+-------+---+----+------------+------------+
-    |Total                                        |          |      0|  0| 147|          45|         135|
-    +---------------------------------------------+----------+-------+---+----+------------+------------+
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |i_2_fu_504_p2          |     +    |      0|  0|   5|           5|           1|
+    |i_4_fu_697_p2          |     +    |      0|  0|   3|           3|           1|
+    |i_fu_483_p2            |     +    |      0|  0|   3|           3|           1|
+    |indvar_next_fu_571_p2  |     +    |      0|  0|   3|           3|           1|
+    |tmp1_fu_534_p2         |     +    |      0|  0|  33|          33|          33|
+    |tmp_12_fu_634_p2       |     +    |      0|  0|  32|          32|          32|
+    |tmp_1_fu_539_p2        |     +    |      0|  0|  33|          33|          33|
+    |tmp_20_fu_723_p2       |     +    |      0|  0|  32|          32|          32|
+    |tmp_8_fu_489_p2        |     +    |      0|  0|  32|          32|           4|
+    |ap_sig_bdd_253         |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_285         |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_315         |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_464         |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_584         |    and   |      0|  0|   1|           1|           1|
+    |exitcond2_fu_565_p2    |   icmp   |      0|  0|   3|           3|           3|
+    |exitcond_fu_691_p2     |   icmp   |      0|  0|   4|           3|           4|
+    |isIter0_fu_577_p2      |   icmp   |      0|  0|   3|           3|           1|
+    |tmp_10_fu_617_p2       |   icmp   |      0|  0|  40|          32|           1|
+    |tmp_15_fu_659_p2       |   icmp   |      0|  0|  40|          32|           1|
+    |tmp_16_fu_665_p2       |   icmp   |      0|  0|  40|          32|           1|
+    |tmp_3_fu_469_p2        |   icmp   |      0|  0|  40|          32|           1|
+    |tmp_5_fu_588_p2        |   icmp   |      0|  0|  40|          32|          32|
+    |tmp_6_fu_593_p2        |   icmp   |      0|  0|  40|          32|           1|
+    |tmp_7_fu_498_p2        |   icmp   |      0|  0|   5|           5|           5|
+    |ap_sig_bdd_757         |    or    |      0|  0|   1|           1|           1|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |Total                  |          |      0|  0| 437|         388|         194|
+    +-----------------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
-    +-------------+----+-----------+-----+-----------+
-    |     Name    | LUT| Input Size| Bits| Total Bits|
-    +-------------+----+-----------+-----+-----------+
-    |i_i_reg_176  |   5|          2|    5|         10|
-    +-------------+----+-----------+-----+-----------+
-    |Total        |   5|          2|    5|         10|
-    +-------------+----+-----------+-----+-----------+
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |a_address                    |  32|          6|   32|        192|
+    |a_size                       |  32|          3|   32|         96|
+    |buff_address0                |   3|          5|    3|         15|
+    |cacheHitLoc_reg_255          |   3|          2|    3|          6|
+    |i_1_reg_266                  |   5|          2|    5|         10|
+    |i_3_phi_fu_450_p8            |   3|          2|    3|          6|
+    |i_3_reg_446                  |   3|          2|    3|          6|
+    |indvar_phi_fu_281_p4         |   3|          2|    3|          6|
+    |indvar_reg_277               |   3|          2|    3|          6|
+    |temp_outAppID_1_reg_351      |  32|          2|   32|         64|
+    |temp_outHWSW_1_reg_406       |  32|          2|   32|         64|
+    |temp_outLogAddr_1_reg_387    |  32|          2|   32|         64|
+    |temp_outReadIndex_1_reg_427  |  32|          2|   32|         64|
+    |temp_outStateAddr_1_reg_368  |  32|          2|   32|         64|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        | 247|         36|  247|        663|
+    +-----------------------------+----+-----------+-----+-----------+
 
     * Register: 
-    +---------------------------------+----+-----+-----------+
-    |               Name              | FF | Bits| Const Bits|
-    +---------------------------------+----+-----+-----------+
-    |ap_CS_fsm                        |   2|    2|          0|
-    |i_i_reg_176                      |   5|    5|          0|
-    |i_reg_245                        |   5|    5|          0|
-    |temp_res_log_addr_reg_150        |  32|   32|          0|
-    |temp_res_prev_sensor_id_reg_137  |  32|   32|          0|
-    |temp_res_state_addr_reg_163      |  32|   32|          0|
-    +---------------------------------+----+-----+-----------+
-    |Total                            | 108|  108|          0|
-    +---------------------------------+----+-----+-----------+
+    +---------------------------------------+----+-----+-----------+
+    |                  Name                 | FF | Bits| Const Bits|
+    +---------------------------------------+----+-----+-----------+
+    |a_addr_1_reg_855                       |  30|   32|          2|
+    |a_addr_2_reg_864                       |  30|   32|          2|
+    |a_addr_3_reg_884                       |  30|   32|          2|
+    |a_addr_reg_793                         |  31|   32|          1|
+    |ap_CS_fsm                              |   5|    5|          0|
+    |ap_reg_ppiten_pp0_it0                  |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it1                  |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it2                  |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it3                  |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it4                  |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it5                  |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it6                  |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it7                  |   1|    1|          0|
+    |ap_reg_ppiten_pp1_it0                  |   1|    1|          0|
+    |ap_reg_ppiten_pp1_it1                  |   1|    1|          0|
+    |ap_reg_ppiten_pp1_it2                  |   1|    1|          0|
+    |ap_reg_ppiten_pp1_it3                  |   1|    1|          0|
+    |ap_reg_ppiten_pp1_it4                  |   1|    1|          0|
+    |ap_reg_ppiten_pp1_it5                  |   1|    1|          0|
+    |ap_reg_ppiten_pp1_it6                  |   1|    1|          0|
+    |ap_reg_ppiten_pp2_it0                  |   1|    1|          0|
+    |ap_reg_ppiten_pp2_it1                  |   1|    1|          0|
+    |ap_reg_ppiten_pp2_it2                  |   1|    1|          0|
+    |ap_reg_ppiten_pp2_it3                  |   1|    1|          0|
+    |ap_reg_ppiten_pp2_it4                  |   1|    1|          0|
+    |ap_reg_ppiten_pp2_it5                  |   1|    1|          0|
+    |ap_reg_ppiten_pp2_it6                  |   1|    1|          0|
+    |ap_reg_ppiten_pp3_it0                  |   1|    1|          0|
+    |ap_reg_ppiten_pp3_it1                  |   1|    1|          0|
+    |ap_reg_ppstg_exitcond_reg_890_pp3_it1  |   1|    1|          0|
+    |applist_base_addr0data_reg             |  32|   32|          0|
+    |applist_base_addr0vld_reg              |   0|    1|          1|
+    |buff_addr_reg_775                      |   0|    3|          3|
+    |cacheHitLoc_reg_255                    |   3|    3|          0|
+    |exitcond2_reg_799                      |   1|    1|          0|
+    |exitcond_reg_890                       |   1|    1|          0|
+    |hb_cache_0_log_addr_reg_838            |  32|   32|          0|
+    |hb_cache_0_prev_sensor_value2_reg_339  |  32|   32|          0|
+    |hb_cache_0_state_addr_reg_820          |  32|   32|          0|
+    |i_1_reg_266                            |   5|    5|          0|
+    |i_2_reg_788                            |   5|    5|          0|
+    |i_3_reg_446                            |   3|    3|          0|
+    |i_4_reg_894                            |   3|    3|          0|
+    |inAppID0data_reg                       |  32|   32|          0|
+    |inAppID0vld_reg                        |   0|    1|          1|
+    |indvar1_reg_326                        |   1|    1|          0|
+    |indvar9_reg_289                        |   1|    1|          0|
+    |indvar_next_reg_803                    |   3|    3|          0|
+    |indvar_reg_277                         |   3|    3|          0|
+    |isIter0_reg_808                        |   1|    1|          0|
+    |outAppID1data_reg                      |  32|   32|          0|
+    |outAppID1vld_reg                       |   0|    1|          1|
+    |outHWSW1data_reg                       |  32|   32|          0|
+    |outHWSW1vld_reg                        |   0|    1|          1|
+    |outLogAddr1data_reg                    |  32|   32|          0|
+    |outLogAddr1vld_reg                     |   0|    1|          1|
+    |outReadIndex1data_reg                  |  32|   32|          0|
+    |outReadIndex1vld_reg                   |   0|    1|          1|
+    |outStateAddr1data_reg                  |  32|   32|          0|
+    |outStateAddr1vld_reg                   |   0|    1|          1|
+    |read_index_load4_reg_302               |  32|   32|          0|
+    |read_index_load_reg_314                |  32|   32|          0|
+    |refresher_read_index_1_fu_146          |  32|   32|          0|
+    |reg_462                                |  32|   32|          0|
+    |temp_outAppID_1_reg_351                |  32|   32|          0|
+    |temp_outHWSW_1_reg_406                 |  32|   32|          0|
+    |temp_outLogAddr_1_reg_387              |  32|   32|          0|
+    |temp_outReadIndex_1_reg_427            |  32|   32|          0|
+    |temp_outReadIndex_reg_846              |  32|   32|          0|
+    |temp_outStateAddr_1_reg_368            |  32|   32|          0|
+    |tmp_15_reg_876                         |   1|    1|          0|
+    |tmp_16_reg_880                         |   1|    1|          0|
+    |tmp_3_reg_763                          |   1|    1|          0|
+    |tmp_9_cast_reg_780                     |  32|   33|          1|
+    +---------------------------------------+----+-----+-----------+
+    |Total                                  | 856|  874|         18|
+    +---------------------------------------+----+-----+-----------+
 
 
 
@@ -133,31 +244,30 @@
 == Interface
 ================================================================
 * Summary: 
-+-----------------------+-----+-----+------------+----------------+--------------+
-|       RTL Ports       | Dir | Bits|  Protocol  |  Source Object |    C Type    |
-+-----------------------+-----+-----+------------+----------------+--------------+
-|ap_clk                 |  in |    1| ap_ctrl_hs |  cache_module  | return value |
-|ap_rst                 |  in |    1| ap_ctrl_hs |  cache_module  | return value |
-|ap_start               |  in |    1| ap_ctrl_hs |  cache_module  | return value |
-|ap_done                | out |    1| ap_ctrl_hs |  cache_module  | return value |
-|ap_idle                | out |    1| ap_ctrl_hs |  cache_module  | return value |
-|ap_ready               | out |    1| ap_ctrl_hs |  cache_module  | return value |
-|a_req_din              | out |    1|   ap_bus   |        a       |    pointer   |
-|a_req_full_n           |  in |    1|   ap_bus   |        a       |    pointer   |
-|a_req_write            | out |    1|   ap_bus   |        a       |    pointer   |
-|a_rsp_empty_n          |  in |    1|   ap_bus   |        a       |    pointer   |
-|a_rsp_read             | out |    1|   ap_bus   |        a       |    pointer   |
-|a_address              | out |   32|   ap_bus   |        a       |    pointer   |
-|a_datain               |  in |   32|   ap_bus   |        a       |    pointer   |
-|a_dataout              | out |   32|   ap_bus   |        a       |    pointer   |
-|a_size                 | out |   32|   ap_bus   |        a       |    pointer   |
-|AppID                  |  in |   32|   ap_none  |      AppID     |    scalar    |
-|sensorID               |  in |   32|   ap_none  |    sensorID    |    scalar    |
-|sensor_value           | out |   32|   ap_vld   |  sensor_value  |    pointer   |
-|sensor_value_ap_vld    | out |    1|   ap_vld   |  sensor_value  |    pointer   |
-|out_log_addr           | out |   32|   ap_vld   |  out_log_addr  |    pointer   |
-|out_log_addr_ap_vld    | out |    1|   ap_vld   |  out_log_addr  |    pointer   |
-|out_state_addr         | out |   32|   ap_vld   | out_state_addr |    pointer   |
-|out_state_addr_ap_vld  | out |    1|   ap_vld   | out_state_addr |    pointer   |
-+-----------------------+-----+-----+------------+----------------+--------------+
++-------------------+-----+-----+------------+-------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++-------------------+-----+-----+------------+-------------------+--------------+
+|ap_clk             |  in |    1| ap_ctrl_hs |    cache_module   | return value |
+|ap_rst             |  in |    1| ap_ctrl_hs |    cache_module   | return value |
+|ap_start           |  in |    1| ap_ctrl_hs |    cache_module   | return value |
+|ap_done            | out |    1| ap_ctrl_hs |    cache_module   | return value |
+|ap_idle            | out |    1| ap_ctrl_hs |    cache_module   | return value |
+|ap_ready           | out |    1| ap_ctrl_hs |    cache_module   | return value |
+|a_req_din          | out |    1|   ap_bus   |         a         |    pointer   |
+|a_req_full_n       |  in |    1|   ap_bus   |         a         |    pointer   |
+|a_req_write        | out |    1|   ap_bus   |         a         |    pointer   |
+|a_rsp_empty_n      |  in |    1|   ap_bus   |         a         |    pointer   |
+|a_rsp_read         | out |    1|   ap_bus   |         a         |    pointer   |
+|a_address          | out |   32|   ap_bus   |         a         |    pointer   |
+|a_datain           |  in |   32|   ap_bus   |         a         |    pointer   |
+|a_dataout          | out |   32|   ap_bus   |         a         |    pointer   |
+|a_size             | out |   32|   ap_bus   |         a         |    pointer   |
+|applist_base_addr  |  in |   32|   ap_none  | applist_base_addr |    scalar    |
+|outAppID           | out |   32|   ap_none  |      outAppID     |    pointer   |
+|outHWSW            | out |   32|   ap_none  |      outHWSW      |    pointer   |
+|outStateAddr       | out |   32|   ap_none  |    outStateAddr   |    pointer   |
+|outLogAddr         | out |   32|   ap_none  |     outLogAddr    |    pointer   |
+|outReadIndex       | out |   32|   ap_none  |    outReadIndex   |    pointer   |
+|inAppID            |  in |   32|   ap_none  |      inAppID      |    scalar    |
++-------------------+-----+-----+------------+-------------------+--------------+
 

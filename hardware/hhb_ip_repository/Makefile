@@ -26,5 +26,6 @@ $(CACHE_MODULE_PRJ)/impl/ip/sfleming_HHB_cache_module_1_0.zip:
 	rm *.log
 
 clean:
-	rm $(HHBQUERY_PRJ)/impl/ip/sfleming_HHB_hhb_query_1_0.zip
-	rm $(HWFREQSCALE_PRJ)/impl/ip/sfleming_HHB_hwfreqscale_simple_adder_1_0.zip
+	rm -r $(HHBQUERY_PRJ)/impl/ip/*
+	rm -r $(HWFREQSCALE_PRJ)/impl/ip/*
+	rm -r $(CACHE_MODULE_PRJ)/impl/ip/*

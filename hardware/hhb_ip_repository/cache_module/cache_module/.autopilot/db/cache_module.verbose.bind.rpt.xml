@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'cache_module'" level="0">
-<item name = "Date">Sat Jul 26 18:11:56 2014
+<item name = "Date">Wed Jul 30 11:02:46 2014
 </item>
 <item name = "Version">2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)</item>
 <item name = "Project">cache_module</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="default">10.00, 6.28, 1.25</column>
+<column name="default">10.00, 11.19, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">33, 33, 34, 34, none</column>
+<column name="">43, 366, 44, 367, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,12 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">32, 32, 2, -, -, 16, no</column>
+<column name="- Loop 1">4, 4, 1, -, -, 4, no</column>
+<column name="- Loop 2">300, 303, 15, -, -, 20, no</column>
+<column name=" + Loop 2.1">11, 11, 8, 1, 1, 5, yes</column>
+<column name="- Loop 3">7, 7, 7, 1, 1, 1, yes</column>
+<column name="- Loop 4">7, 7, 7, 1, 1, 1, yes</column>
+<column name="- Loop 5">33, 33, 13, 7, 1, 4, yes</column>
 </table>
 </item>
 </section>
