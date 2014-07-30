@@ -1,104 +1,11 @@
 #include "heartbeat.h"
+#include <stdlib.h>
+#include <string.h>
 #include "hhb_applist.h"
 
-#define round(x) ((x)>=0?(int)((x)+0.5):(int)((x)-0.5))
-
-/**
-	Function used to obtain the physical address from a virtual address
-	uses /proc/${pid}/maps and /proc/${pid}/pagemap to find the mapping
-	for the virtual address.
-	
-	This is typically used to find the physical location of the pinned
-	shared memory that contains the heartbeats records. This address
-	is then made available to hardware so that devices in the 
-	programmable logic can query the record. 
-
-**/
-int64_t get_physical_addr(int pid, int64_t *input_va)
-{
-	int page_size = getpagesize(); //get the page_size of the current system
-        FILE* dev_vmap; //This is the file pointer to the map of the processes virtual address
-        unsigned int dev_pagemap; //This points to the pagemap dev file
-        char maps_location[80]; //This is the string to the location of the v-map
-        char pagemap_location[80];
-
-	printf("PID:=%d\n", pid);
-
-        sprintf(maps_location, "/proc/%d/maps", pid);
-        dev_vmap = fopen(maps_location, "r"); //open the file
-
-        sprintf(pagemap_location, "/proc/%d/pagemap", pid); //location of the pagemap
-        dev_pagemap = open(pagemap_location, O_RDONLY); //open the pagemap file
-        if (dev_pagemap == -1)
-        {
-                printf("we have a problem with pagemap!!\n\n");
-                printf("uh-oh: %s\n", strerror(errno));
-                return 1;
-        }
-	
-        char line[256]; //used to store a line from the vmap
-
-        unsigned long vas; //virtual address range startpoint
-        unsigned long vae; //virtual address range endpoint
-        int n;
-	int found = 1;
-        int num_pages;
-        unsigned long long pa; //The physical address of our frame
-
-        while((fgets(line, 256, dev_vmap) != NULL) || found )
-        {
-                //printf("%s", line); //print out the entire vmap line by line
-
-                n = sscanf(line, "%lX-%lX", &vas, &vae); //scan the line for the contiguous virtual address range and assign
-
-        if (vas == input_va)
-        {
-               //printf("Virtual address found, retrieving physical address\n");
-                if(n != 2) { printf("invalid line read from %s\n", maps_location); } //check that we actually got a range
-                num_pages = (vae - vas) / page_size; //page size is a macro defined elsewhere...right?  
-               printf("number of pages: %d\n", num_pages);
-
-                if (num_pages > 0) {
-
-                        long index = (vas / page_size) * sizeof(unsigned long long);
-                        off64_t o;
-                        ssize_t t;
-                        int i;
-                        o = lseek64(dev_pagemap, index, SEEK_SET);
-			printf("index = %ld\t\toffset=%ld\n", index, o);	
-                        if (o != index) {
-                                printf("Error seeking to o:%ld, index:%ld\n", o, index);
-                                printf("Uh-oh: %s\n", strerror(errno));
-                        }
-
-                                //Read a 64-bit word from each pagemap
-                                t = read(dev_pagemap, &pa, sizeof(unsigned long long));
-				//printf("t=%d\n", t);
-                                if (t < 0)
-                                {
-                                        printf("Error reading file %s \n", pagemap_location);
-                                        printf("Uh-Oh: %s\n", strerror(errno));
-                                }
-
-                                printf(":physical_frame: %016llX\n", pa);
-
-                                //So we now have some information on where the physical frame is
-                                pa = pa << 12;
-                                printf("shifted pa:= %016llX\n", pa); //pa is now the physical address
-				found = 0; //break out of the loop
-
-        		}
-
-                //printf("\n\n");
-                }
-        }
-        
-
-        fclose(dev_vmap);
-        close(dev_pagemap);			
-	
-	return pa;
-}
+#if (HHB_QUERY == 1)
+#include "hhb_query.h"
+#endif
 
 /**
        * Helper function for allocating shared memory
@@ -106,18 +13,15 @@ int64_t get_physical_addr(int pid, int64_t *input_va)
 static inline heartbeat_record_t* HB_alloc_log(int pid, int64_t buffer_size) {
 
   heartbeat_record_t* p = NULL;
-#if 1
   int shmid;
-  struct shmid_ds buf;
-  int64_t * p_address;
 
-  //printf("Allocating log for %d, %d\n", pid, pid << 1);
+  printf("Allocating log for %d, %d\n", pid, pid << 1);
 
   if ((shmid = shmget(pid << 1, buffer_size*sizeof(heartbeat_record_t), IPC_CREAT | 0666)) < 0) {
     //perror("cannot allocate shared memory for heartbeat records");
     p = NULL;
   }
- 
+  
   /*
    * Now we attach the segment to our data space.
    */
@@ -126,14 +30,6 @@ static inline heartbeat_record_t* HB_alloc_log(int pid, int64_t buffer_size) {
     p = NULL;
   }
 
-  if(shmctl(shmid, SHM_LOCK, &buf) < 0)
-  {
-        p=NULL;
-  }
-
-#endif
-
-  p->shmid = shmid;
 
   return p;
   
@@ -147,7 +43,6 @@ static inline HB_global_state_t* HB_alloc_state(int pid) {
 
   HB_global_state_t* p = NULL;
   int shmid;
-  struct shmid_ds buf;
 
   if ((shmid = 
        shmget((pid << 1) | 1, 
@@ -163,16 +58,12 @@ static inline HB_global_state_t* HB_alloc_state(int pid) {
     p = NULL;
   }
 
-  //Added by Shane to pin the page 
-   if(shmctl(shmid, SHM_LOCK, &buf) < 0)
-   {
-	p=NULL;
-   }
-
   return p;
   
 }
 
+
+#if (HHB_QUERY == 0)
 /**
        * Initialization function for process that
        * wants to register heartbeats
@@ -189,13 +80,9 @@ int heartbeat_init(heartbeat_t* hb,
 		   int64_t window_size,
 		   int64_t buffer_depth,
 		   char* log_name) {
-
-
-
   // FILE* file;
   int rc = 0;
   int pid = getpid();
-  int fd;
   //  char hb_filename[256];
 
   hb->state = HB_alloc_state(pid);
@@ -212,6 +99,7 @@ int heartbeat_init(heartbeat_t* hb,
     return 1;
 
   sprintf(hb->filename, "%s/%d", getenv("HEARTBEAT_ENABLED_DIR"), hb->state->pid);  
+  
   
   hb->log = HB_alloc_log(hb->state->pid, buffer_depth);
 
@@ -232,26 +120,26 @@ int heartbeat_init(heartbeat_t* hb,
   hb->steady_state = 0;
   hb->state->valid = 0;
 
+//------------------------------------------------
+//	Heartbeat Applist
+//find the physical addresses
+  int64_t log_phys_addr = get_physical_addr(pid, hb->log);
+  int64_t state_phys_addr = get_physical_addr(pid, hb->state);
+//Create an applist entry
+  applist_entry_t this_app = applist_create_sw_entry(log_phys_addr,state_phys_addr);
+  applist_register_app(&this_app);
+
+
+//------------------------------------------------
   hb->binary_file = fopen(hb->filename, "w");
   if ( hb->binary_file == NULL ) {
     return 1;
   }
   fclose(hb->binary_file);
 
-    //=============== INTERFACING WITH THE HHB_QUERY MODULE =============================
-
-  int64_t log_phys_addr = get_physical_addr(pid, hb->log);
-  int64_t state_phys_addr = get_physical_addr(pid, hb->state);
-   
-  hb->state->state_paddr = (unsigned int)log_phys_addr;
-  hb->state->log_paddr = (unsigned int)state_phys_addr;
- 
-  applist_entry_t app_info;
-  app_info = applist_create_sw_entry(state_phys_addr, log_phys_addr);
-  applist_register_app(&app_info); 	
-
   return rc;
 }
+#endif
 
 /**
        * Cleanup function for process that
@@ -263,33 +151,10 @@ void heartbeat_finish(heartbeat_t* hb) {
   if(hb->text_file != NULL)
     fclose(hb->text_file);
   remove(hb->filename);
-  
-
-  //Unpin the shared memory segment so that it can be swapped out again
-//----------------------------------------------------------------------
-    struct shmid_ds buf;
-    int shmid;
-    shmid = hb->log->shmid;
-
-    if(shmctl(shmid, SHM_UNLOCK, &buf) < 0)
-    {
-       printf("Error: couldn't unlock the shared memory page.\n");
-    }
-
-
-   shmid = hb->shmid;
-   if(shmctl(shmid, SHM_UNLOCK, &buf) < 0)
-   {
-	printf("Error: couldn't unlock the shared memory page.\n");
-   }
-
-   //printf("Pages containing shared heartbeat records have been unpinned once more.\n");
-//---------------------------------------------------------------------
-
-
-applist_remove_app(getpid()); //remove the application from the applist
-
-return;
+  /*TODO : need to deallocate log */
+	
+  //remove from the active applist
+  applist_remove_app(getpid()); 
 }
 
 /**
@@ -350,10 +215,10 @@ double hb_get_global_rate(heartbeat_t volatile * hb) {
 }
 
 /**
-       * Returns the heart rate over the last
+       * Returns the heart rate over the last 
        * window (as specified to init) heartbeats
        * @param hb pointer to heartbeat_t
-       * @return the heart rate (double) over the last window
+       * @return the heart rate (double) over the last window 
        */
 double hb_get_windowed_rate(heartbeat_t volatile * hb) {
   //uint64_t read_index =  (hb->state->buffer_index-1) % hb->state->buffer_depth;
@@ -394,12 +259,12 @@ int64_t hb_get_window_size(heartbeat_t volatile * hb) {
        * @param hb pointer to heartbeat_t
        * @param time int64_t
        */
-static inline float hb_window_average(heartbeat_t volatile * hb,
-                                      int64_t time) {
+static inline float hb_window_average(heartbeat_t volatile * hb, 
+				      int64_t time) {
   int i;
   double average_time = 0;
   double fps;
-
+  
 
   if(!hb->steady_state) {
     hb->window[hb->current_index] = time;
@@ -416,8 +281,8 @@ static inline float hb_window_average(heartbeat_t volatile * hb,
     }
   }
   else {
-    average_time =
-      hb->last_average_time -
+    average_time = 
+      hb->last_average_time - 
       ((double) hb->window[hb->current_index]/ (double) hb->state->window_size);
     average_time += (double) time /  (double) hb->state->window_size;
 
@@ -448,7 +313,7 @@ static void hb_flush_buffer(heartbeat_t volatile * hb) {
   if(hb->text_file != NULL) {
     for(i = 0; i < nrecords; i++) {
       fprintf(hb->text_file, 
-	      "%lld    %d    %lld    %lu    %lu    %lu\n", 
+	      "%lld    %d    %lld    %f    %f    %f\n", 
 	      (long long int) hb->log[i].beat,
 	      hb->log[i].tag,
 	      (long long int) hb->log[i].timestamp,
@@ -461,13 +326,13 @@ static void hb_flush_buffer(heartbeat_t volatile * hb) {
   }
 }
 
-
+#if (HHB_QUERY == 0)
 /**
        * Registers a heartbeat
        * @param hb pointer to heartbeat_t
        * @param tag integer
        */
-int64_t heartbeat( heartbeat_t* hb, int tag)
+int64_t heartbeat( heartbeat_t* hb, int tag )
 {
     struct timespec time_info;
     int64_t time;
@@ -494,11 +359,6 @@ int64_t heartbeat( heartbeat_t* hb, int tag)
       hb->log[0].window_rate = 0;
       hb->log[0].instant_rate = 0;
       hb->log[0].global_rate = 0;
-      #if (HHB_QUERY==1)
-	hb->log[0].int_window_rate = 0;
-	hb->log[0].int_instant_rate = 0;
-	hb->log[0].int_global_rate = 0;
-      #endif
       hb->state->counter++;
       hb->state->buffer_index++;
       hb->state->valid = 1;
@@ -508,35 +368,22 @@ int64_t heartbeat( heartbeat_t* hb, int tag)
       int index =  hb->state->buffer_index;
       hb->last_timestamp = time;
       double window_heartrate = hb_window_average(hb, time-old_last_time);
-      double global_heartrate =
-        (((double) hb->state->counter+1) /
-         ((double) (time - hb->first_timestamp)))*1000000000.0;
-      double instant_heartrate = 1.0 /(((double) (time - old_last_time))) *
-        1000000000.0;       
-	#if (HHB_QUERY == 1)
-		int int_window_heartrate = (int)round(window_heartrate);
-		int int_global_heartrate = (int)round(global_heartrate);
-		int int_instant_heartrate = (int)round(instant_heartrate);		
-	#endif
-	
+      double global_heartrate = 
+	(((double) hb->state->counter+1) / 
+	 ((double) (time - hb->first_timestamp)))*1000000000.0;
+      double instant_heartrate = 1.0 /(((double) (time - old_last_time))) * 
+	1000000000.0;
+
       hb->log[index].beat = hb->state->counter;
       hb->log[index].tag = tag;
       hb->log[index].timestamp = time;
       hb->log[index].window_rate = window_heartrate;
       hb->log[index].instant_rate = instant_heartrate;
       hb->log[index].global_rate = global_heartrate;
-	#if (HHB_QUERY == 1)
-		hb->log[index].int_window_rate = int_window_heartrate;
-		hb->log[index].int_instant_rate = int_instant_heartrate;
-		hb->log[index].int_global_rate = int_global_heartrate;
-	#endif
       hb->state->buffer_index++;
       hb->state->counter++;
       hb->state->read_index++;
-       // printf("GlobalHR: %lu \t\t", temp_global_heartrate);
-       // printf("Global Rate: %lu \t\t Instant Rate: %lu \n", hb->log[index].global_rate, hb->log[index].instant_rate);
-       // printf("sizeof unsigned long: %d\t\t\t", sizeof(unsigned long));
-       // printf("sizeof unsigned long long: %d\n", sizeof(unsigned long long));
+
       if(hb->state->buffer_index%hb->state->buffer_depth == 0) {
 	if(hb->text_file != NULL)
 	  hb_flush_buffer(hb);
@@ -547,21 +394,103 @@ int64_t heartbeat( heartbeat_t* hb, int tag)
       }
     }
     pthread_mutex_unlock(&hb->mutex);
-
-    //These are privledged operations that can only be executed within kernel space
-    //I am writing a kernel module to perform this operation...
-    //Xil_DCacheFlushRange(phys_addr_state, 72);
-    //Xil_DCacheFlush();
-   
-    unsigned int address_to_be_flushed;
-    
-    	//CACHEFLUSH KERNEL MODULE INTERFACING
-    int cacheflush_fd = open("/dev/cacheflush", O_RDWR); //open the device file
-    address_to_be_flushed = hb->state->state_paddr; //Flush the read index memory location
-    write(cacheflush_fd, &address_to_be_flushed, sizeof(unsigned int)); 
-    address_to_be_flushed = hb->state->log_paddr + (hb->state->read_index * sizeof(heartbeat_record_t)) + 48; //flush the current windowed heartbeat location
-    write(cacheflush_fd, &address_to_be_flushed, sizeof(unsigned int)); 
-    close(cacheflush_fd);
-
     return time;
+
+}
+#endif
+
+
+/**
+        Function used to obtain the physical address from a virtual address
+        uses /proc/${pid}/maps and /proc/${pid}/pagemap to find the mapping
+        for the virtual address.
+
+        This is typically used to find the physical location of the pinned
+        shared memory that contains the heartbeats records. This address
+        is then made available to hardware so that devices in the
+        programmable logic can query the record.
+
+**/
+int64_t get_physical_addr(int pid, int64_t *input_va)
+{
+        int page_size = getpagesize(); //get the page_size of the current system
+        FILE* dev_vmap; //This is the file pointer to the map of the processes virtual address
+        unsigned int dev_pagemap; //This points to the pagemap dev file
+        char maps_location[80]; //This is the string to the location of the v-map
+        char pagemap_location[80];
+
+        sprintf(maps_location, "/proc/%d/maps", pid);
+        dev_vmap = fopen(maps_location, "r"); //open the file
+
+        sprintf(pagemap_location, "/proc/%d/pagemap", pid); //location of the pagemap
+        dev_pagemap = open(pagemap_location, O_RDONLY); //open the pagemap file
+        if (dev_pagemap == -1)
+        {
+                printf("we have a problem with pagemap!!\n\n");
+                printf("uh-oh: %s\n", strerror(errno));
+                return 1;
+        }
+
+        char line[256]; //used to store a line from the vmap
+
+        unsigned long vas; //virtual address range startpoint
+        unsigned long vae; //virtual address range endpoint
+        int n;
+        int found = 1;
+        int num_pages;
+        unsigned long long pa; //The physical address of our frame
+
+        while((fgets(line, 256, dev_vmap) != NULL) || found )
+        {
+                //printf("%s", line); //print out the entire vmap line by line
+
+                n = sscanf(line, "%lX-%lX", &vas, &vae); //scan the line for the contiguous virtual address range and assign
+
+        if (vas == input_va)
+        {
+               printf("Virtual address found, retrieving physical address\n");
+                if(n != 2) { printf("invalid line read from %s\n", maps_location); } //check that we actually got a range
+                num_pages = (vae - vas) / page_size; //page size is a macro defined elsewhere...right?
+                printf("number of pages: %d\n", num_pages);
+
+                if (num_pages > 0) {
+
+                        long index = (vas / page_size) * sizeof(unsigned long long);
+                        off64_t o;
+                        ssize_t t;
+                        int i;
+                        o = lseek64(dev_pagemap, index, SEEK_SET);
+                        printf("index = %ld\t\toffset=%ld\n", index, o);
+                        if (o != index) {
+                                printf("Error seeking to o:%ld, index:%ld\n", o, index);
+                                printf("Uh-oh: %s\n", strerror(errno));
+                        }
+
+                                //Read a 64-bit word from each pagemap
+                                t = read(dev_pagemap, &pa, sizeof(unsigned long long));
+                                printf("t=%d\n", t);
+                                if (t < 0)
+                                {
+                                        printf("Error reading file %s \n", pagemap_location);
+                                        printf("Uh-Oh: %s\n", strerror(errno));
+                                }
+
+                                printf(":physical_frame: %016llX\n", pa);
+
+                                //So we now have some information on where the physical frame is
+                                pa = pa << 12;
+                                printf("shifted pa:= %016llX\n", pa); //pa is now the physical address
+                                found = 0; //break out of the loop
+
+                        }
+
+                //printf("\n\n");
+                }
+        }
+
+
+        fclose(dev_vmap);
+        close(dev_pagemap);
+
+        return pa;
 }

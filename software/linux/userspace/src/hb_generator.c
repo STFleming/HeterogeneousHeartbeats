@@ -1,22 +1,26 @@
 #include <stdio.h>
-#include "hhb_query.h"
+//#include "hhb_query.h"
 #include "heartbeat.h"
+
+
+heartbeat_t test_heartbeat;
 
 int main()
 {
 	//Test program that is used to just generate heartbeats
 
-	heartbeat_t test_heartbeat;
-	heartbeat_init(&test_heartbeat, 3, 10, 10, 10, NULL, 0); //heartbeats initialised
+	heartbeat_init(&test_heartbeat, 3, 15, 10, 10, NULL); //heartbeats initialised
 
-	HHB_query hardware_hhbquery = setup_hhbquery(); //map the location of the hardware to this program.
+	//HHB_query hardware_hhbquery = setup_hhbquery(); //map the location of the hardware to this program.
+	
+	printf("LOG SIZE: %d\n", sizeof(heartbeat_record_t));
 
 	int i =0;
-	for(i=0; i<=100; i++)
+	for(i=0; i<=500; i++)
 	{
-		usleep(500000);
-		heartbeat(&test_heartbeat, 0, i);
-		printf("HB: %d\n", i);
+		heartbeat(&test_heartbeat, 0);
+		printf("HB: %d\t\t%d\n", i, test_heartbeat.log[test_heartbeat.state->read_index].int_window_rate);
+		usleep(i*100);
 	}
 	printf("\nfin.\n\n");
 	

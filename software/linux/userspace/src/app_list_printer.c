@@ -6,33 +6,23 @@
 
 int main()
 {
-
-	applist_initialise_list();
 	
 	applist_state_t* app_state;
 	app_state = applist_fetch_list_state(); //Get the app_list structure
 
-	int AppID_List[LIST_SIZE];
 	int i;
-	for(i=0;i<LIST_SIZE;i++) { AppID_List[i] = 0; } //Initialise the list
-
-	applist_acquire_lock(app_state);
-	for(i=0;i<LIST_SIZE;i++)
-	{	
+	printf("AppID\tDomain\t\tstate_addr\t\tlog_addr\n");
+	for(i=0; i<LIST_SIZE; i++)
+	{
 		if(app_state->list_head[i].alive == 1)
 		{
-			AppID_List[i] = app_state->list_head[i].AppID; 
+			printf("%d\t", app_state->list_head[i].AppID);
+			if(app_state->list_head[i].HW_SW == 0) {printf("SW\t\t");}
+			else { printf("HW\t\t"); }
+			printf("0x%X\t\t", app_state->list_head[i].app_state_phys_addr);
+			printf("0x%X\n", app_state->list_head[i].app_log_phys_addr);
 		}
-		else
-		{
-			AppID_List[i] = 0;
-		}
-	} //collect all the AppIDs
-	applist_release_lock(app_state);
-	for(i=0; i<LIST_SIZE;i++)
-	{ printf("%d\t", AppID_List[i]); }
-	printf("\n");	
-
+	}
 
 	return 0;
 }

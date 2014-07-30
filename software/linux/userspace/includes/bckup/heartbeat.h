@@ -4,7 +4,7 @@
 #define _FILE_OFFSET_BITS 64
 #define _LARGEFILE64_SOURCE
 
-#define HHB_QUERY 1
+#define HHB_QUERY 0
 
 #include <stdio.h>
 #include <sys/ipc.h>
@@ -30,16 +30,10 @@ typedef struct {
   double global_rate;
   double window_rate;
   double instant_rate;
-  #if (HHB_QUERY == 1)
-  int int_global_rate;
-  int int_window_rate;
-  int int_instant_rate;
-  #endif
   int shmid;
 } heartbeat_record_t;
 
 typedef struct {
-  int64_t read_index;
   int pid;
   double min_heartrate;
   double max_heartrate;
@@ -48,9 +42,9 @@ typedef struct {
   int64_t counter;
   int64_t buffer_depth;
   int64_t buffer_index;
+  int64_t read_index;
   char    valid;
-  unsigned int state_paddr;
-  unsigned int log_paddr;
+
 
 } HB_global_state_t;
 

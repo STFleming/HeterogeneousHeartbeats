@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-I$(INC_DIR) -lm -lrt
+CFLAGS=-I$(INC_DIR) -lm -lrt -O0
 
 LIBS=-lm -lrt
 
@@ -13,7 +13,7 @@ DEPS = $(INC_DIR)/heartbeat.h $(INC_DIR)/hhb_query.h $(INC_DIR)/hhb_applist.h $(
 $(BIN_DIR)/%.o: $(INC_DIR)/%.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-all: hls_test heartbeat_startup hb_generator app_list_printer hwfreqscale_tester hw_freq_changer
+all: hhb_startup heartbeat_startup hb_generator app_list_printer applist_test
 
 hw_freq_changer: $(OBJS)
 	$(CC) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@ $^ $(CFLAGS)
@@ -32,6 +32,14 @@ app_list_printer: $(OBJS)
 
 hwfreqscale_tester: $(OBJS)
 	$(CC) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@ $^ $(CFLAGS)
+
+applist_test: $(OBJS)
+	$(CC) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@ $^ $(CFLAGS)
+
+hhb_startup: $(OBJS)
+	$(CC) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@ $^ $(CFLAGS)
+
+
 
 clean:
 	rm $(BIN_DIR)/*

@@ -21,6 +21,7 @@
 //File inclusion for power monitoring
 #include "power_monitor.h"
 #include "heartbeat.h"
+#include "sw_freq_changer.h"
 
 //Drivers for our core
 #include "xcombiner_top.h"
@@ -49,13 +50,17 @@
 #define K 16
 #define D 3
 #define N IMG_SIZE*IMG_SIZE
-#define LMAX 30 //max number of iterations
+#define LMAX 10 //max number of iterations
 
 #define MAP_SIZE 40960000UL
 #define MAP_MASK (MAP_SIZE - 1)
 
 #define MAP_SIZE_BLOCK 4000UL
 #define MAP_MASK_BLOCK (MAP_SIZE_BLOCK - 1)
+
+#define LOW_FDIV 9
+#define HIGH_FDIV 27
+#define FRAME_NUMBER 1000
 
 void *setup_reserved_mem(uint input_address);
 int cmp_mem_segment(int *address_1, int *address_2, int block_size, int*err_signal);
@@ -99,6 +104,11 @@ int main()
 	system("rm time_log.csv");
 
 	heartbeat_init(&heart, 0.1, 10.0, 5, 5, NULL, 1); //Initialise the heartbeat data structure for this device
+
+        //Frequency scaling pll setup
+        arm_pll_data freq_scaling_data;
+        setup_arm_pll(&freq_scaling_data);
+        set_fdiv_value(&freq_scaling_data, LOW_FDIV); //Lets set the frequency quite low just to test the system out.	
 
 	//Define the Hardware output container
 	cv::Mat hw_outputFrame1(cv::Size(IMG_SIZE,IMG_SIZE),CV_32SC3); //Setup the output image contained and give it a size
@@ -188,7 +198,7 @@ int main()
 	double min_availability = 1.0;
 	double average_availability = 0.0; 
 
-	while(frame_counter<250)
+	while(frame_counter<FRAME_NUMBER)
 	{
 
 		bool bSuccess = cap.read(inFrame);
@@ -254,7 +264,8 @@ int main()
 				cthread.downtime_start = &downtime_start;
 				cthread.time_spent_down = &time_spent_down;
                                 clock_gettime(CLOCK_MONOTONIC, &gettime_now);
-                                downtime_start = gettime_now.tv_nsec;		
+                                downtime_start = gettime_now.tv_nsec;
+				set_fdiv_value(&freq_scaling_data, 30);		
 				if ( pthread_create(&sw_compute_thread, NULL, swComputeThreadProcess, (void *)&cthread) ) 
 				{ printf("Error creating the sw compute thread during task migration\n");}
 				
@@ -268,7 +279,8 @@ int main()
 				//RESUMING NORMAL OPERATION
 				pthread_join(recovery_thread, NULL);//Wait for the recovery thread to finish 
 				pthread_join(sw_compute_thread, NULL); //Wait for the compute thread to finish
-				error_count = 0;	
+				error_count = 0;
+				set_fdiv_value(&freq_scaling_data, 15);	
 			    }
 
     			}
@@ -284,8 +296,8 @@ int main()
 				distortion = 1;
 
 			double rel_improvement =  ((double)distortion-(double)new_distortion)/((double)distortion)*100;
-			if ( (rel_improvement > 0) && (rel_improvement < 1) )
-				break; 
+	//		if ( (rel_improvement > 0) && (rel_improvement < 1) )
+	//			break; 
 
 	                //printf("Distortion: %u, relative improvement: %.2f\%\n", new_distortion, ((double)distortion-(double)new_distortion)/((double)distortion)*100);
         	        distortion = new_distortion;                
