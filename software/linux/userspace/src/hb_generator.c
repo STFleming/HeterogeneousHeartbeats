@@ -16,11 +16,12 @@ int main()
 	printf("LOG SIZE: %d\n", sizeof(heartbeat_record_t));
 
 	int i =0;
-	for(i=0; i<=500; i++)
+//	for(i=0; i<=500; i++)
+	while(1)
 	{
 		heartbeat(&test_heartbeat, 0);
 		printf("HB: %d\t\t%d\n", i, test_heartbeat.log[test_heartbeat.state->read_index].int_window_rate);
-		usleep(i*100);
+		usleep(5000);
 	}
 	printf("\nfin.\n\n");
 	
