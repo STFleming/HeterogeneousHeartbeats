@@ -86,7 +86,7 @@ int heartbeat_init(heartbeat_t * hb,
 		   int64_t buffer_depth,
 		   char* log_name);
 
-int inner_heartbeat(int AppID,
+int inner_heartbeat_init(int AppID,
                    heartbeat_t* hb,
                    double min_target,
                    double max_target,

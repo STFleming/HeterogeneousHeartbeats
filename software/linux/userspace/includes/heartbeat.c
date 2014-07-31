@@ -174,13 +174,13 @@ static inline HB_global_state_t* HB_alloc_state(int pid) {
 }
 
 
-int inner_heartbeat(int AppID,
-		   heartbeat_t* hb,
-                   double min_target,
-                   double max_target,
-                   int64_t window_size,
-                   int64_t buffer_depth,
-                   char* log_name) {
+int inner_heartbeat_init(int AppID,
+		   	heartbeat_t* hb,
+                   	double min_target,
+                   	double max_target,
+                   	int64_t window_size,
+                   	int64_t buffer_depth,
+                   	char* log_name) {
   int fd;
   int rc = 0;
   //  char hb_filename[256];
@@ -262,7 +262,7 @@ int heartbeat_init(heartbeat_t* hb,
 //For initialising SW applications
 //designed to be completely backwards compatible
   int pid = getpid();
-  int rc = inner_heartbeat(pid, hb, min_target, max_target, window_size, buffer_depth, log_name);
+  int rc = inner_heartbeat_init(pid, hb, min_target, max_target, window_size, buffer_depth, log_name);
 
   return rc; 
 }
