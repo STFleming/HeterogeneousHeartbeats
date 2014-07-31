@@ -33,6 +33,8 @@ applist_state_t* applist_fetch_list_state(void); //Helper function used to alloc
 
 applist_entry_t applist_create_sw_entry(int64_t app_state_phys_addr, int64_t app_state_log_addr); 
 
+applist_entry_t applist_create_hw_entry(int AppID, int64_t app_state_phys_addr, int64_t app_state_log_addr);
+
 void applist_register_app(applist_entry_t * new_app); //Used to search through the application list for a free spot and add the calling application to it.
 
 void applist_remove_app(int input_AppID); //Used to remove an app from the application list.

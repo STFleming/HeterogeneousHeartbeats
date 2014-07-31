@@ -49,6 +49,18 @@ applist_entry_t applist_create_sw_entry(int64_t in_app_state_phys_addr, int64_t 
 	return p;
 }
 
+//This function will create a hw applist entry
+applist_entry_t applist_create_hw_entry(int AppID, int64_t in_app_state_phys_addr, int64_t in_app_log_phys_addr)
+{
+	applist_entry_t p;
+	p.AppID = AppID;
+	p.HW_SW = 1;
+	p.app_state_phys_addr = (unsigned int)in_app_state_phys_addr;
+	p.app_log_phys_addr = (unsigned int)in_app_log_phys_addr;
+	p.alive = 1;
+
+	return p;
+}
 
 //Initialisation function that is used to ensure that the lock is set up correctly and that all the elements are zeroed.
 void applist_initialise_list(void)

@@ -227,14 +227,20 @@ int inner_heartbeat_init(int AppID,
 
     //=============== INTERFACING WITH THE HHB_QUERY MODULE =============================
 
-  int64_t log_phys_addr = get_physical_addr(AppID, hb->log);
-  int64_t state_phys_addr = get_physical_addr(AppID, hb->state);
+  int64_t log_phys_addr = get_physical_addr(getpid(), hb->log);
+  int64_t state_phys_addr = get_physical_addr(getpid(), hb->state);
    
   hb->state->state_paddr = (unsigned int)log_phys_addr;
   hb->state->log_paddr = (unsigned int)state_phys_addr;
  
   applist_entry_t app_info;
-  app_info = applist_create_sw_entry(state_phys_addr, log_phys_addr);
+  if(AppID == getpid()){
+  	app_info = applist_create_sw_entry(state_phys_addr, log_phys_addr);
+  }
+  else
+  {
+	app_info = applist_create_hw_entry(AppID, state_phys_addr, log_phys_addr);
+  }
   applist_register_app(&app_info); 	
 
   return rc;
