@@ -1,0 +1,108 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="cache_module" label="">
+<pragma name="INTERFACE">
+<option name="ap_bus" positionalBoolean="mode" value=""/>
+<option name="depth" value="N"/>
+<option name="port" positionalBoolean="4" value="a"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="cache_module" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="a"/>
+<option name="core" value="AXI4M"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="cache_module" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="return"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle BUS_A&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="cache_module" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="applist_base_addr"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="cache_module" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="applist_base_addr"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle BUS_A&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="cache_module" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="outAppID"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="cache_module" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="outAppID"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle BUS_A&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="cache_module" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="outHWSW"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="cache_module" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="outHWSW"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle BUS_A&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="cache_module" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="outStateAddr"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="cache_module" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="outStateAddr"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle BUS_A&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="cache_module" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="outLogAddr"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="cache_module" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="outLogAddr"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle BUS_A&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="cache_module" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="outReadIndex"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="cache_module" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="outReadIndex"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle BUS_A&quot;"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

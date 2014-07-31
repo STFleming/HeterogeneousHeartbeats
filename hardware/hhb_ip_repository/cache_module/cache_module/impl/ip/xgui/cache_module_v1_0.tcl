@@ -17,6 +17,8 @@ proc init_gui { IPINST } {
 	set C_M_AXI_A_USER_VALUE [ipgui::add_param $IPINST -parent $tabgroup0 -name C_M_AXI_A_USER_VALUE]
 	set C_M_AXI_A_PROT_VALUE [ipgui::add_param $IPINST -parent $tabgroup0 -name C_M_AXI_A_PROT_VALUE]
 	set C_M_AXI_A_CACHE_VALUE [ipgui::add_param $IPINST -parent $tabgroup0 -name C_M_AXI_A_CACHE_VALUE]
+	set tabgroup1 [ipgui::add_group $IPINST -parent $Page0 -name {S_AXI_BUS_A (AXI4Lite Slave Interface)} -layout vertical]
+	set C_S_AXI_BUS_A_ADDR_WIDTH [ipgui::add_param $IPINST -parent $tabgroup1 -name C_S_AXI_BUS_A_ADDR_WIDTH ]
 }
 
 proc update_PARAM_VALUE.C_M_AXI_A_ID_WIDTH { PARAM_VALUE.C_M_AXI_A_ID_WIDTH } {
@@ -127,6 +129,15 @@ proc validate_PARAM_VALUE.C_M_AXI_A_CACHE_VALUE { PARAM_VALUE.C_M_AXI_A_CACHE_VA
 	return true
 }
 
+proc update_PARAM_VALUE.C_S_AXI_BUS_A_ADDR_WIDTH { PARAM_VALUE.C_S_AXI_BUS_A_ADDR_WIDTH } {
+	# Procedure called to update C_S_AXI_BUS_A_ADDR_WIDTH when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.C_S_AXI_BUS_A_ADDR_WIDTH { PARAM_VALUE.C_S_AXI_BUS_A_ADDR_WIDTH } {
+	# Procedure called to validate C_S_AXI_BUS_A_ADDR_WIDTH
+	return true
+}
+
 
 proc update_MODELPARAM_VALUE.C_M_AXI_A_ID_WIDTH { MODELPARAM_VALUE.C_M_AXI_A_ID_WIDTH PARAM_VALUE.C_M_AXI_A_ID_WIDTH } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
@@ -181,5 +192,10 @@ proc update_MODELPARAM_VALUE.C_M_AXI_A_PROT_VALUE { MODELPARAM_VALUE.C_M_AXI_A_P
 proc update_MODELPARAM_VALUE.C_M_AXI_A_CACHE_VALUE { MODELPARAM_VALUE.C_M_AXI_A_CACHE_VALUE PARAM_VALUE.C_M_AXI_A_CACHE_VALUE } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
 	set_property value [get_property value ${PARAM_VALUE.C_M_AXI_A_CACHE_VALUE}] ${MODELPARAM_VALUE.C_M_AXI_A_CACHE_VALUE}
+}
+
+proc update_MODELPARAM_VALUE.C_S_AXI_BUS_A_ADDR_WIDTH { MODELPARAM_VALUE.C_S_AXI_BUS_A_ADDR_WIDTH PARAM_VALUE.C_S_AXI_BUS_A_ADDR_WIDTH } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.C_S_AXI_BUS_A_ADDR_WIDTH}] ${MODELPARAM_VALUE.C_S_AXI_BUS_A_ADDR_WIDTH}
 }
 

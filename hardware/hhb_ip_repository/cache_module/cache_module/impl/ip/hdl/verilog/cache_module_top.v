@@ -49,20 +49,26 @@ m_axi_a_RLAST,
 m_axi_a_RUSER,
 m_axi_a_RVALID,
 m_axi_a_RREADY,
+s_axi_BUS_A_AWADDR,
+s_axi_BUS_A_AWVALID,
+s_axi_BUS_A_AWREADY,
+s_axi_BUS_A_WDATA,
+s_axi_BUS_A_WSTRB,
+s_axi_BUS_A_WVALID,
+s_axi_BUS_A_WREADY,
+s_axi_BUS_A_BRESP,
+s_axi_BUS_A_BVALID,
+s_axi_BUS_A_BREADY,
+s_axi_BUS_A_ARADDR,
+s_axi_BUS_A_ARVALID,
+s_axi_BUS_A_ARREADY,
+s_axi_BUS_A_RDATA,
+s_axi_BUS_A_RRESP,
+s_axi_BUS_A_RVALID,
+s_axi_BUS_A_RREADY,
+interrupt,
 aresetn,
-aclk,
-AppID,
-sensorID,
-sensor_value,
-sensor_value_ap_vld,
-out_log_addr,
-out_log_addr_ap_vld,
-out_state_addr,
-out_state_addr_ap_vld,
-ap_start,
-ap_ready,
-ap_done,
-ap_idle
+aclk
 );
 
 parameter C_M_AXI_A_ID_WIDTH = 1;
@@ -78,6 +84,8 @@ parameter C_M_AXI_A_TARGET_ADDR = 32'h00000000;
 parameter C_M_AXI_A_USER_VALUE = 1'b0;
 parameter C_M_AXI_A_PROT_VALUE = 3'b010;
 parameter C_M_AXI_A_CACHE_VALUE = 4'b0000;
+parameter C_S_AXI_BUS_A_ADDR_WIDTH = 7;
+parameter C_S_AXI_BUS_A_DATA_WIDTH = 32;
 parameter RESET_ACTIVE_LOW = 1;
 
 output [C_M_AXI_A_ID_WIDTH - 1:0] m_axi_a_AWID ;
@@ -123,22 +131,29 @@ input [C_M_AXI_A_RUSER_WIDTH - 1:0] m_axi_a_RUSER ;
 input m_axi_a_RVALID ;
 output m_axi_a_RREADY ;
 
+
+input [C_S_AXI_BUS_A_ADDR_WIDTH - 1:0] s_axi_BUS_A_AWADDR ;
+input s_axi_BUS_A_AWVALID ;
+output s_axi_BUS_A_AWREADY ;
+input [C_S_AXI_BUS_A_DATA_WIDTH - 1:0] s_axi_BUS_A_WDATA ;
+input [C_S_AXI_BUS_A_DATA_WIDTH/8 - 1:0] s_axi_BUS_A_WSTRB ;
+input s_axi_BUS_A_WVALID ;
+output s_axi_BUS_A_WREADY ;
+output [2 - 1:0] s_axi_BUS_A_BRESP ;
+output s_axi_BUS_A_BVALID ;
+input s_axi_BUS_A_BREADY ;
+input [C_S_AXI_BUS_A_ADDR_WIDTH - 1:0] s_axi_BUS_A_ARADDR ;
+input s_axi_BUS_A_ARVALID ;
+output s_axi_BUS_A_ARREADY ;
+output [C_S_AXI_BUS_A_DATA_WIDTH - 1:0] s_axi_BUS_A_RDATA ;
+output [2 - 1:0] s_axi_BUS_A_RRESP ;
+output s_axi_BUS_A_RVALID ;
+input s_axi_BUS_A_RREADY ;
+output interrupt ;
+
 input aresetn ;
 
 input aclk ;
-
-input [32 - 1:0] AppID ;
-input [32 - 1:0] sensorID ;
-output [32 - 1:0] sensor_value ;
-output sensor_value_ap_vld ;
-output [32 - 1:0] out_log_addr ;
-output out_log_addr_ap_vld ;
-output [32 - 1:0] out_state_addr ;
-output out_state_addr_ap_vld ;
-input ap_start ;
-output ap_ready ;
-output ap_done ;
-output ap_idle ;
 
 
 wire [C_M_AXI_A_ID_WIDTH - 1:0] m_axi_a_AWID;
@@ -184,6 +199,26 @@ wire [C_M_AXI_A_RUSER_WIDTH - 1:0] m_axi_a_RUSER;
 wire m_axi_a_RVALID;
 wire m_axi_a_RREADY;
 
+
+wire [C_S_AXI_BUS_A_ADDR_WIDTH - 1:0] s_axi_BUS_A_AWADDR;
+wire s_axi_BUS_A_AWVALID;
+wire s_axi_BUS_A_AWREADY;
+wire [C_S_AXI_BUS_A_DATA_WIDTH - 1:0] s_axi_BUS_A_WDATA;
+wire [C_S_AXI_BUS_A_DATA_WIDTH/8 - 1:0] s_axi_BUS_A_WSTRB;
+wire s_axi_BUS_A_WVALID;
+wire s_axi_BUS_A_WREADY;
+wire [2 - 1:0] s_axi_BUS_A_BRESP;
+wire s_axi_BUS_A_BVALID;
+wire s_axi_BUS_A_BREADY;
+wire [C_S_AXI_BUS_A_ADDR_WIDTH - 1:0] s_axi_BUS_A_ARADDR;
+wire s_axi_BUS_A_ARVALID;
+wire s_axi_BUS_A_ARREADY;
+wire [C_S_AXI_BUS_A_DATA_WIDTH - 1:0] s_axi_BUS_A_RDATA;
+wire [2 - 1:0] s_axi_BUS_A_RRESP;
+wire s_axi_BUS_A_RVALID;
+wire s_axi_BUS_A_RREADY;
+wire interrupt;
+
 wire aresetn;
 
 
@@ -196,6 +231,18 @@ wire sig_cache_module_a_req_full_n;
 wire sig_cache_module_a_req_write;
 wire sig_cache_module_a_rsp_empty_n;
 wire sig_cache_module_a_rsp_read;
+
+wire [32 - 1:0] sig_cache_module_applist_base_addr;
+wire [32 - 1:0] sig_cache_module_outAppID;
+wire [32 - 1:0] sig_cache_module_outHWSW;
+wire [32 - 1:0] sig_cache_module_outStateAddr;
+wire [32 - 1:0] sig_cache_module_outLogAddr;
+wire [32 - 1:0] sig_cache_module_outReadIndex;
+wire [32 - 1:0] sig_cache_module_inAppID;
+wire sig_cache_module_ap_start;
+wire sig_cache_module_ap_ready;
+wire sig_cache_module_ap_done;
+wire sig_cache_module_ap_idle;
 
 wire sig_cache_module_ap_rst;
 
@@ -211,20 +258,19 @@ cache_module cache_module_U(
     .a_req_write(sig_cache_module_a_req_write),
     .a_rsp_empty_n(sig_cache_module_a_rsp_empty_n),
     .a_rsp_read(sig_cache_module_a_rsp_read),
+    .applist_base_addr(sig_cache_module_applist_base_addr),
+    .outAppID(sig_cache_module_outAppID),
+    .outHWSW(sig_cache_module_outHWSW),
+    .outStateAddr(sig_cache_module_outStateAddr),
+    .outLogAddr(sig_cache_module_outLogAddr),
+    .outReadIndex(sig_cache_module_outReadIndex),
+    .inAppID(sig_cache_module_inAppID),
+    .ap_start(sig_cache_module_ap_start),
+    .ap_ready(sig_cache_module_ap_ready),
+    .ap_done(sig_cache_module_ap_done),
+    .ap_idle(sig_cache_module_ap_idle),
     .ap_rst(sig_cache_module_ap_rst),
-    .ap_clk(aclk),
-    .AppID(AppID),
-    .sensorID(sensorID),
-    .sensor_value(sensor_value),
-    .sensor_value_ap_vld(sensor_value_ap_vld),
-    .out_log_addr(out_log_addr),
-    .out_log_addr_ap_vld(out_log_addr_ap_vld),
-    .out_state_addr(out_state_addr),
-    .out_state_addr_ap_vld(out_state_addr_ap_vld),
-    .ap_start(ap_start),
-    .ap_ready(ap_ready),
-    .ap_done(ap_done),
-    .ap_idle(ap_idle)
+    .ap_clk(aclk)
 );
 
 cache_module_a_if #(
@@ -295,6 +341,42 @@ cache_module_a_if_U(
     .RUSER(m_axi_a_RUSER),
     .RVALID(m_axi_a_RVALID),
     .RREADY(m_axi_a_RREADY));
+
+cache_module_BUS_A_if #(
+    .C_ADDR_WIDTH(C_S_AXI_BUS_A_ADDR_WIDTH),
+    .C_DATA_WIDTH(C_S_AXI_BUS_A_DATA_WIDTH))
+cache_module_BUS_A_if_U(
+    .ACLK(aclk),
+    .ARESETN(aresetn),
+    .I_applist_base_addr(sig_cache_module_applist_base_addr),
+    .O_outAppID(sig_cache_module_outAppID),
+    .O_outHWSW(sig_cache_module_outHWSW),
+    .O_outStateAddr(sig_cache_module_outStateAddr),
+    .O_outLogAddr(sig_cache_module_outLogAddr),
+    .O_outReadIndex(sig_cache_module_outReadIndex),
+    .I_inAppID(sig_cache_module_inAppID),
+    .I_ap_start(sig_cache_module_ap_start),
+    .O_ap_ready(sig_cache_module_ap_ready),
+    .O_ap_done(sig_cache_module_ap_done),
+    .O_ap_idle(sig_cache_module_ap_idle),
+    .AWADDR(s_axi_BUS_A_AWADDR),
+    .AWVALID(s_axi_BUS_A_AWVALID),
+    .AWREADY(s_axi_BUS_A_AWREADY),
+    .WDATA(s_axi_BUS_A_WDATA),
+    .WSTRB(s_axi_BUS_A_WSTRB),
+    .WVALID(s_axi_BUS_A_WVALID),
+    .WREADY(s_axi_BUS_A_WREADY),
+    .BRESP(s_axi_BUS_A_BRESP),
+    .BVALID(s_axi_BUS_A_BVALID),
+    .BREADY(s_axi_BUS_A_BREADY),
+    .ARADDR(s_axi_BUS_A_ARADDR),
+    .ARVALID(s_axi_BUS_A_ARVALID),
+    .ARREADY(s_axi_BUS_A_ARREADY),
+    .RDATA(s_axi_BUS_A_RDATA),
+    .RRESP(s_axi_BUS_A_RRESP),
+    .RVALID(s_axi_BUS_A_RVALID),
+    .RREADY(s_axi_BUS_A_RREADY),
+    .interrupt(interrupt));
 
 cache_module_ap_rst_if #(
     .RESET_ACTIVE_LOW(RESET_ACTIVE_LOW))

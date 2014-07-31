@@ -2,8 +2,8 @@
 # Vivado v2013.4 (64-bit)
 # SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
 # IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
-# Start of session at: Sat Jul 26 18:11:57 2014
-# Process ID: 31904
+# Start of session at: Wed Jul 30 13:27:43 2014
+# Process ID: 26032
 # Log file: /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/hhb_ip_repository/cache_module/cache_module/impl/ip/vivado.log
 # Journal file: /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/hhb_ip_repository/cache_module/cache_module/impl/ip/vivado.jou
 #-----------------------------------------------------------
@@ -13,4 +13,4 @@ Loading parts and site information from /opt/Xilinx/2013.4/Vivado/2013.4/data/pa
 Parsing RTL primitives file [/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 Finished parsing RTL primitives file [/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 source run_ippack.tcl -notrace
-INFO: [Common 17-206] Exiting Vivado at Sat Jul 26 18:12:01 2014...
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 30 13:27:47 2014...
