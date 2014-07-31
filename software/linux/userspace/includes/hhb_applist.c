@@ -2,6 +2,7 @@
 
 #if (HHB_QUERY == 1)
 #include "hhb_query.h"
+#include "xhwhb.h"
 #endif
 
 //This function checks to see if a shared memory exists for the application lists.
@@ -75,6 +76,9 @@ void applist_initialise_list(void)
         HHB_query applist_test;
         applist_test = setup_hhbquery(); //setup the device
         *((unsigned int *)applist_test.Bus_a_BaseAddress + 5) = (unsigned int)applist_phys_addr;
+	XHwhb hwhb_device;
+	hwhb_device = setup_XHwhb();
+	XHwhb_SetApp_list_addr(&hwhb_device, (unsigned int)applist_phys_addr);
 	#endif
 
 	int i;
