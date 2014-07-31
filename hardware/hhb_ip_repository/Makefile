@@ -28,7 +28,7 @@ $(CACHE_MODULE_PRJ)/impl/ip/sfleming_HHB_cache_module_1_0.zip:
 	$(VIVADO_HLS_CMD) $(CACHE_MODULE_PRJ)/script.tcl
 	rm *.log
 
-$(HWHB_PRJ)/impl/sfleming_ip_sfleming_HHB_hwHB_1_0.zip:
+$(HWHB_PRJ)/impl/ip/sfleming_HHB_hwHB_1_0.zip:
 	$(VIVADO_HLS_CMD) $(HWHB_PRJ)/script.tcl
 	rm *.log
 
