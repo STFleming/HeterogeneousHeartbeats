@@ -1,0 +1,17 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="cache_module" label="">
+<pragma name="INTERFACE">
+<option name="ap_bus" positionalBoolean="mode" value=""/>
+<option name="depth" value="N"/>
+<option name="port" positionalBoolean="4" value="a"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="cache_module" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="a"/>
+<option name="core" value="AXI4M"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

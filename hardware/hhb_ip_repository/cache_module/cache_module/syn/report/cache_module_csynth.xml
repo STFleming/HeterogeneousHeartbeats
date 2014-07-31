@@ -21,14 +21,14 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>43</Best-caseLatency>
-<Average-caseLatency>276</Average-caseLatency>
-<Worst-caseLatency>366</Worst-caseLatency>
+<Best-caseLatency>42</Best-caseLatency>
+<Average-caseLatency>275</Average-caseLatency>
+<Worst-caseLatency>365</Worst-caseLatency>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <TripCount>4</TripCount>
-<Latency>4</Latency>
+<Latency>3</Latency>
 <IterationLatency>1</IterationLatency>
 </Loop1>
 <Loop2>
@@ -72,7 +72,7 @@
 <Resources>
 <BRAM_18K>1</BRAM_18K>
 <FF>856</FF>
-<LUT>690</LUT>
+<LUT>694</LUT>
 <DSP48E>0</DSP48E>
 <SLICE>0</SLICE>
 </Resources>

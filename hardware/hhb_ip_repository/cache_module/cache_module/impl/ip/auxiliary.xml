@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xd" xd:functionName="cache_module" xd:componentRef="cache_module" xd:initiationInterval="367" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64">
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xd" xd:functionName="cache_module" xd:componentRef="cache_module" xd:initiationInterval="366" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64">
   <xd:controlReg xd:name="control" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
   <xd:arg xd:name="*(a)" xd:originalName="a" xd:direction="in" xd:interfaceRef="M_AXI_A" xd:busTypeRef="aximm" xd:dataWidth="32"/>
   <xd:arg xd:name="applist_base_addr" xd:originalName="applist_base_addr" xd:direction="in" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:offset="0x14" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
@@ -9,6 +9,6 @@
   <xd:arg xd:name="*(outLogAddr)" xd:originalName="outLogAddr" xd:direction="out" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:offset="0x34" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
   <xd:arg xd:name="*(outReadIndex)" xd:originalName="outReadIndex" xd:direction="out" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:offset="0x3C" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
   <xd:arg xd:name="inAppID" xd:originalName="inAppID" xd:direction="in" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:offset="0x44" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
-  <xd:latencyEstimates xd:best-case="43" xd:worst-case="366" xd:average-case="276"/>
-  <xd:resourceEstimates xd:LUT="690" xd:FF="856" xd:BRAM="1" xd:DSP="0"/>
+  <xd:latencyEstimates xd:best-case="42" xd:worst-case="365" xd:average-case="275"/>
+  <xd:resourceEstimates xd:LUT="694" xd:FF="856" xd:BRAM="1" xd:DSP="0"/>
 </xd:acceleratorMap>

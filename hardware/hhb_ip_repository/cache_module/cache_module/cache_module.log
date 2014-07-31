@@ -12,21 +12,21 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [HLS-10] Validating synthesis directives ...
 @I [HLS-10] Starting code transformations ...
 @I [HLS-10] Checking synthesizability ...
-@I [XFORM-102] Automatically partitioning small array 'hb_cache.AppID' (cache_module/src/cache_module_top.cpp:68) completely based on array size.
-@I [XFORM-102] Automatically partitioning small array 'hb_cache.state_addr' (cache_module/src/cache_module_top.cpp:68) completely based on array size.
-@I [XFORM-102] Automatically partitioning small array 'hb_cache.log_addr' (cache_module/src/cache_module_top.cpp:68) completely based on array size.
-@I [XFORM-102] Automatically partitioning small array 'hb_cache.prev_sensor_id' (cache_module/src/cache_module_top.cpp:68) completely based on array size.
-@I [XFORM-102] Automatically partitioning small array 'hb_cache.prev_sensor_value' (cache_module/src/cache_module_top.cpp:68) completely based on array size.
-@I [XFORM-102] Automatically partitioning small array 'hb_cache.lat' (cache_module/src/cache_module_top.cpp:68) completely based on array size.
-@I [XFORM-101] Partitioning array 'hb_cache.AppID' (cache_module/src/cache_module_top.cpp:68) in dimension 1 completely.
-@I [XFORM-101] Partitioning array 'hb_cache.state_addr' (cache_module/src/cache_module_top.cpp:68) in dimension 1 completely.
-@I [XFORM-101] Partitioning array 'hb_cache.log_addr' (cache_module/src/cache_module_top.cpp:68) in dimension 1 completely.
-@I [XFORM-101] Partitioning array 'hb_cache.prev_sensor_id' (cache_module/src/cache_module_top.cpp:68) in dimension 1 completely.
-@I [XFORM-101] Partitioning array 'hb_cache.prev_sensor_value' (cache_module/src/cache_module_top.cpp:68) in dimension 1 completely.
-@I [XFORM-101] Partitioning array 'hb_cache.lat' (cache_module/src/cache_module_top.cpp:68) in dimension 1 completely.
-@I [XFORM-401] Performing if-conversion on hyperblock from (cache_module/src/cache_module_top.cpp:122:9) in function 'cache_module'... converting 2 basic blocks.
+@I [XFORM-102] Automatically partitioning small array 'hb_cache.AppID' (cache_module/src/cache_module_top.cpp:67) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'hb_cache.state_addr' (cache_module/src/cache_module_top.cpp:67) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'hb_cache.log_addr' (cache_module/src/cache_module_top.cpp:67) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'hb_cache.prev_sensor_id' (cache_module/src/cache_module_top.cpp:67) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'hb_cache.prev_sensor_value' (cache_module/src/cache_module_top.cpp:67) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'hb_cache.lat' (cache_module/src/cache_module_top.cpp:67) completely based on array size.
+@I [XFORM-101] Partitioning array 'hb_cache.AppID' (cache_module/src/cache_module_top.cpp:67) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'hb_cache.state_addr' (cache_module/src/cache_module_top.cpp:67) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'hb_cache.log_addr' (cache_module/src/cache_module_top.cpp:67) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'hb_cache.prev_sensor_id' (cache_module/src/cache_module_top.cpp:67) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'hb_cache.prev_sensor_value' (cache_module/src/cache_module_top.cpp:67) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'hb_cache.lat' (cache_module/src/cache_module_top.cpp:67) in dimension 1 completely.
+@I [XFORM-401] Performing if-conversion on hyperblock from (cache_module/src/cache_module_top.cpp:125:9) in function 'cache_module'... converting 2 basic blocks.
 @W [XFORM-561] Ignored multiple trip count directives for loop 'Loop-4' in function 'cache_module'.
-@I [HLS-111] Elapsed time: 1.49 seconds; current memory usage: 48.8 MB.
+@I [HLS-111] Elapsed time: 1.48 seconds; current memory usage: 48.8 MB.
 @I [HLS-10] Starting hardware synthesis ...
 @I [HLS-10] Synthesizing 'cache_module' ...
 @I [HLS-10] ----------------------------------------------------------------
@@ -41,28 +41,28 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 7.
 @I [SCHED-61] Pipelining loop 'Loop 5'.
 @W [SCHED-68] Unable to enforce a carried dependency constraint (II = 1, distance = 1)
-   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:161) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:159).
+   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:164) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:162).
 @W [SCHED-68] Unable to enforce a carried dependency constraint (II = 2, distance = 1)
-   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:161) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:159).
+   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:164) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:162).
 @W [SCHED-68] Unable to enforce a carried dependency constraint (II = 3, distance = 1)
-   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:161) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:159).
+   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:164) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:162).
 @W [SCHED-68] Unable to enforce a carried dependency constraint (II = 4, distance = 1)
-   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:161) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:159).
+   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:164) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:162).
 @W [SCHED-68] Unable to enforce a carried dependency constraint (II = 5, distance = 1)
-   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:161) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:159).
+   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:164) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:162).
 @W [SCHED-68] Unable to enforce a carried dependency constraint (II = 6, distance = 1)
-   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:161) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:159).
+   between bus request on port 'a' (cache_module/src/cache_module_top.cpp:164) and bus request on port 'a' (cache_module/src/cache_module_top.cpp:162).
 @I [SCHED-61] Pipelining result: Target II: 1, Final II: 7, Depth: 13.
 @W [SCHED-21] Estimated clock period (11.2ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
 @W [SCHED-21] The critical path consists of the following:
 	'load' operation ('refresher_read_index_1_load') on local variable 'refresher_read_index' (0 ns)
-	'bitconcatenate' operation ('tmp3', cache_module/src/cache_module_top.cpp:161) (0 ns)
-	'add' operation ('tmp_20', cache_module/src/cache_module_top.cpp:161) (2.44 ns)
-	'partselect' operation ('tmp_21', cache_module/src/cache_module_top.cpp:161) (0 ns)
-	'getelementptr' operation ('a_addr_4', cache_module/src/cache_module_top.cpp:161) (0 ns)
-	bus request on port 'a' (cache_module/src/cache_module_top.cpp:161) (8.75 ns)
+	'bitconcatenate' operation ('tmp3', cache_module/src/cache_module_top.cpp:164) (0 ns)
+	'add' operation ('tmp_19', cache_module/src/cache_module_top.cpp:164) (2.44 ns)
+	'partselect' operation ('tmp_20', cache_module/src/cache_module_top.cpp:164) (0 ns)
+	'getelementptr' operation ('a_addr_4', cache_module/src/cache_module_top.cpp:164) (0 ns)
+	bus request on port 'a' (cache_module/src/cache_module_top.cpp:164) (8.75 ns)
 @I [SCHED-11] Finished scheduling.
-@I [HLS-111] Elapsed time: 0.12 seconds; current memory usage: 49.3 MB.
+@I [HLS-111] Elapsed time: 0.13 seconds; current memory usage: 49.4 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Exploring micro-architecture for module 'cache_module' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -71,7 +71,7 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [BIND-101] Exploring resource sharing.
 @I [BIND-101] Binding ...
 @I [BIND-100] Finished micro-architecture generation.
-@I [HLS-111] Elapsed time: 0.04 seconds; current memory usage: 50.1 MB.
+@I [HLS-111] Elapsed time: 0.04 seconds; current memory usage: 50.2 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Generating RTL for module 'cache_module' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -91,12 +91,12 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [RTGEN-500] Setting interface mode on function 'cache_module' to 'ap_ctrl_hs'.
 @W [RTGEN-101] Setting dangling out port 'cache_module/a_dataout' to 0.
 @I [RTGEN-100] Finished creating RTL model for 'cache_module'.
-@I [HLS-111] Elapsed time: 0.08 seconds; current memory usage: 51 MB.
+@I [HLS-111] Elapsed time: 0.08 seconds; current memory usage: 51.1 MB.
 @I [RTMG-278] Implementing memory 'cache_module_buff_ram' using block RAMs.
 @I [HLS-10] Finished generating all RTL models.
 @I [WSYSC-301] Generating RTL SystemC for 'cache_module'.
 @I [WVHDL-304] Generating RTL VHDL for 'cache_module'.
 @I [WVLOG-307] Generating RTL Verilog for 'cache_module'.
 @I [IMPL-8] Exporting RTL as an IP in IP-XACT.
-@I [HLS-112] Total elapsed time: 17.590 seconds; peak memory usage: 51 MB.
+@I [HLS-112] Total elapsed time: 17.817 seconds; peak memory usage: 51.1 MB.
 @I [LIC-101] Checked in feature [VIVADO_HLS]
