@@ -173,33 +173,20 @@ static inline HB_global_state_t* HB_alloc_state(int pid) {
   
 }
 
-/**
-       * Initialization function for process that
-       * wants to register heartbeats
-       * @param hb pointer to heartbeat_t
-       * @param min_target double
-       * @param max_target double
-       * @param window_size int64_t
-       * @param buffer_depth int64_t
-       * @param log_name pointer to char
-       */
-int heartbeat_init(heartbeat_t* hb, 
-		   double min_target, 
-		   double max_target, 
-		   int64_t window_size,
-		   int64_t buffer_depth,
-		   char* log_name) {
 
-
-
-  // FILE* file;
-  int rc = 0;
-  int pid = getpid();
+int inner_heartbeat(int AppID,
+		   heartbeat_t* hb,
+                   double min_target,
+                   double max_target,
+                   int64_t window_size,
+                   int64_t buffer_depth,
+                   char* log_name) {
   int fd;
+  int rc = 0;
   //  char hb_filename[256];
 
-  hb->state = HB_alloc_state(pid);
-  hb->state->pid = pid;
+  hb->state = HB_alloc_state(AppID);
+  hb->state->pid = AppID;
 
   if(log_name != NULL) {
     hb->text_file = fopen(log_name, "w");
@@ -240,8 +227,8 @@ int heartbeat_init(heartbeat_t* hb,
 
     //=============== INTERFACING WITH THE HHB_QUERY MODULE =============================
 
-  int64_t log_phys_addr = get_physical_addr(pid, hb->log);
-  int64_t state_phys_addr = get_physical_addr(pid, hb->state);
+  int64_t log_phys_addr = get_physical_addr(AppID, hb->log);
+  int64_t state_phys_addr = get_physical_addr(AppID, hb->state);
    
   hb->state->state_paddr = (unsigned int)log_phys_addr;
   hb->state->log_paddr = (unsigned int)state_phys_addr;
@@ -252,6 +239,34 @@ int heartbeat_init(heartbeat_t* hb,
 
   return rc;
 }
+
+
+
+/**
+       * Initialization function for process that
+       * wants to register heartbeats
+       * @param hb pointer to heartbeat_t
+       * @param min_target double
+       * @param max_target double
+       * @param window_size int64_t
+       * @param buffer_depth int64_t
+       * @param log_name pointer to char
+       */
+int heartbeat_init(heartbeat_t* hb, 
+		   double min_target, 
+		   double max_target, 
+		   int64_t window_size,
+		   int64_t buffer_depth,
+		   char* log_name) {
+
+//For initialising SW applications
+//designed to be completely backwards compatible
+  int pid = getpid();
+  int rc = inner_heartbeat(pid, hb, min_target, max_target, window_size, buffer_depth, log_name);
+
+  return rc; 
+}
+
 
 /**
        * Cleanup function for process that
@@ -291,6 +306,10 @@ applist_remove_app(getpid()); //remove the application from the applist
 
 return;
 }
+
+
+
+
 
 /**
        * Returns the record for the current heartbeat
