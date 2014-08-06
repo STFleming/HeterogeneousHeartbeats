@@ -1,5 +1,5 @@
 
-set TopModule "cache_module"
+set TopModule "hwHB"
 set ClockPeriod "10.000000"
 set ClockList {ap_clk}
 set multiClockList {}
@@ -34,9 +34,9 @@ set SCTraceFileName "mytrace"
 set SCTraceFileFormat "vcd"
 set SCTraceOption "all"
 set TargetInfo "xc7z020:clg484:-1"
-set SourceFiles {sc {} c ../src/cache_module_top.cpp}
+set SourceFiles {sc {} c ../src/hwHB_top.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile {/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/hhb_ip_repository/cache_module/cache_module/cache_module.directive}
+set DirectiveFile {/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hwHB/hwHB/hwHB.directive}
 set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
@@ -47,5 +47,5 @@ set PlatformFiles {{DefaultPlatform {xilinx/zynq/zynq xilinx/zynq/zynq_fpv6}}}
 set DefaultPlatform "DefaultPlatform"
 set TBTVFileNotFound ""
 set AppFile "../vivado_hls.app"
-set ApsFile "cache_module.aps"
+set ApsFile "hwHB.aps"
 set AvePath "../.."

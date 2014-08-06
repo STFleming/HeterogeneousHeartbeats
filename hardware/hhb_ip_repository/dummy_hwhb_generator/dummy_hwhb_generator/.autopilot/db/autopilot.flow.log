@@ -1,0 +1,190 @@
+@I [HLS-0] Workspace /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hhb_query/hhb_query opened at Tue Jul 29 06:17:17 BST 2014
+@I [HLS-100] Command "config_clock -quiet -name default -period 10 -default=false "
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 0Total elapsed time: 0.196 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 0.197 sec.
+@I [HLS-100] Command "import_lib /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq "
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.lib "
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/interface/xilinx_interface.lib "
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.197 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.197 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.198 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.198 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.198 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.198 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.198 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.199 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_old.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.201 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_vivado.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.201 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/common/target_info.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.202 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.202 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.202 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/zynq/dsp48e1.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.203 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.203 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.203 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed medium "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.203 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.01Total elapsed time: 0.204 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.205 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.205 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.206 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.210 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.215 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.215 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/tps/tcl/tcllib1.11.1/struct/list.tcl "
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.224 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.224 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/tps/tcl/tcllib1.11.1/math/bignum.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.227 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02Total elapsed time: 0.231 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.07Total elapsed time: 0.308 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.1Total elapsed time: 0.308 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.309 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.1Total elapsed time: 0.309 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.1Total elapsed time: 0.309 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 0.309 sec.
+@I [HLS-100] Command "import_lib /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq_fpv6 "
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv7.lib "
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.310 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.311 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.01Total elapsed time: 0.317 sec.
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source /opt/Xilinx/2013.4/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.317 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.317 sec.
+@I [HLS-100] Command "set_part xc7z020clg484-1 "
+@I [HLS-100] Command "add_library xilinx/zynq/zynq:xc7z020:clg484:-1 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.319 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 0.319 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.320 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.320 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.320 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0Total elapsed time: 0.320 sec.
+@I [HLS-100] Command "add_library xilinx/zynq/zynq_fpv6 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.320 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 0.320 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0Total elapsed time: 0.321 sec.
+@I [HLS-10] Setting target device to 'xc7z020clg484-1'
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0Total elapsed time: 0.321 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.321 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.321 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.321 sec.
+@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.12Total elapsed time: 0.321 sec.
+@I [HLS-100] Command "set_part xc7z020clg484-1 "
+@I [HLS-100] Command "add_library xilinx/zynq/zynq:xc7z020:clg484:-1 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.322 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 0.322 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.322 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.323 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.323 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0Total elapsed time: 0.323 sec.
+@I [HLS-100] Command "add_library xilinx/zynq/zynq_fpv6 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.323 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 0.323 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.01Total elapsed time: 0.324 sec.
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.01Total elapsed time: 0.324 sec.
+@I [HLS-100] Command "create_clock -period 10 -name default "
+@I [HLS-100] Command 'create_clock' returned 0; elapsed 0Total elapsed time: 0.324 sec.
+@I [HLS-100] Command "source ./hhb_query/hhb_query/directives.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.324 sec.
+@I [HLS-100] Command "csynth_design "
+@I [HLS-100] Command "elaborate -effort=medium -skip_syncheck=0 -lm=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 "
+@W [HLS-40] Cannot find source file hhb_query_top.cpp; skipping it.
+@I [HLS-10] Analyzing design file 'hhb_query/src/hhb_query_top.cpp' ... 
+@0 [HLS-0] Analyzing design file 'hhb_query/src/hhb_query_top.cpp' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec clang -gcc-toolchain "/opt/Xilinx/2013.4/Vivado_HLS/2013.4/lnx64/tools/gcc" -hls    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit   -I "/opt/Xilinx/2013.4/Vivado_HLS/2013.4/lnx64/tools/systemc/include" -I "/opt/Xilinx/2013.4/Vivado_HLS/2013.4/include" -I "/opt/Xilinx/2013.4/Vivado_HLS/2013.4/include/ap_sysc" -fexceptions "hhb_query/src/hhb_query_top.cpp"  -o "/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hhb_query/hhb_query/.autopilot/db/hhb_query_top.pp.00.o"
+
+@I [HLS-0] hhb_query/src/hhb_query_top.cpp:15:1: warning: declaration does not declare anything [-Wmissing-declarations]
+typedef struct cache_entry //Defines a signle entry of the application cache.
+^~~~~~~
+hhb_query/src/hhb_query_top.cpp:71:24: error: member reference base type 'int' is not a structure or union
+        if(hb_cache[i].AppID == AppID)
+           ~~~~~~~~~~~ ^
+hhb_query/src/hhb_query_top.cpp:74:30: error: no viable overloaded '='
+            temp_cache_entry = hb_cache[i];
+            ~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~
+hhb_query/src/hhb_query_top.cpp:15:16: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from 'int' to 'const cache_entry' for 1st argument; 
+typedef struct cache_entry //Defines a signle entry of the application cache.
+               ^
+1 warning and 2 errors generated.
+@E [HLS-70] Compilation errors found:
+hhb_query/src/hhb_query_top.cpp:15:1: warning: declaration does not declare anything [-Wmissing-declarations]
+typedef struct cache_entry //Defines a signle entry of the application cache.
+^~~~~~~
+hhb_query/src/hhb_query_top.cpp:71:24: error: member reference base type 'int' is not a structure or union
+        if(hb_cache[i].AppID == AppID)
+           ~~~~~~~~~~~ ^
+hhb_query/src/hhb_query_top.cpp:74:30: error: no viable overloaded '='
+            temp_cache_entry = hb_cache[i];
+            ~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~
+hhb_query/src/hhb_query_top.cpp:15:16: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from 'int' to 'const cache_entry' for 1st argument; 
+typedef struct cache_entry //Defines a signle entry of the application cache.
+               ^
+1 warning and 2 errors generated.
+@E [HLS-0] Compilation errors found:
+hhb_query/src/hhb_query_top.cpp:15:1: warning: declaration does not declare anything [-Wmissing-declarations]
+typedef struct cache_entry //Defines a signle entry of the application cache.
+^~~~~~~
+hhb_query/src/hhb_query_top.cpp:71:24: error: member reference base type 'int' is not a structure or union
+        if(hb_cache[i].AppID == AppID)
+           ~~~~~~~~~~~ ^
+hhb_query/src/hhb_query_top.cpp:74:30: error: no viable overloaded '='
+            temp_cache_entry = hb_cache[i];
+            ~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~
+hhb_query/src/hhb_query_top.cpp:15:16: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from 'int' to 'const cache_entry' for 1st argument; 
+typedef struct cache_entry //Defines a signle entry of the application cache.
+               ^
+1 warning and 2 errors generated.
+@I [HLS-100] Command 'elaborate' returned 2; elapsed 0Total elapsed time: 0.361 sec.
+@I [HLS-100] Command 'csynth_design' returned 2; elapsed 0Total elapsed time: 0.361 sec.
+@I [HLS-100] Command "cleanup_all "
+@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0Total elapsed time: 0.362 sec.

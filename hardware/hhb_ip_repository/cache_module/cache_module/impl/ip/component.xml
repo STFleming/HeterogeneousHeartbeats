@@ -2265,8 +2265,8 @@
 				<xilinx:taxonomy>/HHB</xilinx:taxonomy>
 			</xilinx:taxonomies>
 			<xilinx:displayName>Cache_module</xilinx:displayName>
-			<xilinx:coreRevision>1407301327</xilinx:coreRevision>
-			<xilinx:coreCreationDateTime>2014-07-30T12:27:47Z</xilinx:coreCreationDateTime>
+			<xilinx:coreRevision>1407311347</xilinx:coreRevision>
+			<xilinx:coreCreationDateTime>2014-07-31T12:47:42Z</xilinx:coreCreationDateTime>
 		</xilinx:coreExtensions>
 		<xilinx:packagingInfo>
 			<xilinx:xilinxVersion>2013.4</xilinx:xilinxVersion>

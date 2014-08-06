@@ -15,12 +15,9 @@ const Port_Property HLS_Design_Meta::port_props[]={
 	Port_Property("a_datain", 32, hls_in, 0, "ap_bus", "unknown", 1),
 	Port_Property("a_dataout", 32, hls_out, 0, "ap_bus", "unknown", 1),
 	Port_Property("a_size", 32, hls_out, 0, "ap_bus", "unknown", 1),
-	Port_Property("applist_base_addr", 32, hls_in, 1, "ap_none", "in_data", 1),
-	Port_Property("outAppID", 32, hls_out, 2, "ap_none", "out_data", 1),
-	Port_Property("outHWSW", 32, hls_out, 3, "ap_none", "out_data", 1),
-	Port_Property("outStateAddr", 32, hls_out, 4, "ap_none", "out_data", 1),
-	Port_Property("outLogAddr", 32, hls_out, 5, "ap_none", "out_data", 1),
-	Port_Property("outReadIndex", 32, hls_out, 6, "ap_none", "out_data", 1),
-	Port_Property("inAppID", 32, hls_in, 7, "ap_none", "in_data", 1),
+	Port_Property("inAppID", 32, hls_in, 1, "ap_none", "in_data", 1),
+	Port_Property("time_r", 32, hls_in, 2, "ap_none", "in_data", 1),
+	Port_Property("app_list_addr", 32, hls_in, 3, "ap_none", "in_data", 1),
+	Port_Property("debug1", 32, hls_out, 4, "ap_none", "out_data", 1),
 };
-const char* HLS_Design_Meta::dut_name = "cache_module";
+const char* HLS_Design_Meta::dut_name = "hwHB";

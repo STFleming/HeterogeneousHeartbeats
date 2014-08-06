@@ -81,7 +81,7 @@ void cache_module(volatile int *a, unsigned int applist_base_addr, unsigned int 
   {
       if(hb_cache[i].AppID == inAppID && (inAppID != 0))
       {
-        cacheHit=1;
+        cacheHit=0;
         cacheHitLoc = i;
         break;
       }

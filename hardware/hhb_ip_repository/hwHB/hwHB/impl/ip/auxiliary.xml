@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xd" xd:functionName="hwHB" xd:componentRef="hwHB" xd:initiationInterval="778" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64">
+  <xd:controlReg xd:name="control" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(a)" xd:originalName="a" xd:direction="inout" xd:interfaceRef="M_AXI_A" xd:busTypeRef="aximm" xd:dataWidth="32"/>
+  <xd:arg xd:name="inAppID" xd:originalName="inAppID" xd:direction="in" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:offset="0x14" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="app_list_addr" xd:originalName="app_list_addr" xd:direction="in" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:offset="0x1C" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(debug1)" xd:originalName="debug1" xd:direction="out" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:offset="0x24" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="time" xd:originalName="time" xd:direction="in" xd:interfaceRef="time_r" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="3" xd:worst-case="777" xd:average-case="428"/>
+  <xd:resourceEstimates xd:LUT="584" xd:FF="496" xd:BRAM="1" xd:DSP="0"/>
+</xd:acceleratorMap>

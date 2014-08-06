@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Tue Aug  5 13:28:03 2014
+# Process ID: 18161
+# Log file: /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hwHB/hwHB/impl/ip/vivado.log
+# Journal file: /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hwHB/hwHB/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

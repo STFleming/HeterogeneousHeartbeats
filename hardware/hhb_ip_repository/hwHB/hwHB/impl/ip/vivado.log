@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Tue Aug  5 13:28:03 2014
+# Process ID: 18161
+# Log file: /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hwHB/hwHB/impl/ip/vivado.log
+# Journal file: /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hwHB/hwHB/impl/ip/vivado.jou
+#-----------------------------------------------------------
+Attempting to get a license: Implementation
+Feature available: Implementation
+Loading parts and site information from /opt/Xilinx/2013.4/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/2013.4/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source run_ippack.tcl -notrace
+INFO: [Common 17-206] Exiting Vivado at Tue Aug  5 13:28:07 2014...

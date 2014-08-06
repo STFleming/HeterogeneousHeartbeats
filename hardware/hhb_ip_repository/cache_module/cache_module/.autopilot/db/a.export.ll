@@ -45,51 +45,34 @@ define void @cache_module(i32* %a, i32 %applist_base_addr, i32* %outAppID, i32* 
   call void (...)* @_ssdm_op_SpecWire(i32* %outReadIndex, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
   call void (...)* @_ssdm_op_SpecWire(i32 %inAppID, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
   call void (...)* @_ssdm_op_SpecIFCore(i32 %inAppID, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
-  %tmp_4 = icmp eq i32 %inAppID_read, 0
+  %buff_addr = getelementptr inbounds [5 x i32]* %buff, i64 0, i64 0
+  %tmp_2 = add i32 %applist_base_addr_read, 8
+  %tmp_3_cast = zext i32 %tmp_2 to i33
   br label %1
 
-; <label>:1                                       ; preds = %1, %0
-  %cacheHitLoc = phi i3 [ 0, %0 ], [ %i, %1 ]
-  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4) nounwind
-  %tmp_10 = call i1 @_ssdm_op_BitSelect.i1.i3.i32(i3 %cacheHitLoc, i32 2)
-  %tmp_4_not = xor i1 %tmp_4, true
-  %brmerge = or i1 %tmp_10, %tmp_4_not
-  %i = add i3 %cacheHitLoc, 1
-  br i1 %brmerge, label %.loopexit2, label %1
+; <label>:1                                       ; preds = %burst.rd.end, %0
+  %i = phi i5 [ 0, %0 ], [ %i_1, %burst.rd.end ]
+  %tmp_1 = icmp ult i5 %i, -12
+  %i_1 = add i5 %i, 1
+  br i1 %tmp_1, label %2, label %.loopexit
 
-.loopexit2:                                       ; preds = %1
-  %or_cond9 = or i1 %tmp_10, %tmp_4
-  br i1 %or_cond9, label %.preheader.preheader, label %.loopexit
-
-.preheader.preheader:                             ; preds = %.loopexit2
-  %buff_addr = getelementptr inbounds [5 x i32]* %buff, i64 0, i64 0
-  %tmp_7 = add i32 %applist_base_addr_read, 8
-  %tmp_2_cast = zext i32 %tmp_7 to i33
-  br label %.preheader
-
-.preheader:                                       ; preds = %burst.rd.end, %.preheader.preheader
-  %i_1 = phi i5 [ 0, %.preheader.preheader ], [ %i_2, %burst.rd.end ]
-  %tmp_s = icmp ult i5 %i_1, -12
-  %i_2 = add i5 %i_1, 1
-  br i1 %tmp_s, label %2, label %.loopexit
-
-; <label>:2                                       ; preds = %.preheader
-  %empty_20 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 20, i64 20, i64 20) nounwind
-  %p_shl = call i9 @_ssdm_op_BitConcatenate.i9.i5.i4(i5 %i_1, i4 0)
+; <label>:2                                       ; preds = %1
+  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 20, i64 20, i64 20) nounwind
+  %p_shl = call i9 @_ssdm_op_BitConcatenate.i9.i5.i4(i5 %i, i4 0)
   %p_shl_cast = zext i9 %p_shl to i33
-  %p_shl1 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %i_1, i2 0)
+  %p_shl1 = call i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5 %i, i2 0)
   %p_shl1_cast = zext i7 %p_shl1 to i33
-  %tmp1 = add i33 %p_shl1_cast, %tmp_2_cast
-  %tmp_8 = add i33 %tmp1, %p_shl_cast
-  %tmp_9 = call i31 @_ssdm_op_PartSelect.i31.i33.i32.i32(i33 %tmp_8, i32 2, i32 32)
-  %tmp_9_cast = zext i31 %tmp_9 to i64
-  %a_addr = getelementptr inbounds i32* %a, i64 %tmp_9_cast
+  %tmp1 = add i33 %p_shl1_cast, %tmp_3_cast
+  %tmp_6 = add i33 %tmp1, %p_shl_cast
+  %tmp_7 = call i31 @_ssdm_op_PartSelect.i31.i33.i32.i32(i33 %tmp_6, i32 2, i32 32)
+  %tmp_7_cast = zext i31 %tmp_7 to i64
+  %a_addr = getelementptr inbounds i32* %a, i64 %tmp_7_cast
   br label %burst.rd.header
 
 burst.rd.body1:                                   ; preds = %burst.rd.header
-  %empty_21 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 5, i64 5, i64 5) nounwind
+  %empty_20 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 5, i64 5, i64 5) nounwind
   %burstread_rbegin = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str8) nounwind
-  %empty_22 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str7) nounwind
+  %empty_21 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str7) nounwind
   %isIter0 = icmp eq i3 %indvar, 0
   br i1 %isIter0, label %burst.rd.body2, label %burst.rd.body3
 
@@ -113,8 +96,8 @@ burst.rd.header:                                  ; preds = %burst.rd.body3, %2
 
 burst.rd.end:                                     ; preds = %burst.rd.header
   %temp_outAppID = load i32* %buff_addr, align 16
-  %tmp_2 = icmp eq i32 %temp_outAppID, %inAppID_read
-  br i1 %tmp_2, label %.critedge, label %.preheader
+  %tmp_9 = icmp eq i32 %temp_outAppID, %inAppID_read
+  br i1 %tmp_9, label %.critedge, label %1
 
 .critedge:                                        ; preds = %burst.rd.end
   %buff_addr_1 = getelementptr inbounds [5 x i32]* %buff, i64 0, i64 2
@@ -123,121 +106,122 @@ burst.rd.end:                                     ; preds = %burst.rd.header
   %hb_cache_0_log_addr = load i32* %buff_addr_2, align 4
   %buff_addr_3 = getelementptr inbounds [5 x i32]* %buff, i64 0, i64 4
   %temp_outReadIndex = load i32* %buff_addr_3, align 16
-  %tmp_3 = icmp eq i32 %hb_cache_0_state_addr, 0
-  br i1 %tmp_3, label %.critedge._crit_edge, label %3
+  %tmp_s = icmp eq i32 %hb_cache_0_state_addr, 0
+  br i1 %tmp_s, label %.critedge._crit_edge, label %3
 
 ; <label>:3                                       ; preds = %.critedge
-  %tmp_5 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %hb_cache_0_state_addr, i32 2, i32 31)
-  %tmp_1 = zext i30 %tmp_5 to i64
-  %a_addr_1 = getelementptr inbounds i32* %a, i64 %tmp_1
+  %tmp_8 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %hb_cache_0_state_addr, i32 2, i32 31)
+  %tmp_3 = zext i30 %tmp_8 to i64
+  %a_addr_1 = getelementptr inbounds i32* %a, i64 %tmp_3
   br label %burst.rd.header8
 
 burst.rd.body15:                                  ; preds = %burst.rd.header8
-  %empty_23 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1) nounwind
+  %empty_22 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1) nounwind
   %burstread_rbegin1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str10) nounwind
-  %empty_24 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str9) nounwind
+  %empty_23 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str9) nounwind
   %a_addr_1_req = call i1 @_ssdm_op_ReadReq.ap_bus.i32P(i32* %a_addr_1, i32 1) nounwind
   %read_index = call i32 @_ssdm_op_Read.ap_bus.i32P(i32* %a_addr_1) nounwind
   %burstread_rend14 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str10, i32 %burstread_rbegin1) nounwind
   br label %burst.rd.header8
 
 burst.rd.header8:                                 ; preds = %burst.rd.body15, %3
-  %read_index_load3 = phi i32 [ %read_index, %burst.rd.body15 ], [ undef, %3 ]
+  %read_index_load4 = phi i32 [ %read_index, %burst.rd.body15 ], [ undef, %3 ]
   %indvar9 = phi i1 [ true, %burst.rd.body15 ], [ false, %3 ]
   br i1 %indvar9, label %.critedge._crit_edge, label %burst.rd.body15
 
 .critedge._crit_edge:                             ; preds = %burst.rd.header8, %.critedge
-  %read_index_load = phi i32 [ undef, %.critedge ], [ %read_index_load3, %burst.rd.header8 ]
-  %tmp_6 = icmp eq i32 %hb_cache_0_log_addr, 0
-  br i1 %tmp_6, label %.loopexit, label %4
+  %read_index_load = phi i32 [ undef, %.critedge ], [ %read_index_load4, %burst.rd.header8 ]
+  %tmp_4 = icmp eq i32 %hb_cache_0_log_addr, 0
+  br i1 %tmp_4, label %.loopexit, label %4
 
 ; <label>:4                                       ; preds = %.critedge._crit_edge
-  %tmp_18 = trunc i32 %read_index_load to i26
-  %tmp2 = call i32 @_ssdm_op_BitConcatenate.i32.i26.i6(i26 %tmp_18, i6 -12)
-  %tmp_11 = add i32 %tmp2, %hb_cache_0_log_addr
-  %tmp_12 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %tmp_11, i32 2, i32 31)
-  %tmp_13 = zext i30 %tmp_12 to i64
-  %a_addr_2 = getelementptr inbounds i32* %a, i64 %tmp_13
+  %tmp_5 = trunc i32 %read_index_load to i26
+  %tmp2 = call i32 @_ssdm_op_BitConcatenate.i32.i26.i6(i26 %tmp_5, i6 -12)
+  %tmp_10 = add i32 %tmp2, %hb_cache_0_log_addr
+  %tmp_11 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %tmp_10, i32 2, i32 31)
+  %tmp_12 = zext i30 %tmp_11 to i64
+  %a_addr_2 = getelementptr inbounds i32* %a, i64 %tmp_12
   br label %burst.rd.header20
 
 burst.rd.body117:                                 ; preds = %burst.rd.header20
-  %empty_25 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1) nounwind
+  %empty_24 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1) nounwind
   %burstread_rbegin2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str12) nounwind
-  %empty_26 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str11) nounwind
+  %empty_25 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str11) nounwind
   %a_addr_2_req = call i1 @_ssdm_op_ReadReq.ap_bus.i32P(i32* %a_addr_2, i32 1) nounwind
   %window_rate = call i32 @_ssdm_op_Read.ap_bus.i32P(i32* %a_addr_2) nounwind
   %burstread_rend26 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str12, i32 %burstread_rbegin2) nounwind
   br label %burst.rd.header20
 
 burst.rd.header20:                                ; preds = %burst.rd.body117, %4
-  %hb_cache_0_prev_sensor_value1 = phi i32 [ %window_rate, %burst.rd.body117 ], [ undef, %4 ]
+  %temp_outHWSW2 = phi i32 [ %window_rate, %burst.rd.body117 ], [ undef, %4 ]
   %indvar1 = phi i1 [ true, %burst.rd.body117 ], [ false, %4 ]
   br i1 %indvar1, label %.loopexit, label %burst.rd.body117
 
-.loopexit:                                        ; preds = %.preheader, %burst.rd.header20, %.critedge._crit_edge, %.loopexit2
-  %temp_outAppID_1 = phi i32 [ %inAppID_read, %.loopexit2 ], [ %inAppID_read, %.critedge._crit_edge ], [ %inAppID_read, %burst.rd.header20 ], [ 0, %.preheader ]
-  %temp_outStateAddr_1 = phi i32 [ undef, %.loopexit2 ], [ %hb_cache_0_state_addr, %.critedge._crit_edge ], [ %hb_cache_0_state_addr, %burst.rd.header20 ], [ 0, %.preheader ]
-  %temp_outLogAddr_1 = phi i32 [ undef, %.loopexit2 ], [ %hb_cache_0_log_addr, %.critedge._crit_edge ], [ %hb_cache_0_log_addr, %burst.rd.header20 ], [ 0, %.preheader ]
-  %temp_outHWSW_1 = phi i32 [ undef, %.loopexit2 ], [ undef, %.critedge._crit_edge ], [ %hb_cache_0_prev_sensor_value1, %burst.rd.header20 ], [ 0, %.preheader ]
-  %temp_outReadIndex_1 = phi i32 [ undef, %.loopexit2 ], [ %temp_outReadIndex, %.critedge._crit_edge ], [ %temp_outReadIndex, %burst.rd.header20 ], [ 0, %.preheader ]
+.loopexit:                                        ; preds = %1, %burst.rd.header20, %.critedge._crit_edge
+  %temp_outAppID1 = phi i32 [ %inAppID_read, %.critedge._crit_edge ], [ %inAppID_read, %burst.rd.header20 ], [ 0, %1 ]
+  %temp_outStateAddr = phi i32 [ %hb_cache_0_state_addr, %.critedge._crit_edge ], [ %hb_cache_0_state_addr, %burst.rd.header20 ], [ 0, %1 ]
+  %temp_outLogAddr = phi i32 [ %hb_cache_0_log_addr, %.critedge._crit_edge ], [ %hb_cache_0_log_addr, %burst.rd.header20 ], [ 0, %1 ]
+  %temp_outHWSW1 = phi i32 [ undef, %.critedge._crit_edge ], [ %temp_outHWSW2, %burst.rd.header20 ], [ 0, %1 ]
+  %temp_outReadIndex1 = phi i32 [ %temp_outReadIndex, %.critedge._crit_edge ], [ %temp_outReadIndex, %burst.rd.header20 ], [ 0, %1 ]
   %refresher_read_index_1 = alloca i32, align 4
-  %tmp_14 = icmp eq i32 %temp_outStateAddr_1, 0
-  %tmp_15 = icmp eq i32 %temp_outLogAddr_1, 0
-  %tmp_16 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %temp_outStateAddr_1, i32 2, i32 31)
+  %tmp_13 = icmp eq i32 %inAppID_read, 0
+  %tmp_14 = icmp eq i32 %temp_outStateAddr, 0
+  %tmp_15 = icmp eq i32 %temp_outLogAddr, 0
+  %tmp_16 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %temp_outStateAddr, i32 2, i32 31)
   %tmp_17 = zext i30 %tmp_16 to i64
   %a_addr_3 = getelementptr inbounds i32* %a, i64 %tmp_17
-  br label %._crit_edge6
+  br label %._crit_edge2
 
-._crit_edge6:                                     ; preds = %branch8, %._crit_edge7121, %branch28, %.loopexit
-  %i_3 = phi i3 [ 0, %.loopexit ], [ %i_4, %branch28 ], [ %i_4, %._crit_edge7121 ], [ %i_4, %branch8 ]
-  %exitcond = icmp eq i3 %i_3, -4
-  %i_4 = add i3 %i_3, 1
-  br i1 %exitcond, label %5, label %branch8
+._crit_edge2:                                     ; preds = %branch0, %._crit_edge387, %branch12, %.loopexit
+  %i_2 = phi i3 [ 0, %.loopexit ], [ %i_3, %branch12 ], [ %i_3, %._crit_edge387 ], [ %i_3, %branch0 ]
+  %exitcond = icmp eq i3 %i_2, -4
+  %i_3 = add i3 %i_2, 1
+  br i1 %exitcond, label %5, label %branch0
 
-branch8:                                          ; preds = %._crit_edge6
-  %empty_27 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4) nounwind
-  br i1 %tmp_4, label %._crit_edge6, label %branch16
+branch0:                                          ; preds = %._crit_edge2
+  %empty_26 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4) nounwind
+  br i1 %tmp_13, label %._crit_edge2, label %branch4
 
-branch16:                                         ; preds = %branch8
-  br i1 %tmp_14, label %._crit_edge7121, label %burst.rd.body129
+branch4:                                          ; preds = %branch0
+  br i1 %tmp_14, label %._crit_edge387, label %burst.rd.body129
 
-burst.rd.body129:                                 ; preds = %branch16
+burst.rd.body129:                                 ; preds = %branch4
   %burstread_rbegin3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str14) nounwind
-  %empty_28 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str13) nounwind
+  %empty_27 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str13) nounwind
   %a_addr_3_req = call i1 @_ssdm_op_ReadReq.ap_bus.i32P(i32* %a_addr_3, i32 1) nounwind
   %refresher_read_index = call i32 @_ssdm_op_Read.ap_bus.i32P(i32* %a_addr_3) nounwind
   %burstread_rend38 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str14, i32 %burstread_rbegin3) nounwind
   store i32 %refresher_read_index, i32* %refresher_read_index_1, align 4
-  br label %._crit_edge7121
+  br label %._crit_edge387
 
-._crit_edge7121:                                  ; preds = %burst.rd.body129, %branch16
-  br i1 %tmp_15, label %._crit_edge6, label %branch28
+._crit_edge387:                                   ; preds = %burst.rd.body129, %branch4
+  br i1 %tmp_15, label %._crit_edge2, label %branch12
 
-branch28:                                         ; preds = %._crit_edge7121
+branch12:                                         ; preds = %._crit_edge387
   %refresher_read_index_1_load = load i32* %refresher_read_index_1, align 4
-  %tmp_22 = trunc i32 %refresher_read_index_1_load to i26
-  %tmp3 = call i32 @_ssdm_op_BitConcatenate.i32.i26.i6(i26 %tmp_22, i6 -12)
-  %tmp_19 = add i32 %tmp3, %temp_outLogAddr_1
+  %tmp_18 = trunc i32 %refresher_read_index_1_load to i26
+  %tmp3 = call i32 @_ssdm_op_BitConcatenate.i32.i26.i6(i26 %tmp_18, i6 -12)
+  %tmp_19 = add i32 %tmp3, %temp_outLogAddr
   %tmp_20 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %tmp_19, i32 2, i32 31)
   %tmp_21 = zext i30 %tmp_20 to i64
   %a_addr_4 = getelementptr inbounds i32* %a, i64 %tmp_21
   %burstread_rbegin4 = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str16) nounwind
-  %empty_29 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str15) nounwind
+  %empty_28 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str15) nounwind
   %a_addr_4_req = call i1 @_ssdm_op_ReadReq.ap_bus.i32P(i32* %a_addr_4, i32 1) nounwind
-  %hb_cache_prev_sensor_value_1_0 = call i32 @_ssdm_op_Read.ap_bus.i32P(i32* %a_addr_4) nounwind
+  %a_addr_4_read = call i32 @_ssdm_op_Read.ap_bus.i32P(i32* %a_addr_4) nounwind
   %burstread_rend50 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str16, i32 %burstread_rbegin4) nounwind
-  br label %._crit_edge6
+  br label %._crit_edge2
 
-; <label>:5                                       ; preds = %._crit_edge6
-  call void @_ssdm_op_Write.ap_none.i32P(i32* %outAppID, i32 %temp_outAppID_1) nounwind
+; <label>:5                                       ; preds = %._crit_edge2
+  call void @_ssdm_op_Write.ap_none.i32P(i32* %outAppID, i32 %temp_outAppID1) nounwind
   call void (...)* @_ssdm_op_SpecIFCore(i32* %outAppID, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
-  call void @_ssdm_op_Write.ap_none.i32P(i32* %outStateAddr, i32 %temp_outStateAddr_1) nounwind
+  call void @_ssdm_op_Write.ap_none.i32P(i32* %outStateAddr, i32 %temp_outStateAddr) nounwind
   call void (...)* @_ssdm_op_SpecIFCore(i32* %outStateAddr, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
-  call void @_ssdm_op_Write.ap_none.i32P(i32* %outLogAddr, i32 %temp_outLogAddr_1) nounwind
+  call void @_ssdm_op_Write.ap_none.i32P(i32* %outLogAddr, i32 %temp_outLogAddr) nounwind
   call void (...)* @_ssdm_op_SpecIFCore(i32* %outLogAddr, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
-  call void @_ssdm_op_Write.ap_none.i32P(i32* %outReadIndex, i32 %temp_outReadIndex_1) nounwind
+  call void @_ssdm_op_Write.ap_none.i32P(i32* %outReadIndex, i32 %temp_outReadIndex1) nounwind
   call void (...)* @_ssdm_op_SpecIFCore(i32* %outReadIndex, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
-  call void @_ssdm_op_Write.ap_none.i32P(i32* %outHWSW, i32 %temp_outHWSW_1) nounwind
+  call void @_ssdm_op_Write.ap_none.i32P(i32* %outHWSW, i32 %temp_outHWSW1) nounwind
   call void (...)* @_ssdm_op_SpecIFCore(i32* %outHWSW, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
   ret void
 }
@@ -305,48 +289,48 @@ entry:
 define weak i9 @_ssdm_op_BitConcatenate.i9.i5.i4(i5, i4) nounwind readnone {
 entry:
   %empty = zext i5 %0 to i9
-  %empty_30 = zext i4 %1 to i9
-  %empty_31 = trunc i9 %empty to i5
-  %empty_32 = call i5 @_ssdm_op_PartSelect.i5.i9.i32.i32(i9 %empty_30, i32 4, i32 8)
-  %empty_33 = or i5 %empty_31, %empty_32
-  %empty_34 = call i9 @_ssdm_op_PartSet.i9.i9.i5.i32.i32(i9 %empty_30, i5 %empty_33, i32 4, i32 8)
-  ret i9 %empty_34
+  %empty_29 = zext i4 %1 to i9
+  %empty_30 = trunc i9 %empty to i5
+  %empty_31 = call i5 @_ssdm_op_PartSelect.i5.i9.i32.i32(i9 %empty_29, i32 4, i32 8)
+  %empty_32 = or i5 %empty_30, %empty_31
+  %empty_33 = call i9 @_ssdm_op_PartSet.i9.i9.i5.i32.i32(i9 %empty_29, i5 %empty_32, i32 4, i32 8)
+  ret i9 %empty_33
 }
 
 define weak i7 @_ssdm_op_BitConcatenate.i7.i5.i2(i5, i2) nounwind readnone {
 entry:
   %empty = zext i5 %0 to i7
-  %empty_35 = zext i2 %1 to i7
-  %empty_36 = trunc i7 %empty to i5
-  %empty_37 = call i5 @_ssdm_op_PartSelect.i5.i7.i32.i32(i7 %empty_35, i32 2, i32 6)
-  %empty_38 = or i5 %empty_36, %empty_37
-  %empty_39 = call i7 @_ssdm_op_PartSet.i7.i7.i5.i32.i32(i7 %empty_35, i5 %empty_38, i32 2, i32 6)
-  ret i7 %empty_39
+  %empty_34 = zext i2 %1 to i7
+  %empty_35 = trunc i7 %empty to i5
+  %empty_36 = call i5 @_ssdm_op_PartSelect.i5.i7.i32.i32(i7 %empty_34, i32 2, i32 6)
+  %empty_37 = or i5 %empty_35, %empty_36
+  %empty_38 = call i7 @_ssdm_op_PartSet.i7.i7.i5.i32.i32(i7 %empty_34, i5 %empty_37, i32 2, i32 6)
+  ret i7 %empty_38
 }
 
 define weak i31 @_ssdm_op_PartSelect.i31.i33.i32.i32(i33, i32, i32) nounwind readnone {
 entry:
   %empty = call i33 @llvm.part.select.i33(i33 %0, i32 %1, i32 %2)
-  %empty_40 = trunc i33 %empty to i31
-  ret i31 %empty_40
+  %empty_39 = trunc i33 %empty to i31
+  ret i31 %empty_39
 }
 
 define weak i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32, i32, i32) nounwind readnone {
 entry:
   %empty = call i32 @llvm.part.select.i32(i32 %0, i32 %1, i32 %2)
-  %empty_41 = trunc i32 %empty to i30
-  ret i30 %empty_41
+  %empty_40 = trunc i32 %empty to i30
+  ret i30 %empty_40
 }
 
 define weak i32 @_ssdm_op_BitConcatenate.i32.i26.i6(i26, i6) nounwind readnone {
 entry:
   %empty = zext i26 %0 to i32
-  %empty_42 = zext i6 %1 to i32
-  %empty_43 = trunc i32 %empty to i26
-  %empty_44 = call i26 @_ssdm_op_PartSelect.i26.i32.i32.i32(i32 %empty_42, i32 6, i32 31)
-  %empty_45 = or i26 %empty_43, %empty_44
-  %empty_46 = call i32 @_ssdm_op_PartSet.i32.i32.i26.i32.i32(i32 %empty_42, i26 %empty_45, i32 6, i32 31)
-  ret i32 %empty_46
+  %empty_41 = zext i6 %1 to i32
+  %empty_42 = trunc i32 %empty to i26
+  %empty_43 = call i26 @_ssdm_op_PartSelect.i26.i32.i32.i32(i32 %empty_41, i32 6, i32 31)
+  %empty_44 = or i26 %empty_42, %empty_43
+  %empty_45 = call i32 @_ssdm_op_PartSet.i32.i32.i26.i32.i32(i32 %empty_41, i26 %empty_44, i32 6, i32 31)
+  ret i32 %empty_45
 }
 
 define weak i32 @_ssdm_op_Read.ap_none.i32(i32) {
@@ -360,15 +344,6 @@ entry:
   ret void
 }
 
-define weak i1 @_ssdm_op_BitSelect.i1.i3.i32(i3, i32) nounwind readnone {
-entry:
-  %empty = trunc i32 %1 to i3
-  %empty_47 = shl i3 1, %empty
-  %empty_48 = and i3 %0, %empty_47
-  %empty_49 = icmp ne i3 %empty_48, 0
-  ret i1 %empty_49
-}
-
 declare i33 @llvm.part.select.i33(i33, i32, i32) nounwind readnone
 
 declare i32 @llvm.part.select.i32(i32, i32, i32) nounwind readnone
@@ -376,15 +351,15 @@ declare i32 @llvm.part.select.i32(i32, i32, i32) nounwind readnone
 define weak i26 @_ssdm_op_PartSelect.i26.i32.i32.i32(i32, i32, i32) nounwind readnone {
 entry:
   %empty = call i32 @llvm.part.select.i32(i32 %0, i32 %1, i32 %2)
-  %empty_50 = trunc i32 %empty to i26
-  ret i26 %empty_50
+  %empty_46 = trunc i32 %empty to i26
+  ret i26 %empty_46
 }
 
 define weak i5 @_ssdm_op_PartSelect.i5.i9.i32.i32(i9, i32, i32) nounwind readnone {
 entry:
   %empty = call i9 @llvm.part.select.i9(i9 %0, i32 %1, i32 %2)
-  %empty_51 = trunc i9 %empty to i5
-  ret i5 %empty_51
+  %empty_47 = trunc i9 %empty to i5
+  ret i5 %empty_47
 }
 
 define weak i9 @_ssdm_op_PartSet.i9.i9.i5.i32.i32(i9, i5, i32, i32) nounwind readnone {
@@ -396,8 +371,8 @@ entry:
 define weak i5 @_ssdm_op_PartSelect.i5.i7.i32.i32(i7, i32, i32) nounwind readnone {
 entry:
   %empty = call i7 @llvm.part.select.i7(i7 %0, i32 %1, i32 %2)
-  %empty_52 = trunc i7 %empty to i5
-  ret i5 %empty_52
+  %empty_48 = trunc i7 %empty to i5
+  ret i5 %empty_48
 }
 
 define weak i7 @_ssdm_op_PartSet.i7.i7.i5.i32.i32(i7, i5, i32, i32) nounwind readnone {
