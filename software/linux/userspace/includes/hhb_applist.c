@@ -2,6 +2,7 @@
 
 #if (HHB_QUERY == 1)
 #include "hhb_query.h"
+#include "xhwhb.h"
 #endif
 
 //This function checks to see if a shared memory exists for the application lists.
@@ -48,6 +49,18 @@ applist_entry_t applist_create_sw_entry(int64_t in_app_state_phys_addr, int64_t 
 	return p;
 }
 
+//This function will create a hw applist entry
+applist_entry_t applist_create_hw_entry(int AppID, int64_t in_app_state_phys_addr, int64_t in_app_log_phys_addr)
+{
+	applist_entry_t p;
+	p.AppID = AppID;
+	p.HW_SW = 1;
+	p.app_state_phys_addr = (unsigned int)in_app_state_phys_addr;
+	p.app_log_phys_addr = (unsigned int)in_app_log_phys_addr;
+	p.alive = 1;
+
+	return p;
+}
 
 //Initialisation function that is used to ensure that the lock is set up correctly and that all the elements are zeroed.
 void applist_initialise_list(void)
@@ -75,6 +88,9 @@ void applist_initialise_list(void)
         HHB_query applist_test;
         applist_test = setup_hhbquery(); //setup the device
         *((unsigned int *)applist_test.Bus_a_BaseAddress + 5) = (unsigned int)applist_phys_addr;
+	XHwhb hwhb_device;
+	hwhb_device = setup_XHwhb();
+	XHwhb_SetApp_list_addr(&hwhb_device, (unsigned int)applist_phys_addr);
 	#endif
 
 	int i;

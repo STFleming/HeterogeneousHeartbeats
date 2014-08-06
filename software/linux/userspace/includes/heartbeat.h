@@ -86,6 +86,14 @@ int heartbeat_init(heartbeat_t * hb,
 		   int64_t buffer_depth,
 		   char* log_name);
 
+int inner_heartbeat_init(int AppID,
+                   heartbeat_t* hb,
+                   double min_target,
+                   double max_target,
+                   int64_t window_size,
+                   int64_t buffer_depth,
+                   char* log_name);
+
 void heartbeat_finish(heartbeat_t * hb);
 
 void hb_get_current(heartbeat_t volatile * hb, 
