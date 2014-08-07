@@ -2843,7 +2843,7 @@ _ssdm_op_SpecResource(a, "", "AXI4M", "", "", "", "");
 _ssdm_op_SpecResource(0, "", "AXI4LiteS", "", "", "", "-bus_bundle BUS_A");
 
 _ssdm_op_SpecWire(&app_list_addr, "ap_none", 1, 1, 0, "");
-_ssdm_op_SpecResource(&app_list_addr, "", "AXI4LiteS", "", "", "", "-bus_bundle BUS_A");
+_ssdm_op_SpecResource(&app_list_addr, "", "AXI4LiteS", "", "", "", "-bus_bundle CONFIG_BUS");
 
 _ssdm_op_SpecWire(&inAppID, "ap_none", 1, 1, 0, "");
 _ssdm_op_SpecResource(&inAppID, "", "AXI4LiteS", "", "", "", "-bus_bundle BUS_A");

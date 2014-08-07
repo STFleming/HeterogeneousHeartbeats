@@ -453,7 +453,7 @@
 
 <node id="20" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8">
 <![CDATA[
-:14  call void (...)* @_ssdm_op_SpecIFCore(i32 %app_list_addr, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
+:14  call void (...)* @_ssdm_op_SpecIFCore(i32 %app_list_addr, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [23 x i8]* @p_str6) nounwind
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>

@@ -19,7 +19,7 @@ set Library     "HHB"
 set IPName      "hwHB"
 set Version     "1.0"
 set DisplayName "Hwhb"
-set Revision    "1408051328"
+set Revision    "1408071456"
 set Description "An IP core that enables hardware to generate heartbeats"
 set Device      "zynq"
 set Taxonomy    "/HHB"
@@ -46,14 +46,21 @@ set Interfaces {
         mode "slave"
         port_prefix "s_axi_BUS_A"
         param_prefix "C_S_AXI_BUS_A"
-        addr_bits "6"
+        addr_bits "5"
     }
     interrupt {
         type "interrupt"
     }
+    S_AXI_CONFIG_BUS {
+        type "axi4lite"
+        mode "slave"
+        port_prefix "s_axi_CONFIG_BUS"
+        param_prefix "C_S_AXI_CONFIG_BUS"
+        addr_bits "5"
+    }
     aclk {
         type "clock"
-        buses "M_AXI_A S_AXI_BUS_A"
+        buses "M_AXI_A S_AXI_BUS_A S_AXI_CONFIG_BUS"
     }
     aresetn {
         type "reset"

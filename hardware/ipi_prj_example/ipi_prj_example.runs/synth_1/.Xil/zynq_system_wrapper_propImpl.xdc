@@ -1,7 +1,5 @@
-set_property SRC_FILE_INFO {cfile:/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_processing_system7_0_0/zynq_system_processing_system7_0_0.xdc rfile:../../../ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_processing_system7_0_0/zynq_system_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:zynq_system_i/processing_system7_0/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0.xdc rfile:../../../ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_clk_wiz_0_0/zynq_system_clk_wiz_0_0.xdc id:2 order:EARLY scoped_inst:zynq_system_i/clk_wiz_0/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/dont_touch.xdc rfile:../dont_touch.xdc id:3} [current_design]
-set_property SRC_FILE_INFO {cfile:/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_axi_clock_converter_0_26/zynq_system_axi_clock_converter_0_26_clocks.xdc rfile:../../../ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_axi_clock_converter_0_26/zynq_system_axi_clock_converter_0_26_clocks.xdc id:4 order:LATE scoped_inst:zynq_system_i/axi_clock_converter_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_processing_system7_0_0/zynq_system_processing_system7_0_0.xdc rfile:../../../ipi_prj_example.srcs/sources_1/bd/zynq_system/ip/zynq_system_processing_system7_0_0/zynq_system_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:zynq_system_i/processing_system7_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.runs/synth_1/dont_touch.xdc rfile:../dont_touch.xdc id:2} [current_design]
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_0 0.6
 set_property src_info {type:SCOPED_XDC file:1 line:31 export:INPUT save:INPUT read:READ} [current_design]
@@ -264,11 +262,5 @@ set_property src_info {type:SCOPED_XDC file:1 line:651 export:INPUT save:INPUT r
 set_property PACKAGE_PIN "C9" [get_ports "PS_SRSTB"]
 set_property src_info {type:SCOPED_XDC file:1 line:655 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN "F7" [get_ports "PS_CLK"]
-set_property src_info {type:SCOPED_XDC file:2 line:56 export:INPUT save:INPUT read:READ} [current_design]
-set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.2
-set_property src_info {type:XDC file:3 line:23 export:INPUT save:INPUT read:READ} [current_design]
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_14 || ORIG_REF_NAME==zynq_system_auto_pc_14}]
-set_property src_info {type:SCOPED_XDC file:4 line:19 export:INPUT save:INPUT read:READ} [current_design]
-set_max_delay -from [filter [all_fanout -from [get_ports s_axi_aclk] -flat -endpoints_only] {IS_LEAF}] -to [filter [all_fanout -from [get_ports m_axi_aclk] -flat -only_cells] {IS_SEQUENTIAL}] -datapath_only [get_property PERIOD [get_clocks -of_objects [get_pins zynq_system_i/axi_clock_converter_0/inst/s_axi_aclk]]]
-set_property src_info {type:SCOPED_XDC file:4 line:20 export:INPUT save:INPUT read:READ} [current_design]
-set_max_delay -from [filter [all_fanout -from [get_ports m_axi_aclk] -flat -endpoints_only] {IS_LEAF}] -to [filter [all_fanout -from [get_ports s_axi_aclk] -flat -only_cells] {IS_SEQUENTIAL}] -datapath_only [get_property PERIOD [get_clocks -of_objects [get_pins zynq_system_i/axi_clock_converter_0/inst/m_axi_aclk]]]
+set_property src_info {type:XDC file:2 line:41 export:INPUT save:INPUT read:READ} [current_design]
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==zynq_system_auto_pc_58 || ORIG_REF_NAME==zynq_system_auto_pc_58}]

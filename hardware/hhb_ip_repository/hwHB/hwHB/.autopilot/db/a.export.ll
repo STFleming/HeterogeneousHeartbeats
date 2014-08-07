@@ -8,6 +8,7 @@ target triple = "x86_64-unknown-linux-gnu"
 @p_str3 = private unnamed_addr constant [10 x i8] c"AXI4LiteS\00", align 1
 @p_str4 = private unnamed_addr constant [18 x i8] c"-bus_bundle BUS_A\00", align 1
 @p_str5 = private unnamed_addr constant [8 x i8] c"ap_none\00", align 1
+@p_str6 = private unnamed_addr constant [23 x i8] c"-bus_bundle CONFIG_BUS\00", align 1
 @str = internal constant [5 x i8] c"hwHB\00"
 @str7 = internal constant [1 x i8] zeroinitializer
 @p_str8 = internal constant [17 x i8] c"burstread.region\00"
@@ -33,7 +34,7 @@ define void @hwHB(i32* %a, i32 %inAppID, i32 %time_r, i32 %app_list_addr, i32* %
   call void (...)* @_ssdm_op_SpecIFCore(i32* %a, [1 x i8]* @p_str1, [6 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
   call void (...)* @_ssdm_op_SpecIFCore(i32 0, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
   call void (...)* @_ssdm_op_SpecWire(i32 %app_list_addr, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
-  call void (...)* @_ssdm_op_SpecIFCore(i32 %app_list_addr, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
+  call void (...)* @_ssdm_op_SpecIFCore(i32 %app_list_addr, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [23 x i8]* @p_str6) nounwind
   call void (...)* @_ssdm_op_SpecWire(i32 %inAppID, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
   call void (...)* @_ssdm_op_SpecIFCore(i32 %inAppID, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
   call void (...)* @_ssdm_op_SpecWire(i32* %debug1, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind

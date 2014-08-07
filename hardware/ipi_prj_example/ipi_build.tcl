@@ -15,7 +15,10 @@ open_project $project_location
 puts stdout $bd_location
 open_bd_design $bd_location
 current_bd_design zynq_system
-upgrade_bd_cells [get_bd_cells [list /hhb_query_0 ] ]
+upgrade_bd_cells [get_bd_cells [list /cache_module_0 ] ]
+upgrade_bd_cells [get_bd_cells [list /hwHB_0 ] ]
+upgrade_bd_cells [get_bd_cells [list /pl_resident_timer_0 ] ]
+upgrade_bd_cells [get_bd_cells [list /dummy_hwhb_generator_0 ] ]
 
 #reset_target all [get_ips zynq_system_vivado_activity_thread_*]
 #generate_target all [get_ips zynq_system_vivado_activity_thread_*] -force    

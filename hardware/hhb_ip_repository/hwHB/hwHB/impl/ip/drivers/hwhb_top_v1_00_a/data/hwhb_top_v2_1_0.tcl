@@ -9,15 +9,20 @@ proc generate {drv_handle} {
     xdefine_include_file $drv_handle "xparameters.h" "XHwhb" \
         "NUM_INSTANCES" \
         "DEVICE_ID" \
+        "C_S_AXI_CONFIG_BUS_BASEADDR" \
+        "C_S_AXI_CONFIG_BUS_HIGHADDR" \
         "C_S_AXI_BUS_A_BASEADDR" \
         "C_S_AXI_BUS_A_HIGHADDR"
 
     xdefine_config_file $drv_handle "xhwhb_g.c" "XHwhb" \
         "DEVICE_ID" \
+        "C_S_AXI_CONFIG_BUS_BASEADDR" \
         "C_S_AXI_BUS_A_BASEADDR"
 
     xdefine_canonical_xpars $drv_handle "xparameters.h" "XHwhb" \
         "DEVICE_ID" \
+        "C_S_AXI_CONFIG_BUS_BASEADDR" \
+        "C_S_AXI_CONFIG_BUS_HIGHADDR" \
         "C_S_AXI_BUS_A_BASEADDR" \
         "C_S_AXI_BUS_A_HIGHADDR"
 }

@@ -14,6 +14,7 @@ int XHwhb_CfgInitialize(XHwhb *InstancePtr, XHwhb_Config *ConfigPtr) {
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(ConfigPtr != NULL);
 
+    InstancePtr->Config_bus_BaseAddress = ConfigPtr->Config_bus_BaseAddress;
     InstancePtr->Bus_a_BaseAddress = ConfigPtr->Bus_a_BaseAddress;
     InstancePtr->IsReady = XIL_COMPONENT_IS_READY;
 
@@ -76,6 +77,23 @@ void XHwhb_DisableAutoRestart(XHwhb *InstancePtr) {
     XHwhb_WriteReg(InstancePtr->Bus_a_BaseAddress, XHWHB_BUS_A_ADDR_AP_CTRL, 0);
 }
 
+void XHwhb_SetApp_list_addr(XHwhb *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XHwhb_WriteReg(InstancePtr->Config_bus_BaseAddress, XHWHB_CONFIG_BUS_ADDR_APP_LIST_ADDR_DATA, Data);
+}
+
+u32 XHwhb_GetApp_list_addr(XHwhb *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XHwhb_ReadReg(InstancePtr->Config_bus_BaseAddress, XHWHB_CONFIG_BUS_ADDR_APP_LIST_ADDR_DATA);
+    return Data;
+}
+
 void XHwhb_SetInappid(XHwhb *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
@@ -90,23 +108,6 @@ u32 XHwhb_GetInappid(XHwhb *InstancePtr) {
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     Data = XHwhb_ReadReg(InstancePtr->Bus_a_BaseAddress, XHWHB_BUS_A_ADDR_INAPPID_DATA);
-    return Data;
-}
-
-void XHwhb_SetApp_list_addr(XHwhb *InstancePtr, u32 Data) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XHwhb_WriteReg(InstancePtr->Bus_a_BaseAddress, XHWHB_BUS_A_ADDR_APP_LIST_ADDR_DATA, Data);
-}
-
-u32 XHwhb_GetApp_list_addr(XHwhb *InstancePtr) {
-    u32 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XHwhb_ReadReg(InstancePtr->Bus_a_BaseAddress, XHWHB_BUS_A_ADDR_APP_LIST_ADDR_DATA);
     return Data;
 }
 

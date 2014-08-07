@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'hwHB'" level="0">
-<item name = "Date">Tue Aug  5 13:28:02 2014
+<item name = "Date">Thu Aug  7 14:56:31 2014
 </item>
 <item name = "Version">2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)</item>
 <item name = "Project">hwHB</item>
@@ -81,22 +81,22 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="i_1_fu_339_p2">+, 0, 0, 5, 5, 1</column>
-<column name="indvar_next_fu_406_p2">+, 0, 0, 3, 3, 1</column>
-<column name="read_index_1_fu_450_p2">+, 0, 0, 32, 32, 1</column>
-<column name="tmp1_fu_369_p2">+, 0, 0, 33, 33, 33</column>
-<column name="tmp_14_fu_490_p2">+, 0, 0, 32, 32, 32</column>
-<column name="tmp_3_fu_323_p2">+, 0, 0, 32, 32, 4</column>
-<column name="tmp_7_fu_374_p2">+, 0, 0, 33, 33, 33</column>
-<column name="read_index_3_fu_456_p3">Select, 0, 0, 32, 1, 32</column>
-<column name="exitcond_fu_400_p2">icmp, 0, 0, 3, 3, 3</column>
-<column name="isIter0_fu_412_p2">icmp, 0, 0, 3, 3, 1</column>
-<column name="tmp_12_fu_474_p2">icmp, 0, 0, 40, 32, 1</column>
-<column name="tmp_1_fu_428_p2">icmp, 0, 0, 40, 32, 1</column>
-<column name="tmp_2_fu_333_p2">icmp, 0, 0, 5, 5, 5</column>
-<column name="tmp_6_fu_444_p2">icmp, 0, 0, 40, 32, 4</column>
-<column name="tmp_fu_317_p2">icmp, 0, 0, 40, 32, 1</column>
-<column name="tmp_s_fu_423_p2">icmp, 0, 0, 40, 32, 32</column>
+<column name="i_1_fu_341_p2">+, 0, 0, 5, 5, 1</column>
+<column name="indvar_next_fu_408_p2">+, 0, 0, 3, 3, 1</column>
+<column name="read_index_1_fu_452_p2">+, 0, 0, 32, 32, 1</column>
+<column name="tmp1_fu_371_p2">+, 0, 0, 33, 33, 33</column>
+<column name="tmp_14_fu_492_p2">+, 0, 0, 32, 32, 32</column>
+<column name="tmp_3_fu_325_p2">+, 0, 0, 32, 32, 4</column>
+<column name="tmp_7_fu_376_p2">+, 0, 0, 33, 33, 33</column>
+<column name="read_index_3_fu_458_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="exitcond_fu_402_p2">icmp, 0, 0, 3, 3, 3</column>
+<column name="isIter0_fu_414_p2">icmp, 0, 0, 3, 3, 1</column>
+<column name="tmp_12_fu_476_p2">icmp, 0, 0, 40, 32, 1</column>
+<column name="tmp_1_fu_430_p2">icmp, 0, 0, 40, 32, 1</column>
+<column name="tmp_2_fu_335_p2">icmp, 0, 0, 5, 5, 5</column>
+<column name="tmp_6_fu_446_p2">icmp, 0, 0, 40, 32, 4</column>
+<column name="tmp_fu_319_p2">icmp, 0, 0, 40, 32, 1</column>
+<column name="tmp_s_fu_425_p2">icmp, 0, 0, 40, 32, 32</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -105,40 +105,40 @@
 <column name="a_dataout">32, 3, 32, 96</column>
 <column name="a_size">32, 3, 32, 96</column>
 <column name="buff_address0">3, 4, 3, 12</column>
-<column name="debug_temp_2_reg_279">32, 3, 32, 96</column>
-<column name="grp_fu_301_p1">32, 3, 32, 96</column>
-<column name="i_reg_219">5, 2, 5, 10</column>
-<column name="indvar_reg_230">3, 2, 3, 6</column>
+<column name="debug_temp_2_reg_281">32, 3, 32, 96</column>
+<column name="grp_fu_303_p1">32, 3, 32, 96</column>
+<column name="i_reg_221">5, 2, 5, 10</column>
+<column name="indvar_reg_232">3, 2, 3, 6</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="4">Name, FF, Bits, Const Bits</keys>
-<column name="a_addr_1_reg_591">30, 32, 2</column>
-<column name="a_addr_reg_546">31, 32, 1</column>
+<column name="a_addr_1_reg_593">30, 32, 2</column>
+<column name="a_addr_reg_548">31, 32, 1</column>
 <column name="ap_CS_fsm">5, 5, 0</column>
-<column name="appLogAddr_reg_581">32, 32, 0</column>
-<column name="appStateAddr_reg_576">32, 32, 0</column>
+<column name="appLogAddr_reg_583">32, 32, 0</column>
+<column name="appStateAddr_reg_578">32, 32, 0</column>
 <column name="app_list_addr0data_reg">32, 32, 0</column>
 <column name="app_list_addr0vld_reg">0, 1, 1</column>
-<column name="buff_addr_reg_528">0, 3, 3</column>
+<column name="buff_addr_reg_530">0, 3, 3</column>
 <column name="debug11data_reg">32, 32, 0</column>
 <column name="debug11vld_reg">0, 1, 1</column>
-<column name="debug_temp_2_reg_279">32, 32, 0</column>
-<column name="i_1_reg_541">5, 5, 0</column>
-<column name="i_reg_219">5, 5, 0</column>
+<column name="debug_temp_2_reg_281">32, 32, 0</column>
+<column name="i_1_reg_543">5, 5, 0</column>
+<column name="i_reg_221">5, 5, 0</column>
 <column name="inAppID0data_reg">32, 32, 0</column>
 <column name="inAppID0vld_reg">0, 1, 1</column>
-<column name="indvar8_reg_254">1, 1, 0</column>
-<column name="indvar_next_reg_555">3, 3, 0</column>
-<column name="indvar_reg_230">3, 3, 0</column>
-<column name="read_index_3_reg_602">32, 32, 0</column>
-<column name="read_index_load2_reg_242">32, 32, 0</column>
-<column name="read_index_load_reg_267">32, 32, 0</column>
-<column name="reg_311">32, 32, 0</column>
-<column name="tmp_10_reg_597">30, 30, 0</column>
-<column name="tmp_15_reg_612">30, 30, 0</column>
-<column name="tmp_1_reg_587">1, 1, 0</column>
-<column name="tmp_4_cast_reg_533">32, 33, 1</column>
+<column name="indvar8_reg_256">1, 1, 0</column>
+<column name="indvar_next_reg_557">3, 3, 0</column>
+<column name="indvar_reg_232">3, 3, 0</column>
+<column name="read_index_3_reg_604">32, 32, 0</column>
+<column name="read_index_load2_reg_244">32, 32, 0</column>
+<column name="read_index_load_reg_269">32, 32, 0</column>
+<column name="reg_313">32, 32, 0</column>
+<column name="tmp_10_reg_599">30, 30, 0</column>
+<column name="tmp_15_reg_614">30, 30, 0</column>
+<column name="tmp_1_reg_589">1, 1, 0</column>
+<column name="tmp_4_cast_reg_535">32, 33, 1</column>
 </table>
 </item>
 </section>

@@ -40,11 +40,13 @@ typedef uint32_t u32;
 #else
 typedef struct {
     u16 DeviceId;
+    u32 Config_bus_BaseAddress;
     u32 Bus_a_BaseAddress;
 } XHwhb_Config;
 #endif
 
 typedef struct {
+    u32 Config_bus_BaseAddress;
     u32 Bus_a_BaseAddress;
     u32 IsReady;
 } XHwhb;
@@ -87,10 +89,10 @@ u32 XHwhb_IsReady(XHwhb *InstancePtr);
 void XHwhb_EnableAutoRestart(XHwhb *InstancePtr);
 void XHwhb_DisableAutoRestart(XHwhb *InstancePtr);
 
-void XHwhb_SetInappid(XHwhb *InstancePtr, u32 Data);
-u32 XHwhb_GetInappid(XHwhb *InstancePtr);
 void XHwhb_SetApp_list_addr(XHwhb *InstancePtr, u32 Data);
 u32 XHwhb_GetApp_list_addr(XHwhb *InstancePtr);
+void XHwhb_SetInappid(XHwhb *InstancePtr, u32 Data);
+u32 XHwhb_GetInappid(XHwhb *InstancePtr);
 u32 XHwhb_GetDebug1(XHwhb *InstancePtr);
 
 void XHwhb_InterruptGlobalEnable(XHwhb *InstancePtr);

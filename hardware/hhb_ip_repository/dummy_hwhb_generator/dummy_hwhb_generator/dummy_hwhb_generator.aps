@@ -1,0 +1,25 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <config>
+        <schedule model="dummy_hwhb_generator"/>
+    </config>
+    <ExportDesign askAgain="true" evaluate="false" rtl="verilog" formatName="ip_catalog">
+        <Format formatName="ip_catalog" description="An IP core that generates random heartbeats for testing registering of heartbeats from the hardware domain" vendor="sfleming" library="HHB" version="1.0" display_name="" taxonomy="/HHB"/>
+    </ExportDesign>
+    <name>
+        <value string="dummy_hwhb_generator"/>
+    </name>
+    <project>
+        <value string="dummy_hwhb_generator"/>
+    </project>
+    <targetInfo>
+        <TargetInfo value="xc7z020:clg484:-1"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
+        <library value="xilinx/zynq/zynq_fpv6" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock default="false" name="default" period="10"/>
+    </clockList>
+</AutoPilot:solution>
+

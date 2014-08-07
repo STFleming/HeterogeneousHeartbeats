@@ -1,0 +1,579 @@
+<stg><name>dummy_hwhb_generator</name>
+
+
+<trans_list>
+
+<trans id="29" from="1" to="2">
+<condition id="1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="11" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+burst.wr.header:8  %sensor_bus_addr = getelementptr inbounds i32* %sensor_bus, i64 287834117
+
+]]></node>
+<StgValue><ssdm name="sensor_bus_addr"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>AXI4M</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="15" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+burst.wr.header:12  %sensor_bus_addr_req = call i1 @_ssdm_op_WriteReq.ap_bus.i32P(i32* %sensor_bus_addr, i32 1) nounwind
+
+]]></node>
+<StgValue><ssdm name="sensor_bus_addr_req"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>AXI4M</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="16" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+burst.wr.header:13  call void @_ssdm_op_Write.ap_bus.i32P(i32* %sensor_bus_addr, i32 10) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="6" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="3" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+burst.wr.header:0  call void (...)* @_ssdm_op_SpecBitsMap(i32* %sensor_bus) nounwind, !map !7
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="7" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="4" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+burst.wr.header:1  call void (...)* @_ssdm_op_SpecBitsMap(i32* %debug1) nounwind, !map !11
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="8" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="5" bw="0" op_0_bw="0" op_1_bw="8">
+<![CDATA[
+burst.wr.header:2  call void (...)* @_ssdm_op_SpecTopModule([21 x i8]* @str) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="9" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="6" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="8">
+<![CDATA[
+burst.wr.header:3  call void (...)* @_ssdm_op_SpecBus(i32* %sensor_bus, [7 x i8]* @p_str, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="10" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="7" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8">
+<![CDATA[
+burst.wr.header:4  call void (...)* @_ssdm_op_SpecIFCore(i32* %sensor_bus, [1 x i8]* @p_str1, [6 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="11" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="8" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8">
+<![CDATA[
+burst.wr.header:5  call void (...)* @_ssdm_op_SpecIFCore(i32 0, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="12" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="9" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="8">
+<![CDATA[
+burst.wr.header:6  call void (...)* @_ssdm_op_SpecWire(i32* %debug1, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="13" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="10" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8">
+<![CDATA[
+burst.wr.header:7  call void (...)* @_ssdm_op_SpecIFCore(i32* %debug1, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="14" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="12" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<![CDATA[
+burst.wr.header:9  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1) nounwind
+
+]]></node>
+<StgValue><ssdm name="empty"/></StgValue>
+</operation>
+
+<operation id="15" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="13" bw="32" op_0_bw="32" op_1_bw="8">
+<![CDATA[
+burst.wr.header:10  %burstwrite_rbegin = call i32 (...)* @_ssdm_op_SpecRegionBegin([18 x i8]* @p_str10) nounwind
+
+]]></node>
+<StgValue><ssdm name="burstwrite_rbegin"/></StgValue>
+</operation>
+
+<operation id="16" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="14" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="8">
+<![CDATA[
+burst.wr.header:11  %empty_2 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str9) nounwind
+
+]]></node>
+<StgValue><ssdm name="empty_2"/></StgValue>
+</operation>
+
+<operation id="17" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="17" bw="32" op_0_bw="32" op_1_bw="8" op_2_bw="32">
+<![CDATA[
+burst.wr.header:14  %burstwrite_rend = call i32 (...)* @_ssdm_op_SpecRegionEnd([18 x i8]* @p_str10, i32 %burstwrite_rbegin) nounwind
+
+]]></node>
+<StgValue><ssdm name="burstwrite_rend"/></StgValue>
+</operation>
+
+<operation id="18" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="18" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+burst.wr.header:15  call void (...)* @_ssdm_op_Wait(i32 1) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="19" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="19" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+burst.wr.header:16  %sensor_bus_addr_1 = getelementptr inbounds i32* %sensor_bus, i64 287834112
+
+]]></node>
+<StgValue><ssdm name="sensor_bus_addr_1"/></StgValue>
+</operation>
+
+<operation id="20" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="20" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<![CDATA[
+burst.wr.header:17  %empty_3 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1) nounwind
+
+]]></node>
+<StgValue><ssdm name="empty_3"/></StgValue>
+</operation>
+
+<operation id="21" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="21" bw="32" op_0_bw="32" op_1_bw="8">
+<![CDATA[
+burst.wr.header:18  %burstwrite_rbegin1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([18 x i8]* @p_str12) nounwind
+
+]]></node>
+<StgValue><ssdm name="burstwrite_rbegin1"/></StgValue>
+</operation>
+
+<operation id="22" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="22" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="8">
+<![CDATA[
+burst.wr.header:19  %empty_4 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str11) nounwind
+
+]]></node>
+<StgValue><ssdm name="empty_4"/></StgValue>
+</operation>
+
+<operation id="23" st_id="2" stage="1" lat="1">
+<core>AXI4M</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="23" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+burst.wr.header:20  %sensor_bus_addr_1_req = call i1 @_ssdm_op_WriteReq.ap_bus.i32P(i32* %sensor_bus_addr_1, i32 1) nounwind
+
+]]></node>
+<StgValue><ssdm name="sensor_bus_addr_1_req"/></StgValue>
+</operation>
+
+<operation id="24" st_id="2" stage="1" lat="1">
+<core>AXI4M</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="24" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+burst.wr.header:21  call void @_ssdm_op_Write.ap_bus.i32P(i32* %sensor_bus_addr_1, i32 1) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="25" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="25" bw="32" op_0_bw="32" op_1_bw="8" op_2_bw="32">
+<![CDATA[
+burst.wr.header:22  %burstwrite_rend12 = call i32 (...)* @_ssdm_op_SpecRegionEnd([18 x i8]* @p_str12, i32 %burstwrite_rbegin1) nounwind
+
+]]></node>
+<StgValue><ssdm name="burstwrite_rend12"/></StgValue>
+</operation>
+
+<operation id="26" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="26" bw="0">
+<![CDATA[
+burst.wr.header:23  ret void
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="30" name="sensor_bus" dir="1" iftype="4">
+<core>AXI4M</core><StgValue><ssdm name="sensor_bus"/></StgValue>
+</port>
+<port id="31" name="debug1" dir="0" iftype="0">
+<core>AXI4LiteS</core><StgValue><ssdm name="debug1"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="32" from="sensor_bus" to="sensor_bus_addr" fromId="30" toId="3">
+</dataflow>
+<dataflow id="34" from="stg_33" to="sensor_bus_addr" fromId="33" toId="3">
+</dataflow>
+<dataflow id="36" from="_ssdm_op_WriteReq.ap_bus.i32P" to="sensor_bus_addr_req" fromId="35" toId="4">
+</dataflow>
+<dataflow id="37" from="sensor_bus_addr" to="sensor_bus_addr_req" fromId="3" toId="4">
+</dataflow>
+<dataflow id="39" from="stg_38" to="sensor_bus_addr_req" fromId="38" toId="4">
+</dataflow>
+<dataflow id="41" from="_ssdm_op_Write.ap_bus.i32P" to="stg_5" fromId="40" toId="5">
+</dataflow>
+<dataflow id="42" from="sensor_bus_addr" to="stg_5" fromId="3" toId="5">
+</dataflow>
+<dataflow id="44" from="stg_43" to="stg_5" fromId="43" toId="5">
+</dataflow>
+<dataflow id="46" from="_ssdm_op_SpecBitsMap" to="stg_6" fromId="45" toId="6">
+</dataflow>
+<dataflow id="47" from="sensor_bus" to="stg_6" fromId="30" toId="6">
+</dataflow>
+<dataflow id="48" from="_ssdm_op_SpecBitsMap" to="stg_7" fromId="45" toId="7">
+</dataflow>
+<dataflow id="49" from="debug1" to="stg_7" fromId="31" toId="7">
+</dataflow>
+<dataflow id="51" from="_ssdm_op_SpecTopModule" to="stg_8" fromId="50" toId="8">
+</dataflow>
+<dataflow id="53" from="str" to="stg_8" fromId="52" toId="8">
+</dataflow>
+<dataflow id="55" from="_ssdm_op_SpecBus" to="stg_9" fromId="54" toId="9">
+</dataflow>
+<dataflow id="56" from="sensor_bus" to="stg_9" fromId="30" toId="9">
+</dataflow>
+<dataflow id="58" from="p_str" to="stg_9" fromId="57" toId="9">
+</dataflow>
+<dataflow id="60" from="stg_59" to="stg_9" fromId="59" toId="9">
+</dataflow>
+<dataflow id="61" from="stg_59" to="stg_9" fromId="59" toId="9">
+</dataflow>
+<dataflow id="62" from="stg_59" to="stg_9" fromId="59" toId="9">
+</dataflow>
+<dataflow id="64" from="p_str1" to="stg_9" fromId="63" toId="9">
+</dataflow>
+<dataflow id="66" from="_ssdm_op_SpecIFCore" to="stg_10" fromId="65" toId="10">
+</dataflow>
+<dataflow id="67" from="sensor_bus" to="stg_10" fromId="30" toId="10">
+</dataflow>
+<dataflow id="68" from="p_str1" to="stg_10" fromId="63" toId="10">
+</dataflow>
+<dataflow id="70" from="p_str2" to="stg_10" fromId="69" toId="10">
+</dataflow>
+<dataflow id="71" from="p_str1" to="stg_10" fromId="63" toId="10">
+</dataflow>
+<dataflow id="72" from="p_str1" to="stg_10" fromId="63" toId="10">
+</dataflow>
+<dataflow id="73" from="p_str1" to="stg_10" fromId="63" toId="10">
+</dataflow>
+<dataflow id="74" from="p_str1" to="stg_10" fromId="63" toId="10">
+</dataflow>
+<dataflow id="75" from="_ssdm_op_SpecIFCore" to="stg_11" fromId="65" toId="11">
+</dataflow>
+<dataflow id="76" from="stg_59" to="stg_11" fromId="59" toId="11">
+</dataflow>
+<dataflow id="77" from="p_str1" to="stg_11" fromId="63" toId="11">
+</dataflow>
+<dataflow id="79" from="p_str3" to="stg_11" fromId="78" toId="11">
+</dataflow>
+<dataflow id="80" from="p_str1" to="stg_11" fromId="63" toId="11">
+</dataflow>
+<dataflow id="81" from="p_str1" to="stg_11" fromId="63" toId="11">
+</dataflow>
+<dataflow id="82" from="p_str1" to="stg_11" fromId="63" toId="11">
+</dataflow>
+<dataflow id="84" from="p_str4" to="stg_11" fromId="83" toId="11">
+</dataflow>
+<dataflow id="86" from="_ssdm_op_SpecWire" to="stg_12" fromId="85" toId="12">
+</dataflow>
+<dataflow id="87" from="debug1" to="stg_12" fromId="31" toId="12">
+</dataflow>
+<dataflow id="89" from="p_str5" to="stg_12" fromId="88" toId="12">
+</dataflow>
+<dataflow id="90" from="stg_38" to="stg_12" fromId="38" toId="12">
+</dataflow>
+<dataflow id="91" from="stg_38" to="stg_12" fromId="38" toId="12">
+</dataflow>
+<dataflow id="92" from="stg_59" to="stg_12" fromId="59" toId="12">
+</dataflow>
+<dataflow id="93" from="p_str1" to="stg_12" fromId="63" toId="12">
+</dataflow>
+<dataflow id="94" from="_ssdm_op_SpecIFCore" to="stg_13" fromId="65" toId="13">
+</dataflow>
+<dataflow id="95" from="debug1" to="stg_13" fromId="31" toId="13">
+</dataflow>
+<dataflow id="96" from="p_str1" to="stg_13" fromId="63" toId="13">
+</dataflow>
+<dataflow id="97" from="p_str3" to="stg_13" fromId="78" toId="13">
+</dataflow>
+<dataflow id="98" from="p_str1" to="stg_13" fromId="63" toId="13">
+</dataflow>
+<dataflow id="99" from="p_str1" to="stg_13" fromId="63" toId="13">
+</dataflow>
+<dataflow id="100" from="p_str1" to="stg_13" fromId="63" toId="13">
+</dataflow>
+<dataflow id="101" from="p_str4" to="stg_13" fromId="83" toId="13">
+</dataflow>
+<dataflow id="103" from="_ssdm_op_SpecLoopTripCount" to="empty" fromId="102" toId="14">
+</dataflow>
+<dataflow id="105" from="stg_104" to="empty" fromId="104" toId="14">
+</dataflow>
+<dataflow id="106" from="stg_104" to="empty" fromId="104" toId="14">
+</dataflow>
+<dataflow id="107" from="stg_104" to="empty" fromId="104" toId="14">
+</dataflow>
+<dataflow id="109" from="_ssdm_op_SpecRegionBegin" to="burstwrite_rbegin" fromId="108" toId="15">
+</dataflow>
+<dataflow id="111" from="p_str10" to="burstwrite_rbegin" fromId="110" toId="15">
+</dataflow>
+<dataflow id="113" from="_ssdm_op_SpecPipeline" to="empty_2" fromId="112" toId="16">
+</dataflow>
+<dataflow id="114" from="stg_38" to="empty_2" fromId="38" toId="16">
+</dataflow>
+<dataflow id="115" from="stg_38" to="empty_2" fromId="38" toId="16">
+</dataflow>
+<dataflow id="116" from="stg_38" to="empty_2" fromId="38" toId="16">
+</dataflow>
+<dataflow id="118" from="str9" to="empty_2" fromId="117" toId="16">
+</dataflow>
+<dataflow id="120" from="_ssdm_op_SpecRegionEnd" to="burstwrite_rend" fromId="119" toId="17">
+</dataflow>
+<dataflow id="121" from="p_str10" to="burstwrite_rend" fromId="110" toId="17">
+</dataflow>
+<dataflow id="122" from="burstwrite_rbegin" to="burstwrite_rend" fromId="15" toId="17">
+</dataflow>
+<dataflow id="124" from="_ssdm_op_Wait" to="stg_18" fromId="123" toId="18">
+</dataflow>
+<dataflow id="125" from="stg_38" to="stg_18" fromId="38" toId="18">
+</dataflow>
+<dataflow id="126" from="sensor_bus" to="sensor_bus_addr_1" fromId="30" toId="19">
+</dataflow>
+<dataflow id="128" from="stg_127" to="sensor_bus_addr_1" fromId="127" toId="19">
+</dataflow>
+<dataflow id="129" from="_ssdm_op_SpecLoopTripCount" to="empty_3" fromId="102" toId="20">
+</dataflow>
+<dataflow id="130" from="stg_104" to="empty_3" fromId="104" toId="20">
+</dataflow>
+<dataflow id="131" from="stg_104" to="empty_3" fromId="104" toId="20">
+</dataflow>
+<dataflow id="132" from="stg_104" to="empty_3" fromId="104" toId="20">
+</dataflow>
+<dataflow id="133" from="_ssdm_op_SpecRegionBegin" to="burstwrite_rbegin1" fromId="108" toId="21">
+</dataflow>
+<dataflow id="135" from="p_str12" to="burstwrite_rbegin1" fromId="134" toId="21">
+</dataflow>
+<dataflow id="136" from="_ssdm_op_SpecPipeline" to="empty_4" fromId="112" toId="22">
+</dataflow>
+<dataflow id="137" from="stg_38" to="empty_4" fromId="38" toId="22">
+</dataflow>
+<dataflow id="138" from="stg_38" to="empty_4" fromId="38" toId="22">
+</dataflow>
+<dataflow id="139" from="stg_38" to="empty_4" fromId="38" toId="22">
+</dataflow>
+<dataflow id="141" from="str11" to="empty_4" fromId="140" toId="22">
+</dataflow>
+<dataflow id="142" from="_ssdm_op_WriteReq.ap_bus.i32P" to="sensor_bus_addr_1_req" fromId="35" toId="23">
+</dataflow>
+<dataflow id="143" from="sensor_bus_addr_1" to="sensor_bus_addr_1_req" fromId="19" toId="23">
+</dataflow>
+<dataflow id="144" from="stg_38" to="sensor_bus_addr_1_req" fromId="38" toId="23">
+</dataflow>
+<dataflow id="145" from="_ssdm_op_Write.ap_bus.i32P" to="stg_24" fromId="40" toId="24">
+</dataflow>
+<dataflow id="146" from="sensor_bus_addr_1" to="stg_24" fromId="19" toId="24">
+</dataflow>
+<dataflow id="147" from="stg_38" to="stg_24" fromId="38" toId="24">
+</dataflow>
+<dataflow id="148" from="_ssdm_op_SpecRegionEnd" to="burstwrite_rend12" fromId="119" toId="25">
+</dataflow>
+<dataflow id="149" from="p_str12" to="burstwrite_rend12" fromId="134" toId="25">
+</dataflow>
+<dataflow id="150" from="burstwrite_rbegin1" to="burstwrite_rend12" fromId="21" toId="25">
+</dataflow>
+</dataflows>
+
+
+</stg>

@@ -1,0 +1,16 @@
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
+| Date         : Thu Jul 31 13:48:25 2014
+| Host         : ganymede running 64-bit Ubuntu 12.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+-----------------------------------------------------------------------------------
+
+Upgrade Log for IP 'zynq_system_cache_module_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of zynq_system_cache_module_0_0 (sfleming:HHB:cache_module:1.0) from (Rev. 1407311328) to (Rev. 1407311347)
+

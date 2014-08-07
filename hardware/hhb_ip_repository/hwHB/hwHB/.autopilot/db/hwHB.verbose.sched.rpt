@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'hwHB'
 ================================================================
-* Date:           Tue Aug  5 13:28:01 2014
+* Date:           Thu Aug  7 14:56:31 2014
 
 * Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
 * Project:        hwHB
@@ -237,7 +237,7 @@ ST_2: stg_39 [1/1] 0.00ns
 :13  call void (...)* @_ssdm_op_SpecWire(i32 %app_list_addr, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
 
 ST_2: stg_40 [1/1] 0.00ns
-:14  call void (...)* @_ssdm_op_SpecIFCore(i32 %app_list_addr, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
+:14  call void (...)* @_ssdm_op_SpecIFCore(i32 %app_list_addr, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [23 x i8]* @p_str6) nounwind
 
 ST_2: stg_41 [1/1] 0.00ns
 :15  call void (...)* @_ssdm_op_SpecWire(i32 %inAppID, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind

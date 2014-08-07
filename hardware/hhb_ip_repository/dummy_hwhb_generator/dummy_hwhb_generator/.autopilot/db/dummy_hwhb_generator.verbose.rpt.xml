@@ -1,0 +1,120 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'dummy_hwhb_generator'" level="0">
+<item name = "Date">Thu Aug  7 12:19:23 2014
+</item>
+<item name = "Version">2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)</item>
+<item name = "Project">dummy_hwhb_generator</item>
+<item name = "Solution">dummy_hwhb_generator</item>
+<item name = "Product family">zynq zynq_fpv6 </item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="default">10.00, 8.75, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">1, 1, 2, 2, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="Expression">-, -, 0, 1</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, -, -</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 64</column>
+<column name="Register">-, -, 1, -</column>
+<column name="ShiftMemory">-, -, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="7">Memory, Module, BRAM_18K, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Shift register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_sig_bdd_65">or, 0, 0, 1, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="sensor_bus_address">32, 3, 32, 96</column>
+<column name="sensor_bus_dataout">32, 3, 32, 96</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="4">Name, FF, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, dummy_hwhb_generator, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, dummy_hwhb_generator, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, dummy_hwhb_generator, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, dummy_hwhb_generator, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, dummy_hwhb_generator, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, dummy_hwhb_generator, return value</column>
+<column name="sensor_bus_req_din">out, 1, ap_bus, sensor_bus, pointer</column>
+<column name="sensor_bus_req_full_n">in, 1, ap_bus, sensor_bus, pointer</column>
+<column name="sensor_bus_req_write">out, 1, ap_bus, sensor_bus, pointer</column>
+<column name="sensor_bus_rsp_empty_n">in, 1, ap_bus, sensor_bus, pointer</column>
+<column name="sensor_bus_rsp_read">out, 1, ap_bus, sensor_bus, pointer</column>
+<column name="sensor_bus_address">out, 32, ap_bus, sensor_bus, pointer</column>
+<column name="sensor_bus_datain">in, 32, ap_bus, sensor_bus, pointer</column>
+<column name="sensor_bus_dataout">out, 32, ap_bus, sensor_bus, pointer</column>
+<column name="sensor_bus_size">out, 32, ap_bus, sensor_bus, pointer</column>
+<column name="debug1">in, 32, ap_none, debug1, pointer</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,108 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="overflow_adjust" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="quantization_adjust" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ap_fixed_base" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ap_fixed_base" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="to_double" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="to_float" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &lt;&lt;" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &lt;&lt;" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &gt;&gt;" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &gt;&gt;" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &lt;&lt;=" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &lt;&lt;=" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &gt;&gt;=" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &gt;&gt;=" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="dummy_hwhb_generator" label="">
+<pragma name="INTERFACE">
+<option name="ap_bus" positionalBoolean="mode" value=""/>
+<option name="depth" value="N"/>
+<option name="port" positionalBoolean="4" value="sensor_bus"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="dummy_hwhb_generator" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="sensor_bus"/>
+<option name="core" value="AXI4M"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="dummy_hwhb_generator" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="return"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle BUS_A&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="dummy_hwhb_generator" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="register" positionalBoolean="register" value=""/>
+<option name="port" positionalBoolean="4" value="debug1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="dummy_hwhb_generator" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="debug1"/>
+<option name="core" value="AXI4LiteS"/>
+<option name="metadata" value="&quot;-bus_bundle BUS_A&quot;"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

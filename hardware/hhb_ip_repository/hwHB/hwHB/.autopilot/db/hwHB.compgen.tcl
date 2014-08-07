@@ -125,16 +125,6 @@ set opts {
         mode SIG_IN_VLD_OFF:SIG_IN_ACC_OFF
     }
     {
-        id 5
-        name app_list_addr
-        reset_level 1
-        sync_rst true
-        type scalar
-        dir I
-        width 32
-        mode SIG_IN_VLD_OFF:SIG_IN_ACC_OFF
-    }
-    {
         id 6
         name debug1
         reset_level 1
@@ -187,6 +177,38 @@ set opts {
 }
 set portmap { }
 set metadata { -bus_bundle BUS_A}
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::axi_slave_int_gen] == "::AESL_LIB_XILADAPTER::axi_slave_int_gen"} {
+eval "::AESL_LIB_XILADAPTER::axi_slave_int_gen { \
+    corename ${corename} \
+    reset_level 1 \
+    sync_rst true \
+    opts {${opts}} \
+    portmap {${portmap}} \
+    metadata {${metadata}} \
+}"
+} else {
+puts "@W Can not find gen function '::AESL_LIB_XILADAPTER::axi_slave_int_gen' in the library. Ignored generation of adapter for '${corename}'"
+}
+}
+
+
+# Adapter definition:
+set corename CONFIG_BUS
+set opts {
+    {
+        id 5
+        name app_list_addr
+        reset_level 1
+        sync_rst true
+        type scalar
+        dir I
+        width 32
+        mode SIG_IN_VLD_OFF:SIG_IN_ACC_OFF
+    }
+}
+set portmap { }
+set metadata { -bus_bundle CONFIG_BUS}
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::axi_slave_int_gen] == "::AESL_LIB_XILADAPTER::axi_slave_int_gen"} {
 eval "::AESL_LIB_XILADAPTER::axi_slave_int_gen { \

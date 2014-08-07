@@ -125,8 +125,12 @@ int XHwhb_Initialize(XHwhb *InstancePtr, const char* InstanceName) {
         return XST_OPEN_DEVICE_FAILED;
     }
 
-    // NOTE: slave interface 'Bus_a' should be mapped to uioX/map0
-    InstancePtr->Bus_a_BaseAddress = (u32)mmap(NULL, InfoPtr->maps[0].size, PROT_READ|PROT_WRITE, MAP_SHARED, InfoPtr->uio_fd, 0 * getpagesize());
+    // NOTE: slave interface 'Config_bus' should be mapped to uioX/map0
+    InstancePtr->Config_bus_BaseAddress = (u32)mmap(NULL, InfoPtr->maps[0].size, PROT_READ|PROT_WRITE, MAP_SHARED, InfoPtr->uio_fd, 0 * getpagesize());
+    assert(InstancePtr->Config_bus_BaseAddress);
+
+    // NOTE: slave interface 'Bus_a' should be mapped to uioX/map1
+    InstancePtr->Bus_a_BaseAddress = (u32)mmap(NULL, InfoPtr->maps[1].size, PROT_READ|PROT_WRITE, MAP_SHARED, InfoPtr->uio_fd, 1 * getpagesize());
     assert(InstancePtr->Bus_a_BaseAddress);
 
     InstancePtr->IsReady = XIL_COMPONENT_IS_READY;
@@ -140,7 +144,8 @@ int XHwhb_Release(XHwhb *InstancePtr) {
     assert(InstancePtr != NULL);
     assert(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    munmap((void*)InstancePtr->Bus_a_BaseAddress, InfoPtr->maps[0].size);
+    munmap((void*)InstancePtr->Config_bus_BaseAddress, InfoPtr->maps[0].size);
+    munmap((void*)InstancePtr->Bus_a_BaseAddress, InfoPtr->maps[1].size);
 
     close(InfoPtr->uio_fd);
 

@@ -12,7 +12,7 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [HLS-10] Validating synthesis directives ...
 @I [HLS-10] Starting code transformations ...
 @I [HLS-10] Checking synthesizability ...
-@I [HLS-111] Elapsed time: 1.23 seconds; current memory usage: 48.1 MB.
+@I [HLS-111] Elapsed time: 1.24 seconds; current memory usage: 48.1 MB.
 @I [HLS-10] Starting hardware synthesis ...
 @I [HLS-10] Synthesizing 'hwHB' ...
 @W [RTGEN-101] Legalizing port name 'hwHB/time' to 'hwHB/time_r'.
@@ -31,7 +31,7 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @I [BIND-101] Exploring resource sharing.
 @I [BIND-101] Binding ...
 @I [BIND-100] Finished micro-architecture generation.
-@I [HLS-111] Elapsed time: 0.02 seconds; current memory usage: 49 MB.
+@I [HLS-111] Elapsed time: 0.03 seconds; current memory usage: 48.9 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Generating RTL for module 'hwHB' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -43,12 +43,12 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 @W [RTGEN-101] Port 'debug1' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
 @I [RTGEN-500] Setting interface mode on function 'hwHB' to 'ap_ctrl_hs'.
 @I [RTGEN-100] Finished creating RTL model for 'hwHB'.
-@I [HLS-111] Elapsed time: 0.06 seconds; current memory usage: 49.5 MB.
+@I [HLS-111] Elapsed time: 0.05 seconds; current memory usage: 49.5 MB.
 @I [RTMG-278] Implementing memory 'hwHB_buff_ram' using block RAMs.
 @I [HLS-10] Finished generating all RTL models.
 @I [WSYSC-301] Generating RTL SystemC for 'hwHB'.
 @I [WVHDL-304] Generating RTL VHDL for 'hwHB'.
 @I [WVLOG-307] Generating RTL Verilog for 'hwHB'.
 @I [IMPL-8] Exporting RTL as an IP in IP-XACT.
-@I [HLS-112] Total elapsed time: 17.585 seconds; peak memory usage: 49.5 MB.
+@I [HLS-112] Total elapsed time: 17.187 seconds; peak memory usage: 49.5 MB.
 @I [LIC-101] Checked in feature [VIVADO_HLS]

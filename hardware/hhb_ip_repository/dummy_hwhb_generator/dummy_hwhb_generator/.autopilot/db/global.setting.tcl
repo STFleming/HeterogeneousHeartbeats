@@ -1,13 +1,13 @@
 
-set TopModule "hhb_query"
+set TopModule "dummy_hwhb_generator"
 set ClockPeriod "10.000000"
 set ClockList {ap_clk}
 set multiClockList {}
 set PortClockMap {}
 set CombLogicFlag 0
-set PipelineFlag 0
+set PipelineFlag 1
 set DataflowTaskPipelineFlag  1
-set TrivialPipelineFlag 0
+set TrivialPipelineFlag 1
 set noPortSwitchingFlag 0
 set FloatingPointFlag 0
 set ResetLevelFlag 1
@@ -34,9 +34,9 @@ set SCTraceFileName "mytrace"
 set SCTraceFileFormat "vcd"
 set SCTraceOption "all"
 set TargetInfo "xc7z020:clg484:-1"
-set SourceFiles {sc {} c ../src/hhb_query_top.cpp}
+set SourceFiles {sc {} c ../src/dummy_hwhb_generator.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile {/home/ee/s/sf306/HeterogeneousHeartbeats/hardware/hhb_ip_repository/hhb_query/hhb_query/hhb_query.directive}
+set DirectiveFile {/home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/hhb_ip_repository/dummy_hwhb_generator/dummy_hwhb_generator/dummy_hwhb_generator.directive}
 set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
@@ -47,5 +47,5 @@ set PlatformFiles {{DefaultPlatform {xilinx/zynq/zynq xilinx/zynq/zynq_fpv6}}}
 set DefaultPlatform "DefaultPlatform"
 set TBTVFileNotFound ""
 set AppFile "../vivado_hls.app"
-set ApsFile "hhb_query.aps"
+set ApsFile "dummy_hwhb_generator.aps"
 set AvePath "../.."

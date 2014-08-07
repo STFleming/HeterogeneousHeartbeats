@@ -2670,7 +2670,7 @@ void hwHB(volatile int *a, unsigned int inAppID, unsigned int time, unsigned int
 #pragma HLS RESOURCE variable=return core=AXI4LiteS metadata="-bus_bundle BUS_A"
 #pragma empty_line
 #pragma HLS INTERFACE ap_none register port=app_list_addr
-#pragma HLS RESOURCE core=AXI4LiteS variable=app_list_addr metadata="-bus_bundle BUS_A"
+#pragma HLS RESOURCE core=AXI4LiteS variable=app_list_addr metadata="-bus_bundle CONFIG_BUS"
 #pragma empty_line
 #pragma HLS INTERFACE ap_none register port=inAppID
 #pragma HLS RESOURCE core=AXI4LiteS variable=inAppID metadata="-bus_bundle BUS_A"
