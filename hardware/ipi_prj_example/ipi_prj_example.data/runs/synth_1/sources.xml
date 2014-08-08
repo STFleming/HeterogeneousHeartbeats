@@ -23,6 +23,10 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/bd/zynq_system/ip/zynq_system_hhb_query_0_0/zynq_system_hhb_query_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/zynq_system/ip/zynq_system_cache_module_0_0/zynq_system_cache_module_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/zynq_system/ip/zynq_system_hwHB_0_0/zynq_system_hwHB_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/zynq_system/ip/zynq_system_pl_resident_timer_0_0/zynq_system_pl_resident_timer_0_0.upgrade_log"/>
+    <File Path="$PSRCDIR/sources_1/bd/zynq_system/ip/zynq_system_dummy_hwhb_generator_0_0/zynq_system_dummy_hwhb_generator_0_0.upgrade_log"/>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="zynq_system_wrapper"/>

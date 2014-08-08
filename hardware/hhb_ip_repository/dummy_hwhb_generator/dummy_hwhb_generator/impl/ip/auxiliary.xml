@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xd" xd:functionName="dummy_hwhb_generator" xd:componentRef="dummy_hwhb_generator" xd:initiationInterval="2" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64">
+  <xd:controlReg xd:name="control" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(sensor_bus)" xd:originalName="sensor_bus" xd:direction="out" xd:interfaceRef="M_AXI_SENSOR_BUS" xd:busTypeRef="aximm" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(debug1)" xd:originalName="debug1" xd:direction="in" xd:interfaceRef="S_AXI_BUS_A" xd:busTypeRef="axilite" xd:offset="0x14" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="1" xd:worst-case="1" xd:average-case="1"/>
+  <xd:resourceEstimates xd:LUT="65" xd:FF="1" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Tue Aug  5 16:10:48 2014
+# Process ID: 8517
+# Log file: /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/hhb_ip_repository/pl_resident_timer/pl_resident_timer_1.0/vivado.log
+# Journal file: /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/hhb_ip_repository/pl_resident_timer/pl_resident_timer_1.0/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.xpr
+reset_target all [get_files  /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd]
+generate_target all [get_files  /home/sf306/phd_codebase/github/HeterogeneousHeartbeats/hardware/ipi_prj_example/ipi_prj_example.srcs/sources_1/bd/zynq_system/zynq_system.bd]

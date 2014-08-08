@@ -1,0 +1,227 @@
+
+
+================================================================
+== Vivado HLS Report for 'dummy_hwhb_generator'
+================================================================
+* Date:           Thu Aug  7 12:19:23 2014
+
+* Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
+* Project:        dummy_hwhb_generator
+* Solution:       dummy_hwhb_generator
+* Product family: zynq zynq_fpv6 
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |  10.00|      8.75|        1.25|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    1|    1|    2|    2| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|Expression       |        -|      -|       -|      -|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      -|
+|Register         |        -|      -|       -|      -|
+|ShiftMemory      |        -|      -|       -|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|       0|      0|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|       0|      0|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Shift register: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 2, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 2
+* Pipeline: 1
+  Pipeline-0: II = 2, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+* FSM state operations: 
+
+ <State 1>: 8.75ns
+ST_1: sensor_bus_addr [1/1] 0.00ns
+burst.wr.header:8  %sensor_bus_addr = getelementptr inbounds i32* %sensor_bus, i64 287834117
+
+ST_1: sensor_bus_addr_req [1/1] 8.75ns
+burst.wr.header:12  %sensor_bus_addr_req = call i1 @_ssdm_op_WriteReq.ap_bus.i32P(i32* %sensor_bus_addr, i32 1) nounwind
+
+ST_1: stg_5 [1/1] 8.75ns
+burst.wr.header:13  call void @_ssdm_op_Write.ap_bus.i32P(i32* %sensor_bus_addr, i32 10) nounwind
+
+
+ <State 2>: 8.75ns
+ST_2: stg_6 [1/1] 0.00ns
+burst.wr.header:0  call void (...)* @_ssdm_op_SpecBitsMap(i32* %sensor_bus) nounwind, !map !7
+
+ST_2: stg_7 [1/1] 0.00ns
+burst.wr.header:1  call void (...)* @_ssdm_op_SpecBitsMap(i32* %debug1) nounwind, !map !11
+
+ST_2: stg_8 [1/1] 0.00ns
+burst.wr.header:2  call void (...)* @_ssdm_op_SpecTopModule([21 x i8]* @str) nounwind
+
+ST_2: stg_9 [1/1] 0.00ns
+burst.wr.header:3  call void (...)* @_ssdm_op_SpecBus(i32* %sensor_bus, [7 x i8]* @p_str, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_2: stg_10 [1/1] 0.00ns
+burst.wr.header:4  call void (...)* @_ssdm_op_SpecIFCore(i32* %sensor_bus, [1 x i8]* @p_str1, [6 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_2: stg_11 [1/1] 0.00ns
+burst.wr.header:5  call void (...)* @_ssdm_op_SpecIFCore(i32 0, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
+
+ST_2: stg_12 [1/1] 0.00ns
+burst.wr.header:6  call void (...)* @_ssdm_op_SpecWire(i32* %debug1, [8 x i8]* @p_str5, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_2: stg_13 [1/1] 0.00ns
+burst.wr.header:7  call void (...)* @_ssdm_op_SpecIFCore(i32* %debug1, [1 x i8]* @p_str1, [10 x i8]* @p_str3, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [18 x i8]* @p_str4) nounwind
+
+ST_2: empty [1/1] 0.00ns
+burst.wr.header:9  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1) nounwind
+
+ST_2: burstwrite_rbegin [1/1] 0.00ns
+burst.wr.header:10  %burstwrite_rbegin = call i32 (...)* @_ssdm_op_SpecRegionBegin([18 x i8]* @p_str10) nounwind
+
+ST_2: empty_2 [1/1] 0.00ns
+burst.wr.header:11  %empty_2 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str9) nounwind
+
+ST_2: burstwrite_rend [1/1] 0.00ns
+burst.wr.header:14  %burstwrite_rend = call i32 (...)* @_ssdm_op_SpecRegionEnd([18 x i8]* @p_str10, i32 %burstwrite_rbegin) nounwind
+
+ST_2: stg_18 [1/1] 0.00ns
+burst.wr.header:15  call void (...)* @_ssdm_op_Wait(i32 1) nounwind
+
+ST_2: sensor_bus_addr_1 [1/1] 0.00ns
+burst.wr.header:16  %sensor_bus_addr_1 = getelementptr inbounds i32* %sensor_bus, i64 287834112
+
+ST_2: empty_3 [1/1] 0.00ns
+burst.wr.header:17  %empty_3 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1) nounwind
+
+ST_2: burstwrite_rbegin1 [1/1] 0.00ns
+burst.wr.header:18  %burstwrite_rbegin1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([18 x i8]* @p_str12) nounwind
+
+ST_2: empty_4 [1/1] 0.00ns
+burst.wr.header:19  %empty_4 = call i32 (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @str11) nounwind
+
+ST_2: sensor_bus_addr_1_req [1/1] 8.75ns
+burst.wr.header:20  %sensor_bus_addr_1_req = call i1 @_ssdm_op_WriteReq.ap_bus.i32P(i32* %sensor_bus_addr_1, i32 1) nounwind
+
+ST_2: stg_24 [1/1] 8.75ns
+burst.wr.header:21  call void @_ssdm_op_Write.ap_bus.i32P(i32* %sensor_bus_addr_1, i32 1) nounwind
+
+ST_2: burstwrite_rend12 [1/1] 0.00ns
+burst.wr.header:22  %burstwrite_rend12 = call i32 (...)* @_ssdm_op_SpecRegionEnd([18 x i8]* @p_str12, i32 %burstwrite_rbegin1) nounwind
+
+ST_2: stg_26 [1/1] 0.00ns
+burst.wr.header:23  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

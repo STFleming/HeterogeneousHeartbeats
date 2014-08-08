@@ -2703,25 +2703,25 @@ void cache_module(volatile int *a, unsigned int applist_base_addr, unsigned int 
 
 
   //search the cache here for the application
-  for(i=0; i<4 /*There are 16 cache lines*/; i++)
-  {
-      if(hb_cache[i].AppID == inAppID && (inAppID != 0))
-      {
-        cacheHit=1;
-        cacheHitLoc = i;
-        break;
-      }
-  }
+  //for(i=0; i<CACHE_LINES; i++)
+  //{
+  //    if(hb_cache[i].AppID == inAppID && (inAppID != 0))
+  //    {
+ //       cacheHit=0;
+ //       cacheHitLoc = i;
+ //       break;
+ //     }
+ // }
 
-  if(cacheHit == 1 && (inAppID != 0))
-  {
-    temp_outAppID = hb_cache[cacheHitLoc].AppID;
-    temp_outStateAddr = hb_cache[cacheHitLoc].state_addr;
-    temp_outLogAddr = hb_cache[cacheHitLoc].log_addr;
-    temp_outHWSW = hb_cache[cacheHitLoc].prev_sensor_value;
-    hb_cache[cacheHitLoc].lat = time; //Update the last access time
-  }
-  else
+  //if(cacheHit == 1 && (inAppID != 0))
+  //{
+  //  temp_outAppID = hb_cache[cacheHitLoc].AppID;
+  //  temp_outStateAddr = hb_cache[cacheHitLoc].state_addr;
+  //  temp_outLogAddr = hb_cache[cacheHitLoc].log_addr;
+  //  temp_outHWSW = hb_cache[cacheHitLoc].prev_sensor_value;
+  //  hb_cache[cacheHitLoc].lat = time; //Update the last access time
+  //}
+  //else
   {
     for(i=0; i<20; i++)
     {
