@@ -32,7 +32,7 @@ extern "C" {
 #endif
 #include "xhwhb_hw.h"
 
-#define HWHB_ADDR 0x43C10000
+#define HWHB_ADDR 0x43C30000
 
 /**************************** Type Definitions ******************************/
 #ifdef __linux__

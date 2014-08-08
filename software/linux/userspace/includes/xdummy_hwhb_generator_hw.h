@@ -25,19 +25,19 @@
 //        bit 1  - Channel 1 (ap_ready)
 //        others - reserved
 // 0x10 : reserved
-// 0x14 : Data signal of inAppID
-//        bit 31~0 - inAppID[31:0] (Read/Write)
+// 0x14 : Data signal of debug1
+//        bit 31~0 - debug1[31:0] (Read/Write)
 // 0x18 : reserved
-// 0x1c : Data signal of app_list_addr
-//        bit 31~0 - app_list_addr[31:0] (Read/Write)
+// 0x1c : Data signal of AppID
+//        bit 31~0 - AppID[31:0] (Read/Write)
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
-#define XHWHB_BUS_A_ADDR_AP_CTRL            0x00
-#define XHWHB_BUS_A_ADDR_GIE                0x04
-#define XHWHB_BUS_A_ADDR_IER                0x08
-#define XHWHB_BUS_A_ADDR_ISR                0x0c
-#define XHWHB_BUS_A_ADDR_INAPPID_DATA       0x14
-#define XHWHB_BUS_A_BITS_INAPPID_DATA       32
-#define XHWHB_BUS_A_ADDR_APP_LIST_ADDR_DATA 0x14
-#define XHWHB_BUS_A_BITS_APP_LIST_ADDR_DATA 32
+#define XDUMMY_HWHB_GENERATOR_BUS_A_ADDR_AP_CTRL     0x00
+#define XDUMMY_HWHB_GENERATOR_BUS_A_ADDR_GIE         0x04
+#define XDUMMY_HWHB_GENERATOR_BUS_A_ADDR_IER         0x08
+#define XDUMMY_HWHB_GENERATOR_BUS_A_ADDR_ISR         0x0c
+#define XDUMMY_HWHB_GENERATOR_BUS_A_ADDR_DEBUG1_DATA 0x14
+#define XDUMMY_HWHB_GENERATOR_BUS_A_BITS_DEBUG1_DATA 32
+#define XDUMMY_HWHB_GENERATOR_BUS_A_ADDR_APPID_DATA  0x1c
+#define XDUMMY_HWHB_GENERATOR_BUS_A_BITS_APPID_DATA  32
 

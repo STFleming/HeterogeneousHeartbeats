@@ -8,7 +8,7 @@
 #include "hhb_applist.h"
 
 #if (HHB_QUERY == 1) //Then we have stuff in the hardware
-#define NUMBER_OF_HWAPPS 1
+#define NUMBER_OF_HWAPPS 3
 #include "hhb_query.h"
 #include "xhwhb.h"
 
@@ -32,8 +32,8 @@ int main()
         printf("\t- Initialising the hwHB module in hte FPGA fabric.\n");		
 	XHwhb hwhb_device;
 	hwhb_device = setup_XHwhb();
-	XHwhb_Start(&hwhb_device);
-	XHwhb_EnableAutoRestart(&hwhb_device); 
+	//XHwhb_Start(&hwhb_device);
+	//XHwhb_EnableAutoRestart(&hwhb_device); 
 
 	printf("\t- Registering each of the hardware heartbeat applications.\n");
 	//Create and register datastructures for the hardware apps
